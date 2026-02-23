@@ -7,8 +7,6 @@
 
 ---
 
-`go-nf` is a Go package that provides a type-safe way to access Nerd Font glyphs.
-
 <!-- template:begin:header -->
 <!-- do not edit anything in this "template" block, its auto-generated -->
 
@@ -59,6 +57,8 @@
 <!-- template:begin:toc -->
 <!-- do not edit anything in this "template" block, its auto-generated -->
 <!-- template:end:toc -->
+
+`go-nf` is a Go package that provides a type-safe way to access Nerd Font glyphs.
 
 ## :sparkles: Features
 
