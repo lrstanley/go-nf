@@ -1,0 +1,35 @@
+{{ header }}
+//
+// Glyphs are also under various licenses, as documented here:
+//  * https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE
+//
+// Generated using glyph info from:
+//  * https://github.com/ryanoasis/nerd-fonts/blob/master/glyphnames.json
+//
+// Additional information:
+//  * Website: {{ .Metadata.Website }}
+//  * Development Website: {{ .Metadata.DevelopmentWebsite }}
+//  * Version: {{ .Metadata.Version }}
+
+// Package {{ .Class }} contains the Nerd Fonts glyphs for the {{ .Class | quote }} class.
+package {{ .Class }}
+
+import {{ .PackageName | quote }}
+
+const (
+    // ClassName is the name of the class.
+    ClassName = {{ .Class | quote }}
+
+    // Version is the version of the Nerd Fonts project which this package was generated from.
+    Version = {{ .Metadata.Version | quote }}
+)
+
+{{- range $index, $glyph := .Glyphs }}
+    // {{ .PascalID }} ({{ .Char }}) represents the {{ (printf "%s-%s" .Class .ID) | quote }} glyph.
+    var {{ .PascalID }} = &nf.Glyph{
+        ID: {{ .ID | quote }},
+        Class: ClassName,
+        Char: "{{ .Char }}",
+        Unicode: {{ .Char | quote }},
+    }
+{{- end }}

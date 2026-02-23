@@ -1,0 +1,88 @@
+{{ header }}
+
+// Package all contains helpers which are applicable to all glyphs.
+package all
+
+import (
+    "iter"
+    "slices"
+
+    {{ .PackageName | quote }}
+    {{- range $class := .Classes }}
+    {{ printf "%s/glyphs/%s" $.PackageName $class | quote }}
+    {{- end }}
+)
+
+const (
+    // Version is the version of the Nerd Fonts project which this package was generated from.
+    Version = {{ .Metadata.Version | quote }}
+)
+
+var classNames = []string{
+    {{- range $class := .Classes }}
+        {{ $class }}.ClassName,
+    {{- end }}
+}
+
+// Classes returns an iterator over all the class names.
+func Classes() iter.Seq[string] {
+    return slices.Values(classNames)
+}
+
+// Glyphs returns an iterator over all the glyphs.
+func Glyphs() iter.Seq[*nf.Glyph] {
+    return func(yield func(*nf.Glyph) bool) {
+        {{- range $class := .Classes }}
+            for glyph := range {{ $class }}.AllGlyphs() {
+                if !yield(glyph) {
+                    return
+                }
+            }
+        {{- end }}
+    }
+}
+
+// ByClass returns an iterator over all the glyphs in the given class, or nil if
+// the class is not found.
+func ByClass(class string) iter.Seq[*nf.Glyph] {
+    switch class {
+    {{- range $class := .Classes }}
+    case {{ $class }}.ClassName:
+        return {{ $class }}.AllGlyphs()
+    {{- end }}
+    default:
+        return nil
+    }
+}
+
+// ByID finds a glyph by its ID across all classes.
+func ByID(id string) *nf.Glyph {
+    {{- range $class := .Classes }}
+        if glyph := {{ $class }}.ByID(id); glyph != nil {
+            return glyph
+        }
+    {{- end }}
+    return nil
+}
+
+// GlyphIDs returns an iterator over all the IDs of the glyphs across all classes.
+func GlyphIDs() iter.Seq[string] {
+    return func(yield func(string) bool) {
+        for glyph := range Glyphs() {
+            if !yield(glyph.ID) {
+                return
+            }
+        }
+    }
+}
+
+// GlyphFullIDs returns an iterator over all the full IDs of the glyphs across all classes.
+func GlyphFullIDs() iter.Seq[string] {
+    return func(yield func(string) bool) {
+        for glyph := range Glyphs() {
+            if !yield(glyph.FullID()) {
+                return
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{{ header }}
+
+// Package nf contains all type-safe glyph constants for the Nerd Fonts project,
+// allowing you to access glyphs by their ID, class, or full ID (with various
+// helper functions to achieve this).
+//
+// Take a look at the following sub-packages:
+//  * {{ printf "%s/glyphs/all" .PackageName | quote }}
+{{- range $class := .Classes }}
+//  * {{ printf "%s/glyphs/%s" $.PackageName $class | quote }}
+{{- end }}
+package nf
+
+const (
+    // Version is the version of the Nerd Fonts project which this package was generated from.
+    Version = {{ .Metadata.Version | quote }}
+)

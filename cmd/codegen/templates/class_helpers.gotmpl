@@ -1,0 +1,55 @@
+{{ header }}
+
+package {{ .Class }}
+
+import (
+    "iter"
+    "slices"
+
+    {{ .PackageName | quote }}
+)
+
+var allGlyphs = []*nf.Glyph{
+    {{- range $index, $glyph := .Glyphs }}
+        {{ .PascalID }},
+    {{- end }}
+}
+
+// AllGlyphs returns an iterator over all the glyphs in the {{ .Class }} class.
+func AllGlyphs() iter.Seq[*nf.Glyph] {
+    return slices.Values(allGlyphs)
+}
+
+// ByID finds a glyph by its ID within the class.
+func ByID(id string) *nf.Glyph {
+    switch id {
+    {{- range $index, $glyph := .Glyphs }}
+    case {{ .ID | quote }}, {{ (printf "%s-%s" .Class .ID) | quote }}:
+        return {{ .PascalID }}
+    {{- end }}
+    default:
+        return nil
+    }
+}
+
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
+func AllGlyphIDs() iter.Seq[string] {
+    return func(yield func(string) bool) {
+        for glyph := range AllGlyphs() {
+            if !yield(glyph.ID) {
+                return
+            }
+        }
+    }
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+func AllGlyphFullIDs() iter.Seq[string] {
+    return func(yield func(string) bool) {
+        for glyph := range AllGlyphs() {
+            if !yield(glyph.FullID()) {
+                return
+            }
+        }
+    }
+}
