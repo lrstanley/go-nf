@@ -3,7 +3,11 @@
   "nodescription": true
 }
 -->
-<img title="Logo" src="./_examples/_images/logo.png" width="961">
+![logo](https://liam.sh/-/gh/svg/lrstanley/go-nf?layout=left&font=1.1&bg=geometric&icon=dinkie-icons:file-font-filled&icon.height=88&icon.color=%2306BAFE)
+
+---
+
+`go-nf` is a Go package that provides a type-safe way to access Nerd Font glyphs.
 
 <!-- template:begin:header -->
 <!-- do not edit anything in this "template" block, its auto-generated -->
