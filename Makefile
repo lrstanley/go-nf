@@ -13,7 +13,7 @@ prepare:
 	cd ./_examples && go mod tidy
 	go mod tidy
 
-generate: license prepare
+generate: license
 	rm -rf glyphs/ constants.gen.go
 	cd ./cmd/codegen && go run . ../../
 	gofmt -e -s -w glyphs/**/*.go constants.gen.go

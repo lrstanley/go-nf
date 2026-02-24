@@ -21,281 +21,46 @@ package ple
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "ple"
+	// Class is the name of the class.
+	Class nf.Class = "ple"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// BackslashSeparator () represents the "ple-backslash_separator" glyph.
-var BackslashSeparator = &nf.Glyph{
-	ID:      "backslash_separator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b9",
-}
-
-// BackslashSeparatorRedundant () represents the "ple-backslash_separator_redundant" glyph.
-var BackslashSeparatorRedundant = &nf.Glyph{
-	ID:      "backslash_separator_redundant",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0bf",
-}
-
-// ColumnNumber () represents the "ple-column_number" glyph.
-var ColumnNumber = &nf.Glyph{
-	ID:      "column_number",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a3",
-}
-
-// CurrentColumn () represents the "ple-current_column" glyph.
-var CurrentColumn = &nf.Glyph{
-	ID:      "current_column",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a3",
-}
-
-// FlameThick () represents the "ple-flame_thick" glyph.
-var FlameThick = &nf.Glyph{
-	ID:      "flame_thick",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c0",
-}
-
-// FlameThickMirrored () represents the "ple-flame_thick_mirrored" glyph.
-var FlameThickMirrored = &nf.Glyph{
-	ID:      "flame_thick_mirrored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c2",
-}
-
-// FlameThin () represents the "ple-flame_thin" glyph.
-var FlameThin = &nf.Glyph{
-	ID:      "flame_thin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c1",
-}
-
-// FlameThinMirrored () represents the "ple-flame_thin_mirrored" glyph.
-var FlameThinMirrored = &nf.Glyph{
-	ID:      "flame_thin_mirrored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c3",
-}
-
-// ForwardslashSeparator () represents the "ple-forwardslash_separator" glyph.
-var ForwardslashSeparator = &nf.Glyph{
-	ID:      "forwardslash_separator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0bb",
-}
-
-// ForwardslashSeparatorRedundant () represents the "ple-forwardslash_separator_redundant" glyph.
-var ForwardslashSeparatorRedundant = &nf.Glyph{
-	ID:      "forwardslash_separator_redundant",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0bd",
-}
-
-// Honeycomb () represents the "ple-honeycomb" glyph.
-var Honeycomb = &nf.Glyph{
-	ID:      "honeycomb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0cc",
-}
-
-// HoneycombOutline () represents the "ple-honeycomb_outline" glyph.
-var HoneycombOutline = &nf.Glyph{
-	ID:      "honeycomb_outline",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0cd",
-}
-
-// IceWaveform () represents the "ple-ice_waveform" glyph.
-var IceWaveform = &nf.Glyph{
-	ID:      "ice_waveform",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c8",
-}
-
-// IceWaveformMirrored () represents the "ple-ice_waveform_mirrored" glyph.
-var IceWaveformMirrored = &nf.Glyph{
-	ID:      "ice_waveform_mirrored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0ca",
-}
-
-// LeftHalfCircleThick () represents the "ple-left_half_circle_thick" glyph.
-var LeftHalfCircleThick = &nf.Glyph{
-	ID:      "left_half_circle_thick",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b6",
-}
-
-// LeftHalfCircleThin () represents the "ple-left_half_circle_thin" glyph.
-var LeftHalfCircleThin = &nf.Glyph{
-	ID:      "left_half_circle_thin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b7",
-}
-
-// LeftHardDividerInverse () represents the "ple-left_hard_divider_inverse" glyph.
-var LeftHardDividerInverse = &nf.Glyph{
-	ID:      "left_hard_divider_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0d7",
-}
-
-// LegoBlockFacing () represents the "ple-lego_block_facing" glyph.
-var LegoBlockFacing = &nf.Glyph{
-	ID:      "lego_block_facing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0d0",
-}
-
-// LegoBlockSideways () represents the "ple-lego_block_sideways" glyph.
-var LegoBlockSideways = &nf.Glyph{
-	ID:      "lego_block_sideways",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0d1",
-}
-
-// LegoSeparator () represents the "ple-lego_separator" glyph.
-var LegoSeparator = &nf.Glyph{
-	ID:      "lego_separator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0ce",
-}
-
-// LegoSeparatorThin () represents the "ple-lego_separator_thin" glyph.
-var LegoSeparatorThin = &nf.Glyph{
-	ID:      "lego_separator_thin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0cf",
-}
-
-// LowerLeftTriangle () represents the "ple-lower_left_triangle" glyph.
-var LowerLeftTriangle = &nf.Glyph{
-	ID:      "lower_left_triangle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b8",
-}
-
-// LowerRightTriangle () represents the "ple-lower_right_triangle" glyph.
-var LowerRightTriangle = &nf.Glyph{
-	ID:      "lower_right_triangle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0ba",
-}
-
-// PixelatedSquaresBig () represents the "ple-pixelated_squares_big" glyph.
-var PixelatedSquaresBig = &nf.Glyph{
-	ID:      "pixelated_squares_big",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c6",
-}
-
-// PixelatedSquaresBigMirrored () represents the "ple-pixelated_squares_big_mirrored" glyph.
-var PixelatedSquaresBigMirrored = &nf.Glyph{
-	ID:      "pixelated_squares_big_mirrored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c7",
-}
-
-// PixelatedSquaresSmall () represents the "ple-pixelated_squares_small" glyph.
-var PixelatedSquaresSmall = &nf.Glyph{
-	ID:      "pixelated_squares_small",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c4",
-}
-
-// PixelatedSquaresSmallMirrored () represents the "ple-pixelated_squares_small_mirrored" glyph.
-var PixelatedSquaresSmallMirrored = &nf.Glyph{
-	ID:      "pixelated_squares_small_mirrored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0c5",
-}
-
-// RightHalfCircleThick () represents the "ple-right_half_circle_thick" glyph.
-var RightHalfCircleThick = &nf.Glyph{
-	ID:      "right_half_circle_thick",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b4",
-}
-
-// RightHalfCircleThin () represents the "ple-right_half_circle_thin" glyph.
-var RightHalfCircleThin = &nf.Glyph{
-	ID:      "right_half_circle_thin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b5",
-}
-
-// RightHardDividerInverse () represents the "ple-right_hard_divider_inverse" glyph.
-var RightHardDividerInverse = &nf.Glyph{
-	ID:      "right_hard_divider_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0d6",
-}
-
-// TrapezoidTopBottom () represents the "ple-trapezoid_top_bottom" glyph.
-var TrapezoidTopBottom = &nf.Glyph{
-	ID:      "trapezoid_top_bottom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0d2",
-}
-
-// TrapezoidTopBottomMirrored () represents the "ple-trapezoid_top_bottom_mirrored" glyph.
-var TrapezoidTopBottomMirrored = &nf.Glyph{
-	ID:      "trapezoid_top_bottom_mirrored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0d4",
-}
-
-// UpperLeftTriangle () represents the "ple-upper_left_triangle" glyph.
-var UpperLeftTriangle = &nf.Glyph{
-	ID:      "upper_left_triangle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0bc",
-}
-
-// UpperRightTriangle () represents the "ple-upper_right_triangle" glyph.
-var UpperRightTriangle = &nf.Glyph{
-	ID:      "upper_right_triangle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0be",
-}
+const (
+	BackslashSeparator             nf.Glyph = "" //  ("\ue0b9") represents the "ple-backslash_separator" glyph.
+	BackslashSeparatorRedundant    nf.Glyph = "" //  ("\ue0bf") represents the "ple-backslash_separator_redundant" glyph.
+	ColumnNumber                   nf.Glyph = "" //  ("\ue0a3") represents the "ple-column_number" glyph.
+	CurrentColumn                  nf.Glyph = "" //  ("\ue0a3") represents the "ple-current_column" glyph.
+	FlameThick                     nf.Glyph = "" //  ("\ue0c0") represents the "ple-flame_thick" glyph.
+	FlameThickMirrored             nf.Glyph = "" //  ("\ue0c2") represents the "ple-flame_thick_mirrored" glyph.
+	FlameThin                      nf.Glyph = "" //  ("\ue0c1") represents the "ple-flame_thin" glyph.
+	FlameThinMirrored              nf.Glyph = "" //  ("\ue0c3") represents the "ple-flame_thin_mirrored" glyph.
+	ForwardslashSeparator          nf.Glyph = "" //  ("\ue0bb") represents the "ple-forwardslash_separator" glyph.
+	ForwardslashSeparatorRedundant nf.Glyph = "" //  ("\ue0bd") represents the "ple-forwardslash_separator_redundant" glyph.
+	Honeycomb                      nf.Glyph = "" //  ("\ue0cc") represents the "ple-honeycomb" glyph.
+	HoneycombOutline               nf.Glyph = "" //  ("\ue0cd") represents the "ple-honeycomb_outline" glyph.
+	IceWaveform                    nf.Glyph = "" //  ("\ue0c8") represents the "ple-ice_waveform" glyph.
+	IceWaveformMirrored            nf.Glyph = "" //  ("\ue0ca") represents the "ple-ice_waveform_mirrored" glyph.
+	LeftHalfCircleThick            nf.Glyph = "" //  ("\ue0b6") represents the "ple-left_half_circle_thick" glyph.
+	LeftHalfCircleThin             nf.Glyph = "" //  ("\ue0b7") represents the "ple-left_half_circle_thin" glyph.
+	LeftHardDividerInverse         nf.Glyph = "" //  ("\ue0d7") represents the "ple-left_hard_divider_inverse" glyph.
+	LegoBlockFacing                nf.Glyph = "" //  ("\ue0d0") represents the "ple-lego_block_facing" glyph.
+	LegoBlockSideways              nf.Glyph = "" //  ("\ue0d1") represents the "ple-lego_block_sideways" glyph.
+	LegoSeparator                  nf.Glyph = "" //  ("\ue0ce") represents the "ple-lego_separator" glyph.
+	LegoSeparatorThin              nf.Glyph = "" //  ("\ue0cf") represents the "ple-lego_separator_thin" glyph.
+	LowerLeftTriangle              nf.Glyph = "" //  ("\ue0b8") represents the "ple-lower_left_triangle" glyph.
+	LowerRightTriangle             nf.Glyph = "" //  ("\ue0ba") represents the "ple-lower_right_triangle" glyph.
+	PixelatedSquaresBig            nf.Glyph = "" //  ("\ue0c6") represents the "ple-pixelated_squares_big" glyph.
+	PixelatedSquaresBigMirrored    nf.Glyph = "" //  ("\ue0c7") represents the "ple-pixelated_squares_big_mirrored" glyph.
+	PixelatedSquaresSmall          nf.Glyph = "" //  ("\ue0c4") represents the "ple-pixelated_squares_small" glyph.
+	PixelatedSquaresSmallMirrored  nf.Glyph = "" //  ("\ue0c5") represents the "ple-pixelated_squares_small_mirrored" glyph.
+	RightHalfCircleThick           nf.Glyph = "" //  ("\ue0b4") represents the "ple-right_half_circle_thick" glyph.
+	RightHalfCircleThin            nf.Glyph = "" //  ("\ue0b5") represents the "ple-right_half_circle_thin" glyph.
+	RightHardDividerInverse        nf.Glyph = "" //  ("\ue0d6") represents the "ple-right_hard_divider_inverse" glyph.
+	TrapezoidTopBottom             nf.Glyph = "" //  ("\ue0d2") represents the "ple-trapezoid_top_bottom" glyph.
+	TrapezoidTopBottomMirrored     nf.Glyph = "" //  ("\ue0d4") represents the "ple-trapezoid_top_bottom_mirrored" glyph.
+	UpperLeftTriangle              nf.Glyph = "" //  ("\ue0bc") represents the "ple-upper_left_triangle" glyph.
+	UpperRightTriangle             nf.Glyph = "" //  ("\ue0be") represents the "ple-upper_right_triangle" glyph.
+)

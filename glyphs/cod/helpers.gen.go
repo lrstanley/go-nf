@@ -8,1357 +8,487 @@ package cod
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Account,
-	ActivateBreakpoints,
-	Add,
-	Archive,
-	ArrowBoth,
-	ArrowCircleDown,
-	ArrowCircleLeft,
-	ArrowCircleRight,
-	ArrowCircleUp,
-	ArrowDown,
-	ArrowLeft,
-	ArrowRight,
-	ArrowSmallDown,
-	ArrowSmallLeft,
-	ArrowSmallRight,
-	ArrowSmallUp,
-	ArrowSwap,
-	ArrowUp,
-	Azure,
-	AzureDevops,
-	Beaker,
-	BeakerStop,
-	Bell,
-	BellDot,
-	BellSlash,
-	BellSlashDot,
-	Blank,
-	Bold,
-	Book,
-	Bookmark,
-	BracketDot,
-	BracketError,
-	Briefcase,
-	Broadcast,
-	Browser,
-	Bug,
-	Calendar,
-	CallIncoming,
-	CallOutgoing,
-	CaseSensitive,
-	Check,
-	CheckAll,
-	Checklist,
-	ChevronDown,
-	ChevronLeft,
-	ChevronRight,
-	ChevronUp,
-	Chip,
-	ChromeClose,
-	ChromeMaximize,
-	ChromeMinimize,
-	ChromeRestore,
-	Circle,
-	CircleFilled,
-	CircleLarge,
-	CircleLargeFilled,
-	CircleSlash,
-	CircleSmall,
-	CircleSmallFilled,
-	CircuitBoard,
-	ClearAll,
-	Clippy,
-	Close,
-	CloseAll,
-	Cloud,
-	CloudDownload,
-	CloudUpload,
-	Code,
-	Coffee,
-	CollapseAll,
-	ColorMode,
-	Combine,
-	Comment,
-	CommentDiscussion,
-	CommentDraft,
-	CommentUnresolved,
-	Compass,
-	CompassActive,
-	CompassDot,
-	Copilot,
-	Copy,
-	CreditCard,
-	Dash,
-	Dashboard,
-	Database,
-	Debug,
-	DebugAll,
-	DebugAlt,
-	DebugAltSmall,
-	DebugBreakpointConditional,
-	DebugBreakpointConditionalUnverified,
-	DebugBreakpointData,
-	DebugBreakpointDataUnverified,
-	DebugBreakpointFunction,
-	DebugBreakpointFunctionUnverified,
-	DebugBreakpointLog,
-	DebugBreakpointLogUnverified,
-	DebugBreakpointUnsupported,
-	DebugConsole,
-	DebugContinue,
-	DebugContinueSmall,
-	DebugCoverage,
-	DebugDisconnect,
-	DebugLineByLine,
-	DebugPause,
-	DebugRerun,
-	DebugRestart,
-	DebugRestartFrame,
-	DebugReverseContinue,
-	DebugStackframe,
-	DebugStackframeActive,
-	DebugStart,
-	DebugStepBack,
-	DebugStepInto,
-	DebugStepOut,
-	DebugStepOver,
-	DebugStop,
-	DesktopDownload,
-	DeviceCamera,
-	DeviceCameraVideo,
-	DeviceMobile,
-	Diff,
-	DiffAdded,
-	DiffIgnored,
-	DiffModified,
-	DiffRemoved,
-	DiffRenamed,
-	Discard,
-	Edit,
-	EditorLayout,
-	Ellipsis,
-	EmptyWindow,
-	Error,
-	ErrorSmall,
-	Exclude,
-	ExpandAll,
-	Export,
-	Extensions,
-	Eye,
-	EyeClosed,
-	Feedback,
-	File,
-	FileBinary,
-	FileCode,
-	FileMedia,
-	FilePdf,
-	FileSubmodule,
-	FileSymlinkDirectory,
-	FileSymlinkFile,
-	FileZip,
-	Files,
-	Filter,
-	FilterFilled,
-	Flame,
-	Fold,
-	FoldDown,
-	FoldUp,
-	Folder,
-	FolderActive,
-	FolderLibrary,
-	FolderOpened,
-	Game,
-	Gear,
-	Gift,
-	GistSecret,
-	GitCommit,
-	GitCompare,
-	GitFetch,
-	GitMerge,
-	GitPullRequest,
-	GitPullRequestClosed,
-	GitPullRequestCreate,
-	GitPullRequestDraft,
-	GitPullRequestGoToChanges,
-	GitPullRequestNewChanges,
-	Github,
-	GithubAction,
-	GithubAlt,
-	GithubInverted,
-	Globe,
-	GoToFile,
-	Grabber,
-	Graph,
-	GraphLeft,
-	GraphLine,
-	GraphScatter,
-	Gripper,
-	GroupByRefType,
-	Heart,
-	HeartFilled,
-	History,
-	Home,
-	HorizontalRule,
-	Hubot,
-	Inbox,
-	Indent,
-	Info,
-	Insert,
-	Inspect,
-	IssueDraft,
-	IssueReopened,
-	Issues,
-	Italic,
-	Jersey,
-	Json,
-	KebabVertical,
-	Key,
-	Law,
-	Layers,
-	LayersActive,
-	LayersDot,
-	Layout,
-	LayoutActivitybarLeft,
-	LayoutActivitybarRight,
-	LayoutCentered,
-	LayoutMenubar,
-	LayoutPanel,
-	LayoutPanelCenter,
-	LayoutPanelJustify,
-	LayoutPanelLeft,
-	LayoutPanelOff,
-	LayoutPanelRight,
-	LayoutSidebarLeft,
-	LayoutSidebarLeftOff,
-	LayoutSidebarRight,
-	LayoutSidebarRightOff,
-	LayoutStatusbar,
-	Library,
-	Lightbulb,
-	LightbulbAutofix,
-	Link,
-	LinkExternal,
-	ListFilter,
-	ListFlat,
-	ListOrdered,
-	ListSelection,
-	ListTree,
-	ListUnordered,
-	LiveShare,
-	Loading,
-	Location,
-	Lock,
-	LockSmall,
-	Magnet,
-	Mail,
-	MailRead,
-	Map,
-	MapFilled,
-	Markdown,
-	Megaphone,
-	Mention,
-	Menu,
-	Merge,
-	Mic,
-	MicFilled,
-	Milestone,
-	Mirror,
-	MortarBoard,
-	Move,
-	MultipleWindows,
-	Music,
-	Mute,
-	NewFile,
-	NewFolder,
-	Newline,
-	NoNewline,
-	Note,
-	Notebook,
-	NotebookTemplate,
-	Octoface,
-	OpenPreview,
-	Organization,
-	Output,
-	Package,
-	Paintcan,
-	Pass,
-	PassFilled,
-	Person,
-	PersonAdd,
-	Piano,
-	PieChart,
-	Pin,
-	Pinned,
-	PinnedDirty,
-	Play,
-	PlayCircle,
-	Plug,
-	PreserveCase,
-	Preview,
-	PrimitiveSquare,
-	Project,
-	Pulse,
-	Question,
-	Quote,
-	RadioTower,
-	Reactions,
-	Record,
-	RecordKeys,
-	RecordSmall,
-	Redo,
-	References,
-	Refresh,
-	Regex,
-	Remote,
-	RemoteExplorer,
-	Remove,
-	Replace,
-	ReplaceAll,
-	Reply,
-	Repo,
-	RepoClone,
-	RepoForcePush,
-	RepoForked,
-	RepoPull,
-	RepoPush,
-	Report,
-	RequestChanges,
-	Rocket,
-	RootFolder,
-	RootFolderOpened,
-	Rss,
-	Ruby,
-	RunAbove,
-	RunAll,
-	RunBelow,
-	RunErrors,
-	Save,
-	SaveAll,
-	SaveAs,
-	ScreenFull,
-	ScreenNormal,
-	Search,
-	SearchFuzzy,
-	SearchStop,
-	Send,
-	Server,
-	ServerEnvironment,
-	ServerProcess,
-	Settings,
-	SettingsGear,
-	Shield,
-	SignIn,
-	SignOut,
-	Smiley,
-	Snake,
-	SortPrecedence,
-	SourceControl,
-	Sparkle,
-	SplitHorizontal,
-	SplitVertical,
-	Squirrel,
-	StarEmpty,
-	StarFull,
-	StarHalf,
-	StopCircle,
-	SymbolArray,
-	SymbolBoolean,
-	SymbolClass,
-	SymbolColor,
-	SymbolConstant,
-	SymbolEnum,
-	SymbolEnumMember,
-	SymbolEvent,
-	SymbolField,
-	SymbolFile,
-	SymbolInterface,
-	SymbolKey,
-	SymbolKeyword,
-	SymbolMethod,
-	SymbolMisc,
-	SymbolNamespace,
-	SymbolNumeric,
-	SymbolOperator,
-	SymbolParameter,
-	SymbolProperty,
-	SymbolRuler,
-	SymbolSnippet,
-	SymbolString,
-	SymbolStructure,
-	SymbolVariable,
-	Sync,
-	SyncIgnored,
-	Table,
-	Tag,
-	Target,
-	Tasklist,
-	Telescope,
-	Terminal,
-	TerminalBash,
-	TerminalCmd,
-	TerminalDebian,
-	TerminalLinux,
-	TerminalPowershell,
-	TerminalTmux,
-	TerminalUbuntu,
-	TextSize,
-	ThreeBars,
-	Thumbsdown,
-	ThumbsdownFilled,
-	Thumbsup,
-	ThumbsupFilled,
-	Tools,
-	Trash,
-	TriangleDown,
-	TriangleLeft,
-	TriangleRight,
-	TriangleUp,
-	Twitter,
-	TypeHierarchy,
-	TypeHierarchySub,
-	TypeHierarchySuper,
-	Unfold,
-	UngroupByRefType,
-	Unlock,
-	Unmute,
-	Unverified,
-	VariableGroup,
-	Verified,
-	VerifiedFilled,
-	Versions,
-	Vm,
-	VmActive,
-	VmConnect,
-	VmOutline,
-	VmRunning,
-	Vr,
-	Wand,
-	Warning,
-	Watch,
-	Whitespace,
-	WholeWord,
-	Window,
-	WordWrap,
-	WorkspaceTrusted,
-	WorkspaceUnknown,
-	WorkspaceUntrusted,
-	ZoomIn,
-	ZoomOut,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the cod class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "account", "cod-account":
-		return Account
-	case "activate_breakpoints", "cod-activate_breakpoints":
-		return ActivateBreakpoints
-	case "add", "cod-add":
-		return Add
-	case "archive", "cod-archive":
-		return Archive
-	case "arrow_both", "cod-arrow_both":
-		return ArrowBoth
-	case "arrow_circle_down", "cod-arrow_circle_down":
-		return ArrowCircleDown
-	case "arrow_circle_left", "cod-arrow_circle_left":
-		return ArrowCircleLeft
-	case "arrow_circle_right", "cod-arrow_circle_right":
-		return ArrowCircleRight
-	case "arrow_circle_up", "cod-arrow_circle_up":
-		return ArrowCircleUp
-	case "arrow_down", "cod-arrow_down":
-		return ArrowDown
-	case "arrow_left", "cod-arrow_left":
-		return ArrowLeft
-	case "arrow_right", "cod-arrow_right":
-		return ArrowRight
-	case "arrow_small_down", "cod-arrow_small_down":
-		return ArrowSmallDown
-	case "arrow_small_left", "cod-arrow_small_left":
-		return ArrowSmallLeft
-	case "arrow_small_right", "cod-arrow_small_right":
-		return ArrowSmallRight
-	case "arrow_small_up", "cod-arrow_small_up":
-		return ArrowSmallUp
-	case "arrow_swap", "cod-arrow_swap":
-		return ArrowSwap
-	case "arrow_up", "cod-arrow_up":
-		return ArrowUp
-	case "azure", "cod-azure":
-		return Azure
-	case "azure_devops", "cod-azure_devops":
-		return AzureDevops
-	case "beaker", "cod-beaker":
-		return Beaker
-	case "beaker_stop", "cod-beaker_stop":
-		return BeakerStop
-	case "bell", "cod-bell":
-		return Bell
-	case "bell_dot", "cod-bell_dot":
-		return BellDot
-	case "bell_slash", "cod-bell_slash":
-		return BellSlash
-	case "bell_slash_dot", "cod-bell_slash_dot":
-		return BellSlashDot
-	case "blank", "cod-blank":
-		return Blank
-	case "bold", "cod-bold":
-		return Bold
-	case "book", "cod-book":
-		return Book
-	case "bookmark", "cod-bookmark":
-		return Bookmark
-	case "bracket_dot", "cod-bracket_dot":
-		return BracketDot
-	case "bracket_error", "cod-bracket_error":
-		return BracketError
-	case "briefcase", "cod-briefcase":
-		return Briefcase
-	case "broadcast", "cod-broadcast":
-		return Broadcast
-	case "browser", "cod-browser":
-		return Browser
-	case "bug", "cod-bug":
-		return Bug
-	case "calendar", "cod-calendar":
-		return Calendar
-	case "call_incoming", "cod-call_incoming":
-		return CallIncoming
-	case "call_outgoing", "cod-call_outgoing":
-		return CallOutgoing
-	case "case_sensitive", "cod-case_sensitive":
-		return CaseSensitive
-	case "check", "cod-check":
-		return Check
-	case "check_all", "cod-check_all":
-		return CheckAll
-	case "checklist", "cod-checklist":
-		return Checklist
-	case "chevron_down", "cod-chevron_down":
-		return ChevronDown
-	case "chevron_left", "cod-chevron_left":
-		return ChevronLeft
-	case "chevron_right", "cod-chevron_right":
-		return ChevronRight
-	case "chevron_up", "cod-chevron_up":
-		return ChevronUp
-	case "chip", "cod-chip":
-		return Chip
-	case "chrome_close", "cod-chrome_close":
-		return ChromeClose
-	case "chrome_maximize", "cod-chrome_maximize":
-		return ChromeMaximize
-	case "chrome_minimize", "cod-chrome_minimize":
-		return ChromeMinimize
-	case "chrome_restore", "cod-chrome_restore":
-		return ChromeRestore
-	case "circle", "cod-circle":
-		return Circle
-	case "circle_filled", "cod-circle_filled":
-		return CircleFilled
-	case "circle_large", "cod-circle_large":
-		return CircleLarge
-	case "circle_large_filled", "cod-circle_large_filled":
-		return CircleLargeFilled
-	case "circle_slash", "cod-circle_slash":
-		return CircleSlash
-	case "circle_small", "cod-circle_small":
-		return CircleSmall
-	case "circle_small_filled", "cod-circle_small_filled":
-		return CircleSmallFilled
-	case "circuit_board", "cod-circuit_board":
-		return CircuitBoard
-	case "clear_all", "cod-clear_all":
-		return ClearAll
-	case "clippy", "cod-clippy":
-		return Clippy
-	case "close", "cod-close":
-		return Close
-	case "close_all", "cod-close_all":
-		return CloseAll
-	case "cloud", "cod-cloud":
-		return Cloud
-	case "cloud_download", "cod-cloud_download":
-		return CloudDownload
-	case "cloud_upload", "cod-cloud_upload":
-		return CloudUpload
-	case "code", "cod-code":
-		return Code
-	case "coffee", "cod-coffee":
-		return Coffee
-	case "collapse_all", "cod-collapse_all":
-		return CollapseAll
-	case "color_mode", "cod-color_mode":
-		return ColorMode
-	case "combine", "cod-combine":
-		return Combine
-	case "comment", "cod-comment":
-		return Comment
-	case "comment_discussion", "cod-comment_discussion":
-		return CommentDiscussion
-	case "comment_draft", "cod-comment_draft":
-		return CommentDraft
-	case "comment_unresolved", "cod-comment_unresolved":
-		return CommentUnresolved
-	case "compass", "cod-compass":
-		return Compass
-	case "compass_active", "cod-compass_active":
-		return CompassActive
-	case "compass_dot", "cod-compass_dot":
-		return CompassDot
-	case "copilot", "cod-copilot":
-		return Copilot
-	case "copy", "cod-copy":
-		return Copy
-	case "credit_card", "cod-credit_card":
-		return CreditCard
-	case "dash", "cod-dash":
-		return Dash
-	case "dashboard", "cod-dashboard":
-		return Dashboard
-	case "database", "cod-database":
-		return Database
-	case "debug", "cod-debug":
-		return Debug
-	case "debug_all", "cod-debug_all":
-		return DebugAll
-	case "debug_alt", "cod-debug_alt":
-		return DebugAlt
-	case "debug_alt_small", "cod-debug_alt_small":
-		return DebugAltSmall
-	case "debug_breakpoint_conditional", "cod-debug_breakpoint_conditional":
-		return DebugBreakpointConditional
-	case "debug_breakpoint_conditional_unverified", "cod-debug_breakpoint_conditional_unverified":
-		return DebugBreakpointConditionalUnverified
-	case "debug_breakpoint_data", "cod-debug_breakpoint_data":
-		return DebugBreakpointData
-	case "debug_breakpoint_data_unverified", "cod-debug_breakpoint_data_unverified":
-		return DebugBreakpointDataUnverified
-	case "debug_breakpoint_function", "cod-debug_breakpoint_function":
-		return DebugBreakpointFunction
-	case "debug_breakpoint_function_unverified", "cod-debug_breakpoint_function_unverified":
-		return DebugBreakpointFunctionUnverified
-	case "debug_breakpoint_log", "cod-debug_breakpoint_log":
-		return DebugBreakpointLog
-	case "debug_breakpoint_log_unverified", "cod-debug_breakpoint_log_unverified":
-		return DebugBreakpointLogUnverified
-	case "debug_breakpoint_unsupported", "cod-debug_breakpoint_unsupported":
-		return DebugBreakpointUnsupported
-	case "debug_console", "cod-debug_console":
-		return DebugConsole
-	case "debug_continue", "cod-debug_continue":
-		return DebugContinue
-	case "debug_continue_small", "cod-debug_continue_small":
-		return DebugContinueSmall
-	case "debug_coverage", "cod-debug_coverage":
-		return DebugCoverage
-	case "debug_disconnect", "cod-debug_disconnect":
-		return DebugDisconnect
-	case "debug_line_by_line", "cod-debug_line_by_line":
-		return DebugLineByLine
-	case "debug_pause", "cod-debug_pause":
-		return DebugPause
-	case "debug_rerun", "cod-debug_rerun":
-		return DebugRerun
-	case "debug_restart", "cod-debug_restart":
-		return DebugRestart
-	case "debug_restart_frame", "cod-debug_restart_frame":
-		return DebugRestartFrame
-	case "debug_reverse_continue", "cod-debug_reverse_continue":
-		return DebugReverseContinue
-	case "debug_stackframe", "cod-debug_stackframe":
-		return DebugStackframe
-	case "debug_stackframe_active", "cod-debug_stackframe_active":
-		return DebugStackframeActive
-	case "debug_start", "cod-debug_start":
-		return DebugStart
-	case "debug_step_back", "cod-debug_step_back":
-		return DebugStepBack
-	case "debug_step_into", "cod-debug_step_into":
-		return DebugStepInto
-	case "debug_step_out", "cod-debug_step_out":
-		return DebugStepOut
-	case "debug_step_over", "cod-debug_step_over":
-		return DebugStepOver
-	case "debug_stop", "cod-debug_stop":
-		return DebugStop
-	case "desktop_download", "cod-desktop_download":
-		return DesktopDownload
-	case "device_camera", "cod-device_camera":
-		return DeviceCamera
-	case "device_camera_video", "cod-device_camera_video":
-		return DeviceCameraVideo
-	case "device_mobile", "cod-device_mobile":
-		return DeviceMobile
-	case "diff", "cod-diff":
-		return Diff
-	case "diff_added", "cod-diff_added":
-		return DiffAdded
-	case "diff_ignored", "cod-diff_ignored":
-		return DiffIgnored
-	case "diff_modified", "cod-diff_modified":
-		return DiffModified
-	case "diff_removed", "cod-diff_removed":
-		return DiffRemoved
-	case "diff_renamed", "cod-diff_renamed":
-		return DiffRenamed
-	case "discard", "cod-discard":
-		return Discard
-	case "edit", "cod-edit":
-		return Edit
-	case "editor_layout", "cod-editor_layout":
-		return EditorLayout
-	case "ellipsis", "cod-ellipsis":
-		return Ellipsis
-	case "empty_window", "cod-empty_window":
-		return EmptyWindow
-	case "error", "cod-error":
-		return Error
-	case "error_small", "cod-error_small":
-		return ErrorSmall
-	case "exclude", "cod-exclude":
-		return Exclude
-	case "expand_all", "cod-expand_all":
-		return ExpandAll
-	case "export", "cod-export":
-		return Export
-	case "extensions", "cod-extensions":
-		return Extensions
-	case "eye", "cod-eye":
-		return Eye
-	case "eye_closed", "cod-eye_closed":
-		return EyeClosed
-	case "feedback", "cod-feedback":
-		return Feedback
-	case "file", "cod-file":
-		return File
-	case "file_binary", "cod-file_binary":
-		return FileBinary
-	case "file_code", "cod-file_code":
-		return FileCode
-	case "file_media", "cod-file_media":
-		return FileMedia
-	case "file_pdf", "cod-file_pdf":
-		return FilePdf
-	case "file_submodule", "cod-file_submodule":
-		return FileSubmodule
-	case "file_symlink_directory", "cod-file_symlink_directory":
-		return FileSymlinkDirectory
-	case "file_symlink_file", "cod-file_symlink_file":
-		return FileSymlinkFile
-	case "file_zip", "cod-file_zip":
-		return FileZip
-	case "files", "cod-files":
-		return Files
-	case "filter", "cod-filter":
-		return Filter
-	case "filter_filled", "cod-filter_filled":
-		return FilterFilled
-	case "flame", "cod-flame":
-		return Flame
-	case "fold", "cod-fold":
-		return Fold
-	case "fold_down", "cod-fold_down":
-		return FoldDown
-	case "fold_up", "cod-fold_up":
-		return FoldUp
-	case "folder", "cod-folder":
-		return Folder
-	case "folder_active", "cod-folder_active":
-		return FolderActive
-	case "folder_library", "cod-folder_library":
-		return FolderLibrary
-	case "folder_opened", "cod-folder_opened":
-		return FolderOpened
-	case "game", "cod-game":
-		return Game
-	case "gear", "cod-gear":
-		return Gear
-	case "gift", "cod-gift":
-		return Gift
-	case "gist_secret", "cod-gist_secret":
-		return GistSecret
-	case "git_commit", "cod-git_commit":
-		return GitCommit
-	case "git_compare", "cod-git_compare":
-		return GitCompare
-	case "git_fetch", "cod-git_fetch":
-		return GitFetch
-	case "git_merge", "cod-git_merge":
-		return GitMerge
-	case "git_pull_request", "cod-git_pull_request":
-		return GitPullRequest
-	case "git_pull_request_closed", "cod-git_pull_request_closed":
-		return GitPullRequestClosed
-	case "git_pull_request_create", "cod-git_pull_request_create":
-		return GitPullRequestCreate
-	case "git_pull_request_draft", "cod-git_pull_request_draft":
-		return GitPullRequestDraft
-	case "git_pull_request_go_to_changes", "cod-git_pull_request_go_to_changes":
-		return GitPullRequestGoToChanges
-	case "git_pull_request_new_changes", "cod-git_pull_request_new_changes":
-		return GitPullRequestNewChanges
-	case "github", "cod-github":
-		return Github
-	case "github_action", "cod-github_action":
-		return GithubAction
-	case "github_alt", "cod-github_alt":
-		return GithubAlt
-	case "github_inverted", "cod-github_inverted":
-		return GithubInverted
-	case "globe", "cod-globe":
-		return Globe
-	case "go_to_file", "cod-go_to_file":
-		return GoToFile
-	case "grabber", "cod-grabber":
-		return Grabber
-	case "graph", "cod-graph":
-		return Graph
-	case "graph_left", "cod-graph_left":
-		return GraphLeft
-	case "graph_line", "cod-graph_line":
-		return GraphLine
-	case "graph_scatter", "cod-graph_scatter":
-		return GraphScatter
-	case "gripper", "cod-gripper":
-		return Gripper
-	case "group_by_ref_type", "cod-group_by_ref_type":
-		return GroupByRefType
-	case "heart", "cod-heart":
-		return Heart
-	case "heart_filled", "cod-heart_filled":
-		return HeartFilled
-	case "history", "cod-history":
-		return History
-	case "home", "cod-home":
-		return Home
-	case "horizontal_rule", "cod-horizontal_rule":
-		return HorizontalRule
-	case "hubot", "cod-hubot":
-		return Hubot
-	case "inbox", "cod-inbox":
-		return Inbox
-	case "indent", "cod-indent":
-		return Indent
-	case "info", "cod-info":
-		return Info
-	case "insert", "cod-insert":
-		return Insert
-	case "inspect", "cod-inspect":
-		return Inspect
-	case "issue_draft", "cod-issue_draft":
-		return IssueDraft
-	case "issue_reopened", "cod-issue_reopened":
-		return IssueReopened
-	case "issues", "cod-issues":
-		return Issues
-	case "italic", "cod-italic":
-		return Italic
-	case "jersey", "cod-jersey":
-		return Jersey
-	case "json", "cod-json":
-		return Json
-	case "kebab_vertical", "cod-kebab_vertical":
-		return KebabVertical
-	case "key", "cod-key":
-		return Key
-	case "law", "cod-law":
-		return Law
-	case "layers", "cod-layers":
-		return Layers
-	case "layers_active", "cod-layers_active":
-		return LayersActive
-	case "layers_dot", "cod-layers_dot":
-		return LayersDot
-	case "layout", "cod-layout":
-		return Layout
-	case "layout_activitybar_left", "cod-layout_activitybar_left":
-		return LayoutActivitybarLeft
-	case "layout_activitybar_right", "cod-layout_activitybar_right":
-		return LayoutActivitybarRight
-	case "layout_centered", "cod-layout_centered":
-		return LayoutCentered
-	case "layout_menubar", "cod-layout_menubar":
-		return LayoutMenubar
-	case "layout_panel", "cod-layout_panel":
-		return LayoutPanel
-	case "layout_panel_center", "cod-layout_panel_center":
-		return LayoutPanelCenter
-	case "layout_panel_justify", "cod-layout_panel_justify":
-		return LayoutPanelJustify
-	case "layout_panel_left", "cod-layout_panel_left":
-		return LayoutPanelLeft
-	case "layout_panel_off", "cod-layout_panel_off":
-		return LayoutPanelOff
-	case "layout_panel_right", "cod-layout_panel_right":
-		return LayoutPanelRight
-	case "layout_sidebar_left", "cod-layout_sidebar_left":
-		return LayoutSidebarLeft
-	case "layout_sidebar_left_off", "cod-layout_sidebar_left_off":
-		return LayoutSidebarLeftOff
-	case "layout_sidebar_right", "cod-layout_sidebar_right":
-		return LayoutSidebarRight
-	case "layout_sidebar_right_off", "cod-layout_sidebar_right_off":
-		return LayoutSidebarRightOff
-	case "layout_statusbar", "cod-layout_statusbar":
-		return LayoutStatusbar
-	case "library", "cod-library":
-		return Library
-	case "lightbulb", "cod-lightbulb":
-		return Lightbulb
-	case "lightbulb_autofix", "cod-lightbulb_autofix":
-		return LightbulbAutofix
-	case "link", "cod-link":
-		return Link
-	case "link_external", "cod-link_external":
-		return LinkExternal
-	case "list_filter", "cod-list_filter":
-		return ListFilter
-	case "list_flat", "cod-list_flat":
-		return ListFlat
-	case "list_ordered", "cod-list_ordered":
-		return ListOrdered
-	case "list_selection", "cod-list_selection":
-		return ListSelection
-	case "list_tree", "cod-list_tree":
-		return ListTree
-	case "list_unordered", "cod-list_unordered":
-		return ListUnordered
-	case "live_share", "cod-live_share":
-		return LiveShare
-	case "loading", "cod-loading":
-		return Loading
-	case "location", "cod-location":
-		return Location
-	case "lock", "cod-lock":
-		return Lock
-	case "lock_small", "cod-lock_small":
-		return LockSmall
-	case "magnet", "cod-magnet":
-		return Magnet
-	case "mail", "cod-mail":
-		return Mail
-	case "mail_read", "cod-mail_read":
-		return MailRead
-	case "map", "cod-map":
-		return Map
-	case "map_filled", "cod-map_filled":
-		return MapFilled
-	case "markdown", "cod-markdown":
-		return Markdown
-	case "megaphone", "cod-megaphone":
-		return Megaphone
-	case "mention", "cod-mention":
-		return Mention
-	case "menu", "cod-menu":
-		return Menu
-	case "merge", "cod-merge":
-		return Merge
-	case "mic", "cod-mic":
-		return Mic
-	case "mic_filled", "cod-mic_filled":
-		return MicFilled
-	case "milestone", "cod-milestone":
-		return Milestone
-	case "mirror", "cod-mirror":
-		return Mirror
-	case "mortar_board", "cod-mortar_board":
-		return MortarBoard
-	case "move", "cod-move":
-		return Move
-	case "multiple_windows", "cod-multiple_windows":
-		return MultipleWindows
-	case "music", "cod-music":
-		return Music
-	case "mute", "cod-mute":
-		return Mute
-	case "new_file", "cod-new_file":
-		return NewFile
-	case "new_folder", "cod-new_folder":
-		return NewFolder
-	case "newline", "cod-newline":
-		return Newline
-	case "no_newline", "cod-no_newline":
-		return NoNewline
-	case "note", "cod-note":
-		return Note
-	case "notebook", "cod-notebook":
-		return Notebook
-	case "notebook_template", "cod-notebook_template":
-		return NotebookTemplate
-	case "octoface", "cod-octoface":
-		return Octoface
-	case "open_preview", "cod-open_preview":
-		return OpenPreview
-	case "organization", "cod-organization":
-		return Organization
-	case "output", "cod-output":
-		return Output
-	case "package", "cod-package":
-		return Package
-	case "paintcan", "cod-paintcan":
-		return Paintcan
-	case "pass", "cod-pass":
-		return Pass
-	case "pass_filled", "cod-pass_filled":
-		return PassFilled
-	case "person", "cod-person":
-		return Person
-	case "person_add", "cod-person_add":
-		return PersonAdd
-	case "piano", "cod-piano":
-		return Piano
-	case "pie_chart", "cod-pie_chart":
-		return PieChart
-	case "pin", "cod-pin":
-		return Pin
-	case "pinned", "cod-pinned":
-		return Pinned
-	case "pinned_dirty", "cod-pinned_dirty":
-		return PinnedDirty
-	case "play", "cod-play":
-		return Play
-	case "play_circle", "cod-play_circle":
-		return PlayCircle
-	case "plug", "cod-plug":
-		return Plug
-	case "preserve_case", "cod-preserve_case":
-		return PreserveCase
-	case "preview", "cod-preview":
-		return Preview
-	case "primitive_square", "cod-primitive_square":
-		return PrimitiveSquare
-	case "project", "cod-project":
-		return Project
-	case "pulse", "cod-pulse":
-		return Pulse
-	case "question", "cod-question":
-		return Question
-	case "quote", "cod-quote":
-		return Quote
-	case "radio_tower", "cod-radio_tower":
-		return RadioTower
-	case "reactions", "cod-reactions":
-		return Reactions
-	case "record", "cod-record":
-		return Record
-	case "record_keys", "cod-record_keys":
-		return RecordKeys
-	case "record_small", "cod-record_small":
-		return RecordSmall
-	case "redo", "cod-redo":
-		return Redo
-	case "references", "cod-references":
-		return References
-	case "refresh", "cod-refresh":
-		return Refresh
-	case "regex", "cod-regex":
-		return Regex
-	case "remote", "cod-remote":
-		return Remote
-	case "remote_explorer", "cod-remote_explorer":
-		return RemoteExplorer
-	case "remove", "cod-remove":
-		return Remove
-	case "replace", "cod-replace":
-		return Replace
-	case "replace_all", "cod-replace_all":
-		return ReplaceAll
-	case "reply", "cod-reply":
-		return Reply
-	case "repo", "cod-repo":
-		return Repo
-	case "repo_clone", "cod-repo_clone":
-		return RepoClone
-	case "repo_force_push", "cod-repo_force_push":
-		return RepoForcePush
-	case "repo_forked", "cod-repo_forked":
-		return RepoForked
-	case "repo_pull", "cod-repo_pull":
-		return RepoPull
-	case "repo_push", "cod-repo_push":
-		return RepoPush
-	case "report", "cod-report":
-		return Report
-	case "request_changes", "cod-request_changes":
-		return RequestChanges
-	case "rocket", "cod-rocket":
-		return Rocket
-	case "root_folder", "cod-root_folder":
-		return RootFolder
-	case "root_folder_opened", "cod-root_folder_opened":
-		return RootFolderOpened
-	case "rss", "cod-rss":
-		return Rss
-	case "ruby", "cod-ruby":
-		return Ruby
-	case "run_above", "cod-run_above":
-		return RunAbove
-	case "run_all", "cod-run_all":
-		return RunAll
-	case "run_below", "cod-run_below":
-		return RunBelow
-	case "run_errors", "cod-run_errors":
-		return RunErrors
-	case "save", "cod-save":
-		return Save
-	case "save_all", "cod-save_all":
-		return SaveAll
-	case "save_as", "cod-save_as":
-		return SaveAs
-	case "screen_full", "cod-screen_full":
-		return ScreenFull
-	case "screen_normal", "cod-screen_normal":
-		return ScreenNormal
-	case "search", "cod-search":
-		return Search
-	case "search_fuzzy", "cod-search_fuzzy":
-		return SearchFuzzy
-	case "search_stop", "cod-search_stop":
-		return SearchStop
-	case "send", "cod-send":
-		return Send
-	case "server", "cod-server":
-		return Server
-	case "server_environment", "cod-server_environment":
-		return ServerEnvironment
-	case "server_process", "cod-server_process":
-		return ServerProcess
-	case "settings", "cod-settings":
-		return Settings
-	case "settings_gear", "cod-settings_gear":
-		return SettingsGear
-	case "shield", "cod-shield":
-		return Shield
-	case "sign_in", "cod-sign_in":
-		return SignIn
-	case "sign_out", "cod-sign_out":
-		return SignOut
-	case "smiley", "cod-smiley":
-		return Smiley
-	case "snake", "cod-snake":
-		return Snake
-	case "sort_precedence", "cod-sort_precedence":
-		return SortPrecedence
-	case "source_control", "cod-source_control":
-		return SourceControl
-	case "sparkle", "cod-sparkle":
-		return Sparkle
-	case "split_horizontal", "cod-split_horizontal":
-		return SplitHorizontal
-	case "split_vertical", "cod-split_vertical":
-		return SplitVertical
-	case "squirrel", "cod-squirrel":
-		return Squirrel
-	case "star_empty", "cod-star_empty":
-		return StarEmpty
-	case "star_full", "cod-star_full":
-		return StarFull
-	case "star_half", "cod-star_half":
-		return StarHalf
-	case "stop_circle", "cod-stop_circle":
-		return StopCircle
-	case "symbol_array", "cod-symbol_array":
-		return SymbolArray
-	case "symbol_boolean", "cod-symbol_boolean":
-		return SymbolBoolean
-	case "symbol_class", "cod-symbol_class":
-		return SymbolClass
-	case "symbol_color", "cod-symbol_color":
-		return SymbolColor
-	case "symbol_constant", "cod-symbol_constant":
-		return SymbolConstant
-	case "symbol_enum", "cod-symbol_enum":
-		return SymbolEnum
-	case "symbol_enum_member", "cod-symbol_enum_member":
-		return SymbolEnumMember
-	case "symbol_event", "cod-symbol_event":
-		return SymbolEvent
-	case "symbol_field", "cod-symbol_field":
-		return SymbolField
-	case "symbol_file", "cod-symbol_file":
-		return SymbolFile
-	case "symbol_interface", "cod-symbol_interface":
-		return SymbolInterface
-	case "symbol_key", "cod-symbol_key":
-		return SymbolKey
-	case "symbol_keyword", "cod-symbol_keyword":
-		return SymbolKeyword
-	case "symbol_method", "cod-symbol_method":
-		return SymbolMethod
-	case "symbol_misc", "cod-symbol_misc":
-		return SymbolMisc
-	case "symbol_namespace", "cod-symbol_namespace":
-		return SymbolNamespace
-	case "symbol_numeric", "cod-symbol_numeric":
-		return SymbolNumeric
-	case "symbol_operator", "cod-symbol_operator":
-		return SymbolOperator
-	case "symbol_parameter", "cod-symbol_parameter":
-		return SymbolParameter
-	case "symbol_property", "cod-symbol_property":
-		return SymbolProperty
-	case "symbol_ruler", "cod-symbol_ruler":
-		return SymbolRuler
-	case "symbol_snippet", "cod-symbol_snippet":
-		return SymbolSnippet
-	case "symbol_string", "cod-symbol_string":
-		return SymbolString
-	case "symbol_structure", "cod-symbol_structure":
-		return SymbolStructure
-	case "symbol_variable", "cod-symbol_variable":
-		return SymbolVariable
-	case "sync", "cod-sync":
-		return Sync
-	case "sync_ignored", "cod-sync_ignored":
-		return SyncIgnored
-	case "table", "cod-table":
-		return Table
-	case "tag", "cod-tag":
-		return Tag
-	case "target", "cod-target":
-		return Target
-	case "tasklist", "cod-tasklist":
-		return Tasklist
-	case "telescope", "cod-telescope":
-		return Telescope
-	case "terminal", "cod-terminal":
-		return Terminal
-	case "terminal_bash", "cod-terminal_bash":
-		return TerminalBash
-	case "terminal_cmd", "cod-terminal_cmd":
-		return TerminalCmd
-	case "terminal_debian", "cod-terminal_debian":
-		return TerminalDebian
-	case "terminal_linux", "cod-terminal_linux":
-		return TerminalLinux
-	case "terminal_powershell", "cod-terminal_powershell":
-		return TerminalPowershell
-	case "terminal_tmux", "cod-terminal_tmux":
-		return TerminalTmux
-	case "terminal_ubuntu", "cod-terminal_ubuntu":
-		return TerminalUbuntu
-	case "text_size", "cod-text_size":
-		return TextSize
-	case "three_bars", "cod-three_bars":
-		return ThreeBars
-	case "thumbsdown", "cod-thumbsdown":
-		return Thumbsdown
-	case "thumbsdown_filled", "cod-thumbsdown_filled":
-		return ThumbsdownFilled
-	case "thumbsup", "cod-thumbsup":
-		return Thumbsup
-	case "thumbsup_filled", "cod-thumbsup_filled":
-		return ThumbsupFilled
-	case "tools", "cod-tools":
-		return Tools
-	case "trash", "cod-trash":
-		return Trash
-	case "triangle_down", "cod-triangle_down":
-		return TriangleDown
-	case "triangle_left", "cod-triangle_left":
-		return TriangleLeft
-	case "triangle_right", "cod-triangle_right":
-		return TriangleRight
-	case "triangle_up", "cod-triangle_up":
-		return TriangleUp
-	case "twitter", "cod-twitter":
-		return Twitter
-	case "type_hierarchy", "cod-type_hierarchy":
-		return TypeHierarchy
-	case "type_hierarchy_sub", "cod-type_hierarchy_sub":
-		return TypeHierarchySub
-	case "type_hierarchy_super", "cod-type_hierarchy_super":
-		return TypeHierarchySuper
-	case "unfold", "cod-unfold":
-		return Unfold
-	case "ungroup_by_ref_type", "cod-ungroup_by_ref_type":
-		return UngroupByRefType
-	case "unlock", "cod-unlock":
-		return Unlock
-	case "unmute", "cod-unmute":
-		return Unmute
-	case "unverified", "cod-unverified":
-		return Unverified
-	case "variable_group", "cod-variable_group":
-		return VariableGroup
-	case "verified", "cod-verified":
-		return Verified
-	case "verified_filled", "cod-verified_filled":
-		return VerifiedFilled
-	case "versions", "cod-versions":
-		return Versions
-	case "vm", "cod-vm":
-		return Vm
-	case "vm_active", "cod-vm_active":
-		return VmActive
-	case "vm_connect", "cod-vm_connect":
-		return VmConnect
-	case "vm_outline", "cod-vm_outline":
-		return VmOutline
-	case "vm_running", "cod-vm_running":
-		return VmRunning
-	case "vr", "cod-vr":
-		return Vr
-	case "wand", "cod-wand":
-		return Wand
-	case "warning", "cod-warning":
-		return Warning
-	case "watch", "cod-watch":
-		return Watch
-	case "whitespace", "cod-whitespace":
-		return Whitespace
-	case "whole_word", "cod-whole_word":
-		return WholeWord
-	case "window", "cod-window":
-		return Window
-	case "word_wrap", "cod-word_wrap":
-		return WordWrap
-	case "workspace_trusted", "cod-workspace_trusted":
-		return WorkspaceTrusted
-	case "workspace_unknown", "cod-workspace_unknown":
-		return WorkspaceUnknown
-	case "workspace_untrusted", "cod-workspace_untrusted":
-		return WorkspaceUntrusted
-	case "zoom_in", "cod-zoom_in":
-		return ZoomIn
-	case "zoom_out", "cod-zoom_out":
-		return ZoomOut
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"account":                      Account,
+		"activate_breakpoints":         ActivateBreakpoints,
+		"add":                          Add,
+		"archive":                      Archive,
+		"arrow_both":                   ArrowBoth,
+		"arrow_circle_down":            ArrowCircleDown,
+		"arrow_circle_left":            ArrowCircleLeft,
+		"arrow_circle_right":           ArrowCircleRight,
+		"arrow_circle_up":              ArrowCircleUp,
+		"arrow_down":                   ArrowDown,
+		"arrow_left":                   ArrowLeft,
+		"arrow_right":                  ArrowRight,
+		"arrow_small_down":             ArrowSmallDown,
+		"arrow_small_left":             ArrowSmallLeft,
+		"arrow_small_right":            ArrowSmallRight,
+		"arrow_small_up":               ArrowSmallUp,
+		"arrow_swap":                   ArrowSwap,
+		"arrow_up":                     ArrowUp,
+		"azure":                        Azure,
+		"azure_devops":                 AzureDevops,
+		"beaker":                       Beaker,
+		"beaker_stop":                  BeakerStop,
+		"bell":                         Bell,
+		"bell_dot":                     BellDot,
+		"bell_slash":                   BellSlash,
+		"bell_slash_dot":               BellSlashDot,
+		"blank":                        Blank,
+		"bold":                         Bold,
+		"book":                         Book,
+		"bookmark":                     Bookmark,
+		"bracket_dot":                  BracketDot,
+		"bracket_error":                BracketError,
+		"briefcase":                    Briefcase,
+		"broadcast":                    Broadcast,
+		"browser":                      Browser,
+		"bug":                          Bug,
+		"calendar":                     Calendar,
+		"call_incoming":                CallIncoming,
+		"call_outgoing":                CallOutgoing,
+		"case_sensitive":               CaseSensitive,
+		"check":                        Check,
+		"check_all":                    CheckAll,
+		"checklist":                    Checklist,
+		"chevron_down":                 ChevronDown,
+		"chevron_left":                 ChevronLeft,
+		"chevron_right":                ChevronRight,
+		"chevron_up":                   ChevronUp,
+		"chip":                         Chip,
+		"chrome_close":                 ChromeClose,
+		"chrome_maximize":              ChromeMaximize,
+		"chrome_minimize":              ChromeMinimize,
+		"chrome_restore":               ChromeRestore,
+		"circle":                       Circle,
+		"circle_filled":                CircleFilled,
+		"circle_large":                 CircleLarge,
+		"circle_large_filled":          CircleLargeFilled,
+		"circle_slash":                 CircleSlash,
+		"circle_small":                 CircleSmall,
+		"circle_small_filled":          CircleSmallFilled,
+		"circuit_board":                CircuitBoard,
+		"clear_all":                    ClearAll,
+		"clippy":                       Clippy,
+		"close":                        Close,
+		"close_all":                    CloseAll,
+		"cloud":                        Cloud,
+		"cloud_download":               CloudDownload,
+		"cloud_upload":                 CloudUpload,
+		"code":                         Code,
+		"coffee":                       Coffee,
+		"collapse_all":                 CollapseAll,
+		"color_mode":                   ColorMode,
+		"combine":                      Combine,
+		"comment":                      Comment,
+		"comment_discussion":           CommentDiscussion,
+		"comment_draft":                CommentDraft,
+		"comment_unresolved":           CommentUnresolved,
+		"compass":                      Compass,
+		"compass_active":               CompassActive,
+		"compass_dot":                  CompassDot,
+		"copilot":                      Copilot,
+		"copy":                         Copy,
+		"credit_card":                  CreditCard,
+		"dash":                         Dash,
+		"dashboard":                    Dashboard,
+		"database":                     Database,
+		"debug":                        Debug,
+		"debug_all":                    DebugAll,
+		"debug_alt":                    DebugAlt,
+		"debug_alt_small":              DebugAltSmall,
+		"debug_breakpoint_conditional": DebugBreakpointConditional,
+		"debug_breakpoint_conditional_unverified": DebugBreakpointConditionalUnverified,
+		"debug_breakpoint_data":                   DebugBreakpointData,
+		"debug_breakpoint_data_unverified":        DebugBreakpointDataUnverified,
+		"debug_breakpoint_function":               DebugBreakpointFunction,
+		"debug_breakpoint_function_unverified":    DebugBreakpointFunctionUnverified,
+		"debug_breakpoint_log":                    DebugBreakpointLog,
+		"debug_breakpoint_log_unverified":         DebugBreakpointLogUnverified,
+		"debug_breakpoint_unsupported":            DebugBreakpointUnsupported,
+		"debug_console":                           DebugConsole,
+		"debug_continue":                          DebugContinue,
+		"debug_continue_small":                    DebugContinueSmall,
+		"debug_coverage":                          DebugCoverage,
+		"debug_disconnect":                        DebugDisconnect,
+		"debug_line_by_line":                      DebugLineByLine,
+		"debug_pause":                             DebugPause,
+		"debug_rerun":                             DebugRerun,
+		"debug_restart":                           DebugRestart,
+		"debug_restart_frame":                     DebugRestartFrame,
+		"debug_reverse_continue":                  DebugReverseContinue,
+		"debug_stackframe":                        DebugStackframe,
+		"debug_stackframe_active":                 DebugStackframeActive,
+		"debug_start":                             DebugStart,
+		"debug_step_back":                         DebugStepBack,
+		"debug_step_into":                         DebugStepInto,
+		"debug_step_out":                          DebugStepOut,
+		"debug_step_over":                         DebugStepOver,
+		"debug_stop":                              DebugStop,
+		"desktop_download":                        DesktopDownload,
+		"device_camera":                           DeviceCamera,
+		"device_camera_video":                     DeviceCameraVideo,
+		"device_mobile":                           DeviceMobile,
+		"diff":                                    Diff,
+		"diff_added":                              DiffAdded,
+		"diff_ignored":                            DiffIgnored,
+		"diff_modified":                           DiffModified,
+		"diff_removed":                            DiffRemoved,
+		"diff_renamed":                            DiffRenamed,
+		"discard":                                 Discard,
+		"edit":                                    Edit,
+		"editor_layout":                           EditorLayout,
+		"ellipsis":                                Ellipsis,
+		"empty_window":                            EmptyWindow,
+		"error":                                   Error,
+		"error_small":                             ErrorSmall,
+		"exclude":                                 Exclude,
+		"expand_all":                              ExpandAll,
+		"export":                                  Export,
+		"extensions":                              Extensions,
+		"eye":                                     Eye,
+		"eye_closed":                              EyeClosed,
+		"feedback":                                Feedback,
+		"file":                                    File,
+		"file_binary":                             FileBinary,
+		"file_code":                               FileCode,
+		"file_media":                              FileMedia,
+		"file_pdf":                                FilePdf,
+		"file_submodule":                          FileSubmodule,
+		"file_symlink_directory":                  FileSymlinkDirectory,
+		"file_symlink_file":                       FileSymlinkFile,
+		"file_zip":                                FileZip,
+		"files":                                   Files,
+		"filter":                                  Filter,
+		"filter_filled":                           FilterFilled,
+		"flame":                                   Flame,
+		"fold":                                    Fold,
+		"fold_down":                               FoldDown,
+		"fold_up":                                 FoldUp,
+		"folder":                                  Folder,
+		"folder_active":                           FolderActive,
+		"folder_library":                          FolderLibrary,
+		"folder_opened":                           FolderOpened,
+		"game":                                    Game,
+		"gear":                                    Gear,
+		"gift":                                    Gift,
+		"gist_secret":                             GistSecret,
+		"git_commit":                              GitCommit,
+		"git_compare":                             GitCompare,
+		"git_fetch":                               GitFetch,
+		"git_merge":                               GitMerge,
+		"git_pull_request":                        GitPullRequest,
+		"git_pull_request_closed":                 GitPullRequestClosed,
+		"git_pull_request_create":                 GitPullRequestCreate,
+		"git_pull_request_draft":                  GitPullRequestDraft,
+		"git_pull_request_go_to_changes":          GitPullRequestGoToChanges,
+		"git_pull_request_new_changes":            GitPullRequestNewChanges,
+		"github":                                  Github,
+		"github_action":                           GithubAction,
+		"github_alt":                              GithubAlt,
+		"github_inverted":                         GithubInverted,
+		"globe":                                   Globe,
+		"go_to_file":                              GoToFile,
+		"grabber":                                 Grabber,
+		"graph":                                   Graph,
+		"graph_left":                              GraphLeft,
+		"graph_line":                              GraphLine,
+		"graph_scatter":                           GraphScatter,
+		"gripper":                                 Gripper,
+		"group_by_ref_type":                       GroupByRefType,
+		"heart":                                   Heart,
+		"heart_filled":                            HeartFilled,
+		"history":                                 History,
+		"home":                                    Home,
+		"horizontal_rule":                         HorizontalRule,
+		"hubot":                                   Hubot,
+		"inbox":                                   Inbox,
+		"indent":                                  Indent,
+		"info":                                    Info,
+		"insert":                                  Insert,
+		"inspect":                                 Inspect,
+		"issue_draft":                             IssueDraft,
+		"issue_reopened":                          IssueReopened,
+		"issues":                                  Issues,
+		"italic":                                  Italic,
+		"jersey":                                  Jersey,
+		"json":                                    Json,
+		"kebab_vertical":                          KebabVertical,
+		"key":                                     Key,
+		"law":                                     Law,
+		"layers":                                  Layers,
+		"layers_active":                           LayersActive,
+		"layers_dot":                              LayersDot,
+		"layout":                                  Layout,
+		"layout_activitybar_left":                 LayoutActivitybarLeft,
+		"layout_activitybar_right":                LayoutActivitybarRight,
+		"layout_centered":                         LayoutCentered,
+		"layout_menubar":                          LayoutMenubar,
+		"layout_panel":                            LayoutPanel,
+		"layout_panel_center":                     LayoutPanelCenter,
+		"layout_panel_justify":                    LayoutPanelJustify,
+		"layout_panel_left":                       LayoutPanelLeft,
+		"layout_panel_off":                        LayoutPanelOff,
+		"layout_panel_right":                      LayoutPanelRight,
+		"layout_sidebar_left":                     LayoutSidebarLeft,
+		"layout_sidebar_left_off":                 LayoutSidebarLeftOff,
+		"layout_sidebar_right":                    LayoutSidebarRight,
+		"layout_sidebar_right_off":                LayoutSidebarRightOff,
+		"layout_statusbar":                        LayoutStatusbar,
+		"library":                                 Library,
+		"lightbulb":                               Lightbulb,
+		"lightbulb_autofix":                       LightbulbAutofix,
+		"link":                                    Link,
+		"link_external":                           LinkExternal,
+		"list_filter":                             ListFilter,
+		"list_flat":                               ListFlat,
+		"list_ordered":                            ListOrdered,
+		"list_selection":                          ListSelection,
+		"list_tree":                               ListTree,
+		"list_unordered":                          ListUnordered,
+		"live_share":                              LiveShare,
+		"loading":                                 Loading,
+		"location":                                Location,
+		"lock":                                    Lock,
+		"lock_small":                              LockSmall,
+		"magnet":                                  Magnet,
+		"mail":                                    Mail,
+		"mail_read":                               MailRead,
+		"map":                                     Map,
+		"map_filled":                              MapFilled,
+		"markdown":                                Markdown,
+		"megaphone":                               Megaphone,
+		"mention":                                 Mention,
+		"menu":                                    Menu,
+		"merge":                                   Merge,
+		"mic":                                     Mic,
+		"mic_filled":                              MicFilled,
+		"milestone":                               Milestone,
+		"mirror":                                  Mirror,
+		"mortar_board":                            MortarBoard,
+		"move":                                    Move,
+		"multiple_windows":                        MultipleWindows,
+		"music":                                   Music,
+		"mute":                                    Mute,
+		"new_file":                                NewFile,
+		"new_folder":                              NewFolder,
+		"newline":                                 Newline,
+		"no_newline":                              NoNewline,
+		"note":                                    Note,
+		"notebook":                                Notebook,
+		"notebook_template":                       NotebookTemplate,
+		"octoface":                                Octoface,
+		"open_preview":                            OpenPreview,
+		"organization":                            Organization,
+		"output":                                  Output,
+		"package":                                 Package,
+		"paintcan":                                Paintcan,
+		"pass":                                    Pass,
+		"pass_filled":                             PassFilled,
+		"person":                                  Person,
+		"person_add":                              PersonAdd,
+		"piano":                                   Piano,
+		"pie_chart":                               PieChart,
+		"pin":                                     Pin,
+		"pinned":                                  Pinned,
+		"pinned_dirty":                            PinnedDirty,
+		"play":                                    Play,
+		"play_circle":                             PlayCircle,
+		"plug":                                    Plug,
+		"preserve_case":                           PreserveCase,
+		"preview":                                 Preview,
+		"primitive_square":                        PrimitiveSquare,
+		"project":                                 Project,
+		"pulse":                                   Pulse,
+		"question":                                Question,
+		"quote":                                   Quote,
+		"radio_tower":                             RadioTower,
+		"reactions":                               Reactions,
+		"record":                                  Record,
+		"record_keys":                             RecordKeys,
+		"record_small":                            RecordSmall,
+		"redo":                                    Redo,
+		"references":                              References,
+		"refresh":                                 Refresh,
+		"regex":                                   Regex,
+		"remote":                                  Remote,
+		"remote_explorer":                         RemoteExplorer,
+		"remove":                                  Remove,
+		"replace":                                 Replace,
+		"replace_all":                             ReplaceAll,
+		"reply":                                   Reply,
+		"repo":                                    Repo,
+		"repo_clone":                              RepoClone,
+		"repo_force_push":                         RepoForcePush,
+		"repo_forked":                             RepoForked,
+		"repo_pull":                               RepoPull,
+		"repo_push":                               RepoPush,
+		"report":                                  Report,
+		"request_changes":                         RequestChanges,
+		"rocket":                                  Rocket,
+		"root_folder":                             RootFolder,
+		"root_folder_opened":                      RootFolderOpened,
+		"rss":                                     Rss,
+		"ruby":                                    Ruby,
+		"run_above":                               RunAbove,
+		"run_all":                                 RunAll,
+		"run_below":                               RunBelow,
+		"run_errors":                              RunErrors,
+		"save":                                    Save,
+		"save_all":                                SaveAll,
+		"save_as":                                 SaveAs,
+		"screen_full":                             ScreenFull,
+		"screen_normal":                           ScreenNormal,
+		"search":                                  Search,
+		"search_fuzzy":                            SearchFuzzy,
+		"search_stop":                             SearchStop,
+		"send":                                    Send,
+		"server":                                  Server,
+		"server_environment":                      ServerEnvironment,
+		"server_process":                          ServerProcess,
+		"settings":                                Settings,
+		"settings_gear":                           SettingsGear,
+		"shield":                                  Shield,
+		"sign_in":                                 SignIn,
+		"sign_out":                                SignOut,
+		"smiley":                                  Smiley,
+		"snake":                                   Snake,
+		"sort_precedence":                         SortPrecedence,
+		"source_control":                          SourceControl,
+		"sparkle":                                 Sparkle,
+		"split_horizontal":                        SplitHorizontal,
+		"split_vertical":                          SplitVertical,
+		"squirrel":                                Squirrel,
+		"star_empty":                              StarEmpty,
+		"star_full":                               StarFull,
+		"star_half":                               StarHalf,
+		"stop_circle":                             StopCircle,
+		"symbol_array":                            SymbolArray,
+		"symbol_boolean":                          SymbolBoolean,
+		"symbol_class":                            SymbolClass,
+		"symbol_color":                            SymbolColor,
+		"symbol_constant":                         SymbolConstant,
+		"symbol_enum":                             SymbolEnum,
+		"symbol_enum_member":                      SymbolEnumMember,
+		"symbol_event":                            SymbolEvent,
+		"symbol_field":                            SymbolField,
+		"symbol_file":                             SymbolFile,
+		"symbol_interface":                        SymbolInterface,
+		"symbol_key":                              SymbolKey,
+		"symbol_keyword":                          SymbolKeyword,
+		"symbol_method":                           SymbolMethod,
+		"symbol_misc":                             SymbolMisc,
+		"symbol_namespace":                        SymbolNamespace,
+		"symbol_numeric":                          SymbolNumeric,
+		"symbol_operator":                         SymbolOperator,
+		"symbol_parameter":                        SymbolParameter,
+		"symbol_property":                         SymbolProperty,
+		"symbol_ruler":                            SymbolRuler,
+		"symbol_snippet":                          SymbolSnippet,
+		"symbol_string":                           SymbolString,
+		"symbol_structure":                        SymbolStructure,
+		"symbol_variable":                         SymbolVariable,
+		"sync":                                    Sync,
+		"sync_ignored":                            SyncIgnored,
+		"table":                                   Table,
+		"tag":                                     Tag,
+		"target":                                  Target,
+		"tasklist":                                Tasklist,
+		"telescope":                               Telescope,
+		"terminal":                                Terminal,
+		"terminal_bash":                           TerminalBash,
+		"terminal_cmd":                            TerminalCmd,
+		"terminal_debian":                         TerminalDebian,
+		"terminal_linux":                          TerminalLinux,
+		"terminal_powershell":                     TerminalPowershell,
+		"terminal_tmux":                           TerminalTmux,
+		"terminal_ubuntu":                         TerminalUbuntu,
+		"text_size":                               TextSize,
+		"three_bars":                              ThreeBars,
+		"thumbsdown":                              Thumbsdown,
+		"thumbsdown_filled":                       ThumbsdownFilled,
+		"thumbsup":                                Thumbsup,
+		"thumbsup_filled":                         ThumbsupFilled,
+		"tools":                                   Tools,
+		"trash":                                   Trash,
+		"triangle_down":                           TriangleDown,
+		"triangle_left":                           TriangleLeft,
+		"triangle_right":                          TriangleRight,
+		"triangle_up":                             TriangleUp,
+		"twitter":                                 Twitter,
+		"type_hierarchy":                          TypeHierarchy,
+		"type_hierarchy_sub":                      TypeHierarchySub,
+		"type_hierarchy_super":                    TypeHierarchySuper,
+		"unfold":                                  Unfold,
+		"ungroup_by_ref_type":                     UngroupByRefType,
+		"unlock":                                  Unlock,
+		"unmute":                                  Unmute,
+		"unverified":                              Unverified,
+		"variable_group":                          VariableGroup,
+		"verified":                                Verified,
+		"verified_filled":                         VerifiedFilled,
+		"versions":                                Versions,
+		"vm":                                      Vm,
+		"vm_active":                               VmActive,
+		"vm_connect":                              VmConnect,
+		"vm_outline":                              VmOutline,
+		"vm_running":                              VmRunning,
+		"vr":                                      Vr,
+		"wand":                                    Wand,
+		"warning":                                 Warning,
+		"watch":                                   Watch,
+		"whitespace":                              Whitespace,
+		"whole_word":                              WholeWord,
+		"window":                                  Window,
+		"word_wrap":                               WordWrap,
+		"workspace_trusted":                       WorkspaceTrusted,
+		"workspace_unknown":                       WorkspaceUnknown,
+		"workspace_untrusted":                     WorkspaceUntrusted,
+		"zoom_in":                                 ZoomIn,
+		"zoom_out":                                ZoomOut,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the cod class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

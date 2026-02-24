@@ -8,58 +8,54 @@ package iec
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Power,
-	PowerOff,
-	PowerOn,
-	SleepMode,
-	TogglePower,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the iec class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "power", "iec-power":
-		return Power
-	case "power_off", "iec-power_off":
-		return PowerOff
-	case "power_on", "iec-power_on":
-		return PowerOn
-	case "sleep_mode", "iec-sleep_mode":
-		return SleepMode
-	case "toggle_power", "iec-toggle_power":
-		return TogglePower
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"power":        Power,
+		"power_off":    PowerOff,
+		"power_on":     PowerOn,
+		"sleep_mode":   SleepMode,
+		"toggle_power": TogglePower,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the iec class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

@@ -21,1345 +21,179 @@ package seti
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "seti"
+	// Class is the name of the class.
+	Class nf.Class = "seti"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Apple () represents the "seti-apple" glyph.
-var Apple = &nf.Glyph{
-	ID:      "apple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue635",
-}
-
-// Argdown () represents the "seti-argdown" glyph.
-var Argdown = &nf.Glyph{
-	ID:      "argdown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue636",
-}
-
-// Asm () represents the "seti-asm" glyph.
-var Asm = &nf.Glyph{
-	ID:      "asm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue637",
-}
-
-// Audio () represents the "seti-audio" glyph.
-var Audio = &nf.Glyph{
-	ID:      "audio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue638",
-}
-
-// Babel () represents the "seti-babel" glyph.
-var Babel = &nf.Glyph{
-	ID:      "babel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue639",
-}
-
-// Bazel () represents the "seti-bazel" glyph.
-var Bazel = &nf.Glyph{
-	ID:      "bazel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63a",
-}
-
-// Bicep () represents the "seti-bicep" glyph.
-var Bicep = &nf.Glyph{
-	ID:      "bicep",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63b",
-}
-
-// Bower () represents the "seti-bower" glyph.
-var Bower = &nf.Glyph{
-	ID:      "bower",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61a",
-}
-
-// Bsl () represents the "seti-bsl" glyph.
-var Bsl = &nf.Glyph{
-	ID:      "bsl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63c",
-}
-
-// C () represents the "seti-c" glyph.
-var C = &nf.Glyph{
-	ID:      "c",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue649",
-}
-
-// CSharp () represents the "seti-c_sharp" glyph.
-var CSharp = &nf.Glyph{
-	ID:      "c_sharp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue648",
-}
-
-// Cake () represents the "seti-cake" glyph.
-var Cake = &nf.Glyph{
-	ID:      "cake",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63e",
-}
-
-// CakePhp () represents the "seti-cake_php" glyph.
-var CakePhp = &nf.Glyph{
-	ID:      "cake_php",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63d",
-}
-
-// Checkbox () represents the "seti-checkbox" glyph.
-var Checkbox = &nf.Glyph{
-	ID:      "checkbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63f",
-}
-
-// CheckboxUnchecked () represents the "seti-checkbox_unchecked" glyph.
-var CheckboxUnchecked = &nf.Glyph{
-	ID:      "checkbox_unchecked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue640",
-}
-
-// Cjsx () represents the "seti-cjsx" glyph.
-var Cjsx = &nf.Glyph{
-	ID:      "cjsx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61b",
-}
-
-// Clock () represents the "seti-clock" glyph.
-var Clock = &nf.Glyph{
-	ID:      "clock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue641",
-}
-
-// Clojure () represents the "seti-clojure" glyph.
-var Clojure = &nf.Glyph{
-	ID:      "clojure",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue642",
-}
-
-// CodeClimate () represents the "seti-code_climate" glyph.
-var CodeClimate = &nf.Glyph{
-	ID:      "code_climate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue643",
-}
-
-// CodeSearch () represents the "seti-code_search" glyph.
-var CodeSearch = &nf.Glyph{
-	ID:      "code_search",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue644",
-}
-
-// Coffee () represents the "seti-coffee" glyph.
-var Coffee = &nf.Glyph{
-	ID:      "coffee",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61b",
-}
-
-// Coldfusion () represents the "seti-coldfusion" glyph.
-var Coldfusion = &nf.Glyph{
-	ID:      "coldfusion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue645",
-}
-
-// Config () represents the "seti-config" glyph.
-var Config = &nf.Glyph{
-	ID:      "config",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue615",
-}
-
-// Cpp () represents the "seti-cpp" glyph.
-var Cpp = &nf.Glyph{
-	ID:      "cpp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue646",
-}
-
-// Crystal () represents the "seti-crystal" glyph.
-var Crystal = &nf.Glyph{
-	ID:      "crystal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62f",
-}
-
-// CrystalEmbedded () represents the "seti-crystal_embedded" glyph.
-var CrystalEmbedded = &nf.Glyph{
-	ID:      "crystal_embedded",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue647",
-}
-
-// Css () represents the "seti-css" glyph.
-var Css = &nf.Glyph{
-	ID:      "css",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue614",
-}
-
-// Csv () represents the "seti-csv" glyph.
-var Csv = &nf.Glyph{
-	ID:      "csv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64a",
-}
-
-// Cu () represents the "seti-cu" glyph.
-var Cu = &nf.Glyph{
-	ID:      "cu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64b",
-}
-
-// D () represents the "seti-d" glyph.
-var D = &nf.Glyph{
-	ID:      "d",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue651",
-}
-
-// Dart () represents the "seti-dart" glyph.
-var Dart = &nf.Glyph{
-	ID:      "dart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64c",
-}
-
-// Db () represents the "seti-db" glyph.
-var Db = &nf.Glyph{
-	ID:      "db",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64d",
-}
-
-// Default () represents the "seti-default" glyph.
-var Default = &nf.Glyph{
-	ID:      "default",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64e",
-}
-
-// DeprecationCop () represents the "seti-deprecation_cop" glyph.
-var DeprecationCop = &nf.Glyph{
-	ID:      "deprecation_cop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64f",
-}
-
-// Docker () represents the "seti-docker" glyph.
-var Docker = &nf.Glyph{
-	ID:      "docker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue650",
-}
-
-// Editorconfig () represents the "seti-editorconfig" glyph.
-var Editorconfig = &nf.Glyph{
-	ID:      "editorconfig",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue652",
-}
-
-// Ejs () represents the "seti-ejs" glyph.
-var Ejs = &nf.Glyph{
-	ID:      "ejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue618",
-}
-
-// Elixir () represents the "seti-elixir" glyph.
-var Elixir = &nf.Glyph{
-	ID:      "elixir",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62d",
-}
-
-// ElixirScript () represents the "seti-elixir_script" glyph.
-var ElixirScript = &nf.Glyph{
-	ID:      "elixir_script",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue653",
-}
-
-// Elm () represents the "seti-elm" glyph.
-var Elm = &nf.Glyph{
-	ID:      "elm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62c",
-}
-
-// Error () represents the "seti-error" glyph.
-var Error = &nf.Glyph{
-	ID:      "error",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue654",
-}
-
-// Eslint () represents the "seti-eslint" glyph.
-var Eslint = &nf.Glyph{
-	ID:      "eslint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue655",
-}
-
-// Ethereum () represents the "seti-ethereum" glyph.
-var Ethereum = &nf.Glyph{
-	ID:      "ethereum",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue656",
-}
-
-// FSharp () represents the "seti-f_sharp" glyph.
-var FSharp = &nf.Glyph{
-	ID:      "f_sharp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65a",
-}
-
-// Favicon () represents the "seti-favicon" glyph.
-var Favicon = &nf.Glyph{
-	ID:      "favicon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue623",
-}
-
-// Firebase () represents the "seti-firebase" glyph.
-var Firebase = &nf.Glyph{
-	ID:      "firebase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue657",
-}
-
-// Firefox () represents the "seti-firefox" glyph.
-var Firefox = &nf.Glyph{
-	ID:      "firefox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue658",
-}
-
-// Folder () represents the "seti-folder" glyph.
-var Folder = &nf.Glyph{
-	ID:      "folder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue613",
-}
-
-// Font () represents the "seti-font" glyph.
-var Font = &nf.Glyph{
-	ID:      "font",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue659",
-}
-
-// Git () represents the "seti-git" glyph.
-var Git = &nf.Glyph{
-	ID:      "git",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65d",
-}
-
-// GitFolder () represents the "seti-git_folder" glyph.
-var GitFolder = &nf.Glyph{
-	ID:      "git_folder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65d",
-}
-
-// GitIgnore () represents the "seti-git_ignore" glyph.
-var GitIgnore = &nf.Glyph{
-	ID:      "git_ignore",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65d",
-}
-
-// Github () represents the "seti-github" glyph.
-var Github = &nf.Glyph{
-	ID:      "github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65b",
-}
-
-// Gitlab () represents the "seti-gitlab" glyph.
-var Gitlab = &nf.Glyph{
-	ID:      "gitlab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65c",
-}
-
-// Go () represents the "seti-go" glyph.
-var Go = &nf.Glyph{
-	ID:      "go",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue627",
-}
-
-// Go2 () represents the "seti-go2" glyph.
-var Go2 = &nf.Glyph{
-	ID:      "go2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65e",
-}
-
-// Godot () represents the "seti-godot" glyph.
-var Godot = &nf.Glyph{
-	ID:      "godot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue65f",
-}
-
-// Gradle () represents the "seti-gradle" glyph.
-var Gradle = &nf.Glyph{
-	ID:      "gradle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue660",
-}
-
-// Grails () represents the "seti-grails" glyph.
-var Grails = &nf.Glyph{
-	ID:      "grails",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue661",
-}
-
-// Graphql () represents the "seti-graphql" glyph.
-var Graphql = &nf.Glyph{
-	ID:      "graphql",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue662",
-}
-
-// Grunt () represents the "seti-grunt" glyph.
-var Grunt = &nf.Glyph{
-	ID:      "grunt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue611",
-}
-
-// Gulp () represents the "seti-gulp" glyph.
-var Gulp = &nf.Glyph{
-	ID:      "gulp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue610",
-}
-
-// Hacklang () represents the "seti-hacklang" glyph.
-var Hacklang = &nf.Glyph{
-	ID:      "hacklang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue663",
-}
-
-// Haml () represents the "seti-haml" glyph.
-var Haml = &nf.Glyph{
-	ID:      "haml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue664",
-}
-
-// Happenings () represents the "seti-happenings" glyph.
-var Happenings = &nf.Glyph{
-	ID:      "happenings",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue665",
-}
-
-// Haskell () represents the "seti-haskell" glyph.
-var Haskell = &nf.Glyph{
-	ID:      "haskell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61f",
-}
-
-// Haxe () represents the "seti-haxe" glyph.
-var Haxe = &nf.Glyph{
-	ID:      "haxe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue666",
-}
-
-// Heroku () represents the "seti-heroku" glyph.
-var Heroku = &nf.Glyph{
-	ID:      "heroku",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue607",
-}
-
-// Hex () represents the "seti-hex" glyph.
-var Hex = &nf.Glyph{
-	ID:      "hex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue667",
-}
-
-// Home () represents the "seti-home" glyph.
-var Home = &nf.Glyph{
-	ID:      "home",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue617",
-}
-
-// Html () represents the "seti-html" glyph.
-var Html = &nf.Glyph{
-	ID:      "html",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60e",
-}
-
-// Ignored () represents the "seti-ignored" glyph.
-var Ignored = &nf.Glyph{
-	ID:      "ignored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue668",
-}
-
-// Illustrator () represents the "seti-illustrator" glyph.
-var Illustrator = &nf.Glyph{
-	ID:      "illustrator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue669",
-}
-
-// Image () represents the "seti-image" glyph.
-var Image = &nf.Glyph{
-	ID:      "image",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60d",
-}
-
-// Info () represents the "seti-info" glyph.
-var Info = &nf.Glyph{
-	ID:      "info",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue66a",
-}
-
-// Ionic () represents the "seti-ionic" glyph.
-var Ionic = &nf.Glyph{
-	ID:      "ionic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue66b",
-}
-
-// Jade () represents the "seti-jade" glyph.
-var Jade = &nf.Glyph{
-	ID:      "jade",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue66c",
-}
-
-// Java () represents the "seti-java" glyph.
-var Java = &nf.Glyph{
-	ID:      "java",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue66d",
-}
-
-// Javascript () represents the "seti-javascript" glyph.
-var Javascript = &nf.Glyph{
-	ID:      "javascript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60c",
-}
-
-// Jenkins () represents the "seti-jenkins" glyph.
-var Jenkins = &nf.Glyph{
-	ID:      "jenkins",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue66e",
-}
-
-// Jinja () represents the "seti-jinja" glyph.
-var Jinja = &nf.Glyph{
-	ID:      "jinja",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue66f",
-}
-
-// Json () represents the "seti-json" glyph.
-var Json = &nf.Glyph{
-	ID:      "json",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60b",
-}
-
-// Julia () represents the "seti-julia" glyph.
-var Julia = &nf.Glyph{
-	ID:      "julia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue624",
-}
-
-// Karma () represents the "seti-karma" glyph.
-var Karma = &nf.Glyph{
-	ID:      "karma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue622",
-}
-
-// Kotlin () represents the "seti-kotlin" glyph.
-var Kotlin = &nf.Glyph{
-	ID:      "kotlin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue634",
-}
-
-// Less () represents the "seti-less" glyph.
-var Less = &nf.Glyph{
-	ID:      "less",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60b",
-}
-
-// License () represents the "seti-license" glyph.
-var License = &nf.Glyph{
-	ID:      "license",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60a",
-}
-
-// Liquid () represents the "seti-liquid" glyph.
-var Liquid = &nf.Glyph{
-	ID:      "liquid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue670",
-}
-
-// Livescript () represents the "seti-livescript" glyph.
-var Livescript = &nf.Glyph{
-	ID:      "livescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue671",
-}
-
-// Lock () represents the "seti-lock" glyph.
-var Lock = &nf.Glyph{
-	ID:      "lock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue672",
-}
-
-// Lua () represents the "seti-lua" glyph.
-var Lua = &nf.Glyph{
-	ID:      "lua",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue620",
-}
-
-// Makefile () represents the "seti-makefile" glyph.
-var Makefile = &nf.Glyph{
-	ID:      "makefile",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue673",
-}
-
-// Markdown () represents the "seti-markdown" glyph.
-var Markdown = &nf.Glyph{
-	ID:      "markdown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue609",
-}
-
-// Maven () represents the "seti-maven" glyph.
-var Maven = &nf.Glyph{
-	ID:      "maven",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue674",
-}
-
-// Mdo () represents the "seti-mdo" glyph.
-var Mdo = &nf.Glyph{
-	ID:      "mdo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue675",
-}
-
-// Mustache () represents the "seti-mustache" glyph.
-var Mustache = &nf.Glyph{
-	ID:      "mustache",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue60f",
-}
-
-// NewFile () represents the "seti-new_file" glyph.
-var NewFile = &nf.Glyph{
-	ID:      "new_file",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue676",
-}
-
-// Nim () represents the "seti-nim" glyph.
-var Nim = &nf.Glyph{
-	ID:      "nim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue677",
-}
-
-// Notebook () represents the "seti-notebook" glyph.
-var Notebook = &nf.Glyph{
-	ID:      "notebook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue678",
-}
-
-// Npm () represents the "seti-npm" glyph.
-var Npm = &nf.Glyph{
-	ID:      "npm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue616",
-}
-
-// NpmIgnored () represents the "seti-npm_ignored" glyph.
-var NpmIgnored = &nf.Glyph{
-	ID:      "npm_ignored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue616",
-}
-
-// Nunjucks () represents the "seti-nunjucks" glyph.
-var Nunjucks = &nf.Glyph{
-	ID:      "nunjucks",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue679",
-}
-
-// Ocaml () represents the "seti-ocaml" glyph.
-var Ocaml = &nf.Glyph{
-	ID:      "ocaml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue67a",
-}
-
-// Odata () represents the "seti-odata" glyph.
-var Odata = &nf.Glyph{
-	ID:      "odata",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue67b",
-}
-
-// Pddl () represents the "seti-pddl" glyph.
-var Pddl = &nf.Glyph{
-	ID:      "pddl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue67c",
-}
-
-// Pdf () represents the "seti-pdf" glyph.
-var Pdf = &nf.Glyph{
-	ID:      "pdf",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue67d",
-}
-
-// Perl () represents the "seti-perl" glyph.
-var Perl = &nf.Glyph{
-	ID:      "perl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue67e",
-}
-
-// Photoshop () represents the "seti-photoshop" glyph.
-var Photoshop = &nf.Glyph{
-	ID:      "photoshop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue67f",
-}
-
-// Php () represents the "seti-php" glyph.
-var Php = &nf.Glyph{
-	ID:      "php",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue608",
-}
-
-// Pipeline () represents the "seti-pipeline" glyph.
-var Pipeline = &nf.Glyph{
-	ID:      "pipeline",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue680",
-}
-
-// Plan () represents the "seti-plan" glyph.
-var Plan = &nf.Glyph{
-	ID:      "plan",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue681",
-}
-
-// Platformio () represents the "seti-platformio" glyph.
-var Platformio = &nf.Glyph{
-	ID:      "platformio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue682",
-}
-
-// PlayArrow () represents the "seti-play_arrow" glyph.
-var PlayArrow = &nf.Glyph{
-	ID:      "play_arrow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue602",
-}
-
-// Powershell () represents the "seti-powershell" glyph.
-var Powershell = &nf.Glyph{
-	ID:      "powershell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue683",
-}
-
-// Prisma () represents the "seti-prisma" glyph.
-var Prisma = &nf.Glyph{
-	ID:      "prisma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue684",
-}
-
-// Project () represents the "seti-project" glyph.
-var Project = &nf.Glyph{
-	ID:      "project",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue601",
-}
-
-// Prolog () represents the "seti-prolog" glyph.
-var Prolog = &nf.Glyph{
-	ID:      "prolog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue685",
-}
-
-// Pug () represents the "seti-pug" glyph.
-var Pug = &nf.Glyph{
-	ID:      "pug",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue686",
-}
-
-// Puppet () represents the "seti-puppet" glyph.
-var Puppet = &nf.Glyph{
-	ID:      "puppet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue631",
-}
-
-// Purescript () represents the "seti-purescript" glyph.
-var Purescript = &nf.Glyph{
-	ID:      "purescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue630",
-}
-
-// Python () represents the "seti-python" glyph.
-var Python = &nf.Glyph{
-	ID:      "python",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue606",
-}
-
-// R () represents the "seti-r" glyph.
-var R = &nf.Glyph{
-	ID:      "r",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue68a",
-}
-
-// Rails () represents the "seti-rails" glyph.
-var Rails = &nf.Glyph{
-	ID:      "rails",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue604",
-}
-
-// React () represents the "seti-react" glyph.
-var React = &nf.Glyph{
-	ID:      "react",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue625",
-}
-
-// Reasonml () represents the "seti-reasonml" glyph.
-var Reasonml = &nf.Glyph{
-	ID:      "reasonml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue687",
-}
-
-// Rescript () represents the "seti-rescript" glyph.
-var Rescript = &nf.Glyph{
-	ID:      "rescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue688",
-}
-
-// Rollup () represents the "seti-rollup" glyph.
-var Rollup = &nf.Glyph{
-	ID:      "rollup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue689",
-}
-
-// Ruby () represents the "seti-ruby" glyph.
-var Ruby = &nf.Glyph{
-	ID:      "ruby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue605",
-}
-
-// Rust () represents the "seti-rust" glyph.
-var Rust = &nf.Glyph{
-	ID:      "rust",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue68b",
-}
-
-// Salesforce () represents the "seti-salesforce" glyph.
-var Salesforce = &nf.Glyph{
-	ID:      "salesforce",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue68c",
-}
-
-// Sass () represents the "seti-sass" glyph.
-var Sass = &nf.Glyph{
-	ID:      "sass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue603",
-}
-
-// Sbt () represents the "seti-sbt" glyph.
-var Sbt = &nf.Glyph{
-	ID:      "sbt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue68d",
-}
-
-// Scala () represents the "seti-scala" glyph.
-var Scala = &nf.Glyph{
-	ID:      "scala",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue68e",
-}
-
-// Search () represents the "seti-search" glyph.
-var Search = &nf.Glyph{
-	ID:      "search",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue68f",
-}
-
-// Settings () represents the "seti-settings" glyph.
-var Settings = &nf.Glyph{
-	ID:      "settings",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue690",
-}
-
-// Shell () represents the "seti-shell" glyph.
-var Shell = &nf.Glyph{
-	ID:      "shell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue691",
-}
-
-// Slim () represents the "seti-slim" glyph.
-var Slim = &nf.Glyph{
-	ID:      "slim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue692",
-}
-
-// Smarty () represents the "seti-smarty" glyph.
-var Smarty = &nf.Glyph{
-	ID:      "smarty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue693",
-}
-
-// Spring () represents the "seti-spring" glyph.
-var Spring = &nf.Glyph{
-	ID:      "spring",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue694",
-}
-
-// Stylelint () represents the "seti-stylelint" glyph.
-var Stylelint = &nf.Glyph{
-	ID:      "stylelint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue695",
-}
-
-// Stylus () represents the "seti-stylus" glyph.
-var Stylus = &nf.Glyph{
-	ID:      "stylus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue600",
-}
-
-// Sublime () represents the "seti-sublime" glyph.
-var Sublime = &nf.Glyph{
-	ID:      "sublime",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue696",
-}
-
-// Svelte () represents the "seti-svelte" glyph.
-var Svelte = &nf.Glyph{
-	ID:      "svelte",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue697",
-}
-
-// Svg () represents the "seti-svg" glyph.
-var Svg = &nf.Glyph{
-	ID:      "svg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue698",
-}
-
-// Swift () represents the "seti-swift" glyph.
-var Swift = &nf.Glyph{
-	ID:      "swift",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue699",
-}
-
-// Terraform () represents the "seti-terraform" glyph.
-var Terraform = &nf.Glyph{
-	ID:      "terraform",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue69a",
-}
-
-// Tex () represents the "seti-tex" glyph.
-var Tex = &nf.Glyph{
-	ID:      "tex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue69b",
-}
-
-// Text () represents the "seti-text" glyph.
-var Text = &nf.Glyph{
-	ID:      "text",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue64e",
-}
-
-// TimeCop () represents the "seti-time_cop" glyph.
-var TimeCop = &nf.Glyph{
-	ID:      "time_cop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue641",
-}
-
-// Todo () represents the "seti-todo" glyph.
-var Todo = &nf.Glyph{
-	ID:      "todo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue69c",
-}
-
-// Tsconfig () represents the "seti-tsconfig" glyph.
-var Tsconfig = &nf.Glyph{
-	ID:      "tsconfig",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue69d",
-}
-
-// Twig () represents the "seti-twig" glyph.
-var Twig = &nf.Glyph{
-	ID:      "twig",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61c",
-}
-
-// Typescript () represents the "seti-typescript" glyph.
-var Typescript = &nf.Glyph{
-	ID:      "typescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue628",
-}
-
-// Vala () represents the "seti-vala" glyph.
-var Vala = &nf.Glyph{
-	ID:      "vala",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue69e",
-}
-
-// Video () represents the "seti-video" glyph.
-var Video = &nf.Glyph{
-	ID:      "video",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue69f",
-}
-
-// Vue () represents the "seti-vue" glyph.
-var Vue = &nf.Glyph{
-	ID:      "vue",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a0",
-}
-
-// Wasm () represents the "seti-wasm" glyph.
-var Wasm = &nf.Glyph{
-	ID:      "wasm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a1",
-}
-
-// Wat () represents the "seti-wat" glyph.
-var Wat = &nf.Glyph{
-	ID:      "wat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a2",
-}
-
-// Webpack () represents the "seti-webpack" glyph.
-var Webpack = &nf.Glyph{
-	ID:      "webpack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a3",
-}
-
-// Wgt () represents the "seti-wgt" glyph.
-var Wgt = &nf.Glyph{
-	ID:      "wgt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a4",
-}
-
-// Word () represents the "seti-word" glyph.
-var Word = &nf.Glyph{
-	ID:      "word",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a5",
-}
-
-// Xls () represents the "seti-xls" glyph.
-var Xls = &nf.Glyph{
-	ID:      "xls",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a6",
-}
-
-// Xml () represents the "seti-xml" glyph.
-var Xml = &nf.Glyph{
-	ID:      "xml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue619",
-}
-
-// Yarn () represents the "seti-yarn" glyph.
-var Yarn = &nf.Glyph{
-	ID:      "yarn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a7",
-}
-
-// Yml () represents the "seti-yml" glyph.
-var Yml = &nf.Glyph{
-	ID:      "yml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a8",
-}
-
-// Zig () represents the "seti-zig" glyph.
-var Zig = &nf.Glyph{
-	ID:      "zig",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6a9",
-}
-
-// Zip () represents the "seti-zip" glyph.
-var Zip = &nf.Glyph{
-	ID:      "zip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6aa",
-}
+const (
+	Apple             nf.Glyph = "" //  ("\ue635") represents the "seti-apple" glyph.
+	Argdown           nf.Glyph = "" //  ("\ue636") represents the "seti-argdown" glyph.
+	Asm               nf.Glyph = "" //  ("\ue637") represents the "seti-asm" glyph.
+	Audio             nf.Glyph = "" //  ("\ue638") represents the "seti-audio" glyph.
+	Babel             nf.Glyph = "" //  ("\ue639") represents the "seti-babel" glyph.
+	Bazel             nf.Glyph = "" //  ("\ue63a") represents the "seti-bazel" glyph.
+	Bicep             nf.Glyph = "" //  ("\ue63b") represents the "seti-bicep" glyph.
+	Bower             nf.Glyph = "" //  ("\ue61a") represents the "seti-bower" glyph.
+	Bsl               nf.Glyph = "" //  ("\ue63c") represents the "seti-bsl" glyph.
+	C                 nf.Glyph = "" //  ("\ue649") represents the "seti-c" glyph.
+	CSharp            nf.Glyph = "" //  ("\ue648") represents the "seti-c_sharp" glyph.
+	Cake              nf.Glyph = "" //  ("\ue63e") represents the "seti-cake" glyph.
+	CakePhp           nf.Glyph = "" //  ("\ue63d") represents the "seti-cake_php" glyph.
+	Checkbox          nf.Glyph = "" //  ("\ue63f") represents the "seti-checkbox" glyph.
+	CheckboxUnchecked nf.Glyph = "" //  ("\ue640") represents the "seti-checkbox_unchecked" glyph.
+	Cjsx              nf.Glyph = "" //  ("\ue61b") represents the "seti-cjsx" glyph.
+	Clock             nf.Glyph = "" //  ("\ue641") represents the "seti-clock" glyph.
+	Clojure           nf.Glyph = "" //  ("\ue642") represents the "seti-clojure" glyph.
+	CodeClimate       nf.Glyph = "" //  ("\ue643") represents the "seti-code_climate" glyph.
+	CodeSearch        nf.Glyph = "" //  ("\ue644") represents the "seti-code_search" glyph.
+	Coffee            nf.Glyph = "" //  ("\ue61b") represents the "seti-coffee" glyph.
+	Coldfusion        nf.Glyph = "" //  ("\ue645") represents the "seti-coldfusion" glyph.
+	Config            nf.Glyph = "" //  ("\ue615") represents the "seti-config" glyph.
+	Cpp               nf.Glyph = "" //  ("\ue646") represents the "seti-cpp" glyph.
+	Crystal           nf.Glyph = "" //  ("\ue62f") represents the "seti-crystal" glyph.
+	CrystalEmbedded   nf.Glyph = "" //  ("\ue647") represents the "seti-crystal_embedded" glyph.
+	Css               nf.Glyph = "" //  ("\ue614") represents the "seti-css" glyph.
+	Csv               nf.Glyph = "" //  ("\ue64a") represents the "seti-csv" glyph.
+	Cu                nf.Glyph = "" //  ("\ue64b") represents the "seti-cu" glyph.
+	D                 nf.Glyph = "" //  ("\ue651") represents the "seti-d" glyph.
+	Dart              nf.Glyph = "" //  ("\ue64c") represents the "seti-dart" glyph.
+	Db                nf.Glyph = "" //  ("\ue64d") represents the "seti-db" glyph.
+	Default           nf.Glyph = "" //  ("\ue64e") represents the "seti-default" glyph.
+	DeprecationCop    nf.Glyph = "" //  ("\ue64f") represents the "seti-deprecation_cop" glyph.
+	Docker            nf.Glyph = "" //  ("\ue650") represents the "seti-docker" glyph.
+	Editorconfig      nf.Glyph = "" //  ("\ue652") represents the "seti-editorconfig" glyph.
+	Ejs               nf.Glyph = "" //  ("\ue618") represents the "seti-ejs" glyph.
+	Elixir            nf.Glyph = "" //  ("\ue62d") represents the "seti-elixir" glyph.
+	ElixirScript      nf.Glyph = "" //  ("\ue653") represents the "seti-elixir_script" glyph.
+	Elm               nf.Glyph = "" //  ("\ue62c") represents the "seti-elm" glyph.
+	Error             nf.Glyph = "" //  ("\ue654") represents the "seti-error" glyph.
+	Eslint            nf.Glyph = "" //  ("\ue655") represents the "seti-eslint" glyph.
+	Ethereum          nf.Glyph = "" //  ("\ue656") represents the "seti-ethereum" glyph.
+	FSharp            nf.Glyph = "" //  ("\ue65a") represents the "seti-f_sharp" glyph.
+	Favicon           nf.Glyph = "" //  ("\ue623") represents the "seti-favicon" glyph.
+	Firebase          nf.Glyph = "" //  ("\ue657") represents the "seti-firebase" glyph.
+	Firefox           nf.Glyph = "" //  ("\ue658") represents the "seti-firefox" glyph.
+	Folder            nf.Glyph = "" //  ("\ue613") represents the "seti-folder" glyph.
+	Font              nf.Glyph = "" //  ("\ue659") represents the "seti-font" glyph.
+	Git               nf.Glyph = "" //  ("\ue65d") represents the "seti-git" glyph.
+	GitFolder         nf.Glyph = "" //  ("\ue65d") represents the "seti-git_folder" glyph.
+	GitIgnore         nf.Glyph = "" //  ("\ue65d") represents the "seti-git_ignore" glyph.
+	Github            nf.Glyph = "" //  ("\ue65b") represents the "seti-github" glyph.
+	Gitlab            nf.Glyph = "" //  ("\ue65c") represents the "seti-gitlab" glyph.
+	Go                nf.Glyph = "" //  ("\ue627") represents the "seti-go" glyph.
+	Go2               nf.Glyph = "" //  ("\ue65e") represents the "seti-go2" glyph.
+	Godot             nf.Glyph = "" //  ("\ue65f") represents the "seti-godot" glyph.
+	Gradle            nf.Glyph = "" //  ("\ue660") represents the "seti-gradle" glyph.
+	Grails            nf.Glyph = "" //  ("\ue661") represents the "seti-grails" glyph.
+	Graphql           nf.Glyph = "" //  ("\ue662") represents the "seti-graphql" glyph.
+	Grunt             nf.Glyph = "" //  ("\ue611") represents the "seti-grunt" glyph.
+	Gulp              nf.Glyph = "" //  ("\ue610") represents the "seti-gulp" glyph.
+	Hacklang          nf.Glyph = "" //  ("\ue663") represents the "seti-hacklang" glyph.
+	Haml              nf.Glyph = "" //  ("\ue664") represents the "seti-haml" glyph.
+	Happenings        nf.Glyph = "" //  ("\ue665") represents the "seti-happenings" glyph.
+	Haskell           nf.Glyph = "" //  ("\ue61f") represents the "seti-haskell" glyph.
+	Haxe              nf.Glyph = "" //  ("\ue666") represents the "seti-haxe" glyph.
+	Heroku            nf.Glyph = "" //  ("\ue607") represents the "seti-heroku" glyph.
+	Hex               nf.Glyph = "" //  ("\ue667") represents the "seti-hex" glyph.
+	Home              nf.Glyph = "" //  ("\ue617") represents the "seti-home" glyph.
+	Html              nf.Glyph = "" //  ("\ue60e") represents the "seti-html" glyph.
+	Ignored           nf.Glyph = "" //  ("\ue668") represents the "seti-ignored" glyph.
+	Illustrator       nf.Glyph = "" //  ("\ue669") represents the "seti-illustrator" glyph.
+	Image             nf.Glyph = "" //  ("\ue60d") represents the "seti-image" glyph.
+	Info              nf.Glyph = "" //  ("\ue66a") represents the "seti-info" glyph.
+	Ionic             nf.Glyph = "" //  ("\ue66b") represents the "seti-ionic" glyph.
+	Jade              nf.Glyph = "" //  ("\ue66c") represents the "seti-jade" glyph.
+	Java              nf.Glyph = "" //  ("\ue66d") represents the "seti-java" glyph.
+	Javascript        nf.Glyph = "" //  ("\ue60c") represents the "seti-javascript" glyph.
+	Jenkins           nf.Glyph = "" //  ("\ue66e") represents the "seti-jenkins" glyph.
+	Jinja             nf.Glyph = "" //  ("\ue66f") represents the "seti-jinja" glyph.
+	Json              nf.Glyph = "" //  ("\ue60b") represents the "seti-json" glyph.
+	Julia             nf.Glyph = "" //  ("\ue624") represents the "seti-julia" glyph.
+	Karma             nf.Glyph = "" //  ("\ue622") represents the "seti-karma" glyph.
+	Kotlin            nf.Glyph = "" //  ("\ue634") represents the "seti-kotlin" glyph.
+	Less              nf.Glyph = "" //  ("\ue60b") represents the "seti-less" glyph.
+	License           nf.Glyph = "" //  ("\ue60a") represents the "seti-license" glyph.
+	Liquid            nf.Glyph = "" //  ("\ue670") represents the "seti-liquid" glyph.
+	Livescript        nf.Glyph = "" //  ("\ue671") represents the "seti-livescript" glyph.
+	Lock              nf.Glyph = "" //  ("\ue672") represents the "seti-lock" glyph.
+	Lua               nf.Glyph = "" //  ("\ue620") represents the "seti-lua" glyph.
+	Makefile          nf.Glyph = "" //  ("\ue673") represents the "seti-makefile" glyph.
+	Markdown          nf.Glyph = "" //  ("\ue609") represents the "seti-markdown" glyph.
+	Maven             nf.Glyph = "" //  ("\ue674") represents the "seti-maven" glyph.
+	Mdo               nf.Glyph = "" //  ("\ue675") represents the "seti-mdo" glyph.
+	Mustache          nf.Glyph = "" //  ("\ue60f") represents the "seti-mustache" glyph.
+	NewFile           nf.Glyph = "" //  ("\ue676") represents the "seti-new_file" glyph.
+	Nim               nf.Glyph = "" //  ("\ue677") represents the "seti-nim" glyph.
+	Notebook          nf.Glyph = "" //  ("\ue678") represents the "seti-notebook" glyph.
+	Npm               nf.Glyph = "" //  ("\ue616") represents the "seti-npm" glyph.
+	NpmIgnored        nf.Glyph = "" //  ("\ue616") represents the "seti-npm_ignored" glyph.
+	Nunjucks          nf.Glyph = "" //  ("\ue679") represents the "seti-nunjucks" glyph.
+	Ocaml             nf.Glyph = "" //  ("\ue67a") represents the "seti-ocaml" glyph.
+	Odata             nf.Glyph = "" //  ("\ue67b") represents the "seti-odata" glyph.
+	Pddl              nf.Glyph = "" //  ("\ue67c") represents the "seti-pddl" glyph.
+	Pdf               nf.Glyph = "" //  ("\ue67d") represents the "seti-pdf" glyph.
+	Perl              nf.Glyph = "" //  ("\ue67e") represents the "seti-perl" glyph.
+	Photoshop         nf.Glyph = "" //  ("\ue67f") represents the "seti-photoshop" glyph.
+	Php               nf.Glyph = "" //  ("\ue608") represents the "seti-php" glyph.
+	Pipeline          nf.Glyph = "" //  ("\ue680") represents the "seti-pipeline" glyph.
+	Plan              nf.Glyph = "" //  ("\ue681") represents the "seti-plan" glyph.
+	Platformio        nf.Glyph = "" //  ("\ue682") represents the "seti-platformio" glyph.
+	PlayArrow         nf.Glyph = "" //  ("\ue602") represents the "seti-play_arrow" glyph.
+	Powershell        nf.Glyph = "" //  ("\ue683") represents the "seti-powershell" glyph.
+	Prisma            nf.Glyph = "" //  ("\ue684") represents the "seti-prisma" glyph.
+	Project           nf.Glyph = "" //  ("\ue601") represents the "seti-project" glyph.
+	Prolog            nf.Glyph = "" //  ("\ue685") represents the "seti-prolog" glyph.
+	Pug               nf.Glyph = "" //  ("\ue686") represents the "seti-pug" glyph.
+	Puppet            nf.Glyph = "" //  ("\ue631") represents the "seti-puppet" glyph.
+	Purescript        nf.Glyph = "" //  ("\ue630") represents the "seti-purescript" glyph.
+	Python            nf.Glyph = "" //  ("\ue606") represents the "seti-python" glyph.
+	R                 nf.Glyph = "" //  ("\ue68a") represents the "seti-r" glyph.
+	Rails             nf.Glyph = "" //  ("\ue604") represents the "seti-rails" glyph.
+	React             nf.Glyph = "" //  ("\ue625") represents the "seti-react" glyph.
+	Reasonml          nf.Glyph = "" //  ("\ue687") represents the "seti-reasonml" glyph.
+	Rescript          nf.Glyph = "" //  ("\ue688") represents the "seti-rescript" glyph.
+	Rollup            nf.Glyph = "" //  ("\ue689") represents the "seti-rollup" glyph.
+	Ruby              nf.Glyph = "" //  ("\ue605") represents the "seti-ruby" glyph.
+	Rust              nf.Glyph = "" //  ("\ue68b") represents the "seti-rust" glyph.
+	Salesforce        nf.Glyph = "" //  ("\ue68c") represents the "seti-salesforce" glyph.
+	Sass              nf.Glyph = "" //  ("\ue603") represents the "seti-sass" glyph.
+	Sbt               nf.Glyph = "" //  ("\ue68d") represents the "seti-sbt" glyph.
+	Scala             nf.Glyph = "" //  ("\ue68e") represents the "seti-scala" glyph.
+	Search            nf.Glyph = "" //  ("\ue68f") represents the "seti-search" glyph.
+	Settings          nf.Glyph = "" //  ("\ue690") represents the "seti-settings" glyph.
+	Shell             nf.Glyph = "" //  ("\ue691") represents the "seti-shell" glyph.
+	Slim              nf.Glyph = "" //  ("\ue692") represents the "seti-slim" glyph.
+	Smarty            nf.Glyph = "" //  ("\ue693") represents the "seti-smarty" glyph.
+	Spring            nf.Glyph = "" //  ("\ue694") represents the "seti-spring" glyph.
+	Stylelint         nf.Glyph = "" //  ("\ue695") represents the "seti-stylelint" glyph.
+	Stylus            nf.Glyph = "" //  ("\ue600") represents the "seti-stylus" glyph.
+	Sublime           nf.Glyph = "" //  ("\ue696") represents the "seti-sublime" glyph.
+	Svelte            nf.Glyph = "" //  ("\ue697") represents the "seti-svelte" glyph.
+	Svg               nf.Glyph = "" //  ("\ue698") represents the "seti-svg" glyph.
+	Swift             nf.Glyph = "" //  ("\ue699") represents the "seti-swift" glyph.
+	Terraform         nf.Glyph = "" //  ("\ue69a") represents the "seti-terraform" glyph.
+	Tex               nf.Glyph = "" //  ("\ue69b") represents the "seti-tex" glyph.
+	Text              nf.Glyph = "" //  ("\ue64e") represents the "seti-text" glyph.
+	TimeCop           nf.Glyph = "" //  ("\ue641") represents the "seti-time_cop" glyph.
+	Todo              nf.Glyph = "" //  ("\ue69c") represents the "seti-todo" glyph.
+	Tsconfig          nf.Glyph = "" //  ("\ue69d") represents the "seti-tsconfig" glyph.
+	Twig              nf.Glyph = "" //  ("\ue61c") represents the "seti-twig" glyph.
+	Typescript        nf.Glyph = "" //  ("\ue628") represents the "seti-typescript" glyph.
+	Vala              nf.Glyph = "" //  ("\ue69e") represents the "seti-vala" glyph.
+	Video             nf.Glyph = "" //  ("\ue69f") represents the "seti-video" glyph.
+	Vue               nf.Glyph = "" //  ("\ue6a0") represents the "seti-vue" glyph.
+	Wasm              nf.Glyph = "" //  ("\ue6a1") represents the "seti-wasm" glyph.
+	Wat               nf.Glyph = "" //  ("\ue6a2") represents the "seti-wat" glyph.
+	Webpack           nf.Glyph = "" //  ("\ue6a3") represents the "seti-webpack" glyph.
+	Wgt               nf.Glyph = "" //  ("\ue6a4") represents the "seti-wgt" glyph.
+	Word              nf.Glyph = "" //  ("\ue6a5") represents the "seti-word" glyph.
+	Xls               nf.Glyph = "" //  ("\ue6a6") represents the "seti-xls" glyph.
+	Xml               nf.Glyph = "" //  ("\ue619") represents the "seti-xml" glyph.
+	Yarn              nf.Glyph = "" //  ("\ue6a7") represents the "seti-yarn" glyph.
+	Yml               nf.Glyph = "" //  ("\ue6a8") represents the "seti-yml" glyph.
+	Zig               nf.Glyph = "" //  ("\ue6a9") represents the "seti-zig" glyph.
+	Zip               nf.Glyph = "" //  ("\ue6aa") represents the "seti-zip" glyph.
+)

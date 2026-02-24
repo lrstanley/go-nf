@@ -8,79 +8,61 @@ package extra
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	ProgressEmptyLeft,
-	ProgressEmptyMid,
-	ProgressEmptyRight,
-	ProgressFullLeft,
-	ProgressFullMid,
-	ProgressFullRight,
-	ProgressSpinner1,
-	ProgressSpinner2,
-	ProgressSpinner3,
-	ProgressSpinner4,
-	ProgressSpinner5,
-	ProgressSpinner6,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the extra class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "progress_empty_left", "extra-progress_empty_left":
-		return ProgressEmptyLeft
-	case "progress_empty_mid", "extra-progress_empty_mid":
-		return ProgressEmptyMid
-	case "progress_empty_right", "extra-progress_empty_right":
-		return ProgressEmptyRight
-	case "progress_full_left", "extra-progress_full_left":
-		return ProgressFullLeft
-	case "progress_full_mid", "extra-progress_full_mid":
-		return ProgressFullMid
-	case "progress_full_right", "extra-progress_full_right":
-		return ProgressFullRight
-	case "progress_spinner_1", "extra-progress_spinner_1":
-		return ProgressSpinner1
-	case "progress_spinner_2", "extra-progress_spinner_2":
-		return ProgressSpinner2
-	case "progress_spinner_3", "extra-progress_spinner_3":
-		return ProgressSpinner3
-	case "progress_spinner_4", "extra-progress_spinner_4":
-		return ProgressSpinner4
-	case "progress_spinner_5", "extra-progress_spinner_5":
-		return ProgressSpinner5
-	case "progress_spinner_6", "extra-progress_spinner_6":
-		return ProgressSpinner6
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"progress_empty_left":  ProgressEmptyLeft,
+		"progress_empty_mid":   ProgressEmptyMid,
+		"progress_empty_right": ProgressEmptyRight,
+		"progress_full_left":   ProgressFullLeft,
+		"progress_full_mid":    ProgressFullMid,
+		"progress_full_right":  ProgressFullRight,
+		"progress_spinner_1":   ProgressSpinner1,
+		"progress_spinner_2":   ProgressSpinner2,
+		"progress_spinner_3":   ProgressSpinner3,
+		"progress_spinner_4":   ProgressSpinner4,
+		"progress_spinner_5":   ProgressSpinner5,
+		"progress_spinner_6":   ProgressSpinner6,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the extra class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

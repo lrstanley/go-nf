@@ -1,0 +1,119 @@
+{{ header }}
+
+package all
+
+import (
+    "slices"
+    "testing"
+
+    {{ .PackageName | quote }}
+)
+
+const (
+    glyphCount = {{ len .Glyphs }}
+    classCount = {{ len .Classes }}
+)
+
+func TestClasses(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(Classes())
+
+    if len(results) != classCount {
+        t.Errorf("expected %d classes (from classCount), got %d", classCount, len(results))
+    }
+
+    if len(results) == 0 {
+        t.Errorf("expected at least one class, got %d", len(results))
+    }
+
+    {{- range $class := .Classes }}
+    if !slices.Contains(results, {{ $class | quote}}) {
+        t.Errorf("expected class %q, got %q", {{ $class | quote}}, results)
+    }
+    {{- end }}
+}
+
+func TestAllGlyphs(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(Glyphs())
+
+    if len(results) != glyphCount {
+        t.Errorf("expected %d glyphs (from codegen), got %d", glyphCount, len(results))
+    }
+
+    if len(results) == 0 {
+        t.Errorf("expected at least one glyph, got %d", len(results))
+    }
+
+    for _, glyph := range results {
+        if glyph == "" {
+            t.Errorf("expected non-empty glyph, got %q", glyph)
+        }
+    }
+}
+
+func TestByClass(t *testing.T) {
+    t.Parallel()
+
+    for class := range Classes() {
+        results := slices.Collect(ByClass(class))
+        if len(results) == 0 {
+            t.Errorf("expected at least one glyph for class %q, got %d", class, len(results))
+        }
+    }
+
+    if c := len(slices.Collect(ByClass("nonexistent"))); c != 0 {
+        t.Errorf("expected empty iterator for nonexistent class, got %d", c)
+    }
+}
+
+func TestByID(t *testing.T) {
+    t.Parallel()
+
+    for class := range Classes() {
+        for gid := range GlyphIDsByClass(class) {
+            if glyph := ByID(gid); glyph == "" {
+                t.Errorf("expected glyph for ID %q, got empty string", gid)
+            }
+            if glyph := ByID(string(class) + "-" + gid); glyph == "" {
+                t.Errorf("expected glyph for ID %q, got empty string", string(class) + "-" + gid)
+            }
+        }
+    }
+
+    if c := len(slices.Collect(GlyphIDsByClass(nf.Class("nonexistent")))); c != 0 {
+        t.Errorf("expected empty iterator for nonexistent class, got %d", c)
+    }
+}
+
+func TestGlyphIDs(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(GlyphIDs())
+    if len(results) != glyphCount {
+        t.Errorf("expected %d glyph IDs (from codegen), got %d", glyphCount, len(results))
+    }
+}
+
+func TestGlyphFullIDs(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(GlyphFullIDs())
+    if len(results) != glyphCount {
+        t.Errorf("expected %d glyph full IDs (from codegen), got %d", glyphCount, len(results))
+    }
+
+    for class := range Classes() {
+        for fid := range GlyphFullIDsByClass(class) {
+            if glyph := ByID(fid); glyph == "" {
+                t.Errorf("expected glyph for full ID %q, got empty string", fid)
+            }
+        }
+    }
+
+    if c := len(slices.Collect(GlyphFullIDsByClass("nonexistent"))); c != 0 {
+        t.Errorf("expected empty iterator for nonexistent class, got %d", c)
+    }
+}

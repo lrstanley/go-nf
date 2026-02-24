@@ -21,14545 +21,1829 @@ package fa
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "fa"
+	// Class is the name of the class.
+	Class nf.Class = "fa"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Glyph500Px () represents the "fa-500px" glyph.
-var Glyph500Px = &nf.Glyph{
-	ID:      "500px",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26e",
-}
-
-// AccessibleIcon () represents the "fa-accessible_icon" glyph.
-var AccessibleIcon = &nf.Glyph{
-	ID:      "accessible_icon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29b",
-}
-
-// Accusoft () represents the "fa-accusoft" glyph.
-var Accusoft = &nf.Glyph{
-	ID:      "accusoft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b7",
-}
-
-// AddressBook () represents the "fa-address_book" glyph.
-var AddressBook = &nf.Glyph{
-	ID:      "address_book",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b9",
-}
-
-// AddressBookO () represents the "fa-address_book_o" glyph.
-var AddressBookO = &nf.Glyph{
-	ID:      "address_book_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ba",
-}
-
-// AddressCard () represents the "fa-address_card" glyph.
-var AddressCard = &nf.Glyph{
-	ID:      "address_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bb",
-}
-
-// AddressCardO () represents the "fa-address_card_o" glyph.
-var AddressCardO = &nf.Glyph{
-	ID:      "address_card_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bc",
-}
-
-// Adjust () represents the "fa-adjust" glyph.
-var Adjust = &nf.Glyph{
-	ID:      "adjust",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf042",
-}
-
-// Adn () represents the "fa-adn" glyph.
-var Adn = &nf.Glyph{
-	ID:      "adn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf170",
-}
-
-// Adversal () represents the "fa-adversal" glyph.
-var Adversal = &nf.Glyph{
-	ID:      "adversal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b8",
-}
-
-// Affiliatetheme () represents the "fa-affiliatetheme" glyph.
-var Affiliatetheme = &nf.Glyph{
-	ID:      "affiliatetheme",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b9",
-}
-
-// Airbnb () represents the "fa-airbnb" glyph.
-var Airbnb = &nf.Glyph{
-	ID:      "airbnb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef93",
-}
-
-// Algolia () represents the "fa-algolia" glyph.
-var Algolia = &nf.Glyph{
-	ID:      "algolia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ba",
-}
-
-// AlignCenter () represents the "fa-align_center" glyph.
-var AlignCenter = &nf.Glyph{
-	ID:      "align_center",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf037",
-}
-
-// AlignJustify () represents the "fa-align_justify" glyph.
-var AlignJustify = &nf.Glyph{
-	ID:      "align_justify",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf039",
-}
-
-// AlignLeft () represents the "fa-align_left" glyph.
-var AlignLeft = &nf.Glyph{
-	ID:      "align_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf036",
-}
-
-// AlignRight () represents the "fa-align_right" glyph.
-var AlignRight = &nf.Glyph{
-	ID:      "align_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf038",
-}
-
-// Alipay () represents the "fa-alipay" glyph.
-var Alipay = &nf.Glyph{
-	ID:      "alipay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueebc",
-}
-
-// Amazon () represents the "fa-amazon" glyph.
-var Amazon = &nf.Glyph{
-	ID:      "amazon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf270",
-}
-
-// AmazonPay () represents the "fa-amazon_pay" glyph.
-var AmazonPay = &nf.Glyph{
-	ID:      "amazon_pay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued56",
-}
-
-// Ambulance () represents the "fa-ambulance" glyph.
-var Ambulance = &nf.Glyph{
-	ID:      "ambulance",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f9",
-}
-
-// AmericanSignLanguageInterpreting () represents the "fa-american_sign_language_interpreting" glyph.
-var AmericanSignLanguageInterpreting = &nf.Glyph{
-	ID:      "american_sign_language_interpreting",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a3",
-}
-
-// Amilia () represents the "fa-amilia" glyph.
-var Amilia = &nf.Glyph{
-	ID:      "amilia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0bb",
-}
-
-// Anchor () represents the "fa-anchor" glyph.
-var Anchor = &nf.Glyph{
-	ID:      "anchor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13d",
-}
-
-// Android () represents the "fa-android" glyph.
-var Android = &nf.Glyph{
-	ID:      "android",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf17b",
-}
-
-// Angellist () represents the "fa-angellist" glyph.
-var Angellist = &nf.Glyph{
-	ID:      "angellist",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf209",
-}
-
-// AngleDoubleDown () represents the "fa-angle_double_down" glyph.
-var AngleDoubleDown = &nf.Glyph{
-	ID:      "angle_double_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf103",
-}
-
-// AngleDoubleLeft () represents the "fa-angle_double_left" glyph.
-var AngleDoubleLeft = &nf.Glyph{
-	ID:      "angle_double_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf100",
-}
-
-// AngleDoubleRight () represents the "fa-angle_double_right" glyph.
-var AngleDoubleRight = &nf.Glyph{
-	ID:      "angle_double_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf101",
-}
-
-// AngleDoubleUp () represents the "fa-angle_double_up" glyph.
-var AngleDoubleUp = &nf.Glyph{
-	ID:      "angle_double_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf102",
-}
-
-// AngleDown () represents the "fa-angle_down" glyph.
-var AngleDown = &nf.Glyph{
-	ID:      "angle_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf107",
-}
-
-// AngleLeft () represents the "fa-angle_left" glyph.
-var AngleLeft = &nf.Glyph{
-	ID:      "angle_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf104",
-}
-
-// AngleRight () represents the "fa-angle_right" glyph.
-var AngleRight = &nf.Glyph{
-	ID:      "angle_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf105",
-}
-
-// AngleUp () represents the "fa-angle_up" glyph.
-var AngleUp = &nf.Glyph{
-	ID:      "angle_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf106",
-}
-
-// AnglesDown () represents the "fa-angles_down" glyph.
-var AnglesDown = &nf.Glyph{
-	ID:      "angles_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf103",
-}
-
-// AnglesLeft () represents the "fa-angles_left" glyph.
-var AnglesLeft = &nf.Glyph{
-	ID:      "angles_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf100",
-}
-
-// AnglesRight () represents the "fa-angles_right" glyph.
-var AnglesRight = &nf.Glyph{
-	ID:      "angles_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf101",
-}
-
-// AnglesUp () represents the "fa-angles_up" glyph.
-var AnglesUp = &nf.Glyph{
-	ID:      "angles_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf102",
-}
-
-// Angrycreative () represents the "fa-angrycreative" glyph.
-var Angrycreative = &nf.Glyph{
-	ID:      "angrycreative",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0bc",
-}
-
-// Angular () represents the "fa-angular" glyph.
-var Angular = &nf.Glyph{
-	ID:      "angular",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued4b",
-}
-
-// Ankh () represents the "fa-ankh" glyph.
-var Ankh = &nf.Glyph{
-	ID:      "ankh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueebd",
-}
-
-// AppStore () represents the "fa-app_store" glyph.
-var AppStore = &nf.Glyph{
-	ID:      "app_store",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0bd",
-}
-
-// AppStoreIos () represents the "fa-app_store_ios" glyph.
-var AppStoreIos = &nf.Glyph{
-	ID:      "app_store_ios",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0be",
-}
-
-// Apper () represents the "fa-apper" glyph.
-var Apper = &nf.Glyph{
-	ID:      "apper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0bf",
-}
-
-// Apple () represents the "fa-apple" glyph.
-var Apple = &nf.Glyph{
-	ID:      "apple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf179",
-}
-
-// ApplePay () represents the "fa-apple_pay" glyph.
-var ApplePay = &nf.Glyph{
-	ID:      "apple_pay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued41",
-}
-
-// AppleWhole () represents the "fa-apple_whole" glyph.
-var AppleWhole = &nf.Glyph{
-	ID:      "apple_whole",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee98",
-}
-
-// Archive () represents the "fa-archive" glyph.
-var Archive = &nf.Glyph{
-	ID:      "archive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf187",
-}
-
-// Archway () represents the "fa-archway" glyph.
-var Archway = &nf.Glyph{
-	ID:      "archway",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee20",
-}
-
-// AreaChart () represents the "fa-area_chart" glyph.
-var AreaChart = &nf.Glyph{
-	ID:      "area_chart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fe",
-}
-
-// ArrowCircleDown () represents the "fa-arrow_circle_down" glyph.
-var ArrowCircleDown = &nf.Glyph{
-	ID:      "arrow_circle_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ab",
-}
-
-// ArrowCircleLeft () represents the "fa-arrow_circle_left" glyph.
-var ArrowCircleLeft = &nf.Glyph{
-	ID:      "arrow_circle_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a8",
-}
-
-// ArrowCircleODown () represents the "fa-arrow_circle_o_down" glyph.
-var ArrowCircleODown = &nf.Glyph{
-	ID:      "arrow_circle_o_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01a",
-}
-
-// ArrowCircleOLeft () represents the "fa-arrow_circle_o_left" glyph.
-var ArrowCircleOLeft = &nf.Glyph{
-	ID:      "arrow_circle_o_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf190",
-}
-
-// ArrowCircleORight () represents the "fa-arrow_circle_o_right" glyph.
-var ArrowCircleORight = &nf.Glyph{
-	ID:      "arrow_circle_o_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18e",
-}
-
-// ArrowCircleOUp () represents the "fa-arrow_circle_o_up" glyph.
-var ArrowCircleOUp = &nf.Glyph{
-	ID:      "arrow_circle_o_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01b",
-}
-
-// ArrowCircleRight () represents the "fa-arrow_circle_right" glyph.
-var ArrowCircleRight = &nf.Glyph{
-	ID:      "arrow_circle_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a9",
-}
-
-// ArrowCircleUp () represents the "fa-arrow_circle_up" glyph.
-var ArrowCircleUp = &nf.Glyph{
-	ID:      "arrow_circle_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0aa",
-}
-
-// ArrowDown () represents the "fa-arrow_down" glyph.
-var ArrowDown = &nf.Glyph{
-	ID:      "arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf063",
-}
-
-// ArrowDown19 () represents the "fa-arrow_down_1_9" glyph.
-var ArrowDown19 = &nf.Glyph{
-	ID:      "arrow_down_1_9",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf162",
-}
-
-// ArrowDown91 () represents the "fa-arrow_down_9_1" glyph.
-var ArrowDown91 = &nf.Glyph{
-	ID:      "arrow_down_9_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb1",
-}
-
-// ArrowDownAZ () represents the "fa-arrow_down_a_z" glyph.
-var ArrowDownAZ = &nf.Glyph{
-	ID:      "arrow_down_a_z",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15d",
-}
-
-// ArrowDownLong () represents the "fa-arrow_down_long" glyph.
-var ArrowDownLong = &nf.Glyph{
-	ID:      "arrow_down_long",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf175",
-}
-
-// ArrowDownShortWide () represents the "fa-arrow_down_short_wide" glyph.
-var ArrowDownShortWide = &nf.Glyph{
-	ID:      "arrow_down_short_wide",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefaf",
-}
-
-// ArrowDownWideShort () represents the "fa-arrow_down_wide_short" glyph.
-var ArrowDownWideShort = &nf.Glyph{
-	ID:      "arrow_down_wide_short",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf160",
-}
-
-// ArrowDownZA () represents the "fa-arrow_down_z_a" glyph.
-var ArrowDownZA = &nf.Glyph{
-	ID:      "arrow_down_z_a",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefad",
-}
-
-// ArrowLeft () represents the "fa-arrow_left" glyph.
-var ArrowLeft = &nf.Glyph{
-	ID:      "arrow_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf060",
-}
-
-// ArrowLeftLong () represents the "fa-arrow_left_long" glyph.
-var ArrowLeftLong = &nf.Glyph{
-	ID:      "arrow_left_long",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf177",
-}
-
-// ArrowPointer () represents the "fa-arrow_pointer" glyph.
-var ArrowPointer = &nf.Glyph{
-	ID:      "arrow_pointer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf245",
-}
-
-// ArrowRight () represents the "fa-arrow_right" glyph.
-var ArrowRight = &nf.Glyph{
-	ID:      "arrow_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf061",
-}
-
-// ArrowRightArrowLeft () represents the "fa-arrow_right_arrow_left" glyph.
-var ArrowRightArrowLeft = &nf.Glyph{
-	ID:      "arrow_right_arrow_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ec",
-}
-
-// ArrowRightFromBracket () represents the "fa-arrow_right_from_bracket" glyph.
-var ArrowRightFromBracket = &nf.Glyph{
-	ID:      "arrow_right_from_bracket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08b",
-}
-
-// ArrowRightLong () represents the "fa-arrow_right_long" glyph.
-var ArrowRightLong = &nf.Glyph{
-	ID:      "arrow_right_long",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf178",
-}
-
-// ArrowRightToBracket () represents the "fa-arrow_right_to_bracket" glyph.
-var ArrowRightToBracket = &nf.Glyph{
-	ID:      "arrow_right_to_bracket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf090",
-}
-
-// ArrowRotateLeft () represents the "fa-arrow_rotate_left" glyph.
-var ArrowRotateLeft = &nf.Glyph{
-	ID:      "arrow_rotate_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e2",
-}
-
-// ArrowRotateRight () represents the "fa-arrow_rotate_right" glyph.
-var ArrowRotateRight = &nf.Glyph{
-	ID:      "arrow_rotate_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01e",
-}
-
-// ArrowTurnDown () represents the "fa-arrow_turn_down" glyph.
-var ArrowTurnDown = &nf.Glyph{
-	ID:      "arrow_turn_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf149",
-}
-
-// ArrowTurnUp () represents the "fa-arrow_turn_up" glyph.
-var ArrowTurnUp = &nf.Glyph{
-	ID:      "arrow_turn_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf148",
-}
-
-// ArrowUp () represents the "fa-arrow_up" glyph.
-var ArrowUp = &nf.Glyph{
-	ID:      "arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf062",
-}
-
-// ArrowUp19 () represents the "fa-arrow_up_1_9" glyph.
-var ArrowUp19 = &nf.Glyph{
-	ID:      "arrow_up_1_9",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf163",
-}
-
-// ArrowUp91 () represents the "fa-arrow_up_9_1" glyph.
-var ArrowUp91 = &nf.Glyph{
-	ID:      "arrow_up_9_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb2",
-}
-
-// ArrowUpAZ () represents the "fa-arrow_up_a_z" glyph.
-var ArrowUpAZ = &nf.Glyph{
-	ID:      "arrow_up_a_z",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15e",
-}
-
-// ArrowUpLong () represents the "fa-arrow_up_long" glyph.
-var ArrowUpLong = &nf.Glyph{
-	ID:      "arrow_up_long",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf176",
-}
-
-// ArrowUpRightFromSquare () represents the "fa-arrow_up_right_from_square" glyph.
-var ArrowUpRightFromSquare = &nf.Glyph{
-	ID:      "arrow_up_right_from_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08e",
-}
-
-// ArrowUpShortWide () represents the "fa-arrow_up_short_wide" glyph.
-var ArrowUpShortWide = &nf.Glyph{
-	ID:      "arrow_up_short_wide",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb0",
-}
-
-// ArrowUpWideShort () represents the "fa-arrow_up_wide_short" glyph.
-var ArrowUpWideShort = &nf.Glyph{
-	ID:      "arrow_up_wide_short",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf161",
-}
-
-// ArrowUpZA () represents the "fa-arrow_up_z_a" glyph.
-var ArrowUpZA = &nf.Glyph{
-	ID:      "arrow_up_z_a",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefae",
-}
-
-// Arrows () represents the "fa-arrows" glyph.
-var Arrows = &nf.Glyph{
-	ID:      "arrows",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf047",
-}
-
-// ArrowsAlt () represents the "fa-arrows_alt" glyph.
-var ArrowsAlt = &nf.Glyph{
-	ID:      "arrows_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b2",
-}
-
-// ArrowsH () represents the "fa-arrows_h" glyph.
-var ArrowsH = &nf.Glyph{
-	ID:      "arrows_h",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07e",
-}
-
-// ArrowsLeftRight () represents the "fa-arrows_left_right" glyph.
-var ArrowsLeftRight = &nf.Glyph{
-	ID:      "arrows_left_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07e",
-}
-
-// ArrowsRotate () represents the "fa-arrows_rotate" glyph.
-var ArrowsRotate = &nf.Glyph{
-	ID:      "arrows_rotate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf021",
-}
-
-// ArrowsUpDown () represents the "fa-arrows_up_down" glyph.
-var ArrowsUpDown = &nf.Glyph{
-	ID:      "arrows_up_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07d",
-}
-
-// ArrowsUpDownLeftRight () represents the "fa-arrows_up_down_left_right" glyph.
-var ArrowsUpDownLeftRight = &nf.Glyph{
-	ID:      "arrows_up_down_left_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf047",
-}
-
-// ArrowsV () represents the "fa-arrows_v" glyph.
-var ArrowsV = &nf.Glyph{
-	ID:      "arrows_v",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07d",
-}
-
-// Artstation () represents the "fa-artstation" glyph.
-var Artstation = &nf.Glyph{
-	ID:      "artstation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef31",
-}
-
-// AslInterpreting () represents the "fa-asl_interpreting" glyph.
-var AslInterpreting = &nf.Glyph{
-	ID:      "asl_interpreting",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a3",
-}
-
-// AssistiveListeningSystems () represents the "fa-assistive_listening_systems" glyph.
-var AssistiveListeningSystems = &nf.Glyph{
-	ID:      "assistive_listening_systems",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a2",
-}
-
-// Asterisk () represents the "fa-asterisk" glyph.
-var Asterisk = &nf.Glyph{
-	ID:      "asterisk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf069",
-}
-
-// Asymmetrik () represents the "fa-asymmetrik" glyph.
-var Asymmetrik = &nf.Glyph{
-	ID:      "asymmetrik",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0cf",
-}
-
-// At () represents the "fa-at" glyph.
-var At = &nf.Glyph{
-	ID:      "at",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fa",
-}
-
-// Atlassian () represents the "fa-atlassian" glyph.
-var Atlassian = &nf.Glyph{
-	ID:      "atlassian",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef32",
-}
-
-// Atom () represents the "fa-atom" glyph.
-var Atom = &nf.Glyph{
-	ID:      "atom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee99",
-}
-
-// Audible () represents the "fa-audible" glyph.
-var Audible = &nf.Glyph{
-	ID:      "audible",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0df",
-}
-
-// AudioDescription () represents the "fa-audio_description" glyph.
-var AudioDescription = &nf.Glyph{
-	ID:      "audio_description",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29e",
-}
-
-// Automobile () represents the "fa-automobile" glyph.
-var Automobile = &nf.Glyph{
-	ID:      "automobile",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b9",
-}
-
-// Autoprefixer () represents the "fa-autoprefixer" glyph.
-var Autoprefixer = &nf.Glyph{
-	ID:      "autoprefixer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued47",
-}
-
-// Avianex () represents the "fa-avianex" glyph.
-var Avianex = &nf.Glyph{
-	ID:      "avianex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc2",
-}
-
-// Aviato () represents the "fa-aviato" glyph.
-var Aviato = &nf.Glyph{
-	ID:      "aviato",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued4c",
-}
-
-// Award () represents the "fa-award" glyph.
-var Award = &nf.Glyph{
-	ID:      "award",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee22",
-}
-
-// Aws () represents the "fa-aws" glyph.
-var Aws = &nf.Glyph{
-	ID:      "aws",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ef",
-}
-
-// Baby () represents the "fa-baby" glyph.
-var Baby = &nf.Glyph{
-	ID:      "baby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef33",
-}
-
-// BabyCarriage () represents the "fa-baby_carriage" glyph.
-var BabyCarriage = &nf.Glyph{
-	ID:      "baby_carriage",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef34",
-}
-
-// Backward () represents the "fa-backward" glyph.
-var Backward = &nf.Glyph{
-	ID:      "backward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf04a",
-}
-
-// BackwardFast () represents the "fa-backward_fast" glyph.
-var BackwardFast = &nf.Glyph{
-	ID:      "backward_fast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf049",
-}
-
-// BackwardStep () represents the "fa-backward_step" glyph.
-var BackwardStep = &nf.Glyph{
-	ID:      "backward_step",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf048",
-}
-
-// Bacon () represents the "fa-bacon" glyph.
-var Bacon = &nf.Glyph{
-	ID:      "bacon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef77",
-}
-
-// BagShopping () represents the "fa-bag_shopping" glyph.
-var BagShopping = &nf.Glyph{
-	ID:      "bag_shopping",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf290",
-}
-
-// Bahai () represents the "fa-bahai" glyph.
-var Bahai = &nf.Glyph{
-	ID:      "bahai",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueecb",
-}
-
-// BalanceScale () represents the "fa-balance_scale" glyph.
-var BalanceScale = &nf.Glyph{
-	ID:      "balance_scale",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24e",
-}
-
-// Ban () represents the "fa-ban" glyph.
-var Ban = &nf.Glyph{
-	ID:      "ban",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05e",
-}
-
-// BanSmoking () represents the "fa-ban_smoking" glyph.
-var BanSmoking = &nf.Glyph{
-	ID:      "ban_smoking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee16",
-}
-
-// Bandage () represents the "fa-bandage" glyph.
-var Bandage = &nf.Glyph{
-	ID:      "bandage",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued74",
-}
-
-// Bandcamp () represents the "fa-bandcamp" glyph.
-var Bandcamp = &nf.Glyph{
-	ID:      "bandcamp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d5",
-}
-
-// Bank () represents the "fa-bank" glyph.
-var Bank = &nf.Glyph{
-	ID:      "bank",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19c",
-}
-
-// BarChart () represents the "fa-bar_chart" glyph.
-var BarChart = &nf.Glyph{
-	ID:      "bar_chart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf080",
-}
-
-// BarChartO () represents the "fa-bar_chart_o" glyph.
-var BarChartO = &nf.Glyph{
-	ID:      "bar_chart_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf080",
-}
-
-// Barcode () represents the "fa-barcode" glyph.
-var Barcode = &nf.Glyph{
-	ID:      "barcode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf02a",
-}
-
-// Bars () represents the "fa-bars" glyph.
-var Bars = &nf.Glyph{
-	ID:      "bars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c9",
-}
-
-// BarsProgress () represents the "fa-bars_progress" glyph.
-var BarsProgress = &nf.Glyph{
-	ID:      "bars_progress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef8f",
-}
-
-// BarsStaggered () represents the "fa-bars_staggered" glyph.
-var BarsStaggered = &nf.Glyph{
-	ID:      "bars_staggered",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee19",
-}
-
-// Baseball () represents the "fa-baseball" glyph.
-var Baseball = &nf.Glyph{
-	ID:      "baseball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued5c",
-}
-
-// BaseballBatBall () represents the "fa-baseball_bat_ball" glyph.
-var BaseballBatBall = &nf.Glyph{
-	ID:      "baseball_bat_ball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued5b",
-}
-
-// BasketShopping () represents the "fa-basket_shopping" glyph.
-var BasketShopping = &nf.Glyph{
-	ID:      "basket_shopping",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf291",
-}
-
-// Basketball () represents the "fa-basketball" glyph.
-var Basketball = &nf.Glyph{
-	ID:      "basketball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued5d",
-}
-
-// Bath () represents the "fa-bath" glyph.
-var Bath = &nf.Glyph{
-	ID:      "bath",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cd",
-}
-
-// Bathtub () represents the "fa-bathtub" glyph.
-var Bathtub = &nf.Glyph{
-	ID:      "bathtub",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cd",
-}
-
-// Battery () represents the "fa-battery" glyph.
-var Battery = &nf.Glyph{
-	ID:      "battery",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf240",
-}
-
-// Battery0 () represents the "fa-battery_0" glyph.
-var Battery0 = &nf.Glyph{
-	ID:      "battery_0",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf244",
-}
-
-// Battery1 () represents the "fa-battery_1" glyph.
-var Battery1 = &nf.Glyph{
-	ID:      "battery_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf243",
-}
-
-// Battery2 () represents the "fa-battery_2" glyph.
-var Battery2 = &nf.Glyph{
-	ID:      "battery_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf242",
-}
-
-// Battery3 () represents the "fa-battery_3" glyph.
-var Battery3 = &nf.Glyph{
-	ID:      "battery_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf241",
-}
-
-// Battery4 () represents the "fa-battery_4" glyph.
-var Battery4 = &nf.Glyph{
-	ID:      "battery_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf240",
-}
-
-// BatteryEmpty () represents the "fa-battery_empty" glyph.
-var BatteryEmpty = &nf.Glyph{
-	ID:      "battery_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf244",
-}
-
-// BatteryFull () represents the "fa-battery_full" glyph.
-var BatteryFull = &nf.Glyph{
-	ID:      "battery_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf240",
-}
-
-// BatteryHalf () represents the "fa-battery_half" glyph.
-var BatteryHalf = &nf.Glyph{
-	ID:      "battery_half",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf242",
-}
-
-// BatteryQuarter () represents the "fa-battery_quarter" glyph.
-var BatteryQuarter = &nf.Glyph{
-	ID:      "battery_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf243",
-}
-
-// BatteryThreeQuarters () represents the "fa-battery_three_quarters" glyph.
-var BatteryThreeQuarters = &nf.Glyph{
-	ID:      "battery_three_quarters",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf241",
-}
-
-// BattleNet () represents the "fa-battle_net" glyph.
-var BattleNet = &nf.Glyph{
-	ID:      "battle_net",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef94",
-}
-
-// Bed () represents the "fa-bed" glyph.
-var Bed = &nf.Glyph{
-	ID:      "bed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf236",
-}
-
-// BedPulse () represents the "fa-bed_pulse" glyph.
-var BedPulse = &nf.Glyph{
-	ID:      "bed_pulse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued8a",
-}
-
-// Beer () represents the "fa-beer" glyph.
-var Beer = &nf.Glyph{
-	ID:      "beer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fc",
-}
-
-// BeerMugEmpty () represents the "fa-beer_mug_empty" glyph.
-var BeerMugEmpty = &nf.Glyph{
-	ID:      "beer_mug_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fc",
-}
-
-// Behance () represents the "fa-behance" glyph.
-var Behance = &nf.Glyph{
-	ID:      "behance",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b4",
-}
-
-// BehanceSquare () represents the "fa-behance_square" glyph.
-var BehanceSquare = &nf.Glyph{
-	ID:      "behance_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b5",
-}
-
-// Bell () represents the "fa-bell" glyph.
-var Bell = &nf.Glyph{
-	ID:      "bell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f3",
-}
-
-// BellConcierge () represents the "fa-bell_concierge" glyph.
-var BellConcierge = &nf.Glyph{
-	ID:      "bell_concierge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee2b",
-}
-
-// BellO () represents the "fa-bell_o" glyph.
-var BellO = &nf.Glyph{
-	ID:      "bell_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a2",
-}
-
-// BellSlash () represents the "fa-bell_slash" glyph.
-var BellSlash = &nf.Glyph{
-	ID:      "bell_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f6",
-}
-
-// BellSlashO () represents the "fa-bell_slash_o" glyph.
-var BellSlashO = &nf.Glyph{
-	ID:      "bell_slash_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f7",
-}
-
-// BezierCurve () represents the "fa-bezier_curve" glyph.
-var BezierCurve = &nf.Glyph{
-	ID:      "bezier_curve",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee24",
-}
-
-// Bicycle () represents the "fa-bicycle" glyph.
-var Bicycle = &nf.Glyph{
-	ID:      "bicycle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf206",
-}
-
-// Bimobject () represents the "fa-bimobject" glyph.
-var Bimobject = &nf.Glyph{
-	ID:      "bimobject",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ff",
-}
-
-// Binoculars () represents the "fa-binoculars" glyph.
-var Binoculars = &nf.Glyph{
-	ID:      "binoculars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e5",
-}
-
-// Biohazard () represents the "fa-biohazard" glyph.
-var Biohazard = &nf.Glyph{
-	ID:      "biohazard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef35",
-}
-
-// BirthdayCake () represents the "fa-birthday_cake" glyph.
-var BirthdayCake = &nf.Glyph{
-	ID:      "birthday_cake",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fd",
-}
-
-// Bitbucket () represents the "fa-bitbucket" glyph.
-var Bitbucket = &nf.Glyph{
-	ID:      "bitbucket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf171",
-}
-
-// BitbucketSquare () represents the "fa-bitbucket_square" glyph.
-var BitbucketSquare = &nf.Glyph{
-	ID:      "bitbucket_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf172",
-}
-
-// Bitcoin () represents the "fa-bitcoin" glyph.
-var Bitcoin = &nf.Glyph{
-	ID:      "bitcoin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10f",
-}
-
-// Bity () represents the "fa-bity" glyph.
-var Bity = &nf.Glyph{
-	ID:      "bity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf116",
-}
-
-// BlackTie () represents the "fa-black_tie" glyph.
-var BlackTie = &nf.Glyph{
-	ID:      "black_tie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27e",
-}
-
-// Blackberry () represents the "fa-blackberry" glyph.
-var Blackberry = &nf.Glyph{
-	ID:      "blackberry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf117",
-}
-
-// Blender () represents the "fa-blender" glyph.
-var Blender = &nf.Glyph{
-	ID:      "blender",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede1",
-}
-
-// BlenderPhone () represents the "fa-blender_phone" glyph.
-var BlenderPhone = &nf.Glyph{
-	ID:      "blender_phone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeea",
-}
-
-// Blind () represents the "fa-blind" glyph.
-var Blind = &nf.Glyph{
-	ID:      "blind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29d",
-}
-
-// Blog () represents the "fa-blog" glyph.
-var Blog = &nf.Glyph{
-	ID:      "blog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef36",
-}
-
-// Blogger () represents the "fa-blogger" glyph.
-var Blogger = &nf.Glyph{
-	ID:      "blogger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11f",
-}
-
-// BloggerB () represents the "fa-blogger_b" glyph.
-var BloggerB = &nf.Glyph{
-	ID:      "blogger_b",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf12f",
-}
-
-// Bluetooth () represents the "fa-bluetooth" glyph.
-var Bluetooth = &nf.Glyph{
-	ID:      "bluetooth",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf293",
-}
-
-// BluetoothB () represents the "fa-bluetooth_b" glyph.
-var BluetoothB = &nf.Glyph{
-	ID:      "bluetooth_b",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf294",
-}
-
-// Bold () represents the "fa-bold" glyph.
-var Bold = &nf.Glyph{
-	ID:      "bold",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf032",
-}
-
-// Bolt () represents the "fa-bolt" glyph.
-var Bolt = &nf.Glyph{
-	ID:      "bolt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e7",
-}
-
-// Bomb () represents the "fa-bomb" glyph.
-var Bomb = &nf.Glyph{
-	ID:      "bomb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e2",
-}
-
-// Bone () represents the "fa-bone" glyph.
-var Bone = &nf.Glyph{
-	ID:      "bone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee9a",
-}
-
-// Bong () represents the "fa-bong" glyph.
-var Bong = &nf.Glyph{
-	ID:      "bong",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee25",
-}
-
-// Book () represents the "fa-book" glyph.
-var Book = &nf.Glyph{
-	ID:      "book",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf02d",
-}
-
-// BookAtlas () represents the "fa-book_atlas" glyph.
-var BookAtlas = &nf.Glyph{
-	ID:      "book_atlas",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee21",
-}
-
-// BookBible () represents the "fa-book_bible" glyph.
-var BookBible = &nf.Glyph{
-	ID:      "book_bible",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueebe",
-}
-
-// BookJournalWhills () represents the "fa-book_journal_whills" glyph.
-var BookJournalWhills = &nf.Glyph{
-	ID:      "book_journal_whills",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueecd",
-}
-
-// BookMedical () represents the "fa-book_medical" glyph.
-var BookMedical = &nf.Glyph{
-	ID:      "book_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef78",
-}
-
-// BookOpen () represents the "fa-book_open" glyph.
-var BookOpen = &nf.Glyph{
-	ID:      "book_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede2",
-}
-
-// BookOpenReader () represents the "fa-book_open_reader" glyph.
-var BookOpenReader = &nf.Glyph{
-	ID:      "book_open_reader",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee9b",
-}
-
-// BookQuran () represents the "fa-book_quran" glyph.
-var BookQuran = &nf.Glyph{
-	ID:      "book_quran",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueedc",
-}
-
-// BookSkull () represents the "fa-book_skull" glyph.
-var BookSkull = &nf.Glyph{
-	ID:      "book_skull",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeeb",
-}
-
-// BookTanakh () represents the "fa-book_tanakh" glyph.
-var BookTanakh = &nf.Glyph{
-	ID:      "book_tanakh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef8e",
-}
-
-// Bookmark () represents the "fa-bookmark" glyph.
-var Bookmark = &nf.Glyph{
-	ID:      "bookmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf02e",
-}
-
-// BookmarkO () represents the "fa-bookmark_o" glyph.
-var BookmarkO = &nf.Glyph{
-	ID:      "bookmark_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf097",
-}
-
-// Bootstrap () represents the "fa-bootstrap" glyph.
-var Bootstrap = &nf.Glyph{
-	ID:      "bootstrap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef95",
-}
-
-// BorderAll () represents the "fa-border_all" glyph.
-var BorderAll = &nf.Glyph{
-	ID:      "border_all",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa3",
-}
-
-// BorderNone () represents the "fa-border_none" glyph.
-var BorderNone = &nf.Glyph{
-	ID:      "border_none",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa4",
-}
-
-// BorderTopLeft () represents the "fa-border_top_left" glyph.
-var BorderTopLeft = &nf.Glyph{
-	ID:      "border_top_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa5",
-}
-
-// BowlingBall () represents the "fa-bowling_ball" glyph.
-var BowlingBall = &nf.Glyph{
-	ID:      "bowling_ball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued5e",
-}
-
-// Box () represents the "fa-box" glyph.
-var Box = &nf.Glyph{
-	ID:      "box",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued75",
-}
-
-// BoxArchive () represents the "fa-box_archive" glyph.
-var BoxArchive = &nf.Glyph{
-	ID:      "box_archive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf187",
-}
-
-// BoxOpen () represents the "fa-box_open" glyph.
-var BoxOpen = &nf.Glyph{
-	ID:      "box_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued95",
-}
-
-// BoxesStacked () represents the "fa-boxes_stacked" glyph.
-var BoxesStacked = &nf.Glyph{
-	ID:      "boxes_stacked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued76",
-}
-
-// Braille () represents the "fa-braille" glyph.
-var Braille = &nf.Glyph{
-	ID:      "braille",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a1",
-}
-
-// Brain () represents the "fa-brain" glyph.
-var Brain = &nf.Glyph{
-	ID:      "brain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee9c",
-}
-
-// BreadSlice () represents the "fa-bread_slice" glyph.
-var BreadSlice = &nf.Glyph{
-	ID:      "bread_slice",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef79",
-}
-
-// Briefcase () represents the "fa-briefcase" glyph.
-var Briefcase = &nf.Glyph{
-	ID:      "briefcase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b1",
-}
-
-// BriefcaseMedical () represents the "fa-briefcase_medical" glyph.
-var BriefcaseMedical = &nf.Glyph{
-	ID:      "briefcase_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued77",
-}
-
-// Broom () represents the "fa-broom" glyph.
-var Broom = &nf.Glyph{
-	ID:      "broom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede4",
-}
-
-// BroomBall () represents the "fa-broom_ball" glyph.
-var BroomBall = &nf.Glyph{
-	ID:      "broom_ball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued6e",
-}
-
-// Brush () represents the "fa-brush" glyph.
-var Brush = &nf.Glyph{
-	ID:      "brush",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee26",
-}
-
-// Btc () represents the "fa-btc" glyph.
-var Btc = &nf.Glyph{
-	ID:      "btc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15a",
-}
-
-// Buffer () represents the "fa-buffer" glyph.
-var Buffer = &nf.Glyph{
-	ID:      "buffer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef96",
-}
-
-// Bug () represents the "fa-bug" glyph.
-var Bug = &nf.Glyph{
-	ID:      "bug",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf188",
-}
-
-// Building () represents the "fa-building" glyph.
-var Building = &nf.Glyph{
-	ID:      "building",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ad",
-}
-
-// BuildingColumns () represents the "fa-building_columns" glyph.
-var BuildingColumns = &nf.Glyph{
-	ID:      "building_columns",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19c",
-}
-
-// BuildingO () represents the "fa-building_o" glyph.
-var BuildingO = &nf.Glyph{
-	ID:      "building_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f7",
-}
-
-// Bullhorn () represents the "fa-bullhorn" glyph.
-var Bullhorn = &nf.Glyph{
-	ID:      "bullhorn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a1",
-}
-
-// Bullseye () represents the "fa-bullseye" glyph.
-var Bullseye = &nf.Glyph{
-	ID:      "bullseye",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf140",
-}
-
-// Burger () represents the "fa-burger" glyph.
-var Burger = &nf.Glyph{
-	ID:      "burger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef82",
-}
-
-// Buromobelexperte () represents the "fa-buromobelexperte" glyph.
-var Buromobelexperte = &nf.Glyph{
-	ID:      "buromobelexperte",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13f",
-}
-
-// Bus () represents the "fa-bus" glyph.
-var Bus = &nf.Glyph{
-	ID:      "bus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf207",
-}
-
-// BusSimple () represents the "fa-bus_simple" glyph.
-var BusSimple = &nf.Glyph{
-	ID:      "bus_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee27",
-}
-
-// BusinessTime () represents the "fa-business_time" glyph.
-var BusinessTime = &nf.Glyph{
-	ID:      "business_time",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueebf",
-}
-
-// BuyNLarge () represents the "fa-buy_n_large" glyph.
-var BuyNLarge = &nf.Glyph{
-	ID:      "buy_n_large",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb6",
-}
-
-// Buysellads () represents the "fa-buysellads" glyph.
-var Buysellads = &nf.Glyph{
-	ID:      "buysellads",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20d",
-}
-
-// Cab () represents the "fa-cab" glyph.
-var Cab = &nf.Glyph{
-	ID:      "cab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ba",
-}
-
-// CableCar () represents the "fa-cable_car" glyph.
-var CableCar = &nf.Glyph{
-	ID:      "cable_car",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef71",
-}
-
-// CakeCandles () represents the "fa-cake_candles" glyph.
-var CakeCandles = &nf.Glyph{
-	ID:      "cake_candles",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fd",
-}
-
-// Calculator () represents the "fa-calculator" glyph.
-var Calculator = &nf.Glyph{
-	ID:      "calculator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ec",
-}
-
-// Calendar () represents the "fa-calendar" glyph.
-var Calendar = &nf.Glyph{
-	ID:      "calendar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf073",
-}
-
-// CalendarCheck () represents the "fa-calendar_check" glyph.
-var CalendarCheck = &nf.Glyph{
-	ID:      "calendar_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf274",
-}
-
-// CalendarCheckO () represents the "fa-calendar_check_o" glyph.
-var CalendarCheckO = &nf.Glyph{
-	ID:      "calendar_check_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf274",
-}
-
-// CalendarDay () represents the "fa-calendar_day" glyph.
-var CalendarDay = &nf.Glyph{
-	ID:      "calendar_day",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef37",
-}
-
-// CalendarDays () represents the "fa-calendar_days" glyph.
-var CalendarDays = &nf.Glyph{
-	ID:      "calendar_days",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf073",
-}
-
-// CalendarMinus () represents the "fa-calendar_minus" glyph.
-var CalendarMinus = &nf.Glyph{
-	ID:      "calendar_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf272",
-}
-
-// CalendarMinusO () represents the "fa-calendar_minus_o" glyph.
-var CalendarMinusO = &nf.Glyph{
-	ID:      "calendar_minus_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf272",
-}
-
-// CalendarO () represents the "fa-calendar_o" glyph.
-var CalendarO = &nf.Glyph{
-	ID:      "calendar_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf133",
-}
-
-// CalendarPlus () represents the "fa-calendar_plus" glyph.
-var CalendarPlus = &nf.Glyph{
-	ID:      "calendar_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf271",
-}
-
-// CalendarPlusO () represents the "fa-calendar_plus_o" glyph.
-var CalendarPlusO = &nf.Glyph{
-	ID:      "calendar_plus_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf271",
-}
-
-// CalendarTimesO () represents the "fa-calendar_times_o" glyph.
-var CalendarTimesO = &nf.Glyph{
-	ID:      "calendar_times_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf273",
-}
-
-// CalendarWeek () represents the "fa-calendar_week" glyph.
-var CalendarWeek = &nf.Glyph{
-	ID:      "calendar_week",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef38",
-}
-
-// CalendarXmark () represents the "fa-calendar_xmark" glyph.
-var CalendarXmark = &nf.Glyph{
-	ID:      "calendar_xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf273",
-}
-
-// Camera () represents the "fa-camera" glyph.
-var Camera = &nf.Glyph{
-	ID:      "camera",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf030",
-}
-
-// CameraRetro () represents the "fa-camera_retro" glyph.
-var CameraRetro = &nf.Glyph{
-	ID:      "camera_retro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf083",
-}
-
-// Campground () represents the "fa-campground" glyph.
-var Campground = &nf.Glyph{
-	ID:      "campground",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeec",
-}
-
-// CanadianMapleLeaf () represents the "fa-canadian_maple_leaf" glyph.
-var CanadianMapleLeaf = &nf.Glyph{
-	ID:      "canadian_maple_leaf",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef39",
-}
-
-// CandyCane () represents the "fa-candy_cane" glyph.
-var CandyCane = &nf.Glyph{
-	ID:      "candy_cane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef3a",
-}
-
-// Cannabis () represents the "fa-cannabis" glyph.
-var Cannabis = &nf.Glyph{
-	ID:      "cannabis",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee28",
-}
-
-// Capsules () represents the "fa-capsules" glyph.
-var Capsules = &nf.Glyph{
-	ID:      "capsules",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued79",
-}
-
-// Car () represents the "fa-car" glyph.
-var Car = &nf.Glyph{
-	ID:      "car",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b9",
-}
-
-// CarBattery () represents the "fa-car_battery" glyph.
-var CarBattery = &nf.Glyph{
-	ID:      "car_battery",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee9e",
-}
-
-// CarBurst () represents the "fa-car_burst" glyph.
-var CarBurst = &nf.Glyph{
-	ID:      "car_burst",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee9f",
-}
-
-// CarRear () represents the "fa-car_rear" glyph.
-var CarRear = &nf.Glyph{
-	ID:      "car_rear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee9d",
-}
-
-// CarSide () represents the "fa-car_side" glyph.
-var CarSide = &nf.Glyph{
-	ID:      "car_side",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea0",
-}
-
-// Caravan () represents the "fa-caravan" glyph.
-var Caravan = &nf.Glyph{
-	ID:      "caravan",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc1",
-}
-
-// CaretDown () represents the "fa-caret_down" glyph.
-var CaretDown = &nf.Glyph{
-	ID:      "caret_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d7",
-}
-
-// CaretLeft () represents the "fa-caret_left" glyph.
-var CaretLeft = &nf.Glyph{
-	ID:      "caret_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d9",
-}
-
-// CaretRight () represents the "fa-caret_right" glyph.
-var CaretRight = &nf.Glyph{
-	ID:      "caret_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0da",
-}
-
-// CaretSquareODown () represents the "fa-caret_square_o_down" glyph.
-var CaretSquareODown = &nf.Glyph{
-	ID:      "caret_square_o_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf150",
-}
-
-// CaretSquareOLeft () represents the "fa-caret_square_o_left" glyph.
-var CaretSquareOLeft = &nf.Glyph{
-	ID:      "caret_square_o_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf191",
-}
-
-// CaretSquareORight () represents the "fa-caret_square_o_right" glyph.
-var CaretSquareORight = &nf.Glyph{
-	ID:      "caret_square_o_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf152",
-}
-
-// CaretSquareOUp () represents the "fa-caret_square_o_up" glyph.
-var CaretSquareOUp = &nf.Glyph{
-	ID:      "caret_square_o_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf151",
-}
-
-// CaretUp () represents the "fa-caret_up" glyph.
-var CaretUp = &nf.Glyph{
-	ID:      "caret_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d8",
-}
-
-// Carrot () represents the "fa-carrot" glyph.
-var Carrot = &nf.Glyph{
-	ID:      "carrot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef3b",
-}
-
-// CartArrowDown () represents the "fa-cart_arrow_down" glyph.
-var CartArrowDown = &nf.Glyph{
-	ID:      "cart_arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf218",
-}
-
-// CartFlatbed () represents the "fa-cart_flatbed" glyph.
-var CartFlatbed = &nf.Glyph{
-	ID:      "cart_flatbed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued7f",
-}
-
-// CartFlatbedSuitcase () represents the "fa-cart_flatbed_suitcase" glyph.
-var CartFlatbedSuitcase = &nf.Glyph{
-	ID:      "cart_flatbed_suitcase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee66",
-}
-
-// CartPlus () represents the "fa-cart_plus" glyph.
-var CartPlus = &nf.Glyph{
-	ID:      "cart_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf217",
-}
-
-// CartShopping () represents the "fa-cart_shopping" glyph.
-var CartShopping = &nf.Glyph{
-	ID:      "cart_shopping",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07a",
-}
-
-// CashRegister () represents the "fa-cash_register" glyph.
-var CashRegister = &nf.Glyph{
-	ID:      "cash_register",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef3c",
-}
-
-// Cat () represents the "fa-cat" glyph.
-var Cat = &nf.Glyph{
-	ID:      "cat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeed",
-}
-
-// Cc () represents the "fa-cc" glyph.
-var Cc = &nf.Glyph{
-	ID:      "cc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20a",
-}
-
-// CcAmazonPay () represents the "fa-cc_amazon_pay" glyph.
-var CcAmazonPay = &nf.Glyph{
-	ID:      "cc_amazon_pay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued57",
-}
-
-// CcAmex () represents the "fa-cc_amex" glyph.
-var CcAmex = &nf.Glyph{
-	ID:      "cc_amex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f3",
-}
-
-// CcApplePay () represents the "fa-cc_apple_pay" glyph.
-var CcApplePay = &nf.Glyph{
-	ID:      "cc_apple_pay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued42",
-}
-
-// CcDinersClub () represents the "fa-cc_diners_club" glyph.
-var CcDinersClub = &nf.Glyph{
-	ID:      "cc_diners_club",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24c",
-}
-
-// CcDiscover () represents the "fa-cc_discover" glyph.
-var CcDiscover = &nf.Glyph{
-	ID:      "cc_discover",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f2",
-}
-
-// CcJcb () represents the "fa-cc_jcb" glyph.
-var CcJcb = &nf.Glyph{
-	ID:      "cc_jcb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24b",
-}
-
-// CcMastercard () represents the "fa-cc_mastercard" glyph.
-var CcMastercard = &nf.Glyph{
-	ID:      "cc_mastercard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f1",
-}
-
-// CcPaypal () represents the "fa-cc_paypal" glyph.
-var CcPaypal = &nf.Glyph{
-	ID:      "cc_paypal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f4",
-}
-
-// CcStripe () represents the "fa-cc_stripe" glyph.
-var CcStripe = &nf.Glyph{
-	ID:      "cc_stripe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f5",
-}
-
-// CcVisa () represents the "fa-cc_visa" glyph.
-var CcVisa = &nf.Glyph{
-	ID:      "cc_visa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f0",
-}
-
-// Centercode () represents the "fa-centercode" glyph.
-var Centercode = &nf.Glyph{
-	ID:      "centercode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14f",
-}
-
-// Centos () represents the "fa-centos" glyph.
-var Centos = &nf.Glyph{
-	ID:      "centos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef3d",
-}
-
-// Certificate () represents the "fa-certificate" glyph.
-var Certificate = &nf.Glyph{
-	ID:      "certificate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a3",
-}
-
-// Chain () represents the "fa-chain" glyph.
-var Chain = &nf.Glyph{
-	ID:      "chain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c1",
-}
-
-// ChainBroken () represents the "fa-chain_broken" glyph.
-var ChainBroken = &nf.Glyph{
-	ID:      "chain_broken",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf127",
-}
-
-// Chair () represents the "fa-chair" glyph.
-var Chair = &nf.Glyph{
-	ID:      "chair",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeee",
-}
-
-// Chalkboard () represents the "fa-chalkboard" glyph.
-var Chalkboard = &nf.Glyph{
-	ID:      "chalkboard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede5",
-}
-
-// ChalkboardUser () represents the "fa-chalkboard_user" glyph.
-var ChalkboardUser = &nf.Glyph{
-	ID:      "chalkboard_user",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede6",
-}
-
-// ChampagneGlasses () represents the "fa-champagne_glasses" glyph.
-var ChampagneGlasses = &nf.Glyph{
-	ID:      "champagne_glasses",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef49",
-}
-
-// ChargingStation () represents the "fa-charging_station" glyph.
-var ChargingStation = &nf.Glyph{
-	ID:      "charging_station",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea1",
-}
-
-// ChartArea () represents the "fa-chart_area" glyph.
-var ChartArea = &nf.Glyph{
-	ID:      "chart_area",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fe",
-}
-
-// ChartBar () represents the "fa-chart_bar" glyph.
-var ChartBar = &nf.Glyph{
-	ID:      "chart_bar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf080",
-}
-
-// ChartLine () represents the "fa-chart_line" glyph.
-var ChartLine = &nf.Glyph{
-	ID:      "chart_line",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf201",
-}
-
-// ChartPie () represents the "fa-chart_pie" glyph.
-var ChartPie = &nf.Glyph{
-	ID:      "chart_pie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf200",
-}
-
-// Check () represents the "fa-check" glyph.
-var Check = &nf.Glyph{
-	ID:      "check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00c",
-}
-
-// CheckCircle () represents the "fa-check_circle" glyph.
-var CheckCircle = &nf.Glyph{
-	ID:      "check_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf058",
-}
-
-// CheckCircleO () represents the "fa-check_circle_o" glyph.
-var CheckCircleO = &nf.Glyph{
-	ID:      "check_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05d",
-}
-
-// CheckDouble () represents the "fa-check_double" glyph.
-var CheckDouble = &nf.Glyph{
-	ID:      "check_double",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee29",
-}
-
-// CheckSquare () represents the "fa-check_square" glyph.
-var CheckSquare = &nf.Glyph{
-	ID:      "check_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14a",
-}
-
-// CheckSquareO () represents the "fa-check_square_o" glyph.
-var CheckSquareO = &nf.Glyph{
-	ID:      "check_square_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf046",
-}
-
-// CheckToSlot () represents the "fa-check_to_slot" glyph.
-var CheckToSlot = &nf.Glyph{
-	ID:      "check_to_slot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef2f",
-}
-
-// Cheese () represents the "fa-cheese" glyph.
-var Cheese = &nf.Glyph{
-	ID:      "cheese",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef7a",
-}
-
-// Chess () represents the "fa-chess" glyph.
-var Chess = &nf.Glyph{
-	ID:      "chess",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued5f",
-}
-
-// ChessBishop () represents the "fa-chess_bishop" glyph.
-var ChessBishop = &nf.Glyph{
-	ID:      "chess_bishop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued60",
-}
-
-// ChessBoard () represents the "fa-chess_board" glyph.
-var ChessBoard = &nf.Glyph{
-	ID:      "chess_board",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued61",
-}
-
-// ChessKing () represents the "fa-chess_king" glyph.
-var ChessKing = &nf.Glyph{
-	ID:      "chess_king",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued62",
-}
-
-// ChessKnight () represents the "fa-chess_knight" glyph.
-var ChessKnight = &nf.Glyph{
-	ID:      "chess_knight",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued63",
-}
-
-// ChessPawn () represents the "fa-chess_pawn" glyph.
-var ChessPawn = &nf.Glyph{
-	ID:      "chess_pawn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued64",
-}
-
-// ChessQueen () represents the "fa-chess_queen" glyph.
-var ChessQueen = &nf.Glyph{
-	ID:      "chess_queen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued65",
-}
-
-// ChessRook () represents the "fa-chess_rook" glyph.
-var ChessRook = &nf.Glyph{
-	ID:      "chess_rook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued66",
-}
-
-// ChevronCircleDown () represents the "fa-chevron_circle_down" glyph.
-var ChevronCircleDown = &nf.Glyph{
-	ID:      "chevron_circle_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13a",
-}
-
-// ChevronCircleLeft () represents the "fa-chevron_circle_left" glyph.
-var ChevronCircleLeft = &nf.Glyph{
-	ID:      "chevron_circle_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf137",
-}
-
-// ChevronCircleRight () represents the "fa-chevron_circle_right" glyph.
-var ChevronCircleRight = &nf.Glyph{
-	ID:      "chevron_circle_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf138",
-}
-
-// ChevronCircleUp () represents the "fa-chevron_circle_up" glyph.
-var ChevronCircleUp = &nf.Glyph{
-	ID:      "chevron_circle_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf139",
-}
-
-// ChevronDown () represents the "fa-chevron_down" glyph.
-var ChevronDown = &nf.Glyph{
-	ID:      "chevron_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf078",
-}
-
-// ChevronLeft () represents the "fa-chevron_left" glyph.
-var ChevronLeft = &nf.Glyph{
-	ID:      "chevron_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf053",
-}
-
-// ChevronRight () represents the "fa-chevron_right" glyph.
-var ChevronRight = &nf.Glyph{
-	ID:      "chevron_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf054",
-}
-
-// ChevronUp () represents the "fa-chevron_up" glyph.
-var ChevronUp = &nf.Glyph{
-	ID:      "chevron_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf077",
-}
-
-// Child () represents the "fa-child" glyph.
-var Child = &nf.Glyph{
-	ID:      "child",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ae",
-}
-
-// Chrome () represents the "fa-chrome" glyph.
-var Chrome = &nf.Glyph{
-	ID:      "chrome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf268",
-}
-
-// Chromecast () represents the "fa-chromecast" glyph.
-var Chromecast = &nf.Glyph{
-	ID:      "chromecast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef97",
-}
-
-// Church () represents the "fa-church" glyph.
-var Church = &nf.Glyph{
-	ID:      "church",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede7",
-}
-
-// Circle () represents the "fa-circle" glyph.
-var Circle = &nf.Glyph{
-	ID:      "circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf111",
-}
-
-// CircleArrowDown () represents the "fa-circle_arrow_down" glyph.
-var CircleArrowDown = &nf.Glyph{
-	ID:      "circle_arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ab",
-}
-
-// CircleArrowLeft () represents the "fa-circle_arrow_left" glyph.
-var CircleArrowLeft = &nf.Glyph{
-	ID:      "circle_arrow_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a8",
-}
-
-// CircleArrowRight () represents the "fa-circle_arrow_right" glyph.
-var CircleArrowRight = &nf.Glyph{
-	ID:      "circle_arrow_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a9",
-}
-
-// CircleArrowUp () represents the "fa-circle_arrow_up" glyph.
-var CircleArrowUp = &nf.Glyph{
-	ID:      "circle_arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0aa",
-}
-
-// CircleCheck () represents the "fa-circle_check" glyph.
-var CircleCheck = &nf.Glyph{
-	ID:      "circle_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05d",
-}
-
-// CircleChevronDown () represents the "fa-circle_chevron_down" glyph.
-var CircleChevronDown = &nf.Glyph{
-	ID:      "circle_chevron_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13a",
-}
-
-// CircleChevronLeft () represents the "fa-circle_chevron_left" glyph.
-var CircleChevronLeft = &nf.Glyph{
-	ID:      "circle_chevron_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf137",
-}
-
-// CircleChevronRight () represents the "fa-circle_chevron_right" glyph.
-var CircleChevronRight = &nf.Glyph{
-	ID:      "circle_chevron_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf138",
-}
-
-// CircleChevronUp () represents the "fa-circle_chevron_up" glyph.
-var CircleChevronUp = &nf.Glyph{
-	ID:      "circle_chevron_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf139",
-}
-
-// CircleDollarToSlot () represents the "fa-circle_dollar_to_slot" glyph.
-var CircleDollarToSlot = &nf.Glyph{
-	ID:      "circle_dollar_to_slot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued98",
-}
-
-// CircleDot () represents the "fa-circle_dot" glyph.
-var CircleDot = &nf.Glyph{
-	ID:      "circle_dot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf192",
-}
-
-// CircleDown () represents the "fa-circle_down" glyph.
-var CircleDown = &nf.Glyph{
-	ID:      "circle_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01a",
-}
-
-// CircleExclamation () represents the "fa-circle_exclamation" glyph.
-var CircleExclamation = &nf.Glyph{
-	ID:      "circle_exclamation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06a",
-}
-
-// CircleH () represents the "fa-circle_h" glyph.
-var CircleH = &nf.Glyph{
-	ID:      "circle_h",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued83",
-}
-
-// CircleHalfStroke () represents the "fa-circle_half_stroke" glyph.
-var CircleHalfStroke = &nf.Glyph{
-	ID:      "circle_half_stroke",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf042",
-}
-
-// CircleInfo () represents the "fa-circle_info" glyph.
-var CircleInfo = &nf.Glyph{
-	ID:      "circle_info",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05a",
-}
-
-// CircleLeft () represents the "fa-circle_left" glyph.
-var CircleLeft = &nf.Glyph{
-	ID:      "circle_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf190",
-}
-
-// CircleMinus () represents the "fa-circle_minus" glyph.
-var CircleMinus = &nf.Glyph{
-	ID:      "circle_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf056",
-}
-
-// CircleNotch () represents the "fa-circle_notch" glyph.
-var CircleNotch = &nf.Glyph{
-	ID:      "circle_notch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ce",
-}
-
-// CircleO () represents the "fa-circle_o" glyph.
-var CircleO = &nf.Glyph{
-	ID:      "circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10c",
-}
-
-// CircleONotch () represents the "fa-circle_o_notch" glyph.
-var CircleONotch = &nf.Glyph{
-	ID:      "circle_o_notch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ce",
-}
-
-// CirclePause () represents the "fa-circle_pause" glyph.
-var CirclePause = &nf.Glyph{
-	ID:      "circle_pause",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28b",
-}
-
-// CirclePlay () represents the "fa-circle_play" glyph.
-var CirclePlay = &nf.Glyph{
-	ID:      "circle_play",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf144",
-}
-
-// CirclePlus () represents the "fa-circle_plus" glyph.
-var CirclePlus = &nf.Glyph{
-	ID:      "circle_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf055",
-}
-
-// CircleQuestion () represents the "fa-circle_question" glyph.
-var CircleQuestion = &nf.Glyph{
-	ID:      "circle_question",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf059",
-}
-
-// CircleRadiation () represents the "fa-circle_radiation" glyph.
-var CircleRadiation = &nf.Glyph{
-	ID:      "circle_radiation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef5b",
-}
-
-// CircleRight () represents the "fa-circle_right" glyph.
-var CircleRight = &nf.Glyph{
-	ID:      "circle_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18e",
-}
-
-// CircleStop () represents the "fa-circle_stop" glyph.
-var CircleStop = &nf.Glyph{
-	ID:      "circle_stop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28d",
-}
-
-// CircleThin () represents the "fa-circle_thin" glyph.
-var CircleThin = &nf.Glyph{
-	ID:      "circle_thin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1db",
-}
-
-// CircleUp () represents the "fa-circle_up" glyph.
-var CircleUp = &nf.Glyph{
-	ID:      "circle_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01b",
-}
-
-// CircleUser () represents the "fa-circle_user" glyph.
-var CircleUser = &nf.Glyph{
-	ID:      "circle_user",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bd",
-}
-
-// CircleXmark () represents the "fa-circle_xmark" glyph.
-var CircleXmark = &nf.Glyph{
-	ID:      "circle_xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05c",
-}
-
-// City () represents the "fa-city" glyph.
-var City = &nf.Glyph{
-	ID:      "city",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec0",
-}
-
-// Clipboard () represents the "fa-clipboard" glyph.
-var Clipboard = &nf.Glyph{
-	ID:      "clipboard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ea",
-}
-
-// ClipboardAlt () represents the "fa-clipboard_alt" glyph.
-var ClipboardAlt = &nf.Glyph{
-	ID:      "clipboard_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07f",
-}
-
-// ClipboardCheck () represents the "fa-clipboard_check" glyph.
-var ClipboardCheck = &nf.Glyph{
-	ID:      "clipboard_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued7a",
-}
-
-// ClipboardList () represents the "fa-clipboard_list" glyph.
-var ClipboardList = &nf.Glyph{
-	ID:      "clipboard_list",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued7b",
-}
-
-// ClipboardUser () represents the "fa-clipboard_user" glyph.
-var ClipboardUser = &nf.Glyph{
-	ID:      "clipboard_user",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef7c",
-}
-
-// Clock () represents the "fa-clock" glyph.
-var Clock = &nf.Glyph{
-	ID:      "clock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf017",
-}
-
-// ClockO () represents the "fa-clock_o" glyph.
-var ClockO = &nf.Glyph{
-	ID:      "clock_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf017",
-}
-
-// ClockRotateLeft () represents the "fa-clock_rotate_left" glyph.
-var ClockRotateLeft = &nf.Glyph{
-	ID:      "clock_rotate_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1da",
-}
-
-// Clone () represents the "fa-clone" glyph.
-var Clone = &nf.Glyph{
-	ID:      "clone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24d",
-}
-
-// Close () represents the "fa-close" glyph.
-var Close = &nf.Glyph{
-	ID:      "close",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00d",
-}
-
-// ClosedCaptioning () represents the "fa-closed_captioning" glyph.
-var ClosedCaptioning = &nf.Glyph{
-	ID:      "closed_captioning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20a",
-}
-
-// Cloud () represents the "fa-cloud" glyph.
-var Cloud = &nf.Glyph{
-	ID:      "cloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c2",
-}
-
-// CloudArrowDown () represents the "fa-cloud_arrow_down" glyph.
-var CloudArrowDown = &nf.Glyph{
-	ID:      "cloud_arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ed",
-}
-
-// CloudArrowUp () represents the "fa-cloud_arrow_up" glyph.
-var CloudArrowUp = &nf.Glyph{
-	ID:      "cloud_arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ee",
-}
-
-// CloudBolt () represents the "fa-cloud_bolt" glyph.
-var CloudBolt = &nf.Glyph{
-	ID:      "cloud_bolt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef2c",
-}
-
-// CloudDownload () represents the "fa-cloud_download" glyph.
-var CloudDownload = &nf.Glyph{
-	ID:      "cloud_download",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ed",
-}
-
-// CloudMeatball () represents the "fa-cloud_meatball" glyph.
-var CloudMeatball = &nf.Glyph{
-	ID:      "cloud_meatball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef1a",
-}
-
-// CloudMoon () represents the "fa-cloud_moon" glyph.
-var CloudMoon = &nf.Glyph{
-	ID:      "cloud_moon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeef",
-}
-
-// CloudMoonRain () represents the "fa-cloud_moon_rain" glyph.
-var CloudMoonRain = &nf.Glyph{
-	ID:      "cloud_moon_rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef1b",
-}
-
-// CloudRain () represents the "fa-cloud_rain" glyph.
-var CloudRain = &nf.Glyph{
-	ID:      "cloud_rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef1c",
-}
-
-// CloudShowersHeavy () represents the "fa-cloud_showers_heavy" glyph.
-var CloudShowersHeavy = &nf.Glyph{
-	ID:      "cloud_showers_heavy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef1d",
-}
-
-// CloudSun () represents the "fa-cloud_sun" glyph.
-var CloudSun = &nf.Glyph{
-	ID:      "cloud_sun",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef0",
-}
-
-// CloudSunRain () represents the "fa-cloud_sun_rain" glyph.
-var CloudSunRain = &nf.Glyph{
-	ID:      "cloud_sun_rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef1e",
-}
-
-// CloudUpload () represents the "fa-cloud_upload" glyph.
-var CloudUpload = &nf.Glyph{
-	ID:      "cloud_upload",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ee",
-}
-
-// Cloudscale () represents the "fa-cloudscale" glyph.
-var Cloudscale = &nf.Glyph{
-	ID:      "cloudscale",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15f",
-}
-
-// Cloudsmith () represents the "fa-cloudsmith" glyph.
-var Cloudsmith = &nf.Glyph{
-	ID:      "cloudsmith",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf167",
-}
-
-// Cloudversify () represents the "fa-cloudversify" glyph.
-var Cloudversify = &nf.Glyph{
-	ID:      "cloudversify",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16f",
-}
-
-// Cny () represents the "fa-cny" glyph.
-var Cny = &nf.Glyph{
-	ID:      "cny",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf157",
-}
-
-// Code () represents the "fa-code" glyph.
-var Code = &nf.Glyph{
-	ID:      "code",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf121",
-}
-
-// CodeBranch () represents the "fa-code_branch" glyph.
-var CodeBranch = &nf.Glyph{
-	ID:      "code_branch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf126",
-}
-
-// CodeCommit () represents the "fa-code_commit" glyph.
-var CodeCommit = &nf.Glyph{
-	ID:      "code_commit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf172",
-}
-
-// CodeFork () represents the "fa-code_fork" glyph.
-var CodeFork = &nf.Glyph{
-	ID:      "code_fork",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf126",
-}
-
-// CodeMerge () represents the "fa-code_merge" glyph.
-var CodeMerge = &nf.Glyph{
-	ID:      "code_merge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf17f",
-}
-
-// Codepen () represents the "fa-codepen" glyph.
-var Codepen = &nf.Glyph{
-	ID:      "codepen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cb",
-}
-
-// Codiepie () represents the "fa-codiepie" glyph.
-var Codiepie = &nf.Glyph{
-	ID:      "codiepie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf284",
-}
-
-// Coffee () represents the "fa-coffee" glyph.
-var Coffee = &nf.Glyph{
-	ID:      "coffee",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f4",
-}
-
-// Cog () represents the "fa-cog" glyph.
-var Cog = &nf.Glyph{
-	ID:      "cog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf013",
-}
-
-// Cogs () represents the "fa-cogs" glyph.
-var Cogs = &nf.Glyph{
-	ID:      "cogs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf085",
-}
-
-// Coins () represents the "fa-coins" glyph.
-var Coins = &nf.Glyph{
-	ID:      "coins",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede8",
-}
-
-// Columns () represents the "fa-columns" glyph.
-var Columns = &nf.Glyph{
-	ID:      "columns",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0db",
-}
-
-// Comment () represents the "fa-comment" glyph.
-var Comment = &nf.Glyph{
-	ID:      "comment",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf075",
-}
-
-// CommentDollar () represents the "fa-comment_dollar" glyph.
-var CommentDollar = &nf.Glyph{
-	ID:      "comment_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec1",
-}
-
-// CommentDots () represents the "fa-comment_dots" glyph.
-var CommentDots = &nf.Glyph{
-	ID:      "comment_dots",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27b",
-}
-
-// CommentMedical () represents the "fa-comment_medical" glyph.
-var CommentMedical = &nf.Glyph{
-	ID:      "comment_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef7d",
-}
-
-// CommentO () represents the "fa-comment_o" glyph.
-var CommentO = &nf.Glyph{
-	ID:      "comment_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e5",
-}
-
-// CommentSlash () represents the "fa-comment_slash" glyph.
-var CommentSlash = &nf.Glyph{
-	ID:      "comment_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued96",
-}
-
-// CommentSms () represents the "fa-comment_sms" glyph.
-var CommentSms = &nf.Glyph{
-	ID:      "comment_sms",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef68",
-}
-
-// Commenting () represents the "fa-commenting" glyph.
-var Commenting = &nf.Glyph{
-	ID:      "commenting",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27a",
-}
-
-// CommentingO () represents the "fa-commenting_o" glyph.
-var CommentingO = &nf.Glyph{
-	ID:      "commenting_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27b",
-}
-
-// Comments () represents the "fa-comments" glyph.
-var Comments = &nf.Glyph{
-	ID:      "comments",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf086",
-}
-
-// CommentsDollar () represents the "fa-comments_dollar" glyph.
-var CommentsDollar = &nf.Glyph{
-	ID:      "comments_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec2",
-}
-
-// CommentsO () represents the "fa-comments_o" glyph.
-var CommentsO = &nf.Glyph{
-	ID:      "comments_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e6",
-}
-
-// CompactDisc () represents the "fa-compact_disc" glyph.
-var CompactDisc = &nf.Glyph{
-	ID:      "compact_disc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede9",
-}
-
-// Compass () represents the "fa-compass" glyph.
-var Compass = &nf.Glyph{
-	ID:      "compass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14e",
-}
-
-// CompassDrafting () represents the "fa-compass_drafting" glyph.
-var CompassDrafting = &nf.Glyph{
-	ID:      "compass_drafting",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee31",
-}
-
-// Compress () represents the "fa-compress" glyph.
-var Compress = &nf.Glyph{
-	ID:      "compress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf066",
-}
-
-// ComputerMouse () represents the "fa-computer_mouse" glyph.
-var ComputerMouse = &nf.Glyph{
-	ID:      "computer_mouse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefba",
-}
-
-// Confluence () represents the "fa-confluence" glyph.
-var Confluence = &nf.Glyph{
-	ID:      "confluence",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef3f",
-}
-
-// Connectdevelop () represents the "fa-connectdevelop" glyph.
-var Connectdevelop = &nf.Glyph{
-	ID:      "connectdevelop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20e",
-}
-
-// Contao () represents the "fa-contao" glyph.
-var Contao = &nf.Glyph{
-	ID:      "contao",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26d",
-}
-
-// Cookie () represents the "fa-cookie" glyph.
-var Cookie = &nf.Glyph{
-	ID:      "cookie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee2c",
-}
-
-// CookieBite () represents the "fa-cookie_bite" glyph.
-var CookieBite = &nf.Glyph{
-	ID:      "cookie_bite",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee2d",
-}
-
-// Copy () represents the "fa-copy" glyph.
-var Copy = &nf.Glyph{
-	ID:      "copy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c5",
-}
-
-// Copyright () represents the "fa-copyright" glyph.
-var Copyright = &nf.Glyph{
-	ID:      "copyright",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f9",
-}
-
-// CottonBureau () represents the "fa-cotton_bureau" glyph.
-var CottonBureau = &nf.Glyph{
-	ID:      "cotton_bureau",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb5",
-}
-
-// Couch () represents the "fa-couch" glyph.
-var Couch = &nf.Glyph{
-	ID:      "couch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued97",
-}
-
-// Cow () represents the "fa-cow" glyph.
-var Cow = &nf.Glyph{
-	ID:      "cow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef1",
-}
-
-// Cpanel () represents the "fa-cpanel" glyph.
-var Cpanel = &nf.Glyph{
-	ID:      "cpanel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18f",
-}
-
-// CreativeCommons () represents the "fa-creative_commons" glyph.
-var CreativeCommons = &nf.Glyph{
-	ID:      "creative_commons",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25e",
-}
-
-// CreativeCommonsBy () represents the "fa-creative_commons_by" glyph.
-var CreativeCommonsBy = &nf.Glyph{
-	ID:      "creative_commons_by",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb1",
-}
-
-// CreativeCommonsNc () represents the "fa-creative_commons_nc" glyph.
-var CreativeCommonsNc = &nf.Glyph{
-	ID:      "creative_commons_nc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb2",
-}
-
-// CreativeCommonsNcEu () represents the "fa-creative_commons_nc_eu" glyph.
-var CreativeCommonsNcEu = &nf.Glyph{
-	ID:      "creative_commons_nc_eu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb3",
-}
-
-// CreativeCommonsNcJp () represents the "fa-creative_commons_nc_jp" glyph.
-var CreativeCommonsNcJp = &nf.Glyph{
-	ID:      "creative_commons_nc_jp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb4",
-}
-
-// CreativeCommonsNd () represents the "fa-creative_commons_nd" glyph.
-var CreativeCommonsNd = &nf.Glyph{
-	ID:      "creative_commons_nd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb5",
-}
-
-// CreativeCommonsPd () represents the "fa-creative_commons_pd" glyph.
-var CreativeCommonsPd = &nf.Glyph{
-	ID:      "creative_commons_pd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb6",
-}
-
-// CreativeCommonsPdAlt () represents the "fa-creative_commons_pd_alt" glyph.
-var CreativeCommonsPdAlt = &nf.Glyph{
-	ID:      "creative_commons_pd_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb7",
-}
-
-// CreativeCommonsRemix () represents the "fa-creative_commons_remix" glyph.
-var CreativeCommonsRemix = &nf.Glyph{
-	ID:      "creative_commons_remix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb8",
-}
-
-// CreativeCommonsSa () represents the "fa-creative_commons_sa" glyph.
-var CreativeCommonsSa = &nf.Glyph{
-	ID:      "creative_commons_sa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb9",
-}
-
-// CreativeCommonsSampling () represents the "fa-creative_commons_sampling" glyph.
-var CreativeCommonsSampling = &nf.Glyph{
-	ID:      "creative_commons_sampling",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedba",
-}
-
-// CreativeCommonsSamplingPlus () represents the "fa-creative_commons_sampling_plus" glyph.
-var CreativeCommonsSamplingPlus = &nf.Glyph{
-	ID:      "creative_commons_sampling_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedbb",
-}
-
-// CreativeCommonsShare () represents the "fa-creative_commons_share" glyph.
-var CreativeCommonsShare = &nf.Glyph{
-	ID:      "creative_commons_share",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedbc",
-}
-
-// CreativeCommonsZero () represents the "fa-creative_commons_zero" glyph.
-var CreativeCommonsZero = &nf.Glyph{
-	ID:      "creative_commons_zero",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedbd",
-}
-
-// CreditCard () represents the "fa-credit_card" glyph.
-var CreditCard = &nf.Glyph{
-	ID:      "credit_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09d",
-}
-
-// CreditCardAlt () represents the "fa-credit_card_alt" glyph.
-var CreditCardAlt = &nf.Glyph{
-	ID:      "credit_card_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf283",
-}
-
-// CriticalRole () represents the "fa-critical_role" glyph.
-var CriticalRole = &nf.Glyph{
-	ID:      "critical_role",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef2",
-}
-
-// Crop () represents the "fa-crop" glyph.
-var Crop = &nf.Glyph{
-	ID:      "crop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf125",
-}
-
-// CropSimple () represents the "fa-crop_simple" glyph.
-var CropSimple = &nf.Glyph{
-	ID:      "crop_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee2e",
-}
-
-// Cross () represents the "fa-cross" glyph.
-var Cross = &nf.Glyph{
-	ID:      "cross",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec3",
-}
-
-// Crosshairs () represents the "fa-crosshairs" glyph.
-var Crosshairs = &nf.Glyph{
-	ID:      "crosshairs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05b",
-}
-
-// Crow () represents the "fa-crow" glyph.
-var Crow = &nf.Glyph{
-	ID:      "crow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedea",
-}
-
-// Crown () represents the "fa-crown" glyph.
-var Crown = &nf.Glyph{
-	ID:      "crown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedeb",
-}
-
-// Crutch () represents the "fa-crutch" glyph.
-var Crutch = &nf.Glyph{
-	ID:      "crutch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef7e",
-}
-
-// Css3 () represents the "fa-css3" glyph.
-var Css3 = &nf.Glyph{
-	ID:      "css3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13c",
-}
-
-// Css3Alt () represents the "fa-css3_alt" glyph.
-var Css3Alt = &nf.Glyph{
-	ID:      "css3_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19f",
-}
-
-// Cube () represents the "fa-cube" glyph.
-var Cube = &nf.Glyph{
-	ID:      "cube",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b2",
-}
-
-// Cubes () represents the "fa-cubes" glyph.
-var Cubes = &nf.Glyph{
-	ID:      "cubes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b3",
-}
-
-// Cut () represents the "fa-cut" glyph.
-var Cut = &nf.Glyph{
-	ID:      "cut",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c4",
-}
-
-// Cutlery () represents the "fa-cutlery" glyph.
-var Cutlery = &nf.Glyph{
-	ID:      "cutlery",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f5",
-}
-
-// Cuttlefish () represents the "fa-cuttlefish" glyph.
-var Cuttlefish = &nf.Glyph{
-	ID:      "cuttlefish",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1af",
-}
-
-// DAndD () represents the "fa-d_and_d" glyph.
-var DAndD = &nf.Glyph{
-	ID:      "d_and_d",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1bf",
-}
-
-// DAndDBeyond () represents the "fa-d_and_d_beyond" glyph.
-var DAndDBeyond = &nf.Glyph{
-	ID:      "d_and_d_beyond",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef3",
-}
-
-// Dashboard () represents the "fa-dashboard" glyph.
-var Dashboard = &nf.Glyph{
-	ID:      "dashboard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e4",
-}
-
-// Dashcube () represents the "fa-dashcube" glyph.
-var Dashcube = &nf.Glyph{
-	ID:      "dashcube",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf210",
-}
-
-// Database () represents the "fa-database" glyph.
-var Database = &nf.Glyph{
-	ID:      "database",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c0",
-}
-
-// Deaf () represents the "fa-deaf" glyph.
-var Deaf = &nf.Glyph{
-	ID:      "deaf",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a4",
-}
-
-// Deafness () represents the "fa-deafness" glyph.
-var Deafness = &nf.Glyph{
-	ID:      "deafness",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a4",
-}
-
-// Dedent () represents the "fa-dedent" glyph.
-var Dedent = &nf.Glyph{
-	ID:      "dedent",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03b",
-}
-
-// DeleteLeft () represents the "fa-delete_left" glyph.
-var DeleteLeft = &nf.Glyph{
-	ID:      "delete_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee23",
-}
-
-// Delicious () represents the "fa-delicious" glyph.
-var Delicious = &nf.Glyph{
-	ID:      "delicious",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a5",
-}
-
-// Democrat () represents the "fa-democrat" glyph.
-var Democrat = &nf.Glyph{
-	ID:      "democrat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef1f",
-}
-
-// Deploydog () represents the "fa-deploydog" glyph.
-var Deploydog = &nf.Glyph{
-	ID:      "deploydog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cf",
-}
-
-// Deskpro () represents the "fa-deskpro" glyph.
-var Deskpro = &nf.Glyph{
-	ID:      "deskpro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1df",
-}
-
-// Desktop () represents the "fa-desktop" glyph.
-var Desktop = &nf.Glyph{
-	ID:      "desktop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf108",
-}
-
-// Dev () represents the "fa-dev" glyph.
-var Dev = &nf.Glyph{
-	ID:      "dev",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef4",
-}
-
-// Deviantart () represents the "fa-deviantart" glyph.
-var Deviantart = &nf.Glyph{
-	ID:      "deviantart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1bd",
-}
-
-// Dharmachakra () represents the "fa-dharmachakra" glyph.
-var Dharmachakra = &nf.Glyph{
-	ID:      "dharmachakra",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec4",
-}
-
-// Dhl () represents the "fa-dhl" glyph.
-var Dhl = &nf.Glyph{
-	ID:      "dhl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef40",
-}
-
-// DiagramProject () represents the "fa-diagram_project" glyph.
-var DiagramProject = &nf.Glyph{
-	ID:      "diagram_project",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefce",
-}
-
-// Diamond () represents the "fa-diamond" glyph.
-var Diamond = &nf.Glyph{
-	ID:      "diamond",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29f",
-}
-
-// DiamondTurnRight () represents the "fa-diamond_turn_right" glyph.
-var DiamondTurnRight = &nf.Glyph{
-	ID:      "diamond_turn_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea2",
-}
-
-// Diaspora () represents the "fa-diaspora" glyph.
-var Diaspora = &nf.Glyph{
-	ID:      "diaspora",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef41",
-}
-
-// Dice () represents the "fa-dice" glyph.
-var Dice = &nf.Glyph{
-	ID:      "dice",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedec",
-}
-
-// DiceD20 () represents the "fa-dice_d20" glyph.
-var DiceD20 = &nf.Glyph{
-	ID:      "dice_d20",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef5",
-}
-
-// DiceD6 () represents the "fa-dice_d6" glyph.
-var DiceD6 = &nf.Glyph{
-	ID:      "dice_d6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef6",
-}
-
-// DiceFive () represents the "fa-dice_five" glyph.
-var DiceFive = &nf.Glyph{
-	ID:      "dice_five",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueded",
-}
-
-// DiceFour () represents the "fa-dice_four" glyph.
-var DiceFour = &nf.Glyph{
-	ID:      "dice_four",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedee",
-}
-
-// DiceOne () represents the "fa-dice_one" glyph.
-var DiceOne = &nf.Glyph{
-	ID:      "dice_one",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedef",
-}
-
-// DiceSix () represents the "fa-dice_six" glyph.
-var DiceSix = &nf.Glyph{
-	ID:      "dice_six",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf0",
-}
-
-// DiceThree () represents the "fa-dice_three" glyph.
-var DiceThree = &nf.Glyph{
-	ID:      "dice_three",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf1",
-}
-
-// DiceTwo () represents the "fa-dice_two" glyph.
-var DiceTwo = &nf.Glyph{
-	ID:      "dice_two",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf2",
-}
-
-// Digg () represents the "fa-digg" glyph.
-var Digg = &nf.Glyph{
-	ID:      "digg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a6",
-}
-
-// DigitalOcean () represents the "fa-digital_ocean" glyph.
-var DigitalOcean = &nf.Glyph{
-	ID:      "digital_ocean",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ef",
-}
-
-// Discord () represents the "fa-discord" glyph.
-var Discord = &nf.Glyph{
-	ID:      "discord",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ff",
-}
-
-// Discourse () represents the "fa-discourse" glyph.
-var Discourse = &nf.Glyph{
-	ID:      "discourse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20c",
-}
-
-// Disease () represents the "fa-disease" glyph.
-var Disease = &nf.Glyph{
-	ID:      "disease",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef7f",
-}
-
-// Divide () represents the "fa-divide" glyph.
-var Divide = &nf.Glyph{
-	ID:      "divide",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf3",
-}
-
-// Dna () represents the "fa-dna" glyph.
-var Dna = &nf.Glyph{
-	ID:      "dna",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued7d",
-}
-
-// Dochub () represents the "fa-dochub" glyph.
-var Dochub = &nf.Glyph{
-	ID:      "dochub",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20f",
-}
-
-// Docker () represents the "fa-docker" glyph.
-var Docker = &nf.Glyph{
-	ID:      "docker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21f",
-}
-
-// Dog () represents the "fa-dog" glyph.
-var Dog = &nf.Glyph{
-	ID:      "dog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef7",
-}
-
-// Dollar () represents the "fa-dollar" glyph.
-var Dollar = &nf.Glyph{
-	ID:      "dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf155",
-}
-
-// DollarSign () represents the "fa-dollar_sign" glyph.
-var DollarSign = &nf.Glyph{
-	ID:      "dollar_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf155",
-}
-
-// Dolly () represents the "fa-dolly" glyph.
-var Dolly = &nf.Glyph{
-	ID:      "dolly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued7e",
-}
-
-// DoorClosed () represents the "fa-door_closed" glyph.
-var DoorClosed = &nf.Glyph{
-	ID:      "door_closed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf4",
-}
-
-// DoorOpen () represents the "fa-door_open" glyph.
-var DoorOpen = &nf.Glyph{
-	ID:      "door_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf5",
-}
-
-// DotCircleO () represents the "fa-dot_circle_o" glyph.
-var DotCircleO = &nf.Glyph{
-	ID:      "dot_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf192",
-}
-
-// Dove () represents the "fa-dove" glyph.
-var Dove = &nf.Glyph{
-	ID:      "dove",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued99",
-}
-
-// DownLeftAndUpRightToCenter () represents the "fa-down_left_and_up_right_to_center" glyph.
-var DownLeftAndUpRightToCenter = &nf.Glyph{
-	ID:      "down_left_and_up_right_to_center",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued4d",
-}
-
-// DownLong () represents the "fa-down_long" glyph.
-var DownLong = &nf.Glyph{
-	ID:      "down_long",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03f",
-}
-
-// Download () represents the "fa-download" glyph.
-var Download = &nf.Glyph{
-	ID:      "download",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf019",
-}
-
-// Draft2Digital () represents the "fa-draft2digital" glyph.
-var Draft2Digital = &nf.Glyph{
-	ID:      "draft2digital",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf220",
-}
-
-// Dragon () represents the "fa-dragon" glyph.
-var Dragon = &nf.Glyph{
-	ID:      "dragon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef8",
-}
-
-// DrawPolygon () represents the "fa-draw_polygon" glyph.
-var DrawPolygon = &nf.Glyph{
-	ID:      "draw_polygon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea3",
-}
-
-// Dribbble () represents the "fa-dribbble" glyph.
-var Dribbble = &nf.Glyph{
-	ID:      "dribbble",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf17d",
-}
-
-// DriversLicense () represents the "fa-drivers_license" glyph.
-var DriversLicense = &nf.Glyph{
-	ID:      "drivers_license",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c2",
-}
-
-// DriversLicenseO () represents the "fa-drivers_license_o" glyph.
-var DriversLicenseO = &nf.Glyph{
-	ID:      "drivers_license_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c3",
-}
-
-// Dropbox () represents the "fa-dropbox" glyph.
-var Dropbox = &nf.Glyph{
-	ID:      "dropbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16b",
-}
-
-// Droplet () represents the "fa-droplet" glyph.
-var Droplet = &nf.Glyph{
-	ID:      "droplet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf043",
-}
-
-// DropletSlash () represents the "fa-droplet_slash" glyph.
-var DropletSlash = &nf.Glyph{
-	ID:      "droplet_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee8e",
-}
-
-// Drum () represents the "fa-drum" glyph.
-var Drum = &nf.Glyph{
-	ID:      "drum",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee32",
-}
-
-// DrumSteelpan () represents the "fa-drum_steelpan" glyph.
-var DrumSteelpan = &nf.Glyph{
-	ID:      "drum_steelpan",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee33",
-}
-
-// DrumstickBite () represents the "fa-drumstick_bite" glyph.
-var DrumstickBite = &nf.Glyph{
-	ID:      "drumstick_bite",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueef9",
-}
-
-// Drupal () represents the "fa-drupal" glyph.
-var Drupal = &nf.Glyph{
-	ID:      "drupal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a9",
-}
-
-// Dumbbell () represents the "fa-dumbbell" glyph.
-var Dumbbell = &nf.Glyph{
-	ID:      "dumbbell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued67",
-}
-
-// Dumpster () represents the "fa-dumpster" glyph.
-var Dumpster = &nf.Glyph{
-	ID:      "dumpster",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef42",
-}
-
-// DumpsterFire () represents the "fa-dumpster_fire" glyph.
-var DumpsterFire = &nf.Glyph{
-	ID:      "dumpster_fire",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef43",
-}
-
-// Dungeon () represents the "fa-dungeon" glyph.
-var Dungeon = &nf.Glyph{
-	ID:      "dungeon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueefa",
-}
-
-// Dyalog () represents the "fa-dyalog" glyph.
-var Dyalog = &nf.Glyph{
-	ID:      "dyalog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22f",
-}
-
-// EarDeaf () represents the "fa-ear_deaf" glyph.
-var EarDeaf = &nf.Glyph{
-	ID:      "ear_deaf",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a4",
-}
-
-// EarListen () represents the "fa-ear_listen" glyph.
-var EarListen = &nf.Glyph{
-	ID:      "ear_listen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a2",
-}
-
-// Earlybirds () represents the "fa-earlybirds" glyph.
-var Earlybirds = &nf.Glyph{
-	ID:      "earlybirds",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf230",
-}
-
-// EarthAfrica () represents the "fa-earth_africa" glyph.
-var EarthAfrica = &nf.Glyph{
-	ID:      "earth_africa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee45",
-}
-
-// EarthAmericas () represents the "fa-earth_americas" glyph.
-var EarthAmericas = &nf.Glyph{
-	ID:      "earth_americas",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee46",
-}
-
-// EarthAsia () represents the "fa-earth_asia" glyph.
-var EarthAsia = &nf.Glyph{
-	ID:      "earth_asia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee47",
-}
-
-// EarthEurope () represents the "fa-earth_europe" glyph.
-var EarthEurope = &nf.Glyph{
-	ID:      "earth_europe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef4b",
-}
-
-// Ebay () represents the "fa-ebay" glyph.
-var Ebay = &nf.Glyph{
-	ID:      "ebay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedbe",
-}
-
-// Edge () represents the "fa-edge" glyph.
-var Edge = &nf.Glyph{
-	ID:      "edge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf282",
-}
-
-// Edit () represents the "fa-edit" glyph.
-var Edit = &nf.Glyph{
-	ID:      "edit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf044",
-}
-
-// Eercast () represents the "fa-eercast" glyph.
-var Eercast = &nf.Glyph{
-	ID:      "eercast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2da",
-}
-
-// Egg () represents the "fa-egg" glyph.
-var Egg = &nf.Glyph{
-	ID:      "egg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef80",
-}
-
-// Eject () represents the "fa-eject" glyph.
-var Eject = &nf.Glyph{
-	ID:      "eject",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf052",
-}
-
-// Elementor () represents the "fa-elementor" glyph.
-var Elementor = &nf.Glyph{
-	ID:      "elementor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued5a",
-}
-
-// Ellipsis () represents the "fa-ellipsis" glyph.
-var Ellipsis = &nf.Glyph{
-	ID:      "ellipsis",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf141",
-}
-
-// EllipsisH () represents the "fa-ellipsis_h" glyph.
-var EllipsisH = &nf.Glyph{
-	ID:      "ellipsis_h",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf141",
-}
-
-// EllipsisV () represents the "fa-ellipsis_v" glyph.
-var EllipsisV = &nf.Glyph{
-	ID:      "ellipsis_v",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf142",
-}
-
-// EllipsisVertical () represents the "fa-ellipsis_vertical" glyph.
-var EllipsisVertical = &nf.Glyph{
-	ID:      "ellipsis_vertical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf142",
-}
-
-// Ello () represents the "fa-ello" glyph.
-var Ello = &nf.Glyph{
-	ID:      "ello",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea4",
-}
-
-// Ember () represents the "fa-ember" glyph.
-var Ember = &nf.Glyph{
-	ID:      "ember",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued4e",
-}
-
-// Empire () represents the "fa-empire" glyph.
-var Empire = &nf.Glyph{
-	ID:      "empire",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d1",
-}
-
-// Envelope () represents the "fa-envelope" glyph.
-var Envelope = &nf.Glyph{
-	ID:      "envelope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e0",
-}
-
-// EnvelopeO () represents the "fa-envelope_o" glyph.
-var EnvelopeO = &nf.Glyph{
-	ID:      "envelope_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf003",
-}
-
-// EnvelopeOpen () represents the "fa-envelope_open" glyph.
-var EnvelopeOpen = &nf.Glyph{
-	ID:      "envelope_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b6",
-}
-
-// EnvelopeOpenO () represents the "fa-envelope_open_o" glyph.
-var EnvelopeOpenO = &nf.Glyph{
-	ID:      "envelope_open_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b7",
-}
-
-// EnvelopeOpenText () represents the "fa-envelope_open_text" glyph.
-var EnvelopeOpenText = &nf.Glyph{
-	ID:      "envelope_open_text",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec5",
-}
-
-// EnvelopeSquare () represents the "fa-envelope_square" glyph.
-var EnvelopeSquare = &nf.Glyph{
-	ID:      "envelope_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf199",
-}
-
-// EnvelopesBulk () represents the "fa-envelopes_bulk" glyph.
-var EnvelopesBulk = &nf.Glyph{
-	ID:      "envelopes_bulk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed1",
-}
-
-// Envira () represents the "fa-envira" glyph.
-var Envira = &nf.Glyph{
-	ID:      "envira",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf299",
-}
-
-// Equals () represents the "fa-equals" glyph.
-var Equals = &nf.Glyph{
-	ID:      "equals",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf6",
-}
-
-// Eraser () represents the "fa-eraser" glyph.
-var Eraser = &nf.Glyph{
-	ID:      "eraser",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf12d",
-}
-
-// Erlang () represents the "fa-erlang" glyph.
-var Erlang = &nf.Glyph{
-	ID:      "erlang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23f",
-}
-
-// Ethereum () represents the "fa-ethereum" glyph.
-var Ethereum = &nf.Glyph{
-	ID:      "ethereum",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued58",
-}
-
-// Ethernet () represents the "fa-ethernet" glyph.
-var Ethernet = &nf.Glyph{
-	ID:      "ethernet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef44",
-}
-
-// Etsy () represents the "fa-etsy" glyph.
-var Etsy = &nf.Glyph{
-	ID:      "etsy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d7",
-}
-
-// Eur () represents the "fa-eur" glyph.
-var Eur = &nf.Glyph{
-	ID:      "eur",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf153",
-}
-
-// Euro () represents the "fa-euro" glyph.
-var Euro = &nf.Glyph{
-	ID:      "euro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf153",
-}
-
-// EuroSign () represents the "fa-euro_sign" glyph.
-var EuroSign = &nf.Glyph{
-	ID:      "euro_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf153",
-}
-
-// Evernote () represents the "fa-evernote" glyph.
-var Evernote = &nf.Glyph{
-	ID:      "evernote",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef98",
-}
-
-// Exchange () represents the "fa-exchange" glyph.
-var Exchange = &nf.Glyph{
-	ID:      "exchange",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ec",
-}
-
-// Exclamation () represents the "fa-exclamation" glyph.
-var Exclamation = &nf.Glyph{
-	ID:      "exclamation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf12a",
-}
-
-// ExclamationCircle () represents the "fa-exclamation_circle" glyph.
-var ExclamationCircle = &nf.Glyph{
-	ID:      "exclamation_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06a",
-}
-
-// ExclamationTriangle () represents the "fa-exclamation_triangle" glyph.
-var ExclamationTriangle = &nf.Glyph{
-	ID:      "exclamation_triangle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf071",
-}
-
-// Expand () represents the "fa-expand" glyph.
-var Expand = &nf.Glyph{
-	ID:      "expand",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf065",
-}
-
-// Expeditedssl () represents the "fa-expeditedssl" glyph.
-var Expeditedssl = &nf.Glyph{
-	ID:      "expeditedssl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23e",
-}
-
-// ExternalLink () represents the "fa-external_link" glyph.
-var ExternalLink = &nf.Glyph{
-	ID:      "external_link",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08e",
-}
-
-// ExternalLinkSquare () represents the "fa-external_link_square" glyph.
-var ExternalLinkSquare = &nf.Glyph{
-	ID:      "external_link_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14c",
-}
-
-// Eye () represents the "fa-eye" glyph.
-var Eye = &nf.Glyph{
-	ID:      "eye",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06e",
-}
-
-// EyeDropper () represents the "fa-eye_dropper" glyph.
-var EyeDropper = &nf.Glyph{
-	ID:      "eye_dropper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fb",
-}
-
-// EyeLowVision () represents the "fa-eye_low_vision" glyph.
-var EyeLowVision = &nf.Glyph{
-	ID:      "eye_low_vision",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a8",
-}
-
-// EyeSlash () represents the "fa-eye_slash" glyph.
-var EyeSlash = &nf.Glyph{
-	ID:      "eye_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf070",
-}
-
-// Eyedropper () represents the "fa-eyedropper" glyph.
-var Eyedropper = &nf.Glyph{
-	ID:      "eyedropper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fb",
-}
-
-// Fa () represents the "fa-fa" glyph.
-var Fa = &nf.Glyph{
-	ID:      "fa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b4",
-}
-
-// FaceAngry () represents the "fa-face_angry" glyph.
-var FaceAngry = &nf.Glyph{
-	ID:      "face_angry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee1f",
-}
-
-// FaceDizzy () represents the "fa-face_dizzy" glyph.
-var FaceDizzy = &nf.Glyph{
-	ID:      "face_dizzy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee30",
-}
-
-// FaceFlushed () represents the "fa-face_flushed" glyph.
-var FaceFlushed = &nf.Glyph{
-	ID:      "face_flushed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee42",
-}
-
-// FaceFrown () represents the "fa-face_frown" glyph.
-var FaceFrown = &nf.Glyph{
-	ID:      "face_frown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf119",
-}
-
-// FaceFrownOpen () represents the "fa-face_frown_open" glyph.
-var FaceFrownOpen = &nf.Glyph{
-	ID:      "face_frown_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee43",
-}
-
-// FaceGrimace () represents the "fa-face_grimace" glyph.
-var FaceGrimace = &nf.Glyph{
-	ID:      "face_grimace",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee48",
-}
-
-// FaceGrin () represents the "fa-face_grin" glyph.
-var FaceGrin = &nf.Glyph{
-	ID:      "face_grin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee49",
-}
-
-// FaceGrinBeam () represents the "fa-face_grin_beam" glyph.
-var FaceGrinBeam = &nf.Glyph{
-	ID:      "face_grin_beam",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee4b",
-}
-
-// FaceGrinBeamSweat () represents the "fa-face_grin_beam_sweat" glyph.
-var FaceGrinBeamSweat = &nf.Glyph{
-	ID:      "face_grin_beam_sweat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee4c",
-}
-
-// FaceGrinHearts () represents the "fa-face_grin_hearts" glyph.
-var FaceGrinHearts = &nf.Glyph{
-	ID:      "face_grin_hearts",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee4d",
-}
-
-// FaceGrinSquint () represents the "fa-face_grin_squint" glyph.
-var FaceGrinSquint = &nf.Glyph{
-	ID:      "face_grin_squint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee4e",
-}
-
-// FaceGrinSquintTears () represents the "fa-face_grin_squint_tears" glyph.
-var FaceGrinSquintTears = &nf.Glyph{
-	ID:      "face_grin_squint_tears",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee4f",
-}
-
-// FaceGrinStars () represents the "fa-face_grin_stars" glyph.
-var FaceGrinStars = &nf.Glyph{
-	ID:      "face_grin_stars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee50",
-}
-
-// FaceGrinTears () represents the "fa-face_grin_tears" glyph.
-var FaceGrinTears = &nf.Glyph{
-	ID:      "face_grin_tears",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee51",
-}
-
-// FaceGrinTongue () represents the "fa-face_grin_tongue" glyph.
-var FaceGrinTongue = &nf.Glyph{
-	ID:      "face_grin_tongue",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee52",
-}
-
-// FaceGrinTongueSquint () represents the "fa-face_grin_tongue_squint" glyph.
-var FaceGrinTongueSquint = &nf.Glyph{
-	ID:      "face_grin_tongue_squint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee53",
-}
-
-// FaceGrinTongueWink () represents the "fa-face_grin_tongue_wink" glyph.
-var FaceGrinTongueWink = &nf.Glyph{
-	ID:      "face_grin_tongue_wink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee54",
-}
-
-// FaceGrinWide () represents the "fa-face_grin_wide" glyph.
-var FaceGrinWide = &nf.Glyph{
-	ID:      "face_grin_wide",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee4a",
-}
-
-// FaceGrinWink () represents the "fa-face_grin_wink" glyph.
-var FaceGrinWink = &nf.Glyph{
-	ID:      "face_grin_wink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee55",
-}
-
-// FaceKiss () represents the "fa-face_kiss" glyph.
-var FaceKiss = &nf.Glyph{
-	ID:      "face_kiss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee5f",
-}
-
-// FaceKissBeam () represents the "fa-face_kiss_beam" glyph.
-var FaceKissBeam = &nf.Glyph{
-	ID:      "face_kiss_beam",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee60",
-}
-
-// FaceKissWinkHeart () represents the "fa-face_kiss_wink_heart" glyph.
-var FaceKissWinkHeart = &nf.Glyph{
-	ID:      "face_kiss_wink_heart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee61",
-}
-
-// FaceLaugh () represents the "fa-face_laugh" glyph.
-var FaceLaugh = &nf.Glyph{
-	ID:      "face_laugh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee62",
-}
-
-// FaceLaughBeam () represents the "fa-face_laugh_beam" glyph.
-var FaceLaughBeam = &nf.Glyph{
-	ID:      "face_laugh_beam",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee63",
-}
-
-// FaceLaughSquint () represents the "fa-face_laugh_squint" glyph.
-var FaceLaughSquint = &nf.Glyph{
-	ID:      "face_laugh_squint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee64",
-}
-
-// FaceLaughWink () represents the "fa-face_laugh_wink" glyph.
-var FaceLaughWink = &nf.Glyph{
-	ID:      "face_laugh_wink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee65",
-}
-
-// FaceMeh () represents the "fa-face_meh" glyph.
-var FaceMeh = &nf.Glyph{
-	ID:      "face_meh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11a",
-}
-
-// FaceMehBlank () represents the "fa-face_meh_blank" glyph.
-var FaceMehBlank = &nf.Glyph{
-	ID:      "face_meh_blank",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee6d",
-}
-
-// FaceRollingEyes () represents the "fa-face_rolling_eyes" glyph.
-var FaceRollingEyes = &nf.Glyph{
-	ID:      "face_rolling_eyes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee6e",
-}
-
-// FaceSadCry () represents the "fa-face_sad_cry" glyph.
-var FaceSadCry = &nf.Glyph{
-	ID:      "face_sad_cry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee7b",
-}
-
-// FaceSadTear () represents the "fa-face_sad_tear" glyph.
-var FaceSadTear = &nf.Glyph{
-	ID:      "face_sad_tear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee7c",
-}
-
-// FaceSmile () represents the "fa-face_smile" glyph.
-var FaceSmile = &nf.Glyph{
-	ID:      "face_smile",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf118",
-}
-
-// FaceSmileBeam () represents the "fa-face_smile_beam" glyph.
-var FaceSmileBeam = &nf.Glyph{
-	ID:      "face_smile_beam",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee80",
-}
-
-// FaceSmileWink () represents the "fa-face_smile_wink" glyph.
-var FaceSmileWink = &nf.Glyph{
-	ID:      "face_smile_wink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda9",
-}
-
-// FaceSurprise () represents the "fa-face_surprise" glyph.
-var FaceSurprise = &nf.Glyph{
-	ID:      "face_surprise",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee89",
-}
-
-// FaceTired () represents the "fa-face_tired" glyph.
-var FaceTired = &nf.Glyph{
-	ID:      "face_tired",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee8f",
-}
-
-// Facebook () represents the "fa-facebook" glyph.
-var Facebook = &nf.Glyph{
-	ID:      "facebook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09a",
-}
-
-// FacebookF () represents the "fa-facebook_f" glyph.
-var FacebookF = &nf.Glyph{
-	ID:      "facebook_f",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24f",
-}
-
-// FacebookMessenger () represents the "fa-facebook_messenger" glyph.
-var FacebookMessenger = &nf.Glyph{
-	ID:      "facebook_messenger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25f",
-}
-
-// FacebookOfficial () represents the "fa-facebook_official" glyph.
-var FacebookOfficial = &nf.Glyph{
-	ID:      "facebook_official",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf230",
-}
-
-// FacebookSquare () represents the "fa-facebook_square" glyph.
-var FacebookSquare = &nf.Glyph{
-	ID:      "facebook_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf082",
-}
-
-// Fan () represents the "fa-fan" glyph.
-var Fan = &nf.Glyph{
-	ID:      "fan",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa7",
-}
-
-// FantasyFlightGames () represents the "fa-fantasy_flight_games" glyph.
-var FantasyFlightGames = &nf.Glyph{
-	ID:      "fantasy_flight_games",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueefb",
-}
-
-// FastBackward () represents the "fa-fast_backward" glyph.
-var FastBackward = &nf.Glyph{
-	ID:      "fast_backward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf049",
-}
-
-// FastForward () represents the "fa-fast_forward" glyph.
-var FastForward = &nf.Glyph{
-	ID:      "fast_forward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf050",
-}
-
-// Fax () represents the "fa-fax" glyph.
-var Fax = &nf.Glyph{
-	ID:      "fax",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ac",
-}
-
-// Feather () represents the "fa-feather" glyph.
-var Feather = &nf.Glyph{
-	ID:      "feather",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf7",
-}
-
-// FeatherPointed () represents the "fa-feather_pointed" glyph.
-var FeatherPointed = &nf.Glyph{
-	ID:      "feather_pointed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee34",
-}
-
-// Fedex () represents the "fa-fedex" glyph.
-var Fedex = &nf.Glyph{
-	ID:      "fedex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef45",
-}
-
-// Fedora () represents the "fa-fedora" glyph.
-var Fedora = &nf.Glyph{
-	ID:      "fedora",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef46",
-}
-
-// Feed () represents the "fa-feed" glyph.
-var Feed = &nf.Glyph{
-	ID:      "feed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09e",
-}
-
-// Female () represents the "fa-female" glyph.
-var Female = &nf.Glyph{
-	ID:      "female",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf182",
-}
-
-// FighterJet () represents the "fa-fighter_jet" glyph.
-var FighterJet = &nf.Glyph{
-	ID:      "fighter_jet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fb",
-}
-
-// Figma () represents the "fa-figma" glyph.
-var Figma = &nf.Glyph{
-	ID:      "figma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef47",
-}
-
-// File () represents the "fa-file" glyph.
-var File = &nf.Glyph{
-	ID:      "file",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15b",
-}
-
-// FileArchiveO () represents the "fa-file_archive_o" glyph.
-var FileArchiveO = &nf.Glyph{
-	ID:      "file_archive_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c6",
-}
-
-// FileArrowDown () represents the "fa-file_arrow_down" glyph.
-var FileArrowDown = &nf.Glyph{
-	ID:      "file_arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee36",
-}
-
-// FileArrowUp () represents the "fa-file_arrow_up" glyph.
-var FileArrowUp = &nf.Glyph{
-	ID:      "file_arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee3d",
-}
-
-// FileAudio () represents the "fa-file_audio" glyph.
-var FileAudio = &nf.Glyph{
-	ID:      "file_audio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c7",
-}
-
-// FileAudioO () represents the "fa-file_audio_o" glyph.
-var FileAudioO = &nf.Glyph{
-	ID:      "file_audio_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c7",
-}
-
-// FileCode () represents the "fa-file_code" glyph.
-var FileCode = &nf.Glyph{
-	ID:      "file_code",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c9",
-}
-
-// FileCodeO () represents the "fa-file_code_o" glyph.
-var FileCodeO = &nf.Glyph{
-	ID:      "file_code_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c9",
-}
-
-// FileContract () represents the "fa-file_contract" glyph.
-var FileContract = &nf.Glyph{
-	ID:      "file_contract",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee35",
-}
-
-// FileCsv () represents the "fa-file_csv" glyph.
-var FileCsv = &nf.Glyph{
-	ID:      "file_csv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueefc",
-}
-
-// FileExcel () represents the "fa-file_excel" glyph.
-var FileExcel = &nf.Glyph{
-	ID:      "file_excel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c3",
-}
-
-// FileExcelO () represents the "fa-file_excel_o" glyph.
-var FileExcelO = &nf.Glyph{
-	ID:      "file_excel_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c3",
-}
-
-// FileExport () represents the "fa-file_export" glyph.
-var FileExport = &nf.Glyph{
-	ID:      "file_export",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee37",
-}
-
-// FileImage () represents the "fa-file_image" glyph.
-var FileImage = &nf.Glyph{
-	ID:      "file_image",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c5",
-}
-
-// FileImageO () represents the "fa-file_image_o" glyph.
-var FileImageO = &nf.Glyph{
-	ID:      "file_image_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c5",
-}
-
-// FileImport () represents the "fa-file_import" glyph.
-var FileImport = &nf.Glyph{
-	ID:      "file_import",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee38",
-}
-
-// FileInvoice () represents the "fa-file_invoice" glyph.
-var FileInvoice = &nf.Glyph{
-	ID:      "file_invoice",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee39",
-}
-
-// FileInvoiceDollar () represents the "fa-file_invoice_dollar" glyph.
-var FileInvoiceDollar = &nf.Glyph{
-	ID:      "file_invoice_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee3a",
-}
-
-// FileLines () represents the "fa-file_lines" glyph.
-var FileLines = &nf.Glyph{
-	ID:      "file_lines",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15c",
-}
-
-// FileMedical () represents the "fa-file_medical" glyph.
-var FileMedical = &nf.Glyph{
-	ID:      "file_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued80",
-}
-
-// FileMovieO () represents the "fa-file_movie_o" glyph.
-var FileMovieO = &nf.Glyph{
-	ID:      "file_movie_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c8",
-}
-
-// FileO () represents the "fa-file_o" glyph.
-var FileO = &nf.Glyph{
-	ID:      "file_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf016",
-}
-
-// FilePdf () represents the "fa-file_pdf" glyph.
-var FilePdf = &nf.Glyph{
-	ID:      "file_pdf",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c1",
-}
-
-// FilePdfO () represents the "fa-file_pdf_o" glyph.
-var FilePdfO = &nf.Glyph{
-	ID:      "file_pdf_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c1",
-}
-
-// FilePen () represents the "fa-file_pen" glyph.
-var FilePen = &nf.Glyph{
-	ID:      "file_pen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05f",
-}
-
-// FilePhotoO () represents the "fa-file_photo_o" glyph.
-var FilePhotoO = &nf.Glyph{
-	ID:      "file_photo_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c5",
-}
-
-// FilePictureO () represents the "fa-file_picture_o" glyph.
-var FilePictureO = &nf.Glyph{
-	ID:      "file_picture_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c5",
-}
-
-// FilePowerpoint () represents the "fa-file_powerpoint" glyph.
-var FilePowerpoint = &nf.Glyph{
-	ID:      "file_powerpoint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c4",
-}
-
-// FilePowerpointO () represents the "fa-file_powerpoint_o" glyph.
-var FilePowerpointO = &nf.Glyph{
-	ID:      "file_powerpoint_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c4",
-}
-
-// FilePrescription () represents the "fa-file_prescription" glyph.
-var FilePrescription = &nf.Glyph{
-	ID:      "file_prescription",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee3b",
-}
-
-// FileSignature () represents the "fa-file_signature" glyph.
-var FileSignature = &nf.Glyph{
-	ID:      "file_signature",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee3c",
-}
-
-// FileSoundO () represents the "fa-file_sound_o" glyph.
-var FileSoundO = &nf.Glyph{
-	ID:      "file_sound_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c7",
-}
-
-// FileText () represents the "fa-file_text" glyph.
-var FileText = &nf.Glyph{
-	ID:      "file_text",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15c",
-}
-
-// FileTextO () represents the "fa-file_text_o" glyph.
-var FileTextO = &nf.Glyph{
-	ID:      "file_text_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f6",
-}
-
-// FileVideo () represents the "fa-file_video" glyph.
-var FileVideo = &nf.Glyph{
-	ID:      "file_video",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c8",
-}
-
-// FileVideoO () represents the "fa-file_video_o" glyph.
-var FileVideoO = &nf.Glyph{
-	ID:      "file_video_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c8",
-}
-
-// FileWaveform () represents the "fa-file_waveform" glyph.
-var FileWaveform = &nf.Glyph{
-	ID:      "file_waveform",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued81",
-}
-
-// FileWord () represents the "fa-file_word" glyph.
-var FileWord = &nf.Glyph{
-	ID:      "file_word",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c2",
-}
-
-// FileWordO () represents the "fa-file_word_o" glyph.
-var FileWordO = &nf.Glyph{
-	ID:      "file_word_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c2",
-}
-
-// FileZipO () represents the "fa-file_zip_o" glyph.
-var FileZipO = &nf.Glyph{
-	ID:      "file_zip_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c6",
-}
-
-// FileZipper () represents the "fa-file_zipper" glyph.
-var FileZipper = &nf.Glyph{
-	ID:      "file_zipper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1c6",
-}
-
-// FilesO () represents the "fa-files_o" glyph.
-var FilesO = &nf.Glyph{
-	ID:      "files_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c5",
-}
-
-// Fill () represents the "fa-fill" glyph.
-var Fill = &nf.Glyph{
-	ID:      "fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee3e",
-}
-
-// FillDrip () represents the "fa-fill_drip" glyph.
-var FillDrip = &nf.Glyph{
-	ID:      "fill_drip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee3f",
-}
-
-// Film () represents the "fa-film" glyph.
-var Film = &nf.Glyph{
-	ID:      "film",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf008",
-}
-
-// Filter () represents the "fa-filter" glyph.
-var Filter = &nf.Glyph{
-	ID:      "filter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b0",
-}
-
-// FilterCircleDollar () represents the "fa-filter_circle_dollar" glyph.
-var FilterCircleDollar = &nf.Glyph{
-	ID:      "filter_circle_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec8",
-}
-
-// Fingerprint () represents the "fa-fingerprint" glyph.
-var Fingerprint = &nf.Glyph{
-	ID:      "fingerprint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee40",
-}
-
-// Fire () represents the "fa-fire" glyph.
-var Fire = &nf.Glyph{
-	ID:      "fire",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06d",
-}
-
-// FireExtinguisher () represents the "fa-fire_extinguisher" glyph.
-var FireExtinguisher = &nf.Glyph{
-	ID:      "fire_extinguisher",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf134",
-}
-
-// FireFlameCurved () represents the "fa-fire_flame_curved" glyph.
-var FireFlameCurved = &nf.Glyph{
-	ID:      "fire_flame_curved",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef76",
-}
-
-// FireFlameSimple () represents the "fa-fire_flame_simple" glyph.
-var FireFlameSimple = &nf.Glyph{
-	ID:      "fire_flame_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued78",
-}
-
-// Firefox () represents the "fa-firefox" glyph.
-var Firefox = &nf.Glyph{
-	ID:      "firefox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf269",
-}
-
-// FirstOrder () represents the "fa-first_order" glyph.
-var FirstOrder = &nf.Glyph{
-	ID:      "first_order",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b0",
-}
-
-// FirstOrderAlt () represents the "fa-first_order_alt" glyph.
-var FirstOrderAlt = &nf.Glyph{
-	ID:      "first_order_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd4",
-}
-
-// Firstdraft () represents the "fa-firstdraft" glyph.
-var Firstdraft = &nf.Glyph{
-	ID:      "firstdraft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf262",
-}
-
-// Fish () represents the "fa-fish" glyph.
-var Fish = &nf.Glyph{
-	ID:      "fish",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee41",
-}
-
-// Flag () represents the "fa-flag" glyph.
-var Flag = &nf.Glyph{
-	ID:      "flag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf024",
-}
-
-// FlagCheckered () represents the "fa-flag_checkered" glyph.
-var FlagCheckered = &nf.Glyph{
-	ID:      "flag_checkered",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11e",
-}
-
-// FlagO () represents the "fa-flag_o" glyph.
-var FlagO = &nf.Glyph{
-	ID:      "flag_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11d",
-}
-
-// FlagUsa () represents the "fa-flag_usa" glyph.
-var FlagUsa = &nf.Glyph{
-	ID:      "flag_usa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef20",
-}
-
-// Flash () represents the "fa-flash" glyph.
-var Flash = &nf.Glyph{
-	ID:      "flash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e7",
-}
-
-// Flask () represents the "fa-flask" glyph.
-var Flask = &nf.Glyph{
-	ID:      "flask",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c3",
-}
-
-// Flickr () represents the "fa-flickr" glyph.
-var Flickr = &nf.Glyph{
-	ID:      "flickr",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16e",
-}
-
-// Flipboard () represents the "fa-flipboard" glyph.
-var Flipboard = &nf.Glyph{
-	ID:      "flipboard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued68",
-}
-
-// FloppyDisk () represents the "fa-floppy_disk" glyph.
-var FloppyDisk = &nf.Glyph{
-	ID:      "floppy_disk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c7",
-}
-
-// FloppyO () represents the "fa-floppy_o" glyph.
-var FloppyO = &nf.Glyph{
-	ID:      "floppy_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c7",
-}
-
-// Fly () represents the "fa-fly" glyph.
-var Fly = &nf.Glyph{
-	ID:      "fly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued43",
-}
-
-// Folder () represents the "fa-folder" glyph.
-var Folder = &nf.Glyph{
-	ID:      "folder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07b",
-}
-
-// FolderMinus () represents the "fa-folder_minus" glyph.
-var FolderMinus = &nf.Glyph{
-	ID:      "folder_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec6",
-}
-
-// FolderO () represents the "fa-folder_o" glyph.
-var FolderO = &nf.Glyph{
-	ID:      "folder_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf114",
-}
-
-// FolderOpen () represents the "fa-folder_open" glyph.
-var FolderOpen = &nf.Glyph{
-	ID:      "folder_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07c",
-}
-
-// FolderOpenO () represents the "fa-folder_open_o" glyph.
-var FolderOpenO = &nf.Glyph{
-	ID:      "folder_open_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf115",
-}
-
-// FolderPlus () represents the "fa-folder_plus" glyph.
-var FolderPlus = &nf.Glyph{
-	ID:      "folder_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec7",
-}
-
-// FolderTree () represents the "fa-folder_tree" glyph.
-var FolderTree = &nf.Glyph{
-	ID:      "folder_tree",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef81",
-}
-
-// Font () represents the "fa-font" glyph.
-var Font = &nf.Glyph{
-	ID:      "font",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf031",
-}
-
-// FontAwesome () represents the "fa-font_awesome" glyph.
-var FontAwesome = &nf.Glyph{
-	ID:      "font_awesome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b4",
-}
-
-// Fonticons () represents the "fa-fonticons" glyph.
-var Fonticons = &nf.Glyph{
-	ID:      "fonticons",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf280",
-}
-
-// FonticonsFi () represents the "fa-fonticons_fi" glyph.
-var FonticonsFi = &nf.Glyph{
-	ID:      "fonticons_fi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26f",
-}
-
-// Football () represents the "fa-football" glyph.
-var Football = &nf.Glyph{
-	ID:      "football",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued69",
-}
-
-// FortAwesome () represents the "fa-fort_awesome" glyph.
-var FortAwesome = &nf.Glyph{
-	ID:      "fort_awesome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf286",
-}
-
-// FortAwesomeAlt () represents the "fa-fort_awesome_alt" glyph.
-var FortAwesomeAlt = &nf.Glyph{
-	ID:      "fort_awesome_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27f",
-}
-
-// Forumbee () represents the "fa-forumbee" glyph.
-var Forumbee = &nf.Glyph{
-	ID:      "forumbee",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf211",
-}
-
-// Forward () represents the "fa-forward" glyph.
-var Forward = &nf.Glyph{
-	ID:      "forward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf04e",
-}
-
-// ForwardFast () represents the "fa-forward_fast" glyph.
-var ForwardFast = &nf.Glyph{
-	ID:      "forward_fast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf050",
-}
-
-// ForwardStep () represents the "fa-forward_step" glyph.
-var ForwardStep = &nf.Glyph{
-	ID:      "forward_step",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf051",
-}
-
-// Foursquare () represents the "fa-foursquare" glyph.
-var Foursquare = &nf.Glyph{
-	ID:      "foursquare",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf180",
-}
-
-// FreeCodeCamp () represents the "fa-free_code_camp" glyph.
-var FreeCodeCamp = &nf.Glyph{
-	ID:      "free_code_camp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c5",
-}
-
-// Freebsd () represents the "fa-freebsd" glyph.
-var Freebsd = &nf.Glyph{
-	ID:      "freebsd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28f",
-}
-
-// Frog () represents the "fa-frog" glyph.
-var Frog = &nf.Glyph{
-	ID:      "frog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf8",
-}
-
-// FrownO () represents the "fa-frown_o" glyph.
-var FrownO = &nf.Glyph{
-	ID:      "frown_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf119",
-}
-
-// Fulcrum () represents the "fa-fulcrum" glyph.
-var Fulcrum = &nf.Glyph{
-	ID:      "fulcrum",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd5",
-}
-
-// Futbol () represents the "fa-futbol" glyph.
-var Futbol = &nf.Glyph{
-	ID:      "futbol",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e3",
-}
-
-// FutbolO () represents the "fa-futbol_o" glyph.
-var FutbolO = &nf.Glyph{
-	ID:      "futbol_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e3",
-}
-
-// GalacticRepublic () represents the "fa-galactic_republic" glyph.
-var GalacticRepublic = &nf.Glyph{
-	ID:      "galactic_republic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd6",
-}
-
-// GalacticSenate () represents the "fa-galactic_senate" glyph.
-var GalacticSenate = &nf.Glyph{
-	ID:      "galactic_senate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd7",
-}
-
-// Gamepad () represents the "fa-gamepad" glyph.
-var Gamepad = &nf.Glyph{
-	ID:      "gamepad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11b",
-}
-
-// GasPump () represents the "fa-gas_pump" glyph.
-var GasPump = &nf.Glyph{
-	ID:      "gas_pump",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedf9",
-}
-
-// Gauge () represents the "fa-gauge" glyph.
-var Gauge = &nf.Glyph{
-	ID:      "gauge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb2",
-}
-
-// GaugeHigh () represents the "fa-gauge_high" glyph.
-var GaugeHigh = &nf.Glyph{
-	ID:      "gauge_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued2f",
-}
-
-// GaugeSimple () represents the "fa-gauge_simple" glyph.
-var GaugeSimple = &nf.Glyph{
-	ID:      "gauge_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb3",
-}
-
-// GaugeSimpleHigh () represents the "fa-gauge_simple_high" glyph.
-var GaugeSimpleHigh = &nf.Glyph{
-	ID:      "gauge_simple_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e4",
-}
-
-// Gavel () represents the "fa-gavel" glyph.
-var Gavel = &nf.Glyph{
-	ID:      "gavel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e3",
-}
-
-// Gbp () represents the "fa-gbp" glyph.
-var Gbp = &nf.Glyph{
-	ID:      "gbp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf154",
-}
-
-// Ge () represents the "fa-ge" glyph.
-var Ge = &nf.Glyph{
-	ID:      "ge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d1",
-}
-
-// Gear () represents the "fa-gear" glyph.
-var Gear = &nf.Glyph{
-	ID:      "gear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf013",
-}
-
-// Gears () represents the "fa-gears" glyph.
-var Gears = &nf.Glyph{
-	ID:      "gears",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf085",
-}
-
-// Gem () represents the "fa-gem" glyph.
-var Gem = &nf.Glyph{
-	ID:      "gem",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf219",
-}
-
-// Genderless () represents the "fa-genderless" glyph.
-var Genderless = &nf.Glyph{
-	ID:      "genderless",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22d",
-}
-
-// GetPocket () represents the "fa-get_pocket" glyph.
-var GetPocket = &nf.Glyph{
-	ID:      "get_pocket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf265",
-}
-
-// Gg () represents the "fa-gg" glyph.
-var Gg = &nf.Glyph{
-	ID:      "gg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf260",
-}
-
-// GgCircle () represents the "fa-gg_circle" glyph.
-var GgCircle = &nf.Glyph{
-	ID:      "gg_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf261",
-}
-
-// Ghost () represents the "fa-ghost" glyph.
-var Ghost = &nf.Glyph{
-	ID:      "ghost",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueefe",
-}
-
-// Gift () represents the "fa-gift" glyph.
-var Gift = &nf.Glyph{
-	ID:      "gift",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06b",
-}
-
-// Gifts () represents the "fa-gifts" glyph.
-var Gifts = &nf.Glyph{
-	ID:      "gifts",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef48",
-}
-
-// Git () represents the "fa-git" glyph.
-var Git = &nf.Glyph{
-	ID:      "git",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d3",
-}
-
-// GitAlt () represents the "fa-git_alt" glyph.
-var GitAlt = &nf.Glyph{
-	ID:      "git_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa0",
-}
-
-// GitSquare () represents the "fa-git_square" glyph.
-var GitSquare = &nf.Glyph{
-	ID:      "git_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d2",
-}
-
-// Github () represents the "fa-github" glyph.
-var Github = &nf.Glyph{
-	ID:      "github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09b",
-}
-
-// GithubAlt () represents the "fa-github_alt" glyph.
-var GithubAlt = &nf.Glyph{
-	ID:      "github_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf113",
-}
-
-// GithubSquare () represents the "fa-github_square" glyph.
-var GithubSquare = &nf.Glyph{
-	ID:      "github_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf092",
-}
-
-// Gitkraken () represents the "fa-gitkraken" glyph.
-var Gitkraken = &nf.Glyph{
-	ID:      "gitkraken",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ac",
-}
-
-// Gitlab () represents the "fa-gitlab" glyph.
-var Gitlab = &nf.Glyph{
-	ID:      "gitlab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf296",
-}
-
-// Gitter () represents the "fa-gitter" glyph.
-var Gitter = &nf.Glyph{
-	ID:      "gitter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued50",
-}
-
-// Gittip () represents the "fa-gittip" glyph.
-var Gittip = &nf.Glyph{
-	ID:      "gittip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf184",
-}
-
-// Glass () represents the "fa-glass" glyph.
-var Glass = &nf.Glyph{
-	ID:      "glass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf000",
-}
-
-// Glasses () represents the "fa-glasses" glyph.
-var Glasses = &nf.Glyph{
-	ID:      "glasses",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedfa",
-}
-
-// Glide () represents the "fa-glide" glyph.
-var Glide = &nf.Glyph{
-	ID:      "glide",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a5",
-}
-
-// GlideG () represents the "fa-glide_g" glyph.
-var GlideG = &nf.Glyph{
-	ID:      "glide_g",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a6",
-}
-
-// Globe () represents the "fa-globe" glyph.
-var Globe = &nf.Glyph{
-	ID:      "globe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ac",
-}
-
-// Gofore () represents the "fa-gofore" glyph.
-var Gofore = &nf.Glyph{
-	ID:      "gofore",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2af",
-}
-
-// GolfBallTee () represents the "fa-golf_ball_tee" glyph.
-var GolfBallTee = &nf.Glyph{
-	ID:      "golf_ball_tee",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued6a",
-}
-
-// Goodreads () represents the "fa-goodreads" glyph.
-var Goodreads = &nf.Glyph{
-	ID:      "goodreads",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bf",
-}
-
-// GoodreadsG () represents the "fa-goodreads_g" glyph.
-var GoodreadsG = &nf.Glyph{
-	ID:      "goodreads_g",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cf",
-}
-
-// Google () represents the "fa-google" glyph.
-var Google = &nf.Glyph{
-	ID:      "google",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a0",
-}
-
-// GoogleDrive () represents the "fa-google_drive" glyph.
-var GoogleDrive = &nf.Glyph{
-	ID:      "google_drive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2df",
-}
-
-// GooglePlay () represents the "fa-google_play" glyph.
-var GooglePlay = &nf.Glyph{
-	ID:      "google_play",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e1",
-}
-
-// GooglePlus () represents the "fa-google_plus" glyph.
-var GooglePlus = &nf.Glyph{
-	ID:      "google_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d5",
-}
-
-// GooglePlusCircle () represents the "fa-google_plus_circle" glyph.
-var GooglePlusCircle = &nf.Glyph{
-	ID:      "google_plus_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b3",
-}
-
-// GooglePlusOfficial () represents the "fa-google_plus_official" glyph.
-var GooglePlusOfficial = &nf.Glyph{
-	ID:      "google_plus_official",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b3",
-}
-
-// GooglePlusSquare () represents the "fa-google_plus_square" glyph.
-var GooglePlusSquare = &nf.Glyph{
-	ID:      "google_plus_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d4",
-}
-
-// GoogleWallet () represents the "fa-google_wallet" glyph.
-var GoogleWallet = &nf.Glyph{
-	ID:      "google_wallet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ee",
-}
-
-// Gopuram () represents the "fa-gopuram" glyph.
-var Gopuram = &nf.Glyph{
-	ID:      "gopuram",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueec9",
-}
-
-// GraduationCap () represents the "fa-graduation_cap" glyph.
-var GraduationCap = &nf.Glyph{
-	ID:      "graduation_cap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19d",
-}
-
-// Gratipay () represents the "fa-gratipay" glyph.
-var Gratipay = &nf.Glyph{
-	ID:      "gratipay",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf184",
-}
-
-// Grav () represents the "fa-grav" glyph.
-var Grav = &nf.Glyph{
-	ID:      "grav",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d6",
-}
-
-// GreaterThan () represents the "fa-greater_than" glyph.
-var GreaterThan = &nf.Glyph{
-	ID:      "greater_than",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedfb",
-}
-
-// GreaterThanEqual () represents the "fa-greater_than_equal" glyph.
-var GreaterThanEqual = &nf.Glyph{
-	ID:      "greater_than_equal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedfc",
-}
-
-// Grip () represents the "fa-grip" glyph.
-var Grip = &nf.Glyph{
-	ID:      "grip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee56",
-}
-
-// GripLines () represents the "fa-grip_lines" glyph.
-var GripLines = &nf.Glyph{
-	ID:      "grip_lines",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef4c",
-}
-
-// GripLinesVertical () represents the "fa-grip_lines_vertical" glyph.
-var GripLinesVertical = &nf.Glyph{
-	ID:      "grip_lines_vertical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef4d",
-}
-
-// GripVertical () represents the "fa-grip_vertical" glyph.
-var GripVertical = &nf.Glyph{
-	ID:      "grip_vertical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee57",
-}
-
-// Gripfire () represents the "fa-gripfire" glyph.
-var Gripfire = &nf.Glyph{
-	ID:      "gripfire",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e2",
-}
-
-// Group () represents the "fa-group" glyph.
-var Group = &nf.Glyph{
-	ID:      "group",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c0",
-}
-
-// Grunt () represents the "fa-grunt" glyph.
-var Grunt = &nf.Glyph{
-	ID:      "grunt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e3",
-}
-
-// Guitar () represents the "fa-guitar" glyph.
-var Guitar = &nf.Glyph{
-	ID:      "guitar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef4e",
-}
-
-// Gulp () represents the "fa-gulp" glyph.
-var Gulp = &nf.Glyph{
-	ID:      "gulp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e4",
-}
-
-// HSquare () represents the "fa-h_square" glyph.
-var HSquare = &nf.Glyph{
-	ID:      "h_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fd",
-}
-
-// HackerNews () represents the "fa-hacker_news" glyph.
-var HackerNews = &nf.Glyph{
-	ID:      "hacker_news",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d4",
-}
-
-// Hackerrank () represents the "fa-hackerrank" glyph.
-var Hackerrank = &nf.Glyph{
-	ID:      "hackerrank",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea5",
-}
-
-// Hammer () represents the "fa-hammer" glyph.
-var Hammer = &nf.Glyph{
-	ID:      "hammer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeff",
-}
-
-// Hamsa () represents the "fa-hamsa" glyph.
-var Hamsa = &nf.Glyph{
-	ID:      "hamsa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeca",
-}
-
-// Hand () represents the "fa-hand" glyph.
-var Hand = &nf.Glyph{
-	ID:      "hand",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf256",
-}
-
-// HandBackFist () represents the "fa-hand_back_fist" glyph.
-var HandBackFist = &nf.Glyph{
-	ID:      "hand_back_fist",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf255",
-}
-
-// HandDots () represents the "fa-hand_dots" glyph.
-var HandDots = &nf.Glyph{
-	ID:      "hand_dots",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued73",
-}
-
-// HandFist () represents the "fa-hand_fist" glyph.
-var HandFist = &nf.Glyph{
-	ID:      "hand_fist",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueefd",
-}
-
-// HandGrabO () represents the "fa-hand_grab_o" glyph.
-var HandGrabO = &nf.Glyph{
-	ID:      "hand_grab_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf255",
-}
-
-// HandHolding () represents the "fa-hand_holding" glyph.
-var HandHolding = &nf.Glyph{
-	ID:      "hand_holding",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued9a",
-}
-
-// HandHoldingDollar () represents the "fa-hand_holding_dollar" glyph.
-var HandHoldingDollar = &nf.Glyph{
-	ID:      "hand_holding_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued9c",
-}
-
-// HandHoldingDroplet () represents the "fa-hand_holding_droplet" glyph.
-var HandHoldingDroplet = &nf.Glyph{
-	ID:      "hand_holding_droplet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued9d",
-}
-
-// HandHoldingHeart () represents the "fa-hand_holding_heart" glyph.
-var HandHoldingHeart = &nf.Glyph{
-	ID:      "hand_holding_heart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued9b",
-}
-
-// HandLizard () represents the "fa-hand_lizard" glyph.
-var HandLizard = &nf.Glyph{
-	ID:      "hand_lizard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf258",
-}
-
-// HandLizardO () represents the "fa-hand_lizard_o" glyph.
-var HandLizardO = &nf.Glyph{
-	ID:      "hand_lizard_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf258",
-}
-
-// HandMiddleFinger () represents the "fa-hand_middle_finger" glyph.
-var HandMiddleFinger = &nf.Glyph{
-	ID:      "hand_middle_finger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef83",
-}
-
-// HandODown () represents the "fa-hand_o_down" glyph.
-var HandODown = &nf.Glyph{
-	ID:      "hand_o_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a7",
-}
-
-// HandOLeft () represents the "fa-hand_o_left" glyph.
-var HandOLeft = &nf.Glyph{
-	ID:      "hand_o_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a5",
-}
-
-// HandORight () represents the "fa-hand_o_right" glyph.
-var HandORight = &nf.Glyph{
-	ID:      "hand_o_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a4",
-}
-
-// HandOUp () represents the "fa-hand_o_up" glyph.
-var HandOUp = &nf.Glyph{
-	ID:      "hand_o_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a6",
-}
-
-// HandPaperO () represents the "fa-hand_paper_o" glyph.
-var HandPaperO = &nf.Glyph{
-	ID:      "hand_paper_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf256",
-}
-
-// HandPeace () represents the "fa-hand_peace" glyph.
-var HandPeace = &nf.Glyph{
-	ID:      "hand_peace",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25b",
-}
-
-// HandPeaceO () represents the "fa-hand_peace_o" glyph.
-var HandPeaceO = &nf.Glyph{
-	ID:      "hand_peace_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25b",
-}
-
-// HandPointDown () represents the "fa-hand_point_down" glyph.
-var HandPointDown = &nf.Glyph{
-	ID:      "hand_point_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a7",
-}
-
-// HandPointLeft () represents the "fa-hand_point_left" glyph.
-var HandPointLeft = &nf.Glyph{
-	ID:      "hand_point_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a5",
-}
-
-// HandPointRight () represents the "fa-hand_point_right" glyph.
-var HandPointRight = &nf.Glyph{
-	ID:      "hand_point_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a4",
-}
-
-// HandPointUp () represents the "fa-hand_point_up" glyph.
-var HandPointUp = &nf.Glyph{
-	ID:      "hand_point_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a6",
-}
-
-// HandPointer () represents the "fa-hand_pointer" glyph.
-var HandPointer = &nf.Glyph{
-	ID:      "hand_pointer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25a",
-}
-
-// HandPointerO () represents the "fa-hand_pointer_o" glyph.
-var HandPointerO = &nf.Glyph{
-	ID:      "hand_pointer_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25a",
-}
-
-// HandRockO () represents the "fa-hand_rock_o" glyph.
-var HandRockO = &nf.Glyph{
-	ID:      "hand_rock_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf255",
-}
-
-// HandScissors () represents the "fa-hand_scissors" glyph.
-var HandScissors = &nf.Glyph{
-	ID:      "hand_scissors",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf257",
-}
-
-// HandScissorsO () represents the "fa-hand_scissors_o" glyph.
-var HandScissorsO = &nf.Glyph{
-	ID:      "hand_scissors_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf257",
-}
-
-// HandSpock () represents the "fa-hand_spock" glyph.
-var HandSpock = &nf.Glyph{
-	ID:      "hand_spock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf259",
-}
-
-// HandSpockO () represents the "fa-hand_spock_o" glyph.
-var HandSpockO = &nf.Glyph{
-	ID:      "hand_spock_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf259",
-}
-
-// HandStopO () represents the "fa-hand_stop_o" glyph.
-var HandStopO = &nf.Glyph{
-	ID:      "hand_stop_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf256",
-}
-
-// Hands () represents the "fa-hands" glyph.
-var Hands = &nf.Glyph{
-	ID:      "hands",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a7",
-}
-
-// HandsAslInterpreting () represents the "fa-hands_asl_interpreting" glyph.
-var HandsAslInterpreting = &nf.Glyph{
-	ID:      "hands_asl_interpreting",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a3",
-}
-
-// HandsHolding () represents the "fa-hands_holding" glyph.
-var HandsHolding = &nf.Glyph{
-	ID:      "hands_holding",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued9e",
-}
-
-// HandsPraying () represents the "fa-hands_praying" glyph.
-var HandsPraying = &nf.Glyph{
-	ID:      "hands_praying",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueedb",
-}
-
-// Handshake () represents the "fa-handshake" glyph.
-var Handshake = &nf.Glyph{
-	ID:      "handshake",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b5",
-}
-
-// HandshakeAngle () represents the "fa-handshake_angle" glyph.
-var HandshakeAngle = &nf.Glyph{
-	ID:      "handshake_angle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued9f",
-}
-
-// HandshakeO () represents the "fa-handshake_o" glyph.
-var HandshakeO = &nf.Glyph{
-	ID:      "handshake_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b5",
-}
-
-// HandshakeSimple () represents the "fa-handshake_simple" glyph.
-var HandshakeSimple = &nf.Glyph{
-	ID:      "handshake_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda0",
-}
-
-// Hanukiah () represents the "fa-hanukiah" glyph.
-var Hanukiah = &nf.Glyph{
-	ID:      "hanukiah",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef00",
-}
-
-// HardDrive () represents the "fa-hard_drive" glyph.
-var HardDrive = &nf.Glyph{
-	ID:      "hard_drive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a0",
-}
-
-// HardOfHearing () represents the "fa-hard_of_hearing" glyph.
-var HardOfHearing = &nf.Glyph{
-	ID:      "hard_of_hearing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a4",
-}
-
-// Hashtag () represents the "fa-hashtag" glyph.
-var Hashtag = &nf.Glyph{
-	ID:      "hashtag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf292",
-}
-
-// HatCowboy () represents the "fa-hat_cowboy" glyph.
-var HatCowboy = &nf.Glyph{
-	ID:      "hat_cowboy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb7",
-}
-
-// HatCowboySide () represents the "fa-hat_cowboy_side" glyph.
-var HatCowboySide = &nf.Glyph{
-	ID:      "hat_cowboy_side",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb8",
-}
-
-// HatWizard () represents the "fa-hat_wizard" glyph.
-var HatWizard = &nf.Glyph{
-	ID:      "hat_wizard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef01",
-}
-
-// HddO () represents the "fa-hdd_o" glyph.
-var HddO = &nf.Glyph{
-	ID:      "hdd_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0a0",
-}
-
-// Header () represents the "fa-header" glyph.
-var Header = &nf.Glyph{
-	ID:      "header",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1dc",
-}
-
-// Heading () represents the "fa-heading" glyph.
-var Heading = &nf.Glyph{
-	ID:      "heading",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1dc",
-}
-
-// Headphones () represents the "fa-headphones" glyph.
-var Headphones = &nf.Glyph{
-	ID:      "headphones",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf025",
-}
-
-// HeadphonesSimple () represents the "fa-headphones_simple" glyph.
-var HeadphonesSimple = &nf.Glyph{
-	ID:      "headphones_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee58",
-}
-
-// Headset () represents the "fa-headset" glyph.
-var Headset = &nf.Glyph{
-	ID:      "headset",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee59",
-}
-
-// HeardO () represents the "fa-heard_o" glyph.
-var HeardO = &nf.Glyph{
-	ID:      "heard_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08a",
-}
-
-// Heart () represents the "fa-heart" glyph.
-var Heart = &nf.Glyph{
-	ID:      "heart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf004",
-}
-
-// HeartCrack () represents the "fa-heart_crack" glyph.
-var HeartCrack = &nf.Glyph{
-	ID:      "heart_crack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef4f",
-}
-
-// HeartO () represents the "fa-heart_o" glyph.
-var HeartO = &nf.Glyph{
-	ID:      "heart_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08a",
-}
-
-// HeartPulse () represents the "fa-heart_pulse" glyph.
-var HeartPulse = &nf.Glyph{
-	ID:      "heart_pulse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21e",
-}
-
-// Heartbeat () represents the "fa-heartbeat" glyph.
-var Heartbeat = &nf.Glyph{
-	ID:      "heartbeat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21e",
-}
-
-// Helicopter () represents the "fa-helicopter" glyph.
-var Helicopter = &nf.Glyph{
-	ID:      "helicopter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedfd",
-}
-
-// HelmetSafety () represents the "fa-helmet_safety" glyph.
-var HelmetSafety = &nf.Glyph{
-	ID:      "helmet_safety",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef84",
-}
-
-// Highlighter () represents the "fa-highlighter" glyph.
-var Highlighter = &nf.Glyph{
-	ID:      "highlighter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee5a",
-}
-
-// Hippo () represents the "fa-hippo" glyph.
-var Hippo = &nf.Glyph{
-	ID:      "hippo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef03",
-}
-
-// Hips () represents the "fa-hips" glyph.
-var Hips = &nf.Glyph{
-	ID:      "hips",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued6b",
-}
-
-// HireAHelper () represents the "fa-hire_a_helper" glyph.
-var HireAHelper = &nf.Glyph{
-	ID:      "hire_a_helper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e6",
-}
-
-// History () represents the "fa-history" glyph.
-var History = &nf.Glyph{
-	ID:      "history",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1da",
-}
-
-// HockeyPuck () represents the "fa-hockey_puck" glyph.
-var HockeyPuck = &nf.Glyph{
-	ID:      "hockey_puck",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued6c",
-}
-
-// HollyBerry () represents the "fa-holly_berry" glyph.
-var HollyBerry = &nf.Glyph{
-	ID:      "holly_berry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef50",
-}
-
-// Home () represents the "fa-home" glyph.
-var Home = &nf.Glyph{
-	ID:      "home",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf015",
-}
-
-// Hooli () represents the "fa-hooli" glyph.
-var Hooli = &nf.Glyph{
-	ID:      "hooli",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued51",
-}
-
-// Hornbill () represents the "fa-hornbill" glyph.
-var Hornbill = &nf.Glyph{
-	ID:      "hornbill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee5b",
-}
-
-// Horse () represents the "fa-horse" glyph.
-var Horse = &nf.Glyph{
-	ID:      "horse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef04",
-}
-
-// HorseHead () represents the "fa-horse_head" glyph.
-var HorseHead = &nf.Glyph{
-	ID:      "horse_head",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef51",
-}
-
-// Hospital () represents the "fa-hospital" glyph.
-var Hospital = &nf.Glyph{
-	ID:      "hospital",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f8",
-}
-
-// HospitalO () represents the "fa-hospital_o" glyph.
-var HospitalO = &nf.Glyph{
-	ID:      "hospital_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f8",
-}
-
-// HospitalUser () represents the "fa-hospital_user" glyph.
-var HospitalUser = &nf.Glyph{
-	ID:      "hospital_user",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef86",
-}
-
-// HotTubPerson () represents the "fa-hot_tub_person" glyph.
-var HotTubPerson = &nf.Glyph{
-	ID:      "hot_tub_person",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee5c",
-}
-
-// Hotdog () represents the "fa-hotdog" glyph.
-var Hotdog = &nf.Glyph{
-	ID:      "hotdog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef87",
-}
-
-// Hotel () represents the "fa-hotel" glyph.
-var Hotel = &nf.Glyph{
-	ID:      "hotel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf236",
-}
-
-// HotelBuilding () represents the "fa-hotel_building" glyph.
-var HotelBuilding = &nf.Glyph{
-	ID:      "hotel_building",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee5d",
-}
-
-// Hotjar () represents the "fa-hotjar" glyph.
-var Hotjar = &nf.Glyph{
-	ID:      "hotjar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e7",
-}
-
-// Hourglass () represents the "fa-hourglass" glyph.
-var Hourglass = &nf.Glyph{
-	ID:      "hourglass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf254",
-}
-
-// Hourglass1 () represents the "fa-hourglass_1" glyph.
-var Hourglass1 = &nf.Glyph{
-	ID:      "hourglass_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf251",
-}
-
-// Hourglass2 () represents the "fa-hourglass_2" glyph.
-var Hourglass2 = &nf.Glyph{
-	ID:      "hourglass_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf252",
-}
-
-// Hourglass3 () represents the "fa-hourglass_3" glyph.
-var Hourglass3 = &nf.Glyph{
-	ID:      "hourglass_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf253",
-}
-
-// HourglassEnd () represents the "fa-hourglass_end" glyph.
-var HourglassEnd = &nf.Glyph{
-	ID:      "hourglass_end",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf253",
-}
-
-// HourglassHalf () represents the "fa-hourglass_half" glyph.
-var HourglassHalf = &nf.Glyph{
-	ID:      "hourglass_half",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf252",
-}
-
-// HourglassO () represents the "fa-hourglass_o" glyph.
-var HourglassO = &nf.Glyph{
-	ID:      "hourglass_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf250",
-}
-
-// HourglassStart () represents the "fa-hourglass_start" glyph.
-var HourglassStart = &nf.Glyph{
-	ID:      "hourglass_start",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf251",
-}
-
-// House () represents the "fa-house" glyph.
-var House = &nf.Glyph{
-	ID:      "house",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf015",
-}
-
-// HouseChimney () represents the "fa-house_chimney" glyph.
-var HouseChimney = &nf.Glyph{
-	ID:      "house_chimney",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef85",
-}
-
-// HouseChimneyCrack () represents the "fa-house_chimney_crack" glyph.
-var HouseChimneyCrack = &nf.Glyph{
-	ID:      "house_chimney_crack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef05",
-}
-
-// HouseChimneyMedical () represents the "fa-house_chimney_medical" glyph.
-var HouseChimneyMedical = &nf.Glyph{
-	ID:      "house_chimney_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef7b",
-}
-
-// Houzz () represents the "fa-houzz" glyph.
-var Houzz = &nf.Glyph{
-	ID:      "houzz",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27c",
-}
-
-// HryvniaSign () represents the "fa-hryvnia_sign" glyph.
-var HryvniaSign = &nf.Glyph{
-	ID:      "hryvnia_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef06",
-}
-
-// Html5 () represents the "fa-html5" glyph.
-var Html5 = &nf.Glyph{
-	ID:      "html5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13b",
-}
-
-// Hubspot () represents the "fa-hubspot" glyph.
-var Hubspot = &nf.Glyph{
-	ID:      "hubspot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e8",
-}
-
-// Hurricane () represents the "fa-hurricane" glyph.
-var Hurricane = &nf.Glyph{
-	ID:      "hurricane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef21",
-}
-
-// ICursor () represents the "fa-i_cursor" glyph.
-var ICursor = &nf.Glyph{
-	ID:      "i_cursor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf246",
-}
-
-// IceCream () represents the "fa-ice_cream" glyph.
-var IceCream = &nf.Glyph{
-	ID:      "ice_cream",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef88",
-}
-
-// Icicles () represents the "fa-icicles" glyph.
-var Icicles = &nf.Glyph{
-	ID:      "icicles",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef52",
-}
-
-// Icons () represents the "fa-icons" glyph.
-var Icons = &nf.Glyph{
-	ID:      "icons",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa8",
-}
-
-// IdBadge () represents the "fa-id_badge" glyph.
-var IdBadge = &nf.Glyph{
-	ID:      "id_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c1",
-}
-
-// IdCard () represents the "fa-id_card" glyph.
-var IdCard = &nf.Glyph{
-	ID:      "id_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c2",
-}
-
-// IdCardClip () represents the "fa-id_card_clip" glyph.
-var IdCardClip = &nf.Glyph{
-	ID:      "id_card_clip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued84",
-}
-
-// IdCardO () represents the "fa-id_card_o" glyph.
-var IdCardO = &nf.Glyph{
-	ID:      "id_card_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c3",
-}
-
-// Igloo () represents the "fa-igloo" glyph.
-var Igloo = &nf.Glyph{
-	ID:      "igloo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef53",
-}
-
-// Ils () represents the "fa-ils" glyph.
-var Ils = &nf.Glyph{
-	ID:      "ils",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20b",
-}
-
-// Image () represents the "fa-image" glyph.
-var Image = &nf.Glyph{
-	ID:      "image",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03e",
-}
-
-// ImagePortrait () represents the "fa-image_portrait" glyph.
-var ImagePortrait = &nf.Glyph{
-	ID:      "image_portrait",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued19",
-}
-
-// Images () represents the "fa-images" glyph.
-var Images = &nf.Glyph{
-	ID:      "images",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00f",
-}
-
-// Imdb () represents the "fa-imdb" glyph.
-var Imdb = &nf.Glyph{
-	ID:      "imdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d8",
-}
-
-// Inbox () represents the "fa-inbox" glyph.
-var Inbox = &nf.Glyph{
-	ID:      "inbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01c",
-}
-
-// Indent () represents the "fa-indent" glyph.
-var Indent = &nf.Glyph{
-	ID:      "indent",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03c",
-}
-
-// Industry () represents the "fa-industry" glyph.
-var Industry = &nf.Glyph{
-	ID:      "industry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf275",
-}
-
-// Infinity () represents the "fa-infinity" glyph.
-var Infinity = &nf.Glyph{
-	ID:      "infinity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedfe",
-}
-
-// Info () represents the "fa-info" glyph.
-var Info = &nf.Glyph{
-	ID:      "info",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf129",
-}
-
-// InfoCircle () represents the "fa-info_circle" glyph.
-var InfoCircle = &nf.Glyph{
-	ID:      "info_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05a",
-}
-
-// Inr () represents the "fa-inr" glyph.
-var Inr = &nf.Glyph{
-	ID:      "inr",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf156",
-}
-
-// Instagram () represents the "fa-instagram" glyph.
-var Instagram = &nf.Glyph{
-	ID:      "instagram",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16d",
-}
-
-// Institution () represents the "fa-institution" glyph.
-var Institution = &nf.Glyph{
-	ID:      "institution",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19c",
-}
-
-// Intercom () represents the "fa-intercom" glyph.
-var Intercom = &nf.Glyph{
-	ID:      "intercom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef54",
-}
-
-// InternetExplorer () represents the "fa-internet_explorer" glyph.
-var InternetExplorer = &nf.Glyph{
-	ID:      "internet_explorer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26b",
-}
-
-// Intersex () represents the "fa-intersex" glyph.
-var Intersex = &nf.Glyph{
-	ID:      "intersex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf224",
-}
-
-// Invision () represents the "fa-invision" glyph.
-var Invision = &nf.Glyph{
-	ID:      "invision",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef55",
-}
-
-// Ioxhost () represents the "fa-ioxhost" glyph.
-var Ioxhost = &nf.Glyph{
-	ID:      "ioxhost",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf208",
-}
-
-// Italic () represents the "fa-italic" glyph.
-var Italic = &nf.Glyph{
-	ID:      "italic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf033",
-}
-
-// ItchIo () represents the "fa-itch_io" glyph.
-var ItchIo = &nf.Glyph{
-	ID:      "itch_io",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef99",
-}
-
-// Itunes () represents the "fa-itunes" glyph.
-var Itunes = &nf.Glyph{
-	ID:      "itunes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e9",
-}
-
-// ItunesNote () represents the "fa-itunes_note" glyph.
-var ItunesNote = &nf.Glyph{
-	ID:      "itunes_note",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2eb",
-}
-
-// Java () represents the "fa-java" glyph.
-var Java = &nf.Glyph{
-	ID:      "java",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedaf",
-}
-
-// Jedi () represents the "fa-jedi" glyph.
-var Jedi = &nf.Glyph{
-	ID:      "jedi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueecc",
-}
-
-// JediOrder () represents the "fa-jedi_order" glyph.
-var JediOrder = &nf.Glyph{
-	ID:      "jedi_order",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd8",
-}
-
-// Jenkins () represents the "fa-jenkins" glyph.
-var Jenkins = &nf.Glyph{
-	ID:      "jenkins",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ec",
-}
-
-// JetFighter () represents the "fa-jet_fighter" glyph.
-var JetFighter = &nf.Glyph{
-	ID:      "jet_fighter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fb",
-}
-
-// Jira () represents the "fa-jira" glyph.
-var Jira = &nf.Glyph{
-	ID:      "jira",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef56",
-}
-
-// Joget () represents the "fa-joget" glyph.
-var Joget = &nf.Glyph{
-	ID:      "joget",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ed",
-}
-
-// Joint () represents the "fa-joint" glyph.
-var Joint = &nf.Glyph{
-	ID:      "joint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee5e",
-}
-
-// Joomla () represents the "fa-joomla" glyph.
-var Joomla = &nf.Glyph{
-	ID:      "joomla",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1aa",
-}
-
-// Jpy () represents the "fa-jpy" glyph.
-var Jpy = &nf.Glyph{
-	ID:      "jpy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf157",
-}
-
-// Js () represents the "fa-js" glyph.
-var Js = &nf.Glyph{
-	ID:      "js",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ee",
-}
-
-// Jsfiddle () represents the "fa-jsfiddle" glyph.
-var Jsfiddle = &nf.Glyph{
-	ID:      "jsfiddle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cc",
-}
-
-// Kaaba () represents the "fa-kaaba" glyph.
-var Kaaba = &nf.Glyph{
-	ID:      "kaaba",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueece",
-}
-
-// Kaggle () represents the "fa-kaggle" glyph.
-var Kaggle = &nf.Glyph{
-	ID:      "kaggle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea6",
-}
-
-// Key () represents the "fa-key" glyph.
-var Key = &nf.Glyph{
-	ID:      "key",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf084",
-}
-
-// Keybase () represents the "fa-keybase" glyph.
-var Keybase = &nf.Glyph{
-	ID:      "keybase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedbf",
-}
-
-// Keyboard () represents the "fa-keyboard" glyph.
-var Keyboard = &nf.Glyph{
-	ID:      "keyboard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11c",
-}
-
-// KeyboardO () represents the "fa-keyboard_o" glyph.
-var KeyboardO = &nf.Glyph{
-	ID:      "keyboard_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11c",
-}
-
-// Keycdn () represents the "fa-keycdn" glyph.
-var Keycdn = &nf.Glyph{
-	ID:      "keycdn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f0",
-}
-
-// Khanda () represents the "fa-khanda" glyph.
-var Khanda = &nf.Glyph{
-	ID:      "khanda",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueecf",
-}
-
-// Kickstarter () represents the "fa-kickstarter" glyph.
-var Kickstarter = &nf.Glyph{
-	ID:      "kickstarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f3",
-}
-
-// KickstarterK () represents the "fa-kickstarter_k" glyph.
-var KickstarterK = &nf.Glyph{
-	ID:      "kickstarter_k",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f4",
-}
-
-// KitMedical () represents the "fa-kit_medical" glyph.
-var KitMedical = &nf.Glyph{
-	ID:      "kit_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued82",
-}
-
-// KiwiBird () represents the "fa-kiwi_bird" glyph.
-var KiwiBird = &nf.Glyph{
-	ID:      "kiwi_bird",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedff",
-}
-
-// Korvue () represents the "fa-korvue" glyph.
-var Korvue = &nf.Glyph{
-	ID:      "korvue",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued59",
-}
-
-// Krw () represents the "fa-krw" glyph.
-var Krw = &nf.Glyph{
-	ID:      "krw",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf159",
-}
-
-// Landmark () represents the "fa-landmark" glyph.
-var Landmark = &nf.Glyph{
-	ID:      "landmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed0",
-}
-
-// LandmarkDome () represents the "fa-landmark_dome" glyph.
-var LandmarkDome = &nf.Glyph{
-	ID:      "landmark_dome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef22",
-}
-
-// Language () represents the "fa-language" glyph.
-var Language = &nf.Glyph{
-	ID:      "language",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ab",
-}
-
-// Laptop () represents the "fa-laptop" glyph.
-var Laptop = &nf.Glyph{
-	ID:      "laptop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf109",
-}
-
-// LaptopCode () represents the "fa-laptop_code" glyph.
-var LaptopCode = &nf.Glyph{
-	ID:      "laptop_code",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea7",
-}
-
-// LaptopMedical () represents the "fa-laptop_medical" glyph.
-var LaptopMedical = &nf.Glyph{
-	ID:      "laptop_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef89",
-}
-
-// Laravel () represents the "fa-laravel" glyph.
-var Laravel = &nf.Glyph{
-	ID:      "laravel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f7",
-}
-
-// Lastfm () represents the "fa-lastfm" glyph.
-var Lastfm = &nf.Glyph{
-	ID:      "lastfm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf202",
-}
-
-// LastfmSquare () represents the "fa-lastfm_square" glyph.
-var LastfmSquare = &nf.Glyph{
-	ID:      "lastfm_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf203",
-}
-
-// LayerGroup () represents the "fa-layer_group" glyph.
-var LayerGroup = &nf.Glyph{
-	ID:      "layer_group",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea8",
-}
-
-// Leaf () represents the "fa-leaf" glyph.
-var Leaf = &nf.Glyph{
-	ID:      "leaf",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06c",
-}
-
-// Leanpub () represents the "fa-leanpub" glyph.
-var Leanpub = &nf.Glyph{
-	ID:      "leanpub",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf212",
-}
-
-// LeftLong () represents the "fa-left_long" glyph.
-var LeftLong = &nf.Glyph{
-	ID:      "left_long",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf04f",
-}
-
-// LeftRight () represents the "fa-left_right" glyph.
-var LeftRight = &nf.Glyph{
-	ID:      "left_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08f",
-}
-
-// Legal () represents the "fa-legal" glyph.
-var Legal = &nf.Glyph{
-	ID:      "legal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e3",
-}
-
-// Lemon () represents the "fa-lemon" glyph.
-var Lemon = &nf.Glyph{
-	ID:      "lemon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf094",
-}
-
-// LemonO () represents the "fa-lemon_o" glyph.
-var LemonO = &nf.Glyph{
-	ID:      "lemon_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf094",
-}
-
-// Less () represents the "fa-less" glyph.
-var Less = &nf.Glyph{
-	ID:      "less",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued48",
-}
-
-// LessThan () represents the "fa-less_than" glyph.
-var LessThan = &nf.Glyph{
-	ID:      "less_than",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc3",
-}
-
-// LessThanEqual () represents the "fa-less_than_equal" glyph.
-var LessThanEqual = &nf.Glyph{
-	ID:      "less_than_equal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc4",
-}
-
-// LevelDown () represents the "fa-level_down" glyph.
-var LevelDown = &nf.Glyph{
-	ID:      "level_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf149",
-}
-
-// LevelUp () represents the "fa-level_up" glyph.
-var LevelUp = &nf.Glyph{
-	ID:      "level_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf148",
-}
-
-// LifeBouy () represents the "fa-life_bouy" glyph.
-var LifeBouy = &nf.Glyph{
-	ID:      "life_bouy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cd",
-}
-
-// LifeBuoy () represents the "fa-life_buoy" glyph.
-var LifeBuoy = &nf.Glyph{
-	ID:      "life_buoy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cd",
-}
-
-// LifeRing () represents the "fa-life_ring" glyph.
-var LifeRing = &nf.Glyph{
-	ID:      "life_ring",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cd",
-}
-
-// LifeSaver () represents the "fa-life_saver" glyph.
-var LifeSaver = &nf.Glyph{
-	ID:      "life_saver",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cd",
-}
-
-// Lightbulb () represents the "fa-lightbulb" glyph.
-var Lightbulb = &nf.Glyph{
-	ID:      "lightbulb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0eb",
-}
-
-// LightbulbO () represents the "fa-lightbulb_o" glyph.
-var LightbulbO = &nf.Glyph{
-	ID:      "lightbulb_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0eb",
-}
-
-// Line () represents the "fa-line" glyph.
-var Line = &nf.Glyph{
-	ID:      "line",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2fb",
-}
-
-// LineChart () represents the "fa-line_chart" glyph.
-var LineChart = &nf.Glyph{
-	ID:      "line_chart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf201",
-}
-
-// Link () represents the "fa-link" glyph.
-var Link = &nf.Glyph{
-	ID:      "link",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c1",
-}
-
-// LinkSlash () represents the "fa-link_slash" glyph.
-var LinkSlash = &nf.Glyph{
-	ID:      "link_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf127",
-}
-
-// Linkedin () represents the "fa-linkedin" glyph.
-var Linkedin = &nf.Glyph{
-	ID:      "linkedin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e1",
-}
-
-// LinkedinIn () represents the "fa-linkedin_in" glyph.
-var LinkedinIn = &nf.Glyph{
-	ID:      "linkedin_in",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e1",
-}
-
-// LinkedinSquare () represents the "fa-linkedin_square" glyph.
-var LinkedinSquare = &nf.Glyph{
-	ID:      "linkedin_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08c",
-}
-
-// Linode () represents the "fa-linode" glyph.
-var Linode = &nf.Glyph{
-	ID:      "linode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b8",
-}
-
-// Linux () represents the "fa-linux" glyph.
-var Linux = &nf.Glyph{
-	ID:      "linux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf17c",
-}
-
-// LiraSign () represents the "fa-lira_sign" glyph.
-var LiraSign = &nf.Glyph{
-	ID:      "lira_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf195",
-}
-
-// List () represents the "fa-list" glyph.
-var List = &nf.Glyph{
-	ID:      "list",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03a",
-}
-
-// ListAlt () represents the "fa-list_alt" glyph.
-var ListAlt = &nf.Glyph{
-	ID:      "list_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf022",
-}
-
-// ListCheck () represents the "fa-list_check" glyph.
-var ListCheck = &nf.Glyph{
-	ID:      "list_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ae",
-}
-
-// ListOl () represents the "fa-list_ol" glyph.
-var ListOl = &nf.Glyph{
-	ID:      "list_ol",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0cb",
-}
-
-// ListUl () represents the "fa-list_ul" glyph.
-var ListUl = &nf.Glyph{
-	ID:      "list_ul",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ca",
-}
-
-// LocationArrow () represents the "fa-location_arrow" glyph.
-var LocationArrow = &nf.Glyph{
-	ID:      "location_arrow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf124",
-}
-
-// LocationCrosshairs () represents the "fa-location_crosshairs" glyph.
-var LocationCrosshairs = &nf.Glyph{
-	ID:      "location_crosshairs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueea9",
-}
-
-// LocationDot () represents the "fa-location_dot" glyph.
-var LocationDot = &nf.Glyph{
-	ID:      "location_dot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued00",
-}
-
-// LocationPin () represents the "fa-location_pin" glyph.
-var LocationPin = &nf.Glyph{
-	ID:      "location_pin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf041",
-}
-
-// Lock () represents the "fa-lock" glyph.
-var Lock = &nf.Glyph{
-	ID:      "lock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf023",
-}
-
-// LockOpen () represents the "fa-lock_open" glyph.
-var LockOpen = &nf.Glyph{
-	ID:      "lock_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2fc",
-}
-
-// LongArrowDown () represents the "fa-long_arrow_down" glyph.
-var LongArrowDown = &nf.Glyph{
-	ID:      "long_arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf175",
-}
-
-// LongArrowLeft () represents the "fa-long_arrow_left" glyph.
-var LongArrowLeft = &nf.Glyph{
-	ID:      "long_arrow_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf177",
-}
-
-// LongArrowRight () represents the "fa-long_arrow_right" glyph.
-var LongArrowRight = &nf.Glyph{
-	ID:      "long_arrow_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf178",
-}
-
-// LongArrowUp () represents the "fa-long_arrow_up" glyph.
-var LongArrowUp = &nf.Glyph{
-	ID:      "long_arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf176",
-}
-
-// LowVision () represents the "fa-low_vision" glyph.
-var LowVision = &nf.Glyph{
-	ID:      "low_vision",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a8",
-}
-
-// Lungs () represents the "fa-lungs" glyph.
-var Lungs = &nf.Glyph{
-	ID:      "lungs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeaa",
-}
-
-// Lyft () represents the "fa-lyft" glyph.
-var Lyft = &nf.Glyph{
-	ID:      "lyft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2fd",
-}
-
-// Magento () represents the "fa-magento" glyph.
-var Magento = &nf.Glyph{
-	ID:      "magento",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ff",
-}
-
-// Magic () represents the "fa-magic" glyph.
-var Magic = &nf.Glyph{
-	ID:      "magic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d0",
-}
-
-// Magnet () represents the "fa-magnet" glyph.
-var Magnet = &nf.Glyph{
-	ID:      "magnet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf076",
-}
-
-// MagnifyingGlass () represents the "fa-magnifying_glass" glyph.
-var MagnifyingGlass = &nf.Glyph{
-	ID:      "magnifying_glass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf002",
-}
-
-// MagnifyingGlassDollar () represents the "fa-magnifying_glass_dollar" glyph.
-var MagnifyingGlassDollar = &nf.Glyph{
-	ID:      "magnifying_glass_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueedd",
-}
-
-// MagnifyingGlassLocation () represents the "fa-magnifying_glass_location" glyph.
-var MagnifyingGlassLocation = &nf.Glyph{
-	ID:      "magnifying_glass_location",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueede",
-}
-
-// MagnifyingGlassMinus () represents the "fa-magnifying_glass_minus" glyph.
-var MagnifyingGlassMinus = &nf.Glyph{
-	ID:      "magnifying_glass_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf010",
-}
-
-// MagnifyingGlassPlus () represents the "fa-magnifying_glass_plus" glyph.
-var MagnifyingGlassPlus = &nf.Glyph{
-	ID:      "magnifying_glass_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00e",
-}
-
-// MailForward () represents the "fa-mail_forward" glyph.
-var MailForward = &nf.Glyph{
-	ID:      "mail_forward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf064",
-}
-
-// MailReply () represents the "fa-mail_reply" glyph.
-var MailReply = &nf.Glyph{
-	ID:      "mail_reply",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf112",
-}
-
-// MailReplyAll () represents the "fa-mail_reply_all" glyph.
-var MailReplyAll = &nf.Glyph{
-	ID:      "mail_reply_all",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf122",
-}
-
-// Mailchimp () represents the "fa-mailchimp" glyph.
-var Mailchimp = &nf.Glyph{
-	ID:      "mailchimp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee67",
-}
-
-// Male () represents the "fa-male" glyph.
-var Male = &nf.Glyph{
-	ID:      "male",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf183",
-}
-
-// Mandalorian () represents the "fa-mandalorian" glyph.
-var Mandalorian = &nf.Glyph{
-	ID:      "mandalorian",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd9",
-}
-
-// Map () represents the "fa-map" glyph.
-var Map = &nf.Glyph{
-	ID:      "map",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf279",
-}
-
-// MapLocation () represents the "fa-map_location" glyph.
-var MapLocation = &nf.Glyph{
-	ID:      "map_location",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee68",
-}
-
-// MapLocationDot () represents the "fa-map_location_dot" glyph.
-var MapLocationDot = &nf.Glyph{
-	ID:      "map_location_dot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee69",
-}
-
-// MapMarker () represents the "fa-map_marker" glyph.
-var MapMarker = &nf.Glyph{
-	ID:      "map_marker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf041",
-}
-
-// MapO () represents the "fa-map_o" glyph.
-var MapO = &nf.Glyph{
-	ID:      "map_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf278",
-}
-
-// MapPin () represents the "fa-map_pin" glyph.
-var MapPin = &nf.Glyph{
-	ID:      "map_pin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf276",
-}
-
-// MapSigns () represents the "fa-map_signs" glyph.
-var MapSigns = &nf.Glyph{
-	ID:      "map_signs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf277",
-}
-
-// Markdown () represents the "fa-markdown" glyph.
-var Markdown = &nf.Glyph{
-	ID:      "markdown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeab",
-}
-
-// Marker () represents the "fa-marker" glyph.
-var Marker = &nf.Glyph{
-	ID:      "marker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee6a",
-}
-
-// Mars () represents the "fa-mars" glyph.
-var Mars = &nf.Glyph{
-	ID:      "mars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf222",
-}
-
-// MarsDouble () represents the "fa-mars_double" glyph.
-var MarsDouble = &nf.Glyph{
-	ID:      "mars_double",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf227",
-}
-
-// MarsStroke () represents the "fa-mars_stroke" glyph.
-var MarsStroke = &nf.Glyph{
-	ID:      "mars_stroke",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf229",
-}
-
-// MarsStrokeH () represents the "fa-mars_stroke_h" glyph.
-var MarsStrokeH = &nf.Glyph{
-	ID:      "mars_stroke_h",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22b",
-}
-
-// MarsStrokeRight () represents the "fa-mars_stroke_right" glyph.
-var MarsStrokeRight = &nf.Glyph{
-	ID:      "mars_stroke_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22b",
-}
-
-// MarsStrokeUp () represents the "fa-mars_stroke_up" glyph.
-var MarsStrokeUp = &nf.Glyph{
-	ID:      "mars_stroke_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22a",
-}
-
-// MarsStrokeV () represents the "fa-mars_stroke_v" glyph.
-var MarsStrokeV = &nf.Glyph{
-	ID:      "mars_stroke_v",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22a",
-}
-
-// MartiniGlass () represents the "fa-martini_glass" glyph.
-var MartiniGlass = &nf.Glyph{
-	ID:      "martini_glass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee44",
-}
-
-// MartiniGlassCitrus () represents the "fa-martini_glass_citrus" glyph.
-var MartiniGlassCitrus = &nf.Glyph{
-	ID:      "martini_glass_citrus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee2a",
-}
-
-// MartiniGlassEmpty () represents the "fa-martini_glass_empty" glyph.
-var MartiniGlassEmpty = &nf.Glyph{
-	ID:      "martini_glass_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf000",
-}
-
-// Mask () represents the "fa-mask" glyph.
-var Mask = &nf.Glyph{
-	ID:      "mask",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef07",
-}
-
-// MasksTheater () represents the "fa-masks_theater" glyph.
-var MasksTheater = &nf.Glyph{
-	ID:      "masks_theater",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb6",
-}
-
-// Mastodon () represents the "fa-mastodon" glyph.
-var Mastodon = &nf.Glyph{
-	ID:      "mastodon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc0",
-}
-
-// Maxcdn () represents the "fa-maxcdn" glyph.
-var Maxcdn = &nf.Glyph{
-	ID:      "maxcdn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf136",
-}
-
-// Maximize () represents the "fa-maximize" glyph.
-var Maximize = &nf.Glyph{
-	ID:      "maximize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf06f",
-}
-
-// Mdb () represents the "fa-mdb" glyph.
-var Mdb = &nf.Glyph{
-	ID:      "mdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb9",
-}
-
-// Meanpath () represents the "fa-meanpath" glyph.
-var Meanpath = &nf.Glyph{
-	ID:      "meanpath",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20c",
-}
-
-// Medal () represents the "fa-medal" glyph.
-var Medal = &nf.Glyph{
-	ID:      "medal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee6b",
-}
-
-// Medapps () represents the "fa-medapps" glyph.
-var Medapps = &nf.Glyph{
-	ID:      "medapps",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued01",
-}
-
-// Medium () represents the "fa-medium" glyph.
-var Medium = &nf.Glyph{
-	ID:      "medium",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23a",
-}
-
-// Medkit () represents the "fa-medkit" glyph.
-var Medkit = &nf.Glyph{
-	ID:      "medkit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fa",
-}
-
-// Medrt () represents the "fa-medrt" glyph.
-var Medrt = &nf.Glyph{
-	ID:      "medrt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued02",
-}
-
-// Meetup () represents the "fa-meetup" glyph.
-var Meetup = &nf.Glyph{
-	ID:      "meetup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e0",
-}
-
-// Megaport () represents the "fa-megaport" glyph.
-var Megaport = &nf.Glyph{
-	ID:      "megaport",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee6c",
-}
-
-// MehO () represents the "fa-meh_o" glyph.
-var MehO = &nf.Glyph{
-	ID:      "meh_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf11a",
-}
-
-// Memory () represents the "fa-memory" glyph.
-var Memory = &nf.Glyph{
-	ID:      "memory",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc5",
-}
-
-// Mendeley () represents the "fa-mendeley" glyph.
-var Mendeley = &nf.Glyph{
-	ID:      "mendeley",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef57",
-}
-
-// Menorah () represents the "fa-menorah" glyph.
-var Menorah = &nf.Glyph{
-	ID:      "menorah",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed2",
-}
-
-// Mercury () represents the "fa-mercury" glyph.
-var Mercury = &nf.Glyph{
-	ID:      "mercury",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf223",
-}
-
-// Message () represents the "fa-message" glyph.
-var Message = &nf.Glyph{
-	ID:      "message",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27a",
-}
-
-// Meteor () represents the "fa-meteor" glyph.
-var Meteor = &nf.Glyph{
-	ID:      "meteor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef23",
-}
-
-// Microchip () represents the "fa-microchip" glyph.
-var Microchip = &nf.Glyph{
-	ID:      "microchip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2db",
-}
-
-// Microphone () represents the "fa-microphone" glyph.
-var Microphone = &nf.Glyph{
-	ID:      "microphone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf130",
-}
-
-// MicrophoneLines () represents the "fa-microphone_lines" glyph.
-var MicrophoneLines = &nf.Glyph{
-	ID:      "microphone_lines",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued03",
-}
-
-// MicrophoneLinesSlash () represents the "fa-microphone_lines_slash" glyph.
-var MicrophoneLinesSlash = &nf.Glyph{
-	ID:      "microphone_lines_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc6",
-}
-
-// MicrophoneSlash () represents the "fa-microphone_slash" glyph.
-var MicrophoneSlash = &nf.Glyph{
-	ID:      "microphone_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf131",
-}
-
-// Microscope () represents the "fa-microscope" glyph.
-var Microscope = &nf.Glyph{
-	ID:      "microscope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeac",
-}
-
-// Microsoft () represents the "fa-microsoft" glyph.
-var Microsoft = &nf.Glyph{
-	ID:      "microsoft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued04",
-}
-
-// Minimize () represents the "fa-minimize" glyph.
-var Minimize = &nf.Glyph{
-	ID:      "minimize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef3e",
-}
-
-// Minus () represents the "fa-minus" glyph.
-var Minus = &nf.Glyph{
-	ID:      "minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf068",
-}
-
-// MinusCircle () represents the "fa-minus_circle" glyph.
-var MinusCircle = &nf.Glyph{
-	ID:      "minus_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf056",
-}
-
-// MinusSquare () represents the "fa-minus_square" glyph.
-var MinusSquare = &nf.Glyph{
-	ID:      "minus_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf146",
-}
-
-// MinusSquareO () represents the "fa-minus_square_o" glyph.
-var MinusSquareO = &nf.Glyph{
-	ID:      "minus_square_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf147",
-}
-
-// Mitten () represents the "fa-mitten" glyph.
-var Mitten = &nf.Glyph{
-	ID:      "mitten",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef58",
-}
-
-// Mix () represents the "fa-mix" glyph.
-var Mix = &nf.Glyph{
-	ID:      "mix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued05",
-}
-
-// Mixcloud () represents the "fa-mixcloud" glyph.
-var Mixcloud = &nf.Glyph{
-	ID:      "mixcloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf289",
-}
-
-// Mizuni () represents the "fa-mizuni" glyph.
-var Mizuni = &nf.Glyph{
-	ID:      "mizuni",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued06",
-}
-
-// Mobile () represents the "fa-mobile" glyph.
-var Mobile = &nf.Glyph{
-	ID:      "mobile",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued08",
-}
-
-// MobileButton () represents the "fa-mobile_button" glyph.
-var MobileButton = &nf.Glyph{
-	ID:      "mobile_button",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued07",
-}
-
-// MobilePhone () represents the "fa-mobile_phone" glyph.
-var MobilePhone = &nf.Glyph{
-	ID:      "mobile_phone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10b",
-}
-
-// MobileScreen () represents the "fa-mobile_screen" glyph.
-var MobileScreen = &nf.Glyph{
-	ID:      "mobile_screen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued09",
-}
-
-// MobileScreenButton () represents the "fa-mobile_screen_button" glyph.
-var MobileScreenButton = &nf.Glyph{
-	ID:      "mobile_screen_button",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10b",
-}
-
-// Modx () represents the "fa-modx" glyph.
-var Modx = &nf.Glyph{
-	ID:      "modx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf285",
-}
-
-// Monero () represents the "fa-monero" glyph.
-var Monero = &nf.Glyph{
-	ID:      "monero",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued0a",
-}
-
-// Money () represents the "fa-money" glyph.
-var Money = &nf.Glyph{
-	ID:      "money",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d6",
-}
-
-// MoneyBill () represents the "fa-money_bill" glyph.
-var MoneyBill = &nf.Glyph{
-	ID:      "money_bill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d6",
-}
-
-// MoneyBill1 () represents the "fa-money_bill_1" glyph.
-var MoneyBill1 = &nf.Glyph{
-	ID:      "money_bill_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued0b",
-}
-
-// MoneyBill1Wave () represents the "fa-money_bill_1_wave" glyph.
-var MoneyBill1Wave = &nf.Glyph{
-	ID:      "money_bill_1_wave",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc8",
-}
-
-// MoneyBillWave () represents the "fa-money_bill_wave" glyph.
-var MoneyBillWave = &nf.Glyph{
-	ID:      "money_bill_wave",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc7",
-}
-
-// MoneyCheck () represents the "fa-money_check" glyph.
-var MoneyCheck = &nf.Glyph{
-	ID:      "money_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc9",
-}
-
-// MoneyCheckDollar () represents the "fa-money_check_dollar" glyph.
-var MoneyCheckDollar = &nf.Glyph{
-	ID:      "money_check_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefca",
-}
-
-// Monument () represents the "fa-monument" glyph.
-var Monument = &nf.Glyph{
-	ID:      "monument",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee6f",
-}
-
-// Moon () represents the "fa-moon" glyph.
-var Moon = &nf.Glyph{
-	ID:      "moon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf186",
-}
-
-// MoonO () represents the "fa-moon_o" glyph.
-var MoonO = &nf.Glyph{
-	ID:      "moon_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf186",
-}
-
-// MortarBoard () represents the "fa-mortar_board" glyph.
-var MortarBoard = &nf.Glyph{
-	ID:      "mortar_board",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19d",
-}
-
-// MortarPestle () represents the "fa-mortar_pestle" glyph.
-var MortarPestle = &nf.Glyph{
-	ID:      "mortar_pestle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee70",
-}
-
-// Mosque () represents the "fa-mosque" glyph.
-var Mosque = &nf.Glyph{
-	ID:      "mosque",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed3",
-}
-
-// Motorcycle () represents the "fa-motorcycle" glyph.
-var Motorcycle = &nf.Glyph{
-	ID:      "motorcycle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21c",
-}
-
-// Mountain () represents the "fa-mountain" glyph.
-var Mountain = &nf.Glyph{
-	ID:      "mountain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef08",
-}
-
-// MousePointer () represents the "fa-mouse_pointer" glyph.
-var MousePointer = &nf.Glyph{
-	ID:      "mouse_pointer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf245",
-}
-
-// MugHot () represents the "fa-mug_hot" glyph.
-var MugHot = &nf.Glyph{
-	ID:      "mug_hot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef59",
-}
-
-// MugSaucer () represents the "fa-mug_saucer" glyph.
-var MugSaucer = &nf.Glyph{
-	ID:      "mug_saucer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f4",
-}
-
-// Music () represents the "fa-music" glyph.
-var Music = &nf.Glyph{
-	ID:      "music",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf001",
-}
-
-// Napster () represents the "fa-napster" glyph.
-var Napster = &nf.Glyph{
-	ID:      "napster",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued0c",
-}
-
-// Navicon () represents the "fa-navicon" glyph.
-var Navicon = &nf.Glyph{
-	ID:      "navicon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c9",
-}
-
-// Neos () represents the "fa-neos" glyph.
-var Neos = &nf.Glyph{
-	ID:      "neos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueead",
-}
-
-// NetworkWired () represents the "fa-network_wired" glyph.
-var NetworkWired = &nf.Glyph{
-	ID:      "network_wired",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef09",
-}
-
-// Neuter () represents the "fa-neuter" glyph.
-var Neuter = &nf.Glyph{
-	ID:      "neuter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22c",
-}
-
-// Newspaper () represents the "fa-newspaper" glyph.
-var Newspaper = &nf.Glyph{
-	ID:      "newspaper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ea",
-}
-
-// NewspaperO () represents the "fa-newspaper_o" glyph.
-var NewspaperO = &nf.Glyph{
-	ID:      "newspaper_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ea",
-}
-
-// Nimblr () represents the "fa-nimblr" glyph.
-var Nimblr = &nf.Glyph{
-	ID:      "nimblr",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee71",
-}
-
-// Node () represents the "fa-node" glyph.
-var Node = &nf.Glyph{
-	ID:      "node",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued44",
-}
-
-// NodeJs () represents the "fa-node_js" glyph.
-var NodeJs = &nf.Glyph{
-	ID:      "node_js",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued0d",
-}
-
-// NotEqual () represents the "fa-not_equal" glyph.
-var NotEqual = &nf.Glyph{
-	ID:      "not_equal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefcb",
-}
-
-// NoteSticky () represents the "fa-note_sticky" glyph.
-var NoteSticky = &nf.Glyph{
-	ID:      "note_sticky",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf249",
-}
-
-// NotesMedical () represents the "fa-notes_medical" glyph.
-var NotesMedical = &nf.Glyph{
-	ID:      "notes_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued85",
-}
-
-// Npm () represents the "fa-npm" glyph.
-var Npm = &nf.Glyph{
-	ID:      "npm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued0e",
-}
-
-// Ns8 () represents the "fa-ns8" glyph.
-var Ns8 = &nf.Glyph{
-	ID:      "ns8",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued0f",
-}
-
-// Nutritionix () represents the "fa-nutritionix" glyph.
-var Nutritionix = &nf.Glyph{
-	ID:      "nutritionix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued10",
-}
-
-// ObjectGroup () represents the "fa-object_group" glyph.
-var ObjectGroup = &nf.Glyph{
-	ID:      "object_group",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf247",
-}
-
-// ObjectUngroup () represents the "fa-object_ungroup" glyph.
-var ObjectUngroup = &nf.Glyph{
-	ID:      "object_ungroup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf248",
-}
-
-// Odnoklassniki () represents the "fa-odnoklassniki" glyph.
-var Odnoklassniki = &nf.Glyph{
-	ID:      "odnoklassniki",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf263",
-}
-
-// OdnoklassnikiSquare () represents the "fa-odnoklassniki_square" glyph.
-var OdnoklassnikiSquare = &nf.Glyph{
-	ID:      "odnoklassniki_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf264",
-}
-
-// OilCan () represents the "fa-oil_can" glyph.
-var OilCan = &nf.Glyph{
-	ID:      "oil_can",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeae",
-}
-
-// OkSign () represents the "fa-ok_sign" glyph.
-var OkSign = &nf.Glyph{
-	ID:      "ok_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf058",
-}
-
-// OldRepublic () represents the "fa-old_republic" glyph.
-var OldRepublic = &nf.Glyph{
-	ID:      "old_republic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedda",
-}
-
-// Om () represents the "fa-om" glyph.
-var Om = &nf.Glyph{
-	ID:      "om",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed4",
-}
-
-// Opencart () represents the "fa-opencart" glyph.
-var Opencart = &nf.Glyph{
-	ID:      "opencart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23d",
-}
-
-// Openid () represents the "fa-openid" glyph.
-var Openid = &nf.Glyph{
-	ID:      "openid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19b",
-}
-
-// Opera () represents the "fa-opera" glyph.
-var Opera = &nf.Glyph{
-	ID:      "opera",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26a",
-}
-
-// OptinMonster () represents the "fa-optin_monster" glyph.
-var OptinMonster = &nf.Glyph{
-	ID:      "optin_monster",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23c",
-}
-
-// Orcid () represents the "fa-orcid" glyph.
-var Orcid = &nf.Glyph{
-	ID:      "orcid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefbb",
-}
-
-// Osi () represents the "fa-osi" glyph.
-var Osi = &nf.Glyph{
-	ID:      "osi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued45",
-}
-
-// Otter () represents the "fa-otter" glyph.
-var Otter = &nf.Glyph{
-	ID:      "otter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef0a",
-}
-
-// Outdent () represents the "fa-outdent" glyph.
-var Outdent = &nf.Glyph{
-	ID:      "outdent",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03b",
-}
-
-// Page4 () represents the "fa-page4" glyph.
-var Page4 = &nf.Glyph{
-	ID:      "page4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued11",
-}
-
-// Pagelines () represents the "fa-pagelines" glyph.
-var Pagelines = &nf.Glyph{
-	ID:      "pagelines",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18c",
-}
-
-// Pager () represents the "fa-pager" glyph.
-var Pager = &nf.Glyph{
-	ID:      "pager",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef8a",
-}
-
-// PaintBrush () represents the "fa-paint_brush" glyph.
-var PaintBrush = &nf.Glyph{
-	ID:      "paint_brush",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fc",
-}
-
-// PaintRoller () represents the "fa-paint_roller" glyph.
-var PaintRoller = &nf.Glyph{
-	ID:      "paint_roller",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee72",
-}
-
-// Paintbrush () represents the "fa-paintbrush" glyph.
-var Paintbrush = &nf.Glyph{
-	ID:      "paintbrush",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1fc",
-}
-
-// Palette () represents the "fa-palette" glyph.
-var Palette = &nf.Glyph{
-	ID:      "palette",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefcc",
-}
-
-// Palfed () represents the "fa-palfed" glyph.
-var Palfed = &nf.Glyph{
-	ID:      "palfed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued12",
-}
-
-// Pallet () represents the "fa-pallet" glyph.
-var Pallet = &nf.Glyph{
-	ID:      "pallet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued86",
-}
-
-// PaperPlane () represents the "fa-paper_plane" glyph.
-var PaperPlane = &nf.Glyph{
-	ID:      "paper_plane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d8",
-}
-
-// PaperPlaneO () represents the "fa-paper_plane_o" glyph.
-var PaperPlaneO = &nf.Glyph{
-	ID:      "paper_plane_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d9",
-}
-
-// Paperclip () represents the "fa-paperclip" glyph.
-var Paperclip = &nf.Glyph{
-	ID:      "paperclip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c6",
-}
-
-// ParachuteBox () represents the "fa-parachute_box" glyph.
-var ParachuteBox = &nf.Glyph{
-	ID:      "parachute_box",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda1",
-}
-
-// Paragraph () represents the "fa-paragraph" glyph.
-var Paragraph = &nf.Glyph{
-	ID:      "paragraph",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1dd",
-}
-
-// Passport () represents the "fa-passport" glyph.
-var Passport = &nf.Glyph{
-	ID:      "passport",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee73",
-}
-
-// Paste () represents the "fa-paste" glyph.
-var Paste = &nf.Glyph{
-	ID:      "paste",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ea",
-}
-
-// Patreon () represents the "fa-patreon" glyph.
-var Patreon = &nf.Glyph{
-	ID:      "patreon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued13",
-}
-
-// Pause () represents the "fa-pause" glyph.
-var Pause = &nf.Glyph{
-	ID:      "pause",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf04c",
-}
-
-// PauseCircle () represents the "fa-pause_circle" glyph.
-var PauseCircle = &nf.Glyph{
-	ID:      "pause_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28b",
-}
-
-// PauseCircleO () represents the "fa-pause_circle_o" glyph.
-var PauseCircleO = &nf.Glyph{
-	ID:      "pause_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28c",
-}
-
-// Paw () represents the "fa-paw" glyph.
-var Paw = &nf.Glyph{
-	ID:      "paw",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b0",
-}
-
-// Paypal () represents the "fa-paypal" glyph.
-var Paypal = &nf.Glyph{
-	ID:      "paypal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ed",
-}
-
-// Peace () represents the "fa-peace" glyph.
-var Peace = &nf.Glyph{
-	ID:      "peace",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed6",
-}
-
-// Pen () represents the "fa-pen" glyph.
-var Pen = &nf.Glyph{
-	ID:      "pen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01f",
-}
-
-// PenClip () represents the "fa-pen_clip" glyph.
-var PenClip = &nf.Glyph{
-	ID:      "pen_clip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf020",
-}
-
-// PenFancy () represents the "fa-pen_fancy" glyph.
-var PenFancy = &nf.Glyph{
-	ID:      "pen_fancy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee74",
-}
-
-// PenNib () represents the "fa-pen_nib" glyph.
-var PenNib = &nf.Glyph{
-	ID:      "pen_nib",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee75",
-}
-
-// PenRuler () represents the "fa-pen_ruler" glyph.
-var PenRuler = &nf.Glyph{
-	ID:      "pen_ruler",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee76",
-}
-
-// PenToSquare () represents the "fa-pen_to_square" glyph.
-var PenToSquare = &nf.Glyph{
-	ID:      "pen_to_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf044",
-}
-
-// Pencil () represents the "fa-pencil" glyph.
-var Pencil = &nf.Glyph{
-	ID:      "pencil",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf040",
-}
-
-// PencilSquare () represents the "fa-pencil_square" glyph.
-var PencilSquare = &nf.Glyph{
-	ID:      "pencil_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14b",
-}
-
-// PencilSquareO () represents the "fa-pencil_square_o" glyph.
-var PencilSquareO = &nf.Glyph{
-	ID:      "pencil_square_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf044",
-}
-
-// PeopleCarryBox () represents the "fa-people_carry_box" glyph.
-var PeopleCarryBox = &nf.Glyph{
-	ID:      "people_carry_box",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda2",
-}
-
-// PepperHot () represents the "fa-pepper_hot" glyph.
-var PepperHot = &nf.Glyph{
-	ID:      "pepper_hot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef8b",
-}
-
-// Percent () represents the "fa-percent" glyph.
-var Percent = &nf.Glyph{
-	ID:      "percent",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf295",
-}
-
-// Periscope () represents the "fa-periscope" glyph.
-var Periscope = &nf.Glyph{
-	ID:      "periscope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued14",
-}
-
-// Person () represents the "fa-person" glyph.
-var Person = &nf.Glyph{
-	ID:      "person",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf183",
-}
-
-// PersonBiking () represents the "fa-person_biking" glyph.
-var PersonBiking = &nf.Glyph{
-	ID:      "person_biking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa2",
-}
-
-// PersonBooth () represents the "fa-person_booth" glyph.
-var PersonBooth = &nf.Glyph{
-	ID:      "person_booth",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef24",
-}
-
-// PersonDigging () represents the "fa-person_digging" glyph.
-var PersonDigging = &nf.Glyph{
-	ID:      "person_digging",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa6",
-}
-
-// PersonDotsFromLine () represents the "fa-person_dots_from_line" glyph.
-var PersonDotsFromLine = &nf.Glyph{
-	ID:      "person_dots_from_line",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued7c",
-}
-
-// PersonDress () represents the "fa-person_dress" glyph.
-var PersonDress = &nf.Glyph{
-	ID:      "person_dress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf182",
-}
-
-// PersonHiking () represents the "fa-person_hiking" glyph.
-var PersonHiking = &nf.Glyph{
-	ID:      "person_hiking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef02",
-}
-
-// PersonPraying () represents the "fa-person_praying" glyph.
-var PersonPraying = &nf.Glyph{
-	ID:      "person_praying",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeda",
-}
-
-// PersonRunning () represents the "fa-person_running" glyph.
-var PersonRunning = &nf.Glyph{
-	ID:      "person_running",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef0c",
-}
-
-// PersonSkating () represents the "fa-person_skating" glyph.
-var PersonSkating = &nf.Glyph{
-	ID:      "person_skating",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef63",
-}
-
-// PersonSkiing () represents the "fa-person_skiing" glyph.
-var PersonSkiing = &nf.Glyph{
-	ID:      "person_skiing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef65",
-}
-
-// PersonSkiingNordic () represents the "fa-person_skiing_nordic" glyph.
-var PersonSkiingNordic = &nf.Glyph{
-	ID:      "person_skiing_nordic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef66",
-}
-
-// PersonSnowboarding () represents the "fa-person_snowboarding" glyph.
-var PersonSnowboarding = &nf.Glyph{
-	ID:      "person_snowboarding",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef69",
-}
-
-// PersonSwimming () represents the "fa-person_swimming" glyph.
-var PersonSwimming = &nf.Glyph{
-	ID:      "person_swimming",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee8b",
-}
-
-// PersonWalking () represents the "fa-person_walking" glyph.
-var PersonWalking = &nf.Glyph{
-	ID:      "person_walking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee1d",
-}
-
-// PersonWalkingWithCane () represents the "fa-person_walking_with_cane" glyph.
-var PersonWalkingWithCane = &nf.Glyph{
-	ID:      "person_walking_with_cane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29d",
-}
-
-// Phabricator () represents the "fa-phabricator" glyph.
-var Phabricator = &nf.Glyph{
-	ID:      "phabricator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued15",
-}
-
-// PhoenixFramework () represents the "fa-phoenix_framework" glyph.
-var PhoenixFramework = &nf.Glyph{
-	ID:      "phoenix_framework",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued16",
-}
-
-// PhoenixSquadron () represents the "fa-phoenix_squadron" glyph.
-var PhoenixSquadron = &nf.Glyph{
-	ID:      "phoenix_squadron",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueddb",
-}
-
-// Phone () represents the "fa-phone" glyph.
-var Phone = &nf.Glyph{
-	ID:      "phone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf095",
-}
-
-// PhoneFlip () represents the "fa-phone_flip" glyph.
-var PhoneFlip = &nf.Glyph{
-	ID:      "phone_flip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa9",
-}
-
-// PhoneSlash () represents the "fa-phone_slash" glyph.
-var PhoneSlash = &nf.Glyph{
-	ID:      "phone_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued17",
-}
-
-// PhoneSquare () represents the "fa-phone_square" glyph.
-var PhoneSquare = &nf.Glyph{
-	ID:      "phone_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf098",
-}
-
-// PhoneVolume () represents the "fa-phone_volume" glyph.
-var PhoneVolume = &nf.Glyph{
-	ID:      "phone_volume",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a0",
-}
-
-// Photo () represents the "fa-photo" glyph.
-var Photo = &nf.Glyph{
-	ID:      "photo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03e",
-}
-
-// PhotoFilm () represents the "fa-photo_film" glyph.
-var PhotoFilm = &nf.Glyph{
-	ID:      "photo_film",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefab",
-}
-
-// Php () represents the "fa-php" glyph.
-var Php = &nf.Glyph{
-	ID:      "php",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued6d",
-}
-
-// PictureO () represents the "fa-picture_o" glyph.
-var PictureO = &nf.Glyph{
-	ID:      "picture_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03e",
-}
-
-// PieChart () represents the "fa-pie_chart" glyph.
-var PieChart = &nf.Glyph{
-	ID:      "pie_chart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf200",
-}
-
-// PiedPiper () represents the "fa-pied_piper" glyph.
-var PiedPiper = &nf.Glyph{
-	ID:      "pied_piper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ae",
-}
-
-// PiedPiperAlt () represents the "fa-pied_piper_alt" glyph.
-var PiedPiperAlt = &nf.Glyph{
-	ID:      "pied_piper_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a8",
-}
-
-// PiedPiperHat () represents the "fa-pied_piper_hat" glyph.
-var PiedPiperHat = &nf.Glyph{
-	ID:      "pied_piper_hat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedb0",
-}
-
-// PiedPiperPp () represents the "fa-pied_piper_pp" glyph.
-var PiedPiperPp = &nf.Glyph{
-	ID:      "pied_piper_pp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a7",
-}
-
-// PiggyBank () represents the "fa-piggy_bank" glyph.
-var PiggyBank = &nf.Glyph{
-	ID:      "piggy_bank",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda3",
-}
-
-// Pills () represents the "fa-pills" glyph.
-var Pills = &nf.Glyph{
-	ID:      "pills",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued87",
-}
-
-// Pinterest () represents the "fa-pinterest" glyph.
-var Pinterest = &nf.Glyph{
-	ID:      "pinterest",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d2",
-}
-
-// PinterestP () represents the "fa-pinterest_p" glyph.
-var PinterestP = &nf.Glyph{
-	ID:      "pinterest_p",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf231",
-}
-
-// PinterestSquare () represents the "fa-pinterest_square" glyph.
-var PinterestSquare = &nf.Glyph{
-	ID:      "pinterest_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d3",
-}
-
-// PizzaSlice () represents the "fa-pizza_slice" glyph.
-var PizzaSlice = &nf.Glyph{
-	ID:      "pizza_slice",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef8c",
-}
-
-// PlaceOfWorship () represents the "fa-place_of_worship" glyph.
-var PlaceOfWorship = &nf.Glyph{
-	ID:      "place_of_worship",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed7",
-}
-
-// Plane () represents the "fa-plane" glyph.
-var Plane = &nf.Glyph{
-	ID:      "plane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf072",
-}
-
-// PlaneArrival () represents the "fa-plane_arrival" glyph.
-var PlaneArrival = &nf.Glyph{
-	ID:      "plane_arrival",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee77",
-}
-
-// PlaneDeparture () represents the "fa-plane_departure" glyph.
-var PlaneDeparture = &nf.Glyph{
-	ID:      "plane_departure",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee78",
-}
-
-// Play () represents the "fa-play" glyph.
-var Play = &nf.Glyph{
-	ID:      "play",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf04b",
-}
-
-// PlayCircle () represents the "fa-play_circle" glyph.
-var PlayCircle = &nf.Glyph{
-	ID:      "play_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf144",
-}
-
-// PlayCircleO () represents the "fa-play_circle_o" glyph.
-var PlayCircleO = &nf.Glyph{
-	ID:      "play_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01d",
-}
-
-// Playstation () represents the "fa-playstation" glyph.
-var Playstation = &nf.Glyph{
-	ID:      "playstation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued18",
-}
-
-// Plug () represents the "fa-plug" glyph.
-var Plug = &nf.Glyph{
-	ID:      "plug",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e6",
-}
-
-// Plus () represents the "fa-plus" glyph.
-var Plus = &nf.Glyph{
-	ID:      "plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf067",
-}
-
-// PlusCircle () represents the "fa-plus_circle" glyph.
-var PlusCircle = &nf.Glyph{
-	ID:      "plus_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf055",
-}
-
-// PlusSquare () represents the "fa-plus_square" glyph.
-var PlusSquare = &nf.Glyph{
-	ID:      "plus_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fe",
-}
-
-// PlusSquareO () represents the "fa-plus_square_o" glyph.
-var PlusSquareO = &nf.Glyph{
-	ID:      "plus_square_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf196",
-}
-
-// Podcast () represents the "fa-podcast" glyph.
-var Podcast = &nf.Glyph{
-	ID:      "podcast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ce",
-}
-
-// Poo () represents the "fa-poo" glyph.
-var Poo = &nf.Glyph{
-	ID:      "poo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2fe",
-}
-
-// PooStorm () represents the "fa-poo_storm" glyph.
-var PooStorm = &nf.Glyph{
-	ID:      "poo_storm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef25",
-}
-
-// Poop () represents the "fa-poop" glyph.
-var Poop = &nf.Glyph{
-	ID:      "poop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeaf",
-}
-
-// PowerOff () represents the "fa-power_off" glyph.
-var PowerOff = &nf.Glyph{
-	ID:      "power_off",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf011",
-}
-
-// Prescription () represents the "fa-prescription" glyph.
-var Prescription = &nf.Glyph{
-	ID:      "prescription",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee79",
-}
-
-// PrescriptionBottle () represents the "fa-prescription_bottle" glyph.
-var PrescriptionBottle = &nf.Glyph{
-	ID:      "prescription_bottle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued88",
-}
-
-// PrescriptionBottleMedical () represents the "fa-prescription_bottle_medical" glyph.
-var PrescriptionBottleMedical = &nf.Glyph{
-	ID:      "prescription_bottle_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued89",
-}
-
-// Print () represents the "fa-print" glyph.
-var Print = &nf.Glyph{
-	ID:      "print",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf02f",
-}
-
-// ProductHunt () represents the "fa-product_hunt" glyph.
-var ProductHunt = &nf.Glyph{
-	ID:      "product_hunt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf288",
-}
-
-// Pushed () represents the "fa-pushed" glyph.
-var Pushed = &nf.Glyph{
-	ID:      "pushed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued1a",
-}
-
-// PuzzlePiece () represents the "fa-puzzle_piece" glyph.
-var PuzzlePiece = &nf.Glyph{
-	ID:      "puzzle_piece",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf12e",
-}
-
-// Python () represents the "fa-python" glyph.
-var Python = &nf.Glyph{
-	ID:      "python",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued1b",
-}
-
-// Qq () represents the "fa-qq" glyph.
-var Qq = &nf.Glyph{
-	ID:      "qq",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d6",
-}
-
-// Qrcode () represents the "fa-qrcode" glyph.
-var Qrcode = &nf.Glyph{
-	ID:      "qrcode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf029",
-}
-
-// Question () represents the "fa-question" glyph.
-var Question = &nf.Glyph{
-	ID:      "question",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf128",
-}
-
-// QuestionCircle () represents the "fa-question_circle" glyph.
-var QuestionCircle = &nf.Glyph{
-	ID:      "question_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf059",
-}
-
-// QuestionCircleO () represents the "fa-question_circle_o" glyph.
-var QuestionCircleO = &nf.Glyph{
-	ID:      "question_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29c",
-}
-
-// Quinscape () represents the "fa-quinscape" glyph.
-var Quinscape = &nf.Glyph{
-	ID:      "quinscape",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued6f",
-}
-
-// Quora () represents the "fa-quora" glyph.
-var Quora = &nf.Glyph{
-	ID:      "quora",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c4",
-}
-
-// QuoteLeft () represents the "fa-quote_left" glyph.
-var QuoteLeft = &nf.Glyph{
-	ID:      "quote_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10d",
-}
-
-// QuoteRight () represents the "fa-quote_right" glyph.
-var QuoteRight = &nf.Glyph{
-	ID:      "quote_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10e",
-}
-
-// RProject () represents the "fa-r_project" glyph.
-var RProject = &nf.Glyph{
-	ID:      "r_project",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc1",
-}
-
-// Ra () represents the "fa-ra" glyph.
-var Ra = &nf.Glyph{
-	ID:      "ra",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d0",
-}
-
-// Radiation () represents the "fa-radiation" glyph.
-var Radiation = &nf.Glyph{
-	ID:      "radiation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef5a",
-}
-
-// Radio () represents the "fa-radio" glyph.
-var Radio = &nf.Glyph{
-	ID:      "radio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefbc",
-}
-
-// Rainbow () represents the "fa-rainbow" glyph.
-var Rainbow = &nf.Glyph{
-	ID:      "rainbow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef26",
-}
-
-// Random () represents the "fa-random" glyph.
-var Random = &nf.Glyph{
-	ID:      "random",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf074",
-}
-
-// RaspberryPi () represents the "fa-raspberry_pi" glyph.
-var RaspberryPi = &nf.Glyph{
-	ID:      "raspberry_pi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef5c",
-}
-
-// Ravelry () represents the "fa-ravelry" glyph.
-var Ravelry = &nf.Glyph{
-	ID:      "ravelry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d9",
-}
-
-// React () represents the "fa-react" glyph.
-var React = &nf.Glyph{
-	ID:      "react",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued46",
-}
-
-// Reacteurope () represents the "fa-reacteurope" glyph.
-var Reacteurope = &nf.Glyph{
-	ID:      "reacteurope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef27",
-}
-
-// Readme () represents the "fa-readme" glyph.
-var Readme = &nf.Glyph{
-	ID:      "readme",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda4",
-}
-
-// Rebel () represents the "fa-rebel" glyph.
-var Rebel = &nf.Glyph{
-	ID:      "rebel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d0",
-}
-
-// Receipt () represents the "fa-receipt" glyph.
-var Receipt = &nf.Glyph{
-	ID:      "receipt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee0c",
-}
-
-// RecordVinyl () represents the "fa-record_vinyl" glyph.
-var RecordVinyl = &nf.Glyph{
-	ID:      "record_vinyl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefbd",
-}
-
-// RectangleAd () represents the "fa-rectangle_ad" glyph.
-var RectangleAd = &nf.Glyph{
-	ID:      "rectangle_ad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueebb",
-}
-
-// RectangleList () represents the "fa-rectangle_list" glyph.
-var RectangleList = &nf.Glyph{
-	ID:      "rectangle_list",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf022",
-}
-
-// RectangleXmark () represents the "fa-rectangle_xmark" glyph.
-var RectangleXmark = &nf.Glyph{
-	ID:      "rectangle_xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d4",
-}
-
-// Recycle () represents the "fa-recycle" glyph.
-var Recycle = &nf.Glyph{
-	ID:      "recycle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b8",
-}
-
-// RedRiver () represents the "fa-red_river" glyph.
-var RedRiver = &nf.Glyph{
-	ID:      "red_river",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued1c",
-}
-
-// Reddit () represents the "fa-reddit" glyph.
-var Reddit = &nf.Glyph{
-	ID:      "reddit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a1",
-}
-
-// RedditAlien () represents the "fa-reddit_alien" glyph.
-var RedditAlien = &nf.Glyph{
-	ID:      "reddit_alien",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf281",
-}
-
-// RedditSquare () represents the "fa-reddit_square" glyph.
-var RedditSquare = &nf.Glyph{
-	ID:      "reddit_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a2",
-}
-
-// Redhat () represents the "fa-redhat" glyph.
-var Redhat = &nf.Glyph{
-	ID:      "redhat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef5d",
-}
-
-// Refresh () represents the "fa-refresh" glyph.
-var Refresh = &nf.Glyph{
-	ID:      "refresh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf021",
-}
-
-// Registered () represents the "fa-registered" glyph.
-var Registered = &nf.Glyph{
-	ID:      "registered",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25d",
-}
-
-// Remove () represents the "fa-remove" glyph.
-var Remove = &nf.Glyph{
-	ID:      "remove",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00d",
-}
-
-// RemoveSign () represents the "fa-remove_sign" glyph.
-var RemoveSign = &nf.Glyph{
-	ID:      "remove_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf057",
-}
-
-// Renren () represents the "fa-renren" glyph.
-var Renren = &nf.Glyph{
-	ID:      "renren",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18b",
-}
-
-// Reorder () represents the "fa-reorder" glyph.
-var Reorder = &nf.Glyph{
-	ID:      "reorder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c9",
-}
-
-// Repeat () represents the "fa-repeat" glyph.
-var Repeat = &nf.Glyph{
-	ID:      "repeat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf01e",
-}
-
-// RepeatAlt () represents the "fa-repeat_alt" glyph.
-var RepeatAlt = &nf.Glyph{
-	ID:      "repeat_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b6",
-}
-
-// Reply () represents the "fa-reply" glyph.
-var Reply = &nf.Glyph{
-	ID:      "reply",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf112",
-}
-
-// ReplyAll () represents the "fa-reply_all" glyph.
-var ReplyAll = &nf.Glyph{
-	ID:      "reply_all",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf122",
-}
-
-// Replyd () represents the "fa-replyd" glyph.
-var Replyd = &nf.Glyph{
-	ID:      "replyd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued1e",
-}
-
-// Republican () represents the "fa-republican" glyph.
-var Republican = &nf.Glyph{
-	ID:      "republican",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef28",
-}
-
-// Researchgate () represents the "fa-researchgate" glyph.
-var Researchgate = &nf.Glyph{
-	ID:      "researchgate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc2",
-}
-
-// Resistance () represents the "fa-resistance" glyph.
-var Resistance = &nf.Glyph{
-	ID:      "resistance",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d0",
-}
-
-// Resolving () represents the "fa-resolving" glyph.
-var Resolving = &nf.Glyph{
-	ID:      "resolving",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued1f",
-}
-
-// Restroom () represents the "fa-restroom" glyph.
-var Restroom = &nf.Glyph{
-	ID:      "restroom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef5e",
-}
-
-// Retweet () represents the "fa-retweet" glyph.
-var Retweet = &nf.Glyph{
-	ID:      "retweet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf079",
-}
-
-// Rev () represents the "fa-rev" glyph.
-var Rev = &nf.Glyph{
-	ID:      "rev",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee7a",
-}
-
-// Ribbon () represents the "fa-ribbon" glyph.
-var Ribbon = &nf.Glyph{
-	ID:      "ribbon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda5",
-}
-
-// RightFromBracket () represents the "fa-right_from_bracket" glyph.
-var RightFromBracket = &nf.Glyph{
-	ID:      "right_from_bracket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f5",
-}
-
-// RightLeft () represents the "fa-right_left" glyph.
-var RightLeft = &nf.Glyph{
-	ID:      "right_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b5",
-}
-
-// RightToBracket () represents the "fa-right_to_bracket" glyph.
-var RightToBracket = &nf.Glyph{
-	ID:      "right_to_bracket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f6",
-}
-
-// Ring () represents the "fa-ring" glyph.
-var Ring = &nf.Glyph{
-	ID:      "ring",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef0b",
-}
-
-// Rmb () represents the "fa-rmb" glyph.
-var Rmb = &nf.Glyph{
-	ID:      "rmb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf157",
-}
-
-// Road () represents the "fa-road" glyph.
-var Road = &nf.Glyph{
-	ID:      "road",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf018",
-}
-
-// Robot () represents the "fa-robot" glyph.
-var Robot = &nf.Glyph{
-	ID:      "robot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee0d",
-}
-
-// Rocket () represents the "fa-rocket" glyph.
-var Rocket = &nf.Glyph{
-	ID:      "rocket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf135",
-}
-
-// Rocketchat () represents the "fa-rocketchat" glyph.
-var Rocketchat = &nf.Glyph{
-	ID:      "rocketchat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued20",
-}
-
-// Rockrms () represents the "fa-rockrms" glyph.
-var Rockrms = &nf.Glyph{
-	ID:      "rockrms",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued21",
-}
-
-// Rotate () represents the "fa-rotate" glyph.
-var Rotate = &nf.Glyph{
-	ID:      "rotate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f1",
-}
-
-// RotateLeft () represents the "fa-rotate_left" glyph.
-var RotateLeft = &nf.Glyph{
-	ID:      "rotate_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ea",
-}
-
-// RotateRight () represents the "fa-rotate_right" glyph.
-var RotateRight = &nf.Glyph{
-	ID:      "rotate_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f9",
-}
-
-// Rouble () represents the "fa-rouble" glyph.
-var Rouble = &nf.Glyph{
-	ID:      "rouble",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf158",
-}
-
-// Route () represents the "fa-route" glyph.
-var Route = &nf.Glyph{
-	ID:      "route",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda6",
-}
-
-// Rss () represents the "fa-rss" glyph.
-var Rss = &nf.Glyph{
-	ID:      "rss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09e",
-}
-
-// RssSquare () represents the "fa-rss_square" glyph.
-var RssSquare = &nf.Glyph{
-	ID:      "rss_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf143",
-}
-
-// Rub () represents the "fa-rub" glyph.
-var Rub = &nf.Glyph{
-	ID:      "rub",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf158",
-}
-
-// Ruble () represents the "fa-ruble" glyph.
-var Ruble = &nf.Glyph{
-	ID:      "ruble",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf158",
-}
-
-// RubleSign () represents the "fa-ruble_sign" glyph.
-var RubleSign = &nf.Glyph{
-	ID:      "ruble_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf158",
-}
-
-// Ruler () represents the "fa-ruler" glyph.
-var Ruler = &nf.Glyph{
-	ID:      "ruler",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee0e",
-}
-
-// RulerCombined () represents the "fa-ruler_combined" glyph.
-var RulerCombined = &nf.Glyph{
-	ID:      "ruler_combined",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee0f",
-}
-
-// RulerHorizontal () represents the "fa-ruler_horizontal" glyph.
-var RulerHorizontal = &nf.Glyph{
-	ID:      "ruler_horizontal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee10",
-}
-
-// RulerVertical () represents the "fa-ruler_vertical" glyph.
-var RulerVertical = &nf.Glyph{
-	ID:      "ruler_vertical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee11",
-}
-
-// Rupee () represents the "fa-rupee" glyph.
-var Rupee = &nf.Glyph{
-	ID:      "rupee",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf156",
-}
-
-// RupeeSign () represents the "fa-rupee_sign" glyph.
-var RupeeSign = &nf.Glyph{
-	ID:      "rupee_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf156",
-}
-
-// S15 () represents the "fa-s15" glyph.
-var S15 = &nf.Glyph{
-	ID:      "s15",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cd",
-}
-
-// SackDollar () represents the "fa-sack_dollar" glyph.
-var SackDollar = &nf.Glyph{
-	ID:      "sack_dollar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef8d",
-}
-
-// Safari () represents the "fa-safari" glyph.
-var Safari = &nf.Glyph{
-	ID:      "safari",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf267",
-}
-
-// Salesforce () represents the "fa-salesforce" glyph.
-var Salesforce = &nf.Glyph{
-	ID:      "salesforce",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef9a",
-}
-
-// Sass () represents the "fa-sass" glyph.
-var Sass = &nf.Glyph{
-	ID:      "sass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued49",
-}
-
-// Satellite () represents the "fa-satellite" glyph.
-var Satellite = &nf.Glyph{
-	ID:      "satellite",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef5f",
-}
-
-// SatelliteDish () represents the "fa-satellite_dish" glyph.
-var SatelliteDish = &nf.Glyph{
-	ID:      "satellite_dish",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef60",
-}
-
-// Save () represents the "fa-save" glyph.
-var Save = &nf.Glyph{
-	ID:      "save",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c7",
-}
-
-// ScaleBalanced () represents the "fa-scale_balanced" glyph.
-var ScaleBalanced = &nf.Glyph{
-	ID:      "scale_balanced",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24e",
-}
-
-// ScaleUnbalanced () represents the "fa-scale_unbalanced" glyph.
-var ScaleUnbalanced = &nf.Glyph{
-	ID:      "scale_unbalanced",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueddf",
-}
-
-// ScaleUnbalancedFlip () represents the "fa-scale_unbalanced_flip" glyph.
-var ScaleUnbalancedFlip = &nf.Glyph{
-	ID:      "scale_unbalanced_flip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede0",
-}
-
-// Schlix () represents the "fa-schlix" glyph.
-var Schlix = &nf.Glyph{
-	ID:      "schlix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued22",
-}
-
-// School () represents the "fa-school" glyph.
-var School = &nf.Glyph{
-	ID:      "school",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee12",
-}
-
-// Scissors () represents the "fa-scissors" glyph.
-var Scissors = &nf.Glyph{
-	ID:      "scissors",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c4",
-}
-
-// Screwdriver () represents the "fa-screwdriver" glyph.
-var Screwdriver = &nf.Glyph{
-	ID:      "screwdriver",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee13",
-}
-
-// ScrewdriverWrench () represents the "fa-screwdriver_wrench" glyph.
-var ScrewdriverWrench = &nf.Glyph{
-	ID:      "screwdriver_wrench",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef70",
-}
-
-// Scribd () represents the "fa-scribd" glyph.
-var Scribd = &nf.Glyph{
-	ID:      "scribd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28a",
-}
-
-// Scroll () represents the "fa-scroll" glyph.
-var Scroll = &nf.Glyph{
-	ID:      "scroll",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef0d",
-}
-
-// ScrollTorah () represents the "fa-scroll_torah" glyph.
-var ScrollTorah = &nf.Glyph{
-	ID:      "scroll_torah",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee5",
-}
-
-// SdCard () represents the "fa-sd_card" glyph.
-var SdCard = &nf.Glyph{
-	ID:      "sd_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef61",
-}
-
-// Search () represents the "fa-search" glyph.
-var Search = &nf.Glyph{
-	ID:      "search",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf002",
-}
-
-// SearchMinus () represents the "fa-search_minus" glyph.
-var SearchMinus = &nf.Glyph{
-	ID:      "search_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf010",
-}
-
-// SearchPlus () represents the "fa-search_plus" glyph.
-var SearchPlus = &nf.Glyph{
-	ID:      "search_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00e",
-}
-
-// Searchengin () represents the "fa-searchengin" glyph.
-var Searchengin = &nf.Glyph{
-	ID:      "searchengin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued23",
-}
-
-// Seedling () represents the "fa-seedling" glyph.
-var Seedling = &nf.Glyph{
-	ID:      "seedling",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda7",
-}
-
-// Sellcast () represents the "fa-sellcast" glyph.
-var Sellcast = &nf.Glyph{
-	ID:      "sellcast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2da",
-}
-
-// Sellsy () represents the "fa-sellsy" glyph.
-var Sellsy = &nf.Glyph{
-	ID:      "sellsy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf213",
-}
-
-// Send () represents the "fa-send" glyph.
-var Send = &nf.Glyph{
-	ID:      "send",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d8",
-}
-
-// SendO () represents the "fa-send_o" glyph.
-var SendO = &nf.Glyph{
-	ID:      "send_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d9",
-}
-
-// Server () represents the "fa-server" glyph.
-var Server = &nf.Glyph{
-	ID:      "server",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf233",
-}
-
-// Servicestack () represents the "fa-servicestack" glyph.
-var Servicestack = &nf.Glyph{
-	ID:      "servicestack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued24",
-}
-
-// Shapes () represents the "fa-shapes" glyph.
-var Shapes = &nf.Glyph{
-	ID:      "shapes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb0",
-}
-
-// Share () represents the "fa-share" glyph.
-var Share = &nf.Glyph{
-	ID:      "share",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf064",
-}
-
-// ShareAlt () represents the "fa-share_alt" glyph.
-var ShareAlt = &nf.Glyph{
-	ID:      "share_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e0",
-}
-
-// ShareAltSquare () represents the "fa-share_alt_square" glyph.
-var ShareAltSquare = &nf.Glyph{
-	ID:      "share_alt_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e1",
-}
-
-// ShareFromSquare () represents the "fa-share_from_square" glyph.
-var ShareFromSquare = &nf.Glyph{
-	ID:      "share_from_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14d",
-}
-
-// ShareNodes () represents the "fa-share_nodes" glyph.
-var ShareNodes = &nf.Glyph{
-	ID:      "share_nodes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e0",
-}
-
-// ShareSquare () represents the "fa-share_square" glyph.
-var ShareSquare = &nf.Glyph{
-	ID:      "share_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14d",
-}
-
-// ShareSquareO () represents the "fa-share_square_o" glyph.
-var ShareSquareO = &nf.Glyph{
-	ID:      "share_square_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf045",
-}
-
-// Shekel () represents the "fa-shekel" glyph.
-var Shekel = &nf.Glyph{
-	ID:      "shekel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20b",
-}
-
-// ShekelSign () represents the "fa-shekel_sign" glyph.
-var ShekelSign = &nf.Glyph{
-	ID:      "shekel_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20b",
-}
-
-// Sheqel () represents the "fa-sheqel" glyph.
-var Sheqel = &nf.Glyph{
-	ID:      "sheqel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf20b",
-}
-
-// Shield () represents the "fa-shield" glyph.
-var Shield = &nf.Glyph{
-	ID:      "shield",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf132",
-}
-
-// ShieldHalved () represents the "fa-shield_halved" glyph.
-var ShieldHalved = &nf.Glyph{
-	ID:      "shield_halved",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued25",
-}
-
-// Ship () represents the "fa-ship" glyph.
-var Ship = &nf.Glyph{
-	ID:      "ship",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21a",
-}
-
-// Shirt () represents the "fa-shirt" glyph.
-var Shirt = &nf.Glyph{
-	ID:      "shirt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee1c",
-}
-
-// Shirtsinbulk () represents the "fa-shirtsinbulk" glyph.
-var Shirtsinbulk = &nf.Glyph{
-	ID:      "shirtsinbulk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf214",
-}
-
-// ShoePrints () represents the "fa-shoe_prints" glyph.
-var ShoePrints = &nf.Glyph{
-	ID:      "shoe_prints",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee14",
-}
-
-// Shop () represents the "fa-shop" glyph.
-var Shop = &nf.Glyph{
-	ID:      "shop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee18",
-}
-
-// ShoppingBag () represents the "fa-shopping_bag" glyph.
-var ShoppingBag = &nf.Glyph{
-	ID:      "shopping_bag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf290",
-}
-
-// ShoppingBasket () represents the "fa-shopping_basket" glyph.
-var ShoppingBasket = &nf.Glyph{
-	ID:      "shopping_basket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf291",
-}
-
-// ShoppingCart () represents the "fa-shopping_cart" glyph.
-var ShoppingCart = &nf.Glyph{
-	ID:      "shopping_cart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf07a",
-}
-
-// Shopware () represents the "fa-shopware" glyph.
-var Shopware = &nf.Glyph{
-	ID:      "shopware",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee7d",
-}
-
-// Shower () represents the "fa-shower" glyph.
-var Shower = &nf.Glyph{
-	ID:      "shower",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cc",
-}
-
-// Shuffle () represents the "fa-shuffle" glyph.
-var Shuffle = &nf.Glyph{
-	ID:      "shuffle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf074",
-}
-
-// ShuttleSpace () represents the "fa-shuttle_space" glyph.
-var ShuttleSpace = &nf.Glyph{
-	ID:      "shuttle_space",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf197",
-}
-
-// SignHanging () represents the "fa-sign_hanging" glyph.
-var SignHanging = &nf.Glyph{
-	ID:      "sign_hanging",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueda8",
-}
-
-// SignIn () represents the "fa-sign_in" glyph.
-var SignIn = &nf.Glyph{
-	ID:      "sign_in",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf090",
-}
-
-// SignLanguage () represents the "fa-sign_language" glyph.
-var SignLanguage = &nf.Glyph{
-	ID:      "sign_language",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a7",
-}
-
-// SignOut () represents the "fa-sign_out" glyph.
-var SignOut = &nf.Glyph{
-	ID:      "sign_out",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08b",
-}
-
-// Signal () represents the "fa-signal" glyph.
-var Signal = &nf.Glyph{
-	ID:      "signal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf012",
-}
-
-// Signature () represents the "fa-signature" glyph.
-var Signature = &nf.Glyph{
-	ID:      "signature",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee7f",
-}
-
-// Signing () represents the "fa-signing" glyph.
-var Signing = &nf.Glyph{
-	ID:      "signing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a7",
-}
-
-// SignsPost () represents the "fa-signs_post" glyph.
-var SignsPost = &nf.Glyph{
-	ID:      "signs_post",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf277",
-}
-
-// SimCard () represents the "fa-sim_card" glyph.
-var SimCard = &nf.Glyph{
-	ID:      "sim_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef62",
-}
-
-// Simplybuilt () represents the "fa-simplybuilt" glyph.
-var Simplybuilt = &nf.Glyph{
-	ID:      "simplybuilt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf215",
-}
-
-// Sistrix () represents the "fa-sistrix" glyph.
-var Sistrix = &nf.Glyph{
-	ID:      "sistrix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued26",
-}
-
-// Sitemap () represents the "fa-sitemap" glyph.
-var Sitemap = &nf.Glyph{
-	ID:      "sitemap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e8",
-}
-
-// Sith () represents the "fa-sith" glyph.
-var Sith = &nf.Glyph{
-	ID:      "sith",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueddc",
-}
-
-// Sketch () represents the "fa-sketch" glyph.
-var Sketch = &nf.Glyph{
-	ID:      "sketch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef64",
-}
-
-// Skull () represents the "fa-skull" glyph.
-var Skull = &nf.Glyph{
-	ID:      "skull",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee15",
-}
-
-// SkullCrossbones () represents the "fa-skull_crossbones" glyph.
-var SkullCrossbones = &nf.Glyph{
-	ID:      "skull_crossbones",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef0e",
-}
-
-// Skyatlas () represents the "fa-skyatlas" glyph.
-var Skyatlas = &nf.Glyph{
-	ID:      "skyatlas",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf216",
-}
-
-// Skype () represents the "fa-skype" glyph.
-var Skype = &nf.Glyph{
-	ID:      "skype",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf17e",
-}
-
-// Slack () represents the "fa-slack" glyph.
-var Slack = &nf.Glyph{
-	ID:      "slack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf198",
-}
-
-// Slash () represents the "fa-slash" glyph.
-var Slash = &nf.Glyph{
-	ID:      "slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef0f",
-}
-
-// Sleigh () represents the "fa-sleigh" glyph.
-var Sleigh = &nf.Glyph{
-	ID:      "sleigh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef67",
-}
-
-// Sliders () represents the "fa-sliders" glyph.
-var Sliders = &nf.Glyph{
-	ID:      "sliders",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1de",
-}
-
-// Slideshare () represents the "fa-slideshare" glyph.
-var Slideshare = &nf.Glyph{
-	ID:      "slideshare",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e7",
-}
-
-// SmileO () represents the "fa-smile_o" glyph.
-var SmileO = &nf.Glyph{
-	ID:      "smile_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf118",
-}
-
-// Smog () represents the "fa-smog" glyph.
-var Smog = &nf.Glyph{
-	ID:      "smog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef29",
-}
-
-// Smoking () represents the "fa-smoking" glyph.
-var Smoking = &nf.Glyph{
-	ID:      "smoking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued8c",
-}
-
-// Snapchat () represents the "fa-snapchat" glyph.
-var Snapchat = &nf.Glyph{
-	ID:      "snapchat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ab",
-}
-
-// SnapchatGhost () represents the "fa-snapchat_ghost" glyph.
-var SnapchatGhost = &nf.Glyph{
-	ID:      "snapchat_ghost",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ac",
-}
-
-// SnapchatSquare () represents the "fa-snapchat_square" glyph.
-var SnapchatSquare = &nf.Glyph{
-	ID:      "snapchat_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ad",
-}
-
-// Snowflake () represents the "fa-snowflake" glyph.
-var Snowflake = &nf.Glyph{
-	ID:      "snowflake",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2dc",
-}
-
-// SnowflakeO () represents the "fa-snowflake_o" glyph.
-var SnowflakeO = &nf.Glyph{
-	ID:      "snowflake_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2dc",
-}
-
-// Snowman () represents the "fa-snowman" glyph.
-var Snowman = &nf.Glyph{
-	ID:      "snowman",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef6a",
-}
-
-// Snowplow () represents the "fa-snowplow" glyph.
-var Snowplow = &nf.Glyph{
-	ID:      "snowplow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef6b",
-}
-
-// SoccerBallO () represents the "fa-soccer_ball_o" glyph.
-var SoccerBallO = &nf.Glyph{
-	ID:      "soccer_ball_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e3",
-}
-
-// Socks () represents the "fa-socks" glyph.
-var Socks = &nf.Glyph{
-	ID:      "socks",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueedf",
-}
-
-// SolarPanel () represents the "fa-solar_panel" glyph.
-var SolarPanel = &nf.Glyph{
-	ID:      "solar_panel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee81",
-}
-
-// Sort () represents the "fa-sort" glyph.
-var Sort = &nf.Glyph{
-	ID:      "sort",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0dc",
-}
-
-// SortAlphaAsc () represents the "fa-sort_alpha_asc" glyph.
-var SortAlphaAsc = &nf.Glyph{
-	ID:      "sort_alpha_asc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15d",
-}
-
-// SortAlphaDesc () represents the "fa-sort_alpha_desc" glyph.
-var SortAlphaDesc = &nf.Glyph{
-	ID:      "sort_alpha_desc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf15e",
-}
-
-// SortAmountAsc () represents the "fa-sort_amount_asc" glyph.
-var SortAmountAsc = &nf.Glyph{
-	ID:      "sort_amount_asc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf160",
-}
-
-// SortAmountDesc () represents the "fa-sort_amount_desc" glyph.
-var SortAmountDesc = &nf.Glyph{
-	ID:      "sort_amount_desc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf161",
-}
-
-// SortAsc () represents the "fa-sort_asc" glyph.
-var SortAsc = &nf.Glyph{
-	ID:      "sort_asc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0de",
-}
-
-// SortDesc () represents the "fa-sort_desc" glyph.
-var SortDesc = &nf.Glyph{
-	ID:      "sort_desc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0dd",
-}
-
-// SortDown () represents the "fa-sort_down" glyph.
-var SortDown = &nf.Glyph{
-	ID:      "sort_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0dd",
-}
-
-// SortNumericAsc () represents the "fa-sort_numeric_asc" glyph.
-var SortNumericAsc = &nf.Glyph{
-	ID:      "sort_numeric_asc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf162",
-}
-
-// SortNumericDesc () represents the "fa-sort_numeric_desc" glyph.
-var SortNumericDesc = &nf.Glyph{
-	ID:      "sort_numeric_desc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf163",
-}
-
-// SortUp () represents the "fa-sort_up" glyph.
-var SortUp = &nf.Glyph{
-	ID:      "sort_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0de",
-}
-
-// Soundcloud () represents the "fa-soundcloud" glyph.
-var Soundcloud = &nf.Glyph{
-	ID:      "soundcloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1be",
-}
-
-// Sourcetree () represents the "fa-sourcetree" glyph.
-var Sourcetree = &nf.Glyph{
-	ID:      "sourcetree",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef6c",
-}
-
-// Spa () represents the "fa-spa" glyph.
-var Spa = &nf.Glyph{
-	ID:      "spa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee82",
-}
-
-// SpaceShuttle () represents the "fa-space_shuttle" glyph.
-var SpaceShuttle = &nf.Glyph{
-	ID:      "space_shuttle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf197",
-}
-
-// SpaghettiMonsterFlying () represents the "fa-spaghetti_monster_flying" glyph.
-var SpaghettiMonsterFlying = &nf.Glyph{
-	ID:      "spaghetti_monster_flying",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed5",
-}
-
-// Speakap () represents the "fa-speakap" glyph.
-var Speakap = &nf.Glyph{
-	ID:      "speakap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued27",
-}
-
-// SpeakerDeck () represents the "fa-speaker_deck" glyph.
-var SpeakerDeck = &nf.Glyph{
-	ID:      "speaker_deck",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef9b",
-}
-
-// SpellCheck () represents the "fa-spell_check" glyph.
-var SpellCheck = &nf.Glyph{
-	ID:      "spell_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb3",
-}
-
-// Spider () represents the "fa-spider" glyph.
-var Spider = &nf.Glyph{
-	ID:      "spider",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef10",
-}
-
-// Spinner () represents the "fa-spinner" glyph.
-var Spinner = &nf.Glyph{
-	ID:      "spinner",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf110",
-}
-
-// Splotch () represents the "fa-splotch" glyph.
-var Splotch = &nf.Glyph{
-	ID:      "splotch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee83",
-}
-
-// Spoon () represents the "fa-spoon" glyph.
-var Spoon = &nf.Glyph{
-	ID:      "spoon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b1",
-}
-
-// Spotify () represents the "fa-spotify" glyph.
-var Spotify = &nf.Glyph{
-	ID:      "spotify",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1bc",
-}
-
-// SprayCan () represents the "fa-spray_can" glyph.
-var SprayCan = &nf.Glyph{
-	ID:      "spray_can",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee84",
-}
-
-// SprayCanSparkles () represents the "fa-spray_can_sparkles" glyph.
-var SprayCanSparkles = &nf.Glyph{
-	ID:      "spray_can_sparkles",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee97",
-}
-
-// Square () represents the "fa-square" glyph.
-var Square = &nf.Glyph{
-	ID:      "square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c8",
-}
-
-// SquareArrowUpRight () represents the "fa-square_arrow_up_right" glyph.
-var SquareArrowUpRight = &nf.Glyph{
-	ID:      "square_arrow_up_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14c",
-}
-
-// SquareBehance () represents the "fa-square_behance" glyph.
-var SquareBehance = &nf.Glyph{
-	ID:      "square_behance",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b5",
-}
-
-// SquareCaretDown () represents the "fa-square_caret_down" glyph.
-var SquareCaretDown = &nf.Glyph{
-	ID:      "square_caret_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf150",
-}
-
-// SquareCaretLeft () represents the "fa-square_caret_left" glyph.
-var SquareCaretLeft = &nf.Glyph{
-	ID:      "square_caret_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf191",
-}
-
-// SquareCaretRight () represents the "fa-square_caret_right" glyph.
-var SquareCaretRight = &nf.Glyph{
-	ID:      "square_caret_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf152",
-}
-
-// SquareCaretUp () represents the "fa-square_caret_up" glyph.
-var SquareCaretUp = &nf.Glyph{
-	ID:      "square_caret_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf151",
-}
-
-// SquareCheck () represents the "fa-square_check" glyph.
-var SquareCheck = &nf.Glyph{
-	ID:      "square_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14a",
-}
-
-// SquareDribbble () represents the "fa-square_dribbble" glyph.
-var SquareDribbble = &nf.Glyph{
-	ID:      "square_dribbble",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf22e",
-}
-
-// SquareEnvelope () represents the "fa-square_envelope" glyph.
-var SquareEnvelope = &nf.Glyph{
-	ID:      "square_envelope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf199",
-}
-
-// SquareFacebook () represents the "fa-square_facebook" glyph.
-var SquareFacebook = &nf.Glyph{
-	ID:      "square_facebook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf082",
-}
-
-// SquareFontAwesomeStroke () represents the "fa-square_font_awesome_stroke" glyph.
-var SquareFontAwesomeStroke = &nf.Glyph{
-	ID:      "square_font_awesome_stroke",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0af",
-}
-
-// SquareFull () represents the "fa-square_full" glyph.
-var SquareFull = &nf.Glyph{
-	ID:      "square_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued70",
-}
-
-// SquareGit () represents the "fa-square_git" glyph.
-var SquareGit = &nf.Glyph{
-	ID:      "square_git",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d2",
-}
-
-// SquareGithub () represents the "fa-square_github" glyph.
-var SquareGithub = &nf.Glyph{
-	ID:      "square_github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf092",
-}
-
-// SquareGooglePlus () represents the "fa-square_google_plus" glyph.
-var SquareGooglePlus = &nf.Glyph{
-	ID:      "square_google_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d4",
-}
-
-// SquareH () represents the "fa-square_h" glyph.
-var SquareH = &nf.Glyph{
-	ID:      "square_h",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fd",
-}
-
-// SquareHackerNews () represents the "fa-square_hacker_news" glyph.
-var SquareHackerNews = &nf.Glyph{
-	ID:      "square_hacker_news",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2e5",
-}
-
-// SquareJs () represents the "fa-square_js" glyph.
-var SquareJs = &nf.Glyph{
-	ID:      "square_js",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ef",
-}
-
-// SquareLastfm () represents the "fa-square_lastfm" glyph.
-var SquareLastfm = &nf.Glyph{
-	ID:      "square_lastfm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf203",
-}
-
-// SquareMinus () represents the "fa-square_minus" glyph.
-var SquareMinus = &nf.Glyph{
-	ID:      "square_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf146",
-}
-
-// SquareO () represents the "fa-square_o" glyph.
-var SquareO = &nf.Glyph{
-	ID:      "square_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf096",
-}
-
-// SquareOdnoklassniki () represents the "fa-square_odnoklassniki" glyph.
-var SquareOdnoklassniki = &nf.Glyph{
-	ID:      "square_odnoklassniki",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf264",
-}
-
-// SquareParking () represents the "fa-square_parking" glyph.
-var SquareParking = &nf.Glyph{
-	ID:      "square_parking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefcd",
-}
-
-// SquarePen () represents the "fa-square_pen" glyph.
-var SquarePen = &nf.Glyph{
-	ID:      "square_pen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf14b",
-}
-
-// SquarePhone () represents the "fa-square_phone" glyph.
-var SquarePhone = &nf.Glyph{
-	ID:      "square_phone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf098",
-}
-
-// SquarePhoneFlip () represents the "fa-square_phone_flip" glyph.
-var SquarePhoneFlip = &nf.Glyph{
-	ID:      "square_phone_flip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefaa",
-}
-
-// SquarePinterest () represents the "fa-square_pinterest" glyph.
-var SquarePinterest = &nf.Glyph{
-	ID:      "square_pinterest",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d3",
-}
-
-// SquarePlus () represents the "fa-square_plus" glyph.
-var SquarePlus = &nf.Glyph{
-	ID:      "square_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fe",
-}
-
-// SquarePollHorizontal () represents the "fa-square_poll_horizontal" glyph.
-var SquarePollHorizontal = &nf.Glyph{
-	ID:      "square_poll_horizontal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed9",
-}
-
-// SquarePollVertical () represents the "fa-square_poll_vertical" glyph.
-var SquarePollVertical = &nf.Glyph{
-	ID:      "square_poll_vertical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueed8",
-}
-
-// SquareReddit () represents the "fa-square_reddit" glyph.
-var SquareReddit = &nf.Glyph{
-	ID:      "square_reddit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a2",
-}
-
-// SquareRootVariable () represents the "fa-square_root_variable" glyph.
-var SquareRootVariable = &nf.Glyph{
-	ID:      "square_root_variable",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee0",
-}
-
-// SquareRss () represents the "fa-square_rss" glyph.
-var SquareRss = &nf.Glyph{
-	ID:      "square_rss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf143",
-}
-
-// SquareShareNodes () represents the "fa-square_share_nodes" glyph.
-var SquareShareNodes = &nf.Glyph{
-	ID:      "square_share_nodes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e1",
-}
-
-// SquareSnapchat () represents the "fa-square_snapchat" glyph.
-var SquareSnapchat = &nf.Glyph{
-	ID:      "square_snapchat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ad",
-}
-
-// SquareSteam () represents the "fa-square_steam" glyph.
-var SquareSteam = &nf.Glyph{
-	ID:      "square_steam",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b7",
-}
-
-// SquareTumblr () represents the "fa-square_tumblr" glyph.
-var SquareTumblr = &nf.Glyph{
-	ID:      "square_tumblr",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf174",
-}
-
-// SquareTwitter () represents the "fa-square_twitter" glyph.
-var SquareTwitter = &nf.Glyph{
-	ID:      "square_twitter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf081",
-}
-
-// SquareUpRight () represents the "fa-square_up_right" glyph.
-var SquareUpRight = &nf.Glyph{
-	ID:      "square_up_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b4",
-}
-
-// SquareViadeo () represents the "fa-square_viadeo" glyph.
-var SquareViadeo = &nf.Glyph{
-	ID:      "square_viadeo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2aa",
-}
-
-// SquareVimeo () represents the "fa-square_vimeo" glyph.
-var SquareVimeo = &nf.Glyph{
-	ID:      "square_vimeo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf194",
-}
-
-// SquareWhatsapp () represents the "fa-square_whatsapp" glyph.
-var SquareWhatsapp = &nf.Glyph{
-	ID:      "square_whatsapp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued3b",
-}
-
-// SquareXing () represents the "fa-square_xing" glyph.
-var SquareXing = &nf.Glyph{
-	ID:      "square_xing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf169",
-}
-
-// SquareXmark () represents the "fa-square_xmark" glyph.
-var SquareXmark = &nf.Glyph{
-	ID:      "square_xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d3",
-}
-
-// SquareYoutube () represents the "fa-square_youtube" glyph.
-var SquareYoutube = &nf.Glyph{
-	ID:      "square_youtube",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf166",
-}
-
-// Squarespace () represents the "fa-squarespace" glyph.
-var Squarespace = &nf.Glyph{
-	ID:      "squarespace",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee85",
-}
-
-// StackExchange () represents the "fa-stack_exchange" glyph.
-var StackExchange = &nf.Glyph{
-	ID:      "stack_exchange",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18d",
-}
-
-// StackOverflow () represents the "fa-stack_overflow" glyph.
-var StackOverflow = &nf.Glyph{
-	ID:      "stack_overflow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16c",
-}
-
-// Stackpath () represents the "fa-stackpath" glyph.
-var Stackpath = &nf.Glyph{
-	ID:      "stackpath",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefa1",
-}
-
-// Stamp () represents the "fa-stamp" glyph.
-var Stamp = &nf.Glyph{
-	ID:      "stamp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee86",
-}
-
-// Star () represents the "fa-star" glyph.
-var Star = &nf.Glyph{
-	ID:      "star",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf005",
-}
-
-// StarAndCrescent () represents the "fa-star_and_crescent" glyph.
-var StarAndCrescent = &nf.Glyph{
-	ID:      "star_and_crescent",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee1",
-}
-
-// StarHalf () represents the "fa-star_half" glyph.
-var StarHalf = &nf.Glyph{
-	ID:      "star_half",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf089",
-}
-
-// StarHalfEmpty () represents the "fa-star_half_empty" glyph.
-var StarHalfEmpty = &nf.Glyph{
-	ID:      "star_half_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf123",
-}
-
-// StarHalfFull () represents the "fa-star_half_full" glyph.
-var StarHalfFull = &nf.Glyph{
-	ID:      "star_half_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf123",
-}
-
-// StarHalfO () represents the "fa-star_half_o" glyph.
-var StarHalfO = &nf.Glyph{
-	ID:      "star_half_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf123",
-}
-
-// StarHalfStroke () represents the "fa-star_half_stroke" glyph.
-var StarHalfStroke = &nf.Glyph{
-	ID:      "star_half_stroke",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee87",
-}
-
-// StarO () represents the "fa-star_o" glyph.
-var StarO = &nf.Glyph{
-	ID:      "star_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf006",
-}
-
-// StarOfDavid () represents the "fa-star_of_david" glyph.
-var StarOfDavid = &nf.Glyph{
-	ID:      "star_of_david",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee2",
-}
-
-// StarOfLife () represents the "fa-star_of_life" glyph.
-var StarOfLife = &nf.Glyph{
-	ID:      "star_of_life",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb1",
-}
-
-// Staylinked () represents the "fa-staylinked" glyph.
-var Staylinked = &nf.Glyph{
-	ID:      "staylinked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued28",
-}
-
-// Steam () represents the "fa-steam" glyph.
-var Steam = &nf.Glyph{
-	ID:      "steam",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b6",
-}
-
-// SteamSquare () represents the "fa-steam_square" glyph.
-var SteamSquare = &nf.Glyph{
-	ID:      "steam_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1b7",
-}
-
-// SteamSymbol () represents the "fa-steam_symbol" glyph.
-var SteamSymbol = &nf.Glyph{
-	ID:      "steam_symbol",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued29",
-}
-
-// StepBackward () represents the "fa-step_backward" glyph.
-var StepBackward = &nf.Glyph{
-	ID:      "step_backward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf048",
-}
-
-// StepForward () represents the "fa-step_forward" glyph.
-var StepForward = &nf.Glyph{
-	ID:      "step_forward",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf051",
-}
-
-// SterlingSign () represents the "fa-sterling_sign" glyph.
-var SterlingSign = &nf.Glyph{
-	ID:      "sterling_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf154",
-}
-
-// Stethoscope () represents the "fa-stethoscope" glyph.
-var Stethoscope = &nf.Glyph{
-	ID:      "stethoscope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f1",
-}
-
-// StickerMule () represents the "fa-sticker_mule" glyph.
-var StickerMule = &nf.Glyph{
-	ID:      "sticker_mule",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued2a",
-}
-
-// StickyNote () represents the "fa-sticky_note" glyph.
-var StickyNote = &nf.Glyph{
-	ID:      "sticky_note",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf249",
-}
-
-// StickyNoteO () represents the "fa-sticky_note_o" glyph.
-var StickyNoteO = &nf.Glyph{
-	ID:      "sticky_note_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf24a",
-}
-
-// Stop () represents the "fa-stop" glyph.
-var Stop = &nf.Glyph{
-	ID:      "stop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf04d",
-}
-
-// StopCircle () represents the "fa-stop_circle" glyph.
-var StopCircle = &nf.Glyph{
-	ID:      "stop_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28d",
-}
-
-// StopCircleO () represents the "fa-stop_circle_o" glyph.
-var StopCircleO = &nf.Glyph{
-	ID:      "stop_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf28e",
-}
-
-// Stopwatch () represents the "fa-stopwatch" glyph.
-var Stopwatch = &nf.Glyph{
-	ID:      "stopwatch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f2",
-}
-
-// Store () represents the "fa-store" glyph.
-var Store = &nf.Glyph{
-	ID:      "store",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee17",
-}
-
-// Strava () represents the "fa-strava" glyph.
-var Strava = &nf.Glyph{
-	ID:      "strava",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued52",
-}
-
-// StreetView () represents the "fa-street_view" glyph.
-var StreetView = &nf.Glyph{
-	ID:      "street_view",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21d",
-}
-
-// Strikethrough () represents the "fa-strikethrough" glyph.
-var Strikethrough = &nf.Glyph{
-	ID:      "strikethrough",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0cc",
-}
-
-// Stripe () represents the "fa-stripe" glyph.
-var Stripe = &nf.Glyph{
-	ID:      "stripe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued53",
-}
-
-// StripeS () represents the "fa-stripe_s" glyph.
-var StripeS = &nf.Glyph{
-	ID:      "stripe_s",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued54",
-}
-
-// Stroopwafel () represents the "fa-stroopwafel" glyph.
-var Stroopwafel = &nf.Glyph{
-	ID:      "stroopwafel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee1a",
-}
-
-// Studiovinari () represents the "fa-studiovinari" glyph.
-var Studiovinari = &nf.Glyph{
-	ID:      "studiovinari",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued2b",
-}
-
-// Stumbleupon () represents the "fa-stumbleupon" glyph.
-var Stumbleupon = &nf.Glyph{
-	ID:      "stumbleupon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a4",
-}
-
-// StumbleuponCircle () represents the "fa-stumbleupon_circle" glyph.
-var StumbleuponCircle = &nf.Glyph{
-	ID:      "stumbleupon_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1a3",
-}
-
-// Subscript () represents the "fa-subscript" glyph.
-var Subscript = &nf.Glyph{
-	ID:      "subscript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf12c",
-}
-
-// Subway () represents the "fa-subway" glyph.
-var Subway = &nf.Glyph{
-	ID:      "subway",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf239",
-}
-
-// Suitcase () represents the "fa-suitcase" glyph.
-var Suitcase = &nf.Glyph{
-	ID:      "suitcase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f2",
-}
-
-// SuitcaseMedical () represents the "fa-suitcase_medical" glyph.
-var SuitcaseMedical = &nf.Glyph{
-	ID:      "suitcase_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0fa",
-}
-
-// SuitcaseRolling () represents the "fa-suitcase_rolling" glyph.
-var SuitcaseRolling = &nf.Glyph{
-	ID:      "suitcase_rolling",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee88",
-}
-
-// Sun () represents the "fa-sun" glyph.
-var Sun = &nf.Glyph{
-	ID:      "sun",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf185",
-}
-
-// SunO () represents the "fa-sun_o" glyph.
-var SunO = &nf.Glyph{
-	ID:      "sun_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf185",
-}
-
-// Superpowers () represents the "fa-superpowers" glyph.
-var Superpowers = &nf.Glyph{
-	ID:      "superpowers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2dd",
-}
-
-// Superscript () represents the "fa-superscript" glyph.
-var Superscript = &nf.Glyph{
-	ID:      "superscript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf12b",
-}
-
-// Supple () represents the "fa-supple" glyph.
-var Supple = &nf.Glyph{
-	ID:      "supple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued2c",
-}
-
-// Support () represents the "fa-support" glyph.
-var Support = &nf.Glyph{
-	ID:      "support",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1cd",
-}
-
-// Suse () represents the "fa-suse" glyph.
-var Suse = &nf.Glyph{
-	ID:      "suse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef6d",
-}
-
-// Swatchbook () represents the "fa-swatchbook" glyph.
-var Swatchbook = &nf.Glyph{
-	ID:      "swatchbook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee8a",
-}
-
-// Swift () represents the "fa-swift" glyph.
-var Swift = &nf.Glyph{
-	ID:      "swift",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefbe",
-}
-
-// Symfony () represents the "fa-symfony" glyph.
-var Symfony = &nf.Glyph{
-	ID:      "symfony",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef9c",
-}
-
-// Synagogue () represents the "fa-synagogue" glyph.
-var Synagogue = &nf.Glyph{
-	ID:      "synagogue",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee3",
-}
-
-// Syringe () represents the "fa-syringe" glyph.
-var Syringe = &nf.Glyph{
-	ID:      "syringe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued8d",
-}
-
-// Table () represents the "fa-table" glyph.
-var Table = &nf.Glyph{
-	ID:      "table",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ce",
-}
-
-// TableCells () represents the "fa-table_cells" glyph.
-var TableCells = &nf.Glyph{
-	ID:      "table_cells",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00a",
-}
-
-// TableCellsLarge () represents the "fa-table_cells_large" glyph.
-var TableCellsLarge = &nf.Glyph{
-	ID:      "table_cells_large",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf009",
-}
-
-// TableColumns () represents the "fa-table_columns" glyph.
-var TableColumns = &nf.Glyph{
-	ID:      "table_columns",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0db",
-}
-
-// TableList () represents the "fa-table_list" glyph.
-var TableList = &nf.Glyph{
-	ID:      "table_list",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00b",
-}
-
-// TableTennisPaddleBall () represents the "fa-table_tennis_paddle_ball" glyph.
-var TableTennisPaddleBall = &nf.Glyph{
-	ID:      "table_tennis_paddle_ball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued71",
-}
-
-// Tablet () represents the "fa-tablet" glyph.
-var Tablet = &nf.Glyph{
-	ID:      "tablet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued2e",
-}
-
-// TabletButton () represents the "fa-tablet_button" glyph.
-var TabletButton = &nf.Glyph{
-	ID:      "tablet_button",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued2d",
-}
-
-// TabletScreenButton () represents the "fa-tablet_screen_button" glyph.
-var TabletScreenButton = &nf.Glyph{
-	ID:      "tablet_screen_button",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf10a",
-}
-
-// Tablets () represents the "fa-tablets" glyph.
-var Tablets = &nf.Glyph{
-	ID:      "tablets",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued8e",
-}
-
-// TachographDigital () represents the "fa-tachograph_digital" glyph.
-var TachographDigital = &nf.Glyph{
-	ID:      "tachograph_digital",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee2f",
-}
-
-// Tachometer () represents the "fa-tachometer" glyph.
-var Tachometer = &nf.Glyph{
-	ID:      "tachometer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e4",
-}
-
-// Tag () represents the "fa-tag" glyph.
-var Tag = &nf.Glyph{
-	ID:      "tag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf02b",
-}
-
-// Tags () represents the "fa-tags" glyph.
-var Tags = &nf.Glyph{
-	ID:      "tags",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf02c",
-}
-
-// Tape () represents the "fa-tape" glyph.
-var Tape = &nf.Glyph{
-	ID:      "tape",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedaa",
-}
-
-// Tasks () represents the "fa-tasks" glyph.
-var Tasks = &nf.Glyph{
-	ID:      "tasks",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ae",
-}
-
-// Taxi () represents the "fa-taxi" glyph.
-var Taxi = &nf.Glyph{
-	ID:      "taxi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ba",
-}
-
-// Teamspeak () represents the "fa-teamspeak" glyph.
-var Teamspeak = &nf.Glyph{
-	ID:      "teamspeak",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc3",
-}
-
-// Teeth () represents the "fa-teeth" glyph.
-var Teeth = &nf.Glyph{
-	ID:      "teeth",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb4",
-}
-
-// TeethOpen () represents the "fa-teeth_open" glyph.
-var TeethOpen = &nf.Glyph{
-	ID:      "teeth_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb5",
-}
-
-// Telegram () represents the "fa-telegram" glyph.
-var Telegram = &nf.Glyph{
-	ID:      "telegram",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c6",
-}
-
-// Television () represents the "fa-television" glyph.
-var Television = &nf.Glyph{
-	ID:      "television",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26c",
-}
-
-// TemperatureEmpty () represents the "fa-temperature_empty" glyph.
-var TemperatureEmpty = &nf.Glyph{
-	ID:      "temperature_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cb",
-}
-
-// TemperatureFull () represents the "fa-temperature_full" glyph.
-var TemperatureFull = &nf.Glyph{
-	ID:      "temperature_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c7",
-}
-
-// TemperatureHalf () represents the "fa-temperature_half" glyph.
-var TemperatureHalf = &nf.Glyph{
-	ID:      "temperature_half",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c9",
-}
-
-// TemperatureHigh () represents the "fa-temperature_high" glyph.
-var TemperatureHigh = &nf.Glyph{
-	ID:      "temperature_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef2a",
-}
-
-// TemperatureLow () represents the "fa-temperature_low" glyph.
-var TemperatureLow = &nf.Glyph{
-	ID:      "temperature_low",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef2b",
-}
-
-// TemperatureQuarter () represents the "fa-temperature_quarter" glyph.
-var TemperatureQuarter = &nf.Glyph{
-	ID:      "temperature_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ca",
-}
-
-// TemperatureThreeQuarters () represents the "fa-temperature_three_quarters" glyph.
-var TemperatureThreeQuarters = &nf.Glyph{
-	ID:      "temperature_three_quarters",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c8",
-}
-
-// TencentWeibo () represents the "fa-tencent_weibo" glyph.
-var TencentWeibo = &nf.Glyph{
-	ID:      "tencent_weibo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d5",
-}
-
-// TengeSign () represents the "fa-tenge_sign" glyph.
-var TengeSign = &nf.Glyph{
-	ID:      "tenge_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef6e",
-}
-
-// Terminal () represents the "fa-terminal" glyph.
-var Terminal = &nf.Glyph{
-	ID:      "terminal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf120",
-}
-
-// TextHeight () represents the "fa-text_height" glyph.
-var TextHeight = &nf.Glyph{
-	ID:      "text_height",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf034",
-}
-
-// TextSlash () represents the "fa-text_slash" glyph.
-var TextSlash = &nf.Glyph{
-	ID:      "text_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefac",
-}
-
-// TextWidth () represents the "fa-text_width" glyph.
-var TextWidth = &nf.Glyph{
-	ID:      "text_width",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf035",
-}
-
-// Th () represents the "fa-th" glyph.
-var Th = &nf.Glyph{
-	ID:      "th",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00a",
-}
-
-// ThLarge () represents the "fa-th_large" glyph.
-var ThLarge = &nf.Glyph{
-	ID:      "th_large",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf009",
-}
-
-// ThList () represents the "fa-th_list" glyph.
-var ThList = &nf.Glyph{
-	ID:      "th_list",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00b",
-}
-
-// TheRedYeti () represents the "fa-the_red_yeti" glyph.
-var TheRedYeti = &nf.Glyph{
-	ID:      "the_red_yeti",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee4",
-}
-
-// Themeco () represents the "fa-themeco" glyph.
-var Themeco = &nf.Glyph{
-	ID:      "themeco",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee8d",
-}
-
-// Themeisle () represents the "fa-themeisle" glyph.
-var Themeisle = &nf.Glyph{
-	ID:      "themeisle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b2",
-}
-
-// Thermometer () represents the "fa-thermometer" glyph.
-var Thermometer = &nf.Glyph{
-	ID:      "thermometer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c7",
-}
-
-// Thermometer0 () represents the "fa-thermometer_0" glyph.
-var Thermometer0 = &nf.Glyph{
-	ID:      "thermometer_0",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cb",
-}
-
-// Thermometer1 () represents the "fa-thermometer_1" glyph.
-var Thermometer1 = &nf.Glyph{
-	ID:      "thermometer_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ca",
-}
-
-// Thermometer2 () represents the "fa-thermometer_2" glyph.
-var Thermometer2 = &nf.Glyph{
-	ID:      "thermometer_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c9",
-}
-
-// Thermometer3 () represents the "fa-thermometer_3" glyph.
-var Thermometer3 = &nf.Glyph{
-	ID:      "thermometer_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c8",
-}
-
-// Thermometer4 () represents the "fa-thermometer_4" glyph.
-var Thermometer4 = &nf.Glyph{
-	ID:      "thermometer_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c7",
-}
-
-// ThermometerAlt () represents the "fa-thermometer_alt" glyph.
-var ThermometerAlt = &nf.Glyph{
-	ID:      "thermometer_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued8f",
-}
-
-// ThermometerEmpty () represents the "fa-thermometer_empty" glyph.
-var ThermometerEmpty = &nf.Glyph{
-	ID:      "thermometer_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2cb",
-}
-
-// ThermometerFull () represents the "fa-thermometer_full" glyph.
-var ThermometerFull = &nf.Glyph{
-	ID:      "thermometer_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c7",
-}
-
-// ThermometerHalf () represents the "fa-thermometer_half" glyph.
-var ThermometerHalf = &nf.Glyph{
-	ID:      "thermometer_half",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c9",
-}
-
-// ThermometerQuarter () represents the "fa-thermometer_quarter" glyph.
-var ThermometerQuarter = &nf.Glyph{
-	ID:      "thermometer_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2ca",
-}
-
-// ThermometerThreeQuarters () represents the "fa-thermometer_three_quarters" glyph.
-var ThermometerThreeQuarters = &nf.Glyph{
-	ID:      "thermometer_three_quarters",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c8",
-}
-
-// ThinkPeaks () represents the "fa-think_peaks" glyph.
-var ThinkPeaks = &nf.Glyph{
-	ID:      "think_peaks",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef19",
-}
-
-// ThumbTack () represents the "fa-thumb_tack" glyph.
-var ThumbTack = &nf.Glyph{
-	ID:      "thumb_tack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08d",
-}
-
-// ThumbsDown () represents the "fa-thumbs_down" glyph.
-var ThumbsDown = &nf.Glyph{
-	ID:      "thumbs_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf165",
-}
-
-// ThumbsODown () represents the "fa-thumbs_o_down" glyph.
-var ThumbsODown = &nf.Glyph{
-	ID:      "thumbs_o_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf088",
-}
-
-// ThumbsOUp () represents the "fa-thumbs_o_up" glyph.
-var ThumbsOUp = &nf.Glyph{
-	ID:      "thumbs_o_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf087",
-}
-
-// ThumbsUp () represents the "fa-thumbs_up" glyph.
-var ThumbsUp = &nf.Glyph{
-	ID:      "thumbs_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf164",
-}
-
-// Thumbtack () represents the "fa-thumbtack" glyph.
-var Thumbtack = &nf.Glyph{
-	ID:      "thumbtack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf08d",
-}
-
-// Ticket () represents the "fa-ticket" glyph.
-var Ticket = &nf.Glyph{
-	ID:      "ticket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf145",
-}
-
-// TicketSimple () represents the "fa-ticket_simple" glyph.
-var TicketSimple = &nf.Glyph{
-	ID:      "ticket_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued30",
-}
-
-// Times () represents the "fa-times" glyph.
-var Times = &nf.Glyph{
-	ID:      "times",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00d",
-}
-
-// TimesCircle () represents the "fa-times_circle" glyph.
-var TimesCircle = &nf.Glyph{
-	ID:      "times_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf057",
-}
-
-// TimesCircleO () represents the "fa-times_circle_o" glyph.
-var TimesCircleO = &nf.Glyph{
-	ID:      "times_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf05c",
-}
-
-// TimesRectangle () represents the "fa-times_rectangle" glyph.
-var TimesRectangle = &nf.Glyph{
-	ID:      "times_rectangle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d3",
-}
-
-// TimesRectangleO () represents the "fa-times_rectangle_o" glyph.
-var TimesRectangleO = &nf.Glyph{
-	ID:      "times_rectangle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d4",
-}
-
-// Tint () represents the "fa-tint" glyph.
-var Tint = &nf.Glyph{
-	ID:      "tint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf043",
-}
-
-// ToggleDown () represents the "fa-toggle_down" glyph.
-var ToggleDown = &nf.Glyph{
-	ID:      "toggle_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf150",
-}
-
-// ToggleLeft () represents the "fa-toggle_left" glyph.
-var ToggleLeft = &nf.Glyph{
-	ID:      "toggle_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf191",
-}
-
-// ToggleOff () represents the "fa-toggle_off" glyph.
-var ToggleOff = &nf.Glyph{
-	ID:      "toggle_off",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf204",
-}
-
-// ToggleOn () represents the "fa-toggle_on" glyph.
-var ToggleOn = &nf.Glyph{
-	ID:      "toggle_on",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf205",
-}
-
-// ToggleRight () represents the "fa-toggle_right" glyph.
-var ToggleRight = &nf.Glyph{
-	ID:      "toggle_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf152",
-}
-
-// ToggleUp () represents the "fa-toggle_up" glyph.
-var ToggleUp = &nf.Glyph{
-	ID:      "toggle_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf151",
-}
-
-// Toilet () represents the "fa-toilet" glyph.
-var Toilet = &nf.Glyph{
-	ID:      "toilet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef6f",
-}
-
-// ToiletPaper () represents the "fa-toilet_paper" glyph.
-var ToiletPaper = &nf.Glyph{
-	ID:      "toilet_paper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef11",
-}
-
-// Toolbox () represents the "fa-toolbox" glyph.
-var Toolbox = &nf.Glyph{
-	ID:      "toolbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee1b",
-}
-
-// Tooth () represents the "fa-tooth" glyph.
-var Tooth = &nf.Glyph{
-	ID:      "tooth",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee90",
-}
-
-// ToriiGate () represents the "fa-torii_gate" glyph.
-var ToriiGate = &nf.Glyph{
-	ID:      "torii_gate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee6",
-}
-
-// Tornado () represents the "fa-tornado" glyph.
-var Tornado = &nf.Glyph{
-	ID:      "tornado",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef2d",
-}
-
-// TowerBroadcast () represents the "fa-tower_broadcast" glyph.
-var TowerBroadcast = &nf.Glyph{
-	ID:      "tower_broadcast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uede3",
-}
-
-// Tractor () represents the "fa-tractor" glyph.
-var Tractor = &nf.Glyph{
-	ID:      "tractor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef12",
-}
-
-// TradeFederation () represents the "fa-trade_federation" glyph.
-var TradeFederation = &nf.Glyph{
-	ID:      "trade_federation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueddd",
-}
-
-// Trademark () represents the "fa-trademark" glyph.
-var Trademark = &nf.Glyph{
-	ID:      "trademark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf25c",
-}
-
-// TrafficLight () represents the "fa-traffic_light" glyph.
-var TrafficLight = &nf.Glyph{
-	ID:      "traffic_light",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb7",
-}
-
-// Train () represents the "fa-train" glyph.
-var Train = &nf.Glyph{
-	ID:      "train",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf238",
-}
-
-// TrainSubway () represents the "fa-train_subway" glyph.
-var TrainSubway = &nf.Glyph{
-	ID:      "train_subway",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf239",
-}
-
-// Transgender () represents the "fa-transgender" glyph.
-var Transgender = &nf.Glyph{
-	ID:      "transgender",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf224",
-}
-
-// TransgenderAlt () represents the "fa-transgender_alt" glyph.
-var TransgenderAlt = &nf.Glyph{
-	ID:      "transgender_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf225",
-}
-
-// Trash () represents the "fa-trash" glyph.
-var Trash = &nf.Glyph{
-	ID:      "trash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1f8",
-}
-
-// TrashArrowUp () represents the "fa-trash_arrow_up" glyph.
-var TrashArrowUp = &nf.Glyph{
-	ID:      "trash_arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef90",
-}
-
-// TrashCan () represents the "fa-trash_can" glyph.
-var TrashCan = &nf.Glyph{
-	ID:      "trash_can",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf014",
-}
-
-// TrashCanArrowUp () represents the "fa-trash_can_arrow_up" glyph.
-var TrashCanArrowUp = &nf.Glyph{
-	ID:      "trash_can_arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef91",
-}
-
-// TrashO () represents the "fa-trash_o" glyph.
-var TrashO = &nf.Glyph{
-	ID:      "trash_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf014",
-}
-
-// Tree () represents the "fa-tree" glyph.
-var Tree = &nf.Glyph{
-	ID:      "tree",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1bb",
-}
-
-// Trello () represents the "fa-trello" glyph.
-var Trello = &nf.Glyph{
-	ID:      "trello",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf181",
-}
-
-// TriangleExclamation () represents the "fa-triangle_exclamation" glyph.
-var TriangleExclamation = &nf.Glyph{
-	ID:      "triangle_exclamation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf071",
-}
-
-// Tripadvisor () represents the "fa-tripadvisor" glyph.
-var Tripadvisor = &nf.Glyph{
-	ID:      "tripadvisor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf262",
-}
-
-// Trophy () represents the "fa-trophy" glyph.
-var Trophy = &nf.Glyph{
-	ID:      "trophy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf091",
-}
-
-// Truck () represents the "fa-truck" glyph.
-var Truck = &nf.Glyph{
-	ID:      "truck",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d1",
-}
-
-// TruckFast () represents the "fa-truck_fast" glyph.
-var TruckFast = &nf.Glyph{
-	ID:      "truck_fast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued8b",
-}
-
-// TruckMedical () represents the "fa-truck_medical" glyph.
-var TruckMedical = &nf.Glyph{
-	ID:      "truck_medical",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f9",
-}
-
-// TruckMonster () represents the "fa-truck_monster" glyph.
-var TruckMonster = &nf.Glyph{
-	ID:      "truck_monster",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb8",
-}
-
-// TruckMoving () represents the "fa-truck_moving" glyph.
-var TruckMoving = &nf.Glyph{
-	ID:      "truck_moving",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedac",
-}
-
-// TruckPickup () represents the "fa-truck_pickup" glyph.
-var TruckPickup = &nf.Glyph{
-	ID:      "truck_pickup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeb9",
-}
-
-// TruckRampBox () represents the "fa-truck_ramp_box" glyph.
-var TruckRampBox = &nf.Glyph{
-	ID:      "truck_ramp_box",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedab",
-}
-
-// Try () represents the "fa-try" glyph.
-var Try = &nf.Glyph{
-	ID:      "try",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf195",
-}
-
-// Tty () represents the "fa-tty" glyph.
-var Tty = &nf.Glyph{
-	ID:      "tty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e4",
-}
-
-// Tumblr () represents the "fa-tumblr" glyph.
-var Tumblr = &nf.Glyph{
-	ID:      "tumblr",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf173",
-}
-
-// TumblrSquare () represents the "fa-tumblr_square" glyph.
-var TumblrSquare = &nf.Glyph{
-	ID:      "tumblr_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf174",
-}
-
-// TurkishLira () represents the "fa-turkish_lira" glyph.
-var TurkishLira = &nf.Glyph{
-	ID:      "turkish_lira",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf195",
-}
-
-// TurnDown () represents the "fa-turn_down" glyph.
-var TurnDown = &nf.Glyph{
-	ID:      "turn_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2f8",
-}
-
-// TurnUp () represents the "fa-turn_up" glyph.
-var TurnUp = &nf.Glyph{
-	ID:      "turn_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2fa",
-}
-
-// Tv () represents the "fa-tv" glyph.
-var Tv = &nf.Glyph{
-	ID:      "tv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf26c",
-}
-
-// Twitch () represents the "fa-twitch" glyph.
-var Twitch = &nf.Glyph{
-	ID:      "twitch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e8",
-}
-
-// Twitter () represents the "fa-twitter" glyph.
-var Twitter = &nf.Glyph{
-	ID:      "twitter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf099",
-}
-
-// TwitterSquare () represents the "fa-twitter_square" glyph.
-var TwitterSquare = &nf.Glyph{
-	ID:      "twitter_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf081",
-}
-
-// Typo3 () represents the "fa-typo3" glyph.
-var Typo3 = &nf.Glyph{
-	ID:      "typo3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued55",
-}
-
-// Uber () represents the "fa-uber" glyph.
-var Uber = &nf.Glyph{
-	ID:      "uber",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued31",
-}
-
-// Ubuntu () represents the "fa-ubuntu" glyph.
-var Ubuntu = &nf.Glyph{
-	ID:      "ubuntu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef72",
-}
-
-// Uikit () represents the "fa-uikit" glyph.
-var Uikit = &nf.Glyph{
-	ID:      "uikit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued32",
-}
-
-// Umbraco () represents the "fa-umbraco" glyph.
-var Umbraco = &nf.Glyph{
-	ID:      "umbraco",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefbf",
-}
-
-// Umbrella () represents the "fa-umbrella" glyph.
-var Umbrella = &nf.Glyph{
-	ID:      "umbrella",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e9",
-}
-
-// UmbrellaBeach () represents the "fa-umbrella_beach" glyph.
-var UmbrellaBeach = &nf.Glyph{
-	ID:      "umbrella_beach",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee91",
-}
-
-// Underline () represents the "fa-underline" glyph.
-var Underline = &nf.Glyph{
-	ID:      "underline",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0cd",
-}
-
-// Undo () represents the "fa-undo" glyph.
-var Undo = &nf.Glyph{
-	ID:      "undo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0e2",
-}
-
-// Uniregistry () represents the "fa-uniregistry" glyph.
-var Uniregistry = &nf.Glyph{
-	ID:      "uniregistry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued33",
-}
-
-// UniversalAccess () represents the "fa-universal_access" glyph.
-var UniversalAccess = &nf.Glyph{
-	ID:      "universal_access",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29a",
-}
-
-// University () represents the "fa-university" glyph.
-var University = &nf.Glyph{
-	ID:      "university",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19c",
-}
-
-// Unlink () represents the "fa-unlink" glyph.
-var Unlink = &nf.Glyph{
-	ID:      "unlink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf127",
-}
-
-// Unlock () represents the "fa-unlock" glyph.
-var Unlock = &nf.Glyph{
-	ID:      "unlock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09c",
-}
-
-// UnlockAlt () represents the "fa-unlock_alt" glyph.
-var UnlockAlt = &nf.Glyph{
-	ID:      "unlock_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13e",
-}
-
-// UnlockKeyhole () represents the "fa-unlock_keyhole" glyph.
-var UnlockKeyhole = &nf.Glyph{
-	ID:      "unlock_keyhole",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf13e",
-}
-
-// Unsorted () represents the "fa-unsorted" glyph.
-var Unsorted = &nf.Glyph{
-	ID:      "unsorted",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0dc",
-}
-
-// Untappd () represents the "fa-untappd" glyph.
-var Untappd = &nf.Glyph{
-	ID:      "untappd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued34",
-}
-
-// UpDown () represents the "fa-up_down" glyph.
-var UpDown = &nf.Glyph{
-	ID:      "up_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf09f",
-}
-
-// UpDownLeftRight () represents the "fa-up_down_left_right" glyph.
-var UpDownLeftRight = &nf.Glyph{
-	ID:      "up_down_left_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b2",
-}
-
-// UpRightAndDownLeftFromCenter () represents the "fa-up_right_and_down_left_from_center" glyph.
-var UpRightAndDownLeftFromCenter = &nf.Glyph{
-	ID:      "up_right_and_down_left_from_center",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued4f",
-}
-
-// UpRightFromSquare () represents the "fa-up_right_from_square" glyph.
-var UpRightFromSquare = &nf.Glyph{
-	ID:      "up_right_from_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0b3",
-}
-
-// Upload () represents the "fa-upload" glyph.
-var Upload = &nf.Glyph{
-	ID:      "upload",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf093",
-}
-
-// Ups () represents the "fa-ups" glyph.
-var Ups = &nf.Glyph{
-	ID:      "ups",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef73",
-}
-
-// Usb () represents the "fa-usb" glyph.
-var Usb = &nf.Glyph{
-	ID:      "usb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf287",
-}
-
-// Usd () represents the "fa-usd" glyph.
-var Usd = &nf.Glyph{
-	ID:      "usd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf155",
-}
-
-// User () represents the "fa-user" glyph.
-var User = &nf.Glyph{
-	ID:      "user",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf007",
-}
-
-// UserAstronaut () represents the "fa-user_astronaut" glyph.
-var UserAstronaut = &nf.Glyph{
-	ID:      "user_astronaut",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc5",
-}
-
-// UserCheck () represents the "fa-user_check" glyph.
-var UserCheck = &nf.Glyph{
-	ID:      "user_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc6",
-}
-
-// UserCircle () represents the "fa-user_circle" glyph.
-var UserCircle = &nf.Glyph{
-	ID:      "user_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bd",
-}
-
-// UserCircleO () represents the "fa-user_circle_o" glyph.
-var UserCircleO = &nf.Glyph{
-	ID:      "user_circle_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2be",
-}
-
-// UserClock () represents the "fa-user_clock" glyph.
-var UserClock = &nf.Glyph{
-	ID:      "user_clock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc7",
-}
-
-// UserDoctor () represents the "fa-user_doctor" glyph.
-var UserDoctor = &nf.Glyph{
-	ID:      "user_doctor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f0",
-}
-
-// UserGear () represents the "fa-user_gear" glyph.
-var UserGear = &nf.Glyph{
-	ID:      "user_gear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc8",
-}
-
-// UserGraduate () represents the "fa-user_graduate" glyph.
-var UserGraduate = &nf.Glyph{
-	ID:      "user_graduate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedcb",
-}
-
-// UserGroup () represents the "fa-user_group" glyph.
-var UserGroup = &nf.Glyph{
-	ID:      "user_group",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedca",
-}
-
-// UserInjured () represents the "fa-user_injured" glyph.
-var UserInjured = &nf.Glyph{
-	ID:      "user_injured",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef13",
-}
-
-// UserLarge () represents the "fa-user_large" glyph.
-var UserLarge = &nf.Glyph{
-	ID:      "user_large",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued35",
-}
-
-// UserLargeSlash () represents the "fa-user_large_slash" glyph.
-var UserLargeSlash = &nf.Glyph{
-	ID:      "user_large_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc4",
-}
-
-// UserLock () represents the "fa-user_lock" glyph.
-var UserLock = &nf.Glyph{
-	ID:      "user_lock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedcc",
-}
-
-// UserMd () represents the "fa-user_md" glyph.
-var UserMd = &nf.Glyph{
-	ID:      "user_md",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f0",
-}
-
-// UserMinus () represents the "fa-user_minus" glyph.
-var UserMinus = &nf.Glyph{
-	ID:      "user_minus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedcd",
-}
-
-// UserNinja () represents the "fa-user_ninja" glyph.
-var UserNinja = &nf.Glyph{
-	ID:      "user_ninja",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedce",
-}
-
-// UserNurse () represents the "fa-user_nurse" glyph.
-var UserNurse = &nf.Glyph{
-	ID:      "user_nurse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef92",
-}
-
-// UserO () represents the "fa-user_o" glyph.
-var UserO = &nf.Glyph{
-	ID:      "user_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2c0",
-}
-
-// UserPen () represents the "fa-user_pen" glyph.
-var UserPen = &nf.Glyph{
-	ID:      "user_pen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedc9",
-}
-
-// UserPlus () represents the "fa-user_plus" glyph.
-var UserPlus = &nf.Glyph{
-	ID:      "user_plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf234",
-}
-
-// UserSecret () represents the "fa-user_secret" glyph.
-var UserSecret = &nf.Glyph{
-	ID:      "user_secret",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf21b",
-}
-
-// UserShield () represents the "fa-user_shield" glyph.
-var UserShield = &nf.Glyph{
-	ID:      "user_shield",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedcf",
-}
-
-// UserSlash () represents the "fa-user_slash" glyph.
-var UserSlash = &nf.Glyph{
-	ID:      "user_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd0",
-}
-
-// UserTag () represents the "fa-user_tag" glyph.
-var UserTag = &nf.Glyph{
-	ID:      "user_tag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd1",
-}
-
-// UserTie () represents the "fa-user_tie" glyph.
-var UserTie = &nf.Glyph{
-	ID:      "user_tie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd2",
-}
-
-// UserTimes () represents the "fa-user_times" glyph.
-var UserTimes = &nf.Glyph{
-	ID:      "user_times",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf235",
-}
-
-// UserXmark () represents the "fa-user_xmark" glyph.
-var UserXmark = &nf.Glyph{
-	ID:      "user_xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf235",
-}
-
-// Users () represents the "fa-users" glyph.
-var Users = &nf.Glyph{
-	ID:      "users",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0c0",
-}
-
-// UsersGear () represents the "fa-users_gear" glyph.
-var UsersGear = &nf.Glyph{
-	ID:      "users_gear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedd3",
-}
-
-// Usps () represents the "fa-usps" glyph.
-var Usps = &nf.Glyph{
-	ID:      "usps",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef74",
-}
-
-// Ussunnah () represents the "fa-ussunnah" glyph.
-var Ussunnah = &nf.Glyph{
-	ID:      "ussunnah",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued36",
-}
-
-// Utensils () represents the "fa-utensils" glyph.
-var Utensils = &nf.Glyph{
-	ID:      "utensils",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0f5",
-}
-
-// Vaadin () represents the "fa-vaadin" glyph.
-var Vaadin = &nf.Glyph{
-	ID:      "vaadin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued37",
-}
-
-// VanShuttle () represents the "fa-van_shuttle" glyph.
-var VanShuttle = &nf.Glyph{
-	ID:      "van_shuttle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee7e",
-}
-
-// Vcard () represents the "fa-vcard" glyph.
-var Vcard = &nf.Glyph{
-	ID:      "vcard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bb",
-}
-
-// VcardO () represents the "fa-vcard_o" glyph.
-var VcardO = &nf.Glyph{
-	ID:      "vcard_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2bc",
-}
-
-// VectorSquare () represents the "fa-vector_square" glyph.
-var VectorSquare = &nf.Glyph{
-	ID:      "vector_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee92",
-}
-
-// Venus () represents the "fa-venus" glyph.
-var Venus = &nf.Glyph{
-	ID:      "venus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf221",
-}
-
-// VenusDouble () represents the "fa-venus_double" glyph.
-var VenusDouble = &nf.Glyph{
-	ID:      "venus_double",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf226",
-}
-
-// VenusMars () represents the "fa-venus_mars" glyph.
-var VenusMars = &nf.Glyph{
-	ID:      "venus_mars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf228",
-}
-
-// Viacoin () represents the "fa-viacoin" glyph.
-var Viacoin = &nf.Glyph{
-	ID:      "viacoin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf237",
-}
-
-// Viadeo () represents the "fa-viadeo" glyph.
-var Viadeo = &nf.Glyph{
-	ID:      "viadeo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a9",
-}
-
-// ViadeoSquare () represents the "fa-viadeo_square" glyph.
-var ViadeoSquare = &nf.Glyph{
-	ID:      "viadeo_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2aa",
-}
-
-// Vial () represents the "fa-vial" glyph.
-var Vial = &nf.Glyph{
-	ID:      "vial",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued90",
-}
-
-// Vials () represents the "fa-vials" glyph.
-var Vials = &nf.Glyph{
-	ID:      "vials",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued91",
-}
-
-// Viber () represents the "fa-viber" glyph.
-var Viber = &nf.Glyph{
-	ID:      "viber",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued38",
-}
-
-// Video () represents the "fa-video" glyph.
-var Video = &nf.Glyph{
-	ID:      "video",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03d",
-}
-
-// VideoCamera () represents the "fa-video_camera" glyph.
-var VideoCamera = &nf.Glyph{
-	ID:      "video_camera",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf03d",
-}
-
-// VideoSlash () represents the "fa-video_slash" glyph.
-var VideoSlash = &nf.Glyph{
-	ID:      "video_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedad",
-}
-
-// Vihara () represents the "fa-vihara" glyph.
-var Vihara = &nf.Glyph{
-	ID:      "vihara",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee7",
-}
-
-// Vimeo () represents the "fa-vimeo" glyph.
-var Vimeo = &nf.Glyph{
-	ID:      "vimeo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued39",
-}
-
-// VimeoSquare () represents the "fa-vimeo_square" glyph.
-var VimeoSquare = &nf.Glyph{
-	ID:      "vimeo_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf194",
-}
-
-// VimeoV () represents the "fa-vimeo_v" glyph.
-var VimeoV = &nf.Glyph{
-	ID:      "vimeo_v",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf27d",
-}
-
-// Vine () represents the "fa-vine" glyph.
-var Vine = &nf.Glyph{
-	ID:      "vine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1ca",
-}
-
-// Vk () represents the "fa-vk" glyph.
-var Vk = &nf.Glyph{
-	ID:      "vk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf189",
-}
-
-// Vnv () represents the "fa-vnv" glyph.
-var Vnv = &nf.Glyph{
-	ID:      "vnv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued3a",
-}
-
-// Voicemail () represents the "fa-voicemail" glyph.
-var Voicemail = &nf.Glyph{
-	ID:      "voicemail",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefb4",
-}
-
-// Volcano () represents the "fa-volcano" glyph.
-var Volcano = &nf.Glyph{
-	ID:      "volcano",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef2e",
-}
-
-// Volleyball () represents the "fa-volleyball" glyph.
-var Volleyball = &nf.Glyph{
-	ID:      "volleyball",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued72",
-}
-
-// VolumeControlPhone () represents the "fa-volume_control_phone" glyph.
-var VolumeControlPhone = &nf.Glyph{
-	ID:      "volume_control_phone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2a0",
-}
-
-// VolumeDown () represents the "fa-volume_down" glyph.
-var VolumeDown = &nf.Glyph{
-	ID:      "volume_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf027",
-}
-
-// VolumeHigh () represents the "fa-volume_high" glyph.
-var VolumeHigh = &nf.Glyph{
-	ID:      "volume_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf028",
-}
-
-// VolumeLow () represents the "fa-volume_low" glyph.
-var VolumeLow = &nf.Glyph{
-	ID:      "volume_low",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf027",
-}
-
-// VolumeOff () represents the "fa-volume_off" glyph.
-var VolumeOff = &nf.Glyph{
-	ID:      "volume_off",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf026",
-}
-
-// VolumeUp () represents the "fa-volume_up" glyph.
-var VolumeUp = &nf.Glyph{
-	ID:      "volume_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf028",
-}
-
-// VolumeXmark () represents the "fa-volume_xmark" glyph.
-var VolumeXmark = &nf.Glyph{
-	ID:      "volume_xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee8",
-}
-
-// VrCardboard () represents the "fa-vr_cardboard" glyph.
-var VrCardboard = &nf.Glyph{
-	ID:      "vr_cardboard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef14",
-}
-
-// Vuejs () represents the "fa-vuejs" glyph.
-var Vuejs = &nf.Glyph{
-	ID:      "vuejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued4a",
-}
-
-// WalkieTalkie () represents the "fa-walkie_talkie" glyph.
-var WalkieTalkie = &nf.Glyph{
-	ID:      "walkie_talkie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uefc0",
-}
-
-// Wallet () represents the "fa-wallet" glyph.
-var Wallet = &nf.Glyph{
-	ID:      "wallet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee1e",
-}
-
-// WandMagic () represents the "fa-wand_magic" glyph.
-var WandMagic = &nf.Glyph{
-	ID:      "wand_magic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0d0",
-}
-
-// WandSparkles () represents the "fa-wand_sparkles" glyph.
-var WandSparkles = &nf.Glyph{
-	ID:      "wand_sparkles",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef15",
-}
-
-// Warehouse () represents the "fa-warehouse" glyph.
-var Warehouse = &nf.Glyph{
-	ID:      "warehouse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued92",
-}
-
-// Warning () represents the "fa-warning" glyph.
-var Warning = &nf.Glyph{
-	ID:      "warning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf071",
-}
-
-// Water () represents the "fa-water" glyph.
-var Water = &nf.Glyph{
-	ID:      "water",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef30",
-}
-
-// WaterLadder () represents the "fa-water_ladder" glyph.
-var WaterLadder = &nf.Glyph{
-	ID:      "water_ladder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee8c",
-}
-
-// WaveSquare () represents the "fa-wave_square" glyph.
-var WaveSquare = &nf.Glyph{
-	ID:      "wave_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef9d",
-}
-
-// Waze () represents the "fa-waze" glyph.
-var Waze = &nf.Glyph{
-	ID:      "waze",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef9e",
-}
-
-// Wechat () represents the "fa-wechat" glyph.
-var Wechat = &nf.Glyph{
-	ID:      "wechat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d7",
-}
-
-// Weebly () represents the "fa-weebly" glyph.
-var Weebly = &nf.Glyph{
-	ID:      "weebly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee93",
-}
-
-// Weibo () represents the "fa-weibo" glyph.
-var Weibo = &nf.Glyph{
-	ID:      "weibo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf18a",
-}
-
-// WeightHanging () represents the "fa-weight_hanging" glyph.
-var WeightHanging = &nf.Glyph{
-	ID:      "weight_hanging",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee94",
-}
-
-// WeightScale () represents the "fa-weight_scale" glyph.
-var WeightScale = &nf.Glyph{
-	ID:      "weight_scale",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued93",
-}
-
-// Weixin () represents the "fa-weixin" glyph.
-var Weixin = &nf.Glyph{
-	ID:      "weixin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d7",
-}
-
-// Whatsapp () represents the "fa-whatsapp" glyph.
-var Whatsapp = &nf.Glyph{
-	ID:      "whatsapp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf232",
-}
-
-// Wheelchair () represents the "fa-wheelchair" glyph.
-var Wheelchair = &nf.Glyph{
-	ID:      "wheelchair",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf193",
-}
-
-// WheelchairAlt () represents the "fa-wheelchair_alt" glyph.
-var WheelchairAlt = &nf.Glyph{
-	ID:      "wheelchair_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf29b",
-}
-
-// WhiskeyGlass () represents the "fa-whiskey_glass" glyph.
-var WhiskeyGlass = &nf.Glyph{
-	ID:      "whiskey_glass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef4a",
-}
-
-// Whmcs () represents the "fa-whmcs" glyph.
-var Whmcs = &nf.Glyph{
-	ID:      "whmcs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued3c",
-}
-
-// Wifi () represents the "fa-wifi" glyph.
-var Wifi = &nf.Glyph{
-	ID:      "wifi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1eb",
-}
-
-// WikipediaW () represents the "fa-wikipedia_w" glyph.
-var WikipediaW = &nf.Glyph{
-	ID:      "wikipedia_w",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf266",
-}
-
-// Wind () represents the "fa-wind" glyph.
-var Wind = &nf.Glyph{
-	ID:      "wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef16",
-}
-
-// WindowClose () represents the "fa-window_close" glyph.
-var WindowClose = &nf.Glyph{
-	ID:      "window_close",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d3",
-}
-
-// WindowCloseO () represents the "fa-window_close_o" glyph.
-var WindowCloseO = &nf.Glyph{
-	ID:      "window_close_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d4",
-}
-
-// WindowMaximize () represents the "fa-window_maximize" glyph.
-var WindowMaximize = &nf.Glyph{
-	ID:      "window_maximize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d0",
-}
-
-// WindowMinimize () represents the "fa-window_minimize" glyph.
-var WindowMinimize = &nf.Glyph{
-	ID:      "window_minimize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d1",
-}
-
-// WindowRestore () represents the "fa-window_restore" glyph.
-var WindowRestore = &nf.Glyph{
-	ID:      "window_restore",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2d2",
-}
-
-// Windows () represents the "fa-windows" glyph.
-var Windows = &nf.Glyph{
-	ID:      "windows",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf17a",
-}
-
-// WineBottle () represents the "fa-wine_bottle" glyph.
-var WineBottle = &nf.Glyph{
-	ID:      "wine_bottle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef17",
-}
-
-// WineGlass () represents the "fa-wine_glass" glyph.
-var WineGlass = &nf.Glyph{
-	ID:      "wine_glass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedae",
-}
-
-// WineGlassEmpty () represents the "fa-wine_glass_empty" glyph.
-var WineGlassEmpty = &nf.Glyph{
-	ID:      "wine_glass_empty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee95",
-}
-
-// Wix () represents the "fa-wix" glyph.
-var Wix = &nf.Glyph{
-	ID:      "wix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee96",
-}
-
-// WizardsOfTheCoast () represents the "fa-wizards_of_the_coast" glyph.
-var WizardsOfTheCoast = &nf.Glyph{
-	ID:      "wizards_of_the_coast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef18",
-}
-
-// WolfPackBattalion () represents the "fa-wolf_pack_battalion" glyph.
-var WolfPackBattalion = &nf.Glyph{
-	ID:      "wolf_pack_battalion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uedde",
-}
-
-// Won () represents the "fa-won" glyph.
-var Won = &nf.Glyph{
-	ID:      "won",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf159",
-}
-
-// WonSign () represents the "fa-won_sign" glyph.
-var WonSign = &nf.Glyph{
-	ID:      "won_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf159",
-}
-
-// Wordpress () represents the "fa-wordpress" glyph.
-var Wordpress = &nf.Glyph{
-	ID:      "wordpress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19a",
-}
-
-// WordpressSimple () represents the "fa-wordpress_simple" glyph.
-var WordpressSimple = &nf.Glyph{
-	ID:      "wordpress_simple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued3d",
-}
-
-// Wpbeginner () represents the "fa-wpbeginner" glyph.
-var Wpbeginner = &nf.Glyph{
-	ID:      "wpbeginner",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf297",
-}
-
-// Wpexplorer () represents the "fa-wpexplorer" glyph.
-var Wpexplorer = &nf.Glyph{
-	ID:      "wpexplorer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2de",
-}
-
-// Wpforms () represents the "fa-wpforms" glyph.
-var Wpforms = &nf.Glyph{
-	ID:      "wpforms",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf298",
-}
-
-// Wpressr () represents the "fa-wpressr" glyph.
-var Wpressr = &nf.Glyph{
-	ID:      "wpressr",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued1d",
-}
-
-// Wrench () represents the "fa-wrench" glyph.
-var Wrench = &nf.Glyph{
-	ID:      "wrench",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf0ad",
-}
-
-// XRay () represents the "fa-x_ray" glyph.
-var XRay = &nf.Glyph{
-	ID:      "x_ray",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued94",
-}
-
-// Xbox () represents the "fa-xbox" glyph.
-var Xbox = &nf.Glyph{
-	ID:      "xbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued3e",
-}
-
-// Xing () represents the "fa-xing" glyph.
-var Xing = &nf.Glyph{
-	ID:      "xing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf168",
-}
-
-// XingSquare () represents the "fa-xing_square" glyph.
-var XingSquare = &nf.Glyph{
-	ID:      "xing_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf169",
-}
-
-// Xmark () represents the "fa-xmark" glyph.
-var Xmark = &nf.Glyph{
-	ID:      "xmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf00d",
-}
-
-// YCombinator () represents the "fa-y_combinator" glyph.
-var YCombinator = &nf.Glyph{
-	ID:      "y_combinator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23b",
-}
-
-// YCombinatorSquare () represents the "fa-y_combinator_square" glyph.
-var YCombinatorSquare = &nf.Glyph{
-	ID:      "y_combinator_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d4",
-}
-
-// Yahoo () represents the "fa-yahoo" glyph.
-var Yahoo = &nf.Glyph{
-	ID:      "yahoo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf19e",
-}
-
-// Yammer () represents the "fa-yammer" glyph.
-var Yammer = &nf.Glyph{
-	ID:      "yammer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef9f",
-}
-
-// Yandex () represents the "fa-yandex" glyph.
-var Yandex = &nf.Glyph{
-	ID:      "yandex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued3f",
-}
-
-// YandexInternational () represents the "fa-yandex_international" glyph.
-var YandexInternational = &nf.Glyph{
-	ID:      "yandex_international",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ued40",
-}
-
-// Yarn () represents the "fa-yarn" glyph.
-var Yarn = &nf.Glyph{
-	ID:      "yarn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uef75",
-}
-
-// Yc () represents the "fa-yc" glyph.
-var Yc = &nf.Glyph{
-	ID:      "yc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf23b",
-}
-
-// YcSquare () represents the "fa-yc_square" glyph.
-var YcSquare = &nf.Glyph{
-	ID:      "yc_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1d4",
-}
-
-// Yelp () represents the "fa-yelp" glyph.
-var Yelp = &nf.Glyph{
-	ID:      "yelp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf1e9",
-}
-
-// Yen () represents the "fa-yen" glyph.
-var Yen = &nf.Glyph{
-	ID:      "yen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf157",
-}
-
-// YenSign () represents the "fa-yen_sign" glyph.
-var YenSign = &nf.Glyph{
-	ID:      "yen_sign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf157",
-}
-
-// YinYang () represents the "fa-yin_yang" glyph.
-var YinYang = &nf.Glyph{
-	ID:      "yin_yang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueee9",
-}
-
-// Yoast () represents the "fa-yoast" glyph.
-var Yoast = &nf.Glyph{
-	ID:      "yoast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf2b1",
-}
-
-// Youtube () represents the "fa-youtube" glyph.
-var Youtube = &nf.Glyph{
-	ID:      "youtube",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16a",
-}
-
-// YoutubePlay () represents the "fa-youtube_play" glyph.
-var YoutubePlay = &nf.Glyph{
-	ID:      "youtube_play",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf16a",
-}
-
-// YoutubeSquare () represents the "fa-youtube_square" glyph.
-var YoutubeSquare = &nf.Glyph{
-	ID:      "youtube_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf166",
-}
-
-// Zhihu () represents the "fa-zhihu" glyph.
-var Zhihu = &nf.Glyph{
-	ID:      "zhihu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ueeba",
-}
+const (
+	Glyph500Px                       nf.Glyph = "" //  ("\uf26e") represents the "fa-500px" glyph.
+	AccessibleIcon                   nf.Glyph = "" //  ("\uf29b") represents the "fa-accessible_icon" glyph.
+	Accusoft                         nf.Glyph = "" //  ("\uf0b7") represents the "fa-accusoft" glyph.
+	AddressBook                      nf.Glyph = "" //  ("\uf2b9") represents the "fa-address_book" glyph.
+	AddressBookO                     nf.Glyph = "" //  ("\uf2ba") represents the "fa-address_book_o" glyph.
+	AddressCard                      nf.Glyph = "" //  ("\uf2bb") represents the "fa-address_card" glyph.
+	AddressCardO                     nf.Glyph = "" //  ("\uf2bc") represents the "fa-address_card_o" glyph.
+	Adjust                           nf.Glyph = "" //  ("\uf042") represents the "fa-adjust" glyph.
+	Adn                              nf.Glyph = "" //  ("\uf170") represents the "fa-adn" glyph.
+	Adversal                         nf.Glyph = "" //  ("\uf0b8") represents the "fa-adversal" glyph.
+	Affiliatetheme                   nf.Glyph = "" //  ("\uf0b9") represents the "fa-affiliatetheme" glyph.
+	Airbnb                           nf.Glyph = "" //  ("\uef93") represents the "fa-airbnb" glyph.
+	Algolia                          nf.Glyph = "" //  ("\uf0ba") represents the "fa-algolia" glyph.
+	AlignCenter                      nf.Glyph = "" //  ("\uf037") represents the "fa-align_center" glyph.
+	AlignJustify                     nf.Glyph = "" //  ("\uf039") represents the "fa-align_justify" glyph.
+	AlignLeft                        nf.Glyph = "" //  ("\uf036") represents the "fa-align_left" glyph.
+	AlignRight                       nf.Glyph = "" //  ("\uf038") represents the "fa-align_right" glyph.
+	Alipay                           nf.Glyph = "" //  ("\ueebc") represents the "fa-alipay" glyph.
+	Amazon                           nf.Glyph = "" //  ("\uf270") represents the "fa-amazon" glyph.
+	AmazonPay                        nf.Glyph = "" //  ("\ued56") represents the "fa-amazon_pay" glyph.
+	Ambulance                        nf.Glyph = "" //  ("\uf0f9") represents the "fa-ambulance" glyph.
+	AmericanSignLanguageInterpreting nf.Glyph = "" //  ("\uf2a3") represents the "fa-american_sign_language_interpreting" glyph.
+	Amilia                           nf.Glyph = "" //  ("\uf0bb") represents the "fa-amilia" glyph.
+	Anchor                           nf.Glyph = "" //  ("\uf13d") represents the "fa-anchor" glyph.
+	Android                          nf.Glyph = "" //  ("\uf17b") represents the "fa-android" glyph.
+	Angellist                        nf.Glyph = "" //  ("\uf209") represents the "fa-angellist" glyph.
+	AngleDoubleDown                  nf.Glyph = "" //  ("\uf103") represents the "fa-angle_double_down" glyph.
+	AngleDoubleLeft                  nf.Glyph = "" //  ("\uf100") represents the "fa-angle_double_left" glyph.
+	AngleDoubleRight                 nf.Glyph = "" //  ("\uf101") represents the "fa-angle_double_right" glyph.
+	AngleDoubleUp                    nf.Glyph = "" //  ("\uf102") represents the "fa-angle_double_up" glyph.
+	AngleDown                        nf.Glyph = "" //  ("\uf107") represents the "fa-angle_down" glyph.
+	AngleLeft                        nf.Glyph = "" //  ("\uf104") represents the "fa-angle_left" glyph.
+	AngleRight                       nf.Glyph = "" //  ("\uf105") represents the "fa-angle_right" glyph.
+	AngleUp                          nf.Glyph = "" //  ("\uf106") represents the "fa-angle_up" glyph.
+	AnglesDown                       nf.Glyph = "" //  ("\uf103") represents the "fa-angles_down" glyph.
+	AnglesLeft                       nf.Glyph = "" //  ("\uf100") represents the "fa-angles_left" glyph.
+	AnglesRight                      nf.Glyph = "" //  ("\uf101") represents the "fa-angles_right" glyph.
+	AnglesUp                         nf.Glyph = "" //  ("\uf102") represents the "fa-angles_up" glyph.
+	Angrycreative                    nf.Glyph = "" //  ("\uf0bc") represents the "fa-angrycreative" glyph.
+	Angular                          nf.Glyph = "" //  ("\ued4b") represents the "fa-angular" glyph.
+	Ankh                             nf.Glyph = "" //  ("\ueebd") represents the "fa-ankh" glyph.
+	AppStore                         nf.Glyph = "" //  ("\uf0bd") represents the "fa-app_store" glyph.
+	AppStoreIos                      nf.Glyph = "" //  ("\uf0be") represents the "fa-app_store_ios" glyph.
+	Apper                            nf.Glyph = "" //  ("\uf0bf") represents the "fa-apper" glyph.
+	Apple                            nf.Glyph = "" //  ("\uf179") represents the "fa-apple" glyph.
+	ApplePay                         nf.Glyph = "" //  ("\ued41") represents the "fa-apple_pay" glyph.
+	AppleWhole                       nf.Glyph = "" //  ("\uee98") represents the "fa-apple_whole" glyph.
+	Archive                          nf.Glyph = "" //  ("\uf187") represents the "fa-archive" glyph.
+	Archway                          nf.Glyph = "" //  ("\uee20") represents the "fa-archway" glyph.
+	AreaChart                        nf.Glyph = "" //  ("\uf1fe") represents the "fa-area_chart" glyph.
+	ArrowCircleDown                  nf.Glyph = "" //  ("\uf0ab") represents the "fa-arrow_circle_down" glyph.
+	ArrowCircleLeft                  nf.Glyph = "" //  ("\uf0a8") represents the "fa-arrow_circle_left" glyph.
+	ArrowCircleODown                 nf.Glyph = "" //  ("\uf01a") represents the "fa-arrow_circle_o_down" glyph.
+	ArrowCircleOLeft                 nf.Glyph = "" //  ("\uf190") represents the "fa-arrow_circle_o_left" glyph.
+	ArrowCircleORight                nf.Glyph = "" //  ("\uf18e") represents the "fa-arrow_circle_o_right" glyph.
+	ArrowCircleOUp                   nf.Glyph = "" //  ("\uf01b") represents the "fa-arrow_circle_o_up" glyph.
+	ArrowCircleRight                 nf.Glyph = "" //  ("\uf0a9") represents the "fa-arrow_circle_right" glyph.
+	ArrowCircleUp                    nf.Glyph = "" //  ("\uf0aa") represents the "fa-arrow_circle_up" glyph.
+	ArrowDown                        nf.Glyph = "" //  ("\uf063") represents the "fa-arrow_down" glyph.
+	ArrowDown19                      nf.Glyph = "" //  ("\uf162") represents the "fa-arrow_down_1_9" glyph.
+	ArrowDown91                      nf.Glyph = "" //  ("\uefb1") represents the "fa-arrow_down_9_1" glyph.
+	ArrowDownAZ                      nf.Glyph = "" //  ("\uf15d") represents the "fa-arrow_down_a_z" glyph.
+	ArrowDownLong                    nf.Glyph = "" //  ("\uf175") represents the "fa-arrow_down_long" glyph.
+	ArrowDownShortWide               nf.Glyph = "" //  ("\uefaf") represents the "fa-arrow_down_short_wide" glyph.
+	ArrowDownWideShort               nf.Glyph = "" //  ("\uf160") represents the "fa-arrow_down_wide_short" glyph.
+	ArrowDownZA                      nf.Glyph = "" //  ("\uefad") represents the "fa-arrow_down_z_a" glyph.
+	ArrowLeft                        nf.Glyph = "" //  ("\uf060") represents the "fa-arrow_left" glyph.
+	ArrowLeftLong                    nf.Glyph = "" //  ("\uf177") represents the "fa-arrow_left_long" glyph.
+	ArrowPointer                     nf.Glyph = "" //  ("\uf245") represents the "fa-arrow_pointer" glyph.
+	ArrowRight                       nf.Glyph = "" //  ("\uf061") represents the "fa-arrow_right" glyph.
+	ArrowRightArrowLeft              nf.Glyph = "" //  ("\uf0ec") represents the "fa-arrow_right_arrow_left" glyph.
+	ArrowRightFromBracket            nf.Glyph = "" //  ("\uf08b") represents the "fa-arrow_right_from_bracket" glyph.
+	ArrowRightLong                   nf.Glyph = "" //  ("\uf178") represents the "fa-arrow_right_long" glyph.
+	ArrowRightToBracket              nf.Glyph = "" //  ("\uf090") represents the "fa-arrow_right_to_bracket" glyph.
+	ArrowRotateLeft                  nf.Glyph = "" //  ("\uf0e2") represents the "fa-arrow_rotate_left" glyph.
+	ArrowRotateRight                 nf.Glyph = "" //  ("\uf01e") represents the "fa-arrow_rotate_right" glyph.
+	ArrowTurnDown                    nf.Glyph = "" //  ("\uf149") represents the "fa-arrow_turn_down" glyph.
+	ArrowTurnUp                      nf.Glyph = "" //  ("\uf148") represents the "fa-arrow_turn_up" glyph.
+	ArrowUp                          nf.Glyph = "" //  ("\uf062") represents the "fa-arrow_up" glyph.
+	ArrowUp19                        nf.Glyph = "" //  ("\uf163") represents the "fa-arrow_up_1_9" glyph.
+	ArrowUp91                        nf.Glyph = "" //  ("\uefb2") represents the "fa-arrow_up_9_1" glyph.
+	ArrowUpAZ                        nf.Glyph = "" //  ("\uf15e") represents the "fa-arrow_up_a_z" glyph.
+	ArrowUpLong                      nf.Glyph = "" //  ("\uf176") represents the "fa-arrow_up_long" glyph.
+	ArrowUpRightFromSquare           nf.Glyph = "" //  ("\uf08e") represents the "fa-arrow_up_right_from_square" glyph.
+	ArrowUpShortWide                 nf.Glyph = "" //  ("\uefb0") represents the "fa-arrow_up_short_wide" glyph.
+	ArrowUpWideShort                 nf.Glyph = "" //  ("\uf161") represents the "fa-arrow_up_wide_short" glyph.
+	ArrowUpZA                        nf.Glyph = "" //  ("\uefae") represents the "fa-arrow_up_z_a" glyph.
+	Arrows                           nf.Glyph = "" //  ("\uf047") represents the "fa-arrows" glyph.
+	ArrowsAlt                        nf.Glyph = "" //  ("\uf0b2") represents the "fa-arrows_alt" glyph.
+	ArrowsH                          nf.Glyph = "" //  ("\uf07e") represents the "fa-arrows_h" glyph.
+	ArrowsLeftRight                  nf.Glyph = "" //  ("\uf07e") represents the "fa-arrows_left_right" glyph.
+	ArrowsRotate                     nf.Glyph = "" //  ("\uf021") represents the "fa-arrows_rotate" glyph.
+	ArrowsUpDown                     nf.Glyph = "" //  ("\uf07d") represents the "fa-arrows_up_down" glyph.
+	ArrowsUpDownLeftRight            nf.Glyph = "" //  ("\uf047") represents the "fa-arrows_up_down_left_right" glyph.
+	ArrowsV                          nf.Glyph = "" //  ("\uf07d") represents the "fa-arrows_v" glyph.
+	Artstation                       nf.Glyph = "" //  ("\uef31") represents the "fa-artstation" glyph.
+	AslInterpreting                  nf.Glyph = "" //  ("\uf2a3") represents the "fa-asl_interpreting" glyph.
+	AssistiveListeningSystems        nf.Glyph = "" //  ("\uf2a2") represents the "fa-assistive_listening_systems" glyph.
+	Asterisk                         nf.Glyph = "" //  ("\uf069") represents the "fa-asterisk" glyph.
+	Asymmetrik                       nf.Glyph = "" //  ("\uf0cf") represents the "fa-asymmetrik" glyph.
+	At                               nf.Glyph = "" //  ("\uf1fa") represents the "fa-at" glyph.
+	Atlassian                        nf.Glyph = "" //  ("\uef32") represents the "fa-atlassian" glyph.
+	Atom                             nf.Glyph = "" //  ("\uee99") represents the "fa-atom" glyph.
+	Audible                          nf.Glyph = "" //  ("\uf0df") represents the "fa-audible" glyph.
+	AudioDescription                 nf.Glyph = "" //  ("\uf29e") represents the "fa-audio_description" glyph.
+	Automobile                       nf.Glyph = "" //  ("\uf1b9") represents the "fa-automobile" glyph.
+	Autoprefixer                     nf.Glyph = "" //  ("\ued47") represents the "fa-autoprefixer" glyph.
+	Avianex                          nf.Glyph = "" //  ("\uefc2") represents the "fa-avianex" glyph.
+	Aviato                           nf.Glyph = "" //  ("\ued4c") represents the "fa-aviato" glyph.
+	Award                            nf.Glyph = "" //  ("\uee22") represents the "fa-award" glyph.
+	Aws                              nf.Glyph = "" //  ("\uf0ef") represents the "fa-aws" glyph.
+	Baby                             nf.Glyph = "" //  ("\uef33") represents the "fa-baby" glyph.
+	BabyCarriage                     nf.Glyph = "" //  ("\uef34") represents the "fa-baby_carriage" glyph.
+	Backward                         nf.Glyph = "" //  ("\uf04a") represents the "fa-backward" glyph.
+	BackwardFast                     nf.Glyph = "" //  ("\uf049") represents the "fa-backward_fast" glyph.
+	BackwardStep                     nf.Glyph = "" //  ("\uf048") represents the "fa-backward_step" glyph.
+	Bacon                            nf.Glyph = "" //  ("\uef77") represents the "fa-bacon" glyph.
+	BagShopping                      nf.Glyph = "" //  ("\uf290") represents the "fa-bag_shopping" glyph.
+	Bahai                            nf.Glyph = "" //  ("\ueecb") represents the "fa-bahai" glyph.
+	BalanceScale                     nf.Glyph = "" //  ("\uf24e") represents the "fa-balance_scale" glyph.
+	Ban                              nf.Glyph = "" //  ("\uf05e") represents the "fa-ban" glyph.
+	BanSmoking                       nf.Glyph = "" //  ("\uee16") represents the "fa-ban_smoking" glyph.
+	Bandage                          nf.Glyph = "" //  ("\ued74") represents the "fa-bandage" glyph.
+	Bandcamp                         nf.Glyph = "" //  ("\uf2d5") represents the "fa-bandcamp" glyph.
+	Bank                             nf.Glyph = "" //  ("\uf19c") represents the "fa-bank" glyph.
+	BarChart                         nf.Glyph = "" //  ("\uf080") represents the "fa-bar_chart" glyph.
+	BarChartO                        nf.Glyph = "" //  ("\uf080") represents the "fa-bar_chart_o" glyph.
+	Barcode                          nf.Glyph = "" //  ("\uf02a") represents the "fa-barcode" glyph.
+	Bars                             nf.Glyph = "" //  ("\uf0c9") represents the "fa-bars" glyph.
+	BarsProgress                     nf.Glyph = "" //  ("\uef8f") represents the "fa-bars_progress" glyph.
+	BarsStaggered                    nf.Glyph = "" //  ("\uee19") represents the "fa-bars_staggered" glyph.
+	Baseball                         nf.Glyph = "" //  ("\ued5c") represents the "fa-baseball" glyph.
+	BaseballBatBall                  nf.Glyph = "" //  ("\ued5b") represents the "fa-baseball_bat_ball" glyph.
+	BasketShopping                   nf.Glyph = "" //  ("\uf291") represents the "fa-basket_shopping" glyph.
+	Basketball                       nf.Glyph = "" //  ("\ued5d") represents the "fa-basketball" glyph.
+	Bath                             nf.Glyph = "" //  ("\uf2cd") represents the "fa-bath" glyph.
+	Bathtub                          nf.Glyph = "" //  ("\uf2cd") represents the "fa-bathtub" glyph.
+	Battery                          nf.Glyph = "" //  ("\uf240") represents the "fa-battery" glyph.
+	Battery0                         nf.Glyph = "" //  ("\uf244") represents the "fa-battery_0" glyph.
+	Battery1                         nf.Glyph = "" //  ("\uf243") represents the "fa-battery_1" glyph.
+	Battery2                         nf.Glyph = "" //  ("\uf242") represents the "fa-battery_2" glyph.
+	Battery3                         nf.Glyph = "" //  ("\uf241") represents the "fa-battery_3" glyph.
+	Battery4                         nf.Glyph = "" //  ("\uf240") represents the "fa-battery_4" glyph.
+	BatteryEmpty                     nf.Glyph = "" //  ("\uf244") represents the "fa-battery_empty" glyph.
+	BatteryFull                      nf.Glyph = "" //  ("\uf240") represents the "fa-battery_full" glyph.
+	BatteryHalf                      nf.Glyph = "" //  ("\uf242") represents the "fa-battery_half" glyph.
+	BatteryQuarter                   nf.Glyph = "" //  ("\uf243") represents the "fa-battery_quarter" glyph.
+	BatteryThreeQuarters             nf.Glyph = "" //  ("\uf241") represents the "fa-battery_three_quarters" glyph.
+	BattleNet                        nf.Glyph = "" //  ("\uef94") represents the "fa-battle_net" glyph.
+	Bed                              nf.Glyph = "" //  ("\uf236") represents the "fa-bed" glyph.
+	BedPulse                         nf.Glyph = "" //  ("\ued8a") represents the "fa-bed_pulse" glyph.
+	Beer                             nf.Glyph = "" //  ("\uf0fc") represents the "fa-beer" glyph.
+	BeerMugEmpty                     nf.Glyph = "" //  ("\uf0fc") represents the "fa-beer_mug_empty" glyph.
+	Behance                          nf.Glyph = "" //  ("\uf1b4") represents the "fa-behance" glyph.
+	BehanceSquare                    nf.Glyph = "" //  ("\uf1b5") represents the "fa-behance_square" glyph.
+	Bell                             nf.Glyph = "" //  ("\uf0f3") represents the "fa-bell" glyph.
+	BellConcierge                    nf.Glyph = "" //  ("\uee2b") represents the "fa-bell_concierge" glyph.
+	BellO                            nf.Glyph = "" //  ("\uf0a2") represents the "fa-bell_o" glyph.
+	BellSlash                        nf.Glyph = "" //  ("\uf1f6") represents the "fa-bell_slash" glyph.
+	BellSlashO                       nf.Glyph = "" //  ("\uf1f7") represents the "fa-bell_slash_o" glyph.
+	BezierCurve                      nf.Glyph = "" //  ("\uee24") represents the "fa-bezier_curve" glyph.
+	Bicycle                          nf.Glyph = "" //  ("\uf206") represents the "fa-bicycle" glyph.
+	Bimobject                        nf.Glyph = "" //  ("\uf0ff") represents the "fa-bimobject" glyph.
+	Binoculars                       nf.Glyph = "" //  ("\uf1e5") represents the "fa-binoculars" glyph.
+	Biohazard                        nf.Glyph = "" //  ("\uef35") represents the "fa-biohazard" glyph.
+	BirthdayCake                     nf.Glyph = "" //  ("\uf1fd") represents the "fa-birthday_cake" glyph.
+	Bitbucket                        nf.Glyph = "" //  ("\uf171") represents the "fa-bitbucket" glyph.
+	BitbucketSquare                  nf.Glyph = "" //  ("\uf172") represents the "fa-bitbucket_square" glyph.
+	Bitcoin                          nf.Glyph = "" //  ("\uf10f") represents the "fa-bitcoin" glyph.
+	Bity                             nf.Glyph = "" //  ("\uf116") represents the "fa-bity" glyph.
+	BlackTie                         nf.Glyph = "" //  ("\uf27e") represents the "fa-black_tie" glyph.
+	Blackberry                       nf.Glyph = "" //  ("\uf117") represents the "fa-blackberry" glyph.
+	Blender                          nf.Glyph = "" //  ("\uede1") represents the "fa-blender" glyph.
+	BlenderPhone                     nf.Glyph = "" //  ("\ueeea") represents the "fa-blender_phone" glyph.
+	Blind                            nf.Glyph = "" //  ("\uf29d") represents the "fa-blind" glyph.
+	Blog                             nf.Glyph = "" //  ("\uef36") represents the "fa-blog" glyph.
+	Blogger                          nf.Glyph = "" //  ("\uf11f") represents the "fa-blogger" glyph.
+	BloggerB                         nf.Glyph = "" //  ("\uf12f") represents the "fa-blogger_b" glyph.
+	Bluetooth                        nf.Glyph = "" //  ("\uf293") represents the "fa-bluetooth" glyph.
+	BluetoothB                       nf.Glyph = "" //  ("\uf294") represents the "fa-bluetooth_b" glyph.
+	Bold                             nf.Glyph = "" //  ("\uf032") represents the "fa-bold" glyph.
+	Bolt                             nf.Glyph = "" //  ("\uf0e7") represents the "fa-bolt" glyph.
+	Bomb                             nf.Glyph = "" //  ("\uf1e2") represents the "fa-bomb" glyph.
+	Bone                             nf.Glyph = "" //  ("\uee9a") represents the "fa-bone" glyph.
+	Bong                             nf.Glyph = "" //  ("\uee25") represents the "fa-bong" glyph.
+	Book                             nf.Glyph = "" //  ("\uf02d") represents the "fa-book" glyph.
+	BookAtlas                        nf.Glyph = "" //  ("\uee21") represents the "fa-book_atlas" glyph.
+	BookBible                        nf.Glyph = "" //  ("\ueebe") represents the "fa-book_bible" glyph.
+	BookJournalWhills                nf.Glyph = "" //  ("\ueecd") represents the "fa-book_journal_whills" glyph.
+	BookMedical                      nf.Glyph = "" //  ("\uef78") represents the "fa-book_medical" glyph.
+	BookOpen                         nf.Glyph = "" //  ("\uede2") represents the "fa-book_open" glyph.
+	BookOpenReader                   nf.Glyph = "" //  ("\uee9b") represents the "fa-book_open_reader" glyph.
+	BookQuran                        nf.Glyph = "" //  ("\ueedc") represents the "fa-book_quran" glyph.
+	BookSkull                        nf.Glyph = "" //  ("\ueeeb") represents the "fa-book_skull" glyph.
+	BookTanakh                       nf.Glyph = "" //  ("\uef8e") represents the "fa-book_tanakh" glyph.
+	Bookmark                         nf.Glyph = "" //  ("\uf02e") represents the "fa-bookmark" glyph.
+	BookmarkO                        nf.Glyph = "" //  ("\uf097") represents the "fa-bookmark_o" glyph.
+	Bootstrap                        nf.Glyph = "" //  ("\uef95") represents the "fa-bootstrap" glyph.
+	BorderAll                        nf.Glyph = "" //  ("\uefa3") represents the "fa-border_all" glyph.
+	BorderNone                       nf.Glyph = "" //  ("\uefa4") represents the "fa-border_none" glyph.
+	BorderTopLeft                    nf.Glyph = "" //  ("\uefa5") represents the "fa-border_top_left" glyph.
+	BowlingBall                      nf.Glyph = "" //  ("\ued5e") represents the "fa-bowling_ball" glyph.
+	Box                              nf.Glyph = "" //  ("\ued75") represents the "fa-box" glyph.
+	BoxArchive                       nf.Glyph = "" //  ("\uf187") represents the "fa-box_archive" glyph.
+	BoxOpen                          nf.Glyph = "" //  ("\ued95") represents the "fa-box_open" glyph.
+	BoxesStacked                     nf.Glyph = "" //  ("\ued76") represents the "fa-boxes_stacked" glyph.
+	Braille                          nf.Glyph = "" //  ("\uf2a1") represents the "fa-braille" glyph.
+	Brain                            nf.Glyph = "" //  ("\uee9c") represents the "fa-brain" glyph.
+	BreadSlice                       nf.Glyph = "" //  ("\uef79") represents the "fa-bread_slice" glyph.
+	Briefcase                        nf.Glyph = "" //  ("\uf0b1") represents the "fa-briefcase" glyph.
+	BriefcaseMedical                 nf.Glyph = "" //  ("\ued77") represents the "fa-briefcase_medical" glyph.
+	Broom                            nf.Glyph = "" //  ("\uede4") represents the "fa-broom" glyph.
+	BroomBall                        nf.Glyph = "" //  ("\ued6e") represents the "fa-broom_ball" glyph.
+	Brush                            nf.Glyph = "" //  ("\uee26") represents the "fa-brush" glyph.
+	Btc                              nf.Glyph = "" //  ("\uf15a") represents the "fa-btc" glyph.
+	Buffer                           nf.Glyph = "" //  ("\uef96") represents the "fa-buffer" glyph.
+	Bug                              nf.Glyph = "" //  ("\uf188") represents the "fa-bug" glyph.
+	Building                         nf.Glyph = "" //  ("\uf1ad") represents the "fa-building" glyph.
+	BuildingColumns                  nf.Glyph = "" //  ("\uf19c") represents the "fa-building_columns" glyph.
+	BuildingO                        nf.Glyph = "" //  ("\uf0f7") represents the "fa-building_o" glyph.
+	Bullhorn                         nf.Glyph = "" //  ("\uf0a1") represents the "fa-bullhorn" glyph.
+	Bullseye                         nf.Glyph = "" //  ("\uf140") represents the "fa-bullseye" glyph.
+	Burger                           nf.Glyph = "" //  ("\uef82") represents the "fa-burger" glyph.
+	Buromobelexperte                 nf.Glyph = "" //  ("\uf13f") represents the "fa-buromobelexperte" glyph.
+	Bus                              nf.Glyph = "" //  ("\uf207") represents the "fa-bus" glyph.
+	BusSimple                        nf.Glyph = "" //  ("\uee27") represents the "fa-bus_simple" glyph.
+	BusinessTime                     nf.Glyph = "" //  ("\ueebf") represents the "fa-business_time" glyph.
+	BuyNLarge                        nf.Glyph = "" //  ("\uefb6") represents the "fa-buy_n_large" glyph.
+	Buysellads                       nf.Glyph = "" //  ("\uf20d") represents the "fa-buysellads" glyph.
+	Cab                              nf.Glyph = "" //  ("\uf1ba") represents the "fa-cab" glyph.
+	CableCar                         nf.Glyph = "" //  ("\uef71") represents the "fa-cable_car" glyph.
+	CakeCandles                      nf.Glyph = "" //  ("\uf1fd") represents the "fa-cake_candles" glyph.
+	Calculator                       nf.Glyph = "" //  ("\uf1ec") represents the "fa-calculator" glyph.
+	Calendar                         nf.Glyph = "" //  ("\uf073") represents the "fa-calendar" glyph.
+	CalendarCheck                    nf.Glyph = "" //  ("\uf274") represents the "fa-calendar_check" glyph.
+	CalendarCheckO                   nf.Glyph = "" //  ("\uf274") represents the "fa-calendar_check_o" glyph.
+	CalendarDay                      nf.Glyph = "" //  ("\uef37") represents the "fa-calendar_day" glyph.
+	CalendarDays                     nf.Glyph = "" //  ("\uf073") represents the "fa-calendar_days" glyph.
+	CalendarMinus                    nf.Glyph = "" //  ("\uf272") represents the "fa-calendar_minus" glyph.
+	CalendarMinusO                   nf.Glyph = "" //  ("\uf272") represents the "fa-calendar_minus_o" glyph.
+	CalendarO                        nf.Glyph = "" //  ("\uf133") represents the "fa-calendar_o" glyph.
+	CalendarPlus                     nf.Glyph = "" //  ("\uf271") represents the "fa-calendar_plus" glyph.
+	CalendarPlusO                    nf.Glyph = "" //  ("\uf271") represents the "fa-calendar_plus_o" glyph.
+	CalendarTimesO                   nf.Glyph = "" //  ("\uf273") represents the "fa-calendar_times_o" glyph.
+	CalendarWeek                     nf.Glyph = "" //  ("\uef38") represents the "fa-calendar_week" glyph.
+	CalendarXmark                    nf.Glyph = "" //  ("\uf273") represents the "fa-calendar_xmark" glyph.
+	Camera                           nf.Glyph = "" //  ("\uf030") represents the "fa-camera" glyph.
+	CameraRetro                      nf.Glyph = "" //  ("\uf083") represents the "fa-camera_retro" glyph.
+	Campground                       nf.Glyph = "" //  ("\ueeec") represents the "fa-campground" glyph.
+	CanadianMapleLeaf                nf.Glyph = "" //  ("\uef39") represents the "fa-canadian_maple_leaf" glyph.
+	CandyCane                        nf.Glyph = "" //  ("\uef3a") represents the "fa-candy_cane" glyph.
+	Cannabis                         nf.Glyph = "" //  ("\uee28") represents the "fa-cannabis" glyph.
+	Capsules                         nf.Glyph = "" //  ("\ued79") represents the "fa-capsules" glyph.
+	Car                              nf.Glyph = "" //  ("\uf1b9") represents the "fa-car" glyph.
+	CarBattery                       nf.Glyph = "" //  ("\uee9e") represents the "fa-car_battery" glyph.
+	CarBurst                         nf.Glyph = "" //  ("\uee9f") represents the "fa-car_burst" glyph.
+	CarRear                          nf.Glyph = "" //  ("\uee9d") represents the "fa-car_rear" glyph.
+	CarSide                          nf.Glyph = "" //  ("\ueea0") represents the "fa-car_side" glyph.
+	Caravan                          nf.Glyph = "" //  ("\uefc1") represents the "fa-caravan" glyph.
+	CaretDown                        nf.Glyph = "" //  ("\uf0d7") represents the "fa-caret_down" glyph.
+	CaretLeft                        nf.Glyph = "" //  ("\uf0d9") represents the "fa-caret_left" glyph.
+	CaretRight                       nf.Glyph = "" //  ("\uf0da") represents the "fa-caret_right" glyph.
+	CaretSquareODown                 nf.Glyph = "" //  ("\uf150") represents the "fa-caret_square_o_down" glyph.
+	CaretSquareOLeft                 nf.Glyph = "" //  ("\uf191") represents the "fa-caret_square_o_left" glyph.
+	CaretSquareORight                nf.Glyph = "" //  ("\uf152") represents the "fa-caret_square_o_right" glyph.
+	CaretSquareOUp                   nf.Glyph = "" //  ("\uf151") represents the "fa-caret_square_o_up" glyph.
+	CaretUp                          nf.Glyph = "" //  ("\uf0d8") represents the "fa-caret_up" glyph.
+	Carrot                           nf.Glyph = "" //  ("\uef3b") represents the "fa-carrot" glyph.
+	CartArrowDown                    nf.Glyph = "" //  ("\uf218") represents the "fa-cart_arrow_down" glyph.
+	CartFlatbed                      nf.Glyph = "" //  ("\ued7f") represents the "fa-cart_flatbed" glyph.
+	CartFlatbedSuitcase              nf.Glyph = "" //  ("\uee66") represents the "fa-cart_flatbed_suitcase" glyph.
+	CartPlus                         nf.Glyph = "" //  ("\uf217") represents the "fa-cart_plus" glyph.
+	CartShopping                     nf.Glyph = "" //  ("\uf07a") represents the "fa-cart_shopping" glyph.
+	CashRegister                     nf.Glyph = "" //  ("\uef3c") represents the "fa-cash_register" glyph.
+	Cat                              nf.Glyph = "" //  ("\ueeed") represents the "fa-cat" glyph.
+	Cc                               nf.Glyph = "" //  ("\uf20a") represents the "fa-cc" glyph.
+	CcAmazonPay                      nf.Glyph = "" //  ("\ued57") represents the "fa-cc_amazon_pay" glyph.
+	CcAmex                           nf.Glyph = "" //  ("\uf1f3") represents the "fa-cc_amex" glyph.
+	CcApplePay                       nf.Glyph = "" //  ("\ued42") represents the "fa-cc_apple_pay" glyph.
+	CcDinersClub                     nf.Glyph = "" //  ("\uf24c") represents the "fa-cc_diners_club" glyph.
+	CcDiscover                       nf.Glyph = "" //  ("\uf1f2") represents the "fa-cc_discover" glyph.
+	CcJcb                            nf.Glyph = "" //  ("\uf24b") represents the "fa-cc_jcb" glyph.
+	CcMastercard                     nf.Glyph = "" //  ("\uf1f1") represents the "fa-cc_mastercard" glyph.
+	CcPaypal                         nf.Glyph = "" //  ("\uf1f4") represents the "fa-cc_paypal" glyph.
+	CcStripe                         nf.Glyph = "" //  ("\uf1f5") represents the "fa-cc_stripe" glyph.
+	CcVisa                           nf.Glyph = "" //  ("\uf1f0") represents the "fa-cc_visa" glyph.
+	Centercode                       nf.Glyph = "" //  ("\uf14f") represents the "fa-centercode" glyph.
+	Centos                           nf.Glyph = "" //  ("\uef3d") represents the "fa-centos" glyph.
+	Certificate                      nf.Glyph = "" //  ("\uf0a3") represents the "fa-certificate" glyph.
+	Chain                            nf.Glyph = "" //  ("\uf0c1") represents the "fa-chain" glyph.
+	ChainBroken                      nf.Glyph = "" //  ("\uf127") represents the "fa-chain_broken" glyph.
+	Chair                            nf.Glyph = "" //  ("\ueeee") represents the "fa-chair" glyph.
+	Chalkboard                       nf.Glyph = "" //  ("\uede5") represents the "fa-chalkboard" glyph.
+	ChalkboardUser                   nf.Glyph = "" //  ("\uede6") represents the "fa-chalkboard_user" glyph.
+	ChampagneGlasses                 nf.Glyph = "" //  ("\uef49") represents the "fa-champagne_glasses" glyph.
+	ChargingStation                  nf.Glyph = "" //  ("\ueea1") represents the "fa-charging_station" glyph.
+	ChartArea                        nf.Glyph = "" //  ("\uf1fe") represents the "fa-chart_area" glyph.
+	ChartBar                         nf.Glyph = "" //  ("\uf080") represents the "fa-chart_bar" glyph.
+	ChartLine                        nf.Glyph = "" //  ("\uf201") represents the "fa-chart_line" glyph.
+	ChartPie                         nf.Glyph = "" //  ("\uf200") represents the "fa-chart_pie" glyph.
+	Check                            nf.Glyph = "" //  ("\uf00c") represents the "fa-check" glyph.
+	CheckCircle                      nf.Glyph = "" //  ("\uf058") represents the "fa-check_circle" glyph.
+	CheckCircleO                     nf.Glyph = "" //  ("\uf05d") represents the "fa-check_circle_o" glyph.
+	CheckDouble                      nf.Glyph = "" //  ("\uee29") represents the "fa-check_double" glyph.
+	CheckSquare                      nf.Glyph = "" //  ("\uf14a") represents the "fa-check_square" glyph.
+	CheckSquareO                     nf.Glyph = "" //  ("\uf046") represents the "fa-check_square_o" glyph.
+	CheckToSlot                      nf.Glyph = "" //  ("\uef2f") represents the "fa-check_to_slot" glyph.
+	Cheese                           nf.Glyph = "" //  ("\uef7a") represents the "fa-cheese" glyph.
+	Chess                            nf.Glyph = "" //  ("\ued5f") represents the "fa-chess" glyph.
+	ChessBishop                      nf.Glyph = "" //  ("\ued60") represents the "fa-chess_bishop" glyph.
+	ChessBoard                       nf.Glyph = "" //  ("\ued61") represents the "fa-chess_board" glyph.
+	ChessKing                        nf.Glyph = "" //  ("\ued62") represents the "fa-chess_king" glyph.
+	ChessKnight                      nf.Glyph = "" //  ("\ued63") represents the "fa-chess_knight" glyph.
+	ChessPawn                        nf.Glyph = "" //  ("\ued64") represents the "fa-chess_pawn" glyph.
+	ChessQueen                       nf.Glyph = "" //  ("\ued65") represents the "fa-chess_queen" glyph.
+	ChessRook                        nf.Glyph = "" //  ("\ued66") represents the "fa-chess_rook" glyph.
+	ChevronCircleDown                nf.Glyph = "" //  ("\uf13a") represents the "fa-chevron_circle_down" glyph.
+	ChevronCircleLeft                nf.Glyph = "" //  ("\uf137") represents the "fa-chevron_circle_left" glyph.
+	ChevronCircleRight               nf.Glyph = "" //  ("\uf138") represents the "fa-chevron_circle_right" glyph.
+	ChevronCircleUp                  nf.Glyph = "" //  ("\uf139") represents the "fa-chevron_circle_up" glyph.
+	ChevronDown                      nf.Glyph = "" //  ("\uf078") represents the "fa-chevron_down" glyph.
+	ChevronLeft                      nf.Glyph = "" //  ("\uf053") represents the "fa-chevron_left" glyph.
+	ChevronRight                     nf.Glyph = "" //  ("\uf054") represents the "fa-chevron_right" glyph.
+	ChevronUp                        nf.Glyph = "" //  ("\uf077") represents the "fa-chevron_up" glyph.
+	Child                            nf.Glyph = "" //  ("\uf1ae") represents the "fa-child" glyph.
+	Chrome                           nf.Glyph = "" //  ("\uf268") represents the "fa-chrome" glyph.
+	Chromecast                       nf.Glyph = "" //  ("\uef97") represents the "fa-chromecast" glyph.
+	Church                           nf.Glyph = "" //  ("\uede7") represents the "fa-church" glyph.
+	Circle                           nf.Glyph = "" //  ("\uf111") represents the "fa-circle" glyph.
+	CircleArrowDown                  nf.Glyph = "" //  ("\uf0ab") represents the "fa-circle_arrow_down" glyph.
+	CircleArrowLeft                  nf.Glyph = "" //  ("\uf0a8") represents the "fa-circle_arrow_left" glyph.
+	CircleArrowRight                 nf.Glyph = "" //  ("\uf0a9") represents the "fa-circle_arrow_right" glyph.
+	CircleArrowUp                    nf.Glyph = "" //  ("\uf0aa") represents the "fa-circle_arrow_up" glyph.
+	CircleCheck                      nf.Glyph = "" //  ("\uf05d") represents the "fa-circle_check" glyph.
+	CircleChevronDown                nf.Glyph = "" //  ("\uf13a") represents the "fa-circle_chevron_down" glyph.
+	CircleChevronLeft                nf.Glyph = "" //  ("\uf137") represents the "fa-circle_chevron_left" glyph.
+	CircleChevronRight               nf.Glyph = "" //  ("\uf138") represents the "fa-circle_chevron_right" glyph.
+	CircleChevronUp                  nf.Glyph = "" //  ("\uf139") represents the "fa-circle_chevron_up" glyph.
+	CircleDollarToSlot               nf.Glyph = "" //  ("\ued98") represents the "fa-circle_dollar_to_slot" glyph.
+	CircleDot                        nf.Glyph = "" //  ("\uf192") represents the "fa-circle_dot" glyph.
+	CircleDown                       nf.Glyph = "" //  ("\uf01a") represents the "fa-circle_down" glyph.
+	CircleExclamation                nf.Glyph = "" //  ("\uf06a") represents the "fa-circle_exclamation" glyph.
+	CircleH                          nf.Glyph = "" //  ("\ued83") represents the "fa-circle_h" glyph.
+	CircleHalfStroke                 nf.Glyph = "" //  ("\uf042") represents the "fa-circle_half_stroke" glyph.
+	CircleInfo                       nf.Glyph = "" //  ("\uf05a") represents the "fa-circle_info" glyph.
+	CircleLeft                       nf.Glyph = "" //  ("\uf190") represents the "fa-circle_left" glyph.
+	CircleMinus                      nf.Glyph = "" //  ("\uf056") represents the "fa-circle_minus" glyph.
+	CircleNotch                      nf.Glyph = "" //  ("\uf1ce") represents the "fa-circle_notch" glyph.
+	CircleO                          nf.Glyph = "" //  ("\uf10c") represents the "fa-circle_o" glyph.
+	CircleONotch                     nf.Glyph = "" //  ("\uf1ce") represents the "fa-circle_o_notch" glyph.
+	CirclePause                      nf.Glyph = "" //  ("\uf28b") represents the "fa-circle_pause" glyph.
+	CirclePlay                       nf.Glyph = "" //  ("\uf144") represents the "fa-circle_play" glyph.
+	CirclePlus                       nf.Glyph = "" //  ("\uf055") represents the "fa-circle_plus" glyph.
+	CircleQuestion                   nf.Glyph = "" //  ("\uf059") represents the "fa-circle_question" glyph.
+	CircleRadiation                  nf.Glyph = "" //  ("\uef5b") represents the "fa-circle_radiation" glyph.
+	CircleRight                      nf.Glyph = "" //  ("\uf18e") represents the "fa-circle_right" glyph.
+	CircleStop                       nf.Glyph = "" //  ("\uf28d") represents the "fa-circle_stop" glyph.
+	CircleThin                       nf.Glyph = "" //  ("\uf1db") represents the "fa-circle_thin" glyph.
+	CircleUp                         nf.Glyph = "" //  ("\uf01b") represents the "fa-circle_up" glyph.
+	CircleUser                       nf.Glyph = "" //  ("\uf2bd") represents the "fa-circle_user" glyph.
+	CircleXmark                      nf.Glyph = "" //  ("\uf05c") represents the "fa-circle_xmark" glyph.
+	City                             nf.Glyph = "" //  ("\ueec0") represents the "fa-city" glyph.
+	Clipboard                        nf.Glyph = "" //  ("\uf0ea") represents the "fa-clipboard" glyph.
+	ClipboardAlt                     nf.Glyph = "" //  ("\uf07f") represents the "fa-clipboard_alt" glyph.
+	ClipboardCheck                   nf.Glyph = "" //  ("\ued7a") represents the "fa-clipboard_check" glyph.
+	ClipboardList                    nf.Glyph = "" //  ("\ued7b") represents the "fa-clipboard_list" glyph.
+	ClipboardUser                    nf.Glyph = "" //  ("\uef7c") represents the "fa-clipboard_user" glyph.
+	Clock                            nf.Glyph = "" //  ("\uf017") represents the "fa-clock" glyph.
+	ClockO                           nf.Glyph = "" //  ("\uf017") represents the "fa-clock_o" glyph.
+	ClockRotateLeft                  nf.Glyph = "" //  ("\uf1da") represents the "fa-clock_rotate_left" glyph.
+	Clone                            nf.Glyph = "" //  ("\uf24d") represents the "fa-clone" glyph.
+	Close                            nf.Glyph = "" //  ("\uf00d") represents the "fa-close" glyph.
+	ClosedCaptioning                 nf.Glyph = "" //  ("\uf20a") represents the "fa-closed_captioning" glyph.
+	Cloud                            nf.Glyph = "" //  ("\uf0c2") represents the "fa-cloud" glyph.
+	CloudArrowDown                   nf.Glyph = "" //  ("\uf0ed") represents the "fa-cloud_arrow_down" glyph.
+	CloudArrowUp                     nf.Glyph = "" //  ("\uf0ee") represents the "fa-cloud_arrow_up" glyph.
+	CloudBolt                        nf.Glyph = "" //  ("\uef2c") represents the "fa-cloud_bolt" glyph.
+	CloudDownload                    nf.Glyph = "" //  ("\uf0ed") represents the "fa-cloud_download" glyph.
+	CloudMeatball                    nf.Glyph = "" //  ("\uef1a") represents the "fa-cloud_meatball" glyph.
+	CloudMoon                        nf.Glyph = "" //  ("\ueeef") represents the "fa-cloud_moon" glyph.
+	CloudMoonRain                    nf.Glyph = "" //  ("\uef1b") represents the "fa-cloud_moon_rain" glyph.
+	CloudRain                        nf.Glyph = "" //  ("\uef1c") represents the "fa-cloud_rain" glyph.
+	CloudShowersHeavy                nf.Glyph = "" //  ("\uef1d") represents the "fa-cloud_showers_heavy" glyph.
+	CloudSun                         nf.Glyph = "" //  ("\ueef0") represents the "fa-cloud_sun" glyph.
+	CloudSunRain                     nf.Glyph = "" //  ("\uef1e") represents the "fa-cloud_sun_rain" glyph.
+	CloudUpload                      nf.Glyph = "" //  ("\uf0ee") represents the "fa-cloud_upload" glyph.
+	Cloudscale                       nf.Glyph = "" //  ("\uf15f") represents the "fa-cloudscale" glyph.
+	Cloudsmith                       nf.Glyph = "" //  ("\uf167") represents the "fa-cloudsmith" glyph.
+	Cloudversify                     nf.Glyph = "" //  ("\uf16f") represents the "fa-cloudversify" glyph.
+	Cny                              nf.Glyph = "" //  ("\uf157") represents the "fa-cny" glyph.
+	Code                             nf.Glyph = "" //  ("\uf121") represents the "fa-code" glyph.
+	CodeBranch                       nf.Glyph = "" //  ("\uf126") represents the "fa-code_branch" glyph.
+	CodeCommit                       nf.Glyph = "" //  ("\uf172") represents the "fa-code_commit" glyph.
+	CodeFork                         nf.Glyph = "" //  ("\uf126") represents the "fa-code_fork" glyph.
+	CodeMerge                        nf.Glyph = "" //  ("\uf17f") represents the "fa-code_merge" glyph.
+	Codepen                          nf.Glyph = "" //  ("\uf1cb") represents the "fa-codepen" glyph.
+	Codiepie                         nf.Glyph = "" //  ("\uf284") represents the "fa-codiepie" glyph.
+	Coffee                           nf.Glyph = "" //  ("\uf0f4") represents the "fa-coffee" glyph.
+	Cog                              nf.Glyph = "" //  ("\uf013") represents the "fa-cog" glyph.
+	Cogs                             nf.Glyph = "" //  ("\uf085") represents the "fa-cogs" glyph.
+	Coins                            nf.Glyph = "" //  ("\uede8") represents the "fa-coins" glyph.
+	Columns                          nf.Glyph = "" //  ("\uf0db") represents the "fa-columns" glyph.
+	Comment                          nf.Glyph = "" //  ("\uf075") represents the "fa-comment" glyph.
+	CommentDollar                    nf.Glyph = "" //  ("\ueec1") represents the "fa-comment_dollar" glyph.
+	CommentDots                      nf.Glyph = "" //  ("\uf27b") represents the "fa-comment_dots" glyph.
+	CommentMedical                   nf.Glyph = "" //  ("\uef7d") represents the "fa-comment_medical" glyph.
+	CommentO                         nf.Glyph = "" //  ("\uf0e5") represents the "fa-comment_o" glyph.
+	CommentSlash                     nf.Glyph = "" //  ("\ued96") represents the "fa-comment_slash" glyph.
+	CommentSms                       nf.Glyph = "" //  ("\uef68") represents the "fa-comment_sms" glyph.
+	Commenting                       nf.Glyph = "" //  ("\uf27a") represents the "fa-commenting" glyph.
+	CommentingO                      nf.Glyph = "" //  ("\uf27b") represents the "fa-commenting_o" glyph.
+	Comments                         nf.Glyph = "" //  ("\uf086") represents the "fa-comments" glyph.
+	CommentsDollar                   nf.Glyph = "" //  ("\ueec2") represents the "fa-comments_dollar" glyph.
+	CommentsO                        nf.Glyph = "" //  ("\uf0e6") represents the "fa-comments_o" glyph.
+	CompactDisc                      nf.Glyph = "" //  ("\uede9") represents the "fa-compact_disc" glyph.
+	Compass                          nf.Glyph = "" //  ("\uf14e") represents the "fa-compass" glyph.
+	CompassDrafting                  nf.Glyph = "" //  ("\uee31") represents the "fa-compass_drafting" glyph.
+	Compress                         nf.Glyph = "" //  ("\uf066") represents the "fa-compress" glyph.
+	ComputerMouse                    nf.Glyph = "" //  ("\uefba") represents the "fa-computer_mouse" glyph.
+	Confluence                       nf.Glyph = "" //  ("\uef3f") represents the "fa-confluence" glyph.
+	Connectdevelop                   nf.Glyph = "" //  ("\uf20e") represents the "fa-connectdevelop" glyph.
+	Contao                           nf.Glyph = "" //  ("\uf26d") represents the "fa-contao" glyph.
+	Cookie                           nf.Glyph = "" //  ("\uee2c") represents the "fa-cookie" glyph.
+	CookieBite                       nf.Glyph = "" //  ("\uee2d") represents the "fa-cookie_bite" glyph.
+	Copy                             nf.Glyph = "" //  ("\uf0c5") represents the "fa-copy" glyph.
+	Copyright                        nf.Glyph = "" //  ("\uf1f9") represents the "fa-copyright" glyph.
+	CottonBureau                     nf.Glyph = "" //  ("\uefb5") represents the "fa-cotton_bureau" glyph.
+	Couch                            nf.Glyph = "" //  ("\ued97") represents the "fa-couch" glyph.
+	Cow                              nf.Glyph = "" //  ("\ueef1") represents the "fa-cow" glyph.
+	Cpanel                           nf.Glyph = "" //  ("\uf18f") represents the "fa-cpanel" glyph.
+	CreativeCommons                  nf.Glyph = "" //  ("\uf25e") represents the "fa-creative_commons" glyph.
+	CreativeCommonsBy                nf.Glyph = "" //  ("\uedb1") represents the "fa-creative_commons_by" glyph.
+	CreativeCommonsNc                nf.Glyph = "" //  ("\uedb2") represents the "fa-creative_commons_nc" glyph.
+	CreativeCommonsNcEu              nf.Glyph = "" //  ("\uedb3") represents the "fa-creative_commons_nc_eu" glyph.
+	CreativeCommonsNcJp              nf.Glyph = "" //  ("\uedb4") represents the "fa-creative_commons_nc_jp" glyph.
+	CreativeCommonsNd                nf.Glyph = "" //  ("\uedb5") represents the "fa-creative_commons_nd" glyph.
+	CreativeCommonsPd                nf.Glyph = "" //  ("\uedb6") represents the "fa-creative_commons_pd" glyph.
+	CreativeCommonsPdAlt             nf.Glyph = "" //  ("\uedb7") represents the "fa-creative_commons_pd_alt" glyph.
+	CreativeCommonsRemix             nf.Glyph = "" //  ("\uedb8") represents the "fa-creative_commons_remix" glyph.
+	CreativeCommonsSa                nf.Glyph = "" //  ("\uedb9") represents the "fa-creative_commons_sa" glyph.
+	CreativeCommonsSampling          nf.Glyph = "" //  ("\uedba") represents the "fa-creative_commons_sampling" glyph.
+	CreativeCommonsSamplingPlus      nf.Glyph = "" //  ("\uedbb") represents the "fa-creative_commons_sampling_plus" glyph.
+	CreativeCommonsShare             nf.Glyph = "" //  ("\uedbc") represents the "fa-creative_commons_share" glyph.
+	CreativeCommonsZero              nf.Glyph = "" //  ("\uedbd") represents the "fa-creative_commons_zero" glyph.
+	CreditCard                       nf.Glyph = "" //  ("\uf09d") represents the "fa-credit_card" glyph.
+	CreditCardAlt                    nf.Glyph = "" //  ("\uf283") represents the "fa-credit_card_alt" glyph.
+	CriticalRole                     nf.Glyph = "" //  ("\ueef2") represents the "fa-critical_role" glyph.
+	Crop                             nf.Glyph = "" //  ("\uf125") represents the "fa-crop" glyph.
+	CropSimple                       nf.Glyph = "" //  ("\uee2e") represents the "fa-crop_simple" glyph.
+	Cross                            nf.Glyph = "" //  ("\ueec3") represents the "fa-cross" glyph.
+	Crosshairs                       nf.Glyph = "" //  ("\uf05b") represents the "fa-crosshairs" glyph.
+	Crow                             nf.Glyph = "" //  ("\uedea") represents the "fa-crow" glyph.
+	Crown                            nf.Glyph = "" //  ("\uedeb") represents the "fa-crown" glyph.
+	Crutch                           nf.Glyph = "" //  ("\uef7e") represents the "fa-crutch" glyph.
+	Css3                             nf.Glyph = "" //  ("\uf13c") represents the "fa-css3" glyph.
+	Css3Alt                          nf.Glyph = "" //  ("\uf19f") represents the "fa-css3_alt" glyph.
+	Cube                             nf.Glyph = "" //  ("\uf1b2") represents the "fa-cube" glyph.
+	Cubes                            nf.Glyph = "" //  ("\uf1b3") represents the "fa-cubes" glyph.
+	Cut                              nf.Glyph = "" //  ("\uf0c4") represents the "fa-cut" glyph.
+	Cutlery                          nf.Glyph = "" //  ("\uf0f5") represents the "fa-cutlery" glyph.
+	Cuttlefish                       nf.Glyph = "" //  ("\uf1af") represents the "fa-cuttlefish" glyph.
+	DAndD                            nf.Glyph = "" //  ("\uf1bf") represents the "fa-d_and_d" glyph.
+	DAndDBeyond                      nf.Glyph = "" //  ("\ueef3") represents the "fa-d_and_d_beyond" glyph.
+	Dashboard                        nf.Glyph = "" //  ("\uf0e4") represents the "fa-dashboard" glyph.
+	Dashcube                         nf.Glyph = "" //  ("\uf210") represents the "fa-dashcube" glyph.
+	Database                         nf.Glyph = "" //  ("\uf1c0") represents the "fa-database" glyph.
+	Deaf                             nf.Glyph = "" //  ("\uf2a4") represents the "fa-deaf" glyph.
+	Deafness                         nf.Glyph = "" //  ("\uf2a4") represents the "fa-deafness" glyph.
+	Dedent                           nf.Glyph = "" //  ("\uf03b") represents the "fa-dedent" glyph.
+	DeleteLeft                       nf.Glyph = "" //  ("\uee23") represents the "fa-delete_left" glyph.
+	Delicious                        nf.Glyph = "" //  ("\uf1a5") represents the "fa-delicious" glyph.
+	Democrat                         nf.Glyph = "" //  ("\uef1f") represents the "fa-democrat" glyph.
+	Deploydog                        nf.Glyph = "" //  ("\uf1cf") represents the "fa-deploydog" glyph.
+	Deskpro                          nf.Glyph = "" //  ("\uf1df") represents the "fa-deskpro" glyph.
+	Desktop                          nf.Glyph = "" //  ("\uf108") represents the "fa-desktop" glyph.
+	Dev                              nf.Glyph = "" //  ("\ueef4") represents the "fa-dev" glyph.
+	Deviantart                       nf.Glyph = "" //  ("\uf1bd") represents the "fa-deviantart" glyph.
+	Dharmachakra                     nf.Glyph = "" //  ("\ueec4") represents the "fa-dharmachakra" glyph.
+	Dhl                              nf.Glyph = "" //  ("\uef40") represents the "fa-dhl" glyph.
+	DiagramProject                   nf.Glyph = "" //  ("\uefce") represents the "fa-diagram_project" glyph.
+	Diamond                          nf.Glyph = "" //  ("\uf29f") represents the "fa-diamond" glyph.
+	DiamondTurnRight                 nf.Glyph = "" //  ("\ueea2") represents the "fa-diamond_turn_right" glyph.
+	Diaspora                         nf.Glyph = "" //  ("\uef41") represents the "fa-diaspora" glyph.
+	Dice                             nf.Glyph = "" //  ("\uedec") represents the "fa-dice" glyph.
+	DiceD20                          nf.Glyph = "" //  ("\ueef5") represents the "fa-dice_d20" glyph.
+	DiceD6                           nf.Glyph = "" //  ("\ueef6") represents the "fa-dice_d6" glyph.
+	DiceFive                         nf.Glyph = "" //  ("\ueded") represents the "fa-dice_five" glyph.
+	DiceFour                         nf.Glyph = "" //  ("\uedee") represents the "fa-dice_four" glyph.
+	DiceOne                          nf.Glyph = "" //  ("\uedef") represents the "fa-dice_one" glyph.
+	DiceSix                          nf.Glyph = "" //  ("\uedf0") represents the "fa-dice_six" glyph.
+	DiceThree                        nf.Glyph = "" //  ("\uedf1") represents the "fa-dice_three" glyph.
+	DiceTwo                          nf.Glyph = "" //  ("\uedf2") represents the "fa-dice_two" glyph.
+	Digg                             nf.Glyph = "" //  ("\uf1a6") represents the "fa-digg" glyph.
+	DigitalOcean                     nf.Glyph = "" //  ("\uf1ef") represents the "fa-digital_ocean" glyph.
+	Discord                          nf.Glyph = "" //  ("\uf1ff") represents the "fa-discord" glyph.
+	Discourse                        nf.Glyph = "" //  ("\uf20c") represents the "fa-discourse" glyph.
+	Disease                          nf.Glyph = "" //  ("\uef7f") represents the "fa-disease" glyph.
+	Divide                           nf.Glyph = "" //  ("\uedf3") represents the "fa-divide" glyph.
+	Dna                              nf.Glyph = "" //  ("\ued7d") represents the "fa-dna" glyph.
+	Dochub                           nf.Glyph = "" //  ("\uf20f") represents the "fa-dochub" glyph.
+	Docker                           nf.Glyph = "" //  ("\uf21f") represents the "fa-docker" glyph.
+	Dog                              nf.Glyph = "" //  ("\ueef7") represents the "fa-dog" glyph.
+	Dollar                           nf.Glyph = "" //  ("\uf155") represents the "fa-dollar" glyph.
+	DollarSign                       nf.Glyph = "" //  ("\uf155") represents the "fa-dollar_sign" glyph.
+	Dolly                            nf.Glyph = "" //  ("\ued7e") represents the "fa-dolly" glyph.
+	DoorClosed                       nf.Glyph = "" //  ("\uedf4") represents the "fa-door_closed" glyph.
+	DoorOpen                         nf.Glyph = "" //  ("\uedf5") represents the "fa-door_open" glyph.
+	DotCircleO                       nf.Glyph = "" //  ("\uf192") represents the "fa-dot_circle_o" glyph.
+	Dove                             nf.Glyph = "" //  ("\ued99") represents the "fa-dove" glyph.
+	DownLeftAndUpRightToCenter       nf.Glyph = "" //  ("\ued4d") represents the "fa-down_left_and_up_right_to_center" glyph.
+	DownLong                         nf.Glyph = "" //  ("\uf03f") represents the "fa-down_long" glyph.
+	Download                         nf.Glyph = "" //  ("\uf019") represents the "fa-download" glyph.
+	Draft2Digital                    nf.Glyph = "" //  ("\uf220") represents the "fa-draft2digital" glyph.
+	Dragon                           nf.Glyph = "" //  ("\ueef8") represents the "fa-dragon" glyph.
+	DrawPolygon                      nf.Glyph = "" //  ("\ueea3") represents the "fa-draw_polygon" glyph.
+	Dribbble                         nf.Glyph = "" //  ("\uf17d") represents the "fa-dribbble" glyph.
+	DriversLicense                   nf.Glyph = "" //  ("\uf2c2") represents the "fa-drivers_license" glyph.
+	DriversLicenseO                  nf.Glyph = "" //  ("\uf2c3") represents the "fa-drivers_license_o" glyph.
+	Dropbox                          nf.Glyph = "" //  ("\uf16b") represents the "fa-dropbox" glyph.
+	Droplet                          nf.Glyph = "" //  ("\uf043") represents the "fa-droplet" glyph.
+	DropletSlash                     nf.Glyph = "" //  ("\uee8e") represents the "fa-droplet_slash" glyph.
+	Drum                             nf.Glyph = "" //  ("\uee32") represents the "fa-drum" glyph.
+	DrumSteelpan                     nf.Glyph = "" //  ("\uee33") represents the "fa-drum_steelpan" glyph.
+	DrumstickBite                    nf.Glyph = "" //  ("\ueef9") represents the "fa-drumstick_bite" glyph.
+	Drupal                           nf.Glyph = "" //  ("\uf1a9") represents the "fa-drupal" glyph.
+	Dumbbell                         nf.Glyph = "" //  ("\ued67") represents the "fa-dumbbell" glyph.
+	Dumpster                         nf.Glyph = "" //  ("\uef42") represents the "fa-dumpster" glyph.
+	DumpsterFire                     nf.Glyph = "" //  ("\uef43") represents the "fa-dumpster_fire" glyph.
+	Dungeon                          nf.Glyph = "" //  ("\ueefa") represents the "fa-dungeon" glyph.
+	Dyalog                           nf.Glyph = "" //  ("\uf22f") represents the "fa-dyalog" glyph.
+	EarDeaf                          nf.Glyph = "" //  ("\uf2a4") represents the "fa-ear_deaf" glyph.
+	EarListen                        nf.Glyph = "" //  ("\uf2a2") represents the "fa-ear_listen" glyph.
+	Earlybirds                       nf.Glyph = "" //  ("\uf230") represents the "fa-earlybirds" glyph.
+	EarthAfrica                      nf.Glyph = "" //  ("\uee45") represents the "fa-earth_africa" glyph.
+	EarthAmericas                    nf.Glyph = "" //  ("\uee46") represents the "fa-earth_americas" glyph.
+	EarthAsia                        nf.Glyph = "" //  ("\uee47") represents the "fa-earth_asia" glyph.
+	EarthEurope                      nf.Glyph = "" //  ("\uef4b") represents the "fa-earth_europe" glyph.
+	Ebay                             nf.Glyph = "" //  ("\uedbe") represents the "fa-ebay" glyph.
+	Edge                             nf.Glyph = "" //  ("\uf282") represents the "fa-edge" glyph.
+	Edit                             nf.Glyph = "" //  ("\uf044") represents the "fa-edit" glyph.
+	Eercast                          nf.Glyph = "" //  ("\uf2da") represents the "fa-eercast" glyph.
+	Egg                              nf.Glyph = "" //  ("\uef80") represents the "fa-egg" glyph.
+	Eject                            nf.Glyph = "" //  ("\uf052") represents the "fa-eject" glyph.
+	Elementor                        nf.Glyph = "" //  ("\ued5a") represents the "fa-elementor" glyph.
+	Ellipsis                         nf.Glyph = "" //  ("\uf141") represents the "fa-ellipsis" glyph.
+	EllipsisH                        nf.Glyph = "" //  ("\uf141") represents the "fa-ellipsis_h" glyph.
+	EllipsisV                        nf.Glyph = "" //  ("\uf142") represents the "fa-ellipsis_v" glyph.
+	EllipsisVertical                 nf.Glyph = "" //  ("\uf142") represents the "fa-ellipsis_vertical" glyph.
+	Ello                             nf.Glyph = "" //  ("\ueea4") represents the "fa-ello" glyph.
+	Ember                            nf.Glyph = "" //  ("\ued4e") represents the "fa-ember" glyph.
+	Empire                           nf.Glyph = "" //  ("\uf1d1") represents the "fa-empire" glyph.
+	Envelope                         nf.Glyph = "" //  ("\uf0e0") represents the "fa-envelope" glyph.
+	EnvelopeO                        nf.Glyph = "" //  ("\uf003") represents the "fa-envelope_o" glyph.
+	EnvelopeOpen                     nf.Glyph = "" //  ("\uf2b6") represents the "fa-envelope_open" glyph.
+	EnvelopeOpenO                    nf.Glyph = "" //  ("\uf2b7") represents the "fa-envelope_open_o" glyph.
+	EnvelopeOpenText                 nf.Glyph = "" //  ("\ueec5") represents the "fa-envelope_open_text" glyph.
+	EnvelopeSquare                   nf.Glyph = "" //  ("\uf199") represents the "fa-envelope_square" glyph.
+	EnvelopesBulk                    nf.Glyph = "" //  ("\ueed1") represents the "fa-envelopes_bulk" glyph.
+	Envira                           nf.Glyph = "" //  ("\uf299") represents the "fa-envira" glyph.
+	Equals                           nf.Glyph = "" //  ("\uedf6") represents the "fa-equals" glyph.
+	Eraser                           nf.Glyph = "" //  ("\uf12d") represents the "fa-eraser" glyph.
+	Erlang                           nf.Glyph = "" //  ("\uf23f") represents the "fa-erlang" glyph.
+	Ethereum                         nf.Glyph = "" //  ("\ued58") represents the "fa-ethereum" glyph.
+	Ethernet                         nf.Glyph = "" //  ("\uef44") represents the "fa-ethernet" glyph.
+	Etsy                             nf.Glyph = "" //  ("\uf2d7") represents the "fa-etsy" glyph.
+	Eur                              nf.Glyph = "" //  ("\uf153") represents the "fa-eur" glyph.
+	Euro                             nf.Glyph = "" //  ("\uf153") represents the "fa-euro" glyph.
+	EuroSign                         nf.Glyph = "" //  ("\uf153") represents the "fa-euro_sign" glyph.
+	Evernote                         nf.Glyph = "" //  ("\uef98") represents the "fa-evernote" glyph.
+	Exchange                         nf.Glyph = "" //  ("\uf0ec") represents the "fa-exchange" glyph.
+	Exclamation                      nf.Glyph = "" //  ("\uf12a") represents the "fa-exclamation" glyph.
+	ExclamationCircle                nf.Glyph = "" //  ("\uf06a") represents the "fa-exclamation_circle" glyph.
+	ExclamationTriangle              nf.Glyph = "" //  ("\uf071") represents the "fa-exclamation_triangle" glyph.
+	Expand                           nf.Glyph = "" //  ("\uf065") represents the "fa-expand" glyph.
+	Expeditedssl                     nf.Glyph = "" //  ("\uf23e") represents the "fa-expeditedssl" glyph.
+	ExternalLink                     nf.Glyph = "" //  ("\uf08e") represents the "fa-external_link" glyph.
+	ExternalLinkSquare               nf.Glyph = "" //  ("\uf14c") represents the "fa-external_link_square" glyph.
+	Eye                              nf.Glyph = "" //  ("\uf06e") represents the "fa-eye" glyph.
+	EyeDropper                       nf.Glyph = "" //  ("\uf1fb") represents the "fa-eye_dropper" glyph.
+	EyeLowVision                     nf.Glyph = "" //  ("\uf2a8") represents the "fa-eye_low_vision" glyph.
+	EyeSlash                         nf.Glyph = "" //  ("\uf070") represents the "fa-eye_slash" glyph.
+	Eyedropper                       nf.Glyph = "" //  ("\uf1fb") represents the "fa-eyedropper" glyph.
+	Fa                               nf.Glyph = "" //  ("\uf2b4") represents the "fa-fa" glyph.
+	FaceAngry                        nf.Glyph = "" //  ("\uee1f") represents the "fa-face_angry" glyph.
+	FaceDizzy                        nf.Glyph = "" //  ("\uee30") represents the "fa-face_dizzy" glyph.
+	FaceFlushed                      nf.Glyph = "" //  ("\uee42") represents the "fa-face_flushed" glyph.
+	FaceFrown                        nf.Glyph = "" //  ("\uf119") represents the "fa-face_frown" glyph.
+	FaceFrownOpen                    nf.Glyph = "" //  ("\uee43") represents the "fa-face_frown_open" glyph.
+	FaceGrimace                      nf.Glyph = "" //  ("\uee48") represents the "fa-face_grimace" glyph.
+	FaceGrin                         nf.Glyph = "" //  ("\uee49") represents the "fa-face_grin" glyph.
+	FaceGrinBeam                     nf.Glyph = "" //  ("\uee4b") represents the "fa-face_grin_beam" glyph.
+	FaceGrinBeamSweat                nf.Glyph = "" //  ("\uee4c") represents the "fa-face_grin_beam_sweat" glyph.
+	FaceGrinHearts                   nf.Glyph = "" //  ("\uee4d") represents the "fa-face_grin_hearts" glyph.
+	FaceGrinSquint                   nf.Glyph = "" //  ("\uee4e") represents the "fa-face_grin_squint" glyph.
+	FaceGrinSquintTears              nf.Glyph = "" //  ("\uee4f") represents the "fa-face_grin_squint_tears" glyph.
+	FaceGrinStars                    nf.Glyph = "" //  ("\uee50") represents the "fa-face_grin_stars" glyph.
+	FaceGrinTears                    nf.Glyph = "" //  ("\uee51") represents the "fa-face_grin_tears" glyph.
+	FaceGrinTongue                   nf.Glyph = "" //  ("\uee52") represents the "fa-face_grin_tongue" glyph.
+	FaceGrinTongueSquint             nf.Glyph = "" //  ("\uee53") represents the "fa-face_grin_tongue_squint" glyph.
+	FaceGrinTongueWink               nf.Glyph = "" //  ("\uee54") represents the "fa-face_grin_tongue_wink" glyph.
+	FaceGrinWide                     nf.Glyph = "" //  ("\uee4a") represents the "fa-face_grin_wide" glyph.
+	FaceGrinWink                     nf.Glyph = "" //  ("\uee55") represents the "fa-face_grin_wink" glyph.
+	FaceKiss                         nf.Glyph = "" //  ("\uee5f") represents the "fa-face_kiss" glyph.
+	FaceKissBeam                     nf.Glyph = "" //  ("\uee60") represents the "fa-face_kiss_beam" glyph.
+	FaceKissWinkHeart                nf.Glyph = "" //  ("\uee61") represents the "fa-face_kiss_wink_heart" glyph.
+	FaceLaugh                        nf.Glyph = "" //  ("\uee62") represents the "fa-face_laugh" glyph.
+	FaceLaughBeam                    nf.Glyph = "" //  ("\uee63") represents the "fa-face_laugh_beam" glyph.
+	FaceLaughSquint                  nf.Glyph = "" //  ("\uee64") represents the "fa-face_laugh_squint" glyph.
+	FaceLaughWink                    nf.Glyph = "" //  ("\uee65") represents the "fa-face_laugh_wink" glyph.
+	FaceMeh                          nf.Glyph = "" //  ("\uf11a") represents the "fa-face_meh" glyph.
+	FaceMehBlank                     nf.Glyph = "" //  ("\uee6d") represents the "fa-face_meh_blank" glyph.
+	FaceRollingEyes                  nf.Glyph = "" //  ("\uee6e") represents the "fa-face_rolling_eyes" glyph.
+	FaceSadCry                       nf.Glyph = "" //  ("\uee7b") represents the "fa-face_sad_cry" glyph.
+	FaceSadTear                      nf.Glyph = "" //  ("\uee7c") represents the "fa-face_sad_tear" glyph.
+	FaceSmile                        nf.Glyph = "" //  ("\uf118") represents the "fa-face_smile" glyph.
+	FaceSmileBeam                    nf.Glyph = "" //  ("\uee80") represents the "fa-face_smile_beam" glyph.
+	FaceSmileWink                    nf.Glyph = "" //  ("\ueda9") represents the "fa-face_smile_wink" glyph.
+	FaceSurprise                     nf.Glyph = "" //  ("\uee89") represents the "fa-face_surprise" glyph.
+	FaceTired                        nf.Glyph = "" //  ("\uee8f") represents the "fa-face_tired" glyph.
+	Facebook                         nf.Glyph = "" //  ("\uf09a") represents the "fa-facebook" glyph.
+	FacebookF                        nf.Glyph = "" //  ("\uf24f") represents the "fa-facebook_f" glyph.
+	FacebookMessenger                nf.Glyph = "" //  ("\uf25f") represents the "fa-facebook_messenger" glyph.
+	FacebookOfficial                 nf.Glyph = "" //  ("\uf230") represents the "fa-facebook_official" glyph.
+	FacebookSquare                   nf.Glyph = "" //  ("\uf082") represents the "fa-facebook_square" glyph.
+	Fan                              nf.Glyph = "" //  ("\uefa7") represents the "fa-fan" glyph.
+	FantasyFlightGames               nf.Glyph = "" //  ("\ueefb") represents the "fa-fantasy_flight_games" glyph.
+	FastBackward                     nf.Glyph = "" //  ("\uf049") represents the "fa-fast_backward" glyph.
+	FastForward                      nf.Glyph = "" //  ("\uf050") represents the "fa-fast_forward" glyph.
+	Fax                              nf.Glyph = "" //  ("\uf1ac") represents the "fa-fax" glyph.
+	Feather                          nf.Glyph = "" //  ("\uedf7") represents the "fa-feather" glyph.
+	FeatherPointed                   nf.Glyph = "" //  ("\uee34") represents the "fa-feather_pointed" glyph.
+	Fedex                            nf.Glyph = "" //  ("\uef45") represents the "fa-fedex" glyph.
+	Fedora                           nf.Glyph = "" //  ("\uef46") represents the "fa-fedora" glyph.
+	Feed                             nf.Glyph = "" //  ("\uf09e") represents the "fa-feed" glyph.
+	Female                           nf.Glyph = "" //  ("\uf182") represents the "fa-female" glyph.
+	FighterJet                       nf.Glyph = "" //  ("\uf0fb") represents the "fa-fighter_jet" glyph.
+	Figma                            nf.Glyph = "" //  ("\uef47") represents the "fa-figma" glyph.
+	File                             nf.Glyph = "" //  ("\uf15b") represents the "fa-file" glyph.
+	FileArchiveO                     nf.Glyph = "" //  ("\uf1c6") represents the "fa-file_archive_o" glyph.
+	FileArrowDown                    nf.Glyph = "" //  ("\uee36") represents the "fa-file_arrow_down" glyph.
+	FileArrowUp                      nf.Glyph = "" //  ("\uee3d") represents the "fa-file_arrow_up" glyph.
+	FileAudio                        nf.Glyph = "" //  ("\uf1c7") represents the "fa-file_audio" glyph.
+	FileAudioO                       nf.Glyph = "" //  ("\uf1c7") represents the "fa-file_audio_o" glyph.
+	FileCode                         nf.Glyph = "" //  ("\uf1c9") represents the "fa-file_code" glyph.
+	FileCodeO                        nf.Glyph = "" //  ("\uf1c9") represents the "fa-file_code_o" glyph.
+	FileContract                     nf.Glyph = "" //  ("\uee35") represents the "fa-file_contract" glyph.
+	FileCsv                          nf.Glyph = "" //  ("\ueefc") represents the "fa-file_csv" glyph.
+	FileExcel                        nf.Glyph = "" //  ("\uf1c3") represents the "fa-file_excel" glyph.
+	FileExcelO                       nf.Glyph = "" //  ("\uf1c3") represents the "fa-file_excel_o" glyph.
+	FileExport                       nf.Glyph = "" //  ("\uee37") represents the "fa-file_export" glyph.
+	FileImage                        nf.Glyph = "" //  ("\uf1c5") represents the "fa-file_image" glyph.
+	FileImageO                       nf.Glyph = "" //  ("\uf1c5") represents the "fa-file_image_o" glyph.
+	FileImport                       nf.Glyph = "" //  ("\uee38") represents the "fa-file_import" glyph.
+	FileInvoice                      nf.Glyph = "" //  ("\uee39") represents the "fa-file_invoice" glyph.
+	FileInvoiceDollar                nf.Glyph = "" //  ("\uee3a") represents the "fa-file_invoice_dollar" glyph.
+	FileLines                        nf.Glyph = "" //  ("\uf15c") represents the "fa-file_lines" glyph.
+	FileMedical                      nf.Glyph = "" //  ("\ued80") represents the "fa-file_medical" glyph.
+	FileMovieO                       nf.Glyph = "" //  ("\uf1c8") represents the "fa-file_movie_o" glyph.
+	FileO                            nf.Glyph = "" //  ("\uf016") represents the "fa-file_o" glyph.
+	FilePdf                          nf.Glyph = "" //  ("\uf1c1") represents the "fa-file_pdf" glyph.
+	FilePdfO                         nf.Glyph = "" //  ("\uf1c1") represents the "fa-file_pdf_o" glyph.
+	FilePen                          nf.Glyph = "" //  ("\uf05f") represents the "fa-file_pen" glyph.
+	FilePhotoO                       nf.Glyph = "" //  ("\uf1c5") represents the "fa-file_photo_o" glyph.
+	FilePictureO                     nf.Glyph = "" //  ("\uf1c5") represents the "fa-file_picture_o" glyph.
+	FilePowerpoint                   nf.Glyph = "" //  ("\uf1c4") represents the "fa-file_powerpoint" glyph.
+	FilePowerpointO                  nf.Glyph = "" //  ("\uf1c4") represents the "fa-file_powerpoint_o" glyph.
+	FilePrescription                 nf.Glyph = "" //  ("\uee3b") represents the "fa-file_prescription" glyph.
+	FileSignature                    nf.Glyph = "" //  ("\uee3c") represents the "fa-file_signature" glyph.
+	FileSoundO                       nf.Glyph = "" //  ("\uf1c7") represents the "fa-file_sound_o" glyph.
+	FileText                         nf.Glyph = "" //  ("\uf15c") represents the "fa-file_text" glyph.
+	FileTextO                        nf.Glyph = "" //  ("\uf0f6") represents the "fa-file_text_o" glyph.
+	FileVideo                        nf.Glyph = "" //  ("\uf1c8") represents the "fa-file_video" glyph.
+	FileVideoO                       nf.Glyph = "" //  ("\uf1c8") represents the "fa-file_video_o" glyph.
+	FileWaveform                     nf.Glyph = "" //  ("\ued81") represents the "fa-file_waveform" glyph.
+	FileWord                         nf.Glyph = "" //  ("\uf1c2") represents the "fa-file_word" glyph.
+	FileWordO                        nf.Glyph = "" //  ("\uf1c2") represents the "fa-file_word_o" glyph.
+	FileZipO                         nf.Glyph = "" //  ("\uf1c6") represents the "fa-file_zip_o" glyph.
+	FileZipper                       nf.Glyph = "" //  ("\uf1c6") represents the "fa-file_zipper" glyph.
+	FilesO                           nf.Glyph = "" //  ("\uf0c5") represents the "fa-files_o" glyph.
+	Fill                             nf.Glyph = "" //  ("\uee3e") represents the "fa-fill" glyph.
+	FillDrip                         nf.Glyph = "" //  ("\uee3f") represents the "fa-fill_drip" glyph.
+	Film                             nf.Glyph = "" //  ("\uf008") represents the "fa-film" glyph.
+	Filter                           nf.Glyph = "" //  ("\uf0b0") represents the "fa-filter" glyph.
+	FilterCircleDollar               nf.Glyph = "" //  ("\ueec8") represents the "fa-filter_circle_dollar" glyph.
+	Fingerprint                      nf.Glyph = "" //  ("\uee40") represents the "fa-fingerprint" glyph.
+	Fire                             nf.Glyph = "" //  ("\uf06d") represents the "fa-fire" glyph.
+	FireExtinguisher                 nf.Glyph = "" //  ("\uf134") represents the "fa-fire_extinguisher" glyph.
+	FireFlameCurved                  nf.Glyph = "" //  ("\uef76") represents the "fa-fire_flame_curved" glyph.
+	FireFlameSimple                  nf.Glyph = "" //  ("\ued78") represents the "fa-fire_flame_simple" glyph.
+	Firefox                          nf.Glyph = "" //  ("\uf269") represents the "fa-firefox" glyph.
+	FirstOrder                       nf.Glyph = "" //  ("\uf2b0") represents the "fa-first_order" glyph.
+	FirstOrderAlt                    nf.Glyph = "" //  ("\uedd4") represents the "fa-first_order_alt" glyph.
+	Firstdraft                       nf.Glyph = "" //  ("\uf262") represents the "fa-firstdraft" glyph.
+	Fish                             nf.Glyph = "" //  ("\uee41") represents the "fa-fish" glyph.
+	Flag                             nf.Glyph = "" //  ("\uf024") represents the "fa-flag" glyph.
+	FlagCheckered                    nf.Glyph = "" //  ("\uf11e") represents the "fa-flag_checkered" glyph.
+	FlagO                            nf.Glyph = "" //  ("\uf11d") represents the "fa-flag_o" glyph.
+	FlagUsa                          nf.Glyph = "" //  ("\uef20") represents the "fa-flag_usa" glyph.
+	Flash                            nf.Glyph = "" //  ("\uf0e7") represents the "fa-flash" glyph.
+	Flask                            nf.Glyph = "" //  ("\uf0c3") represents the "fa-flask" glyph.
+	Flickr                           nf.Glyph = "" //  ("\uf16e") represents the "fa-flickr" glyph.
+	Flipboard                        nf.Glyph = "" //  ("\ued68") represents the "fa-flipboard" glyph.
+	FloppyDisk                       nf.Glyph = "" //  ("\uf0c7") represents the "fa-floppy_disk" glyph.
+	FloppyO                          nf.Glyph = "" //  ("\uf0c7") represents the "fa-floppy_o" glyph.
+	Fly                              nf.Glyph = "" //  ("\ued43") represents the "fa-fly" glyph.
+	Folder                           nf.Glyph = "" //  ("\uf07b") represents the "fa-folder" glyph.
+	FolderMinus                      nf.Glyph = "" //  ("\ueec6") represents the "fa-folder_minus" glyph.
+	FolderO                          nf.Glyph = "" //  ("\uf114") represents the "fa-folder_o" glyph.
+	FolderOpen                       nf.Glyph = "" //  ("\uf07c") represents the "fa-folder_open" glyph.
+	FolderOpenO                      nf.Glyph = "" //  ("\uf115") represents the "fa-folder_open_o" glyph.
+	FolderPlus                       nf.Glyph = "" //  ("\ueec7") represents the "fa-folder_plus" glyph.
+	FolderTree                       nf.Glyph = "" //  ("\uef81") represents the "fa-folder_tree" glyph.
+	Font                             nf.Glyph = "" //  ("\uf031") represents the "fa-font" glyph.
+	FontAwesome                      nf.Glyph = "" //  ("\uf2b4") represents the "fa-font_awesome" glyph.
+	Fonticons                        nf.Glyph = "" //  ("\uf280") represents the "fa-fonticons" glyph.
+	FonticonsFi                      nf.Glyph = "" //  ("\uf26f") represents the "fa-fonticons_fi" glyph.
+	Football                         nf.Glyph = "" //  ("\ued69") represents the "fa-football" glyph.
+	FortAwesome                      nf.Glyph = "" //  ("\uf286") represents the "fa-fort_awesome" glyph.
+	FortAwesomeAlt                   nf.Glyph = "" //  ("\uf27f") represents the "fa-fort_awesome_alt" glyph.
+	Forumbee                         nf.Glyph = "" //  ("\uf211") represents the "fa-forumbee" glyph.
+	Forward                          nf.Glyph = "" //  ("\uf04e") represents the "fa-forward" glyph.
+	ForwardFast                      nf.Glyph = "" //  ("\uf050") represents the "fa-forward_fast" glyph.
+	ForwardStep                      nf.Glyph = "" //  ("\uf051") represents the "fa-forward_step" glyph.
+	Foursquare                       nf.Glyph = "" //  ("\uf180") represents the "fa-foursquare" glyph.
+	FreeCodeCamp                     nf.Glyph = "" //  ("\uf2c5") represents the "fa-free_code_camp" glyph.
+	Freebsd                          nf.Glyph = "" //  ("\uf28f") represents the "fa-freebsd" glyph.
+	Frog                             nf.Glyph = "" //  ("\uedf8") represents the "fa-frog" glyph.
+	FrownO                           nf.Glyph = "" //  ("\uf119") represents the "fa-frown_o" glyph.
+	Fulcrum                          nf.Glyph = "" //  ("\uedd5") represents the "fa-fulcrum" glyph.
+	Futbol                           nf.Glyph = "" //  ("\uf1e3") represents the "fa-futbol" glyph.
+	FutbolO                          nf.Glyph = "" //  ("\uf1e3") represents the "fa-futbol_o" glyph.
+	GalacticRepublic                 nf.Glyph = "" //  ("\uedd6") represents the "fa-galactic_republic" glyph.
+	GalacticSenate                   nf.Glyph = "" //  ("\uedd7") represents the "fa-galactic_senate" glyph.
+	Gamepad                          nf.Glyph = "" //  ("\uf11b") represents the "fa-gamepad" glyph.
+	GasPump                          nf.Glyph = "" //  ("\uedf9") represents the "fa-gas_pump" glyph.
+	Gauge                            nf.Glyph = "" //  ("\ueeb2") represents the "fa-gauge" glyph.
+	GaugeHigh                        nf.Glyph = "" //  ("\ued2f") represents the "fa-gauge_high" glyph.
+	GaugeSimple                      nf.Glyph = "" //  ("\ueeb3") represents the "fa-gauge_simple" glyph.
+	GaugeSimpleHigh                  nf.Glyph = "" //  ("\uf0e4") represents the "fa-gauge_simple_high" glyph.
+	Gavel                            nf.Glyph = "" //  ("\uf0e3") represents the "fa-gavel" glyph.
+	Gbp                              nf.Glyph = "" //  ("\uf154") represents the "fa-gbp" glyph.
+	Ge                               nf.Glyph = "" //  ("\uf1d1") represents the "fa-ge" glyph.
+	Gear                             nf.Glyph = "" //  ("\uf013") represents the "fa-gear" glyph.
+	Gears                            nf.Glyph = "" //  ("\uf085") represents the "fa-gears" glyph.
+	Gem                              nf.Glyph = "" //  ("\uf219") represents the "fa-gem" glyph.
+	Genderless                       nf.Glyph = "" //  ("\uf22d") represents the "fa-genderless" glyph.
+	GetPocket                        nf.Glyph = "" //  ("\uf265") represents the "fa-get_pocket" glyph.
+	Gg                               nf.Glyph = "" //  ("\uf260") represents the "fa-gg" glyph.
+	GgCircle                         nf.Glyph = "" //  ("\uf261") represents the "fa-gg_circle" glyph.
+	Ghost                            nf.Glyph = "" //  ("\ueefe") represents the "fa-ghost" glyph.
+	Gift                             nf.Glyph = "" //  ("\uf06b") represents the "fa-gift" glyph.
+	Gifts                            nf.Glyph = "" //  ("\uef48") represents the "fa-gifts" glyph.
+	Git                              nf.Glyph = "" //  ("\uf1d3") represents the "fa-git" glyph.
+	GitAlt                           nf.Glyph = "" //  ("\uefa0") represents the "fa-git_alt" glyph.
+	GitSquare                        nf.Glyph = "" //  ("\uf1d2") represents the "fa-git_square" glyph.
+	Github                           nf.Glyph = "" //  ("\uf09b") represents the "fa-github" glyph.
+	GithubAlt                        nf.Glyph = "" //  ("\uf113") represents the "fa-github_alt" glyph.
+	GithubSquare                     nf.Glyph = "" //  ("\uf092") represents the "fa-github_square" glyph.
+	Gitkraken                        nf.Glyph = "" //  ("\uf2ac") represents the "fa-gitkraken" glyph.
+	Gitlab                           nf.Glyph = "" //  ("\uf296") represents the "fa-gitlab" glyph.
+	Gitter                           nf.Glyph = "" //  ("\ued50") represents the "fa-gitter" glyph.
+	Gittip                           nf.Glyph = "" //  ("\uf184") represents the "fa-gittip" glyph.
+	Glass                            nf.Glyph = "" //  ("\uf000") represents the "fa-glass" glyph.
+	Glasses                          nf.Glyph = "" //  ("\uedfa") represents the "fa-glasses" glyph.
+	Glide                            nf.Glyph = "" //  ("\uf2a5") represents the "fa-glide" glyph.
+	GlideG                           nf.Glyph = "" //  ("\uf2a6") represents the "fa-glide_g" glyph.
+	Globe                            nf.Glyph = "" //  ("\uf0ac") represents the "fa-globe" glyph.
+	Gofore                           nf.Glyph = "" //  ("\uf2af") represents the "fa-gofore" glyph.
+	GolfBallTee                      nf.Glyph = "" //  ("\ued6a") represents the "fa-golf_ball_tee" glyph.
+	Goodreads                        nf.Glyph = "" //  ("\uf2bf") represents the "fa-goodreads" glyph.
+	GoodreadsG                       nf.Glyph = "" //  ("\uf2cf") represents the "fa-goodreads_g" glyph.
+	Google                           nf.Glyph = "" //  ("\uf1a0") represents the "fa-google" glyph.
+	GoogleDrive                      nf.Glyph = "" //  ("\uf2df") represents the "fa-google_drive" glyph.
+	GooglePlay                       nf.Glyph = "" //  ("\uf2e1") represents the "fa-google_play" glyph.
+	GooglePlus                       nf.Glyph = "" //  ("\uf0d5") represents the "fa-google_plus" glyph.
+	GooglePlusCircle                 nf.Glyph = "" //  ("\uf2b3") represents the "fa-google_plus_circle" glyph.
+	GooglePlusOfficial               nf.Glyph = "" //  ("\uf2b3") represents the "fa-google_plus_official" glyph.
+	GooglePlusSquare                 nf.Glyph = "" //  ("\uf0d4") represents the "fa-google_plus_square" glyph.
+	GoogleWallet                     nf.Glyph = "" //  ("\uf1ee") represents the "fa-google_wallet" glyph.
+	Gopuram                          nf.Glyph = "" //  ("\ueec9") represents the "fa-gopuram" glyph.
+	GraduationCap                    nf.Glyph = "" //  ("\uf19d") represents the "fa-graduation_cap" glyph.
+	Gratipay                         nf.Glyph = "" //  ("\uf184") represents the "fa-gratipay" glyph.
+	Grav                             nf.Glyph = "" //  ("\uf2d6") represents the "fa-grav" glyph.
+	GreaterThan                      nf.Glyph = "" //  ("\uedfb") represents the "fa-greater_than" glyph.
+	GreaterThanEqual                 nf.Glyph = "" //  ("\uedfc") represents the "fa-greater_than_equal" glyph.
+	Grip                             nf.Glyph = "" //  ("\uee56") represents the "fa-grip" glyph.
+	GripLines                        nf.Glyph = "" //  ("\uef4c") represents the "fa-grip_lines" glyph.
+	GripLinesVertical                nf.Glyph = "" //  ("\uef4d") represents the "fa-grip_lines_vertical" glyph.
+	GripVertical                     nf.Glyph = "" //  ("\uee57") represents the "fa-grip_vertical" glyph.
+	Gripfire                         nf.Glyph = "" //  ("\uf2e2") represents the "fa-gripfire" glyph.
+	Group                            nf.Glyph = "" //  ("\uf0c0") represents the "fa-group" glyph.
+	Grunt                            nf.Glyph = "" //  ("\uf2e3") represents the "fa-grunt" glyph.
+	Guitar                           nf.Glyph = "" //  ("\uef4e") represents the "fa-guitar" glyph.
+	Gulp                             nf.Glyph = "" //  ("\uf2e4") represents the "fa-gulp" glyph.
+	HSquare                          nf.Glyph = "" //  ("\uf0fd") represents the "fa-h_square" glyph.
+	HackerNews                       nf.Glyph = "" //  ("\uf1d4") represents the "fa-hacker_news" glyph.
+	Hackerrank                       nf.Glyph = "" //  ("\ueea5") represents the "fa-hackerrank" glyph.
+	Hammer                           nf.Glyph = "" //  ("\ueeff") represents the "fa-hammer" glyph.
+	Hamsa                            nf.Glyph = "" //  ("\ueeca") represents the "fa-hamsa" glyph.
+	Hand                             nf.Glyph = "" //  ("\uf256") represents the "fa-hand" glyph.
+	HandBackFist                     nf.Glyph = "" //  ("\uf255") represents the "fa-hand_back_fist" glyph.
+	HandDots                         nf.Glyph = "" //  ("\ued73") represents the "fa-hand_dots" glyph.
+	HandFist                         nf.Glyph = "" //  ("\ueefd") represents the "fa-hand_fist" glyph.
+	HandGrabO                        nf.Glyph = "" //  ("\uf255") represents the "fa-hand_grab_o" glyph.
+	HandHolding                      nf.Glyph = "" //  ("\ued9a") represents the "fa-hand_holding" glyph.
+	HandHoldingDollar                nf.Glyph = "" //  ("\ued9c") represents the "fa-hand_holding_dollar" glyph.
+	HandHoldingDroplet               nf.Glyph = "" //  ("\ued9d") represents the "fa-hand_holding_droplet" glyph.
+	HandHoldingHeart                 nf.Glyph = "" //  ("\ued9b") represents the "fa-hand_holding_heart" glyph.
+	HandLizard                       nf.Glyph = "" //  ("\uf258") represents the "fa-hand_lizard" glyph.
+	HandLizardO                      nf.Glyph = "" //  ("\uf258") represents the "fa-hand_lizard_o" glyph.
+	HandMiddleFinger                 nf.Glyph = "" //  ("\uef83") represents the "fa-hand_middle_finger" glyph.
+	HandODown                        nf.Glyph = "" //  ("\uf0a7") represents the "fa-hand_o_down" glyph.
+	HandOLeft                        nf.Glyph = "" //  ("\uf0a5") represents the "fa-hand_o_left" glyph.
+	HandORight                       nf.Glyph = "" //  ("\uf0a4") represents the "fa-hand_o_right" glyph.
+	HandOUp                          nf.Glyph = "" //  ("\uf0a6") represents the "fa-hand_o_up" glyph.
+	HandPaperO                       nf.Glyph = "" //  ("\uf256") represents the "fa-hand_paper_o" glyph.
+	HandPeace                        nf.Glyph = "" //  ("\uf25b") represents the "fa-hand_peace" glyph.
+	HandPeaceO                       nf.Glyph = "" //  ("\uf25b") represents the "fa-hand_peace_o" glyph.
+	HandPointDown                    nf.Glyph = "" //  ("\uf0a7") represents the "fa-hand_point_down" glyph.
+	HandPointLeft                    nf.Glyph = "" //  ("\uf0a5") represents the "fa-hand_point_left" glyph.
+	HandPointRight                   nf.Glyph = "" //  ("\uf0a4") represents the "fa-hand_point_right" glyph.
+	HandPointUp                      nf.Glyph = "" //  ("\uf0a6") represents the "fa-hand_point_up" glyph.
+	HandPointer                      nf.Glyph = "" //  ("\uf25a") represents the "fa-hand_pointer" glyph.
+	HandPointerO                     nf.Glyph = "" //  ("\uf25a") represents the "fa-hand_pointer_o" glyph.
+	HandRockO                        nf.Glyph = "" //  ("\uf255") represents the "fa-hand_rock_o" glyph.
+	HandScissors                     nf.Glyph = "" //  ("\uf257") represents the "fa-hand_scissors" glyph.
+	HandScissorsO                    nf.Glyph = "" //  ("\uf257") represents the "fa-hand_scissors_o" glyph.
+	HandSpock                        nf.Glyph = "" //  ("\uf259") represents the "fa-hand_spock" glyph.
+	HandSpockO                       nf.Glyph = "" //  ("\uf259") represents the "fa-hand_spock_o" glyph.
+	HandStopO                        nf.Glyph = "" //  ("\uf256") represents the "fa-hand_stop_o" glyph.
+	Hands                            nf.Glyph = "" //  ("\uf2a7") represents the "fa-hands" glyph.
+	HandsAslInterpreting             nf.Glyph = "" //  ("\uf2a3") represents the "fa-hands_asl_interpreting" glyph.
+	HandsHolding                     nf.Glyph = "" //  ("\ued9e") represents the "fa-hands_holding" glyph.
+	HandsPraying                     nf.Glyph = "" //  ("\ueedb") represents the "fa-hands_praying" glyph.
+	Handshake                        nf.Glyph = "" //  ("\uf2b5") represents the "fa-handshake" glyph.
+	HandshakeAngle                   nf.Glyph = "" //  ("\ued9f") represents the "fa-handshake_angle" glyph.
+	HandshakeO                       nf.Glyph = "" //  ("\uf2b5") represents the "fa-handshake_o" glyph.
+	HandshakeSimple                  nf.Glyph = "" //  ("\ueda0") represents the "fa-handshake_simple" glyph.
+	Hanukiah                         nf.Glyph = "" //  ("\uef00") represents the "fa-hanukiah" glyph.
+	HardDrive                        nf.Glyph = "" //  ("\uf0a0") represents the "fa-hard_drive" glyph.
+	HardOfHearing                    nf.Glyph = "" //  ("\uf2a4") represents the "fa-hard_of_hearing" glyph.
+	Hashtag                          nf.Glyph = "" //  ("\uf292") represents the "fa-hashtag" glyph.
+	HatCowboy                        nf.Glyph = "" //  ("\uefb7") represents the "fa-hat_cowboy" glyph.
+	HatCowboySide                    nf.Glyph = "" //  ("\uefb8") represents the "fa-hat_cowboy_side" glyph.
+	HatWizard                        nf.Glyph = "" //  ("\uef01") represents the "fa-hat_wizard" glyph.
+	HddO                             nf.Glyph = "" //  ("\uf0a0") represents the "fa-hdd_o" glyph.
+	Header                           nf.Glyph = "" //  ("\uf1dc") represents the "fa-header" glyph.
+	Heading                          nf.Glyph = "" //  ("\uf1dc") represents the "fa-heading" glyph.
+	Headphones                       nf.Glyph = "" //  ("\uf025") represents the "fa-headphones" glyph.
+	HeadphonesSimple                 nf.Glyph = "" //  ("\uee58") represents the "fa-headphones_simple" glyph.
+	Headset                          nf.Glyph = "" //  ("\uee59") represents the "fa-headset" glyph.
+	HeardO                           nf.Glyph = "" //  ("\uf08a") represents the "fa-heard_o" glyph.
+	Heart                            nf.Glyph = "" //  ("\uf004") represents the "fa-heart" glyph.
+	HeartCrack                       nf.Glyph = "" //  ("\uef4f") represents the "fa-heart_crack" glyph.
+	HeartO                           nf.Glyph = "" //  ("\uf08a") represents the "fa-heart_o" glyph.
+	HeartPulse                       nf.Glyph = "" //  ("\uf21e") represents the "fa-heart_pulse" glyph.
+	Heartbeat                        nf.Glyph = "" //  ("\uf21e") represents the "fa-heartbeat" glyph.
+	Helicopter                       nf.Glyph = "" //  ("\uedfd") represents the "fa-helicopter" glyph.
+	HelmetSafety                     nf.Glyph = "" //  ("\uef84") represents the "fa-helmet_safety" glyph.
+	Highlighter                      nf.Glyph = "" //  ("\uee5a") represents the "fa-highlighter" glyph.
+	Hippo                            nf.Glyph = "" //  ("\uef03") represents the "fa-hippo" glyph.
+	Hips                             nf.Glyph = "" //  ("\ued6b") represents the "fa-hips" glyph.
+	HireAHelper                      nf.Glyph = "" //  ("\uf2e6") represents the "fa-hire_a_helper" glyph.
+	History                          nf.Glyph = "" //  ("\uf1da") represents the "fa-history" glyph.
+	HockeyPuck                       nf.Glyph = "" //  ("\ued6c") represents the "fa-hockey_puck" glyph.
+	HollyBerry                       nf.Glyph = "" //  ("\uef50") represents the "fa-holly_berry" glyph.
+	Home                             nf.Glyph = "" //  ("\uf015") represents the "fa-home" glyph.
+	Hooli                            nf.Glyph = "" //  ("\ued51") represents the "fa-hooli" glyph.
+	Hornbill                         nf.Glyph = "" //  ("\uee5b") represents the "fa-hornbill" glyph.
+	Horse                            nf.Glyph = "" //  ("\uef04") represents the "fa-horse" glyph.
+	HorseHead                        nf.Glyph = "" //  ("\uef51") represents the "fa-horse_head" glyph.
+	Hospital                         nf.Glyph = "" //  ("\uf0f8") represents the "fa-hospital" glyph.
+	HospitalO                        nf.Glyph = "" //  ("\uf0f8") represents the "fa-hospital_o" glyph.
+	HospitalUser                     nf.Glyph = "" //  ("\uef86") represents the "fa-hospital_user" glyph.
+	HotTubPerson                     nf.Glyph = "" //  ("\uee5c") represents the "fa-hot_tub_person" glyph.
+	Hotdog                           nf.Glyph = "" //  ("\uef87") represents the "fa-hotdog" glyph.
+	Hotel                            nf.Glyph = "" //  ("\uf236") represents the "fa-hotel" glyph.
+	HotelBuilding                    nf.Glyph = "" //  ("\uee5d") represents the "fa-hotel_building" glyph.
+	Hotjar                           nf.Glyph = "" //  ("\uf2e7") represents the "fa-hotjar" glyph.
+	Hourglass                        nf.Glyph = "" //  ("\uf254") represents the "fa-hourglass" glyph.
+	Hourglass1                       nf.Glyph = "" //  ("\uf251") represents the "fa-hourglass_1" glyph.
+	Hourglass2                       nf.Glyph = "" //  ("\uf252") represents the "fa-hourglass_2" glyph.
+	Hourglass3                       nf.Glyph = "" //  ("\uf253") represents the "fa-hourglass_3" glyph.
+	HourglassEnd                     nf.Glyph = "" //  ("\uf253") represents the "fa-hourglass_end" glyph.
+	HourglassHalf                    nf.Glyph = "" //  ("\uf252") represents the "fa-hourglass_half" glyph.
+	HourglassO                       nf.Glyph = "" //  ("\uf250") represents the "fa-hourglass_o" glyph.
+	HourglassStart                   nf.Glyph = "" //  ("\uf251") represents the "fa-hourglass_start" glyph.
+	House                            nf.Glyph = "" //  ("\uf015") represents the "fa-house" glyph.
+	HouseChimney                     nf.Glyph = "" //  ("\uef85") represents the "fa-house_chimney" glyph.
+	HouseChimneyCrack                nf.Glyph = "" //  ("\uef05") represents the "fa-house_chimney_crack" glyph.
+	HouseChimneyMedical              nf.Glyph = "" //  ("\uef7b") represents the "fa-house_chimney_medical" glyph.
+	Houzz                            nf.Glyph = "" //  ("\uf27c") represents the "fa-houzz" glyph.
+	HryvniaSign                      nf.Glyph = "" //  ("\uef06") represents the "fa-hryvnia_sign" glyph.
+	Html5                            nf.Glyph = "" //  ("\uf13b") represents the "fa-html5" glyph.
+	Hubspot                          nf.Glyph = "" //  ("\uf2e8") represents the "fa-hubspot" glyph.
+	Hurricane                        nf.Glyph = "" //  ("\uef21") represents the "fa-hurricane" glyph.
+	ICursor                          nf.Glyph = "" //  ("\uf246") represents the "fa-i_cursor" glyph.
+	IceCream                         nf.Glyph = "" //  ("\uef88") represents the "fa-ice_cream" glyph.
+	Icicles                          nf.Glyph = "" //  ("\uef52") represents the "fa-icicles" glyph.
+	Icons                            nf.Glyph = "" //  ("\uefa8") represents the "fa-icons" glyph.
+	IdBadge                          nf.Glyph = "" //  ("\uf2c1") represents the "fa-id_badge" glyph.
+	IdCard                           nf.Glyph = "" //  ("\uf2c2") represents the "fa-id_card" glyph.
+	IdCardClip                       nf.Glyph = "" //  ("\ued84") represents the "fa-id_card_clip" glyph.
+	IdCardO                          nf.Glyph = "" //  ("\uf2c3") represents the "fa-id_card_o" glyph.
+	Igloo                            nf.Glyph = "" //  ("\uef53") represents the "fa-igloo" glyph.
+	Ils                              nf.Glyph = "" //  ("\uf20b") represents the "fa-ils" glyph.
+	Image                            nf.Glyph = "" //  ("\uf03e") represents the "fa-image" glyph.
+	ImagePortrait                    nf.Glyph = "" //  ("\ued19") represents the "fa-image_portrait" glyph.
+	Images                           nf.Glyph = "" //  ("\uf00f") represents the "fa-images" glyph.
+	Imdb                             nf.Glyph = "" //  ("\uf2d8") represents the "fa-imdb" glyph.
+	Inbox                            nf.Glyph = "" //  ("\uf01c") represents the "fa-inbox" glyph.
+	Indent                           nf.Glyph = "" //  ("\uf03c") represents the "fa-indent" glyph.
+	Industry                         nf.Glyph = "" //  ("\uf275") represents the "fa-industry" glyph.
+	Infinity                         nf.Glyph = "" //  ("\uedfe") represents the "fa-infinity" glyph.
+	Info                             nf.Glyph = "" //  ("\uf129") represents the "fa-info" glyph.
+	InfoCircle                       nf.Glyph = "" //  ("\uf05a") represents the "fa-info_circle" glyph.
+	Inr                              nf.Glyph = "" //  ("\uf156") represents the "fa-inr" glyph.
+	Instagram                        nf.Glyph = "" //  ("\uf16d") represents the "fa-instagram" glyph.
+	Institution                      nf.Glyph = "" //  ("\uf19c") represents the "fa-institution" glyph.
+	Intercom                         nf.Glyph = "" //  ("\uef54") represents the "fa-intercom" glyph.
+	InternetExplorer                 nf.Glyph = "" //  ("\uf26b") represents the "fa-internet_explorer" glyph.
+	Intersex                         nf.Glyph = "" //  ("\uf224") represents the "fa-intersex" glyph.
+	Invision                         nf.Glyph = "" //  ("\uef55") represents the "fa-invision" glyph.
+	Ioxhost                          nf.Glyph = "" //  ("\uf208") represents the "fa-ioxhost" glyph.
+	Italic                           nf.Glyph = "" //  ("\uf033") represents the "fa-italic" glyph.
+	ItchIo                           nf.Glyph = "" //  ("\uef99") represents the "fa-itch_io" glyph.
+	Itunes                           nf.Glyph = "" //  ("\uf2e9") represents the "fa-itunes" glyph.
+	ItunesNote                       nf.Glyph = "" //  ("\uf2eb") represents the "fa-itunes_note" glyph.
+	Java                             nf.Glyph = "" //  ("\uedaf") represents the "fa-java" glyph.
+	Jedi                             nf.Glyph = "" //  ("\ueecc") represents the "fa-jedi" glyph.
+	JediOrder                        nf.Glyph = "" //  ("\uedd8") represents the "fa-jedi_order" glyph.
+	Jenkins                          nf.Glyph = "" //  ("\uf2ec") represents the "fa-jenkins" glyph.
+	JetFighter                       nf.Glyph = "" //  ("\uf0fb") represents the "fa-jet_fighter" glyph.
+	Jira                             nf.Glyph = "" //  ("\uef56") represents the "fa-jira" glyph.
+	Joget                            nf.Glyph = "" //  ("\uf2ed") represents the "fa-joget" glyph.
+	Joint                            nf.Glyph = "" //  ("\uee5e") represents the "fa-joint" glyph.
+	Joomla                           nf.Glyph = "" //  ("\uf1aa") represents the "fa-joomla" glyph.
+	Jpy                              nf.Glyph = "" //  ("\uf157") represents the "fa-jpy" glyph.
+	Js                               nf.Glyph = "" //  ("\uf2ee") represents the "fa-js" glyph.
+	Jsfiddle                         nf.Glyph = "" //  ("\uf1cc") represents the "fa-jsfiddle" glyph.
+	Kaaba                            nf.Glyph = "" //  ("\ueece") represents the "fa-kaaba" glyph.
+	Kaggle                           nf.Glyph = "" //  ("\ueea6") represents the "fa-kaggle" glyph.
+	Key                              nf.Glyph = "" //  ("\uf084") represents the "fa-key" glyph.
+	Keybase                          nf.Glyph = "" //  ("\uedbf") represents the "fa-keybase" glyph.
+	Keyboard                         nf.Glyph = "" //  ("\uf11c") represents the "fa-keyboard" glyph.
+	KeyboardO                        nf.Glyph = "" //  ("\uf11c") represents the "fa-keyboard_o" glyph.
+	Keycdn                           nf.Glyph = "" //  ("\uf2f0") represents the "fa-keycdn" glyph.
+	Khanda                           nf.Glyph = "" //  ("\ueecf") represents the "fa-khanda" glyph.
+	Kickstarter                      nf.Glyph = "" //  ("\uf2f3") represents the "fa-kickstarter" glyph.
+	KickstarterK                     nf.Glyph = "" //  ("\uf2f4") represents the "fa-kickstarter_k" glyph.
+	KitMedical                       nf.Glyph = "" //  ("\ued82") represents the "fa-kit_medical" glyph.
+	KiwiBird                         nf.Glyph = "" //  ("\uedff") represents the "fa-kiwi_bird" glyph.
+	Korvue                           nf.Glyph = "" //  ("\ued59") represents the "fa-korvue" glyph.
+	Krw                              nf.Glyph = "" //  ("\uf159") represents the "fa-krw" glyph.
+	Landmark                         nf.Glyph = "" //  ("\ueed0") represents the "fa-landmark" glyph.
+	LandmarkDome                     nf.Glyph = "" //  ("\uef22") represents the "fa-landmark_dome" glyph.
+	Language                         nf.Glyph = "" //  ("\uf1ab") represents the "fa-language" glyph.
+	Laptop                           nf.Glyph = "" //  ("\uf109") represents the "fa-laptop" glyph.
+	LaptopCode                       nf.Glyph = "" //  ("\ueea7") represents the "fa-laptop_code" glyph.
+	LaptopMedical                    nf.Glyph = "" //  ("\uef89") represents the "fa-laptop_medical" glyph.
+	Laravel                          nf.Glyph = "" //  ("\uf2f7") represents the "fa-laravel" glyph.
+	Lastfm                           nf.Glyph = "" //  ("\uf202") represents the "fa-lastfm" glyph.
+	LastfmSquare                     nf.Glyph = "" //  ("\uf203") represents the "fa-lastfm_square" glyph.
+	LayerGroup                       nf.Glyph = "" //  ("\ueea8") represents the "fa-layer_group" glyph.
+	Leaf                             nf.Glyph = "" //  ("\uf06c") represents the "fa-leaf" glyph.
+	Leanpub                          nf.Glyph = "" //  ("\uf212") represents the "fa-leanpub" glyph.
+	LeftLong                         nf.Glyph = "" //  ("\uf04f") represents the "fa-left_long" glyph.
+	LeftRight                        nf.Glyph = "" //  ("\uf08f") represents the "fa-left_right" glyph.
+	Legal                            nf.Glyph = "" //  ("\uf0e3") represents the "fa-legal" glyph.
+	Lemon                            nf.Glyph = "" //  ("\uf094") represents the "fa-lemon" glyph.
+	LemonO                           nf.Glyph = "" //  ("\uf094") represents the "fa-lemon_o" glyph.
+	Less                             nf.Glyph = "" //  ("\ued48") represents the "fa-less" glyph.
+	LessThan                         nf.Glyph = "" //  ("\uefc3") represents the "fa-less_than" glyph.
+	LessThanEqual                    nf.Glyph = "" //  ("\uefc4") represents the "fa-less_than_equal" glyph.
+	LevelDown                        nf.Glyph = "" //  ("\uf149") represents the "fa-level_down" glyph.
+	LevelUp                          nf.Glyph = "" //  ("\uf148") represents the "fa-level_up" glyph.
+	LifeBouy                         nf.Glyph = "" //  ("\uf1cd") represents the "fa-life_bouy" glyph.
+	LifeBuoy                         nf.Glyph = "" //  ("\uf1cd") represents the "fa-life_buoy" glyph.
+	LifeRing                         nf.Glyph = "" //  ("\uf1cd") represents the "fa-life_ring" glyph.
+	LifeSaver                        nf.Glyph = "" //  ("\uf1cd") represents the "fa-life_saver" glyph.
+	Lightbulb                        nf.Glyph = "" //  ("\uf0eb") represents the "fa-lightbulb" glyph.
+	LightbulbO                       nf.Glyph = "" //  ("\uf0eb") represents the "fa-lightbulb_o" glyph.
+	Line                             nf.Glyph = "" //  ("\uf2fb") represents the "fa-line" glyph.
+	LineChart                        nf.Glyph = "" //  ("\uf201") represents the "fa-line_chart" glyph.
+	Link                             nf.Glyph = "" //  ("\uf0c1") represents the "fa-link" glyph.
+	LinkSlash                        nf.Glyph = "" //  ("\uf127") represents the "fa-link_slash" glyph.
+	Linkedin                         nf.Glyph = "" //  ("\uf0e1") represents the "fa-linkedin" glyph.
+	LinkedinIn                       nf.Glyph = "" //  ("\uf0e1") represents the "fa-linkedin_in" glyph.
+	LinkedinSquare                   nf.Glyph = "" //  ("\uf08c") represents the "fa-linkedin_square" glyph.
+	Linode                           nf.Glyph = "" //  ("\uf2b8") represents the "fa-linode" glyph.
+	Linux                            nf.Glyph = "" //  ("\uf17c") represents the "fa-linux" glyph.
+	LiraSign                         nf.Glyph = "" //  ("\uf195") represents the "fa-lira_sign" glyph.
+	List                             nf.Glyph = "" //  ("\uf03a") represents the "fa-list" glyph.
+	ListAlt                          nf.Glyph = "" //  ("\uf022") represents the "fa-list_alt" glyph.
+	ListCheck                        nf.Glyph = "" //  ("\uf0ae") represents the "fa-list_check" glyph.
+	ListOl                           nf.Glyph = "" //  ("\uf0cb") represents the "fa-list_ol" glyph.
+	ListUl                           nf.Glyph = "" //  ("\uf0ca") represents the "fa-list_ul" glyph.
+	LocationArrow                    nf.Glyph = "" //  ("\uf124") represents the "fa-location_arrow" glyph.
+	LocationCrosshairs               nf.Glyph = "" //  ("\ueea9") represents the "fa-location_crosshairs" glyph.
+	LocationDot                      nf.Glyph = "" //  ("\ued00") represents the "fa-location_dot" glyph.
+	LocationPin                      nf.Glyph = "" //  ("\uf041") represents the "fa-location_pin" glyph.
+	Lock                             nf.Glyph = "" //  ("\uf023") represents the "fa-lock" glyph.
+	LockOpen                         nf.Glyph = "" //  ("\uf2fc") represents the "fa-lock_open" glyph.
+	LongArrowDown                    nf.Glyph = "" //  ("\uf175") represents the "fa-long_arrow_down" glyph.
+	LongArrowLeft                    nf.Glyph = "" //  ("\uf177") represents the "fa-long_arrow_left" glyph.
+	LongArrowRight                   nf.Glyph = "" //  ("\uf178") represents the "fa-long_arrow_right" glyph.
+	LongArrowUp                      nf.Glyph = "" //  ("\uf176") represents the "fa-long_arrow_up" glyph.
+	LowVision                        nf.Glyph = "" //  ("\uf2a8") represents the "fa-low_vision" glyph.
+	Lungs                            nf.Glyph = "" //  ("\ueeaa") represents the "fa-lungs" glyph.
+	Lyft                             nf.Glyph = "" //  ("\uf2fd") represents the "fa-lyft" glyph.
+	Magento                          nf.Glyph = "" //  ("\uf2ff") represents the "fa-magento" glyph.
+	Magic                            nf.Glyph = "" //  ("\uf0d0") represents the "fa-magic" glyph.
+	Magnet                           nf.Glyph = "" //  ("\uf076") represents the "fa-magnet" glyph.
+	MagnifyingGlass                  nf.Glyph = "" //  ("\uf002") represents the "fa-magnifying_glass" glyph.
+	MagnifyingGlassDollar            nf.Glyph = "" //  ("\ueedd") represents the "fa-magnifying_glass_dollar" glyph.
+	MagnifyingGlassLocation          nf.Glyph = "" //  ("\ueede") represents the "fa-magnifying_glass_location" glyph.
+	MagnifyingGlassMinus             nf.Glyph = "" //  ("\uf010") represents the "fa-magnifying_glass_minus" glyph.
+	MagnifyingGlassPlus              nf.Glyph = "" //  ("\uf00e") represents the "fa-magnifying_glass_plus" glyph.
+	MailForward                      nf.Glyph = "" //  ("\uf064") represents the "fa-mail_forward" glyph.
+	MailReply                        nf.Glyph = "" //  ("\uf112") represents the "fa-mail_reply" glyph.
+	MailReplyAll                     nf.Glyph = "" //  ("\uf122") represents the "fa-mail_reply_all" glyph.
+	Mailchimp                        nf.Glyph = "" //  ("\uee67") represents the "fa-mailchimp" glyph.
+	Male                             nf.Glyph = "" //  ("\uf183") represents the "fa-male" glyph.
+	Mandalorian                      nf.Glyph = "" //  ("\uedd9") represents the "fa-mandalorian" glyph.
+	Map                              nf.Glyph = "" //  ("\uf279") represents the "fa-map" glyph.
+	MapLocation                      nf.Glyph = "" //  ("\uee68") represents the "fa-map_location" glyph.
+	MapLocationDot                   nf.Glyph = "" //  ("\uee69") represents the "fa-map_location_dot" glyph.
+	MapMarker                        nf.Glyph = "" //  ("\uf041") represents the "fa-map_marker" glyph.
+	MapO                             nf.Glyph = "" //  ("\uf278") represents the "fa-map_o" glyph.
+	MapPin                           nf.Glyph = "" //  ("\uf276") represents the "fa-map_pin" glyph.
+	MapSigns                         nf.Glyph = "" //  ("\uf277") represents the "fa-map_signs" glyph.
+	Markdown                         nf.Glyph = "" //  ("\ueeab") represents the "fa-markdown" glyph.
+	Marker                           nf.Glyph = "" //  ("\uee6a") represents the "fa-marker" glyph.
+	Mars                             nf.Glyph = "" //  ("\uf222") represents the "fa-mars" glyph.
+	MarsDouble                       nf.Glyph = "" //  ("\uf227") represents the "fa-mars_double" glyph.
+	MarsStroke                       nf.Glyph = "" //  ("\uf229") represents the "fa-mars_stroke" glyph.
+	MarsStrokeH                      nf.Glyph = "" //  ("\uf22b") represents the "fa-mars_stroke_h" glyph.
+	MarsStrokeRight                  nf.Glyph = "" //  ("\uf22b") represents the "fa-mars_stroke_right" glyph.
+	MarsStrokeUp                     nf.Glyph = "" //  ("\uf22a") represents the "fa-mars_stroke_up" glyph.
+	MarsStrokeV                      nf.Glyph = "" //  ("\uf22a") represents the "fa-mars_stroke_v" glyph.
+	MartiniGlass                     nf.Glyph = "" //  ("\uee44") represents the "fa-martini_glass" glyph.
+	MartiniGlassCitrus               nf.Glyph = "" //  ("\uee2a") represents the "fa-martini_glass_citrus" glyph.
+	MartiniGlassEmpty                nf.Glyph = "" //  ("\uf000") represents the "fa-martini_glass_empty" glyph.
+	Mask                             nf.Glyph = "" //  ("\uef07") represents the "fa-mask" glyph.
+	MasksTheater                     nf.Glyph = "" //  ("\ueeb6") represents the "fa-masks_theater" glyph.
+	Mastodon                         nf.Glyph = "" //  ("\uedc0") represents the "fa-mastodon" glyph.
+	Maxcdn                           nf.Glyph = "" //  ("\uf136") represents the "fa-maxcdn" glyph.
+	Maximize                         nf.Glyph = "" //  ("\uf06f") represents the "fa-maximize" glyph.
+	Mdb                              nf.Glyph = "" //  ("\uefb9") represents the "fa-mdb" glyph.
+	Meanpath                         nf.Glyph = "" //  ("\uf20c") represents the "fa-meanpath" glyph.
+	Medal                            nf.Glyph = "" //  ("\uee6b") represents the "fa-medal" glyph.
+	Medapps                          nf.Glyph = "" //  ("\ued01") represents the "fa-medapps" glyph.
+	Medium                           nf.Glyph = "" //  ("\uf23a") represents the "fa-medium" glyph.
+	Medkit                           nf.Glyph = "" //  ("\uf0fa") represents the "fa-medkit" glyph.
+	Medrt                            nf.Glyph = "" //  ("\ued02") represents the "fa-medrt" glyph.
+	Meetup                           nf.Glyph = "" //  ("\uf2e0") represents the "fa-meetup" glyph.
+	Megaport                         nf.Glyph = "" //  ("\uee6c") represents the "fa-megaport" glyph.
+	MehO                             nf.Glyph = "" //  ("\uf11a") represents the "fa-meh_o" glyph.
+	Memory                           nf.Glyph = "" //  ("\uefc5") represents the "fa-memory" glyph.
+	Mendeley                         nf.Glyph = "" //  ("\uef57") represents the "fa-mendeley" glyph.
+	Menorah                          nf.Glyph = "" //  ("\ueed2") represents the "fa-menorah" glyph.
+	Mercury                          nf.Glyph = "" //  ("\uf223") represents the "fa-mercury" glyph.
+	Message                          nf.Glyph = "" //  ("\uf27a") represents the "fa-message" glyph.
+	Meteor                           nf.Glyph = "" //  ("\uef23") represents the "fa-meteor" glyph.
+	Microchip                        nf.Glyph = "" //  ("\uf2db") represents the "fa-microchip" glyph.
+	Microphone                       nf.Glyph = "" //  ("\uf130") represents the "fa-microphone" glyph.
+	MicrophoneLines                  nf.Glyph = "" //  ("\ued03") represents the "fa-microphone_lines" glyph.
+	MicrophoneLinesSlash             nf.Glyph = "" //  ("\uefc6") represents the "fa-microphone_lines_slash" glyph.
+	MicrophoneSlash                  nf.Glyph = "" //  ("\uf131") represents the "fa-microphone_slash" glyph.
+	Microscope                       nf.Glyph = "" //  ("\ueeac") represents the "fa-microscope" glyph.
+	Microsoft                        nf.Glyph = "" //  ("\ued04") represents the "fa-microsoft" glyph.
+	Minimize                         nf.Glyph = "" //  ("\uef3e") represents the "fa-minimize" glyph.
+	Minus                            nf.Glyph = "" //  ("\uf068") represents the "fa-minus" glyph.
+	MinusCircle                      nf.Glyph = "" //  ("\uf056") represents the "fa-minus_circle" glyph.
+	MinusSquare                      nf.Glyph = "" //  ("\uf146") represents the "fa-minus_square" glyph.
+	MinusSquareO                     nf.Glyph = "" //  ("\uf147") represents the "fa-minus_square_o" glyph.
+	Mitten                           nf.Glyph = "" //  ("\uef58") represents the "fa-mitten" glyph.
+	Mix                              nf.Glyph = "" //  ("\ued05") represents the "fa-mix" glyph.
+	Mixcloud                         nf.Glyph = "" //  ("\uf289") represents the "fa-mixcloud" glyph.
+	Mizuni                           nf.Glyph = "" //  ("\ued06") represents the "fa-mizuni" glyph.
+	Mobile                           nf.Glyph = "" //  ("\ued08") represents the "fa-mobile" glyph.
+	MobileButton                     nf.Glyph = "" //  ("\ued07") represents the "fa-mobile_button" glyph.
+	MobilePhone                      nf.Glyph = "" //  ("\uf10b") represents the "fa-mobile_phone" glyph.
+	MobileScreen                     nf.Glyph = "" //  ("\ued09") represents the "fa-mobile_screen" glyph.
+	MobileScreenButton               nf.Glyph = "" //  ("\uf10b") represents the "fa-mobile_screen_button" glyph.
+	Modx                             nf.Glyph = "" //  ("\uf285") represents the "fa-modx" glyph.
+	Monero                           nf.Glyph = "" //  ("\ued0a") represents the "fa-monero" glyph.
+	Money                            nf.Glyph = "" //  ("\uf0d6") represents the "fa-money" glyph.
+	MoneyBill                        nf.Glyph = "" //  ("\uf0d6") represents the "fa-money_bill" glyph.
+	MoneyBill1                       nf.Glyph = "" //  ("\ued0b") represents the "fa-money_bill_1" glyph.
+	MoneyBill1Wave                   nf.Glyph = "" //  ("\uefc8") represents the "fa-money_bill_1_wave" glyph.
+	MoneyBillWave                    nf.Glyph = "" //  ("\uefc7") represents the "fa-money_bill_wave" glyph.
+	MoneyCheck                       nf.Glyph = "" //  ("\uefc9") represents the "fa-money_check" glyph.
+	MoneyCheckDollar                 nf.Glyph = "" //  ("\uefca") represents the "fa-money_check_dollar" glyph.
+	Monument                         nf.Glyph = "" //  ("\uee6f") represents the "fa-monument" glyph.
+	Moon                             nf.Glyph = "" //  ("\uf186") represents the "fa-moon" glyph.
+	MoonO                            nf.Glyph = "" //  ("\uf186") represents the "fa-moon_o" glyph.
+	MortarBoard                      nf.Glyph = "" //  ("\uf19d") represents the "fa-mortar_board" glyph.
+	MortarPestle                     nf.Glyph = "" //  ("\uee70") represents the "fa-mortar_pestle" glyph.
+	Mosque                           nf.Glyph = "" //  ("\ueed3") represents the "fa-mosque" glyph.
+	Motorcycle                       nf.Glyph = "" //  ("\uf21c") represents the "fa-motorcycle" glyph.
+	Mountain                         nf.Glyph = "" //  ("\uef08") represents the "fa-mountain" glyph.
+	MousePointer                     nf.Glyph = "" //  ("\uf245") represents the "fa-mouse_pointer" glyph.
+	MugHot                           nf.Glyph = "" //  ("\uef59") represents the "fa-mug_hot" glyph.
+	MugSaucer                        nf.Glyph = "" //  ("\uf0f4") represents the "fa-mug_saucer" glyph.
+	Music                            nf.Glyph = "" //  ("\uf001") represents the "fa-music" glyph.
+	Napster                          nf.Glyph = "" //  ("\ued0c") represents the "fa-napster" glyph.
+	Navicon                          nf.Glyph = "" //  ("\uf0c9") represents the "fa-navicon" glyph.
+	Neos                             nf.Glyph = "" //  ("\ueead") represents the "fa-neos" glyph.
+	NetworkWired                     nf.Glyph = "" //  ("\uef09") represents the "fa-network_wired" glyph.
+	Neuter                           nf.Glyph = "" //  ("\uf22c") represents the "fa-neuter" glyph.
+	Newspaper                        nf.Glyph = "" //  ("\uf1ea") represents the "fa-newspaper" glyph.
+	NewspaperO                       nf.Glyph = "" //  ("\uf1ea") represents the "fa-newspaper_o" glyph.
+	Nimblr                           nf.Glyph = "" //  ("\uee71") represents the "fa-nimblr" glyph.
+	Node                             nf.Glyph = "" //  ("\ued44") represents the "fa-node" glyph.
+	NodeJs                           nf.Glyph = "" //  ("\ued0d") represents the "fa-node_js" glyph.
+	NotEqual                         nf.Glyph = "" //  ("\uefcb") represents the "fa-not_equal" glyph.
+	NoteSticky                       nf.Glyph = "" //  ("\uf249") represents the "fa-note_sticky" glyph.
+	NotesMedical                     nf.Glyph = "" //  ("\ued85") represents the "fa-notes_medical" glyph.
+	Npm                              nf.Glyph = "" //  ("\ued0e") represents the "fa-npm" glyph.
+	Ns8                              nf.Glyph = "" //  ("\ued0f") represents the "fa-ns8" glyph.
+	Nutritionix                      nf.Glyph = "" //  ("\ued10") represents the "fa-nutritionix" glyph.
+	ObjectGroup                      nf.Glyph = "" //  ("\uf247") represents the "fa-object_group" glyph.
+	ObjectUngroup                    nf.Glyph = "" //  ("\uf248") represents the "fa-object_ungroup" glyph.
+	Odnoklassniki                    nf.Glyph = "" //  ("\uf263") represents the "fa-odnoklassniki" glyph.
+	OdnoklassnikiSquare              nf.Glyph = "" //  ("\uf264") represents the "fa-odnoklassniki_square" glyph.
+	OilCan                           nf.Glyph = "" //  ("\ueeae") represents the "fa-oil_can" glyph.
+	OkSign                           nf.Glyph = "" //  ("\uf058") represents the "fa-ok_sign" glyph.
+	OldRepublic                      nf.Glyph = "" //  ("\uedda") represents the "fa-old_republic" glyph.
+	Om                               nf.Glyph = "" //  ("\ueed4") represents the "fa-om" glyph.
+	Opencart                         nf.Glyph = "" //  ("\uf23d") represents the "fa-opencart" glyph.
+	Openid                           nf.Glyph = "" //  ("\uf19b") represents the "fa-openid" glyph.
+	Opera                            nf.Glyph = "" //  ("\uf26a") represents the "fa-opera" glyph.
+	OptinMonster                     nf.Glyph = "" //  ("\uf23c") represents the "fa-optin_monster" glyph.
+	Orcid                            nf.Glyph = "" //  ("\uefbb") represents the "fa-orcid" glyph.
+	Osi                              nf.Glyph = "" //  ("\ued45") represents the "fa-osi" glyph.
+	Otter                            nf.Glyph = "" //  ("\uef0a") represents the "fa-otter" glyph.
+	Outdent                          nf.Glyph = "" //  ("\uf03b") represents the "fa-outdent" glyph.
+	Page4                            nf.Glyph = "" //  ("\ued11") represents the "fa-page4" glyph.
+	Pagelines                        nf.Glyph = "" //  ("\uf18c") represents the "fa-pagelines" glyph.
+	Pager                            nf.Glyph = "" //  ("\uef8a") represents the "fa-pager" glyph.
+	PaintBrush                       nf.Glyph = "" //  ("\uf1fc") represents the "fa-paint_brush" glyph.
+	PaintRoller                      nf.Glyph = "" //  ("\uee72") represents the "fa-paint_roller" glyph.
+	Paintbrush                       nf.Glyph = "" //  ("\uf1fc") represents the "fa-paintbrush" glyph.
+	Palette                          nf.Glyph = "" //  ("\uefcc") represents the "fa-palette" glyph.
+	Palfed                           nf.Glyph = "" //  ("\ued12") represents the "fa-palfed" glyph.
+	Pallet                           nf.Glyph = "" //  ("\ued86") represents the "fa-pallet" glyph.
+	PaperPlane                       nf.Glyph = "" //  ("\uf1d8") represents the "fa-paper_plane" glyph.
+	PaperPlaneO                      nf.Glyph = "" //  ("\uf1d9") represents the "fa-paper_plane_o" glyph.
+	Paperclip                        nf.Glyph = "" //  ("\uf0c6") represents the "fa-paperclip" glyph.
+	ParachuteBox                     nf.Glyph = "" //  ("\ueda1") represents the "fa-parachute_box" glyph.
+	Paragraph                        nf.Glyph = "" //  ("\uf1dd") represents the "fa-paragraph" glyph.
+	Passport                         nf.Glyph = "" //  ("\uee73") represents the "fa-passport" glyph.
+	Paste                            nf.Glyph = "" //  ("\uf0ea") represents the "fa-paste" glyph.
+	Patreon                          nf.Glyph = "" //  ("\ued13") represents the "fa-patreon" glyph.
+	Pause                            nf.Glyph = "" //  ("\uf04c") represents the "fa-pause" glyph.
+	PauseCircle                      nf.Glyph = "" //  ("\uf28b") represents the "fa-pause_circle" glyph.
+	PauseCircleO                     nf.Glyph = "" //  ("\uf28c") represents the "fa-pause_circle_o" glyph.
+	Paw                              nf.Glyph = "" //  ("\uf1b0") represents the "fa-paw" glyph.
+	Paypal                           nf.Glyph = "" //  ("\uf1ed") represents the "fa-paypal" glyph.
+	Peace                            nf.Glyph = "" //  ("\ueed6") represents the "fa-peace" glyph.
+	Pen                              nf.Glyph = "" //  ("\uf01f") represents the "fa-pen" glyph.
+	PenClip                          nf.Glyph = "" //  ("\uf020") represents the "fa-pen_clip" glyph.
+	PenFancy                         nf.Glyph = "" //  ("\uee74") represents the "fa-pen_fancy" glyph.
+	PenNib                           nf.Glyph = "" //  ("\uee75") represents the "fa-pen_nib" glyph.
+	PenRuler                         nf.Glyph = "" //  ("\uee76") represents the "fa-pen_ruler" glyph.
+	PenToSquare                      nf.Glyph = "" //  ("\uf044") represents the "fa-pen_to_square" glyph.
+	Pencil                           nf.Glyph = "" //  ("\uf040") represents the "fa-pencil" glyph.
+	PencilSquare                     nf.Glyph = "" //  ("\uf14b") represents the "fa-pencil_square" glyph.
+	PencilSquareO                    nf.Glyph = "" //  ("\uf044") represents the "fa-pencil_square_o" glyph.
+	PeopleCarryBox                   nf.Glyph = "" //  ("\ueda2") represents the "fa-people_carry_box" glyph.
+	PepperHot                        nf.Glyph = "" //  ("\uef8b") represents the "fa-pepper_hot" glyph.
+	Percent                          nf.Glyph = "" //  ("\uf295") represents the "fa-percent" glyph.
+	Periscope                        nf.Glyph = "" //  ("\ued14") represents the "fa-periscope" glyph.
+	Person                           nf.Glyph = "" //  ("\uf183") represents the "fa-person" glyph.
+	PersonBiking                     nf.Glyph = "" //  ("\uefa2") represents the "fa-person_biking" glyph.
+	PersonBooth                      nf.Glyph = "" //  ("\uef24") represents the "fa-person_booth" glyph.
+	PersonDigging                    nf.Glyph = "" //  ("\uefa6") represents the "fa-person_digging" glyph.
+	PersonDotsFromLine               nf.Glyph = "" //  ("\ued7c") represents the "fa-person_dots_from_line" glyph.
+	PersonDress                      nf.Glyph = "" //  ("\uf182") represents the "fa-person_dress" glyph.
+	PersonHiking                     nf.Glyph = "" //  ("\uef02") represents the "fa-person_hiking" glyph.
+	PersonPraying                    nf.Glyph = "" //  ("\ueeda") represents the "fa-person_praying" glyph.
+	PersonRunning                    nf.Glyph = "" //  ("\uef0c") represents the "fa-person_running" glyph.
+	PersonSkating                    nf.Glyph = "" //  ("\uef63") represents the "fa-person_skating" glyph.
+	PersonSkiing                     nf.Glyph = "" //  ("\uef65") represents the "fa-person_skiing" glyph.
+	PersonSkiingNordic               nf.Glyph = "" //  ("\uef66") represents the "fa-person_skiing_nordic" glyph.
+	PersonSnowboarding               nf.Glyph = "" //  ("\uef69") represents the "fa-person_snowboarding" glyph.
+	PersonSwimming                   nf.Glyph = "" //  ("\uee8b") represents the "fa-person_swimming" glyph.
+	PersonWalking                    nf.Glyph = "" //  ("\uee1d") represents the "fa-person_walking" glyph.
+	PersonWalkingWithCane            nf.Glyph = "" //  ("\uf29d") represents the "fa-person_walking_with_cane" glyph.
+	Phabricator                      nf.Glyph = "" //  ("\ued15") represents the "fa-phabricator" glyph.
+	PhoenixFramework                 nf.Glyph = "" //  ("\ued16") represents the "fa-phoenix_framework" glyph.
+	PhoenixSquadron                  nf.Glyph = "" //  ("\ueddb") represents the "fa-phoenix_squadron" glyph.
+	Phone                            nf.Glyph = "" //  ("\uf095") represents the "fa-phone" glyph.
+	PhoneFlip                        nf.Glyph = "" //  ("\uefa9") represents the "fa-phone_flip" glyph.
+	PhoneSlash                       nf.Glyph = "" //  ("\ued17") represents the "fa-phone_slash" glyph.
+	PhoneSquare                      nf.Glyph = "" //  ("\uf098") represents the "fa-phone_square" glyph.
+	PhoneVolume                      nf.Glyph = "" //  ("\uf2a0") represents the "fa-phone_volume" glyph.
+	Photo                            nf.Glyph = "" //  ("\uf03e") represents the "fa-photo" glyph.
+	PhotoFilm                        nf.Glyph = "" //  ("\uefab") represents the "fa-photo_film" glyph.
+	Php                              nf.Glyph = "" //  ("\ued6d") represents the "fa-php" glyph.
+	PictureO                         nf.Glyph = "" //  ("\uf03e") represents the "fa-picture_o" glyph.
+	PieChart                         nf.Glyph = "" //  ("\uf200") represents the "fa-pie_chart" glyph.
+	PiedPiper                        nf.Glyph = "" //  ("\uf2ae") represents the "fa-pied_piper" glyph.
+	PiedPiperAlt                     nf.Glyph = "" //  ("\uf1a8") represents the "fa-pied_piper_alt" glyph.
+	PiedPiperHat                     nf.Glyph = "" //  ("\uedb0") represents the "fa-pied_piper_hat" glyph.
+	PiedPiperPp                      nf.Glyph = "" //  ("\uf1a7") represents the "fa-pied_piper_pp" glyph.
+	PiggyBank                        nf.Glyph = "" //  ("\ueda3") represents the "fa-piggy_bank" glyph.
+	Pills                            nf.Glyph = "" //  ("\ued87") represents the "fa-pills" glyph.
+	Pinterest                        nf.Glyph = "" //  ("\uf0d2") represents the "fa-pinterest" glyph.
+	PinterestP                       nf.Glyph = "" //  ("\uf231") represents the "fa-pinterest_p" glyph.
+	PinterestSquare                  nf.Glyph = "" //  ("\uf0d3") represents the "fa-pinterest_square" glyph.
+	PizzaSlice                       nf.Glyph = "" //  ("\uef8c") represents the "fa-pizza_slice" glyph.
+	PlaceOfWorship                   nf.Glyph = "" //  ("\ueed7") represents the "fa-place_of_worship" glyph.
+	Plane                            nf.Glyph = "" //  ("\uf072") represents the "fa-plane" glyph.
+	PlaneArrival                     nf.Glyph = "" //  ("\uee77") represents the "fa-plane_arrival" glyph.
+	PlaneDeparture                   nf.Glyph = "" //  ("\uee78") represents the "fa-plane_departure" glyph.
+	Play                             nf.Glyph = "" //  ("\uf04b") represents the "fa-play" glyph.
+	PlayCircle                       nf.Glyph = "" //  ("\uf144") represents the "fa-play_circle" glyph.
+	PlayCircleO                      nf.Glyph = "" //  ("\uf01d") represents the "fa-play_circle_o" glyph.
+	Playstation                      nf.Glyph = "" //  ("\ued18") represents the "fa-playstation" glyph.
+	Plug                             nf.Glyph = "" //  ("\uf1e6") represents the "fa-plug" glyph.
+	Plus                             nf.Glyph = "" //  ("\uf067") represents the "fa-plus" glyph.
+	PlusCircle                       nf.Glyph = "" //  ("\uf055") represents the "fa-plus_circle" glyph.
+	PlusSquare                       nf.Glyph = "" //  ("\uf0fe") represents the "fa-plus_square" glyph.
+	PlusSquareO                      nf.Glyph = "" //  ("\uf196") represents the "fa-plus_square_o" glyph.
+	Podcast                          nf.Glyph = "" //  ("\uf2ce") represents the "fa-podcast" glyph.
+	Poo                              nf.Glyph = "" //  ("\uf2fe") represents the "fa-poo" glyph.
+	PooStorm                         nf.Glyph = "" //  ("\uef25") represents the "fa-poo_storm" glyph.
+	Poop                             nf.Glyph = "" //  ("\ueeaf") represents the "fa-poop" glyph.
+	PowerOff                         nf.Glyph = "" //  ("\uf011") represents the "fa-power_off" glyph.
+	Prescription                     nf.Glyph = "" //  ("\uee79") represents the "fa-prescription" glyph.
+	PrescriptionBottle               nf.Glyph = "" //  ("\ued88") represents the "fa-prescription_bottle" glyph.
+	PrescriptionBottleMedical        nf.Glyph = "" //  ("\ued89") represents the "fa-prescription_bottle_medical" glyph.
+	Print                            nf.Glyph = "" //  ("\uf02f") represents the "fa-print" glyph.
+	ProductHunt                      nf.Glyph = "" //  ("\uf288") represents the "fa-product_hunt" glyph.
+	Pushed                           nf.Glyph = "" //  ("\ued1a") represents the "fa-pushed" glyph.
+	PuzzlePiece                      nf.Glyph = "" //  ("\uf12e") represents the "fa-puzzle_piece" glyph.
+	Python                           nf.Glyph = "" //  ("\ued1b") represents the "fa-python" glyph.
+	Qq                               nf.Glyph = "" //  ("\uf1d6") represents the "fa-qq" glyph.
+	Qrcode                           nf.Glyph = "" //  ("\uf029") represents the "fa-qrcode" glyph.
+	Question                         nf.Glyph = "" //  ("\uf128") represents the "fa-question" glyph.
+	QuestionCircle                   nf.Glyph = "" //  ("\uf059") represents the "fa-question_circle" glyph.
+	QuestionCircleO                  nf.Glyph = "" //  ("\uf29c") represents the "fa-question_circle_o" glyph.
+	Quinscape                        nf.Glyph = "" //  ("\ued6f") represents the "fa-quinscape" glyph.
+	Quora                            nf.Glyph = "" //  ("\uf2c4") represents the "fa-quora" glyph.
+	QuoteLeft                        nf.Glyph = "" //  ("\uf10d") represents the "fa-quote_left" glyph.
+	QuoteRight                       nf.Glyph = "" //  ("\uf10e") represents the "fa-quote_right" glyph.
+	RProject                         nf.Glyph = "" //  ("\uedc1") represents the "fa-r_project" glyph.
+	Ra                               nf.Glyph = "" //  ("\uf1d0") represents the "fa-ra" glyph.
+	Radiation                        nf.Glyph = "" //  ("\uef5a") represents the "fa-radiation" glyph.
+	Radio                            nf.Glyph = "" //  ("\uefbc") represents the "fa-radio" glyph.
+	Rainbow                          nf.Glyph = "" //  ("\uef26") represents the "fa-rainbow" glyph.
+	Random                           nf.Glyph = "" //  ("\uf074") represents the "fa-random" glyph.
+	RaspberryPi                      nf.Glyph = "" //  ("\uef5c") represents the "fa-raspberry_pi" glyph.
+	Ravelry                          nf.Glyph = "" //  ("\uf2d9") represents the "fa-ravelry" glyph.
+	React                            nf.Glyph = "" //  ("\ued46") represents the "fa-react" glyph.
+	Reacteurope                      nf.Glyph = "" //  ("\uef27") represents the "fa-reacteurope" glyph.
+	Readme                           nf.Glyph = "" //  ("\ueda4") represents the "fa-readme" glyph.
+	Rebel                            nf.Glyph = "" //  ("\uf1d0") represents the "fa-rebel" glyph.
+	Receipt                          nf.Glyph = "" //  ("\uee0c") represents the "fa-receipt" glyph.
+	RecordVinyl                      nf.Glyph = "" //  ("\uefbd") represents the "fa-record_vinyl" glyph.
+	RectangleAd                      nf.Glyph = "" //  ("\ueebb") represents the "fa-rectangle_ad" glyph.
+	RectangleList                    nf.Glyph = "" //  ("\uf022") represents the "fa-rectangle_list" glyph.
+	RectangleXmark                   nf.Glyph = "" //  ("\uf2d4") represents the "fa-rectangle_xmark" glyph.
+	Recycle                          nf.Glyph = "" //  ("\uf1b8") represents the "fa-recycle" glyph.
+	RedRiver                         nf.Glyph = "" //  ("\ued1c") represents the "fa-red_river" glyph.
+	Reddit                           nf.Glyph = "" //  ("\uf1a1") represents the "fa-reddit" glyph.
+	RedditAlien                      nf.Glyph = "" //  ("\uf281") represents the "fa-reddit_alien" glyph.
+	RedditSquare                     nf.Glyph = "" //  ("\uf1a2") represents the "fa-reddit_square" glyph.
+	Redhat                           nf.Glyph = "" //  ("\uef5d") represents the "fa-redhat" glyph.
+	Refresh                          nf.Glyph = "" //  ("\uf021") represents the "fa-refresh" glyph.
+	Registered                       nf.Glyph = "" //  ("\uf25d") represents the "fa-registered" glyph.
+	Remove                           nf.Glyph = "" //  ("\uf00d") represents the "fa-remove" glyph.
+	RemoveSign                       nf.Glyph = "" //  ("\uf057") represents the "fa-remove_sign" glyph.
+	Renren                           nf.Glyph = "" //  ("\uf18b") represents the "fa-renren" glyph.
+	Reorder                          nf.Glyph = "" //  ("\uf0c9") represents the "fa-reorder" glyph.
+	Repeat                           nf.Glyph = "" //  ("\uf01e") represents the "fa-repeat" glyph.
+	RepeatAlt                        nf.Glyph = "" //  ("\uf0b6") represents the "fa-repeat_alt" glyph.
+	Reply                            nf.Glyph = "" //  ("\uf112") represents the "fa-reply" glyph.
+	ReplyAll                         nf.Glyph = "" //  ("\uf122") represents the "fa-reply_all" glyph.
+	Replyd                           nf.Glyph = "" //  ("\ued1e") represents the "fa-replyd" glyph.
+	Republican                       nf.Glyph = "" //  ("\uef28") represents the "fa-republican" glyph.
+	Researchgate                     nf.Glyph = "" //  ("\uedc2") represents the "fa-researchgate" glyph.
+	Resistance                       nf.Glyph = "" //  ("\uf1d0") represents the "fa-resistance" glyph.
+	Resolving                        nf.Glyph = "" //  ("\ued1f") represents the "fa-resolving" glyph.
+	Restroom                         nf.Glyph = "" //  ("\uef5e") represents the "fa-restroom" glyph.
+	Retweet                          nf.Glyph = "" //  ("\uf079") represents the "fa-retweet" glyph.
+	Rev                              nf.Glyph = "" //  ("\uee7a") represents the "fa-rev" glyph.
+	Ribbon                           nf.Glyph = "" //  ("\ueda5") represents the "fa-ribbon" glyph.
+	RightFromBracket                 nf.Glyph = "" //  ("\uf2f5") represents the "fa-right_from_bracket" glyph.
+	RightLeft                        nf.Glyph = "" //  ("\uf0b5") represents the "fa-right_left" glyph.
+	RightToBracket                   nf.Glyph = "" //  ("\uf2f6") represents the "fa-right_to_bracket" glyph.
+	Ring                             nf.Glyph = "" //  ("\uef0b") represents the "fa-ring" glyph.
+	Rmb                              nf.Glyph = "" //  ("\uf157") represents the "fa-rmb" glyph.
+	Road                             nf.Glyph = "" //  ("\uf018") represents the "fa-road" glyph.
+	Robot                            nf.Glyph = "" //  ("\uee0d") represents the "fa-robot" glyph.
+	Rocket                           nf.Glyph = "" //  ("\uf135") represents the "fa-rocket" glyph.
+	Rocketchat                       nf.Glyph = "" //  ("\ued20") represents the "fa-rocketchat" glyph.
+	Rockrms                          nf.Glyph = "" //  ("\ued21") represents the "fa-rockrms" glyph.
+	Rotate                           nf.Glyph = "" //  ("\uf2f1") represents the "fa-rotate" glyph.
+	RotateLeft                       nf.Glyph = "" //  ("\uf2ea") represents the "fa-rotate_left" glyph.
+	RotateRight                      nf.Glyph = "" //  ("\uf2f9") represents the "fa-rotate_right" glyph.
+	Rouble                           nf.Glyph = "" //  ("\uf158") represents the "fa-rouble" glyph.
+	Route                            nf.Glyph = "" //  ("\ueda6") represents the "fa-route" glyph.
+	Rss                              nf.Glyph = "" //  ("\uf09e") represents the "fa-rss" glyph.
+	RssSquare                        nf.Glyph = "" //  ("\uf143") represents the "fa-rss_square" glyph.
+	Rub                              nf.Glyph = "" //  ("\uf158") represents the "fa-rub" glyph.
+	Ruble                            nf.Glyph = "" //  ("\uf158") represents the "fa-ruble" glyph.
+	RubleSign                        nf.Glyph = "" //  ("\uf158") represents the "fa-ruble_sign" glyph.
+	Ruler                            nf.Glyph = "" //  ("\uee0e") represents the "fa-ruler" glyph.
+	RulerCombined                    nf.Glyph = "" //  ("\uee0f") represents the "fa-ruler_combined" glyph.
+	RulerHorizontal                  nf.Glyph = "" //  ("\uee10") represents the "fa-ruler_horizontal" glyph.
+	RulerVertical                    nf.Glyph = "" //  ("\uee11") represents the "fa-ruler_vertical" glyph.
+	Rupee                            nf.Glyph = "" //  ("\uf156") represents the "fa-rupee" glyph.
+	RupeeSign                        nf.Glyph = "" //  ("\uf156") represents the "fa-rupee_sign" glyph.
+	S15                              nf.Glyph = "" //  ("\uf2cd") represents the "fa-s15" glyph.
+	SackDollar                       nf.Glyph = "" //  ("\uef8d") represents the "fa-sack_dollar" glyph.
+	Safari                           nf.Glyph = "" //  ("\uf267") represents the "fa-safari" glyph.
+	Salesforce                       nf.Glyph = "" //  ("\uef9a") represents the "fa-salesforce" glyph.
+	Sass                             nf.Glyph = "" //  ("\ued49") represents the "fa-sass" glyph.
+	Satellite                        nf.Glyph = "" //  ("\uef5f") represents the "fa-satellite" glyph.
+	SatelliteDish                    nf.Glyph = "" //  ("\uef60") represents the "fa-satellite_dish" glyph.
+	Save                             nf.Glyph = "" //  ("\uf0c7") represents the "fa-save" glyph.
+	ScaleBalanced                    nf.Glyph = "" //  ("\uf24e") represents the "fa-scale_balanced" glyph.
+	ScaleUnbalanced                  nf.Glyph = "" //  ("\ueddf") represents the "fa-scale_unbalanced" glyph.
+	ScaleUnbalancedFlip              nf.Glyph = "" //  ("\uede0") represents the "fa-scale_unbalanced_flip" glyph.
+	Schlix                           nf.Glyph = "" //  ("\ued22") represents the "fa-schlix" glyph.
+	School                           nf.Glyph = "" //  ("\uee12") represents the "fa-school" glyph.
+	Scissors                         nf.Glyph = "" //  ("\uf0c4") represents the "fa-scissors" glyph.
+	Screwdriver                      nf.Glyph = "" //  ("\uee13") represents the "fa-screwdriver" glyph.
+	ScrewdriverWrench                nf.Glyph = "" //  ("\uef70") represents the "fa-screwdriver_wrench" glyph.
+	Scribd                           nf.Glyph = "" //  ("\uf28a") represents the "fa-scribd" glyph.
+	Scroll                           nf.Glyph = "" //  ("\uef0d") represents the "fa-scroll" glyph.
+	ScrollTorah                      nf.Glyph = "" //  ("\ueee5") represents the "fa-scroll_torah" glyph.
+	SdCard                           nf.Glyph = "" //  ("\uef61") represents the "fa-sd_card" glyph.
+	Search                           nf.Glyph = "" //  ("\uf002") represents the "fa-search" glyph.
+	SearchMinus                      nf.Glyph = "" //  ("\uf010") represents the "fa-search_minus" glyph.
+	SearchPlus                       nf.Glyph = "" //  ("\uf00e") represents the "fa-search_plus" glyph.
+	Searchengin                      nf.Glyph = "" //  ("\ued23") represents the "fa-searchengin" glyph.
+	Seedling                         nf.Glyph = "" //  ("\ueda7") represents the "fa-seedling" glyph.
+	Sellcast                         nf.Glyph = "" //  ("\uf2da") represents the "fa-sellcast" glyph.
+	Sellsy                           nf.Glyph = "" //  ("\uf213") represents the "fa-sellsy" glyph.
+	Send                             nf.Glyph = "" //  ("\uf1d8") represents the "fa-send" glyph.
+	SendO                            nf.Glyph = "" //  ("\uf1d9") represents the "fa-send_o" glyph.
+	Server                           nf.Glyph = "" //  ("\uf233") represents the "fa-server" glyph.
+	Servicestack                     nf.Glyph = "" //  ("\ued24") represents the "fa-servicestack" glyph.
+	Shapes                           nf.Glyph = "" //  ("\ueeb0") represents the "fa-shapes" glyph.
+	Share                            nf.Glyph = "" //  ("\uf064") represents the "fa-share" glyph.
+	ShareAlt                         nf.Glyph = "" //  ("\uf1e0") represents the "fa-share_alt" glyph.
+	ShareAltSquare                   nf.Glyph = "" //  ("\uf1e1") represents the "fa-share_alt_square" glyph.
+	ShareFromSquare                  nf.Glyph = "" //  ("\uf14d") represents the "fa-share_from_square" glyph.
+	ShareNodes                       nf.Glyph = "" //  ("\uf1e0") represents the "fa-share_nodes" glyph.
+	ShareSquare                      nf.Glyph = "" //  ("\uf14d") represents the "fa-share_square" glyph.
+	ShareSquareO                     nf.Glyph = "" //  ("\uf045") represents the "fa-share_square_o" glyph.
+	Shekel                           nf.Glyph = "" //  ("\uf20b") represents the "fa-shekel" glyph.
+	ShekelSign                       nf.Glyph = "" //  ("\uf20b") represents the "fa-shekel_sign" glyph.
+	Sheqel                           nf.Glyph = "" //  ("\uf20b") represents the "fa-sheqel" glyph.
+	Shield                           nf.Glyph = "" //  ("\uf132") represents the "fa-shield" glyph.
+	ShieldHalved                     nf.Glyph = "" //  ("\ued25") represents the "fa-shield_halved" glyph.
+	Ship                             nf.Glyph = "" //  ("\uf21a") represents the "fa-ship" glyph.
+	Shirt                            nf.Glyph = "" //  ("\uee1c") represents the "fa-shirt" glyph.
+	Shirtsinbulk                     nf.Glyph = "" //  ("\uf214") represents the "fa-shirtsinbulk" glyph.
+	ShoePrints                       nf.Glyph = "" //  ("\uee14") represents the "fa-shoe_prints" glyph.
+	Shop                             nf.Glyph = "" //  ("\uee18") represents the "fa-shop" glyph.
+	ShoppingBag                      nf.Glyph = "" //  ("\uf290") represents the "fa-shopping_bag" glyph.
+	ShoppingBasket                   nf.Glyph = "" //  ("\uf291") represents the "fa-shopping_basket" glyph.
+	ShoppingCart                     nf.Glyph = "" //  ("\uf07a") represents the "fa-shopping_cart" glyph.
+	Shopware                         nf.Glyph = "" //  ("\uee7d") represents the "fa-shopware" glyph.
+	Shower                           nf.Glyph = "" //  ("\uf2cc") represents the "fa-shower" glyph.
+	Shuffle                          nf.Glyph = "" //  ("\uf074") represents the "fa-shuffle" glyph.
+	ShuttleSpace                     nf.Glyph = "" //  ("\uf197") represents the "fa-shuttle_space" glyph.
+	SignHanging                      nf.Glyph = "" //  ("\ueda8") represents the "fa-sign_hanging" glyph.
+	SignIn                           nf.Glyph = "" //  ("\uf090") represents the "fa-sign_in" glyph.
+	SignLanguage                     nf.Glyph = "" //  ("\uf2a7") represents the "fa-sign_language" glyph.
+	SignOut                          nf.Glyph = "" //  ("\uf08b") represents the "fa-sign_out" glyph.
+	Signal                           nf.Glyph = "" //  ("\uf012") represents the "fa-signal" glyph.
+	Signature                        nf.Glyph = "" //  ("\uee7f") represents the "fa-signature" glyph.
+	Signing                          nf.Glyph = "" //  ("\uf2a7") represents the "fa-signing" glyph.
+	SignsPost                        nf.Glyph = "" //  ("\uf277") represents the "fa-signs_post" glyph.
+	SimCard                          nf.Glyph = "" //  ("\uef62") represents the "fa-sim_card" glyph.
+	Simplybuilt                      nf.Glyph = "" //  ("\uf215") represents the "fa-simplybuilt" glyph.
+	Sistrix                          nf.Glyph = "" //  ("\ued26") represents the "fa-sistrix" glyph.
+	Sitemap                          nf.Glyph = "" //  ("\uf0e8") represents the "fa-sitemap" glyph.
+	Sith                             nf.Glyph = "" //  ("\ueddc") represents the "fa-sith" glyph.
+	Sketch                           nf.Glyph = "" //  ("\uef64") represents the "fa-sketch" glyph.
+	Skull                            nf.Glyph = "" //  ("\uee15") represents the "fa-skull" glyph.
+	SkullCrossbones                  nf.Glyph = "" //  ("\uef0e") represents the "fa-skull_crossbones" glyph.
+	Skyatlas                         nf.Glyph = "" //  ("\uf216") represents the "fa-skyatlas" glyph.
+	Skype                            nf.Glyph = "" //  ("\uf17e") represents the "fa-skype" glyph.
+	Slack                            nf.Glyph = "" //  ("\uf198") represents the "fa-slack" glyph.
+	Slash                            nf.Glyph = "" //  ("\uef0f") represents the "fa-slash" glyph.
+	Sleigh                           nf.Glyph = "" //  ("\uef67") represents the "fa-sleigh" glyph.
+	Sliders                          nf.Glyph = "" //  ("\uf1de") represents the "fa-sliders" glyph.
+	Slideshare                       nf.Glyph = "" //  ("\uf1e7") represents the "fa-slideshare" glyph.
+	SmileO                           nf.Glyph = "" //  ("\uf118") represents the "fa-smile_o" glyph.
+	Smog                             nf.Glyph = "" //  ("\uef29") represents the "fa-smog" glyph.
+	Smoking                          nf.Glyph = "" //  ("\ued8c") represents the "fa-smoking" glyph.
+	Snapchat                         nf.Glyph = "" //  ("\uf2ab") represents the "fa-snapchat" glyph.
+	SnapchatGhost                    nf.Glyph = "" //  ("\uf2ac") represents the "fa-snapchat_ghost" glyph.
+	SnapchatSquare                   nf.Glyph = "" //  ("\uf2ad") represents the "fa-snapchat_square" glyph.
+	Snowflake                        nf.Glyph = "" //  ("\uf2dc") represents the "fa-snowflake" glyph.
+	SnowflakeO                       nf.Glyph = "" //  ("\uf2dc") represents the "fa-snowflake_o" glyph.
+	Snowman                          nf.Glyph = "" //  ("\uef6a") represents the "fa-snowman" glyph.
+	Snowplow                         nf.Glyph = "" //  ("\uef6b") represents the "fa-snowplow" glyph.
+	SoccerBallO                      nf.Glyph = "" //  ("\uf1e3") represents the "fa-soccer_ball_o" glyph.
+	Socks                            nf.Glyph = "" //  ("\ueedf") represents the "fa-socks" glyph.
+	SolarPanel                       nf.Glyph = "" //  ("\uee81") represents the "fa-solar_panel" glyph.
+	Sort                             nf.Glyph = "" //  ("\uf0dc") represents the "fa-sort" glyph.
+	SortAlphaAsc                     nf.Glyph = "" //  ("\uf15d") represents the "fa-sort_alpha_asc" glyph.
+	SortAlphaDesc                    nf.Glyph = "" //  ("\uf15e") represents the "fa-sort_alpha_desc" glyph.
+	SortAmountAsc                    nf.Glyph = "" //  ("\uf160") represents the "fa-sort_amount_asc" glyph.
+	SortAmountDesc                   nf.Glyph = "" //  ("\uf161") represents the "fa-sort_amount_desc" glyph.
+	SortAsc                          nf.Glyph = "" //  ("\uf0de") represents the "fa-sort_asc" glyph.
+	SortDesc                         nf.Glyph = "" //  ("\uf0dd") represents the "fa-sort_desc" glyph.
+	SortDown                         nf.Glyph = "" //  ("\uf0dd") represents the "fa-sort_down" glyph.
+	SortNumericAsc                   nf.Glyph = "" //  ("\uf162") represents the "fa-sort_numeric_asc" glyph.
+	SortNumericDesc                  nf.Glyph = "" //  ("\uf163") represents the "fa-sort_numeric_desc" glyph.
+	SortUp                           nf.Glyph = "" //  ("\uf0de") represents the "fa-sort_up" glyph.
+	Soundcloud                       nf.Glyph = "" //  ("\uf1be") represents the "fa-soundcloud" glyph.
+	Sourcetree                       nf.Glyph = "" //  ("\uef6c") represents the "fa-sourcetree" glyph.
+	Spa                              nf.Glyph = "" //  ("\uee82") represents the "fa-spa" glyph.
+	SpaceShuttle                     nf.Glyph = "" //  ("\uf197") represents the "fa-space_shuttle" glyph.
+	SpaghettiMonsterFlying           nf.Glyph = "" //  ("\ueed5") represents the "fa-spaghetti_monster_flying" glyph.
+	Speakap                          nf.Glyph = "" //  ("\ued27") represents the "fa-speakap" glyph.
+	SpeakerDeck                      nf.Glyph = "" //  ("\uef9b") represents the "fa-speaker_deck" glyph.
+	SpellCheck                       nf.Glyph = "" //  ("\uefb3") represents the "fa-spell_check" glyph.
+	Spider                           nf.Glyph = "" //  ("\uef10") represents the "fa-spider" glyph.
+	Spinner                          nf.Glyph = "" //  ("\uf110") represents the "fa-spinner" glyph.
+	Splotch                          nf.Glyph = "" //  ("\uee83") represents the "fa-splotch" glyph.
+	Spoon                            nf.Glyph = "" //  ("\uf1b1") represents the "fa-spoon" glyph.
+	Spotify                          nf.Glyph = "" //  ("\uf1bc") represents the "fa-spotify" glyph.
+	SprayCan                         nf.Glyph = "" //  ("\uee84") represents the "fa-spray_can" glyph.
+	SprayCanSparkles                 nf.Glyph = "" //  ("\uee97") represents the "fa-spray_can_sparkles" glyph.
+	Square                           nf.Glyph = "" //  ("\uf0c8") represents the "fa-square" glyph.
+	SquareArrowUpRight               nf.Glyph = "" //  ("\uf14c") represents the "fa-square_arrow_up_right" glyph.
+	SquareBehance                    nf.Glyph = "" //  ("\uf1b5") represents the "fa-square_behance" glyph.
+	SquareCaretDown                  nf.Glyph = "" //  ("\uf150") represents the "fa-square_caret_down" glyph.
+	SquareCaretLeft                  nf.Glyph = "" //  ("\uf191") represents the "fa-square_caret_left" glyph.
+	SquareCaretRight                 nf.Glyph = "" //  ("\uf152") represents the "fa-square_caret_right" glyph.
+	SquareCaretUp                    nf.Glyph = "" //  ("\uf151") represents the "fa-square_caret_up" glyph.
+	SquareCheck                      nf.Glyph = "" //  ("\uf14a") represents the "fa-square_check" glyph.
+	SquareDribbble                   nf.Glyph = "" //  ("\uf22e") represents the "fa-square_dribbble" glyph.
+	SquareEnvelope                   nf.Glyph = "" //  ("\uf199") represents the "fa-square_envelope" glyph.
+	SquareFacebook                   nf.Glyph = "" //  ("\uf082") represents the "fa-square_facebook" glyph.
+	SquareFontAwesomeStroke          nf.Glyph = "" //  ("\uf0af") represents the "fa-square_font_awesome_stroke" glyph.
+	SquareFull                       nf.Glyph = "" //  ("\ued70") represents the "fa-square_full" glyph.
+	SquareGit                        nf.Glyph = "" //  ("\uf1d2") represents the "fa-square_git" glyph.
+	SquareGithub                     nf.Glyph = "" //  ("\uf092") represents the "fa-square_github" glyph.
+	SquareGooglePlus                 nf.Glyph = "" //  ("\uf0d4") represents the "fa-square_google_plus" glyph.
+	SquareH                          nf.Glyph = "" //  ("\uf0fd") represents the "fa-square_h" glyph.
+	SquareHackerNews                 nf.Glyph = "" //  ("\uf2e5") represents the "fa-square_hacker_news" glyph.
+	SquareJs                         nf.Glyph = "" //  ("\uf2ef") represents the "fa-square_js" glyph.
+	SquareLastfm                     nf.Glyph = "" //  ("\uf203") represents the "fa-square_lastfm" glyph.
+	SquareMinus                      nf.Glyph = "" //  ("\uf146") represents the "fa-square_minus" glyph.
+	SquareO                          nf.Glyph = "" //  ("\uf096") represents the "fa-square_o" glyph.
+	SquareOdnoklassniki              nf.Glyph = "" //  ("\uf264") represents the "fa-square_odnoklassniki" glyph.
+	SquareParking                    nf.Glyph = "" //  ("\uefcd") represents the "fa-square_parking" glyph.
+	SquarePen                        nf.Glyph = "" //  ("\uf14b") represents the "fa-square_pen" glyph.
+	SquarePhone                      nf.Glyph = "" //  ("\uf098") represents the "fa-square_phone" glyph.
+	SquarePhoneFlip                  nf.Glyph = "" //  ("\uefaa") represents the "fa-square_phone_flip" glyph.
+	SquarePinterest                  nf.Glyph = "" //  ("\uf0d3") represents the "fa-square_pinterest" glyph.
+	SquarePlus                       nf.Glyph = "" //  ("\uf0fe") represents the "fa-square_plus" glyph.
+	SquarePollHorizontal             nf.Glyph = "" //  ("\ueed9") represents the "fa-square_poll_horizontal" glyph.
+	SquarePollVertical               nf.Glyph = "" //  ("\ueed8") represents the "fa-square_poll_vertical" glyph.
+	SquareReddit                     nf.Glyph = "" //  ("\uf1a2") represents the "fa-square_reddit" glyph.
+	SquareRootVariable               nf.Glyph = "" //  ("\ueee0") represents the "fa-square_root_variable" glyph.
+	SquareRss                        nf.Glyph = "" //  ("\uf143") represents the "fa-square_rss" glyph.
+	SquareShareNodes                 nf.Glyph = "" //  ("\uf1e1") represents the "fa-square_share_nodes" glyph.
+	SquareSnapchat                   nf.Glyph = "" //  ("\uf2ad") represents the "fa-square_snapchat" glyph.
+	SquareSteam                      nf.Glyph = "" //  ("\uf1b7") represents the "fa-square_steam" glyph.
+	SquareTumblr                     nf.Glyph = "" //  ("\uf174") represents the "fa-square_tumblr" glyph.
+	SquareTwitter                    nf.Glyph = "" //  ("\uf081") represents the "fa-square_twitter" glyph.
+	SquareUpRight                    nf.Glyph = "" //  ("\uf0b4") represents the "fa-square_up_right" glyph.
+	SquareViadeo                     nf.Glyph = "" //  ("\uf2aa") represents the "fa-square_viadeo" glyph.
+	SquareVimeo                      nf.Glyph = "" //  ("\uf194") represents the "fa-square_vimeo" glyph.
+	SquareWhatsapp                   nf.Glyph = "" //  ("\ued3b") represents the "fa-square_whatsapp" glyph.
+	SquareXing                       nf.Glyph = "" //  ("\uf169") represents the "fa-square_xing" glyph.
+	SquareXmark                      nf.Glyph = "" //  ("\uf2d3") represents the "fa-square_xmark" glyph.
+	SquareYoutube                    nf.Glyph = "" //  ("\uf166") represents the "fa-square_youtube" glyph.
+	Squarespace                      nf.Glyph = "" //  ("\uee85") represents the "fa-squarespace" glyph.
+	StackExchange                    nf.Glyph = "" //  ("\uf18d") represents the "fa-stack_exchange" glyph.
+	StackOverflow                    nf.Glyph = "" //  ("\uf16c") represents the "fa-stack_overflow" glyph.
+	Stackpath                        nf.Glyph = "" //  ("\uefa1") represents the "fa-stackpath" glyph.
+	Stamp                            nf.Glyph = "" //  ("\uee86") represents the "fa-stamp" glyph.
+	Star                             nf.Glyph = "" //  ("\uf005") represents the "fa-star" glyph.
+	StarAndCrescent                  nf.Glyph = "" //  ("\ueee1") represents the "fa-star_and_crescent" glyph.
+	StarHalf                         nf.Glyph = "" //  ("\uf089") represents the "fa-star_half" glyph.
+	StarHalfEmpty                    nf.Glyph = "" //  ("\uf123") represents the "fa-star_half_empty" glyph.
+	StarHalfFull                     nf.Glyph = "" //  ("\uf123") represents the "fa-star_half_full" glyph.
+	StarHalfO                        nf.Glyph = "" //  ("\uf123") represents the "fa-star_half_o" glyph.
+	StarHalfStroke                   nf.Glyph = "" //  ("\uee87") represents the "fa-star_half_stroke" glyph.
+	StarO                            nf.Glyph = "" //  ("\uf006") represents the "fa-star_o" glyph.
+	StarOfDavid                      nf.Glyph = "" //  ("\ueee2") represents the "fa-star_of_david" glyph.
+	StarOfLife                       nf.Glyph = "" //  ("\ueeb1") represents the "fa-star_of_life" glyph.
+	Staylinked                       nf.Glyph = "" //  ("\ued28") represents the "fa-staylinked" glyph.
+	Steam                            nf.Glyph = "" //  ("\uf1b6") represents the "fa-steam" glyph.
+	SteamSquare                      nf.Glyph = "" //  ("\uf1b7") represents the "fa-steam_square" glyph.
+	SteamSymbol                      nf.Glyph = "" //  ("\ued29") represents the "fa-steam_symbol" glyph.
+	StepBackward                     nf.Glyph = "" //  ("\uf048") represents the "fa-step_backward" glyph.
+	StepForward                      nf.Glyph = "" //  ("\uf051") represents the "fa-step_forward" glyph.
+	SterlingSign                     nf.Glyph = "" //  ("\uf154") represents the "fa-sterling_sign" glyph.
+	Stethoscope                      nf.Glyph = "" //  ("\uf0f1") represents the "fa-stethoscope" glyph.
+	StickerMule                      nf.Glyph = "" //  ("\ued2a") represents the "fa-sticker_mule" glyph.
+	StickyNote                       nf.Glyph = "" //  ("\uf249") represents the "fa-sticky_note" glyph.
+	StickyNoteO                      nf.Glyph = "" //  ("\uf24a") represents the "fa-sticky_note_o" glyph.
+	Stop                             nf.Glyph = "" //  ("\uf04d") represents the "fa-stop" glyph.
+	StopCircle                       nf.Glyph = "" //  ("\uf28d") represents the "fa-stop_circle" glyph.
+	StopCircleO                      nf.Glyph = "" //  ("\uf28e") represents the "fa-stop_circle_o" glyph.
+	Stopwatch                        nf.Glyph = "" //  ("\uf2f2") represents the "fa-stopwatch" glyph.
+	Store                            nf.Glyph = "" //  ("\uee17") represents the "fa-store" glyph.
+	Strava                           nf.Glyph = "" //  ("\ued52") represents the "fa-strava" glyph.
+	StreetView                       nf.Glyph = "" //  ("\uf21d") represents the "fa-street_view" glyph.
+	Strikethrough                    nf.Glyph = "" //  ("\uf0cc") represents the "fa-strikethrough" glyph.
+	Stripe                           nf.Glyph = "" //  ("\ued53") represents the "fa-stripe" glyph.
+	StripeS                          nf.Glyph = "" //  ("\ued54") represents the "fa-stripe_s" glyph.
+	Stroopwafel                      nf.Glyph = "" //  ("\uee1a") represents the "fa-stroopwafel" glyph.
+	Studiovinari                     nf.Glyph = "" //  ("\ued2b") represents the "fa-studiovinari" glyph.
+	Stumbleupon                      nf.Glyph = "" //  ("\uf1a4") represents the "fa-stumbleupon" glyph.
+	StumbleuponCircle                nf.Glyph = "" //  ("\uf1a3") represents the "fa-stumbleupon_circle" glyph.
+	Subscript                        nf.Glyph = "" //  ("\uf12c") represents the "fa-subscript" glyph.
+	Subway                           nf.Glyph = "" //  ("\uf239") represents the "fa-subway" glyph.
+	Suitcase                         nf.Glyph = "" //  ("\uf0f2") represents the "fa-suitcase" glyph.
+	SuitcaseMedical                  nf.Glyph = "" //  ("\uf0fa") represents the "fa-suitcase_medical" glyph.
+	SuitcaseRolling                  nf.Glyph = "" //  ("\uee88") represents the "fa-suitcase_rolling" glyph.
+	Sun                              nf.Glyph = "" //  ("\uf185") represents the "fa-sun" glyph.
+	SunO                             nf.Glyph = "" //  ("\uf185") represents the "fa-sun_o" glyph.
+	Superpowers                      nf.Glyph = "" //  ("\uf2dd") represents the "fa-superpowers" glyph.
+	Superscript                      nf.Glyph = "" //  ("\uf12b") represents the "fa-superscript" glyph.
+	Supple                           nf.Glyph = "" //  ("\ued2c") represents the "fa-supple" glyph.
+	Support                          nf.Glyph = "" //  ("\uf1cd") represents the "fa-support" glyph.
+	Suse                             nf.Glyph = "" //  ("\uef6d") represents the "fa-suse" glyph.
+	Swatchbook                       nf.Glyph = "" //  ("\uee8a") represents the "fa-swatchbook" glyph.
+	Swift                            nf.Glyph = "" //  ("\uefbe") represents the "fa-swift" glyph.
+	Symfony                          nf.Glyph = "" //  ("\uef9c") represents the "fa-symfony" glyph.
+	Synagogue                        nf.Glyph = "" //  ("\ueee3") represents the "fa-synagogue" glyph.
+	Syringe                          nf.Glyph = "" //  ("\ued8d") represents the "fa-syringe" glyph.
+	Table                            nf.Glyph = "" //  ("\uf0ce") represents the "fa-table" glyph.
+	TableCells                       nf.Glyph = "" //  ("\uf00a") represents the "fa-table_cells" glyph.
+	TableCellsLarge                  nf.Glyph = "" //  ("\uf009") represents the "fa-table_cells_large" glyph.
+	TableColumns                     nf.Glyph = "" //  ("\uf0db") represents the "fa-table_columns" glyph.
+	TableList                        nf.Glyph = "" //  ("\uf00b") represents the "fa-table_list" glyph.
+	TableTennisPaddleBall            nf.Glyph = "" //  ("\ued71") represents the "fa-table_tennis_paddle_ball" glyph.
+	Tablet                           nf.Glyph = "" //  ("\ued2e") represents the "fa-tablet" glyph.
+	TabletButton                     nf.Glyph = "" //  ("\ued2d") represents the "fa-tablet_button" glyph.
+	TabletScreenButton               nf.Glyph = "" //  ("\uf10a") represents the "fa-tablet_screen_button" glyph.
+	Tablets                          nf.Glyph = "" //  ("\ued8e") represents the "fa-tablets" glyph.
+	TachographDigital                nf.Glyph = "" //  ("\uee2f") represents the "fa-tachograph_digital" glyph.
+	Tachometer                       nf.Glyph = "" //  ("\uf0e4") represents the "fa-tachometer" glyph.
+	Tag                              nf.Glyph = "" //  ("\uf02b") represents the "fa-tag" glyph.
+	Tags                             nf.Glyph = "" //  ("\uf02c") represents the "fa-tags" glyph.
+	Tape                             nf.Glyph = "" //  ("\uedaa") represents the "fa-tape" glyph.
+	Tasks                            nf.Glyph = "" //  ("\uf0ae") represents the "fa-tasks" glyph.
+	Taxi                             nf.Glyph = "" //  ("\uf1ba") represents the "fa-taxi" glyph.
+	Teamspeak                        nf.Glyph = "" //  ("\uedc3") represents the "fa-teamspeak" glyph.
+	Teeth                            nf.Glyph = "" //  ("\ueeb4") represents the "fa-teeth" glyph.
+	TeethOpen                        nf.Glyph = "" //  ("\ueeb5") represents the "fa-teeth_open" glyph.
+	Telegram                         nf.Glyph = "" //  ("\uf2c6") represents the "fa-telegram" glyph.
+	Television                       nf.Glyph = "" //  ("\uf26c") represents the "fa-television" glyph.
+	TemperatureEmpty                 nf.Glyph = "" //  ("\uf2cb") represents the "fa-temperature_empty" glyph.
+	TemperatureFull                  nf.Glyph = "" //  ("\uf2c7") represents the "fa-temperature_full" glyph.
+	TemperatureHalf                  nf.Glyph = "" //  ("\uf2c9") represents the "fa-temperature_half" glyph.
+	TemperatureHigh                  nf.Glyph = "" //  ("\uef2a") represents the "fa-temperature_high" glyph.
+	TemperatureLow                   nf.Glyph = "" //  ("\uef2b") represents the "fa-temperature_low" glyph.
+	TemperatureQuarter               nf.Glyph = "" //  ("\uf2ca") represents the "fa-temperature_quarter" glyph.
+	TemperatureThreeQuarters         nf.Glyph = "" //  ("\uf2c8") represents the "fa-temperature_three_quarters" glyph.
+	TencentWeibo                     nf.Glyph = "" //  ("\uf1d5") represents the "fa-tencent_weibo" glyph.
+	TengeSign                        nf.Glyph = "" //  ("\uef6e") represents the "fa-tenge_sign" glyph.
+	Terminal                         nf.Glyph = "" //  ("\uf120") represents the "fa-terminal" glyph.
+	TextHeight                       nf.Glyph = "" //  ("\uf034") represents the "fa-text_height" glyph.
+	TextSlash                        nf.Glyph = "" //  ("\uefac") represents the "fa-text_slash" glyph.
+	TextWidth                        nf.Glyph = "" //  ("\uf035") represents the "fa-text_width" glyph.
+	Th                               nf.Glyph = "" //  ("\uf00a") represents the "fa-th" glyph.
+	ThLarge                          nf.Glyph = "" //  ("\uf009") represents the "fa-th_large" glyph.
+	ThList                           nf.Glyph = "" //  ("\uf00b") represents the "fa-th_list" glyph.
+	TheRedYeti                       nf.Glyph = "" //  ("\ueee4") represents the "fa-the_red_yeti" glyph.
+	Themeco                          nf.Glyph = "" //  ("\uee8d") represents the "fa-themeco" glyph.
+	Themeisle                        nf.Glyph = "" //  ("\uf2b2") represents the "fa-themeisle" glyph.
+	Thermometer                      nf.Glyph = "" //  ("\uf2c7") represents the "fa-thermometer" glyph.
+	Thermometer0                     nf.Glyph = "" //  ("\uf2cb") represents the "fa-thermometer_0" glyph.
+	Thermometer1                     nf.Glyph = "" //  ("\uf2ca") represents the "fa-thermometer_1" glyph.
+	Thermometer2                     nf.Glyph = "" //  ("\uf2c9") represents the "fa-thermometer_2" glyph.
+	Thermometer3                     nf.Glyph = "" //  ("\uf2c8") represents the "fa-thermometer_3" glyph.
+	Thermometer4                     nf.Glyph = "" //  ("\uf2c7") represents the "fa-thermometer_4" glyph.
+	ThermometerAlt                   nf.Glyph = "" //  ("\ued8f") represents the "fa-thermometer_alt" glyph.
+	ThermometerEmpty                 nf.Glyph = "" //  ("\uf2cb") represents the "fa-thermometer_empty" glyph.
+	ThermometerFull                  nf.Glyph = "" //  ("\uf2c7") represents the "fa-thermometer_full" glyph.
+	ThermometerHalf                  nf.Glyph = "" //  ("\uf2c9") represents the "fa-thermometer_half" glyph.
+	ThermometerQuarter               nf.Glyph = "" //  ("\uf2ca") represents the "fa-thermometer_quarter" glyph.
+	ThermometerThreeQuarters         nf.Glyph = "" //  ("\uf2c8") represents the "fa-thermometer_three_quarters" glyph.
+	ThinkPeaks                       nf.Glyph = "" //  ("\uef19") represents the "fa-think_peaks" glyph.
+	ThumbTack                        nf.Glyph = "" //  ("\uf08d") represents the "fa-thumb_tack" glyph.
+	ThumbsDown                       nf.Glyph = "" //  ("\uf165") represents the "fa-thumbs_down" glyph.
+	ThumbsODown                      nf.Glyph = "" //  ("\uf088") represents the "fa-thumbs_o_down" glyph.
+	ThumbsOUp                        nf.Glyph = "" //  ("\uf087") represents the "fa-thumbs_o_up" glyph.
+	ThumbsUp                         nf.Glyph = "" //  ("\uf164") represents the "fa-thumbs_up" glyph.
+	Thumbtack                        nf.Glyph = "" //  ("\uf08d") represents the "fa-thumbtack" glyph.
+	Ticket                           nf.Glyph = "" //  ("\uf145") represents the "fa-ticket" glyph.
+	TicketSimple                     nf.Glyph = "" //  ("\ued30") represents the "fa-ticket_simple" glyph.
+	Times                            nf.Glyph = "" //  ("\uf00d") represents the "fa-times" glyph.
+	TimesCircle                      nf.Glyph = "" //  ("\uf057") represents the "fa-times_circle" glyph.
+	TimesCircleO                     nf.Glyph = "" //  ("\uf05c") represents the "fa-times_circle_o" glyph.
+	TimesRectangle                   nf.Glyph = "" //  ("\uf2d3") represents the "fa-times_rectangle" glyph.
+	TimesRectangleO                  nf.Glyph = "" //  ("\uf2d4") represents the "fa-times_rectangle_o" glyph.
+	Tint                             nf.Glyph = "" //  ("\uf043") represents the "fa-tint" glyph.
+	ToggleDown                       nf.Glyph = "" //  ("\uf150") represents the "fa-toggle_down" glyph.
+	ToggleLeft                       nf.Glyph = "" //  ("\uf191") represents the "fa-toggle_left" glyph.
+	ToggleOff                        nf.Glyph = "" //  ("\uf204") represents the "fa-toggle_off" glyph.
+	ToggleOn                         nf.Glyph = "" //  ("\uf205") represents the "fa-toggle_on" glyph.
+	ToggleRight                      nf.Glyph = "" //  ("\uf152") represents the "fa-toggle_right" glyph.
+	ToggleUp                         nf.Glyph = "" //  ("\uf151") represents the "fa-toggle_up" glyph.
+	Toilet                           nf.Glyph = "" //  ("\uef6f") represents the "fa-toilet" glyph.
+	ToiletPaper                      nf.Glyph = "" //  ("\uef11") represents the "fa-toilet_paper" glyph.
+	Toolbox                          nf.Glyph = "" //  ("\uee1b") represents the "fa-toolbox" glyph.
+	Tooth                            nf.Glyph = "" //  ("\uee90") represents the "fa-tooth" glyph.
+	ToriiGate                        nf.Glyph = "" //  ("\ueee6") represents the "fa-torii_gate" glyph.
+	Tornado                          nf.Glyph = "" //  ("\uef2d") represents the "fa-tornado" glyph.
+	TowerBroadcast                   nf.Glyph = "" //  ("\uede3") represents the "fa-tower_broadcast" glyph.
+	Tractor                          nf.Glyph = "" //  ("\uef12") represents the "fa-tractor" glyph.
+	TradeFederation                  nf.Glyph = "" //  ("\ueddd") represents the "fa-trade_federation" glyph.
+	Trademark                        nf.Glyph = "" //  ("\uf25c") represents the "fa-trademark" glyph.
+	TrafficLight                     nf.Glyph = "" //  ("\ueeb7") represents the "fa-traffic_light" glyph.
+	Train                            nf.Glyph = "" //  ("\uf238") represents the "fa-train" glyph.
+	TrainSubway                      nf.Glyph = "" //  ("\uf239") represents the "fa-train_subway" glyph.
+	Transgender                      nf.Glyph = "" //  ("\uf224") represents the "fa-transgender" glyph.
+	TransgenderAlt                   nf.Glyph = "" //  ("\uf225") represents the "fa-transgender_alt" glyph.
+	Trash                            nf.Glyph = "" //  ("\uf1f8") represents the "fa-trash" glyph.
+	TrashArrowUp                     nf.Glyph = "" //  ("\uef90") represents the "fa-trash_arrow_up" glyph.
+	TrashCan                         nf.Glyph = "" //  ("\uf014") represents the "fa-trash_can" glyph.
+	TrashCanArrowUp                  nf.Glyph = "" //  ("\uef91") represents the "fa-trash_can_arrow_up" glyph.
+	TrashO                           nf.Glyph = "" //  ("\uf014") represents the "fa-trash_o" glyph.
+	Tree                             nf.Glyph = "" //  ("\uf1bb") represents the "fa-tree" glyph.
+	Trello                           nf.Glyph = "" //  ("\uf181") represents the "fa-trello" glyph.
+	TriangleExclamation              nf.Glyph = "" //  ("\uf071") represents the "fa-triangle_exclamation" glyph.
+	Tripadvisor                      nf.Glyph = "" //  ("\uf262") represents the "fa-tripadvisor" glyph.
+	Trophy                           nf.Glyph = "" //  ("\uf091") represents the "fa-trophy" glyph.
+	Truck                            nf.Glyph = "" //  ("\uf0d1") represents the "fa-truck" glyph.
+	TruckFast                        nf.Glyph = "" //  ("\ued8b") represents the "fa-truck_fast" glyph.
+	TruckMedical                     nf.Glyph = "" //  ("\uf0f9") represents the "fa-truck_medical" glyph.
+	TruckMonster                     nf.Glyph = "" //  ("\ueeb8") represents the "fa-truck_monster" glyph.
+	TruckMoving                      nf.Glyph = "" //  ("\uedac") represents the "fa-truck_moving" glyph.
+	TruckPickup                      nf.Glyph = "" //  ("\ueeb9") represents the "fa-truck_pickup" glyph.
+	TruckRampBox                     nf.Glyph = "" //  ("\uedab") represents the "fa-truck_ramp_box" glyph.
+	Try                              nf.Glyph = "" //  ("\uf195") represents the "fa-try" glyph.
+	Tty                              nf.Glyph = "" //  ("\uf1e4") represents the "fa-tty" glyph.
+	Tumblr                           nf.Glyph = "" //  ("\uf173") represents the "fa-tumblr" glyph.
+	TumblrSquare                     nf.Glyph = "" //  ("\uf174") represents the "fa-tumblr_square" glyph.
+	TurkishLira                      nf.Glyph = "" //  ("\uf195") represents the "fa-turkish_lira" glyph.
+	TurnDown                         nf.Glyph = "" //  ("\uf2f8") represents the "fa-turn_down" glyph.
+	TurnUp                           nf.Glyph = "" //  ("\uf2fa") represents the "fa-turn_up" glyph.
+	Tv                               nf.Glyph = "" //  ("\uf26c") represents the "fa-tv" glyph.
+	Twitch                           nf.Glyph = "" //  ("\uf1e8") represents the "fa-twitch" glyph.
+	Twitter                          nf.Glyph = "" //  ("\uf099") represents the "fa-twitter" glyph.
+	TwitterSquare                    nf.Glyph = "" //  ("\uf081") represents the "fa-twitter_square" glyph.
+	Typo3                            nf.Glyph = "" //  ("\ued55") represents the "fa-typo3" glyph.
+	Uber                             nf.Glyph = "" //  ("\ued31") represents the "fa-uber" glyph.
+	Ubuntu                           nf.Glyph = "" //  ("\uef72") represents the "fa-ubuntu" glyph.
+	Uikit                            nf.Glyph = "" //  ("\ued32") represents the "fa-uikit" glyph.
+	Umbraco                          nf.Glyph = "" //  ("\uefbf") represents the "fa-umbraco" glyph.
+	Umbrella                         nf.Glyph = "" //  ("\uf0e9") represents the "fa-umbrella" glyph.
+	UmbrellaBeach                    nf.Glyph = "" //  ("\uee91") represents the "fa-umbrella_beach" glyph.
+	Underline                        nf.Glyph = "" //  ("\uf0cd") represents the "fa-underline" glyph.
+	Undo                             nf.Glyph = "" //  ("\uf0e2") represents the "fa-undo" glyph.
+	Uniregistry                      nf.Glyph = "" //  ("\ued33") represents the "fa-uniregistry" glyph.
+	UniversalAccess                  nf.Glyph = "" //  ("\uf29a") represents the "fa-universal_access" glyph.
+	University                       nf.Glyph = "" //  ("\uf19c") represents the "fa-university" glyph.
+	Unlink                           nf.Glyph = "" //  ("\uf127") represents the "fa-unlink" glyph.
+	Unlock                           nf.Glyph = "" //  ("\uf09c") represents the "fa-unlock" glyph.
+	UnlockAlt                        nf.Glyph = "" //  ("\uf13e") represents the "fa-unlock_alt" glyph.
+	UnlockKeyhole                    nf.Glyph = "" //  ("\uf13e") represents the "fa-unlock_keyhole" glyph.
+	Unsorted                         nf.Glyph = "" //  ("\uf0dc") represents the "fa-unsorted" glyph.
+	Untappd                          nf.Glyph = "" //  ("\ued34") represents the "fa-untappd" glyph.
+	UpDown                           nf.Glyph = "" //  ("\uf09f") represents the "fa-up_down" glyph.
+	UpDownLeftRight                  nf.Glyph = "" //  ("\uf0b2") represents the "fa-up_down_left_right" glyph.
+	UpRightAndDownLeftFromCenter     nf.Glyph = "" //  ("\ued4f") represents the "fa-up_right_and_down_left_from_center" glyph.
+	UpRightFromSquare                nf.Glyph = "" //  ("\uf0b3") represents the "fa-up_right_from_square" glyph.
+	Upload                           nf.Glyph = "" //  ("\uf093") represents the "fa-upload" glyph.
+	Ups                              nf.Glyph = "" //  ("\uef73") represents the "fa-ups" glyph.
+	Usb                              nf.Glyph = "" //  ("\uf287") represents the "fa-usb" glyph.
+	Usd                              nf.Glyph = "" //  ("\uf155") represents the "fa-usd" glyph.
+	User                             nf.Glyph = "" //  ("\uf007") represents the "fa-user" glyph.
+	UserAstronaut                    nf.Glyph = "" //  ("\uedc5") represents the "fa-user_astronaut" glyph.
+	UserCheck                        nf.Glyph = "" //  ("\uedc6") represents the "fa-user_check" glyph.
+	UserCircle                       nf.Glyph = "" //  ("\uf2bd") represents the "fa-user_circle" glyph.
+	UserCircleO                      nf.Glyph = "" //  ("\uf2be") represents the "fa-user_circle_o" glyph.
+	UserClock                        nf.Glyph = "" //  ("\uedc7") represents the "fa-user_clock" glyph.
+	UserDoctor                       nf.Glyph = "" //  ("\uf0f0") represents the "fa-user_doctor" glyph.
+	UserGear                         nf.Glyph = "" //  ("\uedc8") represents the "fa-user_gear" glyph.
+	UserGraduate                     nf.Glyph = "" //  ("\uedcb") represents the "fa-user_graduate" glyph.
+	UserGroup                        nf.Glyph = "" //  ("\uedca") represents the "fa-user_group" glyph.
+	UserInjured                      nf.Glyph = "" //  ("\uef13") represents the "fa-user_injured" glyph.
+	UserLarge                        nf.Glyph = "" //  ("\ued35") represents the "fa-user_large" glyph.
+	UserLargeSlash                   nf.Glyph = "" //  ("\uedc4") represents the "fa-user_large_slash" glyph.
+	UserLock                         nf.Glyph = "" //  ("\uedcc") represents the "fa-user_lock" glyph.
+	UserMd                           nf.Glyph = "" //  ("\uf0f0") represents the "fa-user_md" glyph.
+	UserMinus                        nf.Glyph = "" //  ("\uedcd") represents the "fa-user_minus" glyph.
+	UserNinja                        nf.Glyph = "" //  ("\uedce") represents the "fa-user_ninja" glyph.
+	UserNurse                        nf.Glyph = "" //  ("\uef92") represents the "fa-user_nurse" glyph.
+	UserO                            nf.Glyph = "" //  ("\uf2c0") represents the "fa-user_o" glyph.
+	UserPen                          nf.Glyph = "" //  ("\uedc9") represents the "fa-user_pen" glyph.
+	UserPlus                         nf.Glyph = "" //  ("\uf234") represents the "fa-user_plus" glyph.
+	UserSecret                       nf.Glyph = "" //  ("\uf21b") represents the "fa-user_secret" glyph.
+	UserShield                       nf.Glyph = "" //  ("\uedcf") represents the "fa-user_shield" glyph.
+	UserSlash                        nf.Glyph = "" //  ("\uedd0") represents the "fa-user_slash" glyph.
+	UserTag                          nf.Glyph = "" //  ("\uedd1") represents the "fa-user_tag" glyph.
+	UserTie                          nf.Glyph = "" //  ("\uedd2") represents the "fa-user_tie" glyph.
+	UserTimes                        nf.Glyph = "" //  ("\uf235") represents the "fa-user_times" glyph.
+	UserXmark                        nf.Glyph = "" //  ("\uf235") represents the "fa-user_xmark" glyph.
+	Users                            nf.Glyph = "" //  ("\uf0c0") represents the "fa-users" glyph.
+	UsersGear                        nf.Glyph = "" //  ("\uedd3") represents the "fa-users_gear" glyph.
+	Usps                             nf.Glyph = "" //  ("\uef74") represents the "fa-usps" glyph.
+	Ussunnah                         nf.Glyph = "" //  ("\ued36") represents the "fa-ussunnah" glyph.
+	Utensils                         nf.Glyph = "" //  ("\uf0f5") represents the "fa-utensils" glyph.
+	Vaadin                           nf.Glyph = "" //  ("\ued37") represents the "fa-vaadin" glyph.
+	VanShuttle                       nf.Glyph = "" //  ("\uee7e") represents the "fa-van_shuttle" glyph.
+	Vcard                            nf.Glyph = "" //  ("\uf2bb") represents the "fa-vcard" glyph.
+	VcardO                           nf.Glyph = "" //  ("\uf2bc") represents the "fa-vcard_o" glyph.
+	VectorSquare                     nf.Glyph = "" //  ("\uee92") represents the "fa-vector_square" glyph.
+	Venus                            nf.Glyph = "" //  ("\uf221") represents the "fa-venus" glyph.
+	VenusDouble                      nf.Glyph = "" //  ("\uf226") represents the "fa-venus_double" glyph.
+	VenusMars                        nf.Glyph = "" //  ("\uf228") represents the "fa-venus_mars" glyph.
+	Viacoin                          nf.Glyph = "" //  ("\uf237") represents the "fa-viacoin" glyph.
+	Viadeo                           nf.Glyph = "" //  ("\uf2a9") represents the "fa-viadeo" glyph.
+	ViadeoSquare                     nf.Glyph = "" //  ("\uf2aa") represents the "fa-viadeo_square" glyph.
+	Vial                             nf.Glyph = "" //  ("\ued90") represents the "fa-vial" glyph.
+	Vials                            nf.Glyph = "" //  ("\ued91") represents the "fa-vials" glyph.
+	Viber                            nf.Glyph = "" //  ("\ued38") represents the "fa-viber" glyph.
+	Video                            nf.Glyph = "" //  ("\uf03d") represents the "fa-video" glyph.
+	VideoCamera                      nf.Glyph = "" //  ("\uf03d") represents the "fa-video_camera" glyph.
+	VideoSlash                       nf.Glyph = "" //  ("\uedad") represents the "fa-video_slash" glyph.
+	Vihara                           nf.Glyph = "" //  ("\ueee7") represents the "fa-vihara" glyph.
+	Vimeo                            nf.Glyph = "" //  ("\ued39") represents the "fa-vimeo" glyph.
+	VimeoSquare                      nf.Glyph = "" //  ("\uf194") represents the "fa-vimeo_square" glyph.
+	VimeoV                           nf.Glyph = "" //  ("\uf27d") represents the "fa-vimeo_v" glyph.
+	Vine                             nf.Glyph = "" //  ("\uf1ca") represents the "fa-vine" glyph.
+	Vk                               nf.Glyph = "" //  ("\uf189") represents the "fa-vk" glyph.
+	Vnv                              nf.Glyph = "" //  ("\ued3a") represents the "fa-vnv" glyph.
+	Voicemail                        nf.Glyph = "" //  ("\uefb4") represents the "fa-voicemail" glyph.
+	Volcano                          nf.Glyph = "" //  ("\uef2e") represents the "fa-volcano" glyph.
+	Volleyball                       nf.Glyph = "" //  ("\ued72") represents the "fa-volleyball" glyph.
+	VolumeControlPhone               nf.Glyph = "" //  ("\uf2a0") represents the "fa-volume_control_phone" glyph.
+	VolumeDown                       nf.Glyph = "" //  ("\uf027") represents the "fa-volume_down" glyph.
+	VolumeHigh                       nf.Glyph = "" //  ("\uf028") represents the "fa-volume_high" glyph.
+	VolumeLow                        nf.Glyph = "" //  ("\uf027") represents the "fa-volume_low" glyph.
+	VolumeOff                        nf.Glyph = "" //  ("\uf026") represents the "fa-volume_off" glyph.
+	VolumeUp                         nf.Glyph = "" //  ("\uf028") represents the "fa-volume_up" glyph.
+	VolumeXmark                      nf.Glyph = "" //  ("\ueee8") represents the "fa-volume_xmark" glyph.
+	VrCardboard                      nf.Glyph = "" //  ("\uef14") represents the "fa-vr_cardboard" glyph.
+	Vuejs                            nf.Glyph = "" //  ("\ued4a") represents the "fa-vuejs" glyph.
+	WalkieTalkie                     nf.Glyph = "" //  ("\uefc0") represents the "fa-walkie_talkie" glyph.
+	Wallet                           nf.Glyph = "" //  ("\uee1e") represents the "fa-wallet" glyph.
+	WandMagic                        nf.Glyph = "" //  ("\uf0d0") represents the "fa-wand_magic" glyph.
+	WandSparkles                     nf.Glyph = "" //  ("\uef15") represents the "fa-wand_sparkles" glyph.
+	Warehouse                        nf.Glyph = "" //  ("\ued92") represents the "fa-warehouse" glyph.
+	Warning                          nf.Glyph = "" //  ("\uf071") represents the "fa-warning" glyph.
+	Water                            nf.Glyph = "" //  ("\uef30") represents the "fa-water" glyph.
+	WaterLadder                      nf.Glyph = "" //  ("\uee8c") represents the "fa-water_ladder" glyph.
+	WaveSquare                       nf.Glyph = "" //  ("\uef9d") represents the "fa-wave_square" glyph.
+	Waze                             nf.Glyph = "" //  ("\uef9e") represents the "fa-waze" glyph.
+	Wechat                           nf.Glyph = "" //  ("\uf1d7") represents the "fa-wechat" glyph.
+	Weebly                           nf.Glyph = "" //  ("\uee93") represents the "fa-weebly" glyph.
+	Weibo                            nf.Glyph = "" //  ("\uf18a") represents the "fa-weibo" glyph.
+	WeightHanging                    nf.Glyph = "" //  ("\uee94") represents the "fa-weight_hanging" glyph.
+	WeightScale                      nf.Glyph = "" //  ("\ued93") represents the "fa-weight_scale" glyph.
+	Weixin                           nf.Glyph = "" //  ("\uf1d7") represents the "fa-weixin" glyph.
+	Whatsapp                         nf.Glyph = "" //  ("\uf232") represents the "fa-whatsapp" glyph.
+	Wheelchair                       nf.Glyph = "" //  ("\uf193") represents the "fa-wheelchair" glyph.
+	WheelchairAlt                    nf.Glyph = "" //  ("\uf29b") represents the "fa-wheelchair_alt" glyph.
+	WhiskeyGlass                     nf.Glyph = "" //  ("\uef4a") represents the "fa-whiskey_glass" glyph.
+	Whmcs                            nf.Glyph = "" //  ("\ued3c") represents the "fa-whmcs" glyph.
+	Wifi                             nf.Glyph = "" //  ("\uf1eb") represents the "fa-wifi" glyph.
+	WikipediaW                       nf.Glyph = "" //  ("\uf266") represents the "fa-wikipedia_w" glyph.
+	Wind                             nf.Glyph = "" //  ("\uef16") represents the "fa-wind" glyph.
+	WindowClose                      nf.Glyph = "" //  ("\uf2d3") represents the "fa-window_close" glyph.
+	WindowCloseO                     nf.Glyph = "" //  ("\uf2d4") represents the "fa-window_close_o" glyph.
+	WindowMaximize                   nf.Glyph = "" //  ("\uf2d0") represents the "fa-window_maximize" glyph.
+	WindowMinimize                   nf.Glyph = "" //  ("\uf2d1") represents the "fa-window_minimize" glyph.
+	WindowRestore                    nf.Glyph = "" //  ("\uf2d2") represents the "fa-window_restore" glyph.
+	Windows                          nf.Glyph = "" //  ("\uf17a") represents the "fa-windows" glyph.
+	WineBottle                       nf.Glyph = "" //  ("\uef17") represents the "fa-wine_bottle" glyph.
+	WineGlass                        nf.Glyph = "" //  ("\uedae") represents the "fa-wine_glass" glyph.
+	WineGlassEmpty                   nf.Glyph = "" //  ("\uee95") represents the "fa-wine_glass_empty" glyph.
+	Wix                              nf.Glyph = "" //  ("\uee96") represents the "fa-wix" glyph.
+	WizardsOfTheCoast                nf.Glyph = "" //  ("\uef18") represents the "fa-wizards_of_the_coast" glyph.
+	WolfPackBattalion                nf.Glyph = "" //  ("\uedde") represents the "fa-wolf_pack_battalion" glyph.
+	Won                              nf.Glyph = "" //  ("\uf159") represents the "fa-won" glyph.
+	WonSign                          nf.Glyph = "" //  ("\uf159") represents the "fa-won_sign" glyph.
+	Wordpress                        nf.Glyph = "" //  ("\uf19a") represents the "fa-wordpress" glyph.
+	WordpressSimple                  nf.Glyph = "" //  ("\ued3d") represents the "fa-wordpress_simple" glyph.
+	Wpbeginner                       nf.Glyph = "" //  ("\uf297") represents the "fa-wpbeginner" glyph.
+	Wpexplorer                       nf.Glyph = "" //  ("\uf2de") represents the "fa-wpexplorer" glyph.
+	Wpforms                          nf.Glyph = "" //  ("\uf298") represents the "fa-wpforms" glyph.
+	Wpressr                          nf.Glyph = "" //  ("\ued1d") represents the "fa-wpressr" glyph.
+	Wrench                           nf.Glyph = "" //  ("\uf0ad") represents the "fa-wrench" glyph.
+	XRay                             nf.Glyph = "" //  ("\ued94") represents the "fa-x_ray" glyph.
+	Xbox                             nf.Glyph = "" //  ("\ued3e") represents the "fa-xbox" glyph.
+	Xing                             nf.Glyph = "" //  ("\uf168") represents the "fa-xing" glyph.
+	XingSquare                       nf.Glyph = "" //  ("\uf169") represents the "fa-xing_square" glyph.
+	Xmark                            nf.Glyph = "" //  ("\uf00d") represents the "fa-xmark" glyph.
+	YCombinator                      nf.Glyph = "" //  ("\uf23b") represents the "fa-y_combinator" glyph.
+	YCombinatorSquare                nf.Glyph = "" //  ("\uf1d4") represents the "fa-y_combinator_square" glyph.
+	Yahoo                            nf.Glyph = "" //  ("\uf19e") represents the "fa-yahoo" glyph.
+	Yammer                           nf.Glyph = "" //  ("\uef9f") represents the "fa-yammer" glyph.
+	Yandex                           nf.Glyph = "" //  ("\ued3f") represents the "fa-yandex" glyph.
+	YandexInternational              nf.Glyph = "" //  ("\ued40") represents the "fa-yandex_international" glyph.
+	Yarn                             nf.Glyph = "" //  ("\uef75") represents the "fa-yarn" glyph.
+	Yc                               nf.Glyph = "" //  ("\uf23b") represents the "fa-yc" glyph.
+	YcSquare                         nf.Glyph = "" //  ("\uf1d4") represents the "fa-yc_square" glyph.
+	Yelp                             nf.Glyph = "" //  ("\uf1e9") represents the "fa-yelp" glyph.
+	Yen                              nf.Glyph = "" //  ("\uf157") represents the "fa-yen" glyph.
+	YenSign                          nf.Glyph = "" //  ("\uf157") represents the "fa-yen_sign" glyph.
+	YinYang                          nf.Glyph = "" //  ("\ueee9") represents the "fa-yin_yang" glyph.
+	Yoast                            nf.Glyph = "" //  ("\uf2b1") represents the "fa-yoast" glyph.
+	Youtube                          nf.Glyph = "" //  ("\uf16a") represents the "fa-youtube" glyph.
+	YoutubePlay                      nf.Glyph = "" //  ("\uf16a") represents the "fa-youtube_play" glyph.
+	YoutubeSquare                    nf.Glyph = "" //  ("\uf166") represents the "fa-youtube_square" glyph.
+	Zhihu                            nf.Glyph = "" //  ("\ueeba") represents the "fa-zhihu" glyph.
+)

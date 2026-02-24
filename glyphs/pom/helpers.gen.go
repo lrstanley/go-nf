@@ -8,76 +8,60 @@ package pom
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Away,
-	CleanCode,
-	ExternalInterruption,
-	InternalInterruption,
-	LongPause,
-	PairProgramming,
-	PomodoroDone,
-	PomodoroEstimated,
-	PomodoroSquashed,
-	PomodoroTicking,
-	ShortPause,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the pom class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "away", "pom-away":
-		return Away
-	case "clean_code", "pom-clean_code":
-		return CleanCode
-	case "external_interruption", "pom-external_interruption":
-		return ExternalInterruption
-	case "internal_interruption", "pom-internal_interruption":
-		return InternalInterruption
-	case "long_pause", "pom-long_pause":
-		return LongPause
-	case "pair_programming", "pom-pair_programming":
-		return PairProgramming
-	case "pomodoro_done", "pom-pomodoro_done":
-		return PomodoroDone
-	case "pomodoro_estimated", "pom-pomodoro_estimated":
-		return PomodoroEstimated
-	case "pomodoro_squashed", "pom-pomodoro_squashed":
-		return PomodoroSquashed
-	case "pomodoro_ticking", "pom-pomodoro_ticking":
-		return PomodoroTicking
-	case "short_pause", "pom-short_pause":
-		return ShortPause
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"away":                  Away,
+		"clean_code":            CleanCode,
+		"external_interruption": ExternalInterruption,
+		"internal_interruption": InternalInterruption,
+		"long_pause":            LongPause,
+		"pair_programming":      PairProgramming,
+		"pomodoro_done":         PomodoroDone,
+		"pomodoro_estimated":    PomodoroEstimated,
+		"pomodoro_squashed":     PomodoroSquashed,
+		"pomodoro_ticking":      PomodoroTicking,
+		"short_pause":           ShortPause,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the pom class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

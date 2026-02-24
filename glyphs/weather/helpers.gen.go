@@ -8,727 +8,277 @@ package weather
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Alien,
-	Aliens,
-	Barometer,
-	Celsius,
-	Cloud,
-	CloudDown,
-	CloudRefresh,
-	CloudUp,
-	Cloudy,
-	CloudyGusts,
-	CloudyWindy,
-	DayCloudy,
-	DayCloudyGusts,
-	DayCloudyHigh,
-	DayCloudyWindy,
-	DayFog,
-	DayHail,
-	DayHaze,
-	DayLightWind,
-	DayLightning,
-	DayRain,
-	DayRainMix,
-	DayRainWind,
-	DayShowers,
-	DaySleet,
-	DaySleetStorm,
-	DaySnow,
-	DaySnowThunderstorm,
-	DaySnowWind,
-	DaySprinkle,
-	DayStormShowers,
-	DaySunny,
-	DaySunnyOvercast,
-	DayThunderstorm,
-	DayWindy,
-	Degrees,
-	DirectionDown,
-	DirectionDownLeft,
-	DirectionDownRight,
-	DirectionLeft,
-	DirectionRight,
-	DirectionUp,
-	DirectionUpLeft,
-	DirectionUpRight,
-	Dust,
-	Earthquake,
-	Fahrenheit,
-	Fire,
-	Flood,
-	Fog,
-	GaleWarning,
-	Hail,
-	Horizon,
-	HorizonAlt,
-	Hot,
-	Humidity,
-	Hurricane,
-	HurricaneWarning,
-	Lightning,
-	LunarEclipse,
-	Meteor,
-	MoonAltFirstQuarter,
-	MoonAltFull,
-	MoonAltNew,
-	MoonAltThirdQuarter,
-	MoonAltWaningCrescent1,
-	MoonAltWaningCrescent2,
-	MoonAltWaningCrescent3,
-	MoonAltWaningCrescent4,
-	MoonAltWaningCrescent5,
-	MoonAltWaningCrescent6,
-	MoonAltWaningGibbous1,
-	MoonAltWaningGibbous2,
-	MoonAltWaningGibbous3,
-	MoonAltWaningGibbous4,
-	MoonAltWaningGibbous5,
-	MoonAltWaningGibbous6,
-	MoonAltWaxingCrescent1,
-	MoonAltWaxingCrescent2,
-	MoonAltWaxingCrescent3,
-	MoonAltWaxingCrescent4,
-	MoonAltWaxingCrescent5,
-	MoonAltWaxingCrescent6,
-	MoonAltWaxingGibbous1,
-	MoonAltWaxingGibbous2,
-	MoonAltWaxingGibbous3,
-	MoonAltWaxingGibbous4,
-	MoonAltWaxingGibbous5,
-	MoonAltWaxingGibbous6,
-	MoonFirstQuarter,
-	MoonFull,
-	MoonNew,
-	MoonThirdQuarter,
-	MoonWaningCrescent1,
-	MoonWaningCrescent2,
-	MoonWaningCrescent3,
-	MoonWaningCrescent4,
-	MoonWaningCrescent5,
-	MoonWaningCrescent6,
-	MoonWaningGibbous1,
-	MoonWaningGibbous2,
-	MoonWaningGibbous3,
-	MoonWaningGibbous4,
-	MoonWaningGibbous5,
-	MoonWaningGibbous6,
-	MoonWaxingCrescent1,
-	MoonWaxingCrescent2,
-	MoonWaxingCrescent3,
-	MoonWaxingCrescent4,
-	MoonWaxingCrescent5,
-	MoonWaxingCrescent6,
-	MoonWaxingGibbous1,
-	MoonWaxingGibbous2,
-	MoonWaxingGibbous3,
-	MoonWaxingGibbous4,
-	MoonWaxingGibbous5,
-	MoonWaxingGibbous6,
-	Moonrise,
-	Moonset,
-	Na,
-	NightAltCloudy,
-	NightAltCloudyGusts,
-	NightAltCloudyHigh,
-	NightAltCloudyWindy,
-	NightAltHail,
-	NightAltLightning,
-	NightAltPartlyCloudy,
-	NightAltRain,
-	NightAltRainMix,
-	NightAltRainWind,
-	NightAltShowers,
-	NightAltSleet,
-	NightAltSleetStorm,
-	NightAltSnow,
-	NightAltSnowThunderstorm,
-	NightAltSnowWind,
-	NightAltSprinkle,
-	NightAltStormShowers,
-	NightAltThunderstorm,
-	NightClear,
-	NightCloudy,
-	NightCloudyGusts,
-	NightCloudyHigh,
-	NightCloudyWindy,
-	NightFog,
-	NightHail,
-	NightLightning,
-	NightPartlyCloudy,
-	NightRain,
-	NightRainMix,
-	NightRainWind,
-	NightShowers,
-	NightSleet,
-	NightSleetStorm,
-	NightSnow,
-	NightSnowThunderstorm,
-	NightSnowWind,
-	NightSprinkle,
-	NightStormShowers,
-	NightThunderstorm,
-	Rain,
-	RainMix,
-	RainWind,
-	Raindrop,
-	Raindrops,
-	Refresh,
-	RefreshAlt,
-	Sandstorm,
-	Showers,
-	Sleet,
-	SmallCraftAdvisory,
-	Smog,
-	Smoke,
-	Snow,
-	SnowWind,
-	SnowflakeCold,
-	SolarEclipse,
-	Sprinkle,
-	Stars,
-	StormShowers,
-	StormWarning,
-	StrongWind,
-	Sunrise,
-	Sunset,
-	Thermometer,
-	ThermometerExterior,
-	ThermometerInternal,
-	Thunderstorm,
-	Time1,
-	Time10,
-	Time11,
-	Time12,
-	Time2,
-	Time3,
-	Time4,
-	Time5,
-	Time6,
-	Time7,
-	Time8,
-	Time9,
-	Tornado,
-	Train,
-	Tsunami,
-	Umbrella,
-	Volcano,
-	WindBeaufort0,
-	WindBeaufort1,
-	WindBeaufort10,
-	WindBeaufort11,
-	WindBeaufort12,
-	WindBeaufort2,
-	WindBeaufort3,
-	WindBeaufort4,
-	WindBeaufort5,
-	WindBeaufort6,
-	WindBeaufort7,
-	WindBeaufort8,
-	WindBeaufort9,
-	WindDirection,
-	WindEast,
-	WindNorth,
-	WindNorthEast,
-	WindNorthWest,
-	WindSouth,
-	WindSouthEast,
-	WindSouthWest,
-	WindWest,
-	Windy,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the weather class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "alien", "weather-alien":
-		return Alien
-	case "aliens", "weather-aliens":
-		return Aliens
-	case "barometer", "weather-barometer":
-		return Barometer
-	case "celsius", "weather-celsius":
-		return Celsius
-	case "cloud", "weather-cloud":
-		return Cloud
-	case "cloud_down", "weather-cloud_down":
-		return CloudDown
-	case "cloud_refresh", "weather-cloud_refresh":
-		return CloudRefresh
-	case "cloud_up", "weather-cloud_up":
-		return CloudUp
-	case "cloudy", "weather-cloudy":
-		return Cloudy
-	case "cloudy_gusts", "weather-cloudy_gusts":
-		return CloudyGusts
-	case "cloudy_windy", "weather-cloudy_windy":
-		return CloudyWindy
-	case "day_cloudy", "weather-day_cloudy":
-		return DayCloudy
-	case "day_cloudy_gusts", "weather-day_cloudy_gusts":
-		return DayCloudyGusts
-	case "day_cloudy_high", "weather-day_cloudy_high":
-		return DayCloudyHigh
-	case "day_cloudy_windy", "weather-day_cloudy_windy":
-		return DayCloudyWindy
-	case "day_fog", "weather-day_fog":
-		return DayFog
-	case "day_hail", "weather-day_hail":
-		return DayHail
-	case "day_haze", "weather-day_haze":
-		return DayHaze
-	case "day_light_wind", "weather-day_light_wind":
-		return DayLightWind
-	case "day_lightning", "weather-day_lightning":
-		return DayLightning
-	case "day_rain", "weather-day_rain":
-		return DayRain
-	case "day_rain_mix", "weather-day_rain_mix":
-		return DayRainMix
-	case "day_rain_wind", "weather-day_rain_wind":
-		return DayRainWind
-	case "day_showers", "weather-day_showers":
-		return DayShowers
-	case "day_sleet", "weather-day_sleet":
-		return DaySleet
-	case "day_sleet_storm", "weather-day_sleet_storm":
-		return DaySleetStorm
-	case "day_snow", "weather-day_snow":
-		return DaySnow
-	case "day_snow_thunderstorm", "weather-day_snow_thunderstorm":
-		return DaySnowThunderstorm
-	case "day_snow_wind", "weather-day_snow_wind":
-		return DaySnowWind
-	case "day_sprinkle", "weather-day_sprinkle":
-		return DaySprinkle
-	case "day_storm_showers", "weather-day_storm_showers":
-		return DayStormShowers
-	case "day_sunny", "weather-day_sunny":
-		return DaySunny
-	case "day_sunny_overcast", "weather-day_sunny_overcast":
-		return DaySunnyOvercast
-	case "day_thunderstorm", "weather-day_thunderstorm":
-		return DayThunderstorm
-	case "day_windy", "weather-day_windy":
-		return DayWindy
-	case "degrees", "weather-degrees":
-		return Degrees
-	case "direction_down", "weather-direction_down":
-		return DirectionDown
-	case "direction_down_left", "weather-direction_down_left":
-		return DirectionDownLeft
-	case "direction_down_right", "weather-direction_down_right":
-		return DirectionDownRight
-	case "direction_left", "weather-direction_left":
-		return DirectionLeft
-	case "direction_right", "weather-direction_right":
-		return DirectionRight
-	case "direction_up", "weather-direction_up":
-		return DirectionUp
-	case "direction_up_left", "weather-direction_up_left":
-		return DirectionUpLeft
-	case "direction_up_right", "weather-direction_up_right":
-		return DirectionUpRight
-	case "dust", "weather-dust":
-		return Dust
-	case "earthquake", "weather-earthquake":
-		return Earthquake
-	case "fahrenheit", "weather-fahrenheit":
-		return Fahrenheit
-	case "fire", "weather-fire":
-		return Fire
-	case "flood", "weather-flood":
-		return Flood
-	case "fog", "weather-fog":
-		return Fog
-	case "gale_warning", "weather-gale_warning":
-		return GaleWarning
-	case "hail", "weather-hail":
-		return Hail
-	case "horizon", "weather-horizon":
-		return Horizon
-	case "horizon_alt", "weather-horizon_alt":
-		return HorizonAlt
-	case "hot", "weather-hot":
-		return Hot
-	case "humidity", "weather-humidity":
-		return Humidity
-	case "hurricane", "weather-hurricane":
-		return Hurricane
-	case "hurricane_warning", "weather-hurricane_warning":
-		return HurricaneWarning
-	case "lightning", "weather-lightning":
-		return Lightning
-	case "lunar_eclipse", "weather-lunar_eclipse":
-		return LunarEclipse
-	case "meteor", "weather-meteor":
-		return Meteor
-	case "moon_alt_first_quarter", "weather-moon_alt_first_quarter":
-		return MoonAltFirstQuarter
-	case "moon_alt_full", "weather-moon_alt_full":
-		return MoonAltFull
-	case "moon_alt_new", "weather-moon_alt_new":
-		return MoonAltNew
-	case "moon_alt_third_quarter", "weather-moon_alt_third_quarter":
-		return MoonAltThirdQuarter
-	case "moon_alt_waning_crescent_1", "weather-moon_alt_waning_crescent_1":
-		return MoonAltWaningCrescent1
-	case "moon_alt_waning_crescent_2", "weather-moon_alt_waning_crescent_2":
-		return MoonAltWaningCrescent2
-	case "moon_alt_waning_crescent_3", "weather-moon_alt_waning_crescent_3":
-		return MoonAltWaningCrescent3
-	case "moon_alt_waning_crescent_4", "weather-moon_alt_waning_crescent_4":
-		return MoonAltWaningCrescent4
-	case "moon_alt_waning_crescent_5", "weather-moon_alt_waning_crescent_5":
-		return MoonAltWaningCrescent5
-	case "moon_alt_waning_crescent_6", "weather-moon_alt_waning_crescent_6":
-		return MoonAltWaningCrescent6
-	case "moon_alt_waning_gibbous_1", "weather-moon_alt_waning_gibbous_1":
-		return MoonAltWaningGibbous1
-	case "moon_alt_waning_gibbous_2", "weather-moon_alt_waning_gibbous_2":
-		return MoonAltWaningGibbous2
-	case "moon_alt_waning_gibbous_3", "weather-moon_alt_waning_gibbous_3":
-		return MoonAltWaningGibbous3
-	case "moon_alt_waning_gibbous_4", "weather-moon_alt_waning_gibbous_4":
-		return MoonAltWaningGibbous4
-	case "moon_alt_waning_gibbous_5", "weather-moon_alt_waning_gibbous_5":
-		return MoonAltWaningGibbous5
-	case "moon_alt_waning_gibbous_6", "weather-moon_alt_waning_gibbous_6":
-		return MoonAltWaningGibbous6
-	case "moon_alt_waxing_crescent_1", "weather-moon_alt_waxing_crescent_1":
-		return MoonAltWaxingCrescent1
-	case "moon_alt_waxing_crescent_2", "weather-moon_alt_waxing_crescent_2":
-		return MoonAltWaxingCrescent2
-	case "moon_alt_waxing_crescent_3", "weather-moon_alt_waxing_crescent_3":
-		return MoonAltWaxingCrescent3
-	case "moon_alt_waxing_crescent_4", "weather-moon_alt_waxing_crescent_4":
-		return MoonAltWaxingCrescent4
-	case "moon_alt_waxing_crescent_5", "weather-moon_alt_waxing_crescent_5":
-		return MoonAltWaxingCrescent5
-	case "moon_alt_waxing_crescent_6", "weather-moon_alt_waxing_crescent_6":
-		return MoonAltWaxingCrescent6
-	case "moon_alt_waxing_gibbous_1", "weather-moon_alt_waxing_gibbous_1":
-		return MoonAltWaxingGibbous1
-	case "moon_alt_waxing_gibbous_2", "weather-moon_alt_waxing_gibbous_2":
-		return MoonAltWaxingGibbous2
-	case "moon_alt_waxing_gibbous_3", "weather-moon_alt_waxing_gibbous_3":
-		return MoonAltWaxingGibbous3
-	case "moon_alt_waxing_gibbous_4", "weather-moon_alt_waxing_gibbous_4":
-		return MoonAltWaxingGibbous4
-	case "moon_alt_waxing_gibbous_5", "weather-moon_alt_waxing_gibbous_5":
-		return MoonAltWaxingGibbous5
-	case "moon_alt_waxing_gibbous_6", "weather-moon_alt_waxing_gibbous_6":
-		return MoonAltWaxingGibbous6
-	case "moon_first_quarter", "weather-moon_first_quarter":
-		return MoonFirstQuarter
-	case "moon_full", "weather-moon_full":
-		return MoonFull
-	case "moon_new", "weather-moon_new":
-		return MoonNew
-	case "moon_third_quarter", "weather-moon_third_quarter":
-		return MoonThirdQuarter
-	case "moon_waning_crescent_1", "weather-moon_waning_crescent_1":
-		return MoonWaningCrescent1
-	case "moon_waning_crescent_2", "weather-moon_waning_crescent_2":
-		return MoonWaningCrescent2
-	case "moon_waning_crescent_3", "weather-moon_waning_crescent_3":
-		return MoonWaningCrescent3
-	case "moon_waning_crescent_4", "weather-moon_waning_crescent_4":
-		return MoonWaningCrescent4
-	case "moon_waning_crescent_5", "weather-moon_waning_crescent_5":
-		return MoonWaningCrescent5
-	case "moon_waning_crescent_6", "weather-moon_waning_crescent_6":
-		return MoonWaningCrescent6
-	case "moon_waning_gibbous_1", "weather-moon_waning_gibbous_1":
-		return MoonWaningGibbous1
-	case "moon_waning_gibbous_2", "weather-moon_waning_gibbous_2":
-		return MoonWaningGibbous2
-	case "moon_waning_gibbous_3", "weather-moon_waning_gibbous_3":
-		return MoonWaningGibbous3
-	case "moon_waning_gibbous_4", "weather-moon_waning_gibbous_4":
-		return MoonWaningGibbous4
-	case "moon_waning_gibbous_5", "weather-moon_waning_gibbous_5":
-		return MoonWaningGibbous5
-	case "moon_waning_gibbous_6", "weather-moon_waning_gibbous_6":
-		return MoonWaningGibbous6
-	case "moon_waxing_crescent_1", "weather-moon_waxing_crescent_1":
-		return MoonWaxingCrescent1
-	case "moon_waxing_crescent_2", "weather-moon_waxing_crescent_2":
-		return MoonWaxingCrescent2
-	case "moon_waxing_crescent_3", "weather-moon_waxing_crescent_3":
-		return MoonWaxingCrescent3
-	case "moon_waxing_crescent_4", "weather-moon_waxing_crescent_4":
-		return MoonWaxingCrescent4
-	case "moon_waxing_crescent_5", "weather-moon_waxing_crescent_5":
-		return MoonWaxingCrescent5
-	case "moon_waxing_crescent_6", "weather-moon_waxing_crescent_6":
-		return MoonWaxingCrescent6
-	case "moon_waxing_gibbous_1", "weather-moon_waxing_gibbous_1":
-		return MoonWaxingGibbous1
-	case "moon_waxing_gibbous_2", "weather-moon_waxing_gibbous_2":
-		return MoonWaxingGibbous2
-	case "moon_waxing_gibbous_3", "weather-moon_waxing_gibbous_3":
-		return MoonWaxingGibbous3
-	case "moon_waxing_gibbous_4", "weather-moon_waxing_gibbous_4":
-		return MoonWaxingGibbous4
-	case "moon_waxing_gibbous_5", "weather-moon_waxing_gibbous_5":
-		return MoonWaxingGibbous5
-	case "moon_waxing_gibbous_6", "weather-moon_waxing_gibbous_6":
-		return MoonWaxingGibbous6
-	case "moonrise", "weather-moonrise":
-		return Moonrise
-	case "moonset", "weather-moonset":
-		return Moonset
-	case "na", "weather-na":
-		return Na
-	case "night_alt_cloudy", "weather-night_alt_cloudy":
-		return NightAltCloudy
-	case "night_alt_cloudy_gusts", "weather-night_alt_cloudy_gusts":
-		return NightAltCloudyGusts
-	case "night_alt_cloudy_high", "weather-night_alt_cloudy_high":
-		return NightAltCloudyHigh
-	case "night_alt_cloudy_windy", "weather-night_alt_cloudy_windy":
-		return NightAltCloudyWindy
-	case "night_alt_hail", "weather-night_alt_hail":
-		return NightAltHail
-	case "night_alt_lightning", "weather-night_alt_lightning":
-		return NightAltLightning
-	case "night_alt_partly_cloudy", "weather-night_alt_partly_cloudy":
-		return NightAltPartlyCloudy
-	case "night_alt_rain", "weather-night_alt_rain":
-		return NightAltRain
-	case "night_alt_rain_mix", "weather-night_alt_rain_mix":
-		return NightAltRainMix
-	case "night_alt_rain_wind", "weather-night_alt_rain_wind":
-		return NightAltRainWind
-	case "night_alt_showers", "weather-night_alt_showers":
-		return NightAltShowers
-	case "night_alt_sleet", "weather-night_alt_sleet":
-		return NightAltSleet
-	case "night_alt_sleet_storm", "weather-night_alt_sleet_storm":
-		return NightAltSleetStorm
-	case "night_alt_snow", "weather-night_alt_snow":
-		return NightAltSnow
-	case "night_alt_snow_thunderstorm", "weather-night_alt_snow_thunderstorm":
-		return NightAltSnowThunderstorm
-	case "night_alt_snow_wind", "weather-night_alt_snow_wind":
-		return NightAltSnowWind
-	case "night_alt_sprinkle", "weather-night_alt_sprinkle":
-		return NightAltSprinkle
-	case "night_alt_storm_showers", "weather-night_alt_storm_showers":
-		return NightAltStormShowers
-	case "night_alt_thunderstorm", "weather-night_alt_thunderstorm":
-		return NightAltThunderstorm
-	case "night_clear", "weather-night_clear":
-		return NightClear
-	case "night_cloudy", "weather-night_cloudy":
-		return NightCloudy
-	case "night_cloudy_gusts", "weather-night_cloudy_gusts":
-		return NightCloudyGusts
-	case "night_cloudy_high", "weather-night_cloudy_high":
-		return NightCloudyHigh
-	case "night_cloudy_windy", "weather-night_cloudy_windy":
-		return NightCloudyWindy
-	case "night_fog", "weather-night_fog":
-		return NightFog
-	case "night_hail", "weather-night_hail":
-		return NightHail
-	case "night_lightning", "weather-night_lightning":
-		return NightLightning
-	case "night_partly_cloudy", "weather-night_partly_cloudy":
-		return NightPartlyCloudy
-	case "night_rain", "weather-night_rain":
-		return NightRain
-	case "night_rain_mix", "weather-night_rain_mix":
-		return NightRainMix
-	case "night_rain_wind", "weather-night_rain_wind":
-		return NightRainWind
-	case "night_showers", "weather-night_showers":
-		return NightShowers
-	case "night_sleet", "weather-night_sleet":
-		return NightSleet
-	case "night_sleet_storm", "weather-night_sleet_storm":
-		return NightSleetStorm
-	case "night_snow", "weather-night_snow":
-		return NightSnow
-	case "night_snow_thunderstorm", "weather-night_snow_thunderstorm":
-		return NightSnowThunderstorm
-	case "night_snow_wind", "weather-night_snow_wind":
-		return NightSnowWind
-	case "night_sprinkle", "weather-night_sprinkle":
-		return NightSprinkle
-	case "night_storm_showers", "weather-night_storm_showers":
-		return NightStormShowers
-	case "night_thunderstorm", "weather-night_thunderstorm":
-		return NightThunderstorm
-	case "rain", "weather-rain":
-		return Rain
-	case "rain_mix", "weather-rain_mix":
-		return RainMix
-	case "rain_wind", "weather-rain_wind":
-		return RainWind
-	case "raindrop", "weather-raindrop":
-		return Raindrop
-	case "raindrops", "weather-raindrops":
-		return Raindrops
-	case "refresh", "weather-refresh":
-		return Refresh
-	case "refresh_alt", "weather-refresh_alt":
-		return RefreshAlt
-	case "sandstorm", "weather-sandstorm":
-		return Sandstorm
-	case "showers", "weather-showers":
-		return Showers
-	case "sleet", "weather-sleet":
-		return Sleet
-	case "small_craft_advisory", "weather-small_craft_advisory":
-		return SmallCraftAdvisory
-	case "smog", "weather-smog":
-		return Smog
-	case "smoke", "weather-smoke":
-		return Smoke
-	case "snow", "weather-snow":
-		return Snow
-	case "snow_wind", "weather-snow_wind":
-		return SnowWind
-	case "snowflake_cold", "weather-snowflake_cold":
-		return SnowflakeCold
-	case "solar_eclipse", "weather-solar_eclipse":
-		return SolarEclipse
-	case "sprinkle", "weather-sprinkle":
-		return Sprinkle
-	case "stars", "weather-stars":
-		return Stars
-	case "storm_showers", "weather-storm_showers":
-		return StormShowers
-	case "storm_warning", "weather-storm_warning":
-		return StormWarning
-	case "strong_wind", "weather-strong_wind":
-		return StrongWind
-	case "sunrise", "weather-sunrise":
-		return Sunrise
-	case "sunset", "weather-sunset":
-		return Sunset
-	case "thermometer", "weather-thermometer":
-		return Thermometer
-	case "thermometer_exterior", "weather-thermometer_exterior":
-		return ThermometerExterior
-	case "thermometer_internal", "weather-thermometer_internal":
-		return ThermometerInternal
-	case "thunderstorm", "weather-thunderstorm":
-		return Thunderstorm
-	case "time_1", "weather-time_1":
-		return Time1
-	case "time_10", "weather-time_10":
-		return Time10
-	case "time_11", "weather-time_11":
-		return Time11
-	case "time_12", "weather-time_12":
-		return Time12
-	case "time_2", "weather-time_2":
-		return Time2
-	case "time_3", "weather-time_3":
-		return Time3
-	case "time_4", "weather-time_4":
-		return Time4
-	case "time_5", "weather-time_5":
-		return Time5
-	case "time_6", "weather-time_6":
-		return Time6
-	case "time_7", "weather-time_7":
-		return Time7
-	case "time_8", "weather-time_8":
-		return Time8
-	case "time_9", "weather-time_9":
-		return Time9
-	case "tornado", "weather-tornado":
-		return Tornado
-	case "train", "weather-train":
-		return Train
-	case "tsunami", "weather-tsunami":
-		return Tsunami
-	case "umbrella", "weather-umbrella":
-		return Umbrella
-	case "volcano", "weather-volcano":
-		return Volcano
-	case "wind_beaufort_0", "weather-wind_beaufort_0":
-		return WindBeaufort0
-	case "wind_beaufort_1", "weather-wind_beaufort_1":
-		return WindBeaufort1
-	case "wind_beaufort_10", "weather-wind_beaufort_10":
-		return WindBeaufort10
-	case "wind_beaufort_11", "weather-wind_beaufort_11":
-		return WindBeaufort11
-	case "wind_beaufort_12", "weather-wind_beaufort_12":
-		return WindBeaufort12
-	case "wind_beaufort_2", "weather-wind_beaufort_2":
-		return WindBeaufort2
-	case "wind_beaufort_3", "weather-wind_beaufort_3":
-		return WindBeaufort3
-	case "wind_beaufort_4", "weather-wind_beaufort_4":
-		return WindBeaufort4
-	case "wind_beaufort_5", "weather-wind_beaufort_5":
-		return WindBeaufort5
-	case "wind_beaufort_6", "weather-wind_beaufort_6":
-		return WindBeaufort6
-	case "wind_beaufort_7", "weather-wind_beaufort_7":
-		return WindBeaufort7
-	case "wind_beaufort_8", "weather-wind_beaufort_8":
-		return WindBeaufort8
-	case "wind_beaufort_9", "weather-wind_beaufort_9":
-		return WindBeaufort9
-	case "wind_direction", "weather-wind_direction":
-		return WindDirection
-	case "wind_east", "weather-wind_east":
-		return WindEast
-	case "wind_north", "weather-wind_north":
-		return WindNorth
-	case "wind_north_east", "weather-wind_north_east":
-		return WindNorthEast
-	case "wind_north_west", "weather-wind_north_west":
-		return WindNorthWest
-	case "wind_south", "weather-wind_south":
-		return WindSouth
-	case "wind_south_east", "weather-wind_south_east":
-		return WindSouthEast
-	case "wind_south_west", "weather-wind_south_west":
-		return WindSouthWest
-	case "wind_west", "weather-wind_west":
-		return WindWest
-	case "windy", "weather-windy":
-		return Windy
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"alien":                       Alien,
+		"aliens":                      Aliens,
+		"barometer":                   Barometer,
+		"celsius":                     Celsius,
+		"cloud":                       Cloud,
+		"cloud_down":                  CloudDown,
+		"cloud_refresh":               CloudRefresh,
+		"cloud_up":                    CloudUp,
+		"cloudy":                      Cloudy,
+		"cloudy_gusts":                CloudyGusts,
+		"cloudy_windy":                CloudyWindy,
+		"day_cloudy":                  DayCloudy,
+		"day_cloudy_gusts":            DayCloudyGusts,
+		"day_cloudy_high":             DayCloudyHigh,
+		"day_cloudy_windy":            DayCloudyWindy,
+		"day_fog":                     DayFog,
+		"day_hail":                    DayHail,
+		"day_haze":                    DayHaze,
+		"day_light_wind":              DayLightWind,
+		"day_lightning":               DayLightning,
+		"day_rain":                    DayRain,
+		"day_rain_mix":                DayRainMix,
+		"day_rain_wind":               DayRainWind,
+		"day_showers":                 DayShowers,
+		"day_sleet":                   DaySleet,
+		"day_sleet_storm":             DaySleetStorm,
+		"day_snow":                    DaySnow,
+		"day_snow_thunderstorm":       DaySnowThunderstorm,
+		"day_snow_wind":               DaySnowWind,
+		"day_sprinkle":                DaySprinkle,
+		"day_storm_showers":           DayStormShowers,
+		"day_sunny":                   DaySunny,
+		"day_sunny_overcast":          DaySunnyOvercast,
+		"day_thunderstorm":            DayThunderstorm,
+		"day_windy":                   DayWindy,
+		"degrees":                     Degrees,
+		"direction_down":              DirectionDown,
+		"direction_down_left":         DirectionDownLeft,
+		"direction_down_right":        DirectionDownRight,
+		"direction_left":              DirectionLeft,
+		"direction_right":             DirectionRight,
+		"direction_up":                DirectionUp,
+		"direction_up_left":           DirectionUpLeft,
+		"direction_up_right":          DirectionUpRight,
+		"dust":                        Dust,
+		"earthquake":                  Earthquake,
+		"fahrenheit":                  Fahrenheit,
+		"fire":                        Fire,
+		"flood":                       Flood,
+		"fog":                         Fog,
+		"gale_warning":                GaleWarning,
+		"hail":                        Hail,
+		"horizon":                     Horizon,
+		"horizon_alt":                 HorizonAlt,
+		"hot":                         Hot,
+		"humidity":                    Humidity,
+		"hurricane":                   Hurricane,
+		"hurricane_warning":           HurricaneWarning,
+		"lightning":                   Lightning,
+		"lunar_eclipse":               LunarEclipse,
+		"meteor":                      Meteor,
+		"moon_alt_first_quarter":      MoonAltFirstQuarter,
+		"moon_alt_full":               MoonAltFull,
+		"moon_alt_new":                MoonAltNew,
+		"moon_alt_third_quarter":      MoonAltThirdQuarter,
+		"moon_alt_waning_crescent_1":  MoonAltWaningCrescent1,
+		"moon_alt_waning_crescent_2":  MoonAltWaningCrescent2,
+		"moon_alt_waning_crescent_3":  MoonAltWaningCrescent3,
+		"moon_alt_waning_crescent_4":  MoonAltWaningCrescent4,
+		"moon_alt_waning_crescent_5":  MoonAltWaningCrescent5,
+		"moon_alt_waning_crescent_6":  MoonAltWaningCrescent6,
+		"moon_alt_waning_gibbous_1":   MoonAltWaningGibbous1,
+		"moon_alt_waning_gibbous_2":   MoonAltWaningGibbous2,
+		"moon_alt_waning_gibbous_3":   MoonAltWaningGibbous3,
+		"moon_alt_waning_gibbous_4":   MoonAltWaningGibbous4,
+		"moon_alt_waning_gibbous_5":   MoonAltWaningGibbous5,
+		"moon_alt_waning_gibbous_6":   MoonAltWaningGibbous6,
+		"moon_alt_waxing_crescent_1":  MoonAltWaxingCrescent1,
+		"moon_alt_waxing_crescent_2":  MoonAltWaxingCrescent2,
+		"moon_alt_waxing_crescent_3":  MoonAltWaxingCrescent3,
+		"moon_alt_waxing_crescent_4":  MoonAltWaxingCrescent4,
+		"moon_alt_waxing_crescent_5":  MoonAltWaxingCrescent5,
+		"moon_alt_waxing_crescent_6":  MoonAltWaxingCrescent6,
+		"moon_alt_waxing_gibbous_1":   MoonAltWaxingGibbous1,
+		"moon_alt_waxing_gibbous_2":   MoonAltWaxingGibbous2,
+		"moon_alt_waxing_gibbous_3":   MoonAltWaxingGibbous3,
+		"moon_alt_waxing_gibbous_4":   MoonAltWaxingGibbous4,
+		"moon_alt_waxing_gibbous_5":   MoonAltWaxingGibbous5,
+		"moon_alt_waxing_gibbous_6":   MoonAltWaxingGibbous6,
+		"moon_first_quarter":          MoonFirstQuarter,
+		"moon_full":                   MoonFull,
+		"moon_new":                    MoonNew,
+		"moon_third_quarter":          MoonThirdQuarter,
+		"moon_waning_crescent_1":      MoonWaningCrescent1,
+		"moon_waning_crescent_2":      MoonWaningCrescent2,
+		"moon_waning_crescent_3":      MoonWaningCrescent3,
+		"moon_waning_crescent_4":      MoonWaningCrescent4,
+		"moon_waning_crescent_5":      MoonWaningCrescent5,
+		"moon_waning_crescent_6":      MoonWaningCrescent6,
+		"moon_waning_gibbous_1":       MoonWaningGibbous1,
+		"moon_waning_gibbous_2":       MoonWaningGibbous2,
+		"moon_waning_gibbous_3":       MoonWaningGibbous3,
+		"moon_waning_gibbous_4":       MoonWaningGibbous4,
+		"moon_waning_gibbous_5":       MoonWaningGibbous5,
+		"moon_waning_gibbous_6":       MoonWaningGibbous6,
+		"moon_waxing_crescent_1":      MoonWaxingCrescent1,
+		"moon_waxing_crescent_2":      MoonWaxingCrescent2,
+		"moon_waxing_crescent_3":      MoonWaxingCrescent3,
+		"moon_waxing_crescent_4":      MoonWaxingCrescent4,
+		"moon_waxing_crescent_5":      MoonWaxingCrescent5,
+		"moon_waxing_crescent_6":      MoonWaxingCrescent6,
+		"moon_waxing_gibbous_1":       MoonWaxingGibbous1,
+		"moon_waxing_gibbous_2":       MoonWaxingGibbous2,
+		"moon_waxing_gibbous_3":       MoonWaxingGibbous3,
+		"moon_waxing_gibbous_4":       MoonWaxingGibbous4,
+		"moon_waxing_gibbous_5":       MoonWaxingGibbous5,
+		"moon_waxing_gibbous_6":       MoonWaxingGibbous6,
+		"moonrise":                    Moonrise,
+		"moonset":                     Moonset,
+		"na":                          Na,
+		"night_alt_cloudy":            NightAltCloudy,
+		"night_alt_cloudy_gusts":      NightAltCloudyGusts,
+		"night_alt_cloudy_high":       NightAltCloudyHigh,
+		"night_alt_cloudy_windy":      NightAltCloudyWindy,
+		"night_alt_hail":              NightAltHail,
+		"night_alt_lightning":         NightAltLightning,
+		"night_alt_partly_cloudy":     NightAltPartlyCloudy,
+		"night_alt_rain":              NightAltRain,
+		"night_alt_rain_mix":          NightAltRainMix,
+		"night_alt_rain_wind":         NightAltRainWind,
+		"night_alt_showers":           NightAltShowers,
+		"night_alt_sleet":             NightAltSleet,
+		"night_alt_sleet_storm":       NightAltSleetStorm,
+		"night_alt_snow":              NightAltSnow,
+		"night_alt_snow_thunderstorm": NightAltSnowThunderstorm,
+		"night_alt_snow_wind":         NightAltSnowWind,
+		"night_alt_sprinkle":          NightAltSprinkle,
+		"night_alt_storm_showers":     NightAltStormShowers,
+		"night_alt_thunderstorm":      NightAltThunderstorm,
+		"night_clear":                 NightClear,
+		"night_cloudy":                NightCloudy,
+		"night_cloudy_gusts":          NightCloudyGusts,
+		"night_cloudy_high":           NightCloudyHigh,
+		"night_cloudy_windy":          NightCloudyWindy,
+		"night_fog":                   NightFog,
+		"night_hail":                  NightHail,
+		"night_lightning":             NightLightning,
+		"night_partly_cloudy":         NightPartlyCloudy,
+		"night_rain":                  NightRain,
+		"night_rain_mix":              NightRainMix,
+		"night_rain_wind":             NightRainWind,
+		"night_showers":               NightShowers,
+		"night_sleet":                 NightSleet,
+		"night_sleet_storm":           NightSleetStorm,
+		"night_snow":                  NightSnow,
+		"night_snow_thunderstorm":     NightSnowThunderstorm,
+		"night_snow_wind":             NightSnowWind,
+		"night_sprinkle":              NightSprinkle,
+		"night_storm_showers":         NightStormShowers,
+		"night_thunderstorm":          NightThunderstorm,
+		"rain":                        Rain,
+		"rain_mix":                    RainMix,
+		"rain_wind":                   RainWind,
+		"raindrop":                    Raindrop,
+		"raindrops":                   Raindrops,
+		"refresh":                     Refresh,
+		"refresh_alt":                 RefreshAlt,
+		"sandstorm":                   Sandstorm,
+		"showers":                     Showers,
+		"sleet":                       Sleet,
+		"small_craft_advisory":        SmallCraftAdvisory,
+		"smog":                        Smog,
+		"smoke":                       Smoke,
+		"snow":                        Snow,
+		"snow_wind":                   SnowWind,
+		"snowflake_cold":              SnowflakeCold,
+		"solar_eclipse":               SolarEclipse,
+		"sprinkle":                    Sprinkle,
+		"stars":                       Stars,
+		"storm_showers":               StormShowers,
+		"storm_warning":               StormWarning,
+		"strong_wind":                 StrongWind,
+		"sunrise":                     Sunrise,
+		"sunset":                      Sunset,
+		"thermometer":                 Thermometer,
+		"thermometer_exterior":        ThermometerExterior,
+		"thermometer_internal":        ThermometerInternal,
+		"thunderstorm":                Thunderstorm,
+		"time_1":                      Time1,
+		"time_10":                     Time10,
+		"time_11":                     Time11,
+		"time_12":                     Time12,
+		"time_2":                      Time2,
+		"time_3":                      Time3,
+		"time_4":                      Time4,
+		"time_5":                      Time5,
+		"time_6":                      Time6,
+		"time_7":                      Time7,
+		"time_8":                      Time8,
+		"time_9":                      Time9,
+		"tornado":                     Tornado,
+		"train":                       Train,
+		"tsunami":                     Tsunami,
+		"umbrella":                    Umbrella,
+		"volcano":                     Volcano,
+		"wind_beaufort_0":             WindBeaufort0,
+		"wind_beaufort_1":             WindBeaufort1,
+		"wind_beaufort_10":            WindBeaufort10,
+		"wind_beaufort_11":            WindBeaufort11,
+		"wind_beaufort_12":            WindBeaufort12,
+		"wind_beaufort_2":             WindBeaufort2,
+		"wind_beaufort_3":             WindBeaufort3,
+		"wind_beaufort_4":             WindBeaufort4,
+		"wind_beaufort_5":             WindBeaufort5,
+		"wind_beaufort_6":             WindBeaufort6,
+		"wind_beaufort_7":             WindBeaufort7,
+		"wind_beaufort_8":             WindBeaufort8,
+		"wind_beaufort_9":             WindBeaufort9,
+		"wind_direction":              WindDirection,
+		"wind_east":                   WindEast,
+		"wind_north":                  WindNorth,
+		"wind_north_east":             WindNorthEast,
+		"wind_north_west":             WindNorthWest,
+		"wind_south":                  WindSouth,
+		"wind_south_east":             WindSouthEast,
+		"wind_south_west":             WindSouthWest,
+		"wind_west":                   WindWest,
+		"windy":                       Windy,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the weather class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

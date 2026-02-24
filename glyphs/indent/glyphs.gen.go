@@ -21,25 +21,14 @@ package indent
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "indent"
+	// Class is the name of the class.
+	Class nf.Class = "indent"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// DottedGuide () represents the "indent-dotted_guide" glyph.
-var DottedGuide = &nf.Glyph{
-	ID:      "dotted_guide",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue621",
-}
-
-// Line () represents the "indent-line" glyph.
-var Line = &nf.Glyph{
-	ID:      "line",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue621",
-}
+const (
+	DottedGuide nf.Glyph = "" //  ("\ue621") represents the "indent-dotted_guide" glyph.
+	Line        nf.Glyph = "" //  ("\ue621") represents the "indent-line" glyph.
+)

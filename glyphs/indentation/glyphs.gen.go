@@ -21,17 +21,13 @@ package indentation
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "indentation"
+	// Class is the name of the class.
+	Class nf.Class = "indentation"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Line () represents the "indentation-line" glyph.
-var Line = &nf.Glyph{
-	ID:      "line",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue621",
-}
+const (
+	Line nf.Glyph = "" //  ("\ue621") represents the "indentation-line" glyph.
+)

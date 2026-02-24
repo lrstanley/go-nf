@@ -21,97 +21,23 @@ package pom
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "pom"
+	// Class is the name of the class.
+	Class nf.Class = "pom"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Away () represents the "pom-away" glyph.
-var Away = &nf.Glyph{
-	ID:      "away",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue007",
-}
-
-// CleanCode () represents the "pom-clean_code" glyph.
-var CleanCode = &nf.Glyph{
-	ID:      "clean_code",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue000",
-}
-
-// ExternalInterruption () represents the "pom-external_interruption" glyph.
-var ExternalInterruption = &nf.Glyph{
-	ID:      "external_interruption",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue00a",
-}
-
-// InternalInterruption () represents the "pom-internal_interruption" glyph.
-var InternalInterruption = &nf.Glyph{
-	ID:      "internal_interruption",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue009",
-}
-
-// LongPause () represents the "pom-long_pause" glyph.
-var LongPause = &nf.Glyph{
-	ID:      "long_pause",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue006",
-}
-
-// PairProgramming () represents the "pom-pair_programming" glyph.
-var PairProgramming = &nf.Glyph{
-	ID:      "pair_programming",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue008",
-}
-
-// PomodoroDone () represents the "pom-pomodoro_done" glyph.
-var PomodoroDone = &nf.Glyph{
-	ID:      "pomodoro_done",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue001",
-}
-
-// PomodoroEstimated () represents the "pom-pomodoro_estimated" glyph.
-var PomodoroEstimated = &nf.Glyph{
-	ID:      "pomodoro_estimated",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue002",
-}
-
-// PomodoroSquashed () represents the "pom-pomodoro_squashed" glyph.
-var PomodoroSquashed = &nf.Glyph{
-	ID:      "pomodoro_squashed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue004",
-}
-
-// PomodoroTicking () represents the "pom-pomodoro_ticking" glyph.
-var PomodoroTicking = &nf.Glyph{
-	ID:      "pomodoro_ticking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue003",
-}
-
-// ShortPause () represents the "pom-short_pause" glyph.
-var ShortPause = &nf.Glyph{
-	ID:      "short_pause",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue005",
-}
+const (
+	Away                 nf.Glyph = "" //  ("\ue007") represents the "pom-away" glyph.
+	CleanCode            nf.Glyph = "" //  ("\ue000") represents the "pom-clean_code" glyph.
+	ExternalInterruption nf.Glyph = "" //  ("\ue00a") represents the "pom-external_interruption" glyph.
+	InternalInterruption nf.Glyph = "" //  ("\ue009") represents the "pom-internal_interruption" glyph.
+	LongPause            nf.Glyph = "" //  ("\ue006") represents the "pom-long_pause" glyph.
+	PairProgramming      nf.Glyph = "" //  ("\ue008") represents the "pom-pair_programming" glyph.
+	PomodoroDone         nf.Glyph = "" //  ("\ue001") represents the "pom-pomodoro_done" glyph.
+	PomodoroEstimated    nf.Glyph = "" //  ("\ue002") represents the "pom-pomodoro_estimated" glyph.
+	PomodoroSquashed     nf.Glyph = "" //  ("\ue004") represents the "pom-pomodoro_squashed" glyph.
+	PomodoroTicking      nf.Glyph = "" //  ("\ue003") represents the "pom-pomodoro_ticking" glyph.
+	ShortPause           nf.Glyph = "" //  ("\ue005") represents the "pom-short_pause" glyph.
+)

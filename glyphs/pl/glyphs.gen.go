@@ -21,81 +21,21 @@ package pl
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "pl"
+	// Class is the name of the class.
+	Class nf.Class = "pl"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Branch () represents the "pl-branch" glyph.
-var Branch = &nf.Glyph{
-	ID:      "branch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a0",
-}
-
-// CurrentLine () represents the "pl-current_line" glyph.
-var CurrentLine = &nf.Glyph{
-	ID:      "current_line",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a1",
-}
-
-// Hostname () represents the "pl-hostname" glyph.
-var Hostname = &nf.Glyph{
-	ID:      "hostname",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a2",
-}
-
-// LeftHardDivider () represents the "pl-left_hard_divider" glyph.
-var LeftHardDivider = &nf.Glyph{
-	ID:      "left_hard_divider",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b0",
-}
-
-// LeftSoftDivider () represents the "pl-left_soft_divider" glyph.
-var LeftSoftDivider = &nf.Glyph{
-	ID:      "left_soft_divider",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b1",
-}
-
-// LineNumber () represents the "pl-line_number" glyph.
-var LineNumber = &nf.Glyph{
-	ID:      "line_number",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a1",
-}
-
-// Readonly () represents the "pl-readonly" glyph.
-var Readonly = &nf.Glyph{
-	ID:      "readonly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0a2",
-}
-
-// RightHardDivider () represents the "pl-right_hard_divider" glyph.
-var RightHardDivider = &nf.Glyph{
-	ID:      "right_hard_divider",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b2",
-}
-
-// RightSoftDivider () represents the "pl-right_soft_divider" glyph.
-var RightSoftDivider = &nf.Glyph{
-	ID:      "right_soft_divider",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue0b3",
-}
+const (
+	Branch           nf.Glyph = "" //  ("\ue0a0") represents the "pl-branch" glyph.
+	CurrentLine      nf.Glyph = "" //  ("\ue0a1") represents the "pl-current_line" glyph.
+	Hostname         nf.Glyph = "" //  ("\ue0a2") represents the "pl-hostname" glyph.
+	LeftHardDivider  nf.Glyph = "" //  ("\ue0b0") represents the "pl-left_hard_divider" glyph.
+	LeftSoftDivider  nf.Glyph = "" //  ("\ue0b1") represents the "pl-left_soft_divider" glyph.
+	LineNumber       nf.Glyph = "" //  ("\ue0a1") represents the "pl-line_number" glyph.
+	Readonly         nf.Glyph = "" //  ("\ue0a2") represents the "pl-readonly" glyph.
+	RightHardDivider nf.Glyph = "" //  ("\ue0b2") represents the "pl-right_hard_divider" glyph.
+	RightSoftDivider nf.Glyph = "" //  ("\ue0b3") represents the "pl-right_soft_divider" glyph.
+)

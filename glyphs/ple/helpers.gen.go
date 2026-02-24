@@ -8,145 +8,83 @@ package ple
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	BackslashSeparator,
-	BackslashSeparatorRedundant,
-	ColumnNumber,
-	CurrentColumn,
-	FlameThick,
-	FlameThickMirrored,
-	FlameThin,
-	FlameThinMirrored,
-	ForwardslashSeparator,
-	ForwardslashSeparatorRedundant,
-	Honeycomb,
-	HoneycombOutline,
-	IceWaveform,
-	IceWaveformMirrored,
-	LeftHalfCircleThick,
-	LeftHalfCircleThin,
-	LeftHardDividerInverse,
-	LegoBlockFacing,
-	LegoBlockSideways,
-	LegoSeparator,
-	LegoSeparatorThin,
-	LowerLeftTriangle,
-	LowerRightTriangle,
-	PixelatedSquaresBig,
-	PixelatedSquaresBigMirrored,
-	PixelatedSquaresSmall,
-	PixelatedSquaresSmallMirrored,
-	RightHalfCircleThick,
-	RightHalfCircleThin,
-	RightHardDividerInverse,
-	TrapezoidTopBottom,
-	TrapezoidTopBottomMirrored,
-	UpperLeftTriangle,
-	UpperRightTriangle,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the ple class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "backslash_separator", "ple-backslash_separator":
-		return BackslashSeparator
-	case "backslash_separator_redundant", "ple-backslash_separator_redundant":
-		return BackslashSeparatorRedundant
-	case "column_number", "ple-column_number":
-		return ColumnNumber
-	case "current_column", "ple-current_column":
-		return CurrentColumn
-	case "flame_thick", "ple-flame_thick":
-		return FlameThick
-	case "flame_thick_mirrored", "ple-flame_thick_mirrored":
-		return FlameThickMirrored
-	case "flame_thin", "ple-flame_thin":
-		return FlameThin
-	case "flame_thin_mirrored", "ple-flame_thin_mirrored":
-		return FlameThinMirrored
-	case "forwardslash_separator", "ple-forwardslash_separator":
-		return ForwardslashSeparator
-	case "forwardslash_separator_redundant", "ple-forwardslash_separator_redundant":
-		return ForwardslashSeparatorRedundant
-	case "honeycomb", "ple-honeycomb":
-		return Honeycomb
-	case "honeycomb_outline", "ple-honeycomb_outline":
-		return HoneycombOutline
-	case "ice_waveform", "ple-ice_waveform":
-		return IceWaveform
-	case "ice_waveform_mirrored", "ple-ice_waveform_mirrored":
-		return IceWaveformMirrored
-	case "left_half_circle_thick", "ple-left_half_circle_thick":
-		return LeftHalfCircleThick
-	case "left_half_circle_thin", "ple-left_half_circle_thin":
-		return LeftHalfCircleThin
-	case "left_hard_divider_inverse", "ple-left_hard_divider_inverse":
-		return LeftHardDividerInverse
-	case "lego_block_facing", "ple-lego_block_facing":
-		return LegoBlockFacing
-	case "lego_block_sideways", "ple-lego_block_sideways":
-		return LegoBlockSideways
-	case "lego_separator", "ple-lego_separator":
-		return LegoSeparator
-	case "lego_separator_thin", "ple-lego_separator_thin":
-		return LegoSeparatorThin
-	case "lower_left_triangle", "ple-lower_left_triangle":
-		return LowerLeftTriangle
-	case "lower_right_triangle", "ple-lower_right_triangle":
-		return LowerRightTriangle
-	case "pixelated_squares_big", "ple-pixelated_squares_big":
-		return PixelatedSquaresBig
-	case "pixelated_squares_big_mirrored", "ple-pixelated_squares_big_mirrored":
-		return PixelatedSquaresBigMirrored
-	case "pixelated_squares_small", "ple-pixelated_squares_small":
-		return PixelatedSquaresSmall
-	case "pixelated_squares_small_mirrored", "ple-pixelated_squares_small_mirrored":
-		return PixelatedSquaresSmallMirrored
-	case "right_half_circle_thick", "ple-right_half_circle_thick":
-		return RightHalfCircleThick
-	case "right_half_circle_thin", "ple-right_half_circle_thin":
-		return RightHalfCircleThin
-	case "right_hard_divider_inverse", "ple-right_hard_divider_inverse":
-		return RightHardDividerInverse
-	case "trapezoid_top_bottom", "ple-trapezoid_top_bottom":
-		return TrapezoidTopBottom
-	case "trapezoid_top_bottom_mirrored", "ple-trapezoid_top_bottom_mirrored":
-		return TrapezoidTopBottomMirrored
-	case "upper_left_triangle", "ple-upper_left_triangle":
-		return UpperLeftTriangle
-	case "upper_right_triangle", "ple-upper_right_triangle":
-		return UpperRightTriangle
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"backslash_separator":              BackslashSeparator,
+		"backslash_separator_redundant":    BackslashSeparatorRedundant,
+		"column_number":                    ColumnNumber,
+		"current_column":                   CurrentColumn,
+		"flame_thick":                      FlameThick,
+		"flame_thick_mirrored":             FlameThickMirrored,
+		"flame_thin":                       FlameThin,
+		"flame_thin_mirrored":              FlameThinMirrored,
+		"forwardslash_separator":           ForwardslashSeparator,
+		"forwardslash_separator_redundant": ForwardslashSeparatorRedundant,
+		"honeycomb":                        Honeycomb,
+		"honeycomb_outline":                HoneycombOutline,
+		"ice_waveform":                     IceWaveform,
+		"ice_waveform_mirrored":            IceWaveformMirrored,
+		"left_half_circle_thick":           LeftHalfCircleThick,
+		"left_half_circle_thin":            LeftHalfCircleThin,
+		"left_hard_divider_inverse":        LeftHardDividerInverse,
+		"lego_block_facing":                LegoBlockFacing,
+		"lego_block_sideways":              LegoBlockSideways,
+		"lego_separator":                   LegoSeparator,
+		"lego_separator_thin":              LegoSeparatorThin,
+		"lower_left_triangle":              LowerLeftTriangle,
+		"lower_right_triangle":             LowerRightTriangle,
+		"pixelated_squares_big":            PixelatedSquaresBig,
+		"pixelated_squares_big_mirrored":   PixelatedSquaresBigMirrored,
+		"pixelated_squares_small":          PixelatedSquaresSmall,
+		"pixelated_squares_small_mirrored": PixelatedSquaresSmallMirrored,
+		"right_half_circle_thick":          RightHalfCircleThick,
+		"right_half_circle_thin":           RightHalfCircleThin,
+		"right_hard_divider_inverse":       RightHardDividerInverse,
+		"trapezoid_top_bottom":             TrapezoidTopBottom,
+		"trapezoid_top_bottom_mirrored":    TrapezoidTopBottomMirrored,
+		"upper_left_triangle":              UpperLeftTriangle,
+		"upper_right_triangle":             UpperRightTriangle,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the ple class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

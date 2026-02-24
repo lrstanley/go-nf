@@ -21,4073 +21,520 @@ package dev
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "dev"
+	// Class is the name of the class.
+	Class nf.Class = "dev"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Aarch64 () represents the "dev-aarch64" glyph.
-var Aarch64 = &nf.Glyph{
-	ID:      "aarch64",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue700",
-}
-
-// Adonisjs () represents the "dev-adonisjs" glyph.
-var Adonisjs = &nf.Glyph{
-	ID:      "adonisjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue701",
-}
-
-// Aftereffects () represents the "dev-aftereffects" glyph.
-var Aftereffects = &nf.Glyph{
-	ID:      "aftereffects",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue705",
-}
-
-// Akka () represents the "dev-akka" glyph.
-var Akka = &nf.Glyph{
-	ID:      "akka",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue708",
-}
-
-// Algolia () represents the "dev-algolia" glyph.
-var Algolia = &nf.Glyph{
-	ID:      "algolia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70a",
-}
-
-// Alpinejs () represents the "dev-alpinejs" glyph.
-var Alpinejs = &nf.Glyph{
-	ID:      "alpinejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue713",
-}
-
-// Amazonwebservices () represents the "dev-amazonwebservices" glyph.
-var Amazonwebservices = &nf.Glyph{
-	ID:      "amazonwebservices",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ad",
-}
-
-// Anaconda () represents the "dev-anaconda" glyph.
-var Anaconda = &nf.Glyph{
-	ID:      "anaconda",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue715",
-}
-
-// Android () represents the "dev-android" glyph.
-var Android = &nf.Glyph{
-	ID:      "android",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70e",
-}
-
-// Androidstudio () represents the "dev-androidstudio" glyph.
-var Androidstudio = &nf.Glyph{
-	ID:      "androidstudio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue71a",
-}
-
-// Angular () represents the "dev-angular" glyph.
-var Angular = &nf.Glyph{
-	ID:      "angular",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue753",
-}
-
-// Angularjs () represents the "dev-angularjs" glyph.
-var Angularjs = &nf.Glyph{
-	ID:      "angularjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue71c",
-}
-
-// Angularmaterial () represents the "dev-angularmaterial" glyph.
-var Angularmaterial = &nf.Glyph{
-	ID:      "angularmaterial",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue720",
-}
-
-// Ansible () represents the "dev-ansible" glyph.
-var Ansible = &nf.Glyph{
-	ID:      "ansible",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue723",
-}
-
-// Antdesign () represents the "dev-antdesign" glyph.
-var Antdesign = &nf.Glyph{
-	ID:      "antdesign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue72a",
-}
-
-// Apache () represents the "dev-apache" glyph.
-var Apache = &nf.Glyph{
-	ID:      "apache",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue72b",
-}
-
-// Apacheairflow () represents the "dev-apacheairflow" glyph.
-var Apacheairflow = &nf.Glyph{
-	ID:      "apacheairflow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue72c",
-}
-
-// Apachekafka () represents the "dev-apachekafka" glyph.
-var Apachekafka = &nf.Glyph{
-	ID:      "apachekafka",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue72e",
-}
-
-// Apachespark () represents the "dev-apachespark" glyph.
-var Apachespark = &nf.Glyph{
-	ID:      "apachespark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue72f",
-}
-
-// Apl () represents the "dev-apl" glyph.
-var Apl = &nf.Glyph{
-	ID:      "apl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue730",
-}
-
-// Appcelerator () represents the "dev-appcelerator" glyph.
-var Appcelerator = &nf.Glyph{
-	ID:      "appcelerator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ab",
-}
-
-// Apple () represents the "dev-apple" glyph.
-var Apple = &nf.Glyph{
-	ID:      "apple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue711",
-}
-
-// Appwrite () represents the "dev-appwrite" glyph.
-var Appwrite = &nf.Glyph{
-	ID:      "appwrite",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue731",
-}
-
-// Archlinux () represents the "dev-archlinux" glyph.
-var Archlinux = &nf.Glyph{
-	ID:      "archlinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue732",
-}
-
-// Arduino () represents the "dev-arduino" glyph.
-var Arduino = &nf.Glyph{
-	ID:      "arduino",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue733",
-}
-
-// Argocd () represents the "dev-argocd" glyph.
-var Argocd = &nf.Glyph{
-	ID:      "argocd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue734",
-}
-
-// Astro () represents the "dev-astro" glyph.
-var Astro = &nf.Glyph{
-	ID:      "astro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue735",
-}
-
-// Atom () represents the "dev-atom" glyph.
-var Atom = &nf.Glyph{
-	ID:      "atom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue764",
-}
-
-// Awk () represents the "dev-awk" glyph.
-var Awk = &nf.Glyph{
-	ID:      "awk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue741",
-}
-
-// Aws () represents the "dev-aws" glyph.
-var Aws = &nf.Glyph{
-	ID:      "aws",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ad",
-}
-
-// Axios () represents the "dev-axios" glyph.
-var Axios = &nf.Glyph{
-	ID:      "axios",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue74f",
-}
-
-// Azure () represents the "dev-azure" glyph.
-var Azure = &nf.Glyph{
-	ID:      "azure",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue754",
-}
-
-// Azuredevops () represents the "dev-azuredevops" glyph.
-var Azuredevops = &nf.Glyph{
-	ID:      "azuredevops",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue756",
-}
-
-// Azuresqldatabase () represents the "dev-azuresqldatabase" glyph.
-var Azuresqldatabase = &nf.Glyph{
-	ID:      "azuresqldatabase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue75b",
-}
-
-// Babel () represents the "dev-babel" glyph.
-var Babel = &nf.Glyph{
-	ID:      "babel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue75d",
-}
-
-// Backbone () represents the "dev-backbone" glyph.
-var Backbone = &nf.Glyph{
-	ID:      "backbone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue752",
-}
-
-// Backbonejs () represents the "dev-backbonejs" glyph.
-var Backbonejs = &nf.Glyph{
-	ID:      "backbonejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue752",
-}
-
-// Ballerina () represents the "dev-ballerina" glyph.
-var Ballerina = &nf.Glyph{
-	ID:      "ballerina",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue75e",
-}
-
-// Bamboo () represents the "dev-bamboo" glyph.
-var Bamboo = &nf.Glyph{
-	ID:      "bamboo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue75f",
-}
-
-// Bash () represents the "dev-bash" glyph.
-var Bash = &nf.Glyph{
-	ID:      "bash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue760",
-}
-
-// Beats () represents the "dev-beats" glyph.
-var Beats = &nf.Glyph{
-	ID:      "beats",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue761",
-}
-
-// Behance () represents the "dev-behance" glyph.
-var Behance = &nf.Glyph{
-	ID:      "behance",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue762",
-}
-
-// Bitbucket () represents the "dev-bitbucket" glyph.
-var Bitbucket = &nf.Glyph{
-	ID:      "bitbucket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue703",
-}
-
-// Blazor () represents the "dev-blazor" glyph.
-var Blazor = &nf.Glyph{
-	ID:      "blazor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue765",
-}
-
-// Blender () represents the "dev-blender" glyph.
-var Blender = &nf.Glyph{
-	ID:      "blender",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue766",
-}
-
-// Bootstrap () represents the "dev-bootstrap" glyph.
-var Bootstrap = &nf.Glyph{
-	ID:      "bootstrap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue747",
-}
-
-// Bower () represents the "dev-bower" glyph.
-var Bower = &nf.Glyph{
-	ID:      "bower",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue74d",
-}
-
-// Browserstack () represents the "dev-browserstack" glyph.
-var Browserstack = &nf.Glyph{
-	ID:      "browserstack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue76b",
-}
-
-// Bulma () represents the "dev-bulma" glyph.
-var Bulma = &nf.Glyph{
-	ID:      "bulma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue76c",
-}
-
-// Bun () represents the "dev-bun" glyph.
-var Bun = &nf.Glyph{
-	ID:      "bun",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue76f",
-}
-
-// C () represents the "dev-c" glyph.
-var C = &nf.Glyph{
-	ID:      "c",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue771",
-}
-
-// CLang () represents the "dev-c_lang" glyph.
-var CLang = &nf.Glyph{
-	ID:      "c_lang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue771",
-}
-
-// Cairo () represents the "dev-cairo" glyph.
-var Cairo = &nf.Glyph{
-	ID:      "cairo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue773",
-}
-
-// Cakephp () represents the "dev-cakephp" glyph.
-var Cakephp = &nf.Glyph{
-	ID:      "cakephp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue77a",
-}
-
-// Canva () represents the "dev-canva" glyph.
-var Canva = &nf.Glyph{
-	ID:      "canva",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue77c",
-}
-
-// Capacitor () represents the "dev-capacitor" glyph.
-var Capacitor = &nf.Glyph{
-	ID:      "capacitor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue785",
-}
-
-// Carbon () represents the "dev-carbon" glyph.
-var Carbon = &nf.Glyph{
-	ID:      "carbon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue788",
-}
-
-// Cassandra () represents the "dev-cassandra" glyph.
-var Cassandra = &nf.Glyph{
-	ID:      "cassandra",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue789",
-}
-
-// Centos () represents the "dev-centos" glyph.
-var Centos = &nf.Glyph{
-	ID:      "centos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue78a",
-}
-
-// Ceylon () represents the "dev-ceylon" glyph.
-var Ceylon = &nf.Glyph{
-	ID:      "ceylon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue78b",
-}
-
-// Chrome () represents the "dev-chrome" glyph.
-var Chrome = &nf.Glyph{
-	ID:      "chrome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue743",
-}
-
-// Circleci () represents the "dev-circleci" glyph.
-var Circleci = &nf.Glyph{
-	ID:      "circleci",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue78c",
-}
-
-// Clarity () represents the "dev-clarity" glyph.
-var Clarity = &nf.Glyph{
-	ID:      "clarity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue78d",
-}
-
-// Clion () represents the "dev-clion" glyph.
-var Clion = &nf.Glyph{
-	ID:      "clion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue78e",
-}
-
-// Clojure () represents the "dev-clojure" glyph.
-var Clojure = &nf.Glyph{
-	ID:      "clojure",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue768",
-}
-
-// ClojureAlt () represents the "dev-clojure_alt" glyph.
-var ClojureAlt = &nf.Glyph{
-	ID:      "clojure_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue76a",
-}
-
-// Clojurescript () represents the "dev-clojurescript" glyph.
-var Clojurescript = &nf.Glyph{
-	ID:      "clojurescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue790",
-}
-
-// Cloudflare () represents the "dev-cloudflare" glyph.
-var Cloudflare = &nf.Glyph{
-	ID:      "cloudflare",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue792",
-}
-
-// Cloudflareworkers () represents the "dev-cloudflareworkers" glyph.
-var Cloudflareworkers = &nf.Glyph{
-	ID:      "cloudflareworkers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue793",
-}
-
-// Cmake () represents the "dev-cmake" glyph.
-var Cmake = &nf.Glyph{
-	ID:      "cmake",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue794",
-}
-
-// Codeac () represents the "dev-codeac" glyph.
-var Codeac = &nf.Glyph{
-	ID:      "codeac",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue796",
-}
-
-// Codecov () represents the "dev-codecov" glyph.
-var Codecov = &nf.Glyph{
-	ID:      "codecov",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue797",
-}
-
-// Codeigniter () represents the "dev-codeigniter" glyph.
-var Codeigniter = &nf.Glyph{
-	ID:      "codeigniter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue780",
-}
-
-// Codepen () represents the "dev-codepen" glyph.
-var Codepen = &nf.Glyph{
-	ID:      "codepen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue716",
-}
-
-// Coffeescript () represents the "dev-coffeescript" glyph.
-var Coffeescript = &nf.Glyph{
-	ID:      "coffeescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue751",
-}
-
-// Composer () represents the "dev-composer" glyph.
-var Composer = &nf.Glyph{
-	ID:      "composer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue783",
-}
-
-// Confluence () represents the "dev-confluence" glyph.
-var Confluence = &nf.Glyph{
-	ID:      "confluence",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue799",
-}
-
-// Consul () represents the "dev-consul" glyph.
-var Consul = &nf.Glyph{
-	ID:      "consul",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue79a",
-}
-
-// Contao () represents the "dev-contao" glyph.
-var Contao = &nf.Glyph{
-	ID:      "contao",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue79b",
-}
-
-// Corejs () represents the "dev-corejs" glyph.
-var Corejs = &nf.Glyph{
-	ID:      "corejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue79d",
-}
-
-// Cosmosdb () represents the "dev-cosmosdb" glyph.
-var Cosmosdb = &nf.Glyph{
-	ID:      "cosmosdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue79f",
-}
-
-// Couchbase () represents the "dev-couchbase" glyph.
-var Couchbase = &nf.Glyph{
-	ID:      "couchbase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a0",
-}
-
-// Couchdb () represents the "dev-couchdb" glyph.
-var Couchdb = &nf.Glyph{
-	ID:      "couchdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a2",
-}
-
-// Cplusplus () represents the "dev-cplusplus" glyph.
-var Cplusplus = &nf.Glyph{
-	ID:      "cplusplus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a3",
-}
-
-// Crystal () represents the "dev-crystal" glyph.
-var Crystal = &nf.Glyph{
-	ID:      "crystal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ac",
-}
-
-// Csharp () represents the "dev-csharp" glyph.
-var Csharp = &nf.Glyph{
-	ID:      "csharp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b2",
-}
-
-// Css3 () represents the "dev-css3" glyph.
-var Css3 = &nf.Glyph{
-	ID:      "css3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue749",
-}
-
-// Css3Full () represents the "dev-css3_full" glyph.
-var Css3Full = &nf.Glyph{
-	ID:      "css3_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue74a",
-}
-
-// Cucumber () represents the "dev-cucumber" glyph.
-var Cucumber = &nf.Glyph{
-	ID:      "cucumber",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b7",
-}
-
-// Cypressio () represents the "dev-cypressio" glyph.
-var Cypressio = &nf.Glyph{
-	ID:      "cypressio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b9",
-}
-
-// D3Js () represents the "dev-d3js" glyph.
-var D3Js = &nf.Glyph{
-	ID:      "d3js",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7bc",
-}
-
-// Dart () represents the "dev-dart" glyph.
-var Dart = &nf.Glyph{
-	ID:      "dart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue798",
-}
-
-// Database () represents the "dev-database" glyph.
-var Database = &nf.Glyph{
-	ID:      "database",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue706",
-}
-
-// Datagrip () represents the "dev-datagrip" glyph.
-var Datagrip = &nf.Glyph{
-	ID:      "datagrip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7bd",
-}
-
-// Dataspell () represents the "dev-dataspell" glyph.
-var Dataspell = &nf.Glyph{
-	ID:      "dataspell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7be",
-}
-
-// Dbeaver () represents the "dev-dbeaver" glyph.
-var Dbeaver = &nf.Glyph{
-	ID:      "dbeaver",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7bf",
-}
-
-// Debian () represents the "dev-debian" glyph.
-var Debian = &nf.Glyph{
-	ID:      "debian",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue77d",
-}
-
-// Denojs () represents the "dev-denojs" glyph.
-var Denojs = &nf.Glyph{
-	ID:      "denojs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c0",
-}
-
-// Devicon () represents the "dev-devicon" glyph.
-var Devicon = &nf.Glyph{
-	ID:      "devicon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c1",
-}
-
-// DigitalOcean () represents the "dev-digital_ocean" glyph.
-var DigitalOcean = &nf.Glyph{
-	ID:      "digital_ocean",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ae",
-}
-
-// Digitalocean () represents the "dev-digitalocean" glyph.
-var Digitalocean = &nf.Glyph{
-	ID:      "digitalocean",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ae",
-}
-
-// Discordjs () represents the "dev-discordjs" glyph.
-var Discordjs = &nf.Glyph{
-	ID:      "discordjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c2",
-}
-
-// Django () represents the "dev-django" glyph.
-var Django = &nf.Glyph{
-	ID:      "django",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue71d",
-}
-
-// Djangorest () represents the "dev-djangorest" glyph.
-var Djangorest = &nf.Glyph{
-	ID:      "djangorest",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c3",
-}
-
-// Dlang () represents the "dev-dlang" glyph.
-var Dlang = &nf.Glyph{
-	ID:      "dlang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7af",
-}
-
-// Docker () represents the "dev-docker" glyph.
-var Docker = &nf.Glyph{
-	ID:      "docker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b0",
-}
-
-// Doctrine () represents the "dev-doctrine" glyph.
-var Doctrine = &nf.Glyph{
-	ID:      "doctrine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue774",
-}
-
-// Dotnet () represents the "dev-dotnet" glyph.
-var Dotnet = &nf.Glyph{
-	ID:      "dotnet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue77f",
-}
-
-// Dotnetcore () represents the "dev-dotnetcore" glyph.
-var Dotnetcore = &nf.Glyph{
-	ID:      "dotnetcore",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c6",
-}
-
-// Dreamweaver () represents the "dev-dreamweaver" glyph.
-var Dreamweaver = &nf.Glyph{
-	ID:      "dreamweaver",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue79c",
-}
-
-// Dropbox () represents the "dev-dropbox" glyph.
-var Dropbox = &nf.Glyph{
-	ID:      "dropbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue707",
-}
-
-// Dropwizard () represents the "dev-dropwizard" glyph.
-var Dropwizard = &nf.Glyph{
-	ID:      "dropwizard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c7",
-}
-
-// Drupal () represents the "dev-drupal" glyph.
-var Drupal = &nf.Glyph{
-	ID:      "drupal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue742",
-}
-
-// Dynamodb () represents the "dev-dynamodb" glyph.
-var Dynamodb = &nf.Glyph{
-	ID:      "dynamodb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c8",
-}
-
-// Eclipse () represents the "dev-eclipse" glyph.
-var Eclipse = &nf.Glyph{
-	ID:      "eclipse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue79e",
-}
-
-// Ecto () represents the "dev-ecto" glyph.
-var Ecto = &nf.Glyph{
-	ID:      "ecto",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c9",
-}
-
-// Elasticsearch () represents the "dev-elasticsearch" glyph.
-var Elasticsearch = &nf.Glyph{
-	ID:      "elasticsearch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ca",
-}
-
-// Electron () represents the "dev-electron" glyph.
-var Electron = &nf.Glyph{
-	ID:      "electron",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7cb",
-}
-
-// Eleventy () represents the "dev-eleventy" glyph.
-var Eleventy = &nf.Glyph{
-	ID:      "eleventy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7cc",
-}
-
-// Elixir () represents the "dev-elixir" glyph.
-var Elixir = &nf.Glyph{
-	ID:      "elixir",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7cd",
-}
-
-// Elm () represents the "dev-elm" glyph.
-var Elm = &nf.Glyph{
-	ID:      "elm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ce",
-}
-
-// Emacs () represents the "dev-emacs" glyph.
-var Emacs = &nf.Glyph{
-	ID:      "emacs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7cf",
-}
-
-// Embeddedc () represents the "dev-embeddedc" glyph.
-var Embeddedc = &nf.Glyph{
-	ID:      "embeddedc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d0",
-}
-
-// Ember () represents the "dev-ember" glyph.
-var Ember = &nf.Glyph{
-	ID:      "ember",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue71b",
-}
-
-// Envoy () represents the "dev-envoy" glyph.
-var Envoy = &nf.Glyph{
-	ID:      "envoy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d1",
-}
-
-// Erlang () represents the "dev-erlang" glyph.
-var Erlang = &nf.Glyph{
-	ID:      "erlang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b1",
-}
-
-// Eslint () represents the "dev-eslint" glyph.
-var Eslint = &nf.Glyph{
-	ID:      "eslint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d2",
-}
-
-// Express () represents the "dev-express" glyph.
-var Express = &nf.Glyph{
-	ID:      "express",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d3",
-}
-
-// Facebook () represents the "dev-facebook" glyph.
-var Facebook = &nf.Glyph{
-	ID:      "facebook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d4",
-}
-
-// Fastapi () represents the "dev-fastapi" glyph.
-var Fastapi = &nf.Glyph{
-	ID:      "fastapi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d5",
-}
-
-// Fastify () represents the "dev-fastify" glyph.
-var Fastify = &nf.Glyph{
-	ID:      "fastify",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d6",
-}
-
-// Faunadb () represents the "dev-faunadb" glyph.
-var Faunadb = &nf.Glyph{
-	ID:      "faunadb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d7",
-}
-
-// Feathersjs () represents the "dev-feathersjs" glyph.
-var Feathersjs = &nf.Glyph{
-	ID:      "feathersjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d8",
-}
-
-// Fedora () represents the "dev-fedora" glyph.
-var Fedora = &nf.Glyph{
-	ID:      "fedora",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7d9",
-}
-
-// Figma () represents the "dev-figma" glyph.
-var Figma = &nf.Glyph{
-	ID:      "figma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7da",
-}
-
-// Filezilla () represents the "dev-filezilla" glyph.
-var Filezilla = &nf.Glyph{
-	ID:      "filezilla",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7db",
-}
-
-// Firebase () represents the "dev-firebase" glyph.
-var Firebase = &nf.Glyph{
-	ID:      "firebase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue787",
-}
-
-// Firefox () represents the "dev-firefox" glyph.
-var Firefox = &nf.Glyph{
-	ID:      "firefox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue745",
-}
-
-// Flask () represents the "dev-flask" glyph.
-var Flask = &nf.Glyph{
-	ID:      "flask",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7dc",
-}
-
-// Flutter () represents the "dev-flutter" glyph.
-var Flutter = &nf.Glyph{
-	ID:      "flutter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7dd",
-}
-
-// Fortran () represents the "dev-fortran" glyph.
-var Fortran = &nf.Glyph{
-	ID:      "fortran",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7de",
-}
-
-// Foundation () represents the "dev-foundation" glyph.
-var Foundation = &nf.Glyph{
-	ID:      "foundation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7df",
-}
-
-// Framermotion () represents the "dev-framermotion" glyph.
-var Framermotion = &nf.Glyph{
-	ID:      "framermotion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e0",
-}
-
-// Framework7 () represents the "dev-framework7" glyph.
-var Framework7 = &nf.Glyph{
-	ID:      "framework7",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e1",
-}
-
-// Fsharp () represents the "dev-fsharp" glyph.
-var Fsharp = &nf.Glyph{
-	ID:      "fsharp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a7",
-}
-
-// Gatling () represents the "dev-gatling" glyph.
-var Gatling = &nf.Glyph{
-	ID:      "gatling",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e2",
-}
-
-// Gatsby () represents the "dev-gatsby" glyph.
-var Gatsby = &nf.Glyph{
-	ID:      "gatsby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e3",
-}
-
-// Gazebo () represents the "dev-gazebo" glyph.
-var Gazebo = &nf.Glyph{
-	ID:      "gazebo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e4",
-}
-
-// Gcc () represents the "dev-gcc" glyph.
-var Gcc = &nf.Glyph{
-	ID:      "gcc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e5",
-}
-
-// Gentoo () represents the "dev-gentoo" glyph.
-var Gentoo = &nf.Glyph{
-	ID:      "gentoo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e6",
-}
-
-// Ghost () represents the "dev-ghost" glyph.
-var Ghost = &nf.Glyph{
-	ID:      "ghost",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue71f",
-}
-
-// GhostSmall () represents the "dev-ghost_small" glyph.
-var GhostSmall = &nf.Glyph{
-	ID:      "ghost_small",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue714",
-}
-
-// Gimp () represents the "dev-gimp" glyph.
-var Gimp = &nf.Glyph{
-	ID:      "gimp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e7",
-}
-
-// Git () represents the "dev-git" glyph.
-var Git = &nf.Glyph{
-	ID:      "git",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue702",
-}
-
-// GitBranch () represents the "dev-git_branch" glyph.
-var GitBranch = &nf.Glyph{
-	ID:      "git_branch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue725",
-}
-
-// GitCommit () represents the "dev-git_commit" glyph.
-var GitCommit = &nf.Glyph{
-	ID:      "git_commit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue729",
-}
-
-// GitCompare () represents the "dev-git_compare" glyph.
-var GitCompare = &nf.Glyph{
-	ID:      "git_compare",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue728",
-}
-
-// GitMerge () represents the "dev-git_merge" glyph.
-var GitMerge = &nf.Glyph{
-	ID:      "git_merge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue727",
-}
-
-// GitPullRequest () represents the "dev-git_pull_request" glyph.
-var GitPullRequest = &nf.Glyph{
-	ID:      "git_pull_request",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue726",
-}
-
-// Gitbook () represents the "dev-gitbook" glyph.
-var Gitbook = &nf.Glyph{
-	ID:      "gitbook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e8",
-}
-
-// Github () represents the "dev-github" glyph.
-var Github = &nf.Glyph{
-	ID:      "github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue709",
-}
-
-// GithubBadge () represents the "dev-github_badge" glyph.
-var GithubBadge = &nf.Glyph{
-	ID:      "github_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue709",
-}
-
-// GithubFull () represents the "dev-github_full" glyph.
-var GithubFull = &nf.Glyph{
-	ID:      "github_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue717",
-}
-
-// Githubactions () represents the "dev-githubactions" glyph.
-var Githubactions = &nf.Glyph{
-	ID:      "githubactions",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7e9",
-}
-
-// Githubcodespaces () represents the "dev-githubcodespaces" glyph.
-var Githubcodespaces = &nf.Glyph{
-	ID:      "githubcodespaces",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ea",
-}
-
-// Gitlab () represents the "dev-gitlab" glyph.
-var Gitlab = &nf.Glyph{
-	ID:      "gitlab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7eb",
-}
-
-// Gitpod () represents the "dev-gitpod" glyph.
-var Gitpod = &nf.Glyph{
-	ID:      "gitpod",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ec",
-}
-
-// Gitter () represents the "dev-gitter" glyph.
-var Gitter = &nf.Glyph{
-	ID:      "gitter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ed",
-}
-
-// Gnu () represents the "dev-gnu" glyph.
-var Gnu = &nf.Glyph{
-	ID:      "gnu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue779",
-}
-
-// Go () represents the "dev-go" glyph.
-var Go = &nf.Glyph{
-	ID:      "go",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue724",
-}
-
-// Godot () represents the "dev-godot" glyph.
-var Godot = &nf.Glyph{
-	ID:      "godot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ee",
-}
-
-// Goland () represents the "dev-goland" glyph.
-var Goland = &nf.Glyph{
-	ID:      "goland",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ef",
-}
-
-// Google () represents the "dev-google" glyph.
-var Google = &nf.Glyph{
-	ID:      "google",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f0",
-}
-
-// Googlecloud () represents the "dev-googlecloud" glyph.
-var Googlecloud = &nf.Glyph{
-	ID:      "googlecloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f1",
-}
-
-// Gradle () represents the "dev-gradle" glyph.
-var Gradle = &nf.Glyph{
-	ID:      "gradle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f2",
-}
-
-// Grafana () represents the "dev-grafana" glyph.
-var Grafana = &nf.Glyph{
-	ID:      "grafana",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f3",
-}
-
-// Grails () represents the "dev-grails" glyph.
-var Grails = &nf.Glyph{
-	ID:      "grails",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b3",
-}
-
-// Graphql () represents the "dev-graphql" glyph.
-var Graphql = &nf.Glyph{
-	ID:      "graphql",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f4",
-}
-
-// Groovy () represents the "dev-groovy" glyph.
-var Groovy = &nf.Glyph{
-	ID:      "groovy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue775",
-}
-
-// Grpc () represents the "dev-grpc" glyph.
-var Grpc = &nf.Glyph{
-	ID:      "grpc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f5",
-}
-
-// Grunt () represents the "dev-grunt" glyph.
-var Grunt = &nf.Glyph{
-	ID:      "grunt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue74c",
-}
-
-// Gulp () represents the "dev-gulp" glyph.
-var Gulp = &nf.Glyph{
-	ID:      "gulp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue763",
-}
-
-// Hadoop () represents the "dev-hadoop" glyph.
-var Hadoop = &nf.Glyph{
-	ID:      "hadoop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f6",
-}
-
-// Handlebars () represents the "dev-handlebars" glyph.
-var Handlebars = &nf.Glyph{
-	ID:      "handlebars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f7",
-}
-
-// Hardhat () represents the "dev-hardhat" glyph.
-var Hardhat = &nf.Glyph{
-	ID:      "hardhat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f8",
-}
-
-// Harvester () represents the "dev-harvester" glyph.
-var Harvester = &nf.Glyph{
-	ID:      "harvester",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7f9",
-}
-
-// Haskell () represents the "dev-haskell" glyph.
-var Haskell = &nf.Glyph{
-	ID:      "haskell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue777",
-}
-
-// Haxe () represents the "dev-haxe" glyph.
-var Haxe = &nf.Glyph{
-	ID:      "haxe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7fa",
-}
-
-// Helm () represents the "dev-helm" glyph.
-var Helm = &nf.Glyph{
-	ID:      "helm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7fb",
-}
-
-// Heroku () represents the "dev-heroku" glyph.
-var Heroku = &nf.Glyph{
-	ID:      "heroku",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue77b",
-}
-
-// Hibernate () represents the "dev-hibernate" glyph.
-var Hibernate = &nf.Glyph{
-	ID:      "hibernate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7fc",
-}
-
-// Homebrew () represents the "dev-homebrew" glyph.
-var Homebrew = &nf.Glyph{
-	ID:      "homebrew",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7fd",
-}
-
-// Html5 () represents the "dev-html5" glyph.
-var Html5 = &nf.Glyph{
-	ID:      "html5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue736",
-}
-
-// Hugo () represents the "dev-hugo" glyph.
-var Hugo = &nf.Glyph{
-	ID:      "hugo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7fe",
-}
-
-// Ie () represents the "dev-ie" glyph.
-var Ie = &nf.Glyph{
-	ID:      "ie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue744",
-}
-
-// Ifttt () represents the "dev-ifttt" glyph.
-var Ifttt = &nf.Glyph{
-	ID:      "ifttt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ff",
-}
-
-// Illustrator () represents the "dev-illustrator" glyph.
-var Illustrator = &nf.Glyph{
-	ID:      "illustrator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b4",
-}
-
-// Influxdb () represents the "dev-influxdb" glyph.
-var Influxdb = &nf.Glyph{
-	ID:      "influxdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue800",
-}
-
-// Inkscape () represents the "dev-inkscape" glyph.
-var Inkscape = &nf.Glyph{
-	ID:      "inkscape",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue801",
-}
-
-// Insomnia () represents the "dev-insomnia" glyph.
-var Insomnia = &nf.Glyph{
-	ID:      "insomnia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue802",
-}
-
-// Intellij () represents the "dev-intellij" glyph.
-var Intellij = &nf.Glyph{
-	ID:      "intellij",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b5",
-}
-
-// Ionic () represents the "dev-ionic" glyph.
-var Ionic = &nf.Glyph{
-	ID:      "ionic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a9",
-}
-
-// Jaegertracing () represents the "dev-jaegertracing" glyph.
-var Jaegertracing = &nf.Glyph{
-	ID:      "jaegertracing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue803",
-}
-
-// Jamstack () represents the "dev-jamstack" glyph.
-var Jamstack = &nf.Glyph{
-	ID:      "jamstack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue804",
-}
-
-// Jasmine () represents the "dev-jasmine" glyph.
-var Jasmine = &nf.Glyph{
-	ID:      "jasmine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue805",
-}
-
-// Java () represents the "dev-java" glyph.
-var Java = &nf.Glyph{
-	ID:      "java",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue738",
-}
-
-// Javascript () represents the "dev-javascript" glyph.
-var Javascript = &nf.Glyph{
-	ID:      "javascript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue781",
-}
-
-// JavascriptAlt () represents the "dev-javascript_alt" glyph.
-var JavascriptAlt = &nf.Glyph{
-	ID:      "javascript_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue74e",
-}
-
-// JavascriptBadge () represents the "dev-javascript_badge" glyph.
-var JavascriptBadge = &nf.Glyph{
-	ID:      "javascript_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue781",
-}
-
-// Jeet () represents the "dev-jeet" glyph.
-var Jeet = &nf.Glyph{
-	ID:      "jeet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue806",
-}
-
-// Jekyll () represents the "dev-jekyll" glyph.
-var Jekyll = &nf.Glyph{
-	ID:      "jekyll",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70d",
-}
-
-// JekyllSmall () represents the "dev-jekyll_small" glyph.
-var JekyllSmall = &nf.Glyph{
-	ID:      "jekyll_small",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70d",
-}
-
-// Jenkins () represents the "dev-jenkins" glyph.
-var Jenkins = &nf.Glyph{
-	ID:      "jenkins",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue767",
-}
-
-// Jest () represents the "dev-jest" glyph.
-var Jest = &nf.Glyph{
-	ID:      "jest",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue807",
-}
-
-// Jetbrains () represents the "dev-jetbrains" glyph.
-var Jetbrains = &nf.Glyph{
-	ID:      "jetbrains",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue808",
-}
-
-// Jetpackcompose () represents the "dev-jetpackcompose" glyph.
-var Jetpackcompose = &nf.Glyph{
-	ID:      "jetpackcompose",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue809",
-}
-
-// Jira () represents the "dev-jira" glyph.
-var Jira = &nf.Glyph{
-	ID:      "jira",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue75c",
-}
-
-// Jiraalign () represents the "dev-jiraalign" glyph.
-var Jiraalign = &nf.Glyph{
-	ID:      "jiraalign",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue80a",
-}
-
-// Jquery () represents the "dev-jquery" glyph.
-var Jquery = &nf.Glyph{
-	ID:      "jquery",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue750",
-}
-
-// Json () represents the "dev-json" glyph.
-var Json = &nf.Glyph{
-	ID:      "json",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue80b",
-}
-
-// Jule () represents the "dev-jule" glyph.
-var Jule = &nf.Glyph{
-	ID:      "jule",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue80c",
-}
-
-// Julia () represents the "dev-julia" glyph.
-var Julia = &nf.Glyph{
-	ID:      "julia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue80d",
-}
-
-// Junit () represents the "dev-junit" glyph.
-var Junit = &nf.Glyph{
-	ID:      "junit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue80e",
-}
-
-// Jupyter () represents the "dev-jupyter" glyph.
-var Jupyter = &nf.Glyph{
-	ID:      "jupyter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue80f",
-}
-
-// K3Os () represents the "dev-k3os" glyph.
-var K3Os = &nf.Glyph{
-	ID:      "k3os",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue810",
-}
-
-// K3S () represents the "dev-k3s" glyph.
-var K3S = &nf.Glyph{
-	ID:      "k3s",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue811",
-}
-
-// K6 () represents the "dev-k6" glyph.
-var K6 = &nf.Glyph{
-	ID:      "k6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue812",
-}
-
-// Kaggle () represents the "dev-kaggle" glyph.
-var Kaggle = &nf.Glyph{
-	ID:      "kaggle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue813",
-}
-
-// Karatelabs () represents the "dev-karatelabs" glyph.
-var Karatelabs = &nf.Glyph{
-	ID:      "karatelabs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue814",
-}
-
-// Karma () represents the "dev-karma" glyph.
-var Karma = &nf.Glyph{
-	ID:      "karma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue815",
-}
-
-// Kdeneon () represents the "dev-kdeneon" glyph.
-var Kdeneon = &nf.Glyph{
-	ID:      "kdeneon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue816",
-}
-
-// Keras () represents the "dev-keras" glyph.
-var Keras = &nf.Glyph{
-	ID:      "keras",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue817",
-}
-
-// Kibana () represents the "dev-kibana" glyph.
-var Kibana = &nf.Glyph{
-	ID:      "kibana",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue818",
-}
-
-// Knexjs () represents the "dev-knexjs" glyph.
-var Knexjs = &nf.Glyph{
-	ID:      "knexjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue819",
-}
-
-// Knockout () represents the "dev-knockout" glyph.
-var Knockout = &nf.Glyph{
-	ID:      "knockout",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue81a",
-}
-
-// Kotlin () represents the "dev-kotlin" glyph.
-var Kotlin = &nf.Glyph{
-	ID:      "kotlin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue81b",
-}
-
-// Krakenjs () represents the "dev-krakenjs" glyph.
-var Krakenjs = &nf.Glyph{
-	ID:      "krakenjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue784",
-}
-
-// KrakenjsBadge () represents the "dev-krakenjs_badge" glyph.
-var KrakenjsBadge = &nf.Glyph{
-	ID:      "krakenjs_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue784",
-}
-
-// Ktor () represents the "dev-ktor" glyph.
-var Ktor = &nf.Glyph{
-	ID:      "ktor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue81c",
-}
-
-// Kubernetes () represents the "dev-kubernetes" glyph.
-var Kubernetes = &nf.Glyph{
-	ID:      "kubernetes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue81d",
-}
-
-// Labview () represents the "dev-labview" glyph.
-var Labview = &nf.Glyph{
-	ID:      "labview",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue81e",
-}
-
-// Laravel () represents the "dev-laravel" glyph.
-var Laravel = &nf.Glyph{
-	ID:      "laravel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73f",
-}
-
-// Latex () represents the "dev-latex" glyph.
-var Latex = &nf.Glyph{
-	ID:      "latex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue81f",
-}
-
-// Less () represents the "dev-less" glyph.
-var Less = &nf.Glyph{
-	ID:      "less",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue758",
-}
-
-// Linkedin () represents the "dev-linkedin" glyph.
-var Linkedin = &nf.Glyph{
-	ID:      "linkedin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue820",
-}
-
-// Linux () represents the "dev-linux" glyph.
-var Linux = &nf.Glyph{
-	ID:      "linux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue712",
-}
-
-// Liquibase () represents the "dev-liquibase" glyph.
-var Liquibase = &nf.Glyph{
-	ID:      "liquibase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue821",
-}
-
-// Livewire () represents the "dev-livewire" glyph.
-var Livewire = &nf.Glyph{
-	ID:      "livewire",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue822",
-}
-
-// Llvm () represents the "dev-llvm" glyph.
-var Llvm = &nf.Glyph{
-	ID:      "llvm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue823",
-}
-
-// Lodash () represents the "dev-lodash" glyph.
-var Lodash = &nf.Glyph{
-	ID:      "lodash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue824",
-}
-
-// Logstash () represents the "dev-logstash" glyph.
-var Logstash = &nf.Glyph{
-	ID:      "logstash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue825",
-}
-
-// Lua () represents the "dev-lua" glyph.
-var Lua = &nf.Glyph{
-	ID:      "lua",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue826",
-}
-
-// Lumen () represents the "dev-lumen" glyph.
-var Lumen = &nf.Glyph{
-	ID:      "lumen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue827",
-}
-
-// Magento () represents the "dev-magento" glyph.
-var Magento = &nf.Glyph{
-	ID:      "magento",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue740",
-}
-
-// Mariadb () represents the "dev-mariadb" glyph.
-var Mariadb = &nf.Glyph{
-	ID:      "mariadb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue828",
-}
-
-// Markdown () represents the "dev-markdown" glyph.
-var Markdown = &nf.Glyph{
-	ID:      "markdown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73e",
-}
-
-// Materializecss () represents the "dev-materializecss" glyph.
-var Materializecss = &nf.Glyph{
-	ID:      "materializecss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b6",
-}
-
-// Materialui () represents the "dev-materialui" glyph.
-var Materialui = &nf.Glyph{
-	ID:      "materialui",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue829",
-}
-
-// Matlab () represents the "dev-matlab" glyph.
-var Matlab = &nf.Glyph{
-	ID:      "matlab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue82a",
-}
-
-// Matplotlib () represents the "dev-matplotlib" glyph.
-var Matplotlib = &nf.Glyph{
-	ID:      "matplotlib",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue82b",
-}
-
-// Maven () represents the "dev-maven" glyph.
-var Maven = &nf.Glyph{
-	ID:      "maven",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue82c",
-}
-
-// Maya () represents the "dev-maya" glyph.
-var Maya = &nf.Glyph{
-	ID:      "maya",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue82d",
-}
-
-// Meteor () represents the "dev-meteor" glyph.
-var Meteor = &nf.Glyph{
-	ID:      "meteor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a5",
-}
-
-// Meteorfull () represents the "dev-meteorfull" glyph.
-var Meteorfull = &nf.Glyph{
-	ID:      "meteorfull",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a6",
-}
-
-// Microsoftsqlserver () represents the "dev-microsoftsqlserver" glyph.
-var Microsoftsqlserver = &nf.Glyph{
-	ID:      "microsoftsqlserver",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue82e",
-}
-
-// Minitab () represents the "dev-minitab" glyph.
-var Minitab = &nf.Glyph{
-	ID:      "minitab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue82f",
-}
-
-// Mithril () represents the "dev-mithril" glyph.
-var Mithril = &nf.Glyph{
-	ID:      "mithril",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue830",
-}
-
-// Mobx () represents the "dev-mobx" glyph.
-var Mobx = &nf.Glyph{
-	ID:      "mobx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue831",
-}
-
-// Mocha () represents the "dev-mocha" glyph.
-var Mocha = &nf.Glyph{
-	ID:      "mocha",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue832",
-}
-
-// Modx () represents the "dev-modx" glyph.
-var Modx = &nf.Glyph{
-	ID:      "modx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue833",
-}
-
-// Moleculer () represents the "dev-moleculer" glyph.
-var Moleculer = &nf.Glyph{
-	ID:      "moleculer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue834",
-}
-
-// Mongodb () represents the "dev-mongodb" glyph.
-var Mongodb = &nf.Glyph{
-	ID:      "mongodb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a4",
-}
-
-// Mongoose () represents the "dev-mongoose" glyph.
-var Mongoose = &nf.Glyph{
-	ID:      "mongoose",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue835",
-}
-
-// Moodle () represents the "dev-moodle" glyph.
-var Moodle = &nf.Glyph{
-	ID:      "moodle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue836",
-}
-
-// MootoolsBadge () represents the "dev-mootools_badge" glyph.
-var MootoolsBadge = &nf.Glyph{
-	ID:      "mootools_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue78f",
-}
-
-// Mozilla () represents the "dev-mozilla" glyph.
-var Mozilla = &nf.Glyph{
-	ID:      "mozilla",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue786",
-}
-
-// Msdos () represents the "dev-msdos" glyph.
-var Msdos = &nf.Glyph{
-	ID:      "msdos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue837",
-}
-
-// Mysql () represents the "dev-mysql" glyph.
-var Mysql = &nf.Glyph{
-	ID:      "mysql",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue704",
-}
-
-// Nano () represents the "dev-nano" glyph.
-var Nano = &nf.Glyph{
-	ID:      "nano",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue838",
-}
-
-// Neo4J () represents the "dev-neo4j" glyph.
-var Neo4J = &nf.Glyph{
-	ID:      "neo4j",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue839",
-}
-
-// Neovim () represents the "dev-neovim" glyph.
-var Neovim = &nf.Glyph{
-	ID:      "neovim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue83a",
-}
-
-// Nestjs () represents the "dev-nestjs" glyph.
-var Nestjs = &nf.Glyph{
-	ID:      "nestjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue83b",
-}
-
-// Netlify () represents the "dev-netlify" glyph.
-var Netlify = &nf.Glyph{
-	ID:      "netlify",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue83c",
-}
-
-// Networkx () represents the "dev-networkx" glyph.
-var Networkx = &nf.Glyph{
-	ID:      "networkx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue83d",
-}
-
-// Nextjs () represents the "dev-nextjs" glyph.
-var Nextjs = &nf.Glyph{
-	ID:      "nextjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue83e",
-}
-
-// Nginx () represents the "dev-nginx" glyph.
-var Nginx = &nf.Glyph{
-	ID:      "nginx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue776",
-}
-
-// Ngrx () represents the "dev-ngrx" glyph.
-var Ngrx = &nf.Glyph{
-	ID:      "ngrx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue83f",
-}
-
-// Nhibernate () represents the "dev-nhibernate" glyph.
-var Nhibernate = &nf.Glyph{
-	ID:      "nhibernate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue840",
-}
-
-// Nim () represents the "dev-nim" glyph.
-var Nim = &nf.Glyph{
-	ID:      "nim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue841",
-}
-
-// Nimble () represents the "dev-nimble" glyph.
-var Nimble = &nf.Glyph{
-	ID:      "nimble",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue842",
-}
-
-// Nixos () represents the "dev-nixos" glyph.
-var Nixos = &nf.Glyph{
-	ID:      "nixos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue843",
-}
-
-// Nodejs () represents the "dev-nodejs" glyph.
-var Nodejs = &nf.Glyph{
-	ID:      "nodejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue719",
-}
-
-// NodejsSmall () represents the "dev-nodejs_small" glyph.
-var NodejsSmall = &nf.Glyph{
-	ID:      "nodejs_small",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue718",
-}
-
-// Nodemon () represents the "dev-nodemon" glyph.
-var Nodemon = &nf.Glyph{
-	ID:      "nodemon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue844",
-}
-
-// Nodewebkit () represents the "dev-nodewebkit" glyph.
-var Nodewebkit = &nf.Glyph{
-	ID:      "nodewebkit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue845",
-}
-
-// Nomad () represents the "dev-nomad" glyph.
-var Nomad = &nf.Glyph{
-	ID:      "nomad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue846",
-}
-
-// Norg () represents the "dev-norg" glyph.
-var Norg = &nf.Glyph{
-	ID:      "norg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue847",
-}
-
-// Notion () represents the "dev-notion" glyph.
-var Notion = &nf.Glyph{
-	ID:      "notion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue848",
-}
-
-// Npm () represents the "dev-npm" glyph.
-var Npm = &nf.Glyph{
-	ID:      "npm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue71e",
-}
-
-// Nuget () represents the "dev-nuget" glyph.
-var Nuget = &nf.Glyph{
-	ID:      "nuget",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue849",
-}
-
-// Numpy () represents the "dev-numpy" glyph.
-var Numpy = &nf.Glyph{
-	ID:      "numpy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue84a",
-}
-
-// Nuxtjs () represents the "dev-nuxtjs" glyph.
-var Nuxtjs = &nf.Glyph{
-	ID:      "nuxtjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue84b",
-}
-
-// Oauth () represents the "dev-oauth" glyph.
-var Oauth = &nf.Glyph{
-	ID:      "oauth",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue84c",
-}
-
-// Objectivec () represents the "dev-objectivec" glyph.
-var Objectivec = &nf.Glyph{
-	ID:      "objectivec",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue84d",
-}
-
-// Ocaml () represents the "dev-ocaml" glyph.
-var Ocaml = &nf.Glyph{
-	ID:      "ocaml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue84e",
-}
-
-// Ohmyzsh () represents the "dev-ohmyzsh" glyph.
-var Ohmyzsh = &nf.Glyph{
-	ID:      "ohmyzsh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue84f",
-}
-
-// Okta () represents the "dev-okta" glyph.
-var Okta = &nf.Glyph{
-	ID:      "okta",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue850",
-}
-
-// Openal () represents the "dev-openal" glyph.
-var Openal = &nf.Glyph{
-	ID:      "openal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue851",
-}
-
-// Openapi () represents the "dev-openapi" glyph.
-var Openapi = &nf.Glyph{
-	ID:      "openapi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue852",
-}
-
-// Opencl () represents the "dev-opencl" glyph.
-var Opencl = &nf.Glyph{
-	ID:      "opencl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue853",
-}
-
-// Opencv () represents the "dev-opencv" glyph.
-var Opencv = &nf.Glyph{
-	ID:      "opencv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue854",
-}
-
-// Opengl () represents the "dev-opengl" glyph.
-var Opengl = &nf.Glyph{
-	ID:      "opengl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue855",
-}
-
-// Openstack () represents the "dev-openstack" glyph.
-var Openstack = &nf.Glyph{
-	ID:      "openstack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue856",
-}
-
-// Opensuse () represents the "dev-opensuse" glyph.
-var Opensuse = &nf.Glyph{
-	ID:      "opensuse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue857",
-}
-
-// Opentelemetry () represents the "dev-opentelemetry" glyph.
-var Opentelemetry = &nf.Glyph{
-	ID:      "opentelemetry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue858",
-}
-
-// Opera () represents the "dev-opera" glyph.
-var Opera = &nf.Glyph{
-	ID:      "opera",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue746",
-}
-
-// Oracle () represents the "dev-oracle" glyph.
-var Oracle = &nf.Glyph{
-	ID:      "oracle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue859",
-}
-
-// Ory () represents the "dev-ory" glyph.
-var Ory = &nf.Glyph{
-	ID:      "ory",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue85a",
-}
-
-// P5Js () represents the "dev-p5js" glyph.
-var P5Js = &nf.Glyph{
-	ID:      "p5js",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue85b",
-}
-
-// Packer () represents the "dev-packer" glyph.
-var Packer = &nf.Glyph{
-	ID:      "packer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue85c",
-}
-
-// Pandas () represents the "dev-pandas" glyph.
-var Pandas = &nf.Glyph{
-	ID:      "pandas",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue85d",
-}
-
-// Perl () represents the "dev-perl" glyph.
-var Perl = &nf.Glyph{
-	ID:      "perl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue769",
-}
-
-// Pfsense () represents the "dev-pfsense" glyph.
-var Pfsense = &nf.Glyph{
-	ID:      "pfsense",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue85e",
-}
-
-// Phalcon () represents the "dev-phalcon" glyph.
-var Phalcon = &nf.Glyph{
-	ID:      "phalcon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue85f",
-}
-
-// Phoenix () represents the "dev-phoenix" glyph.
-var Phoenix = &nf.Glyph{
-	ID:      "phoenix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue860",
-}
-
-// Photonengine () represents the "dev-photonengine" glyph.
-var Photonengine = &nf.Glyph{
-	ID:      "photonengine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue861",
-}
-
-// Photoshop () represents the "dev-photoshop" glyph.
-var Photoshop = &nf.Glyph{
-	ID:      "photoshop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7b8",
-}
-
-// Php () represents the "dev-php" glyph.
-var Php = &nf.Glyph{
-	ID:      "php",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73d",
-}
-
-// Phpstorm () represents the "dev-phpstorm" glyph.
-var Phpstorm = &nf.Glyph{
-	ID:      "phpstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue862",
-}
-
-// Playwright () represents the "dev-playwright" glyph.
-var Playwright = &nf.Glyph{
-	ID:      "playwright",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue863",
-}
-
-// Plotly () represents the "dev-plotly" glyph.
-var Plotly = &nf.Glyph{
-	ID:      "plotly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue864",
-}
-
-// Pnpm () represents the "dev-pnpm" glyph.
-var Pnpm = &nf.Glyph{
-	ID:      "pnpm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue865",
-}
-
-// Podman () represents the "dev-podman" glyph.
-var Podman = &nf.Glyph{
-	ID:      "podman",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue866",
-}
-
-// Poetry () represents the "dev-poetry" glyph.
-var Poetry = &nf.Glyph{
-	ID:      "poetry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue867",
-}
-
-// Polygon () represents the "dev-polygon" glyph.
-var Polygon = &nf.Glyph{
-	ID:      "polygon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue868",
-}
-
-// Portainer () represents the "dev-portainer" glyph.
-var Portainer = &nf.Glyph{
-	ID:      "portainer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue869",
-}
-
-// Postcss () represents the "dev-postcss" glyph.
-var Postcss = &nf.Glyph{
-	ID:      "postcss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue86a",
-}
-
-// Postgresql () represents the "dev-postgresql" glyph.
-var Postgresql = &nf.Glyph{
-	ID:      "postgresql",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue76e",
-}
-
-// Postman () represents the "dev-postman" glyph.
-var Postman = &nf.Glyph{
-	ID:      "postman",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue86b",
-}
-
-// Powershell () represents the "dev-powershell" glyph.
-var Powershell = &nf.Glyph{
-	ID:      "powershell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue86c",
-}
-
-// Premierepro () represents the "dev-premierepro" glyph.
-var Premierepro = &nf.Glyph{
-	ID:      "premierepro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue86d",
-}
-
-// Prisma () represents the "dev-prisma" glyph.
-var Prisma = &nf.Glyph{
-	ID:      "prisma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue86e",
-}
-
-// Processing () represents the "dev-processing" glyph.
-var Processing = &nf.Glyph{
-	ID:      "processing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue86f",
-}
-
-// Prolog () represents the "dev-prolog" glyph.
-var Prolog = &nf.Glyph{
-	ID:      "prolog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a1",
-}
-
-// Prometheus () represents the "dev-prometheus" glyph.
-var Prometheus = &nf.Glyph{
-	ID:      "prometheus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue870",
-}
-
-// Protractor () represents the "dev-protractor" glyph.
-var Protractor = &nf.Glyph{
-	ID:      "protractor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue871",
-}
-
-// Pulsar () represents the "dev-pulsar" glyph.
-var Pulsar = &nf.Glyph{
-	ID:      "pulsar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue872",
-}
-
-// Pulumi () represents the "dev-pulumi" glyph.
-var Pulumi = &nf.Glyph{
-	ID:      "pulumi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue873",
-}
-
-// Puppeteer () represents the "dev-puppeteer" glyph.
-var Puppeteer = &nf.Glyph{
-	ID:      "puppeteer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue874",
-}
-
-// Purescript () represents the "dev-purescript" glyph.
-var Purescript = &nf.Glyph{
-	ID:      "purescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue875",
-}
-
-// Putty () represents the "dev-putty" glyph.
-var Putty = &nf.Glyph{
-	ID:      "putty",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue876",
-}
-
-// Pycharm () represents the "dev-pycharm" glyph.
-var Pycharm = &nf.Glyph{
-	ID:      "pycharm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue877",
-}
-
-// Pypi () represents the "dev-pypi" glyph.
-var Pypi = &nf.Glyph{
-	ID:      "pypi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue878",
-}
-
-// Pyscript () represents the "dev-pyscript" glyph.
-var Pyscript = &nf.Glyph{
-	ID:      "pyscript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue879",
-}
-
-// Pytest () represents the "dev-pytest" glyph.
-var Pytest = &nf.Glyph{
-	ID:      "pytest",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue87a",
-}
-
-// Python () represents the "dev-python" glyph.
-var Python = &nf.Glyph{
-	ID:      "python",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73c",
-}
-
-// Pytorch () represents the "dev-pytorch" glyph.
-var Pytorch = &nf.Glyph{
-	ID:      "pytorch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue87b",
-}
-
-// Qodana () represents the "dev-qodana" glyph.
-var Qodana = &nf.Glyph{
-	ID:      "qodana",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue87c",
-}
-
-// Qt () represents the "dev-qt" glyph.
-var Qt = &nf.Glyph{
-	ID:      "qt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue87d",
-}
-
-// Quarkus () represents the "dev-quarkus" glyph.
-var Quarkus = &nf.Glyph{
-	ID:      "quarkus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue87e",
-}
-
-// Quasar () represents the "dev-quasar" glyph.
-var Quasar = &nf.Glyph{
-	ID:      "quasar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue87f",
-}
-
-// Qwik () represents the "dev-qwik" glyph.
-var Qwik = &nf.Glyph{
-	ID:      "qwik",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue880",
-}
-
-// R () represents the "dev-r" glyph.
-var R = &nf.Glyph{
-	ID:      "r",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue881",
-}
-
-// Rabbitmq () represents the "dev-rabbitmq" glyph.
-var Rabbitmq = &nf.Glyph{
-	ID:      "rabbitmq",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue882",
-}
-
-// Rails () represents the "dev-rails" glyph.
-var Rails = &nf.Glyph{
-	ID:      "rails",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73b",
-}
-
-// Railway () represents the "dev-railway" glyph.
-var Railway = &nf.Glyph{
-	ID:      "railway",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue883",
-}
-
-// Rancher () represents the "dev-rancher" glyph.
-var Rancher = &nf.Glyph{
-	ID:      "rancher",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue884",
-}
-
-// RaspberryPi () represents the "dev-raspberry_pi" glyph.
-var RaspberryPi = &nf.Glyph{
-	ID:      "raspberry_pi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue722",
-}
-
-// Reach () represents the "dev-reach" glyph.
-var Reach = &nf.Glyph{
-	ID:      "reach",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue885",
-}
-
-// React () represents the "dev-react" glyph.
-var React = &nf.Glyph{
-	ID:      "react",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7ba",
-}
-
-// Reactbootstrap () represents the "dev-reactbootstrap" glyph.
-var Reactbootstrap = &nf.Glyph{
-	ID:      "reactbootstrap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue886",
-}
-
-// Reactnavigation () represents the "dev-reactnavigation" glyph.
-var Reactnavigation = &nf.Glyph{
-	ID:      "reactnavigation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue887",
-}
-
-// Reactrouter () represents the "dev-reactrouter" glyph.
-var Reactrouter = &nf.Glyph{
-	ID:      "reactrouter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue888",
-}
-
-// Readthedocs () represents the "dev-readthedocs" glyph.
-var Readthedocs = &nf.Glyph{
-	ID:      "readthedocs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue889",
-}
-
-// Realm () represents the "dev-realm" glyph.
-var Realm = &nf.Glyph{
-	ID:      "realm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue88a",
-}
-
-// Rect () represents the "dev-rect" glyph.
-var Rect = &nf.Glyph{
-	ID:      "rect",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue88b",
-}
-
-// Redhat () represents the "dev-redhat" glyph.
-var Redhat = &nf.Glyph{
-	ID:      "redhat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7bb",
-}
-
-// Redis () represents the "dev-redis" glyph.
-var Redis = &nf.Glyph{
-	ID:      "redis",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue76d",
-}
-
-// Redux () represents the "dev-redux" glyph.
-var Redux = &nf.Glyph{
-	ID:      "redux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue88c",
-}
-
-// Renpy () represents the "dev-renpy" glyph.
-var Renpy = &nf.Glyph{
-	ID:      "renpy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue88d",
-}
-
-// Replit () represents the "dev-replit" glyph.
-var Replit = &nf.Glyph{
-	ID:      "replit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue88e",
-}
-
-// Requirejs () represents the "dev-requirejs" glyph.
-var Requirejs = &nf.Glyph{
-	ID:      "requirejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue770",
-}
-
-// Rider () represents the "dev-rider" glyph.
-var Rider = &nf.Glyph{
-	ID:      "rider",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue88f",
-}
-
-// Rocksdb () represents the "dev-rocksdb" glyph.
-var Rocksdb = &nf.Glyph{
-	ID:      "rocksdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue890",
-}
-
-// Rockylinux () represents the "dev-rockylinux" glyph.
-var Rockylinux = &nf.Glyph{
-	ID:      "rockylinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue891",
-}
-
-// Rollup () represents the "dev-rollup" glyph.
-var Rollup = &nf.Glyph{
-	ID:      "rollup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue892",
-}
-
-// Ros () represents the "dev-ros" glyph.
-var Ros = &nf.Glyph{
-	ID:      "ros",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue893",
-}
-
-// Rspec () represents the "dev-rspec" glyph.
-var Rspec = &nf.Glyph{
-	ID:      "rspec",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue894",
-}
-
-// Rstudio () represents the "dev-rstudio" glyph.
-var Rstudio = &nf.Glyph{
-	ID:      "rstudio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue895",
-}
-
-// Ruby () represents the "dev-ruby" glyph.
-var Ruby = &nf.Glyph{
-	ID:      "ruby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue739",
-}
-
-// RubyOnRails () represents the "dev-ruby_on_rails" glyph.
-var RubyOnRails = &nf.Glyph{
-	ID:      "ruby_on_rails",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73b",
-}
-
-// RubyRough () represents the "dev-ruby_rough" glyph.
-var RubyRough = &nf.Glyph{
-	ID:      "ruby_rough",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue791",
-}
-
-// Rubymine () represents the "dev-rubymine" glyph.
-var Rubymine = &nf.Glyph{
-	ID:      "rubymine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue896",
-}
-
-// Rust () represents the "dev-rust" glyph.
-var Rust = &nf.Glyph{
-	ID:      "rust",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7a8",
-}
-
-// Rxjs () represents the "dev-rxjs" glyph.
-var Rxjs = &nf.Glyph{
-	ID:      "rxjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue897",
-}
-
-// Safari () represents the "dev-safari" glyph.
-var Safari = &nf.Glyph{
-	ID:      "safari",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue748",
-}
-
-// Salesforce () represents the "dev-salesforce" glyph.
-var Salesforce = &nf.Glyph{
-	ID:      "salesforce",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue898",
-}
-
-// Sanity () represents the "dev-sanity" glyph.
-var Sanity = &nf.Glyph{
-	ID:      "sanity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue899",
-}
-
-// Sass () represents the "dev-sass" glyph.
-var Sass = &nf.Glyph{
-	ID:      "sass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue74b",
-}
-
-// Scala () represents the "dev-scala" glyph.
-var Scala = &nf.Glyph{
-	ID:      "scala",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue737",
-}
-
-// Scalingo () represents the "dev-scalingo" glyph.
-var Scalingo = &nf.Glyph{
-	ID:      "scalingo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue89a",
-}
-
-// Scikitlearn () represents the "dev-scikitlearn" glyph.
-var Scikitlearn = &nf.Glyph{
-	ID:      "scikitlearn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue89b",
-}
-
-// Sdl () represents the "dev-sdl" glyph.
-var Sdl = &nf.Glyph{
-	ID:      "sdl",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue89c",
-}
-
-// Selenium () represents the "dev-selenium" glyph.
-var Selenium = &nf.Glyph{
-	ID:      "selenium",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue89d",
-}
-
-// Sema () represents the "dev-sema" glyph.
-var Sema = &nf.Glyph{
-	ID:      "sema",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue89e",
-}
-
-// Sentry () represents the "dev-sentry" glyph.
-var Sentry = &nf.Glyph{
-	ID:      "sentry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue89f",
-}
-
-// Sequelize () represents the "dev-sequelize" glyph.
-var Sequelize = &nf.Glyph{
-	ID:      "sequelize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a0",
-}
-
-// Shopware () represents the "dev-shopware" glyph.
-var Shopware = &nf.Glyph{
-	ID:      "shopware",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a1",
-}
-
-// Shotgrid () represents the "dev-shotgrid" glyph.
-var Shotgrid = &nf.Glyph{
-	ID:      "shotgrid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a2",
-}
-
-// Sketch () represents the "dev-sketch" glyph.
-var Sketch = &nf.Glyph{
-	ID:      "sketch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a3",
-}
-
-// Slack () represents the "dev-slack" glyph.
-var Slack = &nf.Glyph{
-	ID:      "slack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a4",
-}
-
-// SmashingMagazine () represents the "dev-smashing_magazine" glyph.
-var SmashingMagazine = &nf.Glyph{
-	ID:      "smashing_magazine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue72d",
-}
-
-// Socketio () represents the "dev-socketio" glyph.
-var Socketio = &nf.Glyph{
-	ID:      "socketio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a5",
-}
-
-// Solidity () represents the "dev-solidity" glyph.
-var Solidity = &nf.Glyph{
-	ID:      "solidity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a6",
-}
-
-// Solidjs () represents the "dev-solidjs" glyph.
-var Solidjs = &nf.Glyph{
-	ID:      "solidjs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a7",
-}
-
-// Sonarqube () represents the "dev-sonarqube" glyph.
-var Sonarqube = &nf.Glyph{
-	ID:      "sonarqube",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a8",
-}
-
-// Sourcetree () represents the "dev-sourcetree" glyph.
-var Sourcetree = &nf.Glyph{
-	ID:      "sourcetree",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8a9",
-}
-
-// Spack () represents the "dev-spack" glyph.
-var Spack = &nf.Glyph{
-	ID:      "spack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8aa",
-}
-
-// Splunk () represents the "dev-splunk" glyph.
-var Splunk = &nf.Glyph{
-	ID:      "splunk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ab",
-}
-
-// Spring () represents the "dev-spring" glyph.
-var Spring = &nf.Glyph{
-	ID:      "spring",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ac",
-}
-
-// Spss () represents the "dev-spss" glyph.
-var Spss = &nf.Glyph{
-	ID:      "spss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ad",
-}
-
-// Spyder () represents the "dev-spyder" glyph.
-var Spyder = &nf.Glyph{
-	ID:      "spyder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ae",
-}
-
-// Sqlalchemy () represents the "dev-sqlalchemy" glyph.
-var Sqlalchemy = &nf.Glyph{
-	ID:      "sqlalchemy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8af",
-}
-
-// Sqldeveloper () represents the "dev-sqldeveloper" glyph.
-var Sqldeveloper = &nf.Glyph{
-	ID:      "sqldeveloper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b0",
-}
-
-// Sqlite () represents the "dev-sqlite" glyph.
-var Sqlite = &nf.Glyph{
-	ID:      "sqlite",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c4",
-}
-
-// Ssh () represents the "dev-ssh" glyph.
-var Ssh = &nf.Glyph{
-	ID:      "ssh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b1",
-}
-
-// Stackoverflow () represents the "dev-stackoverflow" glyph.
-var Stackoverflow = &nf.Glyph{
-	ID:      "stackoverflow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue710",
-}
-
-// Stata () represents the "dev-stata" glyph.
-var Stata = &nf.Glyph{
-	ID:      "stata",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b2",
-}
-
-// Storybook () represents the "dev-storybook" glyph.
-var Storybook = &nf.Glyph{
-	ID:      "storybook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b3",
-}
-
-// Streamlit () represents the "dev-streamlit" glyph.
-var Streamlit = &nf.Glyph{
-	ID:      "streamlit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b4",
-}
-
-// Stylus () represents the "dev-stylus" glyph.
-var Stylus = &nf.Glyph{
-	ID:      "stylus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue759",
-}
-
-// Sublime () represents the "dev-sublime" glyph.
-var Sublime = &nf.Glyph{
-	ID:      "sublime",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7aa",
-}
-
-// Subversion () represents the "dev-subversion" glyph.
-var Subversion = &nf.Glyph{
-	ID:      "subversion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b5",
-}
-
-// Supabase () represents the "dev-supabase" glyph.
-var Supabase = &nf.Glyph{
-	ID:      "supabase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b6",
-}
-
-// Svelte () represents the "dev-svelte" glyph.
-var Svelte = &nf.Glyph{
-	ID:      "svelte",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b7",
-}
-
-// Swagger () represents the "dev-swagger" glyph.
-var Swagger = &nf.Glyph{
-	ID:      "swagger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b8",
-}
-
-// Swift () represents the "dev-swift" glyph.
-var Swift = &nf.Glyph{
-	ID:      "swift",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue755",
-}
-
-// Swiper () represents the "dev-swiper" glyph.
-var Swiper = &nf.Glyph{
-	ID:      "swiper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8b9",
-}
-
-// Symfony () represents the "dev-symfony" glyph.
-var Symfony = &nf.Glyph{
-	ID:      "symfony",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue757",
-}
-
-// SymfonyBadge () represents the "dev-symfony_badge" glyph.
-var SymfonyBadge = &nf.Glyph{
-	ID:      "symfony_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue757",
-}
-
-// Tailwindcss () represents the "dev-tailwindcss" glyph.
-var Tailwindcss = &nf.Glyph{
-	ID:      "tailwindcss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ba",
-}
-
-// Tauri () represents the "dev-tauri" glyph.
-var Tauri = &nf.Glyph{
-	ID:      "tauri",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8bb",
-}
-
-// Tensorflow () represents the "dev-tensorflow" glyph.
-var Tensorflow = &nf.Glyph{
-	ID:      "tensorflow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8bc",
-}
-
-// Terminal () represents the "dev-terminal" glyph.
-var Terminal = &nf.Glyph{
-	ID:      "terminal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue795",
-}
-
-// Terraform () represents the "dev-terraform" glyph.
-var Terraform = &nf.Glyph{
-	ID:      "terraform",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8bd",
-}
-
-// Tex () represents the "dev-tex" glyph.
-var Tex = &nf.Glyph{
-	ID:      "tex",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8be",
-}
-
-// Thealgorithms () represents the "dev-thealgorithms" glyph.
-var Thealgorithms = &nf.Glyph{
-	ID:      "thealgorithms",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8bf",
-}
-
-// Threedsmax () represents the "dev-threedsmax" glyph.
-var Threedsmax = &nf.Glyph{
-	ID:      "threedsmax",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c0",
-}
-
-// Threejs () represents the "dev-threejs" glyph.
-var Threejs = &nf.Glyph{
-	ID:      "threejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c1",
-}
-
-// Titaniumsdk () represents the "dev-titaniumsdk" glyph.
-var Titaniumsdk = &nf.Glyph{
-	ID:      "titaniumsdk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c2",
-}
-
-// Tomcat () represents the "dev-tomcat" glyph.
-var Tomcat = &nf.Glyph{
-	ID:      "tomcat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c3",
-}
-
-// Tortoisegit () represents the "dev-tortoisegit" glyph.
-var Tortoisegit = &nf.Glyph{
-	ID:      "tortoisegit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c4",
-}
-
-// Towergit () represents the "dev-towergit" glyph.
-var Towergit = &nf.Glyph{
-	ID:      "towergit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c5",
-}
-
-// Traefikmesh () represents the "dev-traefikmesh" glyph.
-var Traefikmesh = &nf.Glyph{
-	ID:      "traefikmesh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c6",
-}
-
-// Traefikproxy () represents the "dev-traefikproxy" glyph.
-var Traefikproxy = &nf.Glyph{
-	ID:      "traefikproxy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c7",
-}
-
-// Travis () represents the "dev-travis" glyph.
-var Travis = &nf.Glyph{
-	ID:      "travis",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue77e",
-}
-
-// Trello () represents the "dev-trello" glyph.
-var Trello = &nf.Glyph{
-	ID:      "trello",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue75a",
-}
-
-// Trpc () represents the "dev-trpc" glyph.
-var Trpc = &nf.Glyph{
-	ID:      "trpc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c8",
-}
-
-// Twitter () represents the "dev-twitter" glyph.
-var Twitter = &nf.Glyph{
-	ID:      "twitter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8c9",
-}
-
-// Typescript () represents the "dev-typescript" glyph.
-var Typescript = &nf.Glyph{
-	ID:      "typescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ca",
-}
-
-// Typo3 () represents the "dev-typo3" glyph.
-var Typo3 = &nf.Glyph{
-	ID:      "typo3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue772",
-}
-
-// Ubuntu () represents the "dev-ubuntu" glyph.
-var Ubuntu = &nf.Glyph{
-	ID:      "ubuntu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue73a",
-}
-
-// Uml () represents the "dev-uml" glyph.
-var Uml = &nf.Glyph{
-	ID:      "uml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8cb",
-}
-
-// Unifiedmodelinglanguage () represents the "dev-unifiedmodelinglanguage" glyph.
-var Unifiedmodelinglanguage = &nf.Glyph{
-	ID:      "unifiedmodelinglanguage",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8cb",
-}
-
-// Unity () represents the "dev-unity" glyph.
-var Unity = &nf.Glyph{
-	ID:      "unity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue721",
-}
-
-// UnitySmall () represents the "dev-unity_small" glyph.
-var UnitySmall = &nf.Glyph{
-	ID:      "unity_small",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue721",
-}
-
-// Unix () represents the "dev-unix" glyph.
-var Unix = &nf.Glyph{
-	ID:      "unix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8cc",
-}
-
-// Unrealengine () represents the "dev-unrealengine" glyph.
-var Unrealengine = &nf.Glyph{
-	ID:      "unrealengine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8cd",
-}
-
-// Uwsgi () represents the "dev-uwsgi" glyph.
-var Uwsgi = &nf.Glyph{
-	ID:      "uwsgi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ce",
-}
-
-// V8 () represents the "dev-v8" glyph.
-var V8 = &nf.Glyph{
-	ID:      "v8",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8cf",
-}
-
-// Vagrant () represents the "dev-vagrant" glyph.
-var Vagrant = &nf.Glyph{
-	ID:      "vagrant",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d0",
-}
-
-// Vala () represents the "dev-vala" glyph.
-var Vala = &nf.Glyph{
-	ID:      "vala",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d1",
-}
-
-// Vault () represents the "dev-vault" glyph.
-var Vault = &nf.Glyph{
-	ID:      "vault",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d2",
-}
-
-// Vercel () represents the "dev-vercel" glyph.
-var Vercel = &nf.Glyph{
-	ID:      "vercel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d3",
-}
-
-// Vertx () represents the "dev-vertx" glyph.
-var Vertx = &nf.Glyph{
-	ID:      "vertx",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d4",
-}
-
-// Vim () represents the "dev-vim" glyph.
-var Vim = &nf.Glyph{
-	ID:      "vim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue7c5",
-}
-
-// Visualbasic () represents the "dev-visualbasic" glyph.
-var Visualbasic = &nf.Glyph{
-	ID:      "visualbasic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d5",
-}
-
-// Visualstudio () represents the "dev-visualstudio" glyph.
-var Visualstudio = &nf.Glyph{
-	ID:      "visualstudio",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70c",
-}
-
-// Vite () represents the "dev-vite" glyph.
-var Vite = &nf.Glyph{
-	ID:      "vite",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d6",
-}
-
-// Vitejs () represents the "dev-vitejs" glyph.
-var Vitejs = &nf.Glyph{
-	ID:      "vitejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d7",
-}
-
-// Vitess () represents the "dev-vitess" glyph.
-var Vitess = &nf.Glyph{
-	ID:      "vitess",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d8",
-}
-
-// Vitest () represents the "dev-vitest" glyph.
-var Vitest = &nf.Glyph{
-	ID:      "vitest",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8d9",
-}
-
-// Vscode () represents the "dev-vscode" glyph.
-var Vscode = &nf.Glyph{
-	ID:      "vscode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8da",
-}
-
-// Vsphere () represents the "dev-vsphere" glyph.
-var Vsphere = &nf.Glyph{
-	ID:      "vsphere",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8db",
-}
-
-// Vuejs () represents the "dev-vuejs" glyph.
-var Vuejs = &nf.Glyph{
-	ID:      "vuejs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8dc",
-}
-
-// Vuestorefront () represents the "dev-vuestorefront" glyph.
-var Vuestorefront = &nf.Glyph{
-	ID:      "vuestorefront",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8dd",
-}
-
-// Vuetify () represents the "dev-vuetify" glyph.
-var Vuetify = &nf.Glyph{
-	ID:      "vuetify",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8de",
-}
-
-// Vyper () represents the "dev-vyper" glyph.
-var Vyper = &nf.Glyph{
-	ID:      "vyper",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8df",
-}
-
-// Wasm () represents the "dev-wasm" glyph.
-var Wasm = &nf.Glyph{
-	ID:      "wasm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e0",
-}
-
-// Webflow () represents the "dev-webflow" glyph.
-var Webflow = &nf.Glyph{
-	ID:      "webflow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e1",
-}
-
-// Weblate () represents the "dev-weblate" glyph.
-var Weblate = &nf.Glyph{
-	ID:      "weblate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e2",
-}
-
-// Webpack () represents the "dev-webpack" glyph.
-var Webpack = &nf.Glyph{
-	ID:      "webpack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e3",
-}
-
-// Webstorm () represents the "dev-webstorm" glyph.
-var Webstorm = &nf.Glyph{
-	ID:      "webstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e4",
-}
-
-// Windows () represents the "dev-windows" glyph.
-var Windows = &nf.Glyph{
-	ID:      "windows",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70f",
-}
-
-// Windows11 () represents the "dev-windows11" glyph.
-var Windows11 = &nf.Glyph{
-	ID:      "windows11",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e5",
-}
-
-// Woocommerce () represents the "dev-woocommerce" glyph.
-var Woocommerce = &nf.Glyph{
-	ID:      "woocommerce",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e6",
-}
-
-// Wordpress () represents the "dev-wordpress" glyph.
-var Wordpress = &nf.Glyph{
-	ID:      "wordpress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue70b",
-}
-
-// Xamarin () represents the "dev-xamarin" glyph.
-var Xamarin = &nf.Glyph{
-	ID:      "xamarin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e7",
-}
-
-// Xcode () represents the "dev-xcode" glyph.
-var Xcode = &nf.Glyph{
-	ID:      "xcode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e8",
-}
-
-// Xd () represents the "dev-xd" glyph.
-var Xd = &nf.Glyph{
-	ID:      "xd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8e9",
-}
-
-// Xml () represents the "dev-xml" glyph.
-var Xml = &nf.Glyph{
-	ID:      "xml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ea",
-}
-
-// Yaml () represents the "dev-yaml" glyph.
-var Yaml = &nf.Glyph{
-	ID:      "yaml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8eb",
-}
-
-// Yarn () represents the "dev-yarn" glyph.
-var Yarn = &nf.Glyph{
-	ID:      "yarn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ec",
-}
-
-// Yii () represents the "dev-yii" glyph.
-var Yii = &nf.Glyph{
-	ID:      "yii",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue782",
-}
-
-// Yugabytedb () represents the "dev-yugabytedb" glyph.
-var Yugabytedb = &nf.Glyph{
-	ID:      "yugabytedb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ed",
-}
-
-// Yunohost () represents the "dev-yunohost" glyph.
-var Yunohost = &nf.Glyph{
-	ID:      "yunohost",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ee",
-}
-
-// Zend () represents the "dev-zend" glyph.
-var Zend = &nf.Glyph{
-	ID:      "zend",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue778",
-}
-
-// Zig () represents the "dev-zig" glyph.
-var Zig = &nf.Glyph{
-	ID:      "zig",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue8ef",
-}
+const (
+	Aarch64                 nf.Glyph = "" //  ("\ue700") represents the "dev-aarch64" glyph.
+	Adonisjs                nf.Glyph = "" //  ("\ue701") represents the "dev-adonisjs" glyph.
+	Aftereffects            nf.Glyph = "" //  ("\ue705") represents the "dev-aftereffects" glyph.
+	Akka                    nf.Glyph = "" //  ("\ue708") represents the "dev-akka" glyph.
+	Algolia                 nf.Glyph = "" //  ("\ue70a") represents the "dev-algolia" glyph.
+	Alpinejs                nf.Glyph = "" //  ("\ue713") represents the "dev-alpinejs" glyph.
+	Amazonwebservices       nf.Glyph = "" //  ("\ue7ad") represents the "dev-amazonwebservices" glyph.
+	Anaconda                nf.Glyph = "" //  ("\ue715") represents the "dev-anaconda" glyph.
+	Android                 nf.Glyph = "" //  ("\ue70e") represents the "dev-android" glyph.
+	Androidstudio           nf.Glyph = "" //  ("\ue71a") represents the "dev-androidstudio" glyph.
+	Angular                 nf.Glyph = "" //  ("\ue753") represents the "dev-angular" glyph.
+	Angularjs               nf.Glyph = "" //  ("\ue71c") represents the "dev-angularjs" glyph.
+	Angularmaterial         nf.Glyph = "" //  ("\ue720") represents the "dev-angularmaterial" glyph.
+	Ansible                 nf.Glyph = "" //  ("\ue723") represents the "dev-ansible" glyph.
+	Antdesign               nf.Glyph = "" //  ("\ue72a") represents the "dev-antdesign" glyph.
+	Apache                  nf.Glyph = "" //  ("\ue72b") represents the "dev-apache" glyph.
+	Apacheairflow           nf.Glyph = "" //  ("\ue72c") represents the "dev-apacheairflow" glyph.
+	Apachekafka             nf.Glyph = "" //  ("\ue72e") represents the "dev-apachekafka" glyph.
+	Apachespark             nf.Glyph = "" //  ("\ue72f") represents the "dev-apachespark" glyph.
+	Apl                     nf.Glyph = "" //  ("\ue730") represents the "dev-apl" glyph.
+	Appcelerator            nf.Glyph = "" //  ("\ue7ab") represents the "dev-appcelerator" glyph.
+	Apple                   nf.Glyph = "" //  ("\ue711") represents the "dev-apple" glyph.
+	Appwrite                nf.Glyph = "" //  ("\ue731") represents the "dev-appwrite" glyph.
+	Archlinux               nf.Glyph = "" //  ("\ue732") represents the "dev-archlinux" glyph.
+	Arduino                 nf.Glyph = "" //  ("\ue733") represents the "dev-arduino" glyph.
+	Argocd                  nf.Glyph = "" //  ("\ue734") represents the "dev-argocd" glyph.
+	Astro                   nf.Glyph = "" //  ("\ue735") represents the "dev-astro" glyph.
+	Atom                    nf.Glyph = "" //  ("\ue764") represents the "dev-atom" glyph.
+	Awk                     nf.Glyph = "" //  ("\ue741") represents the "dev-awk" glyph.
+	Aws                     nf.Glyph = "" //  ("\ue7ad") represents the "dev-aws" glyph.
+	Axios                   nf.Glyph = "" //  ("\ue74f") represents the "dev-axios" glyph.
+	Azure                   nf.Glyph = "" //  ("\ue754") represents the "dev-azure" glyph.
+	Azuredevops             nf.Glyph = "" //  ("\ue756") represents the "dev-azuredevops" glyph.
+	Azuresqldatabase        nf.Glyph = "" //  ("\ue75b") represents the "dev-azuresqldatabase" glyph.
+	Babel                   nf.Glyph = "" //  ("\ue75d") represents the "dev-babel" glyph.
+	Backbone                nf.Glyph = "" //  ("\ue752") represents the "dev-backbone" glyph.
+	Backbonejs              nf.Glyph = "" //  ("\ue752") represents the "dev-backbonejs" glyph.
+	Ballerina               nf.Glyph = "" //  ("\ue75e") represents the "dev-ballerina" glyph.
+	Bamboo                  nf.Glyph = "" //  ("\ue75f") represents the "dev-bamboo" glyph.
+	Bash                    nf.Glyph = "" //  ("\ue760") represents the "dev-bash" glyph.
+	Beats                   nf.Glyph = "" //  ("\ue761") represents the "dev-beats" glyph.
+	Behance                 nf.Glyph = "" //  ("\ue762") represents the "dev-behance" glyph.
+	Bitbucket               nf.Glyph = "" //  ("\ue703") represents the "dev-bitbucket" glyph.
+	Blazor                  nf.Glyph = "" //  ("\ue765") represents the "dev-blazor" glyph.
+	Blender                 nf.Glyph = "" //  ("\ue766") represents the "dev-blender" glyph.
+	Bootstrap               nf.Glyph = "" //  ("\ue747") represents the "dev-bootstrap" glyph.
+	Bower                   nf.Glyph = "" //  ("\ue74d") represents the "dev-bower" glyph.
+	Browserstack            nf.Glyph = "" //  ("\ue76b") represents the "dev-browserstack" glyph.
+	Bulma                   nf.Glyph = "" //  ("\ue76c") represents the "dev-bulma" glyph.
+	Bun                     nf.Glyph = "" //  ("\ue76f") represents the "dev-bun" glyph.
+	C                       nf.Glyph = "" //  ("\ue771") represents the "dev-c" glyph.
+	CLang                   nf.Glyph = "" //  ("\ue771") represents the "dev-c_lang" glyph.
+	Cairo                   nf.Glyph = "" //  ("\ue773") represents the "dev-cairo" glyph.
+	Cakephp                 nf.Glyph = "" //  ("\ue77a") represents the "dev-cakephp" glyph.
+	Canva                   nf.Glyph = "" //  ("\ue77c") represents the "dev-canva" glyph.
+	Capacitor               nf.Glyph = "" //  ("\ue785") represents the "dev-capacitor" glyph.
+	Carbon                  nf.Glyph = "" //  ("\ue788") represents the "dev-carbon" glyph.
+	Cassandra               nf.Glyph = "" //  ("\ue789") represents the "dev-cassandra" glyph.
+	Centos                  nf.Glyph = "" //  ("\ue78a") represents the "dev-centos" glyph.
+	Ceylon                  nf.Glyph = "" //  ("\ue78b") represents the "dev-ceylon" glyph.
+	Chrome                  nf.Glyph = "" //  ("\ue743") represents the "dev-chrome" glyph.
+	Circleci                nf.Glyph = "" //  ("\ue78c") represents the "dev-circleci" glyph.
+	Clarity                 nf.Glyph = "" //  ("\ue78d") represents the "dev-clarity" glyph.
+	Clion                   nf.Glyph = "" //  ("\ue78e") represents the "dev-clion" glyph.
+	Clojure                 nf.Glyph = "" //  ("\ue768") represents the "dev-clojure" glyph.
+	ClojureAlt              nf.Glyph = "" //  ("\ue76a") represents the "dev-clojure_alt" glyph.
+	Clojurescript           nf.Glyph = "" //  ("\ue790") represents the "dev-clojurescript" glyph.
+	Cloudflare              nf.Glyph = "" //  ("\ue792") represents the "dev-cloudflare" glyph.
+	Cloudflareworkers       nf.Glyph = "" //  ("\ue793") represents the "dev-cloudflareworkers" glyph.
+	Cmake                   nf.Glyph = "" //  ("\ue794") represents the "dev-cmake" glyph.
+	Codeac                  nf.Glyph = "" //  ("\ue796") represents the "dev-codeac" glyph.
+	Codecov                 nf.Glyph = "" //  ("\ue797") represents the "dev-codecov" glyph.
+	Codeigniter             nf.Glyph = "" //  ("\ue780") represents the "dev-codeigniter" glyph.
+	Codepen                 nf.Glyph = "" //  ("\ue716") represents the "dev-codepen" glyph.
+	Coffeescript            nf.Glyph = "" //  ("\ue751") represents the "dev-coffeescript" glyph.
+	Composer                nf.Glyph = "" //  ("\ue783") represents the "dev-composer" glyph.
+	Confluence              nf.Glyph = "" //  ("\ue799") represents the "dev-confluence" glyph.
+	Consul                  nf.Glyph = "" //  ("\ue79a") represents the "dev-consul" glyph.
+	Contao                  nf.Glyph = "" //  ("\ue79b") represents the "dev-contao" glyph.
+	Corejs                  nf.Glyph = "" //  ("\ue79d") represents the "dev-corejs" glyph.
+	Cosmosdb                nf.Glyph = "" //  ("\ue79f") represents the "dev-cosmosdb" glyph.
+	Couchbase               nf.Glyph = "" //  ("\ue7a0") represents the "dev-couchbase" glyph.
+	Couchdb                 nf.Glyph = "" //  ("\ue7a2") represents the "dev-couchdb" glyph.
+	Cplusplus               nf.Glyph = "" //  ("\ue7a3") represents the "dev-cplusplus" glyph.
+	Crystal                 nf.Glyph = "" //  ("\ue7ac") represents the "dev-crystal" glyph.
+	Csharp                  nf.Glyph = "" //  ("\ue7b2") represents the "dev-csharp" glyph.
+	Css3                    nf.Glyph = "" //  ("\ue749") represents the "dev-css3" glyph.
+	Css3Full                nf.Glyph = "" //  ("\ue74a") represents the "dev-css3_full" glyph.
+	Cucumber                nf.Glyph = "" //  ("\ue7b7") represents the "dev-cucumber" glyph.
+	Cypressio               nf.Glyph = "" //  ("\ue7b9") represents the "dev-cypressio" glyph.
+	D3Js                    nf.Glyph = "" //  ("\ue7bc") represents the "dev-d3js" glyph.
+	Dart                    nf.Glyph = "" //  ("\ue798") represents the "dev-dart" glyph.
+	Database                nf.Glyph = "" //  ("\ue706") represents the "dev-database" glyph.
+	Datagrip                nf.Glyph = "" //  ("\ue7bd") represents the "dev-datagrip" glyph.
+	Dataspell               nf.Glyph = "" //  ("\ue7be") represents the "dev-dataspell" glyph.
+	Dbeaver                 nf.Glyph = "" //  ("\ue7bf") represents the "dev-dbeaver" glyph.
+	Debian                  nf.Glyph = "" //  ("\ue77d") represents the "dev-debian" glyph.
+	Denojs                  nf.Glyph = "" //  ("\ue7c0") represents the "dev-denojs" glyph.
+	Devicon                 nf.Glyph = "" //  ("\ue7c1") represents the "dev-devicon" glyph.
+	DigitalOcean            nf.Glyph = "" //  ("\ue7ae") represents the "dev-digital_ocean" glyph.
+	Digitalocean            nf.Glyph = "" //  ("\ue7ae") represents the "dev-digitalocean" glyph.
+	Discordjs               nf.Glyph = "" //  ("\ue7c2") represents the "dev-discordjs" glyph.
+	Django                  nf.Glyph = "" //  ("\ue71d") represents the "dev-django" glyph.
+	Djangorest              nf.Glyph = "" //  ("\ue7c3") represents the "dev-djangorest" glyph.
+	Dlang                   nf.Glyph = "" //  ("\ue7af") represents the "dev-dlang" glyph.
+	Docker                  nf.Glyph = "" //  ("\ue7b0") represents the "dev-docker" glyph.
+	Doctrine                nf.Glyph = "" //  ("\ue774") represents the "dev-doctrine" glyph.
+	Dotnet                  nf.Glyph = "" //  ("\ue77f") represents the "dev-dotnet" glyph.
+	Dotnetcore              nf.Glyph = "" //  ("\ue7c6") represents the "dev-dotnetcore" glyph.
+	Dreamweaver             nf.Glyph = "" //  ("\ue79c") represents the "dev-dreamweaver" glyph.
+	Dropbox                 nf.Glyph = "" //  ("\ue707") represents the "dev-dropbox" glyph.
+	Dropwizard              nf.Glyph = "" //  ("\ue7c7") represents the "dev-dropwizard" glyph.
+	Drupal                  nf.Glyph = "" //  ("\ue742") represents the "dev-drupal" glyph.
+	Dynamodb                nf.Glyph = "" //  ("\ue7c8") represents the "dev-dynamodb" glyph.
+	Eclipse                 nf.Glyph = "" //  ("\ue79e") represents the "dev-eclipse" glyph.
+	Ecto                    nf.Glyph = "" //  ("\ue7c9") represents the "dev-ecto" glyph.
+	Elasticsearch           nf.Glyph = "" //  ("\ue7ca") represents the "dev-elasticsearch" glyph.
+	Electron                nf.Glyph = "" //  ("\ue7cb") represents the "dev-electron" glyph.
+	Eleventy                nf.Glyph = "" //  ("\ue7cc") represents the "dev-eleventy" glyph.
+	Elixir                  nf.Glyph = "" //  ("\ue7cd") represents the "dev-elixir" glyph.
+	Elm                     nf.Glyph = "" //  ("\ue7ce") represents the "dev-elm" glyph.
+	Emacs                   nf.Glyph = "" //  ("\ue7cf") represents the "dev-emacs" glyph.
+	Embeddedc               nf.Glyph = "" //  ("\ue7d0") represents the "dev-embeddedc" glyph.
+	Ember                   nf.Glyph = "" //  ("\ue71b") represents the "dev-ember" glyph.
+	Envoy                   nf.Glyph = "" //  ("\ue7d1") represents the "dev-envoy" glyph.
+	Erlang                  nf.Glyph = "" //  ("\ue7b1") represents the "dev-erlang" glyph.
+	Eslint                  nf.Glyph = "" //  ("\ue7d2") represents the "dev-eslint" glyph.
+	Express                 nf.Glyph = "" //  ("\ue7d3") represents the "dev-express" glyph.
+	Facebook                nf.Glyph = "" //  ("\ue7d4") represents the "dev-facebook" glyph.
+	Fastapi                 nf.Glyph = "" //  ("\ue7d5") represents the "dev-fastapi" glyph.
+	Fastify                 nf.Glyph = "" //  ("\ue7d6") represents the "dev-fastify" glyph.
+	Faunadb                 nf.Glyph = "" //  ("\ue7d7") represents the "dev-faunadb" glyph.
+	Feathersjs              nf.Glyph = "" //  ("\ue7d8") represents the "dev-feathersjs" glyph.
+	Fedora                  nf.Glyph = "" //  ("\ue7d9") represents the "dev-fedora" glyph.
+	Figma                   nf.Glyph = "" //  ("\ue7da") represents the "dev-figma" glyph.
+	Filezilla               nf.Glyph = "" //  ("\ue7db") represents the "dev-filezilla" glyph.
+	Firebase                nf.Glyph = "" //  ("\ue787") represents the "dev-firebase" glyph.
+	Firefox                 nf.Glyph = "" //  ("\ue745") represents the "dev-firefox" glyph.
+	Flask                   nf.Glyph = "" //  ("\ue7dc") represents the "dev-flask" glyph.
+	Flutter                 nf.Glyph = "" //  ("\ue7dd") represents the "dev-flutter" glyph.
+	Fortran                 nf.Glyph = "" //  ("\ue7de") represents the "dev-fortran" glyph.
+	Foundation              nf.Glyph = "" //  ("\ue7df") represents the "dev-foundation" glyph.
+	Framermotion            nf.Glyph = "" //  ("\ue7e0") represents the "dev-framermotion" glyph.
+	Framework7              nf.Glyph = "" //  ("\ue7e1") represents the "dev-framework7" glyph.
+	Fsharp                  nf.Glyph = "" //  ("\ue7a7") represents the "dev-fsharp" glyph.
+	Gatling                 nf.Glyph = "" //  ("\ue7e2") represents the "dev-gatling" glyph.
+	Gatsby                  nf.Glyph = "" //  ("\ue7e3") represents the "dev-gatsby" glyph.
+	Gazebo                  nf.Glyph = "" //  ("\ue7e4") represents the "dev-gazebo" glyph.
+	Gcc                     nf.Glyph = "" //  ("\ue7e5") represents the "dev-gcc" glyph.
+	Gentoo                  nf.Glyph = "" //  ("\ue7e6") represents the "dev-gentoo" glyph.
+	Ghost                   nf.Glyph = "" //  ("\ue71f") represents the "dev-ghost" glyph.
+	GhostSmall              nf.Glyph = "" //  ("\ue714") represents the "dev-ghost_small" glyph.
+	Gimp                    nf.Glyph = "" //  ("\ue7e7") represents the "dev-gimp" glyph.
+	Git                     nf.Glyph = "" //  ("\ue702") represents the "dev-git" glyph.
+	GitBranch               nf.Glyph = "" //  ("\ue725") represents the "dev-git_branch" glyph.
+	GitCommit               nf.Glyph = "" //  ("\ue729") represents the "dev-git_commit" glyph.
+	GitCompare              nf.Glyph = "" //  ("\ue728") represents the "dev-git_compare" glyph.
+	GitMerge                nf.Glyph = "" //  ("\ue727") represents the "dev-git_merge" glyph.
+	GitPullRequest          nf.Glyph = "" //  ("\ue726") represents the "dev-git_pull_request" glyph.
+	Gitbook                 nf.Glyph = "" //  ("\ue7e8") represents the "dev-gitbook" glyph.
+	Github                  nf.Glyph = "" //  ("\ue709") represents the "dev-github" glyph.
+	GithubBadge             nf.Glyph = "" //  ("\ue709") represents the "dev-github_badge" glyph.
+	GithubFull              nf.Glyph = "" //  ("\ue717") represents the "dev-github_full" glyph.
+	Githubactions           nf.Glyph = "" //  ("\ue7e9") represents the "dev-githubactions" glyph.
+	Githubcodespaces        nf.Glyph = "" //  ("\ue7ea") represents the "dev-githubcodespaces" glyph.
+	Gitlab                  nf.Glyph = "" //  ("\ue7eb") represents the "dev-gitlab" glyph.
+	Gitpod                  nf.Glyph = "" //  ("\ue7ec") represents the "dev-gitpod" glyph.
+	Gitter                  nf.Glyph = "" //  ("\ue7ed") represents the "dev-gitter" glyph.
+	Gnu                     nf.Glyph = "" //  ("\ue779") represents the "dev-gnu" glyph.
+	Go                      nf.Glyph = "" //  ("\ue724") represents the "dev-go" glyph.
+	Godot                   nf.Glyph = "" //  ("\ue7ee") represents the "dev-godot" glyph.
+	Goland                  nf.Glyph = "" //  ("\ue7ef") represents the "dev-goland" glyph.
+	Google                  nf.Glyph = "" //  ("\ue7f0") represents the "dev-google" glyph.
+	Googlecloud             nf.Glyph = "" //  ("\ue7f1") represents the "dev-googlecloud" glyph.
+	Gradle                  nf.Glyph = "" //  ("\ue7f2") represents the "dev-gradle" glyph.
+	Grafana                 nf.Glyph = "" //  ("\ue7f3") represents the "dev-grafana" glyph.
+	Grails                  nf.Glyph = "" //  ("\ue7b3") represents the "dev-grails" glyph.
+	Graphql                 nf.Glyph = "" //  ("\ue7f4") represents the "dev-graphql" glyph.
+	Groovy                  nf.Glyph = "" //  ("\ue775") represents the "dev-groovy" glyph.
+	Grpc                    nf.Glyph = "" //  ("\ue7f5") represents the "dev-grpc" glyph.
+	Grunt                   nf.Glyph = "" //  ("\ue74c") represents the "dev-grunt" glyph.
+	Gulp                    nf.Glyph = "" //  ("\ue763") represents the "dev-gulp" glyph.
+	Hadoop                  nf.Glyph = "" //  ("\ue7f6") represents the "dev-hadoop" glyph.
+	Handlebars              nf.Glyph = "" //  ("\ue7f7") represents the "dev-handlebars" glyph.
+	Hardhat                 nf.Glyph = "" //  ("\ue7f8") represents the "dev-hardhat" glyph.
+	Harvester               nf.Glyph = "" //  ("\ue7f9") represents the "dev-harvester" glyph.
+	Haskell                 nf.Glyph = "" //  ("\ue777") represents the "dev-haskell" glyph.
+	Haxe                    nf.Glyph = "" //  ("\ue7fa") represents the "dev-haxe" glyph.
+	Helm                    nf.Glyph = "" //  ("\ue7fb") represents the "dev-helm" glyph.
+	Heroku                  nf.Glyph = "" //  ("\ue77b") represents the "dev-heroku" glyph.
+	Hibernate               nf.Glyph = "" //  ("\ue7fc") represents the "dev-hibernate" glyph.
+	Homebrew                nf.Glyph = "" //  ("\ue7fd") represents the "dev-homebrew" glyph.
+	Html5                   nf.Glyph = "" //  ("\ue736") represents the "dev-html5" glyph.
+	Hugo                    nf.Glyph = "" //  ("\ue7fe") represents the "dev-hugo" glyph.
+	Ie                      nf.Glyph = "" //  ("\ue744") represents the "dev-ie" glyph.
+	Ifttt                   nf.Glyph = "" //  ("\ue7ff") represents the "dev-ifttt" glyph.
+	Illustrator             nf.Glyph = "" //  ("\ue7b4") represents the "dev-illustrator" glyph.
+	Influxdb                nf.Glyph = "" //  ("\ue800") represents the "dev-influxdb" glyph.
+	Inkscape                nf.Glyph = "" //  ("\ue801") represents the "dev-inkscape" glyph.
+	Insomnia                nf.Glyph = "" //  ("\ue802") represents the "dev-insomnia" glyph.
+	Intellij                nf.Glyph = "" //  ("\ue7b5") represents the "dev-intellij" glyph.
+	Ionic                   nf.Glyph = "" //  ("\ue7a9") represents the "dev-ionic" glyph.
+	Jaegertracing           nf.Glyph = "" //  ("\ue803") represents the "dev-jaegertracing" glyph.
+	Jamstack                nf.Glyph = "" //  ("\ue804") represents the "dev-jamstack" glyph.
+	Jasmine                 nf.Glyph = "" //  ("\ue805") represents the "dev-jasmine" glyph.
+	Java                    nf.Glyph = "" //  ("\ue738") represents the "dev-java" glyph.
+	Javascript              nf.Glyph = "" //  ("\ue781") represents the "dev-javascript" glyph.
+	JavascriptAlt           nf.Glyph = "" //  ("\ue74e") represents the "dev-javascript_alt" glyph.
+	JavascriptBadge         nf.Glyph = "" //  ("\ue781") represents the "dev-javascript_badge" glyph.
+	Jeet                    nf.Glyph = "" //  ("\ue806") represents the "dev-jeet" glyph.
+	Jekyll                  nf.Glyph = "" //  ("\ue70d") represents the "dev-jekyll" glyph.
+	JekyllSmall             nf.Glyph = "" //  ("\ue70d") represents the "dev-jekyll_small" glyph.
+	Jenkins                 nf.Glyph = "" //  ("\ue767") represents the "dev-jenkins" glyph.
+	Jest                    nf.Glyph = "" //  ("\ue807") represents the "dev-jest" glyph.
+	Jetbrains               nf.Glyph = "" //  ("\ue808") represents the "dev-jetbrains" glyph.
+	Jetpackcompose          nf.Glyph = "" //  ("\ue809") represents the "dev-jetpackcompose" glyph.
+	Jira                    nf.Glyph = "" //  ("\ue75c") represents the "dev-jira" glyph.
+	Jiraalign               nf.Glyph = "" //  ("\ue80a") represents the "dev-jiraalign" glyph.
+	Jquery                  nf.Glyph = "" //  ("\ue750") represents the "dev-jquery" glyph.
+	Json                    nf.Glyph = "" //  ("\ue80b") represents the "dev-json" glyph.
+	Jule                    nf.Glyph = "" //  ("\ue80c") represents the "dev-jule" glyph.
+	Julia                   nf.Glyph = "" //  ("\ue80d") represents the "dev-julia" glyph.
+	Junit                   nf.Glyph = "" //  ("\ue80e") represents the "dev-junit" glyph.
+	Jupyter                 nf.Glyph = "" //  ("\ue80f") represents the "dev-jupyter" glyph.
+	K3Os                    nf.Glyph = "" //  ("\ue810") represents the "dev-k3os" glyph.
+	K3S                     nf.Glyph = "" //  ("\ue811") represents the "dev-k3s" glyph.
+	K6                      nf.Glyph = "" //  ("\ue812") represents the "dev-k6" glyph.
+	Kaggle                  nf.Glyph = "" //  ("\ue813") represents the "dev-kaggle" glyph.
+	Karatelabs              nf.Glyph = "" //  ("\ue814") represents the "dev-karatelabs" glyph.
+	Karma                   nf.Glyph = "" //  ("\ue815") represents the "dev-karma" glyph.
+	Kdeneon                 nf.Glyph = "" //  ("\ue816") represents the "dev-kdeneon" glyph.
+	Keras                   nf.Glyph = "" //  ("\ue817") represents the "dev-keras" glyph.
+	Kibana                  nf.Glyph = "" //  ("\ue818") represents the "dev-kibana" glyph.
+	Knexjs                  nf.Glyph = "" //  ("\ue819") represents the "dev-knexjs" glyph.
+	Knockout                nf.Glyph = "" //  ("\ue81a") represents the "dev-knockout" glyph.
+	Kotlin                  nf.Glyph = "" //  ("\ue81b") represents the "dev-kotlin" glyph.
+	Krakenjs                nf.Glyph = "" //  ("\ue784") represents the "dev-krakenjs" glyph.
+	KrakenjsBadge           nf.Glyph = "" //  ("\ue784") represents the "dev-krakenjs_badge" glyph.
+	Ktor                    nf.Glyph = "" //  ("\ue81c") represents the "dev-ktor" glyph.
+	Kubernetes              nf.Glyph = "" //  ("\ue81d") represents the "dev-kubernetes" glyph.
+	Labview                 nf.Glyph = "" //  ("\ue81e") represents the "dev-labview" glyph.
+	Laravel                 nf.Glyph = "" //  ("\ue73f") represents the "dev-laravel" glyph.
+	Latex                   nf.Glyph = "" //  ("\ue81f") represents the "dev-latex" glyph.
+	Less                    nf.Glyph = "" //  ("\ue758") represents the "dev-less" glyph.
+	Linkedin                nf.Glyph = "" //  ("\ue820") represents the "dev-linkedin" glyph.
+	Linux                   nf.Glyph = "" //  ("\ue712") represents the "dev-linux" glyph.
+	Liquibase               nf.Glyph = "" //  ("\ue821") represents the "dev-liquibase" glyph.
+	Livewire                nf.Glyph = "" //  ("\ue822") represents the "dev-livewire" glyph.
+	Llvm                    nf.Glyph = "" //  ("\ue823") represents the "dev-llvm" glyph.
+	Lodash                  nf.Glyph = "" //  ("\ue824") represents the "dev-lodash" glyph.
+	Logstash                nf.Glyph = "" //  ("\ue825") represents the "dev-logstash" glyph.
+	Lua                     nf.Glyph = "" //  ("\ue826") represents the "dev-lua" glyph.
+	Lumen                   nf.Glyph = "" //  ("\ue827") represents the "dev-lumen" glyph.
+	Magento                 nf.Glyph = "" //  ("\ue740") represents the "dev-magento" glyph.
+	Mariadb                 nf.Glyph = "" //  ("\ue828") represents the "dev-mariadb" glyph.
+	Markdown                nf.Glyph = "" //  ("\ue73e") represents the "dev-markdown" glyph.
+	Materializecss          nf.Glyph = "" //  ("\ue7b6") represents the "dev-materializecss" glyph.
+	Materialui              nf.Glyph = "" //  ("\ue829") represents the "dev-materialui" glyph.
+	Matlab                  nf.Glyph = "" //  ("\ue82a") represents the "dev-matlab" glyph.
+	Matplotlib              nf.Glyph = "" //  ("\ue82b") represents the "dev-matplotlib" glyph.
+	Maven                   nf.Glyph = "" //  ("\ue82c") represents the "dev-maven" glyph.
+	Maya                    nf.Glyph = "" //  ("\ue82d") represents the "dev-maya" glyph.
+	Meteor                  nf.Glyph = "" //  ("\ue7a5") represents the "dev-meteor" glyph.
+	Meteorfull              nf.Glyph = "" //  ("\ue7a6") represents the "dev-meteorfull" glyph.
+	Microsoftsqlserver      nf.Glyph = "" //  ("\ue82e") represents the "dev-microsoftsqlserver" glyph.
+	Minitab                 nf.Glyph = "" //  ("\ue82f") represents the "dev-minitab" glyph.
+	Mithril                 nf.Glyph = "" //  ("\ue830") represents the "dev-mithril" glyph.
+	Mobx                    nf.Glyph = "" //  ("\ue831") represents the "dev-mobx" glyph.
+	Mocha                   nf.Glyph = "" //  ("\ue832") represents the "dev-mocha" glyph.
+	Modx                    nf.Glyph = "" //  ("\ue833") represents the "dev-modx" glyph.
+	Moleculer               nf.Glyph = "" //  ("\ue834") represents the "dev-moleculer" glyph.
+	Mongodb                 nf.Glyph = "" //  ("\ue7a4") represents the "dev-mongodb" glyph.
+	Mongoose                nf.Glyph = "" //  ("\ue835") represents the "dev-mongoose" glyph.
+	Moodle                  nf.Glyph = "" //  ("\ue836") represents the "dev-moodle" glyph.
+	MootoolsBadge           nf.Glyph = "" //  ("\ue78f") represents the "dev-mootools_badge" glyph.
+	Mozilla                 nf.Glyph = "" //  ("\ue786") represents the "dev-mozilla" glyph.
+	Msdos                   nf.Glyph = "" //  ("\ue837") represents the "dev-msdos" glyph.
+	Mysql                   nf.Glyph = "" //  ("\ue704") represents the "dev-mysql" glyph.
+	Nano                    nf.Glyph = "" //  ("\ue838") represents the "dev-nano" glyph.
+	Neo4J                   nf.Glyph = "" //  ("\ue839") represents the "dev-neo4j" glyph.
+	Neovim                  nf.Glyph = "" //  ("\ue83a") represents the "dev-neovim" glyph.
+	Nestjs                  nf.Glyph = "" //  ("\ue83b") represents the "dev-nestjs" glyph.
+	Netlify                 nf.Glyph = "" //  ("\ue83c") represents the "dev-netlify" glyph.
+	Networkx                nf.Glyph = "" //  ("\ue83d") represents the "dev-networkx" glyph.
+	Nextjs                  nf.Glyph = "" //  ("\ue83e") represents the "dev-nextjs" glyph.
+	Nginx                   nf.Glyph = "" //  ("\ue776") represents the "dev-nginx" glyph.
+	Ngrx                    nf.Glyph = "" //  ("\ue83f") represents the "dev-ngrx" glyph.
+	Nhibernate              nf.Glyph = "" //  ("\ue840") represents the "dev-nhibernate" glyph.
+	Nim                     nf.Glyph = "" //  ("\ue841") represents the "dev-nim" glyph.
+	Nimble                  nf.Glyph = "" //  ("\ue842") represents the "dev-nimble" glyph.
+	Nixos                   nf.Glyph = "" //  ("\ue843") represents the "dev-nixos" glyph.
+	Nodejs                  nf.Glyph = "" //  ("\ue719") represents the "dev-nodejs" glyph.
+	NodejsSmall             nf.Glyph = "" //  ("\ue718") represents the "dev-nodejs_small" glyph.
+	Nodemon                 nf.Glyph = "" //  ("\ue844") represents the "dev-nodemon" glyph.
+	Nodewebkit              nf.Glyph = "" //  ("\ue845") represents the "dev-nodewebkit" glyph.
+	Nomad                   nf.Glyph = "" //  ("\ue846") represents the "dev-nomad" glyph.
+	Norg                    nf.Glyph = "" //  ("\ue847") represents the "dev-norg" glyph.
+	Notion                  nf.Glyph = "" //  ("\ue848") represents the "dev-notion" glyph.
+	Npm                     nf.Glyph = "" //  ("\ue71e") represents the "dev-npm" glyph.
+	Nuget                   nf.Glyph = "" //  ("\ue849") represents the "dev-nuget" glyph.
+	Numpy                   nf.Glyph = "" //  ("\ue84a") represents the "dev-numpy" glyph.
+	Nuxtjs                  nf.Glyph = "" //  ("\ue84b") represents the "dev-nuxtjs" glyph.
+	Oauth                   nf.Glyph = "" //  ("\ue84c") represents the "dev-oauth" glyph.
+	Objectivec              nf.Glyph = "" //  ("\ue84d") represents the "dev-objectivec" glyph.
+	Ocaml                   nf.Glyph = "" //  ("\ue84e") represents the "dev-ocaml" glyph.
+	Ohmyzsh                 nf.Glyph = "" //  ("\ue84f") represents the "dev-ohmyzsh" glyph.
+	Okta                    nf.Glyph = "" //  ("\ue850") represents the "dev-okta" glyph.
+	Openal                  nf.Glyph = "" //  ("\ue851") represents the "dev-openal" glyph.
+	Openapi                 nf.Glyph = "" //  ("\ue852") represents the "dev-openapi" glyph.
+	Opencl                  nf.Glyph = "" //  ("\ue853") represents the "dev-opencl" glyph.
+	Opencv                  nf.Glyph = "" //  ("\ue854") represents the "dev-opencv" glyph.
+	Opengl                  nf.Glyph = "" //  ("\ue855") represents the "dev-opengl" glyph.
+	Openstack               nf.Glyph = "" //  ("\ue856") represents the "dev-openstack" glyph.
+	Opensuse                nf.Glyph = "" //  ("\ue857") represents the "dev-opensuse" glyph.
+	Opentelemetry           nf.Glyph = "" //  ("\ue858") represents the "dev-opentelemetry" glyph.
+	Opera                   nf.Glyph = "" //  ("\ue746") represents the "dev-opera" glyph.
+	Oracle                  nf.Glyph = "" //  ("\ue859") represents the "dev-oracle" glyph.
+	Ory                     nf.Glyph = "" //  ("\ue85a") represents the "dev-ory" glyph.
+	P5Js                    nf.Glyph = "" //  ("\ue85b") represents the "dev-p5js" glyph.
+	Packer                  nf.Glyph = "" //  ("\ue85c") represents the "dev-packer" glyph.
+	Pandas                  nf.Glyph = "" //  ("\ue85d") represents the "dev-pandas" glyph.
+	Perl                    nf.Glyph = "" //  ("\ue769") represents the "dev-perl" glyph.
+	Pfsense                 nf.Glyph = "" //  ("\ue85e") represents the "dev-pfsense" glyph.
+	Phalcon                 nf.Glyph = "" //  ("\ue85f") represents the "dev-phalcon" glyph.
+	Phoenix                 nf.Glyph = "" //  ("\ue860") represents the "dev-phoenix" glyph.
+	Photonengine            nf.Glyph = "" //  ("\ue861") represents the "dev-photonengine" glyph.
+	Photoshop               nf.Glyph = "" //  ("\ue7b8") represents the "dev-photoshop" glyph.
+	Php                     nf.Glyph = "" //  ("\ue73d") represents the "dev-php" glyph.
+	Phpstorm                nf.Glyph = "" //  ("\ue862") represents the "dev-phpstorm" glyph.
+	Playwright              nf.Glyph = "" //  ("\ue863") represents the "dev-playwright" glyph.
+	Plotly                  nf.Glyph = "" //  ("\ue864") represents the "dev-plotly" glyph.
+	Pnpm                    nf.Glyph = "" //  ("\ue865") represents the "dev-pnpm" glyph.
+	Podman                  nf.Glyph = "" //  ("\ue866") represents the "dev-podman" glyph.
+	Poetry                  nf.Glyph = "" //  ("\ue867") represents the "dev-poetry" glyph.
+	Polygon                 nf.Glyph = "" //  ("\ue868") represents the "dev-polygon" glyph.
+	Portainer               nf.Glyph = "" //  ("\ue869") represents the "dev-portainer" glyph.
+	Postcss                 nf.Glyph = "" //  ("\ue86a") represents the "dev-postcss" glyph.
+	Postgresql              nf.Glyph = "" //  ("\ue76e") represents the "dev-postgresql" glyph.
+	Postman                 nf.Glyph = "" //  ("\ue86b") represents the "dev-postman" glyph.
+	Powershell              nf.Glyph = "" //  ("\ue86c") represents the "dev-powershell" glyph.
+	Premierepro             nf.Glyph = "" //  ("\ue86d") represents the "dev-premierepro" glyph.
+	Prisma                  nf.Glyph = "" //  ("\ue86e") represents the "dev-prisma" glyph.
+	Processing              nf.Glyph = "" //  ("\ue86f") represents the "dev-processing" glyph.
+	Prolog                  nf.Glyph = "" //  ("\ue7a1") represents the "dev-prolog" glyph.
+	Prometheus              nf.Glyph = "" //  ("\ue870") represents the "dev-prometheus" glyph.
+	Protractor              nf.Glyph = "" //  ("\ue871") represents the "dev-protractor" glyph.
+	Pulsar                  nf.Glyph = "" //  ("\ue872") represents the "dev-pulsar" glyph.
+	Pulumi                  nf.Glyph = "" //  ("\ue873") represents the "dev-pulumi" glyph.
+	Puppeteer               nf.Glyph = "" //  ("\ue874") represents the "dev-puppeteer" glyph.
+	Purescript              nf.Glyph = "" //  ("\ue875") represents the "dev-purescript" glyph.
+	Putty                   nf.Glyph = "" //  ("\ue876") represents the "dev-putty" glyph.
+	Pycharm                 nf.Glyph = "" //  ("\ue877") represents the "dev-pycharm" glyph.
+	Pypi                    nf.Glyph = "" //  ("\ue878") represents the "dev-pypi" glyph.
+	Pyscript                nf.Glyph = "" //  ("\ue879") represents the "dev-pyscript" glyph.
+	Pytest                  nf.Glyph = "" //  ("\ue87a") represents the "dev-pytest" glyph.
+	Python                  nf.Glyph = "" //  ("\ue73c") represents the "dev-python" glyph.
+	Pytorch                 nf.Glyph = "" //  ("\ue87b") represents the "dev-pytorch" glyph.
+	Qodana                  nf.Glyph = "" //  ("\ue87c") represents the "dev-qodana" glyph.
+	Qt                      nf.Glyph = "" //  ("\ue87d") represents the "dev-qt" glyph.
+	Quarkus                 nf.Glyph = "" //  ("\ue87e") represents the "dev-quarkus" glyph.
+	Quasar                  nf.Glyph = "" //  ("\ue87f") represents the "dev-quasar" glyph.
+	Qwik                    nf.Glyph = "" //  ("\ue880") represents the "dev-qwik" glyph.
+	R                       nf.Glyph = "" //  ("\ue881") represents the "dev-r" glyph.
+	Rabbitmq                nf.Glyph = "" //  ("\ue882") represents the "dev-rabbitmq" glyph.
+	Rails                   nf.Glyph = "" //  ("\ue73b") represents the "dev-rails" glyph.
+	Railway                 nf.Glyph = "" //  ("\ue883") represents the "dev-railway" glyph.
+	Rancher                 nf.Glyph = "" //  ("\ue884") represents the "dev-rancher" glyph.
+	RaspberryPi             nf.Glyph = "" //  ("\ue722") represents the "dev-raspberry_pi" glyph.
+	Reach                   nf.Glyph = "" //  ("\ue885") represents the "dev-reach" glyph.
+	React                   nf.Glyph = "" //  ("\ue7ba") represents the "dev-react" glyph.
+	Reactbootstrap          nf.Glyph = "" //  ("\ue886") represents the "dev-reactbootstrap" glyph.
+	Reactnavigation         nf.Glyph = "" //  ("\ue887") represents the "dev-reactnavigation" glyph.
+	Reactrouter             nf.Glyph = "" //  ("\ue888") represents the "dev-reactrouter" glyph.
+	Readthedocs             nf.Glyph = "" //  ("\ue889") represents the "dev-readthedocs" glyph.
+	Realm                   nf.Glyph = "" //  ("\ue88a") represents the "dev-realm" glyph.
+	Rect                    nf.Glyph = "" //  ("\ue88b") represents the "dev-rect" glyph.
+	Redhat                  nf.Glyph = "" //  ("\ue7bb") represents the "dev-redhat" glyph.
+	Redis                   nf.Glyph = "" //  ("\ue76d") represents the "dev-redis" glyph.
+	Redux                   nf.Glyph = "" //  ("\ue88c") represents the "dev-redux" glyph.
+	Renpy                   nf.Glyph = "" //  ("\ue88d") represents the "dev-renpy" glyph.
+	Replit                  nf.Glyph = "" //  ("\ue88e") represents the "dev-replit" glyph.
+	Requirejs               nf.Glyph = "" //  ("\ue770") represents the "dev-requirejs" glyph.
+	Rider                   nf.Glyph = "" //  ("\ue88f") represents the "dev-rider" glyph.
+	Rocksdb                 nf.Glyph = "" //  ("\ue890") represents the "dev-rocksdb" glyph.
+	Rockylinux              nf.Glyph = "" //  ("\ue891") represents the "dev-rockylinux" glyph.
+	Rollup                  nf.Glyph = "" //  ("\ue892") represents the "dev-rollup" glyph.
+	Ros                     nf.Glyph = "" //  ("\ue893") represents the "dev-ros" glyph.
+	Rspec                   nf.Glyph = "" //  ("\ue894") represents the "dev-rspec" glyph.
+	Rstudio                 nf.Glyph = "" //  ("\ue895") represents the "dev-rstudio" glyph.
+	Ruby                    nf.Glyph = "" //  ("\ue739") represents the "dev-ruby" glyph.
+	RubyOnRails             nf.Glyph = "" //  ("\ue73b") represents the "dev-ruby_on_rails" glyph.
+	RubyRough               nf.Glyph = "" //  ("\ue791") represents the "dev-ruby_rough" glyph.
+	Rubymine                nf.Glyph = "" //  ("\ue896") represents the "dev-rubymine" glyph.
+	Rust                    nf.Glyph = "" //  ("\ue7a8") represents the "dev-rust" glyph.
+	Rxjs                    nf.Glyph = "" //  ("\ue897") represents the "dev-rxjs" glyph.
+	Safari                  nf.Glyph = "" //  ("\ue748") represents the "dev-safari" glyph.
+	Salesforce              nf.Glyph = "" //  ("\ue898") represents the "dev-salesforce" glyph.
+	Sanity                  nf.Glyph = "" //  ("\ue899") represents the "dev-sanity" glyph.
+	Sass                    nf.Glyph = "" //  ("\ue74b") represents the "dev-sass" glyph.
+	Scala                   nf.Glyph = "" //  ("\ue737") represents the "dev-scala" glyph.
+	Scalingo                nf.Glyph = "" //  ("\ue89a") represents the "dev-scalingo" glyph.
+	Scikitlearn             nf.Glyph = "" //  ("\ue89b") represents the "dev-scikitlearn" glyph.
+	Sdl                     nf.Glyph = "" //  ("\ue89c") represents the "dev-sdl" glyph.
+	Selenium                nf.Glyph = "" //  ("\ue89d") represents the "dev-selenium" glyph.
+	Sema                    nf.Glyph = "" //  ("\ue89e") represents the "dev-sema" glyph.
+	Sentry                  nf.Glyph = "" //  ("\ue89f") represents the "dev-sentry" glyph.
+	Sequelize               nf.Glyph = "" //  ("\ue8a0") represents the "dev-sequelize" glyph.
+	Shopware                nf.Glyph = "" //  ("\ue8a1") represents the "dev-shopware" glyph.
+	Shotgrid                nf.Glyph = "" //  ("\ue8a2") represents the "dev-shotgrid" glyph.
+	Sketch                  nf.Glyph = "" //  ("\ue8a3") represents the "dev-sketch" glyph.
+	Slack                   nf.Glyph = "" //  ("\ue8a4") represents the "dev-slack" glyph.
+	SmashingMagazine        nf.Glyph = "" //  ("\ue72d") represents the "dev-smashing_magazine" glyph.
+	Socketio                nf.Glyph = "" //  ("\ue8a5") represents the "dev-socketio" glyph.
+	Solidity                nf.Glyph = "" //  ("\ue8a6") represents the "dev-solidity" glyph.
+	Solidjs                 nf.Glyph = "" //  ("\ue8a7") represents the "dev-solidjs" glyph.
+	Sonarqube               nf.Glyph = "" //  ("\ue8a8") represents the "dev-sonarqube" glyph.
+	Sourcetree              nf.Glyph = "" //  ("\ue8a9") represents the "dev-sourcetree" glyph.
+	Spack                   nf.Glyph = "" //  ("\ue8aa") represents the "dev-spack" glyph.
+	Splunk                  nf.Glyph = "" //  ("\ue8ab") represents the "dev-splunk" glyph.
+	Spring                  nf.Glyph = "" //  ("\ue8ac") represents the "dev-spring" glyph.
+	Spss                    nf.Glyph = "" //  ("\ue8ad") represents the "dev-spss" glyph.
+	Spyder                  nf.Glyph = "" //  ("\ue8ae") represents the "dev-spyder" glyph.
+	Sqlalchemy              nf.Glyph = "" //  ("\ue8af") represents the "dev-sqlalchemy" glyph.
+	Sqldeveloper            nf.Glyph = "" //  ("\ue8b0") represents the "dev-sqldeveloper" glyph.
+	Sqlite                  nf.Glyph = "" //  ("\ue7c4") represents the "dev-sqlite" glyph.
+	Ssh                     nf.Glyph = "" //  ("\ue8b1") represents the "dev-ssh" glyph.
+	Stackoverflow           nf.Glyph = "" //  ("\ue710") represents the "dev-stackoverflow" glyph.
+	Stata                   nf.Glyph = "" //  ("\ue8b2") represents the "dev-stata" glyph.
+	Storybook               nf.Glyph = "" //  ("\ue8b3") represents the "dev-storybook" glyph.
+	Streamlit               nf.Glyph = "" //  ("\ue8b4") represents the "dev-streamlit" glyph.
+	Stylus                  nf.Glyph = "" //  ("\ue759") represents the "dev-stylus" glyph.
+	Sublime                 nf.Glyph = "" //  ("\ue7aa") represents the "dev-sublime" glyph.
+	Subversion              nf.Glyph = "" //  ("\ue8b5") represents the "dev-subversion" glyph.
+	Supabase                nf.Glyph = "" //  ("\ue8b6") represents the "dev-supabase" glyph.
+	Svelte                  nf.Glyph = "" //  ("\ue8b7") represents the "dev-svelte" glyph.
+	Swagger                 nf.Glyph = "" //  ("\ue8b8") represents the "dev-swagger" glyph.
+	Swift                   nf.Glyph = "" //  ("\ue755") represents the "dev-swift" glyph.
+	Swiper                  nf.Glyph = "" //  ("\ue8b9") represents the "dev-swiper" glyph.
+	Symfony                 nf.Glyph = "" //  ("\ue757") represents the "dev-symfony" glyph.
+	SymfonyBadge            nf.Glyph = "" //  ("\ue757") represents the "dev-symfony_badge" glyph.
+	Tailwindcss             nf.Glyph = "" //  ("\ue8ba") represents the "dev-tailwindcss" glyph.
+	Tauri                   nf.Glyph = "" //  ("\ue8bb") represents the "dev-tauri" glyph.
+	Tensorflow              nf.Glyph = "" //  ("\ue8bc") represents the "dev-tensorflow" glyph.
+	Terminal                nf.Glyph = "" //  ("\ue795") represents the "dev-terminal" glyph.
+	Terraform               nf.Glyph = "" //  ("\ue8bd") represents the "dev-terraform" glyph.
+	Tex                     nf.Glyph = "" //  ("\ue8be") represents the "dev-tex" glyph.
+	Thealgorithms           nf.Glyph = "" //  ("\ue8bf") represents the "dev-thealgorithms" glyph.
+	Threedsmax              nf.Glyph = "" //  ("\ue8c0") represents the "dev-threedsmax" glyph.
+	Threejs                 nf.Glyph = "" //  ("\ue8c1") represents the "dev-threejs" glyph.
+	Titaniumsdk             nf.Glyph = "" //  ("\ue8c2") represents the "dev-titaniumsdk" glyph.
+	Tomcat                  nf.Glyph = "" //  ("\ue8c3") represents the "dev-tomcat" glyph.
+	Tortoisegit             nf.Glyph = "" //  ("\ue8c4") represents the "dev-tortoisegit" glyph.
+	Towergit                nf.Glyph = "" //  ("\ue8c5") represents the "dev-towergit" glyph.
+	Traefikmesh             nf.Glyph = "" //  ("\ue8c6") represents the "dev-traefikmesh" glyph.
+	Traefikproxy            nf.Glyph = "" //  ("\ue8c7") represents the "dev-traefikproxy" glyph.
+	Travis                  nf.Glyph = "" //  ("\ue77e") represents the "dev-travis" glyph.
+	Trello                  nf.Glyph = "" //  ("\ue75a") represents the "dev-trello" glyph.
+	Trpc                    nf.Glyph = "" //  ("\ue8c8") represents the "dev-trpc" glyph.
+	Twitter                 nf.Glyph = "" //  ("\ue8c9") represents the "dev-twitter" glyph.
+	Typescript              nf.Glyph = "" //  ("\ue8ca") represents the "dev-typescript" glyph.
+	Typo3                   nf.Glyph = "" //  ("\ue772") represents the "dev-typo3" glyph.
+	Ubuntu                  nf.Glyph = "" //  ("\ue73a") represents the "dev-ubuntu" glyph.
+	Uml                     nf.Glyph = "" //  ("\ue8cb") represents the "dev-uml" glyph.
+	Unifiedmodelinglanguage nf.Glyph = "" //  ("\ue8cb") represents the "dev-unifiedmodelinglanguage" glyph.
+	Unity                   nf.Glyph = "" //  ("\ue721") represents the "dev-unity" glyph.
+	UnitySmall              nf.Glyph = "" //  ("\ue721") represents the "dev-unity_small" glyph.
+	Unix                    nf.Glyph = "" //  ("\ue8cc") represents the "dev-unix" glyph.
+	Unrealengine            nf.Glyph = "" //  ("\ue8cd") represents the "dev-unrealengine" glyph.
+	Uwsgi                   nf.Glyph = "" //  ("\ue8ce") represents the "dev-uwsgi" glyph.
+	V8                      nf.Glyph = "" //  ("\ue8cf") represents the "dev-v8" glyph.
+	Vagrant                 nf.Glyph = "" //  ("\ue8d0") represents the "dev-vagrant" glyph.
+	Vala                    nf.Glyph = "" //  ("\ue8d1") represents the "dev-vala" glyph.
+	Vault                   nf.Glyph = "" //  ("\ue8d2") represents the "dev-vault" glyph.
+	Vercel                  nf.Glyph = "" //  ("\ue8d3") represents the "dev-vercel" glyph.
+	Vertx                   nf.Glyph = "" //  ("\ue8d4") represents the "dev-vertx" glyph.
+	Vim                     nf.Glyph = "" //  ("\ue7c5") represents the "dev-vim" glyph.
+	Visualbasic             nf.Glyph = "" //  ("\ue8d5") represents the "dev-visualbasic" glyph.
+	Visualstudio            nf.Glyph = "" //  ("\ue70c") represents the "dev-visualstudio" glyph.
+	Vite                    nf.Glyph = "" //  ("\ue8d6") represents the "dev-vite" glyph.
+	Vitejs                  nf.Glyph = "" //  ("\ue8d7") represents the "dev-vitejs" glyph.
+	Vitess                  nf.Glyph = "" //  ("\ue8d8") represents the "dev-vitess" glyph.
+	Vitest                  nf.Glyph = "" //  ("\ue8d9") represents the "dev-vitest" glyph.
+	Vscode                  nf.Glyph = "" //  ("\ue8da") represents the "dev-vscode" glyph.
+	Vsphere                 nf.Glyph = "" //  ("\ue8db") represents the "dev-vsphere" glyph.
+	Vuejs                   nf.Glyph = "" //  ("\ue8dc") represents the "dev-vuejs" glyph.
+	Vuestorefront           nf.Glyph = "" //  ("\ue8dd") represents the "dev-vuestorefront" glyph.
+	Vuetify                 nf.Glyph = "" //  ("\ue8de") represents the "dev-vuetify" glyph.
+	Vyper                   nf.Glyph = "" //  ("\ue8df") represents the "dev-vyper" glyph.
+	Wasm                    nf.Glyph = "" //  ("\ue8e0") represents the "dev-wasm" glyph.
+	Webflow                 nf.Glyph = "" //  ("\ue8e1") represents the "dev-webflow" glyph.
+	Weblate                 nf.Glyph = "" //  ("\ue8e2") represents the "dev-weblate" glyph.
+	Webpack                 nf.Glyph = "" //  ("\ue8e3") represents the "dev-webpack" glyph.
+	Webstorm                nf.Glyph = "" //  ("\ue8e4") represents the "dev-webstorm" glyph.
+	Windows                 nf.Glyph = "" //  ("\ue70f") represents the "dev-windows" glyph.
+	Windows11               nf.Glyph = "" //  ("\ue8e5") represents the "dev-windows11" glyph.
+	Woocommerce             nf.Glyph = "" //  ("\ue8e6") represents the "dev-woocommerce" glyph.
+	Wordpress               nf.Glyph = "" //  ("\ue70b") represents the "dev-wordpress" glyph.
+	Xamarin                 nf.Glyph = "" //  ("\ue8e7") represents the "dev-xamarin" glyph.
+	Xcode                   nf.Glyph = "" //  ("\ue8e8") represents the "dev-xcode" glyph.
+	Xd                      nf.Glyph = "" //  ("\ue8e9") represents the "dev-xd" glyph.
+	Xml                     nf.Glyph = "" //  ("\ue8ea") represents the "dev-xml" glyph.
+	Yaml                    nf.Glyph = "" //  ("\ue8eb") represents the "dev-yaml" glyph.
+	Yarn                    nf.Glyph = "" //  ("\ue8ec") represents the "dev-yarn" glyph.
+	Yii                     nf.Glyph = "" //  ("\ue782") represents the "dev-yii" glyph.
+	Yugabytedb              nf.Glyph = "" //  ("\ue8ed") represents the "dev-yugabytedb" glyph.
+	Yunohost                nf.Glyph = "" //  ("\ue8ee") represents the "dev-yunohost" glyph.
+	Zend                    nf.Glyph = "" //  ("\ue778") represents the "dev-zend" glyph.
+	Zig                     nf.Glyph = "" //  ("\ue8ef") represents the "dev-zig" glyph.
+)

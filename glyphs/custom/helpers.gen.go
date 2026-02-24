@@ -8,169 +8,91 @@ package custom
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Ada,
-	Asm,
-	Astro,
-	Bazel,
-	C,
-	Chuck,
-	CommonLisp,
-	Cpp,
-	Crystal,
-	Css,
-	Default,
-	Electron,
-	Elixir,
-	Elm,
-	Emacs,
-	Fennel,
-	Firebase,
-	Folder,
-	FolderConfig,
-	FolderGit,
-	FolderGitBranch,
-	FolderGithub,
-	FolderNpm,
-	FolderOct,
-	FolderOpen,
-	Go,
-	Home,
-	Kotlin,
-	Msdos,
-	Neovim,
-	Orgmode,
-	PlayArrow,
-	Prettier,
-	Puppet,
-	Purescript,
-	Ruby,
-	Scheme,
-	Toml,
-	VLang,
-	Vim,
-	Vitruvian,
-	Windows,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the custom class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "ada", "custom-ada":
-		return Ada
-	case "asm", "custom-asm":
-		return Asm
-	case "astro", "custom-astro":
-		return Astro
-	case "bazel", "custom-bazel":
-		return Bazel
-	case "c", "custom-c":
-		return C
-	case "chuck", "custom-chuck":
-		return Chuck
-	case "common_lisp", "custom-common_lisp":
-		return CommonLisp
-	case "cpp", "custom-cpp":
-		return Cpp
-	case "crystal", "custom-crystal":
-		return Crystal
-	case "css", "custom-css":
-		return Css
-	case "default", "custom-default":
-		return Default
-	case "electron", "custom-electron":
-		return Electron
-	case "elixir", "custom-elixir":
-		return Elixir
-	case "elm", "custom-elm":
-		return Elm
-	case "emacs", "custom-emacs":
-		return Emacs
-	case "fennel", "custom-fennel":
-		return Fennel
-	case "firebase", "custom-firebase":
-		return Firebase
-	case "folder", "custom-folder":
-		return Folder
-	case "folder_config", "custom-folder_config":
-		return FolderConfig
-	case "folder_git", "custom-folder_git":
-		return FolderGit
-	case "folder_git_branch", "custom-folder_git_branch":
-		return FolderGitBranch
-	case "folder_github", "custom-folder_github":
-		return FolderGithub
-	case "folder_npm", "custom-folder_npm":
-		return FolderNpm
-	case "folder_oct", "custom-folder_oct":
-		return FolderOct
-	case "folder_open", "custom-folder_open":
-		return FolderOpen
-	case "go", "custom-go":
-		return Go
-	case "home", "custom-home":
-		return Home
-	case "kotlin", "custom-kotlin":
-		return Kotlin
-	case "msdos", "custom-msdos":
-		return Msdos
-	case "neovim", "custom-neovim":
-		return Neovim
-	case "orgmode", "custom-orgmode":
-		return Orgmode
-	case "play_arrow", "custom-play_arrow":
-		return PlayArrow
-	case "prettier", "custom-prettier":
-		return Prettier
-	case "puppet", "custom-puppet":
-		return Puppet
-	case "purescript", "custom-purescript":
-		return Purescript
-	case "ruby", "custom-ruby":
-		return Ruby
-	case "scheme", "custom-scheme":
-		return Scheme
-	case "toml", "custom-toml":
-		return Toml
-	case "v_lang", "custom-v_lang":
-		return VLang
-	case "vim", "custom-vim":
-		return Vim
-	case "vitruvian", "custom-vitruvian":
-		return Vitruvian
-	case "windows", "custom-windows":
-		return Windows
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"ada":               Ada,
+		"asm":               Asm,
+		"astro":             Astro,
+		"bazel":             Bazel,
+		"c":                 C,
+		"chuck":             Chuck,
+		"common_lisp":       CommonLisp,
+		"cpp":               Cpp,
+		"crystal":           Crystal,
+		"css":               Css,
+		"default":           Default,
+		"electron":          Electron,
+		"elixir":            Elixir,
+		"elm":               Elm,
+		"emacs":             Emacs,
+		"fennel":            Fennel,
+		"firebase":          Firebase,
+		"folder":            Folder,
+		"folder_config":     FolderConfig,
+		"folder_git":        FolderGit,
+		"folder_git_branch": FolderGitBranch,
+		"folder_github":     FolderGithub,
+		"folder_npm":        FolderNpm,
+		"folder_oct":        FolderOct,
+		"folder_open":       FolderOpen,
+		"go":                Go,
+		"home":              Home,
+		"kotlin":            Kotlin,
+		"msdos":             Msdos,
+		"neovim":            Neovim,
+		"orgmode":           Orgmode,
+		"play_arrow":        PlayArrow,
+		"prettier":          Prettier,
+		"puppet":            Puppet,
+		"purescript":        Purescript,
+		"ruby":              Ruby,
+		"scheme":            Scheme,
+		"toml":              Toml,
+		"v_lang":            VLang,
+		"vim":               Vim,
+		"vitruvian":         Vitruvian,
+		"windows":           Windows,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the custom class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

@@ -8,70 +8,58 @@ package pl
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Branch,
-	CurrentLine,
-	Hostname,
-	LeftHardDivider,
-	LeftSoftDivider,
-	LineNumber,
-	Readonly,
-	RightHardDivider,
-	RightSoftDivider,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the pl class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "branch", "pl-branch":
-		return Branch
-	case "current_line", "pl-current_line":
-		return CurrentLine
-	case "hostname", "pl-hostname":
-		return Hostname
-	case "left_hard_divider", "pl-left_hard_divider":
-		return LeftHardDivider
-	case "left_soft_divider", "pl-left_soft_divider":
-		return LeftSoftDivider
-	case "line_number", "pl-line_number":
-		return LineNumber
-	case "readonly", "pl-readonly":
-		return Readonly
-	case "right_hard_divider", "pl-right_hard_divider":
-		return RightHardDivider
-	case "right_soft_divider", "pl-right_soft_divider":
-		return RightSoftDivider
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"branch":             Branch,
+		"current_line":       CurrentLine,
+		"hostname":           Hostname,
+		"left_hard_divider":  LeftHardDivider,
+		"left_soft_divider":  LeftSoftDivider,
+		"line_number":        LineNumber,
+		"readonly":           Readonly,
+		"right_hard_divider": RightHardDivider,
+		"right_soft_divider": RightSoftDivider,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the pl class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

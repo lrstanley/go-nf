@@ -21,345 +21,54 @@ package custom
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "custom"
+	// Class is the name of the class.
+	Class nf.Class = "custom"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Ada () represents the "custom-ada" glyph.
-var Ada = &nf.Glyph{
-	ID:      "ada",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b5",
-}
-
-// Asm () represents the "custom-asm" glyph.
-var Asm = &nf.Glyph{
-	ID:      "asm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6ab",
-}
-
-// Astro () represents the "custom-astro" glyph.
-var Astro = &nf.Glyph{
-	ID:      "astro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b3",
-}
-
-// Bazel () represents the "custom-bazel" glyph.
-var Bazel = &nf.Glyph{
-	ID:      "bazel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue63a",
-}
-
-// C () represents the "custom-c" glyph.
-var C = &nf.Glyph{
-	ID:      "c",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61e",
-}
-
-// Chuck () represents the "custom-chuck" glyph.
-var Chuck = &nf.Glyph{
-	ID:      "chuck",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b6",
-}
-
-// CommonLisp () represents the "custom-common_lisp" glyph.
-var CommonLisp = &nf.Glyph{
-	ID:      "common_lisp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b0",
-}
-
-// Cpp () represents the "custom-cpp" glyph.
-var Cpp = &nf.Glyph{
-	ID:      "cpp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue61d",
-}
-
-// Crystal () represents the "custom-crystal" glyph.
-var Crystal = &nf.Glyph{
-	ID:      "crystal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62f",
-}
-
-// Css () represents the "custom-css" glyph.
-var Css = &nf.Glyph{
-	ID:      "css",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b8",
-}
-
-// Default () represents the "custom-default" glyph.
-var Default = &nf.Glyph{
-	ID:      "default",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue612",
-}
-
-// Electron () represents the "custom-electron" glyph.
-var Electron = &nf.Glyph{
-	ID:      "electron",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62e",
-}
-
-// Elixir () represents the "custom-elixir" glyph.
-var Elixir = &nf.Glyph{
-	ID:      "elixir",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62d",
-}
-
-// Elm () represents the "custom-elm" glyph.
-var Elm = &nf.Glyph{
-	ID:      "elm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62c",
-}
-
-// Emacs () represents the "custom-emacs" glyph.
-var Emacs = &nf.Glyph{
-	ID:      "emacs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue632",
-}
-
-// Fennel () represents the "custom-fennel" glyph.
-var Fennel = &nf.Glyph{
-	ID:      "fennel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6af",
-}
-
-// Firebase () represents the "custom-firebase" glyph.
-var Firebase = &nf.Glyph{
-	ID:      "firebase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue657",
-}
-
-// Folder () represents the "custom-folder" glyph.
-var Folder = &nf.Glyph{
-	ID:      "folder",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5ff",
-}
-
-// FolderConfig () represents the "custom-folder_config" glyph.
-var FolderConfig = &nf.Glyph{
-	ID:      "folder_config",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5fc",
-}
-
-// FolderGit () represents the "custom-folder_git" glyph.
-var FolderGit = &nf.Glyph{
-	ID:      "folder_git",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5fb",
-}
-
-// FolderGitBranch () represents the "custom-folder_git_branch" glyph.
-var FolderGitBranch = &nf.Glyph{
-	ID:      "folder_git_branch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5fb",
-}
-
-// FolderGithub () represents the "custom-folder_github" glyph.
-var FolderGithub = &nf.Glyph{
-	ID:      "folder_github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5fd",
-}
-
-// FolderNpm () represents the "custom-folder_npm" glyph.
-var FolderNpm = &nf.Glyph{
-	ID:      "folder_npm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5fa",
-}
-
-// FolderOct () represents the "custom-folder_oct" glyph.
-var FolderOct = &nf.Glyph{
-	ID:      "folder_oct",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6ad",
-}
-
-// FolderOpen () represents the "custom-folder_open" glyph.
-var FolderOpen = &nf.Glyph{
-	ID:      "folder_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue5fe",
-}
-
-// Go () represents the "custom-go" glyph.
-var Go = &nf.Glyph{
-	ID:      "go",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue626",
-}
-
-// Home () represents the "custom-home" glyph.
-var Home = &nf.Glyph{
-	ID:      "home",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue617",
-}
-
-// Kotlin () represents the "custom-kotlin" glyph.
-var Kotlin = &nf.Glyph{
-	ID:      "kotlin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue634",
-}
-
-// Msdos () represents the "custom-msdos" glyph.
-var Msdos = &nf.Glyph{
-	ID:      "msdos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue629",
-}
-
-// Neovim () represents the "custom-neovim" glyph.
-var Neovim = &nf.Glyph{
-	ID:      "neovim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6ae",
-}
-
-// Orgmode () represents the "custom-orgmode" glyph.
-var Orgmode = &nf.Glyph{
-	ID:      "orgmode",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue633",
-}
-
-// PlayArrow () represents the "custom-play_arrow" glyph.
-var PlayArrow = &nf.Glyph{
-	ID:      "play_arrow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue602",
-}
-
-// Prettier () represents the "custom-prettier" glyph.
-var Prettier = &nf.Glyph{
-	ID:      "prettier",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b4",
-}
-
-// Puppet () represents the "custom-puppet" glyph.
-var Puppet = &nf.Glyph{
-	ID:      "puppet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue631",
-}
-
-// Purescript () represents the "custom-purescript" glyph.
-var Purescript = &nf.Glyph{
-	ID:      "purescript",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue630",
-}
-
-// Ruby () represents the "custom-ruby" glyph.
-var Ruby = &nf.Glyph{
-	ID:      "ruby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue605",
-}
-
-// Scheme () represents the "custom-scheme" glyph.
-var Scheme = &nf.Glyph{
-	ID:      "scheme",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b1",
-}
-
-// Toml () represents the "custom-toml" glyph.
-var Toml = &nf.Glyph{
-	ID:      "toml",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b2",
-}
-
-// VLang () represents the "custom-v_lang" glyph.
-var VLang = &nf.Glyph{
-	ID:      "v_lang",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6ac",
-}
-
-// Vim () represents the "custom-vim" glyph.
-var Vim = &nf.Glyph{
-	ID:      "vim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62b",
-}
-
-// Vitruvian () represents the "custom-vitruvian" glyph.
-var Vitruvian = &nf.Glyph{
-	ID:      "vitruvian",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue6b7",
-}
-
-// Windows () represents the "custom-windows" glyph.
-var Windows = &nf.Glyph{
-	ID:      "windows",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue62a",
-}
+const (
+	Ada             nf.Glyph = "" //  ("\ue6b5") represents the "custom-ada" glyph.
+	Asm             nf.Glyph = "" //  ("\ue6ab") represents the "custom-asm" glyph.
+	Astro           nf.Glyph = "" //  ("\ue6b3") represents the "custom-astro" glyph.
+	Bazel           nf.Glyph = "" //  ("\ue63a") represents the "custom-bazel" glyph.
+	C               nf.Glyph = "" //  ("\ue61e") represents the "custom-c" glyph.
+	Chuck           nf.Glyph = "" //  ("\ue6b6") represents the "custom-chuck" glyph.
+	CommonLisp      nf.Glyph = "" //  ("\ue6b0") represents the "custom-common_lisp" glyph.
+	Cpp             nf.Glyph = "" //  ("\ue61d") represents the "custom-cpp" glyph.
+	Crystal         nf.Glyph = "" //  ("\ue62f") represents the "custom-crystal" glyph.
+	Css             nf.Glyph = "" //  ("\ue6b8") represents the "custom-css" glyph.
+	Default         nf.Glyph = "" //  ("\ue612") represents the "custom-default" glyph.
+	Electron        nf.Glyph = "" //  ("\ue62e") represents the "custom-electron" glyph.
+	Elixir          nf.Glyph = "" //  ("\ue62d") represents the "custom-elixir" glyph.
+	Elm             nf.Glyph = "" //  ("\ue62c") represents the "custom-elm" glyph.
+	Emacs           nf.Glyph = "" //  ("\ue632") represents the "custom-emacs" glyph.
+	Fennel          nf.Glyph = "" //  ("\ue6af") represents the "custom-fennel" glyph.
+	Firebase        nf.Glyph = "" //  ("\ue657") represents the "custom-firebase" glyph.
+	Folder          nf.Glyph = "" //  ("\ue5ff") represents the "custom-folder" glyph.
+	FolderConfig    nf.Glyph = "" //  ("\ue5fc") represents the "custom-folder_config" glyph.
+	FolderGit       nf.Glyph = "" //  ("\ue5fb") represents the "custom-folder_git" glyph.
+	FolderGitBranch nf.Glyph = "" //  ("\ue5fb") represents the "custom-folder_git_branch" glyph.
+	FolderGithub    nf.Glyph = "" //  ("\ue5fd") represents the "custom-folder_github" glyph.
+	FolderNpm       nf.Glyph = "" //  ("\ue5fa") represents the "custom-folder_npm" glyph.
+	FolderOct       nf.Glyph = "" //  ("\ue6ad") represents the "custom-folder_oct" glyph.
+	FolderOpen      nf.Glyph = "" //  ("\ue5fe") represents the "custom-folder_open" glyph.
+	Go              nf.Glyph = "" //  ("\ue626") represents the "custom-go" glyph.
+	Home            nf.Glyph = "" //  ("\ue617") represents the "custom-home" glyph.
+	Kotlin          nf.Glyph = "" //  ("\ue634") represents the "custom-kotlin" glyph.
+	Msdos           nf.Glyph = "" //  ("\ue629") represents the "custom-msdos" glyph.
+	Neovim          nf.Glyph = "" //  ("\ue6ae") represents the "custom-neovim" glyph.
+	Orgmode         nf.Glyph = "" //  ("\ue633") represents the "custom-orgmode" glyph.
+	PlayArrow       nf.Glyph = "" //  ("\ue602") represents the "custom-play_arrow" glyph.
+	Prettier        nf.Glyph = "" //  ("\ue6b4") represents the "custom-prettier" glyph.
+	Puppet          nf.Glyph = "" //  ("\ue631") represents the "custom-puppet" glyph.
+	Purescript      nf.Glyph = "" //  ("\ue630") represents the "custom-purescript" glyph.
+	Ruby            nf.Glyph = "" //  ("\ue605") represents the "custom-ruby" glyph.
+	Scheme          nf.Glyph = "" //  ("\ue6b1") represents the "custom-scheme" glyph.
+	Toml            nf.Glyph = "" //  ("\ue6b2") represents the "custom-toml" glyph.
+	VLang           nf.Glyph = "" //  ("\ue6ac") represents the "custom-v_lang" glyph.
+	Vim             nf.Glyph = "" //  ("\ue62b") represents the "custom-vim" glyph.
+	Vitruvian       nf.Glyph = "" //  ("\ue6b7") represents the "custom-vitruvian" glyph.
+	Windows         nf.Glyph = "" //  ("\ue62a") represents the "custom-windows" glyph.
+)

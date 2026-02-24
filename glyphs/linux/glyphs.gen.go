@@ -21,1049 +21,142 @@ package linux
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "linux"
+	// Class is the name of the class.
+	Class nf.Class = "linux"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Almalinux () represents the "linux-almalinux" glyph.
-var Almalinux = &nf.Glyph{
-	ID:      "almalinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf31d",
-}
-
-// Alpine () represents the "linux-alpine" glyph.
-var Alpine = &nf.Glyph{
-	ID:      "alpine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf300",
-}
-
-// Aosc () represents the "linux-aosc" glyph.
-var Aosc = &nf.Glyph{
-	ID:      "aosc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf301",
-}
-
-// Apple () represents the "linux-apple" glyph.
-var Apple = &nf.Glyph{
-	ID:      "apple",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf302",
-}
-
-// Archcraft () represents the "linux-archcraft" glyph.
-var Archcraft = &nf.Glyph{
-	ID:      "archcraft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf345",
-}
-
-// Archlabs () represents the "linux-archlabs" glyph.
-var Archlabs = &nf.Glyph{
-	ID:      "archlabs",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf31e",
-}
-
-// Archlinux () represents the "linux-archlinux" glyph.
-var Archlinux = &nf.Glyph{
-	ID:      "archlinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf303",
-}
-
-// Arcolinux () represents the "linux-arcolinux" glyph.
-var Arcolinux = &nf.Glyph{
-	ID:      "arcolinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf346",
-}
-
-// Arduino () represents the "linux-arduino" glyph.
-var Arduino = &nf.Glyph{
-	ID:      "arduino",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf34b",
-}
-
-// Artix () represents the "linux-artix" glyph.
-var Artix = &nf.Glyph{
-	ID:      "artix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf31f",
-}
-
-// Awesome () represents the "linux-awesome" glyph.
-var Awesome = &nf.Glyph{
-	ID:      "awesome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf354",
-}
-
-// Biglinux () represents the "linux-biglinux" glyph.
-var Biglinux = &nf.Glyph{
-	ID:      "biglinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf347",
-}
-
-// Bspwm () represents the "linux-bspwm" glyph.
-var Bspwm = &nf.Glyph{
-	ID:      "bspwm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf355",
-}
-
-// Budgie () represents the "linux-budgie" glyph.
-var Budgie = &nf.Glyph{
-	ID:      "budgie",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf320",
-}
-
-// Centos () represents the "linux-centos" glyph.
-var Centos = &nf.Glyph{
-	ID:      "centos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf304",
-}
-
-// Cinnamon () represents the "linux-cinnamon" glyph.
-var Cinnamon = &nf.Glyph{
-	ID:      "cinnamon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf35f",
-}
-
-// Codeberg () represents the "linux-codeberg" glyph.
-var Codeberg = &nf.Glyph{
-	ID:      "codeberg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf330",
-}
-
-// Coreos () represents the "linux-coreos" glyph.
-var Coreos = &nf.Glyph{
-	ID:      "coreos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf305",
-}
-
-// Crystal () represents the "linux-crystal" glyph.
-var Crystal = &nf.Glyph{
-	ID:      "crystal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf348",
-}
-
-// Debian () represents the "linux-debian" glyph.
-var Debian = &nf.Glyph{
-	ID:      "debian",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf306",
-}
-
-// Deepin () represents the "linux-deepin" glyph.
-var Deepin = &nf.Glyph{
-	ID:      "deepin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf321",
-}
-
-// Devuan () represents the "linux-devuan" glyph.
-var Devuan = &nf.Glyph{
-	ID:      "devuan",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf307",
-}
-
-// Docker () represents the "linux-docker" glyph.
-var Docker = &nf.Glyph{
-	ID:      "docker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf308",
-}
-
-// Dwm () represents the "linux-dwm" glyph.
-var Dwm = &nf.Glyph{
-	ID:      "dwm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf356",
-}
-
-// Elementary () represents the "linux-elementary" glyph.
-var Elementary = &nf.Glyph{
-	ID:      "elementary",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf309",
-}
-
-// Endeavour () represents the "linux-endeavour" glyph.
-var Endeavour = &nf.Glyph{
-	ID:      "endeavour",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf322",
-}
-
-// Enlightenment () represents the "linux-enlightenment" glyph.
-var Enlightenment = &nf.Glyph{
-	ID:      "enlightenment",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf357",
-}
-
-// Fdroid () represents the "linux-fdroid" glyph.
-var Fdroid = &nf.Glyph{
-	ID:      "fdroid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf36a",
-}
-
-// Fedora () represents the "linux-fedora" glyph.
-var Fedora = &nf.Glyph{
-	ID:      "fedora",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf30a",
-}
-
-// FedoraInverse () represents the "linux-fedora_inverse" glyph.
-var FedoraInverse = &nf.Glyph{
-	ID:      "fedora_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf30b",
-}
-
-// Ferris () represents the "linux-ferris" glyph.
-var Ferris = &nf.Glyph{
-	ID:      "ferris",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf323",
-}
-
-// Flathub () represents the "linux-flathub" glyph.
-var Flathub = &nf.Glyph{
-	ID:      "flathub",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf324",
-}
-
-// Fluxbox () represents the "linux-fluxbox" glyph.
-var Fluxbox = &nf.Glyph{
-	ID:      "fluxbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf358",
-}
-
-// Forgejo () represents the "linux-forgejo" glyph.
-var Forgejo = &nf.Glyph{
-	ID:      "forgejo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf335",
-}
-
-// Fosdem () represents the "linux-fosdem" glyph.
-var Fosdem = &nf.Glyph{
-	ID:      "fosdem",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf36b",
-}
-
-// Freebsd () represents the "linux-freebsd" glyph.
-var Freebsd = &nf.Glyph{
-	ID:      "freebsd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf30c",
-}
-
-// Freecad () represents the "linux-freecad" glyph.
-var Freecad = &nf.Glyph{
-	ID:      "freecad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf336",
-}
-
-// Freedesktop () represents the "linux-freedesktop" glyph.
-var Freedesktop = &nf.Glyph{
-	ID:      "freedesktop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf360",
-}
-
-// Garuda () represents the "linux-garuda" glyph.
-var Garuda = &nf.Glyph{
-	ID:      "garuda",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf337",
-}
-
-// Gentoo () represents the "linux-gentoo" glyph.
-var Gentoo = &nf.Glyph{
-	ID:      "gentoo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf30d",
-}
-
-// Gimp () represents the "linux-gimp" glyph.
-var Gimp = &nf.Glyph{
-	ID:      "gimp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf338",
-}
-
-// Gitea () represents the "linux-gitea" glyph.
-var Gitea = &nf.Glyph{
-	ID:      "gitea",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf339",
-}
-
-// Gnome () represents the "linux-gnome" glyph.
-var Gnome = &nf.Glyph{
-	ID:      "gnome",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf361",
-}
-
-// GnuGuix () represents the "linux-gnu_guix" glyph.
-var GnuGuix = &nf.Glyph{
-	ID:      "gnu_guix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf325",
-}
-
-// Gtk () represents the "linux-gtk" glyph.
-var Gtk = &nf.Glyph{
-	ID:      "gtk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf362",
-}
-
-// Hyperbola () represents the "linux-hyperbola" glyph.
-var Hyperbola = &nf.Glyph{
-	ID:      "hyperbola",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf33a",
-}
-
-// Hyprland () represents the "linux-hyprland" glyph.
-var Hyprland = &nf.Glyph{
-	ID:      "hyprland",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf359",
-}
-
-// I3 () represents the "linux-i3" glyph.
-var I3 = &nf.Glyph{
-	ID:      "i3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf35a",
-}
-
-// Illumos () represents the "linux-illumos" glyph.
-var Illumos = &nf.Glyph{
-	ID:      "illumos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf326",
-}
-
-// Inkscape () represents the "linux-inkscape" glyph.
-var Inkscape = &nf.Glyph{
-	ID:      "inkscape",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf33b",
-}
-
-// Jwm () represents the "linux-jwm" glyph.
-var Jwm = &nf.Glyph{
-	ID:      "jwm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf35b",
-}
-
-// KaliLinux () represents the "linux-kali_linux" glyph.
-var KaliLinux = &nf.Glyph{
-	ID:      "kali_linux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf327",
-}
-
-// Kde () represents the "linux-kde" glyph.
-var Kde = &nf.Glyph{
-	ID:      "kde",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf373",
-}
-
-// KdeNeon () represents the "linux-kde_neon" glyph.
-var KdeNeon = &nf.Glyph{
-	ID:      "kde_neon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf331",
-}
-
-// KdePlasma () represents the "linux-kde_plasma" glyph.
-var KdePlasma = &nf.Glyph{
-	ID:      "kde_plasma",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf332",
-}
-
-// Kdenlive () represents the "linux-kdenlive" glyph.
-var Kdenlive = &nf.Glyph{
-	ID:      "kdenlive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf33c",
-}
-
-// Kicad () represents the "linux-kicad" glyph.
-var Kicad = &nf.Glyph{
-	ID:      "kicad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf34c",
-}
-
-// Krita () represents the "linux-krita" glyph.
-var Krita = &nf.Glyph{
-	ID:      "krita",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf33d",
-}
-
-// Kubuntu () represents the "linux-kubuntu" glyph.
-var Kubuntu = &nf.Glyph{
-	ID:      "kubuntu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf333",
-}
-
-// KubuntuInverse () represents the "linux-kubuntu_inverse" glyph.
-var KubuntuInverse = &nf.Glyph{
-	ID:      "kubuntu_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf334",
-}
-
-// Leap () represents the "linux-leap" glyph.
-var Leap = &nf.Glyph{
-	ID:      "leap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf37e",
-}
-
-// Libreoffice () represents the "linux-libreoffice" glyph.
-var Libreoffice = &nf.Glyph{
-	ID:      "libreoffice",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf376",
-}
-
-// Libreofficebase () represents the "linux-libreofficebase" glyph.
-var Libreofficebase = &nf.Glyph{
-	ID:      "libreofficebase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf377",
-}
-
-// Libreofficecalc () represents the "linux-libreofficecalc" glyph.
-var Libreofficecalc = &nf.Glyph{
-	ID:      "libreofficecalc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf378",
-}
-
-// Libreofficedraw () represents the "linux-libreofficedraw" glyph.
-var Libreofficedraw = &nf.Glyph{
-	ID:      "libreofficedraw",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf379",
-}
-
-// Libreofficeimpress () represents the "linux-libreofficeimpress" glyph.
-var Libreofficeimpress = &nf.Glyph{
-	ID:      "libreofficeimpress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf37a",
-}
-
-// Libreofficemath () represents the "linux-libreofficemath" glyph.
-var Libreofficemath = &nf.Glyph{
-	ID:      "libreofficemath",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf37b",
-}
-
-// Libreofficewriter () represents the "linux-libreofficewriter" glyph.
-var Libreofficewriter = &nf.Glyph{
-	ID:      "libreofficewriter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf37c",
-}
-
-// Linuxmint () represents the "linux-linuxmint" glyph.
-var Linuxmint = &nf.Glyph{
-	ID:      "linuxmint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf30e",
-}
-
-// LinuxmintInverse () represents the "linux-linuxmint_inverse" glyph.
-var LinuxmintInverse = &nf.Glyph{
-	ID:      "linuxmint_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf30f",
-}
-
-// Locos () represents the "linux-locos" glyph.
-var Locos = &nf.Glyph{
-	ID:      "locos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf349",
-}
-
-// Lxde () represents the "linux-lxde" glyph.
-var Lxde = &nf.Glyph{
-	ID:      "lxde",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf363",
-}
-
-// Lxle () represents the "linux-lxle" glyph.
-var Lxle = &nf.Glyph{
-	ID:      "lxle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf33e",
-}
-
-// Lxqt () represents the "linux-lxqt" glyph.
-var Lxqt = &nf.Glyph{
-	ID:      "lxqt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf364",
-}
-
-// Mageia () represents the "linux-mageia" glyph.
-var Mageia = &nf.Glyph{
-	ID:      "mageia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf310",
-}
-
-// Mandriva () represents the "linux-mandriva" glyph.
-var Mandriva = &nf.Glyph{
-	ID:      "mandriva",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf311",
-}
-
-// Manjaro () represents the "linux-manjaro" glyph.
-var Manjaro = &nf.Glyph{
-	ID:      "manjaro",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf312",
-}
-
-// Mate () represents the "linux-mate" glyph.
-var Mate = &nf.Glyph{
-	ID:      "mate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf365",
-}
-
-// Mpv () represents the "linux-mpv" glyph.
-var Mpv = &nf.Glyph{
-	ID:      "mpv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf36e",
-}
-
-// Mxlinux () represents the "linux-mxlinux" glyph.
-var Mxlinux = &nf.Glyph{
-	ID:      "mxlinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf33f",
-}
-
-// Neovim () represents the "linux-neovim" glyph.
-var Neovim = &nf.Glyph{
-	ID:      "neovim",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf36f",
-}
-
-// Nixos () represents the "linux-nixos" glyph.
-var Nixos = &nf.Glyph{
-	ID:      "nixos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf313",
-}
-
-// Nobara () represents the "linux-nobara" glyph.
-var Nobara = &nf.Glyph{
-	ID:      "nobara",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf380",
-}
-
-// Octoprint () represents the "linux-octoprint" glyph.
-var Octoprint = &nf.Glyph{
-	ID:      "octoprint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf34d",
-}
-
-// Openbsd () represents the "linux-openbsd" glyph.
-var Openbsd = &nf.Glyph{
-	ID:      "openbsd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf328",
-}
-
-// Openscad () represents the "linux-openscad" glyph.
-var Openscad = &nf.Glyph{
-	ID:      "openscad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf34e",
-}
-
-// Opensuse () represents the "linux-opensuse" glyph.
-var Opensuse = &nf.Glyph{
-	ID:      "opensuse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf314",
-}
-
-// Osh () represents the "linux-osh" glyph.
-var Osh = &nf.Glyph{
-	ID:      "osh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf34f",
-}
-
-// Oshwa () represents the "linux-oshwa" glyph.
-var Oshwa = &nf.Glyph{
-	ID:      "oshwa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf350",
-}
-
-// Osi () represents the "linux-osi" glyph.
-var Osi = &nf.Glyph{
-	ID:      "osi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf36c",
-}
-
-// Parabola () represents the "linux-parabola" glyph.
-var Parabola = &nf.Glyph{
-	ID:      "parabola",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf340",
-}
-
-// Parrot () represents the "linux-parrot" glyph.
-var Parrot = &nf.Glyph{
-	ID:      "parrot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf329",
-}
-
-// PopOs () represents the "linux-pop_os" glyph.
-var PopOs = &nf.Glyph{
-	ID:      "pop_os",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf32a",
-}
-
-// Postmarketos () represents the "linux-postmarketos" glyph.
-var Postmarketos = &nf.Glyph{
-	ID:      "postmarketos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf374",
-}
-
-// Prusaslicer () represents the "linux-prusaslicer" glyph.
-var Prusaslicer = &nf.Glyph{
-	ID:      "prusaslicer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf351",
-}
-
-// Puppy () represents the "linux-puppy" glyph.
-var Puppy = &nf.Glyph{
-	ID:      "puppy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf341",
-}
-
-// Qt () represents the "linux-qt" glyph.
-var Qt = &nf.Glyph{
-	ID:      "qt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf375",
-}
-
-// Qtile () represents the "linux-qtile" glyph.
-var Qtile = &nf.Glyph{
-	ID:      "qtile",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf35c",
-}
-
-// Qubesos () represents the "linux-qubesos" glyph.
-var Qubesos = &nf.Glyph{
-	ID:      "qubesos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf342",
-}
-
-// RaspberryPi () represents the "linux-raspberry_pi" glyph.
-var RaspberryPi = &nf.Glyph{
-	ID:      "raspberry_pi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf315",
-}
-
-// Redhat () represents the "linux-redhat" glyph.
-var Redhat = &nf.Glyph{
-	ID:      "redhat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf316",
-}
-
-// Reprap () represents the "linux-reprap" glyph.
-var Reprap = &nf.Glyph{
-	ID:      "reprap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf352",
-}
-
-// Riscv () represents the "linux-riscv" glyph.
-var Riscv = &nf.Glyph{
-	ID:      "riscv",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf353",
-}
-
-// River () represents the "linux-river" glyph.
-var River = &nf.Glyph{
-	ID:      "river",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf381",
-}
-
-// RockyLinux () represents the "linux-rocky_linux" glyph.
-var RockyLinux = &nf.Glyph{
-	ID:      "rocky_linux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf32b",
-}
-
-// Sabayon () represents the "linux-sabayon" glyph.
-var Sabayon = &nf.Glyph{
-	ID:      "sabayon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf317",
-}
-
-// Slackware () represents the "linux-slackware" glyph.
-var Slackware = &nf.Glyph{
-	ID:      "slackware",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf318",
-}
-
-// SlackwareInverse () represents the "linux-slackware_inverse" glyph.
-var SlackwareInverse = &nf.Glyph{
-	ID:      "slackware_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf319",
-}
-
-// Snappy () represents the "linux-snappy" glyph.
-var Snappy = &nf.Glyph{
-	ID:      "snappy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf32c",
-}
-
-// Solus () represents the "linux-solus" glyph.
-var Solus = &nf.Glyph{
-	ID:      "solus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf32d",
-}
-
-// Sway () represents the "linux-sway" glyph.
-var Sway = &nf.Glyph{
-	ID:      "sway",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf35d",
-}
-
-// Tails () represents the "linux-tails" glyph.
-var Tails = &nf.Glyph{
-	ID:      "tails",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf343",
-}
-
-// Thunderbird () represents the "linux-thunderbird" glyph.
-var Thunderbird = &nf.Glyph{
-	ID:      "thunderbird",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf370",
-}
-
-// Tor () represents the "linux-tor" glyph.
-var Tor = &nf.Glyph{
-	ID:      "tor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf371",
-}
-
-// Trisquel () represents the "linux-trisquel" glyph.
-var Trisquel = &nf.Glyph{
-	ID:      "trisquel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf344",
-}
-
-// Tumbleweed () represents the "linux-tumbleweed" glyph.
-var Tumbleweed = &nf.Glyph{
-	ID:      "tumbleweed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf37d",
-}
-
-// Tux () represents the "linux-tux" glyph.
-var Tux = &nf.Glyph{
-	ID:      "tux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf31a",
-}
-
-// Typst () represents the "linux-typst" glyph.
-var Typst = &nf.Glyph{
-	ID:      "typst",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf37f",
-}
-
-// Ubuntu () represents the "linux-ubuntu" glyph.
-var Ubuntu = &nf.Glyph{
-	ID:      "ubuntu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf31b",
-}
-
-// UbuntuInverse () represents the "linux-ubuntu_inverse" glyph.
-var UbuntuInverse = &nf.Glyph{
-	ID:      "ubuntu_inverse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf31c",
-}
-
-// Vanilla () represents the "linux-vanilla" glyph.
-var Vanilla = &nf.Glyph{
-	ID:      "vanilla",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf366",
-}
-
-// Void () represents the "linux-void" glyph.
-var Void = &nf.Glyph{
-	ID:      "void",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf32e",
-}
-
-// Vscodium () represents the "linux-vscodium" glyph.
-var Vscodium = &nf.Glyph{
-	ID:      "vscodium",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf372",
-}
-
-// Wayland () represents the "linux-wayland" glyph.
-var Wayland = &nf.Glyph{
-	ID:      "wayland",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf367",
-}
-
-// Wikimedia () represents the "linux-wikimedia" glyph.
-var Wikimedia = &nf.Glyph{
-	ID:      "wikimedia",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf36d",
-}
-
-// Xerolinux () represents the "linux-xerolinux" glyph.
-var Xerolinux = &nf.Glyph{
-	ID:      "xerolinux",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf34a",
-}
-
-// Xfce () represents the "linux-xfce" glyph.
-var Xfce = &nf.Glyph{
-	ID:      "xfce",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf368",
-}
-
-// Xmonad () represents the "linux-xmonad" glyph.
-var Xmonad = &nf.Glyph{
-	ID:      "xmonad",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf35e",
-}
-
-// Xorg () represents the "linux-xorg" glyph.
-var Xorg = &nf.Glyph{
-	ID:      "xorg",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf369",
-}
-
-// Zorin () represents the "linux-zorin" glyph.
-var Zorin = &nf.Glyph{
-	ID:      "zorin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf32f",
-}
+const (
+	Almalinux          nf.Glyph = "" //  ("\uf31d") represents the "linux-almalinux" glyph.
+	Alpine             nf.Glyph = "" //  ("\uf300") represents the "linux-alpine" glyph.
+	Aosc               nf.Glyph = "" //  ("\uf301") represents the "linux-aosc" glyph.
+	Apple              nf.Glyph = "" //  ("\uf302") represents the "linux-apple" glyph.
+	Archcraft          nf.Glyph = "" //  ("\uf345") represents the "linux-archcraft" glyph.
+	Archlabs           nf.Glyph = "" //  ("\uf31e") represents the "linux-archlabs" glyph.
+	Archlinux          nf.Glyph = "" //  ("\uf303") represents the "linux-archlinux" glyph.
+	Arcolinux          nf.Glyph = "" //  ("\uf346") represents the "linux-arcolinux" glyph.
+	Arduino            nf.Glyph = "" //  ("\uf34b") represents the "linux-arduino" glyph.
+	Artix              nf.Glyph = "" //  ("\uf31f") represents the "linux-artix" glyph.
+	Awesome            nf.Glyph = "" //  ("\uf354") represents the "linux-awesome" glyph.
+	Biglinux           nf.Glyph = "" //  ("\uf347") represents the "linux-biglinux" glyph.
+	Bspwm              nf.Glyph = "" //  ("\uf355") represents the "linux-bspwm" glyph.
+	Budgie             nf.Glyph = "" //  ("\uf320") represents the "linux-budgie" glyph.
+	Centos             nf.Glyph = "" //  ("\uf304") represents the "linux-centos" glyph.
+	Cinnamon           nf.Glyph = "" //  ("\uf35f") represents the "linux-cinnamon" glyph.
+	Codeberg           nf.Glyph = "" //  ("\uf330") represents the "linux-codeberg" glyph.
+	Coreos             nf.Glyph = "" //  ("\uf305") represents the "linux-coreos" glyph.
+	Crystal            nf.Glyph = "" //  ("\uf348") represents the "linux-crystal" glyph.
+	Debian             nf.Glyph = "" //  ("\uf306") represents the "linux-debian" glyph.
+	Deepin             nf.Glyph = "" //  ("\uf321") represents the "linux-deepin" glyph.
+	Devuan             nf.Glyph = "" //  ("\uf307") represents the "linux-devuan" glyph.
+	Docker             nf.Glyph = "" //  ("\uf308") represents the "linux-docker" glyph.
+	Dwm                nf.Glyph = "" //  ("\uf356") represents the "linux-dwm" glyph.
+	Elementary         nf.Glyph = "" //  ("\uf309") represents the "linux-elementary" glyph.
+	Endeavour          nf.Glyph = "" //  ("\uf322") represents the "linux-endeavour" glyph.
+	Enlightenment      nf.Glyph = "" //  ("\uf357") represents the "linux-enlightenment" glyph.
+	Fdroid             nf.Glyph = "" //  ("\uf36a") represents the "linux-fdroid" glyph.
+	Fedora             nf.Glyph = "" //  ("\uf30a") represents the "linux-fedora" glyph.
+	FedoraInverse      nf.Glyph = "" //  ("\uf30b") represents the "linux-fedora_inverse" glyph.
+	Ferris             nf.Glyph = "" //  ("\uf323") represents the "linux-ferris" glyph.
+	Flathub            nf.Glyph = "" //  ("\uf324") represents the "linux-flathub" glyph.
+	Fluxbox            nf.Glyph = "" //  ("\uf358") represents the "linux-fluxbox" glyph.
+	Forgejo            nf.Glyph = "" //  ("\uf335") represents the "linux-forgejo" glyph.
+	Fosdem             nf.Glyph = "" //  ("\uf36b") represents the "linux-fosdem" glyph.
+	Freebsd            nf.Glyph = "" //  ("\uf30c") represents the "linux-freebsd" glyph.
+	Freecad            nf.Glyph = "" //  ("\uf336") represents the "linux-freecad" glyph.
+	Freedesktop        nf.Glyph = "" //  ("\uf360") represents the "linux-freedesktop" glyph.
+	Garuda             nf.Glyph = "" //  ("\uf337") represents the "linux-garuda" glyph.
+	Gentoo             nf.Glyph = "" //  ("\uf30d") represents the "linux-gentoo" glyph.
+	Gimp               nf.Glyph = "" //  ("\uf338") represents the "linux-gimp" glyph.
+	Gitea              nf.Glyph = "" //  ("\uf339") represents the "linux-gitea" glyph.
+	Gnome              nf.Glyph = "" //  ("\uf361") represents the "linux-gnome" glyph.
+	GnuGuix            nf.Glyph = "" //  ("\uf325") represents the "linux-gnu_guix" glyph.
+	Gtk                nf.Glyph = "" //  ("\uf362") represents the "linux-gtk" glyph.
+	Hyperbola          nf.Glyph = "" //  ("\uf33a") represents the "linux-hyperbola" glyph.
+	Hyprland           nf.Glyph = "" //  ("\uf359") represents the "linux-hyprland" glyph.
+	I3                 nf.Glyph = "" //  ("\uf35a") represents the "linux-i3" glyph.
+	Illumos            nf.Glyph = "" //  ("\uf326") represents the "linux-illumos" glyph.
+	Inkscape           nf.Glyph = "" //  ("\uf33b") represents the "linux-inkscape" glyph.
+	Jwm                nf.Glyph = "" //  ("\uf35b") represents the "linux-jwm" glyph.
+	KaliLinux          nf.Glyph = "" //  ("\uf327") represents the "linux-kali_linux" glyph.
+	Kde                nf.Glyph = "" //  ("\uf373") represents the "linux-kde" glyph.
+	KdeNeon            nf.Glyph = "" //  ("\uf331") represents the "linux-kde_neon" glyph.
+	KdePlasma          nf.Glyph = "" //  ("\uf332") represents the "linux-kde_plasma" glyph.
+	Kdenlive           nf.Glyph = "" //  ("\uf33c") represents the "linux-kdenlive" glyph.
+	Kicad              nf.Glyph = "" //  ("\uf34c") represents the "linux-kicad" glyph.
+	Krita              nf.Glyph = "" //  ("\uf33d") represents the "linux-krita" glyph.
+	Kubuntu            nf.Glyph = "" //  ("\uf333") represents the "linux-kubuntu" glyph.
+	KubuntuInverse     nf.Glyph = "" //  ("\uf334") represents the "linux-kubuntu_inverse" glyph.
+	Leap               nf.Glyph = "" //  ("\uf37e") represents the "linux-leap" glyph.
+	Libreoffice        nf.Glyph = "" //  ("\uf376") represents the "linux-libreoffice" glyph.
+	Libreofficebase    nf.Glyph = "" //  ("\uf377") represents the "linux-libreofficebase" glyph.
+	Libreofficecalc    nf.Glyph = "" //  ("\uf378") represents the "linux-libreofficecalc" glyph.
+	Libreofficedraw    nf.Glyph = "" //  ("\uf379") represents the "linux-libreofficedraw" glyph.
+	Libreofficeimpress nf.Glyph = "" //  ("\uf37a") represents the "linux-libreofficeimpress" glyph.
+	Libreofficemath    nf.Glyph = "" //  ("\uf37b") represents the "linux-libreofficemath" glyph.
+	Libreofficewriter  nf.Glyph = "" //  ("\uf37c") represents the "linux-libreofficewriter" glyph.
+	Linuxmint          nf.Glyph = "" //  ("\uf30e") represents the "linux-linuxmint" glyph.
+	LinuxmintInverse   nf.Glyph = "" //  ("\uf30f") represents the "linux-linuxmint_inverse" glyph.
+	Locos              nf.Glyph = "" //  ("\uf349") represents the "linux-locos" glyph.
+	Lxde               nf.Glyph = "" //  ("\uf363") represents the "linux-lxde" glyph.
+	Lxle               nf.Glyph = "" //  ("\uf33e") represents the "linux-lxle" glyph.
+	Lxqt               nf.Glyph = "" //  ("\uf364") represents the "linux-lxqt" glyph.
+	Mageia             nf.Glyph = "" //  ("\uf310") represents the "linux-mageia" glyph.
+	Mandriva           nf.Glyph = "" //  ("\uf311") represents the "linux-mandriva" glyph.
+	Manjaro            nf.Glyph = "" //  ("\uf312") represents the "linux-manjaro" glyph.
+	Mate               nf.Glyph = "" //  ("\uf365") represents the "linux-mate" glyph.
+	Mpv                nf.Glyph = "" //  ("\uf36e") represents the "linux-mpv" glyph.
+	Mxlinux            nf.Glyph = "" //  ("\uf33f") represents the "linux-mxlinux" glyph.
+	Neovim             nf.Glyph = "" //  ("\uf36f") represents the "linux-neovim" glyph.
+	Nixos              nf.Glyph = "" //  ("\uf313") represents the "linux-nixos" glyph.
+	Nobara             nf.Glyph = "" //  ("\uf380") represents the "linux-nobara" glyph.
+	Octoprint          nf.Glyph = "" //  ("\uf34d") represents the "linux-octoprint" glyph.
+	Openbsd            nf.Glyph = "" //  ("\uf328") represents the "linux-openbsd" glyph.
+	Openscad           nf.Glyph = "" //  ("\uf34e") represents the "linux-openscad" glyph.
+	Opensuse           nf.Glyph = "" //  ("\uf314") represents the "linux-opensuse" glyph.
+	Osh                nf.Glyph = "" //  ("\uf34f") represents the "linux-osh" glyph.
+	Oshwa              nf.Glyph = "" //  ("\uf350") represents the "linux-oshwa" glyph.
+	Osi                nf.Glyph = "" //  ("\uf36c") represents the "linux-osi" glyph.
+	Parabola           nf.Glyph = "" //  ("\uf340") represents the "linux-parabola" glyph.
+	Parrot             nf.Glyph = "" //  ("\uf329") represents the "linux-parrot" glyph.
+	PopOs              nf.Glyph = "" //  ("\uf32a") represents the "linux-pop_os" glyph.
+	Postmarketos       nf.Glyph = "" //  ("\uf374") represents the "linux-postmarketos" glyph.
+	Prusaslicer        nf.Glyph = "" //  ("\uf351") represents the "linux-prusaslicer" glyph.
+	Puppy              nf.Glyph = "" //  ("\uf341") represents the "linux-puppy" glyph.
+	Qt                 nf.Glyph = "" //  ("\uf375") represents the "linux-qt" glyph.
+	Qtile              nf.Glyph = "" //  ("\uf35c") represents the "linux-qtile" glyph.
+	Qubesos            nf.Glyph = "" //  ("\uf342") represents the "linux-qubesos" glyph.
+	RaspberryPi        nf.Glyph = "" //  ("\uf315") represents the "linux-raspberry_pi" glyph.
+	Redhat             nf.Glyph = "" //  ("\uf316") represents the "linux-redhat" glyph.
+	Reprap             nf.Glyph = "" //  ("\uf352") represents the "linux-reprap" glyph.
+	Riscv              nf.Glyph = "" //  ("\uf353") represents the "linux-riscv" glyph.
+	River              nf.Glyph = "" //  ("\uf381") represents the "linux-river" glyph.
+	RockyLinux         nf.Glyph = "" //  ("\uf32b") represents the "linux-rocky_linux" glyph.
+	Sabayon            nf.Glyph = "" //  ("\uf317") represents the "linux-sabayon" glyph.
+	Slackware          nf.Glyph = "" //  ("\uf318") represents the "linux-slackware" glyph.
+	SlackwareInverse   nf.Glyph = "" //  ("\uf319") represents the "linux-slackware_inverse" glyph.
+	Snappy             nf.Glyph = "" //  ("\uf32c") represents the "linux-snappy" glyph.
+	Solus              nf.Glyph = "" //  ("\uf32d") represents the "linux-solus" glyph.
+	Sway               nf.Glyph = "" //  ("\uf35d") represents the "linux-sway" glyph.
+	Tails              nf.Glyph = "" //  ("\uf343") represents the "linux-tails" glyph.
+	Thunderbird        nf.Glyph = "" //  ("\uf370") represents the "linux-thunderbird" glyph.
+	Tor                nf.Glyph = "" //  ("\uf371") represents the "linux-tor" glyph.
+	Trisquel           nf.Glyph = "" //  ("\uf344") represents the "linux-trisquel" glyph.
+	Tumbleweed         nf.Glyph = "" //  ("\uf37d") represents the "linux-tumbleweed" glyph.
+	Tux                nf.Glyph = "" //  ("\uf31a") represents the "linux-tux" glyph.
+	Typst              nf.Glyph = "" //  ("\uf37f") represents the "linux-typst" glyph.
+	Ubuntu             nf.Glyph = "" //  ("\uf31b") represents the "linux-ubuntu" glyph.
+	UbuntuInverse      nf.Glyph = "" //  ("\uf31c") represents the "linux-ubuntu_inverse" glyph.
+	Vanilla            nf.Glyph = "" //  ("\uf366") represents the "linux-vanilla" glyph.
+	Void               nf.Glyph = "" //  ("\uf32e") represents the "linux-void" glyph.
+	Vscodium           nf.Glyph = "" //  ("\uf372") represents the "linux-vscodium" glyph.
+	Wayland            nf.Glyph = "" //  ("\uf367") represents the "linux-wayland" glyph.
+	Wikimedia          nf.Glyph = "" //  ("\uf36d") represents the "linux-wikimedia" glyph.
+	Xerolinux          nf.Glyph = "" //  ("\uf34a") represents the "linux-xerolinux" glyph.
+	Xfce               nf.Glyph = "" //  ("\uf368") represents the "linux-xfce" glyph.
+	Xmonad             nf.Glyph = "" //  ("\uf35e") represents the "linux-xmonad" glyph.
+	Xorg               nf.Glyph = "" //  ("\uf369") represents the "linux-xorg" glyph.
+	Zorin              nf.Glyph = "" //  ("\uf32f") represents the "linux-zorin" glyph.
+)

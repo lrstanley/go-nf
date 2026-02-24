@@ -46,23 +46,18 @@ func main() {
 	fmt.Printf(" -- %s success!\n", md.Check)
 
 	// Crude example that likely won't match exactly what you want, but shows how
-	// to dynamically query glyphs. Note that using the `all` package in most cases
-	// will bundle all glyphs from all classes, resulting in a slightly larger
-	// binary size (500kb-1MB, without additional debug-symbols stripping).
+	// to dynamically query glyphs.
 	for _, file := range files {
 		ext := strings.ToLower(strings.TrimPrefix(filepath.Ext(file), "."))
 
-		var iconID string
+		glyph := md.FileQuestion
 		for id := range all.GlyphFullIDs() {
 			if strings.Contains(strings.ToLower(id), ext) {
-				iconID = id
+				glyph = all.ByID(id)
 				break
 			}
 		}
-		if iconID == "" {
-			iconID = md.FileQuestion.ID
-		}
-		fmt.Printf("--> processing %s (%s)...\n", file, all.ByID(iconID))
+		fmt.Printf("--> processing %s (%s)...\n", file, glyph)
 	}
 	fmt.Printf("%s success!\n", md.Check)
 }

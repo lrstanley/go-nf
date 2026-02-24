@@ -4,20 +4,23 @@
 
 package nf
 
-// Glyph represents a glyph in the Nerd Fonts project.
-type Glyph struct {
-	ID      string // ID of the glyph.
-	Class   string // Class name of the glyph (e.g. "fa", "md", "pl").
-	Char    string // Raw character of the glyph.
-	Unicode string // Unicode codepoint(s) of the glyph.
+// Class represents a class in the Nerd Fonts project.
+type Class string
+
+// String returns the name of the class.
+func (c Class) String() string {
+	return string(c)
 }
+
+// Glyph represents a glyph in the Nerd Fonts project.
+type Glyph string
 
 // String returns the raw character of the glyph.
-func (g *Glyph) String() string {
-	return g.Char
+func (g Glyph) String() string {
+	return string(g)
 }
 
-// FullID returns the full ID of the glyph ("[class]-[id]").
-func (g *Glyph) FullID() string {
-	return g.Class + "-" + g.ID
+// IsZero returns true if the glyph is the zero value (empty string).
+func (g Glyph) IsZero() bool {
+	return g == ""
 }

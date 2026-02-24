@@ -1,0 +1,74 @@
+{{ header }}
+
+package {{ .Class }}
+
+import (
+    "slices"
+    "testing"
+)
+
+const glyphCount = {{ len .Glyphs }}
+
+func TestAllGlyphs(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(AllGlyphs())
+
+    if len(results) != len(allGlyphs) {
+        t.Errorf("expected %d glyphs (from allGlyphs), got %d", len(allGlyphs), len(results))
+    }
+
+    if len(results) != glyphCount {
+        t.Errorf("expected %d glyphs (from codegen), got %d", glyphCount, len(results))
+    }
+
+    if len(results) == 0 {
+        t.Errorf("expected at least one glyph, got %d", len(results))
+    }
+
+    for _, glyph := range results {
+        if glyph == "" {
+            t.Errorf("expected non-empty glyph, got %q", glyph)
+        }
+    }
+}
+
+func TestAllGlyphIDs(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(AllGlyphIDs())
+
+    if len(results) != len(allGlyphs) {
+        t.Errorf("expected %d glyph IDs (from allGlyphs), got %d", len(allGlyphs), len(results))
+    }
+}
+
+func TestAllGlyphFullIDs(t *testing.T) {
+    t.Parallel()
+
+    results := slices.Collect(AllGlyphFullIDs())
+
+    if len(results) != len(allGlyphs) {
+        t.Errorf("expected %d glyph full IDs (from allGlyphs), got %d", len(allGlyphs), len(results))
+    }
+}
+
+func TestByID(t *testing.T) {
+    t.Parallel()
+
+    var id string
+    for gid := range AllGlyphIDs() {
+        id = gid
+        break
+    }
+
+    glyph := ByID(id)
+    if glyph == "" {
+        t.Errorf("expected glyph for ID %q, got empty string", id)
+    }
+
+    glyph = ByID(string(Class) + "-" + id)
+    if glyph == "" {
+        t.Errorf("expected glyph for full ID %q, got empty string", string(Class) + "-" + id)
+    }
+}

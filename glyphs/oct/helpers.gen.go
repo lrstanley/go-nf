@@ -8,973 +8,359 @@ package oct
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Accessibility,
-	AccessibilityInset,
-	Alert,
-	AlertFill,
-	Apps,
-	Archive,
-	ArrowBoth,
-	ArrowDown,
-	ArrowDownLeft,
-	ArrowDownRight,
-	ArrowLeft,
-	ArrowRight,
-	ArrowSwitch,
-	ArrowUp,
-	ArrowUpLeft,
-	ArrowUpRight,
-	Beaker,
-	Bell,
-	BellFill,
-	BellSlash,
-	Blocked,
-	Bold,
-	Book,
-	Bookmark,
-	BookmarkFill,
-	BookmarkSlash,
-	BookmarkSlashFill,
-	Briefcase,
-	Broadcast,
-	Browser,
-	Bug,
-	Cache,
-	Calendar,
-	Check,
-	CheckCircle,
-	CheckCircleFill,
-	Checkbox,
-	Checklist,
-	ChevronDown,
-	ChevronLeft,
-	ChevronRight,
-	ChevronUp,
-	Circle,
-	CircleSlash,
-	Clock,
-	ClockFill,
-	Cloud,
-	CloudOffline,
-	Code,
-	CodeOfConduct,
-	CodeReview,
-	CodeSquare,
-	Codescan,
-	CodescanCheckmark,
-	Codespaces,
-	Columns,
-	CommandPalette,
-	Comment,
-	CommentDiscussion,
-	Commit,
-	Container,
-	Copilot,
-	CopilotError,
-	CopilotWarning,
-	Copy,
-	Cpu,
-	CreditCard,
-	CrossReference,
-	Dash,
-	Database,
-	Dependabot,
-	DesktopDownload,
-	DeviceCamera,
-	DeviceCameraVideo,
-	DeviceDesktop,
-	DeviceMobile,
-	Diamond,
-	Diff,
-	DiffAdded,
-	DiffIgnored,
-	DiffModified,
-	DiffRemoved,
-	DiffRenamed,
-	DiscussionClosed,
-	DiscussionDuplicate,
-	DiscussionOutdated,
-	Dot,
-	DotFill,
-	Download,
-	Duplicate,
-	Ellipsis,
-	Eye,
-	EyeClosed,
-	FeedDiscussion,
-	FeedForked,
-	FeedHeart,
-	FeedMerged,
-	FeedPerson,
-	FeedRepo,
-	FeedRocket,
-	FeedStar,
-	FeedTag,
-	FeedTrophy,
-	File,
-	FileAdded,
-	FileBadge,
-	FileBinary,
-	FileCode,
-	FileDiff,
-	FileDirectory,
-	FileDirectoryFill,
-	FileDirectoryOpenFill,
-	FileMedia,
-	FileMoved,
-	FileRemoved,
-	FileSubmodule,
-	FileSymlinkDirectory,
-	FileSymlinkFile,
-	FileZip,
-	Filter,
-	FiscalHost,
-	Flame,
-	Fold,
-	FoldDown,
-	FoldUp,
-	Gear,
-	Gift,
-	GitBranch,
-	GitCommit,
-	GitCompare,
-	GitMerge,
-	GitMergeQueue,
-	GitPullRequest,
-	GitPullRequestClosed,
-	GitPullRequestDraft,
-	Globe,
-	Goal,
-	Grabber,
-	Graph,
-	Hash,
-	Heading,
-	Heart,
-	HeartFill,
-	History,
-	Home,
-	HomeFill,
-	HorizontalRule,
-	Hourglass,
-	Hubot,
-	IdBadge,
-	Image,
-	Inbox,
-	Infinity,
-	Info,
-	IssueClosed,
-	IssueDraft,
-	IssueOpened,
-	IssueReopened,
-	IssueTrackedBy,
-	IssueTracks,
-	Italic,
-	Iterations,
-	KebabHorizontal,
-	Key,
-	KeyAsterisk,
-	Law,
-	LightBulb,
-	Link,
-	LinkExternal,
-	ListOrdered,
-	ListUnordered,
-	Location,
-	Lock,
-	Log,
-	LogoGist,
-	LogoGithub,
-	Mail,
-	MarkGithub,
-	Markdown,
-	Megaphone,
-	Mention,
-	Meter,
-	Milestone,
-	Mirror,
-	Moon,
-	MortarBoard,
-	MoveToBottom,
-	MoveToEnd,
-	MoveToStart,
-	MoveToTop,
-	MultiSelect,
-	Mute,
-	NoEntry,
-	NorthStar,
-	Note,
-	Number,
-	Organization,
-	Package,
-	PackageDependencies,
-	PackageDependents,
-	Paintbrush,
-	PaperAirplane,
-	Paperclip,
-	PasskeyFill,
-	Paste,
-	Pencil,
-	People,
-	Person,
-	PersonAdd,
-	PersonFill,
-	Pin,
-	Play,
-	Plug,
-	Plus,
-	PlusCircle,
-	Project,
-	ProjectRoadmap,
-	ProjectSymlink,
-	ProjectTemplate,
-	Pulse,
-	Question,
-	Quote,
-	Read,
-	RelFilePath,
-	Reply,
-	Repo,
-	RepoClone,
-	RepoDeleted,
-	RepoForked,
-	RepoLocked,
-	RepoPull,
-	RepoPush,
-	RepoTemplate,
-	Report,
-	Rocket,
-	Rows,
-	Rss,
-	Ruby,
-	ScreenFull,
-	ScreenNormal,
-	Search,
-	Server,
-	Share,
-	ShareAndroid,
-	Shield,
-	ShieldCheck,
-	ShieldLock,
-	ShieldSlash,
-	ShieldX,
-	SidebarCollapse,
-	SidebarExpand,
-	SignIn,
-	SignOut,
-	SingleSelect,
-	Skip,
-	SkipFill,
-	Sliders,
-	Smiley,
-	SortAsc,
-	SortDesc,
-	SparkleFill,
-	SponsorTiers,
-	Square,
-	SquareFill,
-	Squirrel,
-	Stack,
-	Star,
-	StarFill,
-	Stop,
-	Stopwatch,
-	Strikethrough,
-	Sun,
-	Sync,
-	Tab,
-	TabExternal,
-	Table,
-	Tag,
-	Tasklist,
-	Telescope,
-	TelescopeFill,
-	Terminal,
-	ThreeBars,
-	Thumbsdown,
-	Thumbsup,
-	Tools,
-	Trash,
-	TriangleDown,
-	TriangleLeft,
-	TriangleRight,
-	TriangleUp,
-	Trophy,
-	Typography,
-	Unfold,
-	Unlink,
-	Unlock,
-	Unmute,
-	Unread,
-	Unverified,
-	Upload,
-	Verified,
-	Versions,
-	Video,
-	Webhook,
-	Workflow,
-	X,
-	XCircle,
-	XCircleFill,
-	Zap,
-	ZoomIn,
-	ZoomOut,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the oct class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "accessibility", "oct-accessibility":
-		return Accessibility
-	case "accessibility_inset", "oct-accessibility_inset":
-		return AccessibilityInset
-	case "alert", "oct-alert":
-		return Alert
-	case "alert_fill", "oct-alert_fill":
-		return AlertFill
-	case "apps", "oct-apps":
-		return Apps
-	case "archive", "oct-archive":
-		return Archive
-	case "arrow_both", "oct-arrow_both":
-		return ArrowBoth
-	case "arrow_down", "oct-arrow_down":
-		return ArrowDown
-	case "arrow_down_left", "oct-arrow_down_left":
-		return ArrowDownLeft
-	case "arrow_down_right", "oct-arrow_down_right":
-		return ArrowDownRight
-	case "arrow_left", "oct-arrow_left":
-		return ArrowLeft
-	case "arrow_right", "oct-arrow_right":
-		return ArrowRight
-	case "arrow_switch", "oct-arrow_switch":
-		return ArrowSwitch
-	case "arrow_up", "oct-arrow_up":
-		return ArrowUp
-	case "arrow_up_left", "oct-arrow_up_left":
-		return ArrowUpLeft
-	case "arrow_up_right", "oct-arrow_up_right":
-		return ArrowUpRight
-	case "beaker", "oct-beaker":
-		return Beaker
-	case "bell", "oct-bell":
-		return Bell
-	case "bell_fill", "oct-bell_fill":
-		return BellFill
-	case "bell_slash", "oct-bell_slash":
-		return BellSlash
-	case "blocked", "oct-blocked":
-		return Blocked
-	case "bold", "oct-bold":
-		return Bold
-	case "book", "oct-book":
-		return Book
-	case "bookmark", "oct-bookmark":
-		return Bookmark
-	case "bookmark_fill", "oct-bookmark_fill":
-		return BookmarkFill
-	case "bookmark_slash", "oct-bookmark_slash":
-		return BookmarkSlash
-	case "bookmark_slash_fill", "oct-bookmark_slash_fill":
-		return BookmarkSlashFill
-	case "briefcase", "oct-briefcase":
-		return Briefcase
-	case "broadcast", "oct-broadcast":
-		return Broadcast
-	case "browser", "oct-browser":
-		return Browser
-	case "bug", "oct-bug":
-		return Bug
-	case "cache", "oct-cache":
-		return Cache
-	case "calendar", "oct-calendar":
-		return Calendar
-	case "check", "oct-check":
-		return Check
-	case "check_circle", "oct-check_circle":
-		return CheckCircle
-	case "check_circle_fill", "oct-check_circle_fill":
-		return CheckCircleFill
-	case "checkbox", "oct-checkbox":
-		return Checkbox
-	case "checklist", "oct-checklist":
-		return Checklist
-	case "chevron_down", "oct-chevron_down":
-		return ChevronDown
-	case "chevron_left", "oct-chevron_left":
-		return ChevronLeft
-	case "chevron_right", "oct-chevron_right":
-		return ChevronRight
-	case "chevron_up", "oct-chevron_up":
-		return ChevronUp
-	case "circle", "oct-circle":
-		return Circle
-	case "circle_slash", "oct-circle_slash":
-		return CircleSlash
-	case "clock", "oct-clock":
-		return Clock
-	case "clock_fill", "oct-clock_fill":
-		return ClockFill
-	case "cloud", "oct-cloud":
-		return Cloud
-	case "cloud_offline", "oct-cloud_offline":
-		return CloudOffline
-	case "code", "oct-code":
-		return Code
-	case "code_of_conduct", "oct-code_of_conduct":
-		return CodeOfConduct
-	case "code_review", "oct-code_review":
-		return CodeReview
-	case "code_square", "oct-code_square":
-		return CodeSquare
-	case "codescan", "oct-codescan":
-		return Codescan
-	case "codescan_checkmark", "oct-codescan_checkmark":
-		return CodescanCheckmark
-	case "codespaces", "oct-codespaces":
-		return Codespaces
-	case "columns", "oct-columns":
-		return Columns
-	case "command_palette", "oct-command_palette":
-		return CommandPalette
-	case "comment", "oct-comment":
-		return Comment
-	case "comment_discussion", "oct-comment_discussion":
-		return CommentDiscussion
-	case "commit", "oct-commit":
-		return Commit
-	case "container", "oct-container":
-		return Container
-	case "copilot", "oct-copilot":
-		return Copilot
-	case "copilot_error", "oct-copilot_error":
-		return CopilotError
-	case "copilot_warning", "oct-copilot_warning":
-		return CopilotWarning
-	case "copy", "oct-copy":
-		return Copy
-	case "cpu", "oct-cpu":
-		return Cpu
-	case "credit_card", "oct-credit_card":
-		return CreditCard
-	case "cross_reference", "oct-cross_reference":
-		return CrossReference
-	case "dash", "oct-dash":
-		return Dash
-	case "database", "oct-database":
-		return Database
-	case "dependabot", "oct-dependabot":
-		return Dependabot
-	case "desktop_download", "oct-desktop_download":
-		return DesktopDownload
-	case "device_camera", "oct-device_camera":
-		return DeviceCamera
-	case "device_camera_video", "oct-device_camera_video":
-		return DeviceCameraVideo
-	case "device_desktop", "oct-device_desktop":
-		return DeviceDesktop
-	case "device_mobile", "oct-device_mobile":
-		return DeviceMobile
-	case "diamond", "oct-diamond":
-		return Diamond
-	case "diff", "oct-diff":
-		return Diff
-	case "diff_added", "oct-diff_added":
-		return DiffAdded
-	case "diff_ignored", "oct-diff_ignored":
-		return DiffIgnored
-	case "diff_modified", "oct-diff_modified":
-		return DiffModified
-	case "diff_removed", "oct-diff_removed":
-		return DiffRemoved
-	case "diff_renamed", "oct-diff_renamed":
-		return DiffRenamed
-	case "discussion_closed", "oct-discussion_closed":
-		return DiscussionClosed
-	case "discussion_duplicate", "oct-discussion_duplicate":
-		return DiscussionDuplicate
-	case "discussion_outdated", "oct-discussion_outdated":
-		return DiscussionOutdated
-	case "dot", "oct-dot":
-		return Dot
-	case "dot_fill", "oct-dot_fill":
-		return DotFill
-	case "download", "oct-download":
-		return Download
-	case "duplicate", "oct-duplicate":
-		return Duplicate
-	case "ellipsis", "oct-ellipsis":
-		return Ellipsis
-	case "eye", "oct-eye":
-		return Eye
-	case "eye_closed", "oct-eye_closed":
-		return EyeClosed
-	case "feed_discussion", "oct-feed_discussion":
-		return FeedDiscussion
-	case "feed_forked", "oct-feed_forked":
-		return FeedForked
-	case "feed_heart", "oct-feed_heart":
-		return FeedHeart
-	case "feed_merged", "oct-feed_merged":
-		return FeedMerged
-	case "feed_person", "oct-feed_person":
-		return FeedPerson
-	case "feed_repo", "oct-feed_repo":
-		return FeedRepo
-	case "feed_rocket", "oct-feed_rocket":
-		return FeedRocket
-	case "feed_star", "oct-feed_star":
-		return FeedStar
-	case "feed_tag", "oct-feed_tag":
-		return FeedTag
-	case "feed_trophy", "oct-feed_trophy":
-		return FeedTrophy
-	case "file", "oct-file":
-		return File
-	case "file_added", "oct-file_added":
-		return FileAdded
-	case "file_badge", "oct-file_badge":
-		return FileBadge
-	case "file_binary", "oct-file_binary":
-		return FileBinary
-	case "file_code", "oct-file_code":
-		return FileCode
-	case "file_diff", "oct-file_diff":
-		return FileDiff
-	case "file_directory", "oct-file_directory":
-		return FileDirectory
-	case "file_directory_fill", "oct-file_directory_fill":
-		return FileDirectoryFill
-	case "file_directory_open_fill", "oct-file_directory_open_fill":
-		return FileDirectoryOpenFill
-	case "file_media", "oct-file_media":
-		return FileMedia
-	case "file_moved", "oct-file_moved":
-		return FileMoved
-	case "file_removed", "oct-file_removed":
-		return FileRemoved
-	case "file_submodule", "oct-file_submodule":
-		return FileSubmodule
-	case "file_symlink_directory", "oct-file_symlink_directory":
-		return FileSymlinkDirectory
-	case "file_symlink_file", "oct-file_symlink_file":
-		return FileSymlinkFile
-	case "file_zip", "oct-file_zip":
-		return FileZip
-	case "filter", "oct-filter":
-		return Filter
-	case "fiscal_host", "oct-fiscal_host":
-		return FiscalHost
-	case "flame", "oct-flame":
-		return Flame
-	case "fold", "oct-fold":
-		return Fold
-	case "fold_down", "oct-fold_down":
-		return FoldDown
-	case "fold_up", "oct-fold_up":
-		return FoldUp
-	case "gear", "oct-gear":
-		return Gear
-	case "gift", "oct-gift":
-		return Gift
-	case "git_branch", "oct-git_branch":
-		return GitBranch
-	case "git_commit", "oct-git_commit":
-		return GitCommit
-	case "git_compare", "oct-git_compare":
-		return GitCompare
-	case "git_merge", "oct-git_merge":
-		return GitMerge
-	case "git_merge_queue", "oct-git_merge_queue":
-		return GitMergeQueue
-	case "git_pull_request", "oct-git_pull_request":
-		return GitPullRequest
-	case "git_pull_request_closed", "oct-git_pull_request_closed":
-		return GitPullRequestClosed
-	case "git_pull_request_draft", "oct-git_pull_request_draft":
-		return GitPullRequestDraft
-	case "globe", "oct-globe":
-		return Globe
-	case "goal", "oct-goal":
-		return Goal
-	case "grabber", "oct-grabber":
-		return Grabber
-	case "graph", "oct-graph":
-		return Graph
-	case "hash", "oct-hash":
-		return Hash
-	case "heading", "oct-heading":
-		return Heading
-	case "heart", "oct-heart":
-		return Heart
-	case "heart_fill", "oct-heart_fill":
-		return HeartFill
-	case "history", "oct-history":
-		return History
-	case "home", "oct-home":
-		return Home
-	case "home_fill", "oct-home_fill":
-		return HomeFill
-	case "horizontal_rule", "oct-horizontal_rule":
-		return HorizontalRule
-	case "hourglass", "oct-hourglass":
-		return Hourglass
-	case "hubot", "oct-hubot":
-		return Hubot
-	case "id_badge", "oct-id_badge":
-		return IdBadge
-	case "image", "oct-image":
-		return Image
-	case "inbox", "oct-inbox":
-		return Inbox
-	case "infinity", "oct-infinity":
-		return Infinity
-	case "info", "oct-info":
-		return Info
-	case "issue_closed", "oct-issue_closed":
-		return IssueClosed
-	case "issue_draft", "oct-issue_draft":
-		return IssueDraft
-	case "issue_opened", "oct-issue_opened":
-		return IssueOpened
-	case "issue_reopened", "oct-issue_reopened":
-		return IssueReopened
-	case "issue_tracked_by", "oct-issue_tracked_by":
-		return IssueTrackedBy
-	case "issue_tracks", "oct-issue_tracks":
-		return IssueTracks
-	case "italic", "oct-italic":
-		return Italic
-	case "iterations", "oct-iterations":
-		return Iterations
-	case "kebab_horizontal", "oct-kebab_horizontal":
-		return KebabHorizontal
-	case "key", "oct-key":
-		return Key
-	case "key_asterisk", "oct-key_asterisk":
-		return KeyAsterisk
-	case "law", "oct-law":
-		return Law
-	case "light_bulb", "oct-light_bulb":
-		return LightBulb
-	case "link", "oct-link":
-		return Link
-	case "link_external", "oct-link_external":
-		return LinkExternal
-	case "list_ordered", "oct-list_ordered":
-		return ListOrdered
-	case "list_unordered", "oct-list_unordered":
-		return ListUnordered
-	case "location", "oct-location":
-		return Location
-	case "lock", "oct-lock":
-		return Lock
-	case "log", "oct-log":
-		return Log
-	case "logo_gist", "oct-logo_gist":
-		return LogoGist
-	case "logo_github", "oct-logo_github":
-		return LogoGithub
-	case "mail", "oct-mail":
-		return Mail
-	case "mark_github", "oct-mark_github":
-		return MarkGithub
-	case "markdown", "oct-markdown":
-		return Markdown
-	case "megaphone", "oct-megaphone":
-		return Megaphone
-	case "mention", "oct-mention":
-		return Mention
-	case "meter", "oct-meter":
-		return Meter
-	case "milestone", "oct-milestone":
-		return Milestone
-	case "mirror", "oct-mirror":
-		return Mirror
-	case "moon", "oct-moon":
-		return Moon
-	case "mortar_board", "oct-mortar_board":
-		return MortarBoard
-	case "move_to_bottom", "oct-move_to_bottom":
-		return MoveToBottom
-	case "move_to_end", "oct-move_to_end":
-		return MoveToEnd
-	case "move_to_start", "oct-move_to_start":
-		return MoveToStart
-	case "move_to_top", "oct-move_to_top":
-		return MoveToTop
-	case "multi_select", "oct-multi_select":
-		return MultiSelect
-	case "mute", "oct-mute":
-		return Mute
-	case "no_entry", "oct-no_entry":
-		return NoEntry
-	case "north_star", "oct-north_star":
-		return NorthStar
-	case "note", "oct-note":
-		return Note
-	case "number", "oct-number":
-		return Number
-	case "organization", "oct-organization":
-		return Organization
-	case "package", "oct-package":
-		return Package
-	case "package_dependencies", "oct-package_dependencies":
-		return PackageDependencies
-	case "package_dependents", "oct-package_dependents":
-		return PackageDependents
-	case "paintbrush", "oct-paintbrush":
-		return Paintbrush
-	case "paper_airplane", "oct-paper_airplane":
-		return PaperAirplane
-	case "paperclip", "oct-paperclip":
-		return Paperclip
-	case "passkey_fill", "oct-passkey_fill":
-		return PasskeyFill
-	case "paste", "oct-paste":
-		return Paste
-	case "pencil", "oct-pencil":
-		return Pencil
-	case "people", "oct-people":
-		return People
-	case "person", "oct-person":
-		return Person
-	case "person_add", "oct-person_add":
-		return PersonAdd
-	case "person_fill", "oct-person_fill":
-		return PersonFill
-	case "pin", "oct-pin":
-		return Pin
-	case "play", "oct-play":
-		return Play
-	case "plug", "oct-plug":
-		return Plug
-	case "plus", "oct-plus":
-		return Plus
-	case "plus_circle", "oct-plus_circle":
-		return PlusCircle
-	case "project", "oct-project":
-		return Project
-	case "project_roadmap", "oct-project_roadmap":
-		return ProjectRoadmap
-	case "project_symlink", "oct-project_symlink":
-		return ProjectSymlink
-	case "project_template", "oct-project_template":
-		return ProjectTemplate
-	case "pulse", "oct-pulse":
-		return Pulse
-	case "question", "oct-question":
-		return Question
-	case "quote", "oct-quote":
-		return Quote
-	case "read", "oct-read":
-		return Read
-	case "rel_file_path", "oct-rel_file_path":
-		return RelFilePath
-	case "reply", "oct-reply":
-		return Reply
-	case "repo", "oct-repo":
-		return Repo
-	case "repo_clone", "oct-repo_clone":
-		return RepoClone
-	case "repo_deleted", "oct-repo_deleted":
-		return RepoDeleted
-	case "repo_forked", "oct-repo_forked":
-		return RepoForked
-	case "repo_locked", "oct-repo_locked":
-		return RepoLocked
-	case "repo_pull", "oct-repo_pull":
-		return RepoPull
-	case "repo_push", "oct-repo_push":
-		return RepoPush
-	case "repo_template", "oct-repo_template":
-		return RepoTemplate
-	case "report", "oct-report":
-		return Report
-	case "rocket", "oct-rocket":
-		return Rocket
-	case "rows", "oct-rows":
-		return Rows
-	case "rss", "oct-rss":
-		return Rss
-	case "ruby", "oct-ruby":
-		return Ruby
-	case "screen_full", "oct-screen_full":
-		return ScreenFull
-	case "screen_normal", "oct-screen_normal":
-		return ScreenNormal
-	case "search", "oct-search":
-		return Search
-	case "server", "oct-server":
-		return Server
-	case "share", "oct-share":
-		return Share
-	case "share_android", "oct-share_android":
-		return ShareAndroid
-	case "shield", "oct-shield":
-		return Shield
-	case "shield_check", "oct-shield_check":
-		return ShieldCheck
-	case "shield_lock", "oct-shield_lock":
-		return ShieldLock
-	case "shield_slash", "oct-shield_slash":
-		return ShieldSlash
-	case "shield_x", "oct-shield_x":
-		return ShieldX
-	case "sidebar_collapse", "oct-sidebar_collapse":
-		return SidebarCollapse
-	case "sidebar_expand", "oct-sidebar_expand":
-		return SidebarExpand
-	case "sign_in", "oct-sign_in":
-		return SignIn
-	case "sign_out", "oct-sign_out":
-		return SignOut
-	case "single_select", "oct-single_select":
-		return SingleSelect
-	case "skip", "oct-skip":
-		return Skip
-	case "skip_fill", "oct-skip_fill":
-		return SkipFill
-	case "sliders", "oct-sliders":
-		return Sliders
-	case "smiley", "oct-smiley":
-		return Smiley
-	case "sort_asc", "oct-sort_asc":
-		return SortAsc
-	case "sort_desc", "oct-sort_desc":
-		return SortDesc
-	case "sparkle_fill", "oct-sparkle_fill":
-		return SparkleFill
-	case "sponsor_tiers", "oct-sponsor_tiers":
-		return SponsorTiers
-	case "square", "oct-square":
-		return Square
-	case "square_fill", "oct-square_fill":
-		return SquareFill
-	case "squirrel", "oct-squirrel":
-		return Squirrel
-	case "stack", "oct-stack":
-		return Stack
-	case "star", "oct-star":
-		return Star
-	case "star_fill", "oct-star_fill":
-		return StarFill
-	case "stop", "oct-stop":
-		return Stop
-	case "stopwatch", "oct-stopwatch":
-		return Stopwatch
-	case "strikethrough", "oct-strikethrough":
-		return Strikethrough
-	case "sun", "oct-sun":
-		return Sun
-	case "sync", "oct-sync":
-		return Sync
-	case "tab", "oct-tab":
-		return Tab
-	case "tab_external", "oct-tab_external":
-		return TabExternal
-	case "table", "oct-table":
-		return Table
-	case "tag", "oct-tag":
-		return Tag
-	case "tasklist", "oct-tasklist":
-		return Tasklist
-	case "telescope", "oct-telescope":
-		return Telescope
-	case "telescope_fill", "oct-telescope_fill":
-		return TelescopeFill
-	case "terminal", "oct-terminal":
-		return Terminal
-	case "three_bars", "oct-three_bars":
-		return ThreeBars
-	case "thumbsdown", "oct-thumbsdown":
-		return Thumbsdown
-	case "thumbsup", "oct-thumbsup":
-		return Thumbsup
-	case "tools", "oct-tools":
-		return Tools
-	case "trash", "oct-trash":
-		return Trash
-	case "triangle_down", "oct-triangle_down":
-		return TriangleDown
-	case "triangle_left", "oct-triangle_left":
-		return TriangleLeft
-	case "triangle_right", "oct-triangle_right":
-		return TriangleRight
-	case "triangle_up", "oct-triangle_up":
-		return TriangleUp
-	case "trophy", "oct-trophy":
-		return Trophy
-	case "typography", "oct-typography":
-		return Typography
-	case "unfold", "oct-unfold":
-		return Unfold
-	case "unlink", "oct-unlink":
-		return Unlink
-	case "unlock", "oct-unlock":
-		return Unlock
-	case "unmute", "oct-unmute":
-		return Unmute
-	case "unread", "oct-unread":
-		return Unread
-	case "unverified", "oct-unverified":
-		return Unverified
-	case "upload", "oct-upload":
-		return Upload
-	case "verified", "oct-verified":
-		return Verified
-	case "versions", "oct-versions":
-		return Versions
-	case "video", "oct-video":
-		return Video
-	case "webhook", "oct-webhook":
-		return Webhook
-	case "workflow", "oct-workflow":
-		return Workflow
-	case "x", "oct-x":
-		return X
-	case "x_circle", "oct-x_circle":
-		return XCircle
-	case "x_circle_fill", "oct-x_circle_fill":
-		return XCircleFill
-	case "zap", "oct-zap":
-		return Zap
-	case "zoom_in", "oct-zoom_in":
-		return ZoomIn
-	case "zoom_out", "oct-zoom_out":
-		return ZoomOut
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"accessibility":            Accessibility,
+		"accessibility_inset":      AccessibilityInset,
+		"alert":                    Alert,
+		"alert_fill":               AlertFill,
+		"apps":                     Apps,
+		"archive":                  Archive,
+		"arrow_both":               ArrowBoth,
+		"arrow_down":               ArrowDown,
+		"arrow_down_left":          ArrowDownLeft,
+		"arrow_down_right":         ArrowDownRight,
+		"arrow_left":               ArrowLeft,
+		"arrow_right":              ArrowRight,
+		"arrow_switch":             ArrowSwitch,
+		"arrow_up":                 ArrowUp,
+		"arrow_up_left":            ArrowUpLeft,
+		"arrow_up_right":           ArrowUpRight,
+		"beaker":                   Beaker,
+		"bell":                     Bell,
+		"bell_fill":                BellFill,
+		"bell_slash":               BellSlash,
+		"blocked":                  Blocked,
+		"bold":                     Bold,
+		"book":                     Book,
+		"bookmark":                 Bookmark,
+		"bookmark_fill":            BookmarkFill,
+		"bookmark_slash":           BookmarkSlash,
+		"bookmark_slash_fill":      BookmarkSlashFill,
+		"briefcase":                Briefcase,
+		"broadcast":                Broadcast,
+		"browser":                  Browser,
+		"bug":                      Bug,
+		"cache":                    Cache,
+		"calendar":                 Calendar,
+		"check":                    Check,
+		"check_circle":             CheckCircle,
+		"check_circle_fill":        CheckCircleFill,
+		"checkbox":                 Checkbox,
+		"checklist":                Checklist,
+		"chevron_down":             ChevronDown,
+		"chevron_left":             ChevronLeft,
+		"chevron_right":            ChevronRight,
+		"chevron_up":               ChevronUp,
+		"circle":                   Circle,
+		"circle_slash":             CircleSlash,
+		"clock":                    Clock,
+		"clock_fill":               ClockFill,
+		"cloud":                    Cloud,
+		"cloud_offline":            CloudOffline,
+		"code":                     Code,
+		"code_of_conduct":          CodeOfConduct,
+		"code_review":              CodeReview,
+		"code_square":              CodeSquare,
+		"codescan":                 Codescan,
+		"codescan_checkmark":       CodescanCheckmark,
+		"codespaces":               Codespaces,
+		"columns":                  Columns,
+		"command_palette":          CommandPalette,
+		"comment":                  Comment,
+		"comment_discussion":       CommentDiscussion,
+		"commit":                   Commit,
+		"container":                Container,
+		"copilot":                  Copilot,
+		"copilot_error":            CopilotError,
+		"copilot_warning":          CopilotWarning,
+		"copy":                     Copy,
+		"cpu":                      Cpu,
+		"credit_card":              CreditCard,
+		"cross_reference":          CrossReference,
+		"dash":                     Dash,
+		"database":                 Database,
+		"dependabot":               Dependabot,
+		"desktop_download":         DesktopDownload,
+		"device_camera":            DeviceCamera,
+		"device_camera_video":      DeviceCameraVideo,
+		"device_desktop":           DeviceDesktop,
+		"device_mobile":            DeviceMobile,
+		"diamond":                  Diamond,
+		"diff":                     Diff,
+		"diff_added":               DiffAdded,
+		"diff_ignored":             DiffIgnored,
+		"diff_modified":            DiffModified,
+		"diff_removed":             DiffRemoved,
+		"diff_renamed":             DiffRenamed,
+		"discussion_closed":        DiscussionClosed,
+		"discussion_duplicate":     DiscussionDuplicate,
+		"discussion_outdated":      DiscussionOutdated,
+		"dot":                      Dot,
+		"dot_fill":                 DotFill,
+		"download":                 Download,
+		"duplicate":                Duplicate,
+		"ellipsis":                 Ellipsis,
+		"eye":                      Eye,
+		"eye_closed":               EyeClosed,
+		"feed_discussion":          FeedDiscussion,
+		"feed_forked":              FeedForked,
+		"feed_heart":               FeedHeart,
+		"feed_merged":              FeedMerged,
+		"feed_person":              FeedPerson,
+		"feed_repo":                FeedRepo,
+		"feed_rocket":              FeedRocket,
+		"feed_star":                FeedStar,
+		"feed_tag":                 FeedTag,
+		"feed_trophy":              FeedTrophy,
+		"file":                     File,
+		"file_added":               FileAdded,
+		"file_badge":               FileBadge,
+		"file_binary":              FileBinary,
+		"file_code":                FileCode,
+		"file_diff":                FileDiff,
+		"file_directory":           FileDirectory,
+		"file_directory_fill":      FileDirectoryFill,
+		"file_directory_open_fill": FileDirectoryOpenFill,
+		"file_media":               FileMedia,
+		"file_moved":               FileMoved,
+		"file_removed":             FileRemoved,
+		"file_submodule":           FileSubmodule,
+		"file_symlink_directory":   FileSymlinkDirectory,
+		"file_symlink_file":        FileSymlinkFile,
+		"file_zip":                 FileZip,
+		"filter":                   Filter,
+		"fiscal_host":              FiscalHost,
+		"flame":                    Flame,
+		"fold":                     Fold,
+		"fold_down":                FoldDown,
+		"fold_up":                  FoldUp,
+		"gear":                     Gear,
+		"gift":                     Gift,
+		"git_branch":               GitBranch,
+		"git_commit":               GitCommit,
+		"git_compare":              GitCompare,
+		"git_merge":                GitMerge,
+		"git_merge_queue":          GitMergeQueue,
+		"git_pull_request":         GitPullRequest,
+		"git_pull_request_closed":  GitPullRequestClosed,
+		"git_pull_request_draft":   GitPullRequestDraft,
+		"globe":                    Globe,
+		"goal":                     Goal,
+		"grabber":                  Grabber,
+		"graph":                    Graph,
+		"hash":                     Hash,
+		"heading":                  Heading,
+		"heart":                    Heart,
+		"heart_fill":               HeartFill,
+		"history":                  History,
+		"home":                     Home,
+		"home_fill":                HomeFill,
+		"horizontal_rule":          HorizontalRule,
+		"hourglass":                Hourglass,
+		"hubot":                    Hubot,
+		"id_badge":                 IdBadge,
+		"image":                    Image,
+		"inbox":                    Inbox,
+		"infinity":                 Infinity,
+		"info":                     Info,
+		"issue_closed":             IssueClosed,
+		"issue_draft":              IssueDraft,
+		"issue_opened":             IssueOpened,
+		"issue_reopened":           IssueReopened,
+		"issue_tracked_by":         IssueTrackedBy,
+		"issue_tracks":             IssueTracks,
+		"italic":                   Italic,
+		"iterations":               Iterations,
+		"kebab_horizontal":         KebabHorizontal,
+		"key":                      Key,
+		"key_asterisk":             KeyAsterisk,
+		"law":                      Law,
+		"light_bulb":               LightBulb,
+		"link":                     Link,
+		"link_external":            LinkExternal,
+		"list_ordered":             ListOrdered,
+		"list_unordered":           ListUnordered,
+		"location":                 Location,
+		"lock":                     Lock,
+		"log":                      Log,
+		"logo_gist":                LogoGist,
+		"logo_github":              LogoGithub,
+		"mail":                     Mail,
+		"mark_github":              MarkGithub,
+		"markdown":                 Markdown,
+		"megaphone":                Megaphone,
+		"mention":                  Mention,
+		"meter":                    Meter,
+		"milestone":                Milestone,
+		"mirror":                   Mirror,
+		"moon":                     Moon,
+		"mortar_board":             MortarBoard,
+		"move_to_bottom":           MoveToBottom,
+		"move_to_end":              MoveToEnd,
+		"move_to_start":            MoveToStart,
+		"move_to_top":              MoveToTop,
+		"multi_select":             MultiSelect,
+		"mute":                     Mute,
+		"no_entry":                 NoEntry,
+		"north_star":               NorthStar,
+		"note":                     Note,
+		"number":                   Number,
+		"organization":             Organization,
+		"package":                  Package,
+		"package_dependencies":     PackageDependencies,
+		"package_dependents":       PackageDependents,
+		"paintbrush":               Paintbrush,
+		"paper_airplane":           PaperAirplane,
+		"paperclip":                Paperclip,
+		"passkey_fill":             PasskeyFill,
+		"paste":                    Paste,
+		"pencil":                   Pencil,
+		"people":                   People,
+		"person":                   Person,
+		"person_add":               PersonAdd,
+		"person_fill":              PersonFill,
+		"pin":                      Pin,
+		"play":                     Play,
+		"plug":                     Plug,
+		"plus":                     Plus,
+		"plus_circle":              PlusCircle,
+		"project":                  Project,
+		"project_roadmap":          ProjectRoadmap,
+		"project_symlink":          ProjectSymlink,
+		"project_template":         ProjectTemplate,
+		"pulse":                    Pulse,
+		"question":                 Question,
+		"quote":                    Quote,
+		"read":                     Read,
+		"rel_file_path":            RelFilePath,
+		"reply":                    Reply,
+		"repo":                     Repo,
+		"repo_clone":               RepoClone,
+		"repo_deleted":             RepoDeleted,
+		"repo_forked":              RepoForked,
+		"repo_locked":              RepoLocked,
+		"repo_pull":                RepoPull,
+		"repo_push":                RepoPush,
+		"repo_template":            RepoTemplate,
+		"report":                   Report,
+		"rocket":                   Rocket,
+		"rows":                     Rows,
+		"rss":                      Rss,
+		"ruby":                     Ruby,
+		"screen_full":              ScreenFull,
+		"screen_normal":            ScreenNormal,
+		"search":                   Search,
+		"server":                   Server,
+		"share":                    Share,
+		"share_android":            ShareAndroid,
+		"shield":                   Shield,
+		"shield_check":             ShieldCheck,
+		"shield_lock":              ShieldLock,
+		"shield_slash":             ShieldSlash,
+		"shield_x":                 ShieldX,
+		"sidebar_collapse":         SidebarCollapse,
+		"sidebar_expand":           SidebarExpand,
+		"sign_in":                  SignIn,
+		"sign_out":                 SignOut,
+		"single_select":            SingleSelect,
+		"skip":                     Skip,
+		"skip_fill":                SkipFill,
+		"sliders":                  Sliders,
+		"smiley":                   Smiley,
+		"sort_asc":                 SortAsc,
+		"sort_desc":                SortDesc,
+		"sparkle_fill":             SparkleFill,
+		"sponsor_tiers":            SponsorTiers,
+		"square":                   Square,
+		"square_fill":              SquareFill,
+		"squirrel":                 Squirrel,
+		"stack":                    Stack,
+		"star":                     Star,
+		"star_fill":                StarFill,
+		"stop":                     Stop,
+		"stopwatch":                Stopwatch,
+		"strikethrough":            Strikethrough,
+		"sun":                      Sun,
+		"sync":                     Sync,
+		"tab":                      Tab,
+		"tab_external":             TabExternal,
+		"table":                    Table,
+		"tag":                      Tag,
+		"tasklist":                 Tasklist,
+		"telescope":                Telescope,
+		"telescope_fill":           TelescopeFill,
+		"terminal":                 Terminal,
+		"three_bars":               ThreeBars,
+		"thumbsdown":               Thumbsdown,
+		"thumbsup":                 Thumbsup,
+		"tools":                    Tools,
+		"trash":                    Trash,
+		"triangle_down":            TriangleDown,
+		"triangle_left":            TriangleLeft,
+		"triangle_right":           TriangleRight,
+		"triangle_up":              TriangleUp,
+		"trophy":                   Trophy,
+		"typography":               Typography,
+		"unfold":                   Unfold,
+		"unlink":                   Unlink,
+		"unlock":                   Unlock,
+		"unmute":                   Unmute,
+		"unread":                   Unread,
+		"unverified":               Unverified,
+		"upload":                   Upload,
+		"verified":                 Verified,
+		"versions":                 Versions,
+		"video":                    Video,
+		"webhook":                  Webhook,
+		"workflow":                 Workflow,
+		"x":                        X,
+		"x_circle":                 XCircle,
+		"x_circle_fill":            XCircleFill,
+		"zap":                      Zap,
+		"zoom_in":                  ZoomIn,
+		"zoom_out":                 ZoomOut,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the oct class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

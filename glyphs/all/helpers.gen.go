@@ -36,34 +36,34 @@ const (
 	Version = "3.4.0"
 )
 
-var classNames = []string{
-	cod.ClassName,
-	custom.ClassName,
-	dev.ClassName,
-	extra.ClassName,
-	fa.ClassName,
-	fae.ClassName,
-	iec.ClassName,
-	indent.ClassName,
-	indentation.ClassName,
-	linux.ClassName,
-	md.ClassName,
-	oct.ClassName,
-	pl.ClassName,
-	ple.ClassName,
-	pom.ClassName,
-	seti.ClassName,
-	weather.ClassName,
+var classes = []nf.Class{
+	cod.Class,
+	custom.Class,
+	dev.Class,
+	extra.Class,
+	fa.Class,
+	fae.Class,
+	iec.Class,
+	indent.Class,
+	indentation.Class,
+	linux.Class,
+	md.Class,
+	oct.Class,
+	pl.Class,
+	ple.Class,
+	pom.Class,
+	seti.Class,
+	weather.Class,
 }
 
-// Classes returns an iterator over all the class names.
-func Classes() iter.Seq[string] {
-	return slices.Values(classNames)
+// Classes returns an iterator over all the classes.
+func Classes() iter.Seq[nf.Class] {
+	return slices.Values(classes)
 }
 
 // Glyphs returns an iterator over all the glyphs.
-func Glyphs() iter.Seq[*nf.Glyph] {
-	return func(yield func(*nf.Glyph) bool) {
+func Glyphs() iter.Seq[nf.Glyph] {
+	return func(yield func(nf.Glyph) bool) {
 		for glyph := range cod.AllGlyphs() {
 			if !yield(glyph) {
 				return
@@ -152,112 +152,240 @@ func Glyphs() iter.Seq[*nf.Glyph] {
 	}
 }
 
-// ByClass returns an iterator over all the glyphs in the given class, or nil if
-// the class is not found.
-func ByClass(class string) iter.Seq[*nf.Glyph] {
+// ByClass returns an iterator over all the glyphs in the given class. If the
+// class does not exist, an empty iterator is returned.
+func ByClass(class nf.Class) iter.Seq[nf.Glyph] {
 	switch class {
-	case cod.ClassName:
+	case cod.Class:
 		return cod.AllGlyphs()
-	case custom.ClassName:
+	case custom.Class:
 		return custom.AllGlyphs()
-	case dev.ClassName:
+	case dev.Class:
 		return dev.AllGlyphs()
-	case extra.ClassName:
+	case extra.Class:
 		return extra.AllGlyphs()
-	case fa.ClassName:
+	case fa.Class:
 		return fa.AllGlyphs()
-	case fae.ClassName:
+	case fae.Class:
 		return fae.AllGlyphs()
-	case iec.ClassName:
+	case iec.Class:
 		return iec.AllGlyphs()
-	case indent.ClassName:
+	case indent.Class:
 		return indent.AllGlyphs()
-	case indentation.ClassName:
+	case indentation.Class:
 		return indentation.AllGlyphs()
-	case linux.ClassName:
+	case linux.Class:
 		return linux.AllGlyphs()
-	case md.ClassName:
+	case md.Class:
 		return md.AllGlyphs()
-	case oct.ClassName:
+	case oct.Class:
 		return oct.AllGlyphs()
-	case pl.ClassName:
+	case pl.Class:
 		return pl.AllGlyphs()
-	case ple.ClassName:
+	case ple.Class:
 		return ple.AllGlyphs()
-	case pom.ClassName:
+	case pom.Class:
 		return pom.AllGlyphs()
-	case seti.ClassName:
+	case seti.Class:
 		return seti.AllGlyphs()
-	case weather.ClassName:
+	case weather.Class:
 		return weather.AllGlyphs()
 	default:
-		return nil
+		return func(yield func(nf.Glyph) bool) {
+			return
+		}
 	}
 }
 
-// ByID finds a glyph by its ID across all classes.
-func ByID(id string) *nf.Glyph {
-	if glyph := cod.ByID(id); glyph != nil {
+// ByID finds a glyph by its short or full ID across all classes, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph := cod.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := custom.ByID(id); glyph != nil {
+	if glyph := custom.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := dev.ByID(id); glyph != nil {
+	if glyph := dev.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := extra.ByID(id); glyph != nil {
+	if glyph := extra.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := fa.ByID(id); glyph != nil {
+	if glyph := fa.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := fae.ByID(id); glyph != nil {
+	if glyph := fae.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := iec.ByID(id); glyph != nil {
+	if glyph := iec.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := indent.ByID(id); glyph != nil {
+	if glyph := indent.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := indentation.ByID(id); glyph != nil {
+	if glyph := indentation.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := linux.ByID(id); glyph != nil {
+	if glyph := linux.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := md.ByID(id); glyph != nil {
+	if glyph := md.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := oct.ByID(id); glyph != nil {
+	if glyph := oct.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := pl.ByID(id); glyph != nil {
+	if glyph := pl.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := ple.ByID(id); glyph != nil {
+	if glyph := ple.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := pom.ByID(id); glyph != nil {
+	if glyph := pom.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := seti.ByID(id); glyph != nil {
+	if glyph := seti.ByID(id); glyph != "" {
 		return glyph
 	}
-	if glyph := weather.ByID(id); glyph != nil {
+	if glyph := weather.ByID(id); glyph != "" {
 		return glyph
 	}
-	return nil
+	return ""
 }
 
 // GlyphIDs returns an iterator over all the IDs of the glyphs across all classes.
 func GlyphIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range Glyphs() {
-			if !yield(glyph.ID) {
+		for id := range cod.AllGlyphIDs() {
+			if !yield(id) {
 				return
 			}
+		}
+		for id := range custom.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range dev.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range extra.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range fa.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range fae.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range iec.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range indent.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range indentation.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range linux.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range md.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range oct.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range pl.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range ple.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range pom.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range seti.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range weather.AllGlyphIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+	}
+}
+
+// GlyphIDsByClass returns an iterator over all the IDs of the glyphs in the given
+// class. If the class does not exist, an empty iterator is returned.
+func GlyphIDsByClass(class nf.Class) iter.Seq[string] {
+	switch class {
+	case cod.Class:
+		return cod.AllGlyphIDs()
+	case custom.Class:
+		return custom.AllGlyphIDs()
+	case dev.Class:
+		return dev.AllGlyphIDs()
+	case extra.Class:
+		return extra.AllGlyphIDs()
+	case fa.Class:
+		return fa.AllGlyphIDs()
+	case fae.Class:
+		return fae.AllGlyphIDs()
+	case iec.Class:
+		return iec.AllGlyphIDs()
+	case indent.Class:
+		return indent.AllGlyphIDs()
+	case indentation.Class:
+		return indentation.AllGlyphIDs()
+	case linux.Class:
+		return linux.AllGlyphIDs()
+	case md.Class:
+		return md.AllGlyphIDs()
+	case oct.Class:
+		return oct.AllGlyphIDs()
+	case pl.Class:
+		return pl.AllGlyphIDs()
+	case ple.Class:
+		return ple.AllGlyphIDs()
+	case pom.Class:
+		return pom.AllGlyphIDs()
+	case seti.Class:
+		return seti.AllGlyphIDs()
+	case weather.Class:
+		return weather.AllGlyphIDs()
+	default:
+		return func(yield func(string) bool) {
+			return
 		}
 	}
 }
@@ -265,10 +393,135 @@ func GlyphIDs() iter.Seq[string] {
 // GlyphFullIDs returns an iterator over all the full IDs of the glyphs across all classes.
 func GlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range Glyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range cod.AllGlyphFullIDs() {
+			if !yield(id) {
 				return
 			}
+		}
+		for id := range custom.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range dev.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range extra.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range fa.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range fae.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range iec.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range indent.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range indentation.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range linux.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range md.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range oct.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range pl.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range ple.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range pom.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range seti.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+		for id := range weather.AllGlyphFullIDs() {
+			if !yield(id) {
+				return
+			}
+		}
+	}
+}
+
+// GlyphFullIDsByClass returns an iterator over all the full IDs of the glyphs in the given
+// class. If the class does not exist, an empty iterator is returned.
+func GlyphFullIDsByClass(class nf.Class) iter.Seq[string] {
+	switch class {
+	case cod.Class:
+		return cod.AllGlyphFullIDs()
+	case custom.Class:
+		return custom.AllGlyphFullIDs()
+	case dev.Class:
+		return dev.AllGlyphFullIDs()
+	case extra.Class:
+		return extra.AllGlyphFullIDs()
+	case fa.Class:
+		return fa.AllGlyphFullIDs()
+	case fae.Class:
+		return fae.AllGlyphFullIDs()
+	case iec.Class:
+		return iec.AllGlyphFullIDs()
+	case indent.Class:
+		return indent.AllGlyphFullIDs()
+	case indentation.Class:
+		return indentation.AllGlyphFullIDs()
+	case linux.Class:
+		return linux.AllGlyphFullIDs()
+	case md.Class:
+		return md.AllGlyphFullIDs()
+	case oct.Class:
+		return oct.AllGlyphFullIDs()
+	case pl.Class:
+		return pl.AllGlyphFullIDs()
+	case ple.Class:
+		return ple.AllGlyphFullIDs()
+	case pom.Class:
+		return pom.AllGlyphFullIDs()
+	case seti.Class:
+		return seti.AllGlyphFullIDs()
+	case weather.Class:
+		return weather.AllGlyphFullIDs()
+	default:
+		return func(yield func(string) bool) {
+			return
 		}
 	}
 }

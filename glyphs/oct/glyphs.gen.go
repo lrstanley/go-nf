@@ -21,2489 +21,322 @@ package oct
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "oct"
+	// Class is the name of the class.
+	Class nf.Class = "oct"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Accessibility () represents the "oct-accessibility" glyph.
-var Accessibility = &nf.Glyph{
-	ID:      "accessibility",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf406",
-}
-
-// AccessibilityInset () represents the "oct-accessibility_inset" glyph.
-var AccessibilityInset = &nf.Glyph{
-	ID:      "accessibility_inset",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf40b",
-}
-
-// Alert () represents the "oct-alert" glyph.
-var Alert = &nf.Glyph{
-	ID:      "alert",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf421",
-}
-
-// AlertFill () represents the "oct-alert_fill" glyph.
-var AlertFill = &nf.Glyph{
-	ID:      "alert_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf40c",
-}
-
-// Apps () represents the "oct-apps" glyph.
-var Apps = &nf.Glyph{
-	ID:      "apps",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf40e",
-}
-
-// Archive () represents the "oct-archive" glyph.
-var Archive = &nf.Glyph{
-	ID:      "archive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf411",
-}
-
-// ArrowBoth () represents the "oct-arrow_both" glyph.
-var ArrowBoth = &nf.Glyph{
-	ID:      "arrow_both",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf416",
-}
-
-// ArrowDown () represents the "oct-arrow_down" glyph.
-var ArrowDown = &nf.Glyph{
-	ID:      "arrow_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf433",
-}
-
-// ArrowDownLeft () represents the "oct-arrow_down_left" glyph.
-var ArrowDownLeft = &nf.Glyph{
-	ID:      "arrow_down_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf424",
-}
-
-// ArrowDownRight () represents the "oct-arrow_down_right" glyph.
-var ArrowDownRight = &nf.Glyph{
-	ID:      "arrow_down_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf43e",
-}
-
-// ArrowLeft () represents the "oct-arrow_left" glyph.
-var ArrowLeft = &nf.Glyph{
-	ID:      "arrow_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf434",
-}
-
-// ArrowRight () represents the "oct-arrow_right" glyph.
-var ArrowRight = &nf.Glyph{
-	ID:      "arrow_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf432",
-}
-
-// ArrowSwitch () represents the "oct-arrow_switch" glyph.
-var ArrowSwitch = &nf.Glyph{
-	ID:      "arrow_switch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf443",
-}
-
-// ArrowUp () represents the "oct-arrow_up" glyph.
-var ArrowUp = &nf.Glyph{
-	ID:      "arrow_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf431",
-}
-
-// ArrowUpLeft () represents the "oct-arrow_up_left" glyph.
-var ArrowUpLeft = &nf.Glyph{
-	ID:      "arrow_up_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf45c",
-}
-
-// ArrowUpRight () represents the "oct-arrow_up_right" glyph.
-var ArrowUpRight = &nf.Glyph{
-	ID:      "arrow_up_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf46c",
-}
-
-// Beaker () represents the "oct-beaker" glyph.
-var Beaker = &nf.Glyph{
-	ID:      "beaker",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf499",
-}
-
-// Bell () represents the "oct-bell" glyph.
-var Bell = &nf.Glyph{
-	ID:      "bell",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf49a",
-}
-
-// BellFill () represents the "oct-bell_fill" glyph.
-var BellFill = &nf.Glyph{
-	ID:      "bell_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf476",
-}
-
-// BellSlash () represents the "oct-bell_slash" glyph.
-var BellSlash = &nf.Glyph{
-	ID:      "bell_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf478",
-}
-
-// Blocked () represents the "oct-blocked" glyph.
-var Blocked = &nf.Glyph{
-	ID:      "blocked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf479",
-}
-
-// Bold () represents the "oct-bold" glyph.
-var Bold = &nf.Glyph{
-	ID:      "bold",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf49d",
-}
-
-// Book () represents the "oct-book" glyph.
-var Book = &nf.Glyph{
-	ID:      "book",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf405",
-}
-
-// Bookmark () represents the "oct-bookmark" glyph.
-var Bookmark = &nf.Glyph{
-	ID:      "bookmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf461",
-}
-
-// BookmarkFill () represents the "oct-bookmark_fill" glyph.
-var BookmarkFill = &nf.Glyph{
-	ID:      "bookmark_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf47a",
-}
-
-// BookmarkSlash () represents the "oct-bookmark_slash" glyph.
-var BookmarkSlash = &nf.Glyph{
-	ID:      "bookmark_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf533",
-}
-
-// BookmarkSlashFill () represents the "oct-bookmark_slash_fill" glyph.
-var BookmarkSlashFill = &nf.Glyph{
-	ID:      "bookmark_slash_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf493",
-}
-
-// Briefcase () represents the "oct-briefcase" glyph.
-var Briefcase = &nf.Glyph{
-	ID:      "briefcase",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf491",
-}
-
-// Broadcast () represents the "oct-broadcast" glyph.
-var Broadcast = &nf.Glyph{
-	ID:      "broadcast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf43c",
-}
-
-// Browser () represents the "oct-browser" glyph.
-var Browser = &nf.Glyph{
-	ID:      "browser",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf488",
-}
-
-// Bug () represents the "oct-bug" glyph.
-var Bug = &nf.Glyph{
-	ID:      "bug",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf46f",
-}
-
-// Cache () represents the "oct-cache" glyph.
-var Cache = &nf.Glyph{
-	ID:      "cache",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf49b",
-}
-
-// Calendar () represents the "oct-calendar" glyph.
-var Calendar = &nf.Glyph{
-	ID:      "calendar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf455",
-}
-
-// Check () represents the "oct-check" glyph.
-var Check = &nf.Glyph{
-	ID:      "check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf42e",
-}
-
-// CheckCircle () represents the "oct-check_circle" glyph.
-var CheckCircle = &nf.Glyph{
-	ID:      "check_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf49e",
-}
-
-// CheckCircleFill () represents the "oct-check_circle_fill" glyph.
-var CheckCircleFill = &nf.Glyph{
-	ID:      "check_circle_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a4",
-}
-
-// Checkbox () represents the "oct-checkbox" glyph.
-var Checkbox = &nf.Glyph{
-	ID:      "checkbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a7",
-}
-
-// Checklist () represents the "oct-checklist" glyph.
-var Checklist = &nf.Glyph{
-	ID:      "checklist",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf45e",
-}
-
-// ChevronDown () represents the "oct-chevron_down" glyph.
-var ChevronDown = &nf.Glyph{
-	ID:      "chevron_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf47c",
-}
-
-// ChevronLeft () represents the "oct-chevron_left" glyph.
-var ChevronLeft = &nf.Glyph{
-	ID:      "chevron_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf47d",
-}
-
-// ChevronRight () represents the "oct-chevron_right" glyph.
-var ChevronRight = &nf.Glyph{
-	ID:      "chevron_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf460",
-}
-
-// ChevronUp () represents the "oct-chevron_up" glyph.
-var ChevronUp = &nf.Glyph{
-	ID:      "chevron_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf47b",
-}
-
-// Circle () represents the "oct-circle" glyph.
-var Circle = &nf.Glyph{
-	ID:      "circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4aa",
-}
-
-// CircleSlash () represents the "oct-circle_slash" glyph.
-var CircleSlash = &nf.Glyph{
-	ID:      "circle_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf468",
-}
-
-// Clock () represents the "oct-clock" glyph.
-var Clock = &nf.Glyph{
-	ID:      "clock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf43a",
-}
-
-// ClockFill () represents the "oct-clock_fill" glyph.
-var ClockFill = &nf.Glyph{
-	ID:      "clock_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ab",
-}
-
-// Cloud () represents the "oct-cloud" glyph.
-var Cloud = &nf.Glyph{
-	ID:      "cloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ac",
-}
-
-// CloudOffline () represents the "oct-cloud_offline" glyph.
-var CloudOffline = &nf.Glyph{
-	ID:      "cloud_offline",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ad",
-}
-
-// Code () represents the "oct-code" glyph.
-var Code = &nf.Glyph{
-	ID:      "code",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf44f",
-}
-
-// CodeOfConduct () represents the "oct-code_of_conduct" glyph.
-var CodeOfConduct = &nf.Glyph{
-	ID:      "code_of_conduct",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ae",
-}
-
-// CodeReview () represents the "oct-code_review" glyph.
-var CodeReview = &nf.Glyph{
-	ID:      "code_review",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4af",
-}
-
-// CodeSquare () represents the "oct-code_square" glyph.
-var CodeSquare = &nf.Glyph{
-	ID:      "code_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b0",
-}
-
-// Codescan () represents the "oct-codescan" glyph.
-var Codescan = &nf.Glyph{
-	ID:      "codescan",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b1",
-}
-
-// CodescanCheckmark () represents the "oct-codescan_checkmark" glyph.
-var CodescanCheckmark = &nf.Glyph{
-	ID:      "codescan_checkmark",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b2",
-}
-
-// Codespaces () represents the "oct-codespaces" glyph.
-var Codespaces = &nf.Glyph{
-	ID:      "codespaces",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b3",
-}
-
-// Columns () represents the "oct-columns" glyph.
-var Columns = &nf.Glyph{
-	ID:      "columns",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b4",
-}
-
-// CommandPalette () represents the "oct-command_palette" glyph.
-var CommandPalette = &nf.Glyph{
-	ID:      "command_palette",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b5",
-}
-
-// Comment () represents the "oct-comment" glyph.
-var Comment = &nf.Glyph{
-	ID:      "comment",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf41f",
-}
-
-// CommentDiscussion () represents the "oct-comment_discussion" glyph.
-var CommentDiscussion = &nf.Glyph{
-	ID:      "comment_discussion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf442",
-}
-
-// Commit () represents the "oct-commit" glyph.
-var Commit = &nf.Glyph{
-	ID:      "commit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b6",
-}
-
-// Container () represents the "oct-container" glyph.
-var Container = &nf.Glyph{
-	ID:      "container",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b7",
-}
-
-// Copilot () represents the "oct-copilot" glyph.
-var Copilot = &nf.Glyph{
-	ID:      "copilot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b8",
-}
-
-// CopilotError () represents the "oct-copilot_error" glyph.
-var CopilotError = &nf.Glyph{
-	ID:      "copilot_error",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4b9",
-}
-
-// CopilotWarning () represents the "oct-copilot_warning" glyph.
-var CopilotWarning = &nf.Glyph{
-	ID:      "copilot_warning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ba",
-}
-
-// Copy () represents the "oct-copy" glyph.
-var Copy = &nf.Glyph{
-	ID:      "copy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4bb",
-}
-
-// Cpu () represents the "oct-cpu" glyph.
-var Cpu = &nf.Glyph{
-	ID:      "cpu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4bc",
-}
-
-// CreditCard () represents the "oct-credit_card" glyph.
-var CreditCard = &nf.Glyph{
-	ID:      "credit_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf439",
-}
-
-// CrossReference () represents the "oct-cross_reference" glyph.
-var CrossReference = &nf.Glyph{
-	ID:      "cross_reference",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4bd",
-}
-
-// Dash () represents the "oct-dash" glyph.
-var Dash = &nf.Glyph{
-	ID:      "dash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf48b",
-}
-
-// Database () represents the "oct-database" glyph.
-var Database = &nf.Glyph{
-	ID:      "database",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf472",
-}
-
-// Dependabot () represents the "oct-dependabot" glyph.
-var Dependabot = &nf.Glyph{
-	ID:      "dependabot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4be",
-}
-
-// DesktopDownload () represents the "oct-desktop_download" glyph.
-var DesktopDownload = &nf.Glyph{
-	ID:      "desktop_download",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf498",
-}
-
-// DeviceCamera () represents the "oct-device_camera" glyph.
-var DeviceCamera = &nf.Glyph{
-	ID:      "device_camera",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf446",
-}
-
-// DeviceCameraVideo () represents the "oct-device_camera_video" glyph.
-var DeviceCameraVideo = &nf.Glyph{
-	ID:      "device_camera_video",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf447",
-}
-
-// DeviceDesktop () represents the "oct-device_desktop" glyph.
-var DeviceDesktop = &nf.Glyph{
-	ID:      "device_desktop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a9",
-}
-
-// DeviceMobile () represents the "oct-device_mobile" glyph.
-var DeviceMobile = &nf.Glyph{
-	ID:      "device_mobile",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf42c",
-}
-
-// Diamond () represents the "oct-diamond" glyph.
-var Diamond = &nf.Glyph{
-	ID:      "diamond",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4bf",
-}
-
-// Diff () represents the "oct-diff" glyph.
-var Diff = &nf.Glyph{
-	ID:      "diff",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf440",
-}
-
-// DiffAdded () represents the "oct-diff_added" glyph.
-var DiffAdded = &nf.Glyph{
-	ID:      "diff_added",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf457",
-}
-
-// DiffIgnored () represents the "oct-diff_ignored" glyph.
-var DiffIgnored = &nf.Glyph{
-	ID:      "diff_ignored",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf474",
-}
-
-// DiffModified () represents the "oct-diff_modified" glyph.
-var DiffModified = &nf.Glyph{
-	ID:      "diff_modified",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf459",
-}
-
-// DiffRemoved () represents the "oct-diff_removed" glyph.
-var DiffRemoved = &nf.Glyph{
-	ID:      "diff_removed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf458",
-}
-
-// DiffRenamed () represents the "oct-diff_renamed" glyph.
-var DiffRenamed = &nf.Glyph{
-	ID:      "diff_renamed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf45a",
-}
-
-// DiscussionClosed () represents the "oct-discussion_closed" glyph.
-var DiscussionClosed = &nf.Glyph{
-	ID:      "discussion_closed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c0",
-}
-
-// DiscussionDuplicate () represents the "oct-discussion_duplicate" glyph.
-var DiscussionDuplicate = &nf.Glyph{
-	ID:      "discussion_duplicate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c1",
-}
-
-// DiscussionOutdated () represents the "oct-discussion_outdated" glyph.
-var DiscussionOutdated = &nf.Glyph{
-	ID:      "discussion_outdated",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c2",
-}
-
-// Dot () represents the "oct-dot" glyph.
-var Dot = &nf.Glyph{
-	ID:      "dot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c3",
-}
-
-// DotFill () represents the "oct-dot_fill" glyph.
-var DotFill = &nf.Glyph{
-	ID:      "dot_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf444",
-}
-
-// Download () represents the "oct-download" glyph.
-var Download = &nf.Glyph{
-	ID:      "download",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf409",
-}
-
-// Duplicate () represents the "oct-duplicate" glyph.
-var Duplicate = &nf.Glyph{
-	ID:      "duplicate",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c4",
-}
-
-// Ellipsis () represents the "oct-ellipsis" glyph.
-var Ellipsis = &nf.Glyph{
-	ID:      "ellipsis",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf475",
-}
-
-// Eye () represents the "oct-eye" glyph.
-var Eye = &nf.Glyph{
-	ID:      "eye",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf441",
-}
-
-// EyeClosed () represents the "oct-eye_closed" glyph.
-var EyeClosed = &nf.Glyph{
-	ID:      "eye_closed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c5",
-}
-
-// FeedDiscussion () represents the "oct-feed_discussion" glyph.
-var FeedDiscussion = &nf.Glyph{
-	ID:      "feed_discussion",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c6",
-}
-
-// FeedForked () represents the "oct-feed_forked" glyph.
-var FeedForked = &nf.Glyph{
-	ID:      "feed_forked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c7",
-}
-
-// FeedHeart () represents the "oct-feed_heart" glyph.
-var FeedHeart = &nf.Glyph{
-	ID:      "feed_heart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c8",
-}
-
-// FeedMerged () represents the "oct-feed_merged" glyph.
-var FeedMerged = &nf.Glyph{
-	ID:      "feed_merged",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4c9",
-}
-
-// FeedPerson () represents the "oct-feed_person" glyph.
-var FeedPerson = &nf.Glyph{
-	ID:      "feed_person",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ca",
-}
-
-// FeedRepo () represents the "oct-feed_repo" glyph.
-var FeedRepo = &nf.Glyph{
-	ID:      "feed_repo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4cb",
-}
-
-// FeedRocket () represents the "oct-feed_rocket" glyph.
-var FeedRocket = &nf.Glyph{
-	ID:      "feed_rocket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4cc",
-}
-
-// FeedStar () represents the "oct-feed_star" glyph.
-var FeedStar = &nf.Glyph{
-	ID:      "feed_star",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4cd",
-}
-
-// FeedTag () represents the "oct-feed_tag" glyph.
-var FeedTag = &nf.Glyph{
-	ID:      "feed_tag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ce",
-}
-
-// FeedTrophy () represents the "oct-feed_trophy" glyph.
-var FeedTrophy = &nf.Glyph{
-	ID:      "feed_trophy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4cf",
-}
-
-// File () represents the "oct-file" glyph.
-var File = &nf.Glyph{
-	ID:      "file",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a5",
-}
-
-// FileAdded () represents the "oct-file_added" glyph.
-var FileAdded = &nf.Glyph{
-	ID:      "file_added",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d0",
-}
-
-// FileBadge () represents the "oct-file_badge" glyph.
-var FileBadge = &nf.Glyph{
-	ID:      "file_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d1",
-}
-
-// FileBinary () represents the "oct-file_binary" glyph.
-var FileBinary = &nf.Glyph{
-	ID:      "file_binary",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf471",
-}
-
-// FileCode () represents the "oct-file_code" glyph.
-var FileCode = &nf.Glyph{
-	ID:      "file_code",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf40d",
-}
-
-// FileDiff () represents the "oct-file_diff" glyph.
-var FileDiff = &nf.Glyph{
-	ID:      "file_diff",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d2",
-}
-
-// FileDirectory () represents the "oct-file_directory" glyph.
-var FileDirectory = &nf.Glyph{
-	ID:      "file_directory",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf413",
-}
-
-// FileDirectoryFill () represents the "oct-file_directory_fill" glyph.
-var FileDirectoryFill = &nf.Glyph{
-	ID:      "file_directory_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d3",
-}
-
-// FileDirectoryOpenFill () represents the "oct-file_directory_open_fill" glyph.
-var FileDirectoryOpenFill = &nf.Glyph{
-	ID:      "file_directory_open_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d4",
-}
-
-// FileMedia () represents the "oct-file_media" glyph.
-var FileMedia = &nf.Glyph{
-	ID:      "file_media",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf40f",
-}
-
-// FileMoved () represents the "oct-file_moved" glyph.
-var FileMoved = &nf.Glyph{
-	ID:      "file_moved",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d5",
-}
-
-// FileRemoved () represents the "oct-file_removed" glyph.
-var FileRemoved = &nf.Glyph{
-	ID:      "file_removed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d6",
-}
-
-// FileSubmodule () represents the "oct-file_submodule" glyph.
-var FileSubmodule = &nf.Glyph{
-	ID:      "file_submodule",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf414",
-}
-
-// FileSymlinkDirectory () represents the "oct-file_symlink_directory" glyph.
-var FileSymlinkDirectory = &nf.Glyph{
-	ID:      "file_symlink_directory",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf482",
-}
-
-// FileSymlinkFile () represents the "oct-file_symlink_file" glyph.
-var FileSymlinkFile = &nf.Glyph{
-	ID:      "file_symlink_file",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf481",
-}
-
-// FileZip () represents the "oct-file_zip" glyph.
-var FileZip = &nf.Glyph{
-	ID:      "file_zip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf410",
-}
-
-// Filter () represents the "oct-filter" glyph.
-var Filter = &nf.Glyph{
-	ID:      "filter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d7",
-}
-
-// FiscalHost () represents the "oct-fiscal_host" glyph.
-var FiscalHost = &nf.Glyph{
-	ID:      "fiscal_host",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d8",
-}
-
-// Flame () represents the "oct-flame" glyph.
-var Flame = &nf.Glyph{
-	ID:      "flame",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf490",
-}
-
-// Fold () represents the "oct-fold" glyph.
-var Fold = &nf.Glyph{
-	ID:      "fold",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf48c",
-}
-
-// FoldDown () represents the "oct-fold_down" glyph.
-var FoldDown = &nf.Glyph{
-	ID:      "fold_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4d9",
-}
-
-// FoldUp () represents the "oct-fold_up" glyph.
-var FoldUp = &nf.Glyph{
-	ID:      "fold_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4da",
-}
-
-// Gear () represents the "oct-gear" glyph.
-var Gear = &nf.Glyph{
-	ID:      "gear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf423",
-}
-
-// Gift () represents the "oct-gift" glyph.
-var Gift = &nf.Glyph{
-	ID:      "gift",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf436",
-}
-
-// GitBranch () represents the "oct-git_branch" glyph.
-var GitBranch = &nf.Glyph{
-	ID:      "git_branch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf418",
-}
-
-// GitCommit () represents the "oct-git_commit" glyph.
-var GitCommit = &nf.Glyph{
-	ID:      "git_commit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf417",
-}
-
-// GitCompare () represents the "oct-git_compare" glyph.
-var GitCompare = &nf.Glyph{
-	ID:      "git_compare",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf47f",
-}
-
-// GitMerge () represents the "oct-git_merge" glyph.
-var GitMerge = &nf.Glyph{
-	ID:      "git_merge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf419",
-}
-
-// GitMergeQueue () represents the "oct-git_merge_queue" glyph.
-var GitMergeQueue = &nf.Glyph{
-	ID:      "git_merge_queue",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4db",
-}
-
-// GitPullRequest () represents the "oct-git_pull_request" glyph.
-var GitPullRequest = &nf.Glyph{
-	ID:      "git_pull_request",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf407",
-}
-
-// GitPullRequestClosed () represents the "oct-git_pull_request_closed" glyph.
-var GitPullRequestClosed = &nf.Glyph{
-	ID:      "git_pull_request_closed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4dc",
-}
-
-// GitPullRequestDraft () represents the "oct-git_pull_request_draft" glyph.
-var GitPullRequestDraft = &nf.Glyph{
-	ID:      "git_pull_request_draft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4dd",
-}
-
-// Globe () represents the "oct-globe" glyph.
-var Globe = &nf.Glyph{
-	ID:      "globe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf484",
-}
-
-// Goal () represents the "oct-goal" glyph.
-var Goal = &nf.Glyph{
-	ID:      "goal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4de",
-}
-
-// Grabber () represents the "oct-grabber" glyph.
-var Grabber = &nf.Glyph{
-	ID:      "grabber",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a6",
-}
-
-// Graph () represents the "oct-graph" glyph.
-var Graph = &nf.Glyph{
-	ID:      "graph",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf437",
-}
-
-// Hash () represents the "oct-hash" glyph.
-var Hash = &nf.Glyph{
-	ID:      "hash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4df",
-}
-
-// Heading () represents the "oct-heading" glyph.
-var Heading = &nf.Glyph{
-	ID:      "heading",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e0",
-}
-
-// Heart (♥) represents the "oct-heart" glyph.
-var Heart = &nf.Glyph{
-	ID:      "heart",
-	Class:   ClassName,
-	Char:    "♥",
-	Unicode: "♥",
-}
-
-// HeartFill () represents the "oct-heart_fill" glyph.
-var HeartFill = &nf.Glyph{
-	ID:      "heart_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e1",
-}
-
-// History () represents the "oct-history" glyph.
-var History = &nf.Glyph{
-	ID:      "history",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf464",
-}
-
-// Home () represents the "oct-home" glyph.
-var Home = &nf.Glyph{
-	ID:      "home",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf46d",
-}
-
-// HomeFill () represents the "oct-home_fill" glyph.
-var HomeFill = &nf.Glyph{
-	ID:      "home_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e2",
-}
-
-// HorizontalRule () represents the "oct-horizontal_rule" glyph.
-var HorizontalRule = &nf.Glyph{
-	ID:      "horizontal_rule",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf45b",
-}
-
-// Hourglass () represents the "oct-hourglass" glyph.
-var Hourglass = &nf.Glyph{
-	ID:      "hourglass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e3",
-}
-
-// Hubot () represents the "oct-hubot" glyph.
-var Hubot = &nf.Glyph{
-	ID:      "hubot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf477",
-}
-
-// IdBadge () represents the "oct-id_badge" glyph.
-var IdBadge = &nf.Glyph{
-	ID:      "id_badge",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e4",
-}
-
-// Image () represents the "oct-image" glyph.
-var Image = &nf.Glyph{
-	ID:      "image",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e5",
-}
-
-// Inbox () represents the "oct-inbox" glyph.
-var Inbox = &nf.Glyph{
-	ID:      "inbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf48d",
-}
-
-// Infinity () represents the "oct-infinity" glyph.
-var Infinity = &nf.Glyph{
-	ID:      "infinity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e6",
-}
-
-// Info () represents the "oct-info" glyph.
-var Info = &nf.Glyph{
-	ID:      "info",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf449",
-}
-
-// IssueClosed () represents the "oct-issue_closed" glyph.
-var IssueClosed = &nf.Glyph{
-	ID:      "issue_closed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf41d",
-}
-
-// IssueDraft () represents the "oct-issue_draft" glyph.
-var IssueDraft = &nf.Glyph{
-	ID:      "issue_draft",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e7",
-}
-
-// IssueOpened () represents the "oct-issue_opened" glyph.
-var IssueOpened = &nf.Glyph{
-	ID:      "issue_opened",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf41b",
-}
-
-// IssueReopened () represents the "oct-issue_reopened" glyph.
-var IssueReopened = &nf.Glyph{
-	ID:      "issue_reopened",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf41c",
-}
-
-// IssueTrackedBy () represents the "oct-issue_tracked_by" glyph.
-var IssueTrackedBy = &nf.Glyph{
-	ID:      "issue_tracked_by",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e8",
-}
-
-// IssueTracks () represents the "oct-issue_tracks" glyph.
-var IssueTracks = &nf.Glyph{
-	ID:      "issue_tracks",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4e9",
-}
-
-// Italic () represents the "oct-italic" glyph.
-var Italic = &nf.Glyph{
-	ID:      "italic",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf49f",
-}
-
-// Iterations () represents the "oct-iterations" glyph.
-var Iterations = &nf.Glyph{
-	ID:      "iterations",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ea",
-}
-
-// KebabHorizontal () represents the "oct-kebab_horizontal" glyph.
-var KebabHorizontal = &nf.Glyph{
-	ID:      "kebab_horizontal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4eb",
-}
-
-// Key () represents the "oct-key" glyph.
-var Key = &nf.Glyph{
-	ID:      "key",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf43d",
-}
-
-// KeyAsterisk () represents the "oct-key_asterisk" glyph.
-var KeyAsterisk = &nf.Glyph{
-	ID:      "key_asterisk",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ec",
-}
-
-// Law () represents the "oct-law" glyph.
-var Law = &nf.Glyph{
-	ID:      "law",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf495",
-}
-
-// LightBulb () represents the "oct-light_bulb" glyph.
-var LightBulb = &nf.Glyph{
-	ID:      "light_bulb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf400",
-}
-
-// Link () represents the "oct-link" glyph.
-var Link = &nf.Glyph{
-	ID:      "link",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf44c",
-}
-
-// LinkExternal () represents the "oct-link_external" glyph.
-var LinkExternal = &nf.Glyph{
-	ID:      "link_external",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf465",
-}
-
-// ListOrdered () represents the "oct-list_ordered" glyph.
-var ListOrdered = &nf.Glyph{
-	ID:      "list_ordered",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf452",
-}
-
-// ListUnordered () represents the "oct-list_unordered" glyph.
-var ListUnordered = &nf.Glyph{
-	ID:      "list_unordered",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf451",
-}
-
-// Location () represents the "oct-location" glyph.
-var Location = &nf.Glyph{
-	ID:      "location",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf450",
-}
-
-// Lock () represents the "oct-lock" glyph.
-var Lock = &nf.Glyph{
-	ID:      "lock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf456",
-}
-
-// Log () represents the "oct-log" glyph.
-var Log = &nf.Glyph{
-	ID:      "log",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ed",
-}
-
-// LogoGist () represents the "oct-logo_gist" glyph.
-var LogoGist = &nf.Glyph{
-	ID:      "logo_gist",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf480",
-}
-
-// LogoGithub () represents the "oct-logo_github" glyph.
-var LogoGithub = &nf.Glyph{
-	ID:      "logo_github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf470",
-}
-
-// Mail () represents the "oct-mail" glyph.
-var Mail = &nf.Glyph{
-	ID:      "mail",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf42f",
-}
-
-// MarkGithub () represents the "oct-mark_github" glyph.
-var MarkGithub = &nf.Glyph{
-	ID:      "mark_github",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf408",
-}
-
-// Markdown () represents the "oct-markdown" glyph.
-var Markdown = &nf.Glyph{
-	ID:      "markdown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf48a",
-}
-
-// Megaphone () represents the "oct-megaphone" glyph.
-var Megaphone = &nf.Glyph{
-	ID:      "megaphone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf45f",
-}
-
-// Mention () represents the "oct-mention" glyph.
-var Mention = &nf.Glyph{
-	ID:      "mention",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf486",
-}
-
-// Meter () represents the "oct-meter" glyph.
-var Meter = &nf.Glyph{
-	ID:      "meter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf463",
-}
-
-// Milestone () represents the "oct-milestone" glyph.
-var Milestone = &nf.Glyph{
-	ID:      "milestone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf45d",
-}
-
-// Mirror () represents the "oct-mirror" glyph.
-var Mirror = &nf.Glyph{
-	ID:      "mirror",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf41a",
-}
-
-// Moon () represents the "oct-moon" glyph.
-var Moon = &nf.Glyph{
-	ID:      "moon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ee",
-}
-
-// MortarBoard () represents the "oct-mortar_board" glyph.
-var MortarBoard = &nf.Glyph{
-	ID:      "mortar_board",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf494",
-}
-
-// MoveToBottom () represents the "oct-move_to_bottom" glyph.
-var MoveToBottom = &nf.Glyph{
-	ID:      "move_to_bottom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ef",
-}
-
-// MoveToEnd () represents the "oct-move_to_end" glyph.
-var MoveToEnd = &nf.Glyph{
-	ID:      "move_to_end",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f0",
-}
-
-// MoveToStart () represents the "oct-move_to_start" glyph.
-var MoveToStart = &nf.Glyph{
-	ID:      "move_to_start",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f1",
-}
-
-// MoveToTop () represents the "oct-move_to_top" glyph.
-var MoveToTop = &nf.Glyph{
-	ID:      "move_to_top",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f2",
-}
-
-// MultiSelect () represents the "oct-multi_select" glyph.
-var MultiSelect = &nf.Glyph{
-	ID:      "multi_select",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f3",
-}
-
-// Mute () represents the "oct-mute" glyph.
-var Mute = &nf.Glyph{
-	ID:      "mute",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf466",
-}
-
-// NoEntry () represents the "oct-no_entry" glyph.
-var NoEntry = &nf.Glyph{
-	ID:      "no_entry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f4",
-}
-
-// NorthStar () represents the "oct-north_star" glyph.
-var NorthStar = &nf.Glyph{
-	ID:      "north_star",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f5",
-}
-
-// Note () represents the "oct-note" glyph.
-var Note = &nf.Glyph{
-	ID:      "note",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f6",
-}
-
-// Number () represents the "oct-number" glyph.
-var Number = &nf.Glyph{
-	ID:      "number",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f7",
-}
-
-// Organization () represents the "oct-organization" glyph.
-var Organization = &nf.Glyph{
-	ID:      "organization",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf42b",
-}
-
-// Package () represents the "oct-package" glyph.
-var Package = &nf.Glyph{
-	ID:      "package",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf487",
-}
-
-// PackageDependencies () represents the "oct-package_dependencies" glyph.
-var PackageDependencies = &nf.Glyph{
-	ID:      "package_dependencies",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f8",
-}
-
-// PackageDependents () represents the "oct-package_dependents" glyph.
-var PackageDependents = &nf.Glyph{
-	ID:      "package_dependents",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4f9",
-}
-
-// Paintbrush () represents the "oct-paintbrush" glyph.
-var Paintbrush = &nf.Glyph{
-	ID:      "paintbrush",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf48f",
-}
-
-// PaperAirplane () represents the "oct-paper_airplane" glyph.
-var PaperAirplane = &nf.Glyph{
-	ID:      "paper_airplane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4fa",
-}
-
-// Paperclip () represents the "oct-paperclip" glyph.
-var Paperclip = &nf.Glyph{
-	ID:      "paperclip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4fb",
-}
-
-// PasskeyFill () represents the "oct-passkey_fill" glyph.
-var PasskeyFill = &nf.Glyph{
-	ID:      "passkey_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4fc",
-}
-
-// Paste () represents the "oct-paste" glyph.
-var Paste = &nf.Glyph{
-	ID:      "paste",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf429",
-}
-
-// Pencil () represents the "oct-pencil" glyph.
-var Pencil = &nf.Glyph{
-	ID:      "pencil",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf448",
-}
-
-// People () represents the "oct-people" glyph.
-var People = &nf.Glyph{
-	ID:      "people",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4fd",
-}
-
-// Person () represents the "oct-person" glyph.
-var Person = &nf.Glyph{
-	ID:      "person",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf415",
-}
-
-// PersonAdd () represents the "oct-person_add" glyph.
-var PersonAdd = &nf.Glyph{
-	ID:      "person_add",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4fe",
-}
-
-// PersonFill () represents the "oct-person_fill" glyph.
-var PersonFill = &nf.Glyph{
-	ID:      "person_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4ff",
-}
-
-// Pin () represents the "oct-pin" glyph.
-var Pin = &nf.Glyph{
-	ID:      "pin",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf435",
-}
-
-// Play () represents the "oct-play" glyph.
-var Play = &nf.Glyph{
-	ID:      "play",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf500",
-}
-
-// Plug () represents the "oct-plug" glyph.
-var Plug = &nf.Glyph{
-	ID:      "plug",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf492",
-}
-
-// Plus () represents the "oct-plus" glyph.
-var Plus = &nf.Glyph{
-	ID:      "plus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf44d",
-}
-
-// PlusCircle () represents the "oct-plus_circle" glyph.
-var PlusCircle = &nf.Glyph{
-	ID:      "plus_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf501",
-}
-
-// Project () represents the "oct-project" glyph.
-var Project = &nf.Glyph{
-	ID:      "project",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf502",
-}
-
-// ProjectRoadmap () represents the "oct-project_roadmap" glyph.
-var ProjectRoadmap = &nf.Glyph{
-	ID:      "project_roadmap",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf503",
-}
-
-// ProjectSymlink () represents the "oct-project_symlink" glyph.
-var ProjectSymlink = &nf.Glyph{
-	ID:      "project_symlink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf504",
-}
-
-// ProjectTemplate () represents the "oct-project_template" glyph.
-var ProjectTemplate = &nf.Glyph{
-	ID:      "project_template",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf505",
-}
-
-// Pulse () represents the "oct-pulse" glyph.
-var Pulse = &nf.Glyph{
-	ID:      "pulse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf469",
-}
-
-// Question () represents the "oct-question" glyph.
-var Question = &nf.Glyph{
-	ID:      "question",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf420",
-}
-
-// Quote () represents the "oct-quote" glyph.
-var Quote = &nf.Glyph{
-	ID:      "quote",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf453",
-}
-
-// Read () represents the "oct-read" glyph.
-var Read = &nf.Glyph{
-	ID:      "read",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf430",
-}
-
-// RelFilePath () represents the "oct-rel_file_path" glyph.
-var RelFilePath = &nf.Glyph{
-	ID:      "rel_file_path",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf506",
-}
-
-// Reply () represents the "oct-reply" glyph.
-var Reply = &nf.Glyph{
-	ID:      "reply",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a8",
-}
-
-// Repo () represents the "oct-repo" glyph.
-var Repo = &nf.Glyph{
-	ID:      "repo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf401",
-}
-
-// RepoClone () represents the "oct-repo_clone" glyph.
-var RepoClone = &nf.Glyph{
-	ID:      "repo_clone",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf43f",
-}
-
-// RepoDeleted () represents the "oct-repo_deleted" glyph.
-var RepoDeleted = &nf.Glyph{
-	ID:      "repo_deleted",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf507",
-}
-
-// RepoForked () represents the "oct-repo_forked" glyph.
-var RepoForked = &nf.Glyph{
-	ID:      "repo_forked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf402",
-}
-
-// RepoLocked () represents the "oct-repo_locked" glyph.
-var RepoLocked = &nf.Glyph{
-	ID:      "repo_locked",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf508",
-}
-
-// RepoPull () represents the "oct-repo_pull" glyph.
-var RepoPull = &nf.Glyph{
-	ID:      "repo_pull",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf404",
-}
-
-// RepoPush () represents the "oct-repo_push" glyph.
-var RepoPush = &nf.Glyph{
-	ID:      "repo_push",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf403",
-}
-
-// RepoTemplate () represents the "oct-repo_template" glyph.
-var RepoTemplate = &nf.Glyph{
-	ID:      "repo_template",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf509",
-}
-
-// Report () represents the "oct-report" glyph.
-var Report = &nf.Glyph{
-	ID:      "report",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf50a",
-}
-
-// Rocket () represents the "oct-rocket" glyph.
-var Rocket = &nf.Glyph{
-	ID:      "rocket",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf427",
-}
-
-// Rows () represents the "oct-rows" glyph.
-var Rows = &nf.Glyph{
-	ID:      "rows",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf50b",
-}
-
-// Rss () represents the "oct-rss" glyph.
-var Rss = &nf.Glyph{
-	ID:      "rss",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf428",
-}
-
-// Ruby () represents the "oct-ruby" glyph.
-var Ruby = &nf.Glyph{
-	ID:      "ruby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf43b",
-}
-
-// ScreenFull () represents the "oct-screen_full" glyph.
-var ScreenFull = &nf.Glyph{
-	ID:      "screen_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf50c",
-}
-
-// ScreenNormal () represents the "oct-screen_normal" glyph.
-var ScreenNormal = &nf.Glyph{
-	ID:      "screen_normal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf50d",
-}
-
-// Search () represents the "oct-search" glyph.
-var Search = &nf.Glyph{
-	ID:      "search",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf422",
-}
-
-// Server () represents the "oct-server" glyph.
-var Server = &nf.Glyph{
-	ID:      "server",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf473",
-}
-
-// Share () represents the "oct-share" glyph.
-var Share = &nf.Glyph{
-	ID:      "share",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf50e",
-}
-
-// ShareAndroid () represents the "oct-share_android" glyph.
-var ShareAndroid = &nf.Glyph{
-	ID:      "share_android",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf50f",
-}
-
-// Shield () represents the "oct-shield" glyph.
-var Shield = &nf.Glyph{
-	ID:      "shield",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf49c",
-}
-
-// ShieldCheck () represents the "oct-shield_check" glyph.
-var ShieldCheck = &nf.Glyph{
-	ID:      "shield_check",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf510",
-}
-
-// ShieldLock () represents the "oct-shield_lock" glyph.
-var ShieldLock = &nf.Glyph{
-	ID:      "shield_lock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf511",
-}
-
-// ShieldSlash () represents the "oct-shield_slash" glyph.
-var ShieldSlash = &nf.Glyph{
-	ID:      "shield_slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf512",
-}
-
-// ShieldX () represents the "oct-shield_x" glyph.
-var ShieldX = &nf.Glyph{
-	ID:      "shield_x",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf513",
-}
-
-// SidebarCollapse () represents the "oct-sidebar_collapse" glyph.
-var SidebarCollapse = &nf.Glyph{
-	ID:      "sidebar_collapse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf514",
-}
-
-// SidebarExpand () represents the "oct-sidebar_expand" glyph.
-var SidebarExpand = &nf.Glyph{
-	ID:      "sidebar_expand",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf515",
-}
-
-// SignIn () represents the "oct-sign_in" glyph.
-var SignIn = &nf.Glyph{
-	ID:      "sign_in",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf42a",
-}
-
-// SignOut () represents the "oct-sign_out" glyph.
-var SignOut = &nf.Glyph{
-	ID:      "sign_out",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf426",
-}
-
-// SingleSelect () represents the "oct-single_select" glyph.
-var SingleSelect = &nf.Glyph{
-	ID:      "single_select",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf516",
-}
-
-// Skip () represents the "oct-skip" glyph.
-var Skip = &nf.Glyph{
-	ID:      "skip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf517",
-}
-
-// SkipFill () represents the "oct-skip_fill" glyph.
-var SkipFill = &nf.Glyph{
-	ID:      "skip_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf518",
-}
-
-// Sliders () represents the "oct-sliders" glyph.
-var Sliders = &nf.Glyph{
-	ID:      "sliders",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf462",
-}
-
-// Smiley () represents the "oct-smiley" glyph.
-var Smiley = &nf.Glyph{
-	ID:      "smiley",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a2",
-}
-
-// SortAsc () represents the "oct-sort_asc" glyph.
-var SortAsc = &nf.Glyph{
-	ID:      "sort_asc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf519",
-}
-
-// SortDesc () represents the "oct-sort_desc" glyph.
-var SortDesc = &nf.Glyph{
-	ID:      "sort_desc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf51a",
-}
-
-// SparkleFill () represents the "oct-sparkle_fill" glyph.
-var SparkleFill = &nf.Glyph{
-	ID:      "sparkle_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf51b",
-}
-
-// SponsorTiers () represents the "oct-sponsor_tiers" glyph.
-var SponsorTiers = &nf.Glyph{
-	ID:      "sponsor_tiers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf51c",
-}
-
-// Square () represents the "oct-square" glyph.
-var Square = &nf.Glyph{
-	ID:      "square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf51d",
-}
-
-// SquareFill () represents the "oct-square_fill" glyph.
-var SquareFill = &nf.Glyph{
-	ID:      "square_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf445",
-}
-
-// Squirrel () represents the "oct-squirrel" glyph.
-var Squirrel = &nf.Glyph{
-	ID:      "squirrel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf483",
-}
-
-// Stack () represents the "oct-stack" glyph.
-var Stack = &nf.Glyph{
-	ID:      "stack",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf51e",
-}
-
-// Star () represents the "oct-star" glyph.
-var Star = &nf.Glyph{
-	ID:      "star",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf41e",
-}
-
-// StarFill () represents the "oct-star_fill" glyph.
-var StarFill = &nf.Glyph{
-	ID:      "star_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf51f",
-}
-
-// Stop () represents the "oct-stop" glyph.
-var Stop = &nf.Glyph{
-	ID:      "stop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf46e",
-}
-
-// Stopwatch () represents the "oct-stopwatch" glyph.
-var Stopwatch = &nf.Glyph{
-	ID:      "stopwatch",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf520",
-}
-
-// Strikethrough () represents the "oct-strikethrough" glyph.
-var Strikethrough = &nf.Glyph{
-	ID:      "strikethrough",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf521",
-}
-
-// Sun () represents the "oct-sun" glyph.
-var Sun = &nf.Glyph{
-	ID:      "sun",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf522",
-}
-
-// Sync () represents the "oct-sync" glyph.
-var Sync = &nf.Glyph{
-	ID:      "sync",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf46a",
-}
-
-// Tab () represents the "oct-tab" glyph.
-var Tab = &nf.Glyph{
-	ID:      "tab",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf523",
-}
-
-// TabExternal () represents the "oct-tab_external" glyph.
-var TabExternal = &nf.Glyph{
-	ID:      "tab_external",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf524",
-}
-
-// Table () represents the "oct-table" glyph.
-var Table = &nf.Glyph{
-	ID:      "table",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf525",
-}
-
-// Tag () represents the "oct-tag" glyph.
-var Tag = &nf.Glyph{
-	ID:      "tag",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf412",
-}
-
-// Tasklist () represents the "oct-tasklist" glyph.
-var Tasklist = &nf.Glyph{
-	ID:      "tasklist",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a0",
-}
-
-// Telescope () represents the "oct-telescope" glyph.
-var Telescope = &nf.Glyph{
-	ID:      "telescope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf46b",
-}
-
-// TelescopeFill () represents the "oct-telescope_fill" glyph.
-var TelescopeFill = &nf.Glyph{
-	ID:      "telescope_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf526",
-}
-
-// Terminal () represents the "oct-terminal" glyph.
-var Terminal = &nf.Glyph{
-	ID:      "terminal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf489",
-}
-
-// ThreeBars () represents the "oct-three_bars" glyph.
-var ThreeBars = &nf.Glyph{
-	ID:      "three_bars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf44e",
-}
-
-// Thumbsdown () represents the "oct-thumbsdown" glyph.
-var Thumbsdown = &nf.Glyph{
-	ID:      "thumbsdown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf497",
-}
-
-// Thumbsup () represents the "oct-thumbsup" glyph.
-var Thumbsup = &nf.Glyph{
-	ID:      "thumbsup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf496",
-}
-
-// Tools () represents the "oct-tools" glyph.
-var Tools = &nf.Glyph{
-	ID:      "tools",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf425",
-}
-
-// Trash () represents the "oct-trash" glyph.
-var Trash = &nf.Glyph{
-	ID:      "trash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf48e",
-}
-
-// TriangleDown () represents the "oct-triangle_down" glyph.
-var TriangleDown = &nf.Glyph{
-	ID:      "triangle_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf44b",
-}
-
-// TriangleLeft () represents the "oct-triangle_left" glyph.
-var TriangleLeft = &nf.Glyph{
-	ID:      "triangle_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf438",
-}
-
-// TriangleRight () represents the "oct-triangle_right" glyph.
-var TriangleRight = &nf.Glyph{
-	ID:      "triangle_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf44a",
-}
-
-// TriangleUp () represents the "oct-triangle_up" glyph.
-var TriangleUp = &nf.Glyph{
-	ID:      "triangle_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf47e",
-}
-
-// Trophy () represents the "oct-trophy" glyph.
-var Trophy = &nf.Glyph{
-	ID:      "trophy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf527",
-}
-
-// Typography () represents the "oct-typography" glyph.
-var Typography = &nf.Glyph{
-	ID:      "typography",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf528",
-}
-
-// Unfold () represents the "oct-unfold" glyph.
-var Unfold = &nf.Glyph{
-	ID:      "unfold",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf42d",
-}
-
-// Unlink () represents the "oct-unlink" glyph.
-var Unlink = &nf.Glyph{
-	ID:      "unlink",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf529",
-}
-
-// Unlock () represents the "oct-unlock" glyph.
-var Unlock = &nf.Glyph{
-	ID:      "unlock",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf52a",
-}
-
-// Unmute () represents the "oct-unmute" glyph.
-var Unmute = &nf.Glyph{
-	ID:      "unmute",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf485",
-}
-
-// Unread () represents the "oct-unread" glyph.
-var Unread = &nf.Glyph{
-	ID:      "unread",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf52b",
-}
-
-// Unverified () represents the "oct-unverified" glyph.
-var Unverified = &nf.Glyph{
-	ID:      "unverified",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a3",
-}
-
-// Upload () represents the "oct-upload" glyph.
-var Upload = &nf.Glyph{
-	ID:      "upload",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf40a",
-}
-
-// Verified () represents the "oct-verified" glyph.
-var Verified = &nf.Glyph{
-	ID:      "verified",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf4a1",
-}
-
-// Versions () represents the "oct-versions" glyph.
-var Versions = &nf.Glyph{
-	ID:      "versions",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf454",
-}
-
-// Video () represents the "oct-video" glyph.
-var Video = &nf.Glyph{
-	ID:      "video",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf52c",
-}
-
-// Webhook () represents the "oct-webhook" glyph.
-var Webhook = &nf.Glyph{
-	ID:      "webhook",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf52d",
-}
-
-// Workflow () represents the "oct-workflow" glyph.
-var Workflow = &nf.Glyph{
-	ID:      "workflow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf52e",
-}
-
-// X () represents the "oct-x" glyph.
-var X = &nf.Glyph{
-	ID:      "x",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf467",
-}
-
-// XCircle () represents the "oct-x_circle" glyph.
-var XCircle = &nf.Glyph{
-	ID:      "x_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf52f",
-}
-
-// XCircleFill () represents the "oct-x_circle_fill" glyph.
-var XCircleFill = &nf.Glyph{
-	ID:      "x_circle_fill",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf530",
-}
-
-// Zap (⚡) represents the "oct-zap" glyph.
-var Zap = &nf.Glyph{
-	ID:      "zap",
-	Class:   ClassName,
-	Char:    "⚡",
-	Unicode: "⚡",
-}
-
-// ZoomIn () represents the "oct-zoom_in" glyph.
-var ZoomIn = &nf.Glyph{
-	ID:      "zoom_in",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf531",
-}
-
-// ZoomOut () represents the "oct-zoom_out" glyph.
-var ZoomOut = &nf.Glyph{
-	ID:      "zoom_out",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uf532",
-}
+const (
+	Accessibility         nf.Glyph = "" //  ("\uf406") represents the "oct-accessibility" glyph.
+	AccessibilityInset    nf.Glyph = "" //  ("\uf40b") represents the "oct-accessibility_inset" glyph.
+	Alert                 nf.Glyph = "" //  ("\uf421") represents the "oct-alert" glyph.
+	AlertFill             nf.Glyph = "" //  ("\uf40c") represents the "oct-alert_fill" glyph.
+	Apps                  nf.Glyph = "" //  ("\uf40e") represents the "oct-apps" glyph.
+	Archive               nf.Glyph = "" //  ("\uf411") represents the "oct-archive" glyph.
+	ArrowBoth             nf.Glyph = "" //  ("\uf416") represents the "oct-arrow_both" glyph.
+	ArrowDown             nf.Glyph = "" //  ("\uf433") represents the "oct-arrow_down" glyph.
+	ArrowDownLeft         nf.Glyph = "" //  ("\uf424") represents the "oct-arrow_down_left" glyph.
+	ArrowDownRight        nf.Glyph = "" //  ("\uf43e") represents the "oct-arrow_down_right" glyph.
+	ArrowLeft             nf.Glyph = "" //  ("\uf434") represents the "oct-arrow_left" glyph.
+	ArrowRight            nf.Glyph = "" //  ("\uf432") represents the "oct-arrow_right" glyph.
+	ArrowSwitch           nf.Glyph = "" //  ("\uf443") represents the "oct-arrow_switch" glyph.
+	ArrowUp               nf.Glyph = "" //  ("\uf431") represents the "oct-arrow_up" glyph.
+	ArrowUpLeft           nf.Glyph = "" //  ("\uf45c") represents the "oct-arrow_up_left" glyph.
+	ArrowUpRight          nf.Glyph = "" //  ("\uf46c") represents the "oct-arrow_up_right" glyph.
+	Beaker                nf.Glyph = "" //  ("\uf499") represents the "oct-beaker" glyph.
+	Bell                  nf.Glyph = "" //  ("\uf49a") represents the "oct-bell" glyph.
+	BellFill              nf.Glyph = "" //  ("\uf476") represents the "oct-bell_fill" glyph.
+	BellSlash             nf.Glyph = "" //  ("\uf478") represents the "oct-bell_slash" glyph.
+	Blocked               nf.Glyph = "" //  ("\uf479") represents the "oct-blocked" glyph.
+	Bold                  nf.Glyph = "" //  ("\uf49d") represents the "oct-bold" glyph.
+	Book                  nf.Glyph = "" //  ("\uf405") represents the "oct-book" glyph.
+	Bookmark              nf.Glyph = "" //  ("\uf461") represents the "oct-bookmark" glyph.
+	BookmarkFill          nf.Glyph = "" //  ("\uf47a") represents the "oct-bookmark_fill" glyph.
+	BookmarkSlash         nf.Glyph = "" //  ("\uf533") represents the "oct-bookmark_slash" glyph.
+	BookmarkSlashFill     nf.Glyph = "" //  ("\uf493") represents the "oct-bookmark_slash_fill" glyph.
+	Briefcase             nf.Glyph = "" //  ("\uf491") represents the "oct-briefcase" glyph.
+	Broadcast             nf.Glyph = "" //  ("\uf43c") represents the "oct-broadcast" glyph.
+	Browser               nf.Glyph = "" //  ("\uf488") represents the "oct-browser" glyph.
+	Bug                   nf.Glyph = "" //  ("\uf46f") represents the "oct-bug" glyph.
+	Cache                 nf.Glyph = "" //  ("\uf49b") represents the "oct-cache" glyph.
+	Calendar              nf.Glyph = "" //  ("\uf455") represents the "oct-calendar" glyph.
+	Check                 nf.Glyph = "" //  ("\uf42e") represents the "oct-check" glyph.
+	CheckCircle           nf.Glyph = "" //  ("\uf49e") represents the "oct-check_circle" glyph.
+	CheckCircleFill       nf.Glyph = "" //  ("\uf4a4") represents the "oct-check_circle_fill" glyph.
+	Checkbox              nf.Glyph = "" //  ("\uf4a7") represents the "oct-checkbox" glyph.
+	Checklist             nf.Glyph = "" //  ("\uf45e") represents the "oct-checklist" glyph.
+	ChevronDown           nf.Glyph = "" //  ("\uf47c") represents the "oct-chevron_down" glyph.
+	ChevronLeft           nf.Glyph = "" //  ("\uf47d") represents the "oct-chevron_left" glyph.
+	ChevronRight          nf.Glyph = "" //  ("\uf460") represents the "oct-chevron_right" glyph.
+	ChevronUp             nf.Glyph = "" //  ("\uf47b") represents the "oct-chevron_up" glyph.
+	Circle                nf.Glyph = "" //  ("\uf4aa") represents the "oct-circle" glyph.
+	CircleSlash           nf.Glyph = "" //  ("\uf468") represents the "oct-circle_slash" glyph.
+	Clock                 nf.Glyph = "" //  ("\uf43a") represents the "oct-clock" glyph.
+	ClockFill             nf.Glyph = "" //  ("\uf4ab") represents the "oct-clock_fill" glyph.
+	Cloud                 nf.Glyph = "" //  ("\uf4ac") represents the "oct-cloud" glyph.
+	CloudOffline          nf.Glyph = "" //  ("\uf4ad") represents the "oct-cloud_offline" glyph.
+	Code                  nf.Glyph = "" //  ("\uf44f") represents the "oct-code" glyph.
+	CodeOfConduct         nf.Glyph = "" //  ("\uf4ae") represents the "oct-code_of_conduct" glyph.
+	CodeReview            nf.Glyph = "" //  ("\uf4af") represents the "oct-code_review" glyph.
+	CodeSquare            nf.Glyph = "" //  ("\uf4b0") represents the "oct-code_square" glyph.
+	Codescan              nf.Glyph = "" //  ("\uf4b1") represents the "oct-codescan" glyph.
+	CodescanCheckmark     nf.Glyph = "" //  ("\uf4b2") represents the "oct-codescan_checkmark" glyph.
+	Codespaces            nf.Glyph = "" //  ("\uf4b3") represents the "oct-codespaces" glyph.
+	Columns               nf.Glyph = "" //  ("\uf4b4") represents the "oct-columns" glyph.
+	CommandPalette        nf.Glyph = "" //  ("\uf4b5") represents the "oct-command_palette" glyph.
+	Comment               nf.Glyph = "" //  ("\uf41f") represents the "oct-comment" glyph.
+	CommentDiscussion     nf.Glyph = "" //  ("\uf442") represents the "oct-comment_discussion" glyph.
+	Commit                nf.Glyph = "" //  ("\uf4b6") represents the "oct-commit" glyph.
+	Container             nf.Glyph = "" //  ("\uf4b7") represents the "oct-container" glyph.
+	Copilot               nf.Glyph = "" //  ("\uf4b8") represents the "oct-copilot" glyph.
+	CopilotError          nf.Glyph = "" //  ("\uf4b9") represents the "oct-copilot_error" glyph.
+	CopilotWarning        nf.Glyph = "" //  ("\uf4ba") represents the "oct-copilot_warning" glyph.
+	Copy                  nf.Glyph = "" //  ("\uf4bb") represents the "oct-copy" glyph.
+	Cpu                   nf.Glyph = "" //  ("\uf4bc") represents the "oct-cpu" glyph.
+	CreditCard            nf.Glyph = "" //  ("\uf439") represents the "oct-credit_card" glyph.
+	CrossReference        nf.Glyph = "" //  ("\uf4bd") represents the "oct-cross_reference" glyph.
+	Dash                  nf.Glyph = "" //  ("\uf48b") represents the "oct-dash" glyph.
+	Database              nf.Glyph = "" //  ("\uf472") represents the "oct-database" glyph.
+	Dependabot            nf.Glyph = "" //  ("\uf4be") represents the "oct-dependabot" glyph.
+	DesktopDownload       nf.Glyph = "" //  ("\uf498") represents the "oct-desktop_download" glyph.
+	DeviceCamera          nf.Glyph = "" //  ("\uf446") represents the "oct-device_camera" glyph.
+	DeviceCameraVideo     nf.Glyph = "" //  ("\uf447") represents the "oct-device_camera_video" glyph.
+	DeviceDesktop         nf.Glyph = "" //  ("\uf4a9") represents the "oct-device_desktop" glyph.
+	DeviceMobile          nf.Glyph = "" //  ("\uf42c") represents the "oct-device_mobile" glyph.
+	Diamond               nf.Glyph = "" //  ("\uf4bf") represents the "oct-diamond" glyph.
+	Diff                  nf.Glyph = "" //  ("\uf440") represents the "oct-diff" glyph.
+	DiffAdded             nf.Glyph = "" //  ("\uf457") represents the "oct-diff_added" glyph.
+	DiffIgnored           nf.Glyph = "" //  ("\uf474") represents the "oct-diff_ignored" glyph.
+	DiffModified          nf.Glyph = "" //  ("\uf459") represents the "oct-diff_modified" glyph.
+	DiffRemoved           nf.Glyph = "" //  ("\uf458") represents the "oct-diff_removed" glyph.
+	DiffRenamed           nf.Glyph = "" //  ("\uf45a") represents the "oct-diff_renamed" glyph.
+	DiscussionClosed      nf.Glyph = "" //  ("\uf4c0") represents the "oct-discussion_closed" glyph.
+	DiscussionDuplicate   nf.Glyph = "" //  ("\uf4c1") represents the "oct-discussion_duplicate" glyph.
+	DiscussionOutdated    nf.Glyph = "" //  ("\uf4c2") represents the "oct-discussion_outdated" glyph.
+	Dot                   nf.Glyph = "" //  ("\uf4c3") represents the "oct-dot" glyph.
+	DotFill               nf.Glyph = "" //  ("\uf444") represents the "oct-dot_fill" glyph.
+	Download              nf.Glyph = "" //  ("\uf409") represents the "oct-download" glyph.
+	Duplicate             nf.Glyph = "" //  ("\uf4c4") represents the "oct-duplicate" glyph.
+	Ellipsis              nf.Glyph = "" //  ("\uf475") represents the "oct-ellipsis" glyph.
+	Eye                   nf.Glyph = "" //  ("\uf441") represents the "oct-eye" glyph.
+	EyeClosed             nf.Glyph = "" //  ("\uf4c5") represents the "oct-eye_closed" glyph.
+	FeedDiscussion        nf.Glyph = "" //  ("\uf4c6") represents the "oct-feed_discussion" glyph.
+	FeedForked            nf.Glyph = "" //  ("\uf4c7") represents the "oct-feed_forked" glyph.
+	FeedHeart             nf.Glyph = "" //  ("\uf4c8") represents the "oct-feed_heart" glyph.
+	FeedMerged            nf.Glyph = "" //  ("\uf4c9") represents the "oct-feed_merged" glyph.
+	FeedPerson            nf.Glyph = "" //  ("\uf4ca") represents the "oct-feed_person" glyph.
+	FeedRepo              nf.Glyph = "" //  ("\uf4cb") represents the "oct-feed_repo" glyph.
+	FeedRocket            nf.Glyph = "" //  ("\uf4cc") represents the "oct-feed_rocket" glyph.
+	FeedStar              nf.Glyph = "" //  ("\uf4cd") represents the "oct-feed_star" glyph.
+	FeedTag               nf.Glyph = "" //  ("\uf4ce") represents the "oct-feed_tag" glyph.
+	FeedTrophy            nf.Glyph = "" //  ("\uf4cf") represents the "oct-feed_trophy" glyph.
+	File                  nf.Glyph = "" //  ("\uf4a5") represents the "oct-file" glyph.
+	FileAdded             nf.Glyph = "" //  ("\uf4d0") represents the "oct-file_added" glyph.
+	FileBadge             nf.Glyph = "" //  ("\uf4d1") represents the "oct-file_badge" glyph.
+	FileBinary            nf.Glyph = "" //  ("\uf471") represents the "oct-file_binary" glyph.
+	FileCode              nf.Glyph = "" //  ("\uf40d") represents the "oct-file_code" glyph.
+	FileDiff              nf.Glyph = "" //  ("\uf4d2") represents the "oct-file_diff" glyph.
+	FileDirectory         nf.Glyph = "" //  ("\uf413") represents the "oct-file_directory" glyph.
+	FileDirectoryFill     nf.Glyph = "" //  ("\uf4d3") represents the "oct-file_directory_fill" glyph.
+	FileDirectoryOpenFill nf.Glyph = "" //  ("\uf4d4") represents the "oct-file_directory_open_fill" glyph.
+	FileMedia             nf.Glyph = "" //  ("\uf40f") represents the "oct-file_media" glyph.
+	FileMoved             nf.Glyph = "" //  ("\uf4d5") represents the "oct-file_moved" glyph.
+	FileRemoved           nf.Glyph = "" //  ("\uf4d6") represents the "oct-file_removed" glyph.
+	FileSubmodule         nf.Glyph = "" //  ("\uf414") represents the "oct-file_submodule" glyph.
+	FileSymlinkDirectory  nf.Glyph = "" //  ("\uf482") represents the "oct-file_symlink_directory" glyph.
+	FileSymlinkFile       nf.Glyph = "" //  ("\uf481") represents the "oct-file_symlink_file" glyph.
+	FileZip               nf.Glyph = "" //  ("\uf410") represents the "oct-file_zip" glyph.
+	Filter                nf.Glyph = "" //  ("\uf4d7") represents the "oct-filter" glyph.
+	FiscalHost            nf.Glyph = "" //  ("\uf4d8") represents the "oct-fiscal_host" glyph.
+	Flame                 nf.Glyph = "" //  ("\uf490") represents the "oct-flame" glyph.
+	Fold                  nf.Glyph = "" //  ("\uf48c") represents the "oct-fold" glyph.
+	FoldDown              nf.Glyph = "" //  ("\uf4d9") represents the "oct-fold_down" glyph.
+	FoldUp                nf.Glyph = "" //  ("\uf4da") represents the "oct-fold_up" glyph.
+	Gear                  nf.Glyph = "" //  ("\uf423") represents the "oct-gear" glyph.
+	Gift                  nf.Glyph = "" //  ("\uf436") represents the "oct-gift" glyph.
+	GitBranch             nf.Glyph = "" //  ("\uf418") represents the "oct-git_branch" glyph.
+	GitCommit             nf.Glyph = "" //  ("\uf417") represents the "oct-git_commit" glyph.
+	GitCompare            nf.Glyph = "" //  ("\uf47f") represents the "oct-git_compare" glyph.
+	GitMerge              nf.Glyph = "" //  ("\uf419") represents the "oct-git_merge" glyph.
+	GitMergeQueue         nf.Glyph = "" //  ("\uf4db") represents the "oct-git_merge_queue" glyph.
+	GitPullRequest        nf.Glyph = "" //  ("\uf407") represents the "oct-git_pull_request" glyph.
+	GitPullRequestClosed  nf.Glyph = "" //  ("\uf4dc") represents the "oct-git_pull_request_closed" glyph.
+	GitPullRequestDraft   nf.Glyph = "" //  ("\uf4dd") represents the "oct-git_pull_request_draft" glyph.
+	Globe                 nf.Glyph = "" //  ("\uf484") represents the "oct-globe" glyph.
+	Goal                  nf.Glyph = "" //  ("\uf4de") represents the "oct-goal" glyph.
+	Grabber               nf.Glyph = "" //  ("\uf4a6") represents the "oct-grabber" glyph.
+	Graph                 nf.Glyph = "" //  ("\uf437") represents the "oct-graph" glyph.
+	Hash                  nf.Glyph = "" //  ("\uf4df") represents the "oct-hash" glyph.
+	Heading               nf.Glyph = "" //  ("\uf4e0") represents the "oct-heading" glyph.
+	Heart                 nf.Glyph = "♥" // ♥ ("♥") represents the "oct-heart" glyph.
+	HeartFill             nf.Glyph = "" //  ("\uf4e1") represents the "oct-heart_fill" glyph.
+	History               nf.Glyph = "" //  ("\uf464") represents the "oct-history" glyph.
+	Home                  nf.Glyph = "" //  ("\uf46d") represents the "oct-home" glyph.
+	HomeFill              nf.Glyph = "" //  ("\uf4e2") represents the "oct-home_fill" glyph.
+	HorizontalRule        nf.Glyph = "" //  ("\uf45b") represents the "oct-horizontal_rule" glyph.
+	Hourglass             nf.Glyph = "" //  ("\uf4e3") represents the "oct-hourglass" glyph.
+	Hubot                 nf.Glyph = "" //  ("\uf477") represents the "oct-hubot" glyph.
+	IdBadge               nf.Glyph = "" //  ("\uf4e4") represents the "oct-id_badge" glyph.
+	Image                 nf.Glyph = "" //  ("\uf4e5") represents the "oct-image" glyph.
+	Inbox                 nf.Glyph = "" //  ("\uf48d") represents the "oct-inbox" glyph.
+	Infinity              nf.Glyph = "" //  ("\uf4e6") represents the "oct-infinity" glyph.
+	Info                  nf.Glyph = "" //  ("\uf449") represents the "oct-info" glyph.
+	IssueClosed           nf.Glyph = "" //  ("\uf41d") represents the "oct-issue_closed" glyph.
+	IssueDraft            nf.Glyph = "" //  ("\uf4e7") represents the "oct-issue_draft" glyph.
+	IssueOpened           nf.Glyph = "" //  ("\uf41b") represents the "oct-issue_opened" glyph.
+	IssueReopened         nf.Glyph = "" //  ("\uf41c") represents the "oct-issue_reopened" glyph.
+	IssueTrackedBy        nf.Glyph = "" //  ("\uf4e8") represents the "oct-issue_tracked_by" glyph.
+	IssueTracks           nf.Glyph = "" //  ("\uf4e9") represents the "oct-issue_tracks" glyph.
+	Italic                nf.Glyph = "" //  ("\uf49f") represents the "oct-italic" glyph.
+	Iterations            nf.Glyph = "" //  ("\uf4ea") represents the "oct-iterations" glyph.
+	KebabHorizontal       nf.Glyph = "" //  ("\uf4eb") represents the "oct-kebab_horizontal" glyph.
+	Key                   nf.Glyph = "" //  ("\uf43d") represents the "oct-key" glyph.
+	KeyAsterisk           nf.Glyph = "" //  ("\uf4ec") represents the "oct-key_asterisk" glyph.
+	Law                   nf.Glyph = "" //  ("\uf495") represents the "oct-law" glyph.
+	LightBulb             nf.Glyph = "" //  ("\uf400") represents the "oct-light_bulb" glyph.
+	Link                  nf.Glyph = "" //  ("\uf44c") represents the "oct-link" glyph.
+	LinkExternal          nf.Glyph = "" //  ("\uf465") represents the "oct-link_external" glyph.
+	ListOrdered           nf.Glyph = "" //  ("\uf452") represents the "oct-list_ordered" glyph.
+	ListUnordered         nf.Glyph = "" //  ("\uf451") represents the "oct-list_unordered" glyph.
+	Location              nf.Glyph = "" //  ("\uf450") represents the "oct-location" glyph.
+	Lock                  nf.Glyph = "" //  ("\uf456") represents the "oct-lock" glyph.
+	Log                   nf.Glyph = "" //  ("\uf4ed") represents the "oct-log" glyph.
+	LogoGist              nf.Glyph = "" //  ("\uf480") represents the "oct-logo_gist" glyph.
+	LogoGithub            nf.Glyph = "" //  ("\uf470") represents the "oct-logo_github" glyph.
+	Mail                  nf.Glyph = "" //  ("\uf42f") represents the "oct-mail" glyph.
+	MarkGithub            nf.Glyph = "" //  ("\uf408") represents the "oct-mark_github" glyph.
+	Markdown              nf.Glyph = "" //  ("\uf48a") represents the "oct-markdown" glyph.
+	Megaphone             nf.Glyph = "" //  ("\uf45f") represents the "oct-megaphone" glyph.
+	Mention               nf.Glyph = "" //  ("\uf486") represents the "oct-mention" glyph.
+	Meter                 nf.Glyph = "" //  ("\uf463") represents the "oct-meter" glyph.
+	Milestone             nf.Glyph = "" //  ("\uf45d") represents the "oct-milestone" glyph.
+	Mirror                nf.Glyph = "" //  ("\uf41a") represents the "oct-mirror" glyph.
+	Moon                  nf.Glyph = "" //  ("\uf4ee") represents the "oct-moon" glyph.
+	MortarBoard           nf.Glyph = "" //  ("\uf494") represents the "oct-mortar_board" glyph.
+	MoveToBottom          nf.Glyph = "" //  ("\uf4ef") represents the "oct-move_to_bottom" glyph.
+	MoveToEnd             nf.Glyph = "" //  ("\uf4f0") represents the "oct-move_to_end" glyph.
+	MoveToStart           nf.Glyph = "" //  ("\uf4f1") represents the "oct-move_to_start" glyph.
+	MoveToTop             nf.Glyph = "" //  ("\uf4f2") represents the "oct-move_to_top" glyph.
+	MultiSelect           nf.Glyph = "" //  ("\uf4f3") represents the "oct-multi_select" glyph.
+	Mute                  nf.Glyph = "" //  ("\uf466") represents the "oct-mute" glyph.
+	NoEntry               nf.Glyph = "" //  ("\uf4f4") represents the "oct-no_entry" glyph.
+	NorthStar             nf.Glyph = "" //  ("\uf4f5") represents the "oct-north_star" glyph.
+	Note                  nf.Glyph = "" //  ("\uf4f6") represents the "oct-note" glyph.
+	Number                nf.Glyph = "" //  ("\uf4f7") represents the "oct-number" glyph.
+	Organization          nf.Glyph = "" //  ("\uf42b") represents the "oct-organization" glyph.
+	Package               nf.Glyph = "" //  ("\uf487") represents the "oct-package" glyph.
+	PackageDependencies   nf.Glyph = "" //  ("\uf4f8") represents the "oct-package_dependencies" glyph.
+	PackageDependents     nf.Glyph = "" //  ("\uf4f9") represents the "oct-package_dependents" glyph.
+	Paintbrush            nf.Glyph = "" //  ("\uf48f") represents the "oct-paintbrush" glyph.
+	PaperAirplane         nf.Glyph = "" //  ("\uf4fa") represents the "oct-paper_airplane" glyph.
+	Paperclip             nf.Glyph = "" //  ("\uf4fb") represents the "oct-paperclip" glyph.
+	PasskeyFill           nf.Glyph = "" //  ("\uf4fc") represents the "oct-passkey_fill" glyph.
+	Paste                 nf.Glyph = "" //  ("\uf429") represents the "oct-paste" glyph.
+	Pencil                nf.Glyph = "" //  ("\uf448") represents the "oct-pencil" glyph.
+	People                nf.Glyph = "" //  ("\uf4fd") represents the "oct-people" glyph.
+	Person                nf.Glyph = "" //  ("\uf415") represents the "oct-person" glyph.
+	PersonAdd             nf.Glyph = "" //  ("\uf4fe") represents the "oct-person_add" glyph.
+	PersonFill            nf.Glyph = "" //  ("\uf4ff") represents the "oct-person_fill" glyph.
+	Pin                   nf.Glyph = "" //  ("\uf435") represents the "oct-pin" glyph.
+	Play                  nf.Glyph = "" //  ("\uf500") represents the "oct-play" glyph.
+	Plug                  nf.Glyph = "" //  ("\uf492") represents the "oct-plug" glyph.
+	Plus                  nf.Glyph = "" //  ("\uf44d") represents the "oct-plus" glyph.
+	PlusCircle            nf.Glyph = "" //  ("\uf501") represents the "oct-plus_circle" glyph.
+	Project               nf.Glyph = "" //  ("\uf502") represents the "oct-project" glyph.
+	ProjectRoadmap        nf.Glyph = "" //  ("\uf503") represents the "oct-project_roadmap" glyph.
+	ProjectSymlink        nf.Glyph = "" //  ("\uf504") represents the "oct-project_symlink" glyph.
+	ProjectTemplate       nf.Glyph = "" //  ("\uf505") represents the "oct-project_template" glyph.
+	Pulse                 nf.Glyph = "" //  ("\uf469") represents the "oct-pulse" glyph.
+	Question              nf.Glyph = "" //  ("\uf420") represents the "oct-question" glyph.
+	Quote                 nf.Glyph = "" //  ("\uf453") represents the "oct-quote" glyph.
+	Read                  nf.Glyph = "" //  ("\uf430") represents the "oct-read" glyph.
+	RelFilePath           nf.Glyph = "" //  ("\uf506") represents the "oct-rel_file_path" glyph.
+	Reply                 nf.Glyph = "" //  ("\uf4a8") represents the "oct-reply" glyph.
+	Repo                  nf.Glyph = "" //  ("\uf401") represents the "oct-repo" glyph.
+	RepoClone             nf.Glyph = "" //  ("\uf43f") represents the "oct-repo_clone" glyph.
+	RepoDeleted           nf.Glyph = "" //  ("\uf507") represents the "oct-repo_deleted" glyph.
+	RepoForked            nf.Glyph = "" //  ("\uf402") represents the "oct-repo_forked" glyph.
+	RepoLocked            nf.Glyph = "" //  ("\uf508") represents the "oct-repo_locked" glyph.
+	RepoPull              nf.Glyph = "" //  ("\uf404") represents the "oct-repo_pull" glyph.
+	RepoPush              nf.Glyph = "" //  ("\uf403") represents the "oct-repo_push" glyph.
+	RepoTemplate          nf.Glyph = "" //  ("\uf509") represents the "oct-repo_template" glyph.
+	Report                nf.Glyph = "" //  ("\uf50a") represents the "oct-report" glyph.
+	Rocket                nf.Glyph = "" //  ("\uf427") represents the "oct-rocket" glyph.
+	Rows                  nf.Glyph = "" //  ("\uf50b") represents the "oct-rows" glyph.
+	Rss                   nf.Glyph = "" //  ("\uf428") represents the "oct-rss" glyph.
+	Ruby                  nf.Glyph = "" //  ("\uf43b") represents the "oct-ruby" glyph.
+	ScreenFull            nf.Glyph = "" //  ("\uf50c") represents the "oct-screen_full" glyph.
+	ScreenNormal          nf.Glyph = "" //  ("\uf50d") represents the "oct-screen_normal" glyph.
+	Search                nf.Glyph = "" //  ("\uf422") represents the "oct-search" glyph.
+	Server                nf.Glyph = "" //  ("\uf473") represents the "oct-server" glyph.
+	Share                 nf.Glyph = "" //  ("\uf50e") represents the "oct-share" glyph.
+	ShareAndroid          nf.Glyph = "" //  ("\uf50f") represents the "oct-share_android" glyph.
+	Shield                nf.Glyph = "" //  ("\uf49c") represents the "oct-shield" glyph.
+	ShieldCheck           nf.Glyph = "" //  ("\uf510") represents the "oct-shield_check" glyph.
+	ShieldLock            nf.Glyph = "" //  ("\uf511") represents the "oct-shield_lock" glyph.
+	ShieldSlash           nf.Glyph = "" //  ("\uf512") represents the "oct-shield_slash" glyph.
+	ShieldX               nf.Glyph = "" //  ("\uf513") represents the "oct-shield_x" glyph.
+	SidebarCollapse       nf.Glyph = "" //  ("\uf514") represents the "oct-sidebar_collapse" glyph.
+	SidebarExpand         nf.Glyph = "" //  ("\uf515") represents the "oct-sidebar_expand" glyph.
+	SignIn                nf.Glyph = "" //  ("\uf42a") represents the "oct-sign_in" glyph.
+	SignOut               nf.Glyph = "" //  ("\uf426") represents the "oct-sign_out" glyph.
+	SingleSelect          nf.Glyph = "" //  ("\uf516") represents the "oct-single_select" glyph.
+	Skip                  nf.Glyph = "" //  ("\uf517") represents the "oct-skip" glyph.
+	SkipFill              nf.Glyph = "" //  ("\uf518") represents the "oct-skip_fill" glyph.
+	Sliders               nf.Glyph = "" //  ("\uf462") represents the "oct-sliders" glyph.
+	Smiley                nf.Glyph = "" //  ("\uf4a2") represents the "oct-smiley" glyph.
+	SortAsc               nf.Glyph = "" //  ("\uf519") represents the "oct-sort_asc" glyph.
+	SortDesc              nf.Glyph = "" //  ("\uf51a") represents the "oct-sort_desc" glyph.
+	SparkleFill           nf.Glyph = "" //  ("\uf51b") represents the "oct-sparkle_fill" glyph.
+	SponsorTiers          nf.Glyph = "" //  ("\uf51c") represents the "oct-sponsor_tiers" glyph.
+	Square                nf.Glyph = "" //  ("\uf51d") represents the "oct-square" glyph.
+	SquareFill            nf.Glyph = "" //  ("\uf445") represents the "oct-square_fill" glyph.
+	Squirrel              nf.Glyph = "" //  ("\uf483") represents the "oct-squirrel" glyph.
+	Stack                 nf.Glyph = "" //  ("\uf51e") represents the "oct-stack" glyph.
+	Star                  nf.Glyph = "" //  ("\uf41e") represents the "oct-star" glyph.
+	StarFill              nf.Glyph = "" //  ("\uf51f") represents the "oct-star_fill" glyph.
+	Stop                  nf.Glyph = "" //  ("\uf46e") represents the "oct-stop" glyph.
+	Stopwatch             nf.Glyph = "" //  ("\uf520") represents the "oct-stopwatch" glyph.
+	Strikethrough         nf.Glyph = "" //  ("\uf521") represents the "oct-strikethrough" glyph.
+	Sun                   nf.Glyph = "" //  ("\uf522") represents the "oct-sun" glyph.
+	Sync                  nf.Glyph = "" //  ("\uf46a") represents the "oct-sync" glyph.
+	Tab                   nf.Glyph = "" //  ("\uf523") represents the "oct-tab" glyph.
+	TabExternal           nf.Glyph = "" //  ("\uf524") represents the "oct-tab_external" glyph.
+	Table                 nf.Glyph = "" //  ("\uf525") represents the "oct-table" glyph.
+	Tag                   nf.Glyph = "" //  ("\uf412") represents the "oct-tag" glyph.
+	Tasklist              nf.Glyph = "" //  ("\uf4a0") represents the "oct-tasklist" glyph.
+	Telescope             nf.Glyph = "" //  ("\uf46b") represents the "oct-telescope" glyph.
+	TelescopeFill         nf.Glyph = "" //  ("\uf526") represents the "oct-telescope_fill" glyph.
+	Terminal              nf.Glyph = "" //  ("\uf489") represents the "oct-terminal" glyph.
+	ThreeBars             nf.Glyph = "" //  ("\uf44e") represents the "oct-three_bars" glyph.
+	Thumbsdown            nf.Glyph = "" //  ("\uf497") represents the "oct-thumbsdown" glyph.
+	Thumbsup              nf.Glyph = "" //  ("\uf496") represents the "oct-thumbsup" glyph.
+	Tools                 nf.Glyph = "" //  ("\uf425") represents the "oct-tools" glyph.
+	Trash                 nf.Glyph = "" //  ("\uf48e") represents the "oct-trash" glyph.
+	TriangleDown          nf.Glyph = "" //  ("\uf44b") represents the "oct-triangle_down" glyph.
+	TriangleLeft          nf.Glyph = "" //  ("\uf438") represents the "oct-triangle_left" glyph.
+	TriangleRight         nf.Glyph = "" //  ("\uf44a") represents the "oct-triangle_right" glyph.
+	TriangleUp            nf.Glyph = "" //  ("\uf47e") represents the "oct-triangle_up" glyph.
+	Trophy                nf.Glyph = "" //  ("\uf527") represents the "oct-trophy" glyph.
+	Typography            nf.Glyph = "" //  ("\uf528") represents the "oct-typography" glyph.
+	Unfold                nf.Glyph = "" //  ("\uf42d") represents the "oct-unfold" glyph.
+	Unlink                nf.Glyph = "" //  ("\uf529") represents the "oct-unlink" glyph.
+	Unlock                nf.Glyph = "" //  ("\uf52a") represents the "oct-unlock" glyph.
+	Unmute                nf.Glyph = "" //  ("\uf485") represents the "oct-unmute" glyph.
+	Unread                nf.Glyph = "" //  ("\uf52b") represents the "oct-unread" glyph.
+	Unverified            nf.Glyph = "" //  ("\uf4a3") represents the "oct-unverified" glyph.
+	Upload                nf.Glyph = "" //  ("\uf40a") represents the "oct-upload" glyph.
+	Verified              nf.Glyph = "" //  ("\uf4a1") represents the "oct-verified" glyph.
+	Versions              nf.Glyph = "" //  ("\uf454") represents the "oct-versions" glyph.
+	Video                 nf.Glyph = "" //  ("\uf52c") represents the "oct-video" glyph.
+	Webhook               nf.Glyph = "" //  ("\uf52d") represents the "oct-webhook" glyph.
+	Workflow              nf.Glyph = "" //  ("\uf52e") represents the "oct-workflow" glyph.
+	X                     nf.Glyph = "" //  ("\uf467") represents the "oct-x" glyph.
+	XCircle               nf.Glyph = "" //  ("\uf52f") represents the "oct-x_circle" glyph.
+	XCircleFill           nf.Glyph = "" //  ("\uf530") represents the "oct-x_circle_fill" glyph.
+	Zap                   nf.Glyph = "⚡" // ⚡ ("⚡") represents the "oct-zap" glyph.
+	ZoomIn                nf.Glyph = "" //  ("\uf531") represents the "oct-zoom_in" glyph.
+	ZoomOut               nf.Glyph = "" //  ("\uf532") represents the "oct-zoom_out" glyph.
+)

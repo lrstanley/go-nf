@@ -21,49 +21,17 @@ package iec
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "iec"
+	// Class is the name of the class.
+	Class nf.Class = "iec"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Power (⏻) represents the "iec-power" glyph.
-var Power = &nf.Glyph{
-	ID:      "power",
-	Class:   ClassName,
-	Char:    "⏻",
-	Unicode: "⏻",
-}
-
-// PowerOff (⭘) represents the "iec-power_off" glyph.
-var PowerOff = &nf.Glyph{
-	ID:      "power_off",
-	Class:   ClassName,
-	Char:    "⭘",
-	Unicode: "⭘",
-}
-
-// PowerOn (⏽) represents the "iec-power_on" glyph.
-var PowerOn = &nf.Glyph{
-	ID:      "power_on",
-	Class:   ClassName,
-	Char:    "⏽",
-	Unicode: "⏽",
-}
-
-// SleepMode (⏾) represents the "iec-sleep_mode" glyph.
-var SleepMode = &nf.Glyph{
-	ID:      "sleep_mode",
-	Class:   ClassName,
-	Char:    "⏾",
-	Unicode: "⏾",
-}
-
-// TogglePower (⏼) represents the "iec-toggle_power" glyph.
-var TogglePower = &nf.Glyph{
-	ID:      "toggle_power",
-	Class:   ClassName,
-	Char:    "⏼",
-	Unicode: "⏼",
-}
+const (
+	Power       nf.Glyph = "⏻" // ⏻ ("⏻") represents the "iec-power" glyph.
+	PowerOff    nf.Glyph = "⭘" // ⭘ ("⭘") represents the "iec-power_off" glyph.
+	PowerOn     nf.Glyph = "⏽" // ⏽ ("⏽") represents the "iec-power_on" glyph.
+	SleepMode   nf.Glyph = "⏾" // ⏾ ("⏾") represents the "iec-sleep_mode" glyph.
+	TogglePower nf.Glyph = "⏼" // ⏼ ("⏼") represents the "iec-toggle_power" glyph.
+)

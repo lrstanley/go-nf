@@ -21,1369 +21,182 @@ package fae
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "fae"
+	// Class is the name of the class.
+	Class nf.Class = "fae"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// AppleFruit () represents the "fae-apple_fruit" glyph.
-var AppleFruit = &nf.Glyph{
-	ID:      "apple_fruit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue29e",
-}
-
-// Atom () represents the "fae-atom" glyph.
-var Atom = &nf.Glyph{
-	ID:      "atom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue27f",
-}
-
-// Bacteria () represents the "fae-bacteria" glyph.
-var Bacteria = &nf.Glyph{
-	ID:      "bacteria",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue280",
-}
-
-// Banana () represents the "fae-banana" glyph.
-var Banana = &nf.Glyph{
-	ID:      "banana",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue281",
-}
-
-// Bath () represents the "fae-bath" glyph.
-var Bath = &nf.Glyph{
-	ID:      "bath",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue282",
-}
-
-// Bed () represents the "fae-bed" glyph.
-var Bed = &nf.Glyph{
-	ID:      "bed",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue283",
-}
-
-// Benzene () represents the "fae-benzene" glyph.
-var Benzene = &nf.Glyph{
-	ID:      "benzene",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue284",
-}
-
-// Bigger () represents the "fae-bigger" glyph.
-var Bigger = &nf.Glyph{
-	ID:      "bigger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue285",
-}
-
-// Biohazard () represents the "fae-biohazard" glyph.
-var Biohazard = &nf.Glyph{
-	ID:      "biohazard",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue286",
-}
-
-// BloggerCircle () represents the "fae-blogger_circle" glyph.
-var BloggerCircle = &nf.Glyph{
-	ID:      "blogger_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue287",
-}
-
-// BloggerSquare () represents the "fae-blogger_square" glyph.
-var BloggerSquare = &nf.Glyph{
-	ID:      "blogger_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue288",
-}
-
-// Bones () represents the "fae-bones" glyph.
-var Bones = &nf.Glyph{
-	ID:      "bones",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue289",
-}
-
-// BookOpen () represents the "fae-book_open" glyph.
-var BookOpen = &nf.Glyph{
-	ID:      "book_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue28a",
-}
-
-// BookOpenO () represents the "fae-book_open_o" glyph.
-var BookOpenO = &nf.Glyph{
-	ID:      "book_open_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue28b",
-}
-
-// Brain () represents the "fae-brain" glyph.
-var Brain = &nf.Glyph{
-	ID:      "brain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue28c",
-}
-
-// Bread () represents the "fae-bread" glyph.
-var Bread = &nf.Glyph{
-	ID:      "bread",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue28d",
-}
-
-// Butterfly () represents the "fae-butterfly" glyph.
-var Butterfly = &nf.Glyph{
-	ID:      "butterfly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue28e",
-}
-
-// Carot () represents the "fae-carot" glyph.
-var Carot = &nf.Glyph{
-	ID:      "carot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue28f",
-}
-
-// CcBy () represents the "fae-cc_by" glyph.
-var CcBy = &nf.Glyph{
-	ID:      "cc_by",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue290",
-}
-
-// CcCc () represents the "fae-cc_cc" glyph.
-var CcCc = &nf.Glyph{
-	ID:      "cc_cc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue291",
-}
-
-// CcNc () represents the "fae-cc_nc" glyph.
-var CcNc = &nf.Glyph{
-	ID:      "cc_nc",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue292",
-}
-
-// CcNcEu () represents the "fae-cc_nc_eu" glyph.
-var CcNcEu = &nf.Glyph{
-	ID:      "cc_nc_eu",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue293",
-}
-
-// CcNcJp () represents the "fae-cc_nc_jp" glyph.
-var CcNcJp = &nf.Glyph{
-	ID:      "cc_nc_jp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue294",
-}
-
-// CcNd () represents the "fae-cc_nd" glyph.
-var CcNd = &nf.Glyph{
-	ID:      "cc_nd",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue295",
-}
-
-// CcRemix () represents the "fae-cc_remix" glyph.
-var CcRemix = &nf.Glyph{
-	ID:      "cc_remix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue296",
-}
-
-// CcSa () represents the "fae-cc_sa" glyph.
-var CcSa = &nf.Glyph{
-	ID:      "cc_sa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue297",
-}
-
-// CcShare () represents the "fae-cc_share" glyph.
-var CcShare = &nf.Glyph{
-	ID:      "cc_share",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue298",
-}
-
-// CcZero () represents the "fae-cc_zero" glyph.
-var CcZero = &nf.Glyph{
-	ID:      "cc_zero",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue299",
-}
-
-// ChecklistO () represents the "fae-checklist_o" glyph.
-var ChecklistO = &nf.Glyph{
-	ID:      "checklist_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue29a",
-}
-
-// Cheese () represents the "fae-cheese" glyph.
-var Cheese = &nf.Glyph{
-	ID:      "cheese",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue264",
-}
-
-// Cherry () represents the "fae-cherry" glyph.
-var Cherry = &nf.Glyph{
-	ID:      "cherry",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue29b",
-}
-
-// ChessBishop () represents the "fae-chess_bishop" glyph.
-var ChessBishop = &nf.Glyph{
-	ID:      "chess_bishop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue29c",
-}
-
-// ChessHorse () represents the "fae-chess_horse" glyph.
-var ChessHorse = &nf.Glyph{
-	ID:      "chess_horse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue25f",
-}
-
-// ChessKing () represents the "fae-chess_king" glyph.
-var ChessKing = &nf.Glyph{
-	ID:      "chess_king",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue260",
-}
-
-// ChessPawn () represents the "fae-chess_pawn" glyph.
-var ChessPawn = &nf.Glyph{
-	ID:      "chess_pawn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue261",
-}
-
-// ChessQueen () represents the "fae-chess_queen" glyph.
-var ChessQueen = &nf.Glyph{
-	ID:      "chess_queen",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue262",
-}
-
-// ChessTower () represents the "fae-chess_tower" glyph.
-var ChessTower = &nf.Glyph{
-	ID:      "chess_tower",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue263",
-}
-
-// ChickenThigh () represents the "fae-chicken_thigh" glyph.
-var ChickenThigh = &nf.Glyph{
-	ID:      "chicken_thigh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue29f",
-}
-
-// Chilli () represents the "fae-chilli" glyph.
-var Chilli = &nf.Glyph{
-	ID:      "chilli",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue265",
-}
-
-// Chip () represents the "fae-chip" glyph.
-var Chip = &nf.Glyph{
-	ID:      "chip",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue266",
-}
-
-// Cicling () represents the "fae-cicling" glyph.
-var Cicling = &nf.Glyph{
-	ID:      "cicling",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue267",
-}
-
-// Cloud () represents the "fae-cloud" glyph.
-var Cloud = &nf.Glyph{
-	ID:      "cloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue268",
-}
-
-// Cockroach () represents the "fae-cockroach" glyph.
-var Cockroach = &nf.Glyph{
-	ID:      "cockroach",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue269",
-}
-
-// CoffeBeans () represents the "fae-coffe_beans" glyph.
-var CoffeBeans = &nf.Glyph{
-	ID:      "coffe_beans",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue26a",
-}
-
-// Coins () represents the "fae-coins" glyph.
-var Coins = &nf.Glyph{
-	ID:      "coins",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue26b",
-}
-
-// Comb () represents the "fae-comb" glyph.
-var Comb = &nf.Glyph{
-	ID:      "comb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue26c",
-}
-
-// Comet () represents the "fae-comet" glyph.
-var Comet = &nf.Glyph{
-	ID:      "comet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue26d",
-}
-
-// Crown () represents the "fae-crown" glyph.
-var Crown = &nf.Glyph{
-	ID:      "crown",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue26e",
-}
-
-// CupCoffe () represents the "fae-cup_coffe" glyph.
-var CupCoffe = &nf.Glyph{
-	ID:      "cup_coffe",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue26f",
-}
-
-// Dice () represents the "fae-dice" glyph.
-var Dice = &nf.Glyph{
-	ID:      "dice",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue270",
-}
-
-// Disco () represents the "fae-disco" glyph.
-var Disco = &nf.Glyph{
-	ID:      "disco",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue271",
-}
-
-// Dna () represents the "fae-dna" glyph.
-var Dna = &nf.Glyph{
-	ID:      "dna",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue272",
-}
-
-// Donut () represents the "fae-donut" glyph.
-var Donut = &nf.Glyph{
-	ID:      "donut",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue273",
-}
-
-// Dress () represents the "fae-dress" glyph.
-var Dress = &nf.Glyph{
-	ID:      "dress",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue274",
-}
-
-// Drop () represents the "fae-drop" glyph.
-var Drop = &nf.Glyph{
-	ID:      "drop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue275",
-}
-
-// Ello () represents the "fae-ello" glyph.
-var Ello = &nf.Glyph{
-	ID:      "ello",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue276",
-}
-
-// EnvelopeOpen () represents the "fae-envelope_open" glyph.
-var EnvelopeOpen = &nf.Glyph{
-	ID:      "envelope_open",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue277",
-}
-
-// EnvelopeOpenO () represents the "fae-envelope_open_o" glyph.
-var EnvelopeOpenO = &nf.Glyph{
-	ID:      "envelope_open_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue278",
-}
-
-// Equal () represents the "fae-equal" glyph.
-var Equal = &nf.Glyph{
-	ID:      "equal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue279",
-}
-
-// EqualBigger () represents the "fae-equal_bigger" glyph.
-var EqualBigger = &nf.Glyph{
-	ID:      "equal_bigger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue27a",
-}
-
-// Feedly () represents the "fae-feedly" glyph.
-var Feedly = &nf.Glyph{
-	ID:      "feedly",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue27b",
-}
-
-// FileExport () represents the "fae-file_export" glyph.
-var FileExport = &nf.Glyph{
-	ID:      "file_export",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue27c",
-}
-
-// FileImport () represents the "fae-file_import" glyph.
-var FileImport = &nf.Glyph{
-	ID:      "file_import",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue27d",
-}
-
-// Fingerprint () represents the "fae-fingerprint" glyph.
-var Fingerprint = &nf.Glyph{
-	ID:      "fingerprint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue23f",
-}
-
-// Floppy () represents the "fae-floppy" glyph.
-var Floppy = &nf.Glyph{
-	ID:      "floppy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue240",
-}
-
-// Footprint () represents the "fae-footprint" glyph.
-var Footprint = &nf.Glyph{
-	ID:      "footprint",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue241",
-}
-
-// Freecodecamp () represents the "fae-freecodecamp" glyph.
-var Freecodecamp = &nf.Glyph{
-	ID:      "freecodecamp",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue242",
-}
-
-// Galaxy () represents the "fae-galaxy" glyph.
-var Galaxy = &nf.Glyph{
-	ID:      "galaxy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue243",
-}
-
-// Galery () represents the "fae-galery" glyph.
-var Galery = &nf.Glyph{
-	ID:      "galery",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue244",
-}
-
-// GiftCard () represents the "fae-gift_card" glyph.
-var GiftCard = &nf.Glyph{
-	ID:      "gift_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a0",
-}
-
-// Glass () represents the "fae-glass" glyph.
-var Glass = &nf.Glyph{
-	ID:      "glass",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue245",
-}
-
-// GoogleDrive () represents the "fae-google_drive" glyph.
-var GoogleDrive = &nf.Glyph{
-	ID:      "google_drive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue246",
-}
-
-// GooglePlay () represents the "fae-google_play" glyph.
-var GooglePlay = &nf.Glyph{
-	ID:      "google_play",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue247",
-}
-
-// Gps () represents the "fae-gps" glyph.
-var Gps = &nf.Glyph{
-	ID:      "gps",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue248",
-}
-
-// Grav () represents the "fae-grav" glyph.
-var Grav = &nf.Glyph{
-	ID:      "grav",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue249",
-}
-
-// Guitar () represents the "fae-guitar" glyph.
-var Guitar = &nf.Glyph{
-	ID:      "guitar",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue24a",
-}
-
-// Gut () represents the "fae-gut" glyph.
-var Gut = &nf.Glyph{
-	ID:      "gut",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue24b",
-}
-
-// Halter () represents the "fae-halter" glyph.
-var Halter = &nf.Glyph{
-	ID:      "halter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue24c",
-}
-
-// Hamburger () represents the "fae-hamburger" glyph.
-var Hamburger = &nf.Glyph{
-	ID:      "hamburger",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue24d",
-}
-
-// Hat () represents the "fae-hat" glyph.
-var Hat = &nf.Glyph{
-	ID:      "hat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue24e",
-}
-
-// Hexagon () represents the "fae-hexagon" glyph.
-var Hexagon = &nf.Glyph{
-	ID:      "hexagon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue24f",
-}
-
-// HighHeel () represents the "fae-high_heel" glyph.
-var HighHeel = &nf.Glyph{
-	ID:      "high_heel",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue250",
-}
-
-// Hotdog () represents the "fae-hotdog" glyph.
-var Hotdog = &nf.Glyph{
-	ID:      "hotdog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue251",
-}
-
-// IceCream () represents the "fae-ice_cream" glyph.
-var IceCream = &nf.Glyph{
-	ID:      "ice_cream",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue252",
-}
-
-// IdCard () represents the "fae-id_card" glyph.
-var IdCard = &nf.Glyph{
-	ID:      "id_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue253",
-}
-
-// Imdb () represents the "fae-imdb" glyph.
-var Imdb = &nf.Glyph{
-	ID:      "imdb",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue254",
-}
-
-// Infinity () represents the "fae-infinity" glyph.
-var Infinity = &nf.Glyph{
-	ID:      "infinity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue255",
-}
-
-// Injection () represents the "fae-injection" glyph.
-var Injection = &nf.Glyph{
-	ID:      "injection",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a1",
-}
-
-// Isle () represents the "fae-isle" glyph.
-var Isle = &nf.Glyph{
-	ID:      "isle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a2",
-}
-
-// Java () represents the "fae-java" glyph.
-var Java = &nf.Glyph{
-	ID:      "java",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue256",
-}
-
-// Layers () represents the "fae-layers" glyph.
-var Layers = &nf.Glyph{
-	ID:      "layers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue257",
-}
-
-// Lips () represents the "fae-lips" glyph.
-var Lips = &nf.Glyph{
-	ID:      "lips",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue258",
-}
-
-// Lipstick () represents the "fae-lipstick" glyph.
-var Lipstick = &nf.Glyph{
-	ID:      "lipstick",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue259",
-}
-
-// Liver () represents the "fae-liver" glyph.
-var Liver = &nf.Glyph{
-	ID:      "liver",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue25a",
-}
-
-// Lollipop () represents the "fae-lollipop" glyph.
-var Lollipop = &nf.Glyph{
-	ID:      "lollipop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a3",
-}
-
-// LoyaltyCard () represents the "fae-loyalty_card" glyph.
-var LoyaltyCard = &nf.Glyph{
-	ID:      "loyalty_card",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a4",
-}
-
-// Lung () represents the "fae-lung" glyph.
-var Lung = &nf.Glyph{
-	ID:      "lung",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue25b",
-}
-
-// MakeupBrushes () represents the "fae-makeup_brushes" glyph.
-var MakeupBrushes = &nf.Glyph{
-	ID:      "makeup_brushes",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue25c",
-}
-
-// Maximize () represents the "fae-maximize" glyph.
-var Maximize = &nf.Glyph{
-	ID:      "maximize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue25d",
-}
-
-// Meat () represents the "fae-meat" glyph.
-var Meat = &nf.Glyph{
-	ID:      "meat",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a5",
-}
-
-// Medicine () represents the "fae-medicine" glyph.
-var Medicine = &nf.Glyph{
-	ID:      "medicine",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue221",
-}
-
-// Microscope () represents the "fae-microscope" glyph.
-var Microscope = &nf.Glyph{
-	ID:      "microscope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue222",
-}
-
-// MilkBottle () represents the "fae-milk_bottle" glyph.
-var MilkBottle = &nf.Glyph{
-	ID:      "milk_bottle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue223",
-}
-
-// Minimize () represents the "fae-minimize" glyph.
-var Minimize = &nf.Glyph{
-	ID:      "minimize",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue224",
-}
-
-// Molecule () represents the "fae-molecule" glyph.
-var Molecule = &nf.Glyph{
-	ID:      "molecule",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue225",
-}
-
-// MoonCloud () represents the "fae-moon_cloud" glyph.
-var MoonCloud = &nf.Glyph{
-	ID:      "moon_cloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue226",
-}
-
-// Mountains () represents the "fae-mountains" glyph.
-var Mountains = &nf.Glyph{
-	ID:      "mountains",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a6",
-}
-
-// Mushroom () represents the "fae-mushroom" glyph.
-var Mushroom = &nf.Glyph{
-	ID:      "mushroom",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue227",
-}
-
-// Mustache () represents the "fae-mustache" glyph.
-var Mustache = &nf.Glyph{
-	ID:      "mustache",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue228",
-}
-
-// Mysql () represents the "fae-mysql" glyph.
-var Mysql = &nf.Glyph{
-	ID:      "mysql",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue229",
-}
-
-// Nintendo () represents the "fae-nintendo" glyph.
-var Nintendo = &nf.Glyph{
-	ID:      "nintendo",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue22a",
-}
-
-// Orange () represents the "fae-orange" glyph.
-var Orange = &nf.Glyph{
-	ID:      "orange",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a7",
-}
-
-// PaletteColor () represents the "fae-palette_color" glyph.
-var PaletteColor = &nf.Glyph{
-	ID:      "palette_color",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue22b",
-}
-
-// Peach () represents the "fae-peach" glyph.
-var Peach = &nf.Glyph{
-	ID:      "peach",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a8",
-}
-
-// Pear () represents the "fae-pear" glyph.
-var Pear = &nf.Glyph{
-	ID:      "pear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue2a9",
-}
-
-// Pi () represents the "fae-pi" glyph.
-var Pi = &nf.Glyph{
-	ID:      "pi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue22c",
-}
-
-// Pizza () represents the "fae-pizza" glyph.
-var Pizza = &nf.Glyph{
-	ID:      "pizza",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue22d",
-}
-
-// Planet () represents the "fae-planet" glyph.
-var Planet = &nf.Glyph{
-	ID:      "planet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue22e",
-}
-
-// Plant () represents the "fae-plant" glyph.
-var Plant = &nf.Glyph{
-	ID:      "plant",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue22f",
-}
-
-// Playstation () represents the "fae-playstation" glyph.
-var Playstation = &nf.Glyph{
-	ID:      "playstation",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue230",
-}
-
-// Poison () represents the "fae-poison" glyph.
-var Poison = &nf.Glyph{
-	ID:      "poison",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue231",
-}
-
-// Popcorn () represents the "fae-popcorn" glyph.
-var Popcorn = &nf.Glyph{
-	ID:      "popcorn",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue232",
-}
-
-// Popsicle () represents the "fae-popsicle" glyph.
-var Popsicle = &nf.Glyph{
-	ID:      "popsicle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue233",
-}
-
-// Pulse () represents the "fae-pulse" glyph.
-var Pulse = &nf.Glyph{
-	ID:      "pulse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue234",
-}
-
-// Python () represents the "fae-python" glyph.
-var Python = &nf.Glyph{
-	ID:      "python",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue235",
-}
-
-// QuoraCircle () represents the "fae-quora_circle" glyph.
-var QuoraCircle = &nf.Glyph{
-	ID:      "quora_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue236",
-}
-
-// QuoraSquare () represents the "fae-quora_square" glyph.
-var QuoraSquare = &nf.Glyph{
-	ID:      "quora_square",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue237",
-}
-
-// Radioactive () represents the "fae-radioactive" glyph.
-var Radioactive = &nf.Glyph{
-	ID:      "radioactive",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue238",
-}
-
-// Raining () represents the "fae-raining" glyph.
-var Raining = &nf.Glyph{
-	ID:      "raining",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue239",
-}
-
-// RealHeart () represents the "fae-real_heart" glyph.
-var RealHeart = &nf.Glyph{
-	ID:      "real_heart",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue23a",
-}
-
-// Refrigerator () represents the "fae-refrigerator" glyph.
-var Refrigerator = &nf.Glyph{
-	ID:      "refrigerator",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue23b",
-}
-
-// Restore () represents the "fae-restore" glyph.
-var Restore = &nf.Glyph{
-	ID:      "restore",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue23c",
-}
-
-// Ring () represents the "fae-ring" glyph.
-var Ring = &nf.Glyph{
-	ID:      "ring",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue23d",
-}
-
-// Ruby () represents the "fae-ruby" glyph.
-var Ruby = &nf.Glyph{
-	ID:      "ruby",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue23e",
-}
-
-// RubyO () represents the "fae-ruby_o" glyph.
-var RubyO = &nf.Glyph{
-	ID:      "ruby_o",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue21e",
-}
-
-// Ruler () represents the "fae-ruler" glyph.
-var Ruler = &nf.Glyph{
-	ID:      "ruler",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue21f",
-}
-
-// Shirt () represents the "fae-shirt" glyph.
-var Shirt = &nf.Glyph{
-	ID:      "shirt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue218",
-}
-
-// Slash () represents the "fae-slash" glyph.
-var Slash = &nf.Glyph{
-	ID:      "slash",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue216",
-}
-
-// Smaller () represents the "fae-smaller" glyph.
-var Smaller = &nf.Glyph{
-	ID:      "smaller",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue200",
-}
-
-// Snowing () represents the "fae-snowing" glyph.
-var Snowing = &nf.Glyph{
-	ID:      "snowing",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue201",
-}
-
-// Soda () represents the "fae-soda" glyph.
-var Soda = &nf.Glyph{
-	ID:      "soda",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue202",
-}
-
-// Sofa () represents the "fae-sofa" glyph.
-var Sofa = &nf.Glyph{
-	ID:      "sofa",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue203",
-}
-
-// Soup () represents the "fae-soup" glyph.
-var Soup = &nf.Glyph{
-	ID:      "soup",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue204",
-}
-
-// Spermatozoon () represents the "fae-spermatozoon" glyph.
-var Spermatozoon = &nf.Glyph{
-	ID:      "spermatozoon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue205",
-}
-
-// SpinDouble () represents the "fae-spin_double" glyph.
-var SpinDouble = &nf.Glyph{
-	ID:      "spin_double",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue206",
-}
-
-// Stomach () represents the "fae-stomach" glyph.
-var Stomach = &nf.Glyph{
-	ID:      "stomach",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue207",
-}
-
-// Storm () represents the "fae-storm" glyph.
-var Storm = &nf.Glyph{
-	ID:      "storm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue208",
-}
-
-// SunCloud () represents the "fae-sun_cloud" glyph.
-var SunCloud = &nf.Glyph{
-	ID:      "sun_cloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue21d",
-}
-
-// Sushi () represents the "fae-sushi" glyph.
-var Sushi = &nf.Glyph{
-	ID:      "sushi",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue21a",
-}
-
-// Tacos () represents the "fae-tacos" glyph.
-var Tacos = &nf.Glyph{
-	ID:      "tacos",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue219",
-}
-
-// Telegram () represents the "fae-telegram" glyph.
-var Telegram = &nf.Glyph{
-	ID:      "telegram",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue217",
-}
-
-// TelegramCircle () represents the "fae-telegram_circle" glyph.
-var TelegramCircle = &nf.Glyph{
-	ID:      "telegram_circle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue215",
-}
-
-// Telescope () represents the "fae-telescope" glyph.
-var Telescope = &nf.Glyph{
-	ID:      "telescope",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue209",
-}
-
-// Thermometer () represents the "fae-thermometer" glyph.
-var Thermometer = &nf.Glyph{
-	ID:      "thermometer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue20a",
-}
-
-// ThermometerHigh () represents the "fae-thermometer_high" glyph.
-var ThermometerHigh = &nf.Glyph{
-	ID:      "thermometer_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue20b",
-}
-
-// ThermometerLow () represents the "fae-thermometer_low" glyph.
-var ThermometerLow = &nf.Glyph{
-	ID:      "thermometer_low",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue20c",
-}
-
-// ThinClose () represents the "fae-thin_close" glyph.
-var ThinClose = &nf.Glyph{
-	ID:      "thin_close",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue20d",
-}
-
-// Toilet () represents the "fae-toilet" glyph.
-var Toilet = &nf.Glyph{
-	ID:      "toilet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue20e",
-}
-
-// Tools () represents the "fae-tools" glyph.
-var Tools = &nf.Glyph{
-	ID:      "tools",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue20f",
-}
-
-// Tooth () represents the "fae-tooth" glyph.
-var Tooth = &nf.Glyph{
-	ID:      "tooth",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue210",
-}
-
-// Tree () represents the "fae-tree" glyph.
-var Tree = &nf.Glyph{
-	ID:      "tree",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue21c",
-}
-
-// TriangleRuler () represents the "fae-triangle_ruler" glyph.
-var TriangleRuler = &nf.Glyph{
-	ID:      "triangle_ruler",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue21b",
-}
-
-// Umbrella () represents the "fae-umbrella" glyph.
-var Umbrella = &nf.Glyph{
-	ID:      "umbrella",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue220",
-}
-
-// Uterus () represents the "fae-uterus" glyph.
-var Uterus = &nf.Glyph{
-	ID:      "uterus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue211",
-}
-
-// Virus () represents the "fae-virus" glyph.
-var Virus = &nf.Glyph{
-	ID:      "virus",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue214",
-}
-
-// W3C () represents the "fae-w3c" glyph.
-var W3C = &nf.Glyph{
-	ID:      "w3c",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue212",
-}
-
-// Walking () represents the "fae-walking" glyph.
-var Walking = &nf.Glyph{
-	ID:      "walking",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue213",
-}
-
-// Wallet () represents the "fae-wallet" glyph.
-var Wallet = &nf.Glyph{
-	ID:      "wallet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue25e",
-}
-
-// Wind () represents the "fae-wind" glyph.
-var Wind = &nf.Glyph{
-	ID:      "wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue27e",
-}
-
-// Xbox () represents the "fae-xbox" glyph.
-var Xbox = &nf.Glyph{
-	ID:      "xbox",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue29d",
-}
+const (
+	AppleFruit      nf.Glyph = "" //  ("\ue29e") represents the "fae-apple_fruit" glyph.
+	Atom            nf.Glyph = "" //  ("\ue27f") represents the "fae-atom" glyph.
+	Bacteria        nf.Glyph = "" //  ("\ue280") represents the "fae-bacteria" glyph.
+	Banana          nf.Glyph = "" //  ("\ue281") represents the "fae-banana" glyph.
+	Bath            nf.Glyph = "" //  ("\ue282") represents the "fae-bath" glyph.
+	Bed             nf.Glyph = "" //  ("\ue283") represents the "fae-bed" glyph.
+	Benzene         nf.Glyph = "" //  ("\ue284") represents the "fae-benzene" glyph.
+	Bigger          nf.Glyph = "" //  ("\ue285") represents the "fae-bigger" glyph.
+	Biohazard       nf.Glyph = "" //  ("\ue286") represents the "fae-biohazard" glyph.
+	BloggerCircle   nf.Glyph = "" //  ("\ue287") represents the "fae-blogger_circle" glyph.
+	BloggerSquare   nf.Glyph = "" //  ("\ue288") represents the "fae-blogger_square" glyph.
+	Bones           nf.Glyph = "" //  ("\ue289") represents the "fae-bones" glyph.
+	BookOpen        nf.Glyph = "" //  ("\ue28a") represents the "fae-book_open" glyph.
+	BookOpenO       nf.Glyph = "" //  ("\ue28b") represents the "fae-book_open_o" glyph.
+	Brain           nf.Glyph = "" //  ("\ue28c") represents the "fae-brain" glyph.
+	Bread           nf.Glyph = "" //  ("\ue28d") represents the "fae-bread" glyph.
+	Butterfly       nf.Glyph = "" //  ("\ue28e") represents the "fae-butterfly" glyph.
+	Carot           nf.Glyph = "" //  ("\ue28f") represents the "fae-carot" glyph.
+	CcBy            nf.Glyph = "" //  ("\ue290") represents the "fae-cc_by" glyph.
+	CcCc            nf.Glyph = "" //  ("\ue291") represents the "fae-cc_cc" glyph.
+	CcNc            nf.Glyph = "" //  ("\ue292") represents the "fae-cc_nc" glyph.
+	CcNcEu          nf.Glyph = "" //  ("\ue293") represents the "fae-cc_nc_eu" glyph.
+	CcNcJp          nf.Glyph = "" //  ("\ue294") represents the "fae-cc_nc_jp" glyph.
+	CcNd            nf.Glyph = "" //  ("\ue295") represents the "fae-cc_nd" glyph.
+	CcRemix         nf.Glyph = "" //  ("\ue296") represents the "fae-cc_remix" glyph.
+	CcSa            nf.Glyph = "" //  ("\ue297") represents the "fae-cc_sa" glyph.
+	CcShare         nf.Glyph = "" //  ("\ue298") represents the "fae-cc_share" glyph.
+	CcZero          nf.Glyph = "" //  ("\ue299") represents the "fae-cc_zero" glyph.
+	ChecklistO      nf.Glyph = "" //  ("\ue29a") represents the "fae-checklist_o" glyph.
+	Cheese          nf.Glyph = "" //  ("\ue264") represents the "fae-cheese" glyph.
+	Cherry          nf.Glyph = "" //  ("\ue29b") represents the "fae-cherry" glyph.
+	ChessBishop     nf.Glyph = "" //  ("\ue29c") represents the "fae-chess_bishop" glyph.
+	ChessHorse      nf.Glyph = "" //  ("\ue25f") represents the "fae-chess_horse" glyph.
+	ChessKing       nf.Glyph = "" //  ("\ue260") represents the "fae-chess_king" glyph.
+	ChessPawn       nf.Glyph = "" //  ("\ue261") represents the "fae-chess_pawn" glyph.
+	ChessQueen      nf.Glyph = "" //  ("\ue262") represents the "fae-chess_queen" glyph.
+	ChessTower      nf.Glyph = "" //  ("\ue263") represents the "fae-chess_tower" glyph.
+	ChickenThigh    nf.Glyph = "" //  ("\ue29f") represents the "fae-chicken_thigh" glyph.
+	Chilli          nf.Glyph = "" //  ("\ue265") represents the "fae-chilli" glyph.
+	Chip            nf.Glyph = "" //  ("\ue266") represents the "fae-chip" glyph.
+	Cicling         nf.Glyph = "" //  ("\ue267") represents the "fae-cicling" glyph.
+	Cloud           nf.Glyph = "" //  ("\ue268") represents the "fae-cloud" glyph.
+	Cockroach       nf.Glyph = "" //  ("\ue269") represents the "fae-cockroach" glyph.
+	CoffeBeans      nf.Glyph = "" //  ("\ue26a") represents the "fae-coffe_beans" glyph.
+	Coins           nf.Glyph = "" //  ("\ue26b") represents the "fae-coins" glyph.
+	Comb            nf.Glyph = "" //  ("\ue26c") represents the "fae-comb" glyph.
+	Comet           nf.Glyph = "" //  ("\ue26d") represents the "fae-comet" glyph.
+	Crown           nf.Glyph = "" //  ("\ue26e") represents the "fae-crown" glyph.
+	CupCoffe        nf.Glyph = "" //  ("\ue26f") represents the "fae-cup_coffe" glyph.
+	Dice            nf.Glyph = "" //  ("\ue270") represents the "fae-dice" glyph.
+	Disco           nf.Glyph = "" //  ("\ue271") represents the "fae-disco" glyph.
+	Dna             nf.Glyph = "" //  ("\ue272") represents the "fae-dna" glyph.
+	Donut           nf.Glyph = "" //  ("\ue273") represents the "fae-donut" glyph.
+	Dress           nf.Glyph = "" //  ("\ue274") represents the "fae-dress" glyph.
+	Drop            nf.Glyph = "" //  ("\ue275") represents the "fae-drop" glyph.
+	Ello            nf.Glyph = "" //  ("\ue276") represents the "fae-ello" glyph.
+	EnvelopeOpen    nf.Glyph = "" //  ("\ue277") represents the "fae-envelope_open" glyph.
+	EnvelopeOpenO   nf.Glyph = "" //  ("\ue278") represents the "fae-envelope_open_o" glyph.
+	Equal           nf.Glyph = "" //  ("\ue279") represents the "fae-equal" glyph.
+	EqualBigger     nf.Glyph = "" //  ("\ue27a") represents the "fae-equal_bigger" glyph.
+	Feedly          nf.Glyph = "" //  ("\ue27b") represents the "fae-feedly" glyph.
+	FileExport      nf.Glyph = "" //  ("\ue27c") represents the "fae-file_export" glyph.
+	FileImport      nf.Glyph = "" //  ("\ue27d") represents the "fae-file_import" glyph.
+	Fingerprint     nf.Glyph = "" //  ("\ue23f") represents the "fae-fingerprint" glyph.
+	Floppy          nf.Glyph = "" //  ("\ue240") represents the "fae-floppy" glyph.
+	Footprint       nf.Glyph = "" //  ("\ue241") represents the "fae-footprint" glyph.
+	Freecodecamp    nf.Glyph = "" //  ("\ue242") represents the "fae-freecodecamp" glyph.
+	Galaxy          nf.Glyph = "" //  ("\ue243") represents the "fae-galaxy" glyph.
+	Galery          nf.Glyph = "" //  ("\ue244") represents the "fae-galery" glyph.
+	GiftCard        nf.Glyph = "" //  ("\ue2a0") represents the "fae-gift_card" glyph.
+	Glass           nf.Glyph = "" //  ("\ue245") represents the "fae-glass" glyph.
+	GoogleDrive     nf.Glyph = "" //  ("\ue246") represents the "fae-google_drive" glyph.
+	GooglePlay      nf.Glyph = "" //  ("\ue247") represents the "fae-google_play" glyph.
+	Gps             nf.Glyph = "" //  ("\ue248") represents the "fae-gps" glyph.
+	Grav            nf.Glyph = "" //  ("\ue249") represents the "fae-grav" glyph.
+	Guitar          nf.Glyph = "" //  ("\ue24a") represents the "fae-guitar" glyph.
+	Gut             nf.Glyph = "" //  ("\ue24b") represents the "fae-gut" glyph.
+	Halter          nf.Glyph = "" //  ("\ue24c") represents the "fae-halter" glyph.
+	Hamburger       nf.Glyph = "" //  ("\ue24d") represents the "fae-hamburger" glyph.
+	Hat             nf.Glyph = "" //  ("\ue24e") represents the "fae-hat" glyph.
+	Hexagon         nf.Glyph = "" //  ("\ue24f") represents the "fae-hexagon" glyph.
+	HighHeel        nf.Glyph = "" //  ("\ue250") represents the "fae-high_heel" glyph.
+	Hotdog          nf.Glyph = "" //  ("\ue251") represents the "fae-hotdog" glyph.
+	IceCream        nf.Glyph = "" //  ("\ue252") represents the "fae-ice_cream" glyph.
+	IdCard          nf.Glyph = "" //  ("\ue253") represents the "fae-id_card" glyph.
+	Imdb            nf.Glyph = "" //  ("\ue254") represents the "fae-imdb" glyph.
+	Infinity        nf.Glyph = "" //  ("\ue255") represents the "fae-infinity" glyph.
+	Injection       nf.Glyph = "" //  ("\ue2a1") represents the "fae-injection" glyph.
+	Isle            nf.Glyph = "" //  ("\ue2a2") represents the "fae-isle" glyph.
+	Java            nf.Glyph = "" //  ("\ue256") represents the "fae-java" glyph.
+	Layers          nf.Glyph = "" //  ("\ue257") represents the "fae-layers" glyph.
+	Lips            nf.Glyph = "" //  ("\ue258") represents the "fae-lips" glyph.
+	Lipstick        nf.Glyph = "" //  ("\ue259") represents the "fae-lipstick" glyph.
+	Liver           nf.Glyph = "" //  ("\ue25a") represents the "fae-liver" glyph.
+	Lollipop        nf.Glyph = "" //  ("\ue2a3") represents the "fae-lollipop" glyph.
+	LoyaltyCard     nf.Glyph = "" //  ("\ue2a4") represents the "fae-loyalty_card" glyph.
+	Lung            nf.Glyph = "" //  ("\ue25b") represents the "fae-lung" glyph.
+	MakeupBrushes   nf.Glyph = "" //  ("\ue25c") represents the "fae-makeup_brushes" glyph.
+	Maximize        nf.Glyph = "" //  ("\ue25d") represents the "fae-maximize" glyph.
+	Meat            nf.Glyph = "" //  ("\ue2a5") represents the "fae-meat" glyph.
+	Medicine        nf.Glyph = "" //  ("\ue221") represents the "fae-medicine" glyph.
+	Microscope      nf.Glyph = "" //  ("\ue222") represents the "fae-microscope" glyph.
+	MilkBottle      nf.Glyph = "" //  ("\ue223") represents the "fae-milk_bottle" glyph.
+	Minimize        nf.Glyph = "" //  ("\ue224") represents the "fae-minimize" glyph.
+	Molecule        nf.Glyph = "" //  ("\ue225") represents the "fae-molecule" glyph.
+	MoonCloud       nf.Glyph = "" //  ("\ue226") represents the "fae-moon_cloud" glyph.
+	Mountains       nf.Glyph = "" //  ("\ue2a6") represents the "fae-mountains" glyph.
+	Mushroom        nf.Glyph = "" //  ("\ue227") represents the "fae-mushroom" glyph.
+	Mustache        nf.Glyph = "" //  ("\ue228") represents the "fae-mustache" glyph.
+	Mysql           nf.Glyph = "" //  ("\ue229") represents the "fae-mysql" glyph.
+	Nintendo        nf.Glyph = "" //  ("\ue22a") represents the "fae-nintendo" glyph.
+	Orange          nf.Glyph = "" //  ("\ue2a7") represents the "fae-orange" glyph.
+	PaletteColor    nf.Glyph = "" //  ("\ue22b") represents the "fae-palette_color" glyph.
+	Peach           nf.Glyph = "" //  ("\ue2a8") represents the "fae-peach" glyph.
+	Pear            nf.Glyph = "" //  ("\ue2a9") represents the "fae-pear" glyph.
+	Pi              nf.Glyph = "" //  ("\ue22c") represents the "fae-pi" glyph.
+	Pizza           nf.Glyph = "" //  ("\ue22d") represents the "fae-pizza" glyph.
+	Planet          nf.Glyph = "" //  ("\ue22e") represents the "fae-planet" glyph.
+	Plant           nf.Glyph = "" //  ("\ue22f") represents the "fae-plant" glyph.
+	Playstation     nf.Glyph = "" //  ("\ue230") represents the "fae-playstation" glyph.
+	Poison          nf.Glyph = "" //  ("\ue231") represents the "fae-poison" glyph.
+	Popcorn         nf.Glyph = "" //  ("\ue232") represents the "fae-popcorn" glyph.
+	Popsicle        nf.Glyph = "" //  ("\ue233") represents the "fae-popsicle" glyph.
+	Pulse           nf.Glyph = "" //  ("\ue234") represents the "fae-pulse" glyph.
+	Python          nf.Glyph = "" //  ("\ue235") represents the "fae-python" glyph.
+	QuoraCircle     nf.Glyph = "" //  ("\ue236") represents the "fae-quora_circle" glyph.
+	QuoraSquare     nf.Glyph = "" //  ("\ue237") represents the "fae-quora_square" glyph.
+	Radioactive     nf.Glyph = "" //  ("\ue238") represents the "fae-radioactive" glyph.
+	Raining         nf.Glyph = "" //  ("\ue239") represents the "fae-raining" glyph.
+	RealHeart       nf.Glyph = "" //  ("\ue23a") represents the "fae-real_heart" glyph.
+	Refrigerator    nf.Glyph = "" //  ("\ue23b") represents the "fae-refrigerator" glyph.
+	Restore         nf.Glyph = "" //  ("\ue23c") represents the "fae-restore" glyph.
+	Ring            nf.Glyph = "" //  ("\ue23d") represents the "fae-ring" glyph.
+	Ruby            nf.Glyph = "" //  ("\ue23e") represents the "fae-ruby" glyph.
+	RubyO           nf.Glyph = "" //  ("\ue21e") represents the "fae-ruby_o" glyph.
+	Ruler           nf.Glyph = "" //  ("\ue21f") represents the "fae-ruler" glyph.
+	Shirt           nf.Glyph = "" //  ("\ue218") represents the "fae-shirt" glyph.
+	Slash           nf.Glyph = "" //  ("\ue216") represents the "fae-slash" glyph.
+	Smaller         nf.Glyph = "" //  ("\ue200") represents the "fae-smaller" glyph.
+	Snowing         nf.Glyph = "" //  ("\ue201") represents the "fae-snowing" glyph.
+	Soda            nf.Glyph = "" //  ("\ue202") represents the "fae-soda" glyph.
+	Sofa            nf.Glyph = "" //  ("\ue203") represents the "fae-sofa" glyph.
+	Soup            nf.Glyph = "" //  ("\ue204") represents the "fae-soup" glyph.
+	Spermatozoon    nf.Glyph = "" //  ("\ue205") represents the "fae-spermatozoon" glyph.
+	SpinDouble      nf.Glyph = "" //  ("\ue206") represents the "fae-spin_double" glyph.
+	Stomach         nf.Glyph = "" //  ("\ue207") represents the "fae-stomach" glyph.
+	Storm           nf.Glyph = "" //  ("\ue208") represents the "fae-storm" glyph.
+	SunCloud        nf.Glyph = "" //  ("\ue21d") represents the "fae-sun_cloud" glyph.
+	Sushi           nf.Glyph = "" //  ("\ue21a") represents the "fae-sushi" glyph.
+	Tacos           nf.Glyph = "" //  ("\ue219") represents the "fae-tacos" glyph.
+	Telegram        nf.Glyph = "" //  ("\ue217") represents the "fae-telegram" glyph.
+	TelegramCircle  nf.Glyph = "" //  ("\ue215") represents the "fae-telegram_circle" glyph.
+	Telescope       nf.Glyph = "" //  ("\ue209") represents the "fae-telescope" glyph.
+	Thermometer     nf.Glyph = "" //  ("\ue20a") represents the "fae-thermometer" glyph.
+	ThermometerHigh nf.Glyph = "" //  ("\ue20b") represents the "fae-thermometer_high" glyph.
+	ThermometerLow  nf.Glyph = "" //  ("\ue20c") represents the "fae-thermometer_low" glyph.
+	ThinClose       nf.Glyph = "" //  ("\ue20d") represents the "fae-thin_close" glyph.
+	Toilet          nf.Glyph = "" //  ("\ue20e") represents the "fae-toilet" glyph.
+	Tools           nf.Glyph = "" //  ("\ue20f") represents the "fae-tools" glyph.
+	Tooth           nf.Glyph = "" //  ("\ue210") represents the "fae-tooth" glyph.
+	Tree            nf.Glyph = "" //  ("\ue21c") represents the "fae-tree" glyph.
+	TriangleRuler   nf.Glyph = "" //  ("\ue21b") represents the "fae-triangle_ruler" glyph.
+	Umbrella        nf.Glyph = "" //  ("\ue220") represents the "fae-umbrella" glyph.
+	Uterus          nf.Glyph = "" //  ("\ue211") represents the "fae-uterus" glyph.
+	Virus           nf.Glyph = "" //  ("\ue214") represents the "fae-virus" glyph.
+	W3C             nf.Glyph = "" //  ("\ue212") represents the "fae-w3c" glyph.
+	Walking         nf.Glyph = "" //  ("\ue213") represents the "fae-walking" glyph.
+	Wallet          nf.Glyph = "" //  ("\ue25e") represents the "fae-wallet" glyph.
+	Wind            nf.Glyph = "" //  ("\ue27e") represents the "fae-wind" glyph.
+	Xbox            nf.Glyph = "" //  ("\ue29d") represents the "fae-xbox" glyph.
+)

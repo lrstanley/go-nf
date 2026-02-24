@@ -17,19 +17,15 @@ package {{ .Class }}
 import {{ .PackageName | quote }}
 
 const (
-    // ClassName is the name of the class.
-    ClassName = {{ .Class | quote }}
+    // Class is the name of the class.
+    Class nf.Class = {{ .Class | quote }}
 
     // Version is the version of the Nerd Fonts project which this package was generated from.
     Version = {{ .Metadata.Version | quote }}
 )
 
+const (
 {{- range $index, $glyph := .Glyphs }}
-    // {{ .PascalID }} ({{ .Char }}) represents the {{ (printf "%s-%s" .Class .ID) | quote }} glyph.
-    var {{ .PascalID }} = &nf.Glyph{
-        ID: {{ .ID | quote }},
-        Class: ClassName,
-        Char: "{{ .Char }}",
-        Unicode: {{ .Char | quote }},
-    }
+    {{ .PascalID }} nf.Glyph = "{{ .Char }}" // {{ .Char }} ({{ .Char | quote }}) represents the {{ (printf "%s-%s" .Class .ID) | quote }} glyph.
 {{- end }}
+)

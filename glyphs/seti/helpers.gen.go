@@ -8,544 +8,216 @@ package seti
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Apple,
-	Argdown,
-	Asm,
-	Audio,
-	Babel,
-	Bazel,
-	Bicep,
-	Bower,
-	Bsl,
-	C,
-	CSharp,
-	Cake,
-	CakePhp,
-	Checkbox,
-	CheckboxUnchecked,
-	Cjsx,
-	Clock,
-	Clojure,
-	CodeClimate,
-	CodeSearch,
-	Coffee,
-	Coldfusion,
-	Config,
-	Cpp,
-	Crystal,
-	CrystalEmbedded,
-	Css,
-	Csv,
-	Cu,
-	D,
-	Dart,
-	Db,
-	Default,
-	DeprecationCop,
-	Docker,
-	Editorconfig,
-	Ejs,
-	Elixir,
-	ElixirScript,
-	Elm,
-	Error,
-	Eslint,
-	Ethereum,
-	FSharp,
-	Favicon,
-	Firebase,
-	Firefox,
-	Folder,
-	Font,
-	Git,
-	GitFolder,
-	GitIgnore,
-	Github,
-	Gitlab,
-	Go,
-	Go2,
-	Godot,
-	Gradle,
-	Grails,
-	Graphql,
-	Grunt,
-	Gulp,
-	Hacklang,
-	Haml,
-	Happenings,
-	Haskell,
-	Haxe,
-	Heroku,
-	Hex,
-	Home,
-	Html,
-	Ignored,
-	Illustrator,
-	Image,
-	Info,
-	Ionic,
-	Jade,
-	Java,
-	Javascript,
-	Jenkins,
-	Jinja,
-	Json,
-	Julia,
-	Karma,
-	Kotlin,
-	Less,
-	License,
-	Liquid,
-	Livescript,
-	Lock,
-	Lua,
-	Makefile,
-	Markdown,
-	Maven,
-	Mdo,
-	Mustache,
-	NewFile,
-	Nim,
-	Notebook,
-	Npm,
-	NpmIgnored,
-	Nunjucks,
-	Ocaml,
-	Odata,
-	Pddl,
-	Pdf,
-	Perl,
-	Photoshop,
-	Php,
-	Pipeline,
-	Plan,
-	Platformio,
-	PlayArrow,
-	Powershell,
-	Prisma,
-	Project,
-	Prolog,
-	Pug,
-	Puppet,
-	Purescript,
-	Python,
-	R,
-	Rails,
-	React,
-	Reasonml,
-	Rescript,
-	Rollup,
-	Ruby,
-	Rust,
-	Salesforce,
-	Sass,
-	Sbt,
-	Scala,
-	Search,
-	Settings,
-	Shell,
-	Slim,
-	Smarty,
-	Spring,
-	Stylelint,
-	Stylus,
-	Sublime,
-	Svelte,
-	Svg,
-	Swift,
-	Terraform,
-	Tex,
-	Text,
-	TimeCop,
-	Todo,
-	Tsconfig,
-	Twig,
-	Typescript,
-	Vala,
-	Video,
-	Vue,
-	Wasm,
-	Wat,
-	Webpack,
-	Wgt,
-	Word,
-	Xls,
-	Xml,
-	Yarn,
-	Yml,
-	Zig,
-	Zip,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the seti class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "apple", "seti-apple":
-		return Apple
-	case "argdown", "seti-argdown":
-		return Argdown
-	case "asm", "seti-asm":
-		return Asm
-	case "audio", "seti-audio":
-		return Audio
-	case "babel", "seti-babel":
-		return Babel
-	case "bazel", "seti-bazel":
-		return Bazel
-	case "bicep", "seti-bicep":
-		return Bicep
-	case "bower", "seti-bower":
-		return Bower
-	case "bsl", "seti-bsl":
-		return Bsl
-	case "c", "seti-c":
-		return C
-	case "c_sharp", "seti-c_sharp":
-		return CSharp
-	case "cake", "seti-cake":
-		return Cake
-	case "cake_php", "seti-cake_php":
-		return CakePhp
-	case "checkbox", "seti-checkbox":
-		return Checkbox
-	case "checkbox_unchecked", "seti-checkbox_unchecked":
-		return CheckboxUnchecked
-	case "cjsx", "seti-cjsx":
-		return Cjsx
-	case "clock", "seti-clock":
-		return Clock
-	case "clojure", "seti-clojure":
-		return Clojure
-	case "code_climate", "seti-code_climate":
-		return CodeClimate
-	case "code_search", "seti-code_search":
-		return CodeSearch
-	case "coffee", "seti-coffee":
-		return Coffee
-	case "coldfusion", "seti-coldfusion":
-		return Coldfusion
-	case "config", "seti-config":
-		return Config
-	case "cpp", "seti-cpp":
-		return Cpp
-	case "crystal", "seti-crystal":
-		return Crystal
-	case "crystal_embedded", "seti-crystal_embedded":
-		return CrystalEmbedded
-	case "css", "seti-css":
-		return Css
-	case "csv", "seti-csv":
-		return Csv
-	case "cu", "seti-cu":
-		return Cu
-	case "d", "seti-d":
-		return D
-	case "dart", "seti-dart":
-		return Dart
-	case "db", "seti-db":
-		return Db
-	case "default", "seti-default":
-		return Default
-	case "deprecation_cop", "seti-deprecation_cop":
-		return DeprecationCop
-	case "docker", "seti-docker":
-		return Docker
-	case "editorconfig", "seti-editorconfig":
-		return Editorconfig
-	case "ejs", "seti-ejs":
-		return Ejs
-	case "elixir", "seti-elixir":
-		return Elixir
-	case "elixir_script", "seti-elixir_script":
-		return ElixirScript
-	case "elm", "seti-elm":
-		return Elm
-	case "error", "seti-error":
-		return Error
-	case "eslint", "seti-eslint":
-		return Eslint
-	case "ethereum", "seti-ethereum":
-		return Ethereum
-	case "f_sharp", "seti-f_sharp":
-		return FSharp
-	case "favicon", "seti-favicon":
-		return Favicon
-	case "firebase", "seti-firebase":
-		return Firebase
-	case "firefox", "seti-firefox":
-		return Firefox
-	case "folder", "seti-folder":
-		return Folder
-	case "font", "seti-font":
-		return Font
-	case "git", "seti-git":
-		return Git
-	case "git_folder", "seti-git_folder":
-		return GitFolder
-	case "git_ignore", "seti-git_ignore":
-		return GitIgnore
-	case "github", "seti-github":
-		return Github
-	case "gitlab", "seti-gitlab":
-		return Gitlab
-	case "go", "seti-go":
-		return Go
-	case "go2", "seti-go2":
-		return Go2
-	case "godot", "seti-godot":
-		return Godot
-	case "gradle", "seti-gradle":
-		return Gradle
-	case "grails", "seti-grails":
-		return Grails
-	case "graphql", "seti-graphql":
-		return Graphql
-	case "grunt", "seti-grunt":
-		return Grunt
-	case "gulp", "seti-gulp":
-		return Gulp
-	case "hacklang", "seti-hacklang":
-		return Hacklang
-	case "haml", "seti-haml":
-		return Haml
-	case "happenings", "seti-happenings":
-		return Happenings
-	case "haskell", "seti-haskell":
-		return Haskell
-	case "haxe", "seti-haxe":
-		return Haxe
-	case "heroku", "seti-heroku":
-		return Heroku
-	case "hex", "seti-hex":
-		return Hex
-	case "home", "seti-home":
-		return Home
-	case "html", "seti-html":
-		return Html
-	case "ignored", "seti-ignored":
-		return Ignored
-	case "illustrator", "seti-illustrator":
-		return Illustrator
-	case "image", "seti-image":
-		return Image
-	case "info", "seti-info":
-		return Info
-	case "ionic", "seti-ionic":
-		return Ionic
-	case "jade", "seti-jade":
-		return Jade
-	case "java", "seti-java":
-		return Java
-	case "javascript", "seti-javascript":
-		return Javascript
-	case "jenkins", "seti-jenkins":
-		return Jenkins
-	case "jinja", "seti-jinja":
-		return Jinja
-	case "json", "seti-json":
-		return Json
-	case "julia", "seti-julia":
-		return Julia
-	case "karma", "seti-karma":
-		return Karma
-	case "kotlin", "seti-kotlin":
-		return Kotlin
-	case "less", "seti-less":
-		return Less
-	case "license", "seti-license":
-		return License
-	case "liquid", "seti-liquid":
-		return Liquid
-	case "livescript", "seti-livescript":
-		return Livescript
-	case "lock", "seti-lock":
-		return Lock
-	case "lua", "seti-lua":
-		return Lua
-	case "makefile", "seti-makefile":
-		return Makefile
-	case "markdown", "seti-markdown":
-		return Markdown
-	case "maven", "seti-maven":
-		return Maven
-	case "mdo", "seti-mdo":
-		return Mdo
-	case "mustache", "seti-mustache":
-		return Mustache
-	case "new_file", "seti-new_file":
-		return NewFile
-	case "nim", "seti-nim":
-		return Nim
-	case "notebook", "seti-notebook":
-		return Notebook
-	case "npm", "seti-npm":
-		return Npm
-	case "npm_ignored", "seti-npm_ignored":
-		return NpmIgnored
-	case "nunjucks", "seti-nunjucks":
-		return Nunjucks
-	case "ocaml", "seti-ocaml":
-		return Ocaml
-	case "odata", "seti-odata":
-		return Odata
-	case "pddl", "seti-pddl":
-		return Pddl
-	case "pdf", "seti-pdf":
-		return Pdf
-	case "perl", "seti-perl":
-		return Perl
-	case "photoshop", "seti-photoshop":
-		return Photoshop
-	case "php", "seti-php":
-		return Php
-	case "pipeline", "seti-pipeline":
-		return Pipeline
-	case "plan", "seti-plan":
-		return Plan
-	case "platformio", "seti-platformio":
-		return Platformio
-	case "play_arrow", "seti-play_arrow":
-		return PlayArrow
-	case "powershell", "seti-powershell":
-		return Powershell
-	case "prisma", "seti-prisma":
-		return Prisma
-	case "project", "seti-project":
-		return Project
-	case "prolog", "seti-prolog":
-		return Prolog
-	case "pug", "seti-pug":
-		return Pug
-	case "puppet", "seti-puppet":
-		return Puppet
-	case "purescript", "seti-purescript":
-		return Purescript
-	case "python", "seti-python":
-		return Python
-	case "r", "seti-r":
-		return R
-	case "rails", "seti-rails":
-		return Rails
-	case "react", "seti-react":
-		return React
-	case "reasonml", "seti-reasonml":
-		return Reasonml
-	case "rescript", "seti-rescript":
-		return Rescript
-	case "rollup", "seti-rollup":
-		return Rollup
-	case "ruby", "seti-ruby":
-		return Ruby
-	case "rust", "seti-rust":
-		return Rust
-	case "salesforce", "seti-salesforce":
-		return Salesforce
-	case "sass", "seti-sass":
-		return Sass
-	case "sbt", "seti-sbt":
-		return Sbt
-	case "scala", "seti-scala":
-		return Scala
-	case "search", "seti-search":
-		return Search
-	case "settings", "seti-settings":
-		return Settings
-	case "shell", "seti-shell":
-		return Shell
-	case "slim", "seti-slim":
-		return Slim
-	case "smarty", "seti-smarty":
-		return Smarty
-	case "spring", "seti-spring":
-		return Spring
-	case "stylelint", "seti-stylelint":
-		return Stylelint
-	case "stylus", "seti-stylus":
-		return Stylus
-	case "sublime", "seti-sublime":
-		return Sublime
-	case "svelte", "seti-svelte":
-		return Svelte
-	case "svg", "seti-svg":
-		return Svg
-	case "swift", "seti-swift":
-		return Swift
-	case "terraform", "seti-terraform":
-		return Terraform
-	case "tex", "seti-tex":
-		return Tex
-	case "text", "seti-text":
-		return Text
-	case "time_cop", "seti-time_cop":
-		return TimeCop
-	case "todo", "seti-todo":
-		return Todo
-	case "tsconfig", "seti-tsconfig":
-		return Tsconfig
-	case "twig", "seti-twig":
-		return Twig
-	case "typescript", "seti-typescript":
-		return Typescript
-	case "vala", "seti-vala":
-		return Vala
-	case "video", "seti-video":
-		return Video
-	case "vue", "seti-vue":
-		return Vue
-	case "wasm", "seti-wasm":
-		return Wasm
-	case "wat", "seti-wat":
-		return Wat
-	case "webpack", "seti-webpack":
-		return Webpack
-	case "wgt", "seti-wgt":
-		return Wgt
-	case "word", "seti-word":
-		return Word
-	case "xls", "seti-xls":
-		return Xls
-	case "xml", "seti-xml":
-		return Xml
-	case "yarn", "seti-yarn":
-		return Yarn
-	case "yml", "seti-yml":
-		return Yml
-	case "zig", "seti-zig":
-		return Zig
-	case "zip", "seti-zip":
-		return Zip
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"apple":              Apple,
+		"argdown":            Argdown,
+		"asm":                Asm,
+		"audio":              Audio,
+		"babel":              Babel,
+		"bazel":              Bazel,
+		"bicep":              Bicep,
+		"bower":              Bower,
+		"bsl":                Bsl,
+		"c":                  C,
+		"c_sharp":            CSharp,
+		"cake":               Cake,
+		"cake_php":           CakePhp,
+		"checkbox":           Checkbox,
+		"checkbox_unchecked": CheckboxUnchecked,
+		"cjsx":               Cjsx,
+		"clock":              Clock,
+		"clojure":            Clojure,
+		"code_climate":       CodeClimate,
+		"code_search":        CodeSearch,
+		"coffee":             Coffee,
+		"coldfusion":         Coldfusion,
+		"config":             Config,
+		"cpp":                Cpp,
+		"crystal":            Crystal,
+		"crystal_embedded":   CrystalEmbedded,
+		"css":                Css,
+		"csv":                Csv,
+		"cu":                 Cu,
+		"d":                  D,
+		"dart":               Dart,
+		"db":                 Db,
+		"default":            Default,
+		"deprecation_cop":    DeprecationCop,
+		"docker":             Docker,
+		"editorconfig":       Editorconfig,
+		"ejs":                Ejs,
+		"elixir":             Elixir,
+		"elixir_script":      ElixirScript,
+		"elm":                Elm,
+		"error":              Error,
+		"eslint":             Eslint,
+		"ethereum":           Ethereum,
+		"f_sharp":            FSharp,
+		"favicon":            Favicon,
+		"firebase":           Firebase,
+		"firefox":            Firefox,
+		"folder":             Folder,
+		"font":               Font,
+		"git":                Git,
+		"git_folder":         GitFolder,
+		"git_ignore":         GitIgnore,
+		"github":             Github,
+		"gitlab":             Gitlab,
+		"go":                 Go,
+		"go2":                Go2,
+		"godot":              Godot,
+		"gradle":             Gradle,
+		"grails":             Grails,
+		"graphql":            Graphql,
+		"grunt":              Grunt,
+		"gulp":               Gulp,
+		"hacklang":           Hacklang,
+		"haml":               Haml,
+		"happenings":         Happenings,
+		"haskell":            Haskell,
+		"haxe":               Haxe,
+		"heroku":             Heroku,
+		"hex":                Hex,
+		"home":               Home,
+		"html":               Html,
+		"ignored":            Ignored,
+		"illustrator":        Illustrator,
+		"image":              Image,
+		"info":               Info,
+		"ionic":              Ionic,
+		"jade":               Jade,
+		"java":               Java,
+		"javascript":         Javascript,
+		"jenkins":            Jenkins,
+		"jinja":              Jinja,
+		"json":               Json,
+		"julia":              Julia,
+		"karma":              Karma,
+		"kotlin":             Kotlin,
+		"less":               Less,
+		"license":            License,
+		"liquid":             Liquid,
+		"livescript":         Livescript,
+		"lock":               Lock,
+		"lua":                Lua,
+		"makefile":           Makefile,
+		"markdown":           Markdown,
+		"maven":              Maven,
+		"mdo":                Mdo,
+		"mustache":           Mustache,
+		"new_file":           NewFile,
+		"nim":                Nim,
+		"notebook":           Notebook,
+		"npm":                Npm,
+		"npm_ignored":        NpmIgnored,
+		"nunjucks":           Nunjucks,
+		"ocaml":              Ocaml,
+		"odata":              Odata,
+		"pddl":               Pddl,
+		"pdf":                Pdf,
+		"perl":               Perl,
+		"photoshop":          Photoshop,
+		"php":                Php,
+		"pipeline":           Pipeline,
+		"plan":               Plan,
+		"platformio":         Platformio,
+		"play_arrow":         PlayArrow,
+		"powershell":         Powershell,
+		"prisma":             Prisma,
+		"project":            Project,
+		"prolog":             Prolog,
+		"pug":                Pug,
+		"puppet":             Puppet,
+		"purescript":         Purescript,
+		"python":             Python,
+		"r":                  R,
+		"rails":              Rails,
+		"react":              React,
+		"reasonml":           Reasonml,
+		"rescript":           Rescript,
+		"rollup":             Rollup,
+		"ruby":               Ruby,
+		"rust":               Rust,
+		"salesforce":         Salesforce,
+		"sass":               Sass,
+		"sbt":                Sbt,
+		"scala":              Scala,
+		"search":             Search,
+		"settings":           Settings,
+		"shell":              Shell,
+		"slim":               Slim,
+		"smarty":             Smarty,
+		"spring":             Spring,
+		"stylelint":          Stylelint,
+		"stylus":             Stylus,
+		"sublime":            Sublime,
+		"svelte":             Svelte,
+		"svg":                Svg,
+		"swift":              Swift,
+		"terraform":          Terraform,
+		"tex":                Tex,
+		"text":               Text,
+		"time_cop":           TimeCop,
+		"todo":               Todo,
+		"tsconfig":           Tsconfig,
+		"twig":               Twig,
+		"typescript":         Typescript,
+		"vala":               Vala,
+		"video":              Video,
+		"vue":                Vue,
+		"wasm":               Wasm,
+		"wat":                Wat,
+		"webpack":            Webpack,
+		"wgt":                Wgt,
+		"word":               Word,
+		"xls":                Xls,
+		"xml":                Xml,
+		"yarn":               Yarn,
+		"yml":                Yml,
+		"zig":                Zig,
+		"zip":                Zip,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the seti class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

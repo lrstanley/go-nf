@@ -14,6 +14,7 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"slices"
 	"text/template"
 	"time"
 
@@ -38,25 +39,10 @@ var (
 			return fmt.Sprintf("%q", s)
 		},
 	}
-	constantsTmpl = template.Must(
-		template.New("constants.gotmpl").
+	_templates = template.Must(
+		template.New("").
 			Funcs(funcMap).
-			ParseFiles("templates/constants.gotmpl"),
-	)
-	allGlyphsHelpersTmpl = template.Must(
-		template.New("all_glyphs_helpers.gotmpl").
-			Funcs(funcMap).
-			ParseFiles("templates/all_glyphs_helpers.gotmpl"),
-	)
-	classGlyphsTmpl = template.Must(
-		template.New("class_glyphs.gotmpl").
-			Funcs(funcMap).
-			ParseFiles("templates/class_glyphs.gotmpl"),
-	)
-	classHelpersTmpl = template.Must(
-		template.New("class_helpers.gotmpl").
-			Funcs(funcMap).
-			ParseFiles("templates/class_helpers.gotmpl"),
+			ParseGlob("templates/*.gotmpl"),
 	)
 
 	header = `// Copyright (c) Liam Stanley <liam@liam.sh>. All rights reserved. Use of
@@ -80,31 +66,41 @@ func main() {
 		os.Exit(1)
 	}
 
-	generateFile(filepath.Join(os.Args[1], "constants.gen.go"), constantsTmpl, map[string]any{
+	generateFile("constants.gotmpl", filepath.Join(os.Args[1], "constants.gen.go"), map[string]any{
 		"PackageName": packageName,
 		"Metadata":    data.Metadata,
 		"Classes":     data.Classes(),
 	})
 
-	generateFile(filepath.Join(os.Args[1], "glyphs", "all", "helpers.gen.go"), allGlyphsHelpersTmpl, map[string]any{
-		"PackageName": packageName,
-		"Metadata":    data.Metadata,
-		"Classes":     data.Classes(),
-	})
+	allGlyphsFiles := map[string]string{
+		"all_glyphs_helpers.gotmpl": "helpers.gen.go",
+		"all_glyphs_test.gotmpl":    "glyph_test.go",
+	}
+
+	for tmpl, destFile := range allGlyphsFiles {
+		generateFile(tmpl, filepath.Join(os.Args[1], "glyphs", "all", destFile), map[string]any{
+			"PackageName": packageName,
+			"Metadata":    data.Metadata,
+			"Classes":     data.Classes(),
+			"Glyphs":      slices.Collect(data.AllIter()),
+		})
+	}
+
+	perGlyphFiles := map[string]string{
+		"class_glyphs.gotmpl":  "glyphs.gen.go",
+		"class_helpers.gotmpl": "helpers.gen.go",
+		"class_test.gotmpl":    "glyph_test.go",
+	}
 
 	for _, class := range data.Classes() {
-		generateFile(filepath.Join(os.Args[1], "glyphs", class, "glyphs.gen.go"), classGlyphsTmpl, map[string]any{
-			"PackageName": packageName,
-			"Metadata":    data.Metadata,
-			"Class":       class,
-			"Glyphs":      data.Glyphs[class],
-		})
-		generateFile(filepath.Join(os.Args[1], "glyphs", class, "helpers.gen.go"), classHelpersTmpl, map[string]any{
-			"PackageName": packageName,
-			"Metadata":    data.Metadata,
-			"Class":       class,
-			"Glyphs":      data.Glyphs[class],
-		})
+		for tmpl, destFile := range perGlyphFiles {
+			generateFile(tmpl, filepath.Join(os.Args[1], "glyphs", class, destFile), map[string]any{
+				"PackageName": packageName,
+				"Metadata":    data.Metadata,
+				"Class":       class,
+				"Glyphs":      data.Glyphs[class],
+			})
+		}
 	}
 }
 
@@ -137,21 +133,21 @@ func fetchData(ctx context.Context) (*Data, error) {
 	return data, nil
 }
 
-func generateFile(path string, tmpl *template.Template, data any) {
-	if err := os.MkdirAll(filepath.Dir(path), 0o750); err != nil {
+func generateFile(tmpl, destPath string, data any) {
+	if err := os.MkdirAll(filepath.Dir(destPath), 0o750); err != nil {
 		panic(err)
 	}
 
-	f, err := os.Create(path)
+	f, err := os.Create(destPath)
 	if err != nil {
 		panic(err)
 	}
 	defer f.Close()
 
-	err = tmpl.Execute(f, data)
+	err = _templates.ExecuteTemplate(f, tmpl, data)
 	if err != nil {
 		panic(err)
 	}
 
-	logger.Info("generated file", "file", path) //nolint:all
+	logger.Info("generated file", "file", destPath) //nolint:all
 }

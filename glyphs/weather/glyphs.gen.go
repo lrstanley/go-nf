@@ -21,1833 +21,240 @@ package weather
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "weather"
+	// Class is the name of the class.
+	Class nf.Class = "weather"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// Alien () represents the "weather-alien" glyph.
-var Alien = &nf.Glyph{
-	ID:      "alien",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue36e",
-}
-
-// Aliens () represents the "weather-aliens" glyph.
-var Aliens = &nf.Glyph{
-	ID:      "aliens",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue345",
-}
-
-// Barometer () represents the "weather-barometer" glyph.
-var Barometer = &nf.Glyph{
-	ID:      "barometer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue372",
-}
-
-// Celsius () represents the "weather-celsius" glyph.
-var Celsius = &nf.Glyph{
-	ID:      "celsius",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue339",
-}
-
-// Cloud () represents the "weather-cloud" glyph.
-var Cloud = &nf.Glyph{
-	ID:      "cloud",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue33d",
-}
-
-// CloudDown () represents the "weather-cloud_down" glyph.
-var CloudDown = &nf.Glyph{
-	ID:      "cloud_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue33a",
-}
-
-// CloudRefresh () represents the "weather-cloud_refresh" glyph.
-var CloudRefresh = &nf.Glyph{
-	ID:      "cloud_refresh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue33b",
-}
-
-// CloudUp () represents the "weather-cloud_up" glyph.
-var CloudUp = &nf.Glyph{
-	ID:      "cloud_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue33c",
-}
-
-// Cloudy () represents the "weather-cloudy" glyph.
-var Cloudy = &nf.Glyph{
-	ID:      "cloudy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue312",
-}
-
-// CloudyGusts () represents the "weather-cloudy_gusts" glyph.
-var CloudyGusts = &nf.Glyph{
-	ID:      "cloudy_gusts",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue310",
-}
-
-// CloudyWindy () represents the "weather-cloudy_windy" glyph.
-var CloudyWindy = &nf.Glyph{
-	ID:      "cloudy_windy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue311",
-}
-
-// DayCloudy () represents the "weather-day_cloudy" glyph.
-var DayCloudy = &nf.Glyph{
-	ID:      "day_cloudy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue302",
-}
-
-// DayCloudyGusts () represents the "weather-day_cloudy_gusts" glyph.
-var DayCloudyGusts = &nf.Glyph{
-	ID:      "day_cloudy_gusts",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue300",
-}
-
-// DayCloudyHigh () represents the "weather-day_cloudy_high" glyph.
-var DayCloudyHigh = &nf.Glyph{
-	ID:      "day_cloudy_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue376",
-}
-
-// DayCloudyWindy () represents the "weather-day_cloudy_windy" glyph.
-var DayCloudyWindy = &nf.Glyph{
-	ID:      "day_cloudy_windy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue301",
-}
-
-// DayFog () represents the "weather-day_fog" glyph.
-var DayFog = &nf.Glyph{
-	ID:      "day_fog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue303",
-}
-
-// DayHail () represents the "weather-day_hail" glyph.
-var DayHail = &nf.Glyph{
-	ID:      "day_hail",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue304",
-}
-
-// DayHaze () represents the "weather-day_haze" glyph.
-var DayHaze = &nf.Glyph{
-	ID:      "day_haze",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ae",
-}
-
-// DayLightWind () represents the "weather-day_light_wind" glyph.
-var DayLightWind = &nf.Glyph{
-	ID:      "day_light_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3bc",
-}
-
-// DayLightning () represents the "weather-day_lightning" glyph.
-var DayLightning = &nf.Glyph{
-	ID:      "day_lightning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue305",
-}
-
-// DayRain () represents the "weather-day_rain" glyph.
-var DayRain = &nf.Glyph{
-	ID:      "day_rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue308",
-}
-
-// DayRainMix () represents the "weather-day_rain_mix" glyph.
-var DayRainMix = &nf.Glyph{
-	ID:      "day_rain_mix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue306",
-}
-
-// DayRainWind () represents the "weather-day_rain_wind" glyph.
-var DayRainWind = &nf.Glyph{
-	ID:      "day_rain_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue307",
-}
-
-// DayShowers () represents the "weather-day_showers" glyph.
-var DayShowers = &nf.Glyph{
-	ID:      "day_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue309",
-}
-
-// DaySleet () represents the "weather-day_sleet" glyph.
-var DaySleet = &nf.Glyph{
-	ID:      "day_sleet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3aa",
-}
-
-// DaySleetStorm () represents the "weather-day_sleet_storm" glyph.
-var DaySleetStorm = &nf.Glyph{
-	ID:      "day_sleet_storm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue362",
-}
-
-// DaySnow () represents the "weather-day_snow" glyph.
-var DaySnow = &nf.Glyph{
-	ID:      "day_snow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue30a",
-}
-
-// DaySnowThunderstorm () represents the "weather-day_snow_thunderstorm" glyph.
-var DaySnowThunderstorm = &nf.Glyph{
-	ID:      "day_snow_thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue365",
-}
-
-// DaySnowWind () represents the "weather-day_snow_wind" glyph.
-var DaySnowWind = &nf.Glyph{
-	ID:      "day_snow_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue35f",
-}
-
-// DaySprinkle () represents the "weather-day_sprinkle" glyph.
-var DaySprinkle = &nf.Glyph{
-	ID:      "day_sprinkle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue30b",
-}
-
-// DayStormShowers () represents the "weather-day_storm_showers" glyph.
-var DayStormShowers = &nf.Glyph{
-	ID:      "day_storm_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue30e",
-}
-
-// DaySunny () represents the "weather-day_sunny" glyph.
-var DaySunny = &nf.Glyph{
-	ID:      "day_sunny",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue30d",
-}
-
-// DaySunnyOvercast () represents the "weather-day_sunny_overcast" glyph.
-var DaySunnyOvercast = &nf.Glyph{
-	ID:      "day_sunny_overcast",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue30c",
-}
-
-// DayThunderstorm () represents the "weather-day_thunderstorm" glyph.
-var DayThunderstorm = &nf.Glyph{
-	ID:      "day_thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue30f",
-}
-
-// DayWindy () represents the "weather-day_windy" glyph.
-var DayWindy = &nf.Glyph{
-	ID:      "day_windy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue37d",
-}
-
-// Degrees () represents the "weather-degrees" glyph.
-var Degrees = &nf.Glyph{
-	ID:      "degrees",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue33e",
-}
-
-// DirectionDown () represents the "weather-direction_down" glyph.
-var DirectionDown = &nf.Glyph{
-	ID:      "direction_down",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue340",
-}
-
-// DirectionDownLeft () represents the "weather-direction_down_left" glyph.
-var DirectionDownLeft = &nf.Glyph{
-	ID:      "direction_down_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue33f",
-}
-
-// DirectionDownRight () represents the "weather-direction_down_right" glyph.
-var DirectionDownRight = &nf.Glyph{
-	ID:      "direction_down_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue380",
-}
-
-// DirectionLeft () represents the "weather-direction_left" glyph.
-var DirectionLeft = &nf.Glyph{
-	ID:      "direction_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue344",
-}
-
-// DirectionRight () represents the "weather-direction_right" glyph.
-var DirectionRight = &nf.Glyph{
-	ID:      "direction_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue349",
-}
-
-// DirectionUp () represents the "weather-direction_up" glyph.
-var DirectionUp = &nf.Glyph{
-	ID:      "direction_up",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue353",
-}
-
-// DirectionUpLeft () represents the "weather-direction_up_left" glyph.
-var DirectionUpLeft = &nf.Glyph{
-	ID:      "direction_up_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue37f",
-}
-
-// DirectionUpRight () represents the "weather-direction_up_right" glyph.
-var DirectionUpRight = &nf.Glyph{
-	ID:      "direction_up_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue352",
-}
-
-// Dust () represents the "weather-dust" glyph.
-var Dust = &nf.Glyph{
-	ID:      "dust",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue35d",
-}
-
-// Earthquake () represents the "weather-earthquake" glyph.
-var Earthquake = &nf.Glyph{
-	ID:      "earthquake",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3be",
-}
-
-// Fahrenheit () represents the "weather-fahrenheit" glyph.
-var Fahrenheit = &nf.Glyph{
-	ID:      "fahrenheit",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue341",
-}
-
-// Fire () represents the "weather-fire" glyph.
-var Fire = &nf.Glyph{
-	ID:      "fire",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3bf",
-}
-
-// Flood () represents the "weather-flood" glyph.
-var Flood = &nf.Glyph{
-	ID:      "flood",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue375",
-}
-
-// Fog () represents the "weather-fog" glyph.
-var Fog = &nf.Glyph{
-	ID:      "fog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue313",
-}
-
-// GaleWarning () represents the "weather-gale_warning" glyph.
-var GaleWarning = &nf.Glyph{
-	ID:      "gale_warning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c5",
-}
-
-// Hail () represents the "weather-hail" glyph.
-var Hail = &nf.Glyph{
-	ID:      "hail",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue314",
-}
-
-// Horizon () represents the "weather-horizon" glyph.
-var Horizon = &nf.Glyph{
-	ID:      "horizon",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue343",
-}
-
-// HorizonAlt () represents the "weather-horizon_alt" glyph.
-var HorizonAlt = &nf.Glyph{
-	ID:      "horizon_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue342",
-}
-
-// Hot () represents the "weather-hot" glyph.
-var Hot = &nf.Glyph{
-	ID:      "hot",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue36b",
-}
-
-// Humidity () represents the "weather-humidity" glyph.
-var Humidity = &nf.Glyph{
-	ID:      "humidity",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue373",
-}
-
-// Hurricane () represents the "weather-hurricane" glyph.
-var Hurricane = &nf.Glyph{
-	ID:      "hurricane",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue36c",
-}
-
-// HurricaneWarning () represents the "weather-hurricane_warning" glyph.
-var HurricaneWarning = &nf.Glyph{
-	ID:      "hurricane_warning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c7",
-}
-
-// Lightning () represents the "weather-lightning" glyph.
-var Lightning = &nf.Glyph{
-	ID:      "lightning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue315",
-}
-
-// LunarEclipse () represents the "weather-lunar_eclipse" glyph.
-var LunarEclipse = &nf.Glyph{
-	ID:      "lunar_eclipse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue369",
-}
-
-// Meteor () represents the "weather-meteor" glyph.
-var Meteor = &nf.Glyph{
-	ID:      "meteor",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue36a",
-}
-
-// MoonAltFirstQuarter () represents the "weather-moon_alt_first_quarter" glyph.
-var MoonAltFirstQuarter = &nf.Glyph{
-	ID:      "moon_alt_first_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ce",
-}
-
-// MoonAltFull () represents the "weather-moon_alt_full" glyph.
-var MoonAltFull = &nf.Glyph{
-	ID:      "moon_alt_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d5",
-}
-
-// MoonAltNew () represents the "weather-moon_alt_new" glyph.
-var MoonAltNew = &nf.Glyph{
-	ID:      "moon_alt_new",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3e3",
-}
-
-// MoonAltThirdQuarter () represents the "weather-moon_alt_third_quarter" glyph.
-var MoonAltThirdQuarter = &nf.Glyph{
-	ID:      "moon_alt_third_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3dc",
-}
-
-// MoonAltWaningCrescent1 () represents the "weather-moon_alt_waning_crescent_1" glyph.
-var MoonAltWaningCrescent1 = &nf.Glyph{
-	ID:      "moon_alt_waning_crescent_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3dd",
-}
-
-// MoonAltWaningCrescent2 () represents the "weather-moon_alt_waning_crescent_2" glyph.
-var MoonAltWaningCrescent2 = &nf.Glyph{
-	ID:      "moon_alt_waning_crescent_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3de",
-}
-
-// MoonAltWaningCrescent3 () represents the "weather-moon_alt_waning_crescent_3" glyph.
-var MoonAltWaningCrescent3 = &nf.Glyph{
-	ID:      "moon_alt_waning_crescent_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3df",
-}
-
-// MoonAltWaningCrescent4 () represents the "weather-moon_alt_waning_crescent_4" glyph.
-var MoonAltWaningCrescent4 = &nf.Glyph{
-	ID:      "moon_alt_waning_crescent_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3e0",
-}
-
-// MoonAltWaningCrescent5 () represents the "weather-moon_alt_waning_crescent_5" glyph.
-var MoonAltWaningCrescent5 = &nf.Glyph{
-	ID:      "moon_alt_waning_crescent_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3e1",
-}
-
-// MoonAltWaningCrescent6 () represents the "weather-moon_alt_waning_crescent_6" glyph.
-var MoonAltWaningCrescent6 = &nf.Glyph{
-	ID:      "moon_alt_waning_crescent_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3e2",
-}
-
-// MoonAltWaningGibbous1 () represents the "weather-moon_alt_waning_gibbous_1" glyph.
-var MoonAltWaningGibbous1 = &nf.Glyph{
-	ID:      "moon_alt_waning_gibbous_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d6",
-}
-
-// MoonAltWaningGibbous2 () represents the "weather-moon_alt_waning_gibbous_2" glyph.
-var MoonAltWaningGibbous2 = &nf.Glyph{
-	ID:      "moon_alt_waning_gibbous_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d7",
-}
-
-// MoonAltWaningGibbous3 () represents the "weather-moon_alt_waning_gibbous_3" glyph.
-var MoonAltWaningGibbous3 = &nf.Glyph{
-	ID:      "moon_alt_waning_gibbous_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d8",
-}
-
-// MoonAltWaningGibbous4 () represents the "weather-moon_alt_waning_gibbous_4" glyph.
-var MoonAltWaningGibbous4 = &nf.Glyph{
-	ID:      "moon_alt_waning_gibbous_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d9",
-}
-
-// MoonAltWaningGibbous5 () represents the "weather-moon_alt_waning_gibbous_5" glyph.
-var MoonAltWaningGibbous5 = &nf.Glyph{
-	ID:      "moon_alt_waning_gibbous_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3da",
-}
-
-// MoonAltWaningGibbous6 () represents the "weather-moon_alt_waning_gibbous_6" glyph.
-var MoonAltWaningGibbous6 = &nf.Glyph{
-	ID:      "moon_alt_waning_gibbous_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3db",
-}
-
-// MoonAltWaxingCrescent1 () represents the "weather-moon_alt_waxing_crescent_1" glyph.
-var MoonAltWaxingCrescent1 = &nf.Glyph{
-	ID:      "moon_alt_waxing_crescent_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c8",
-}
-
-// MoonAltWaxingCrescent2 () represents the "weather-moon_alt_waxing_crescent_2" glyph.
-var MoonAltWaxingCrescent2 = &nf.Glyph{
-	ID:      "moon_alt_waxing_crescent_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c9",
-}
-
-// MoonAltWaxingCrescent3 () represents the "weather-moon_alt_waxing_crescent_3" glyph.
-var MoonAltWaxingCrescent3 = &nf.Glyph{
-	ID:      "moon_alt_waxing_crescent_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ca",
-}
-
-// MoonAltWaxingCrescent4 () represents the "weather-moon_alt_waxing_crescent_4" glyph.
-var MoonAltWaxingCrescent4 = &nf.Glyph{
-	ID:      "moon_alt_waxing_crescent_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3cb",
-}
-
-// MoonAltWaxingCrescent5 () represents the "weather-moon_alt_waxing_crescent_5" glyph.
-var MoonAltWaxingCrescent5 = &nf.Glyph{
-	ID:      "moon_alt_waxing_crescent_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3cc",
-}
-
-// MoonAltWaxingCrescent6 () represents the "weather-moon_alt_waxing_crescent_6" glyph.
-var MoonAltWaxingCrescent6 = &nf.Glyph{
-	ID:      "moon_alt_waxing_crescent_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3cd",
-}
-
-// MoonAltWaxingGibbous1 () represents the "weather-moon_alt_waxing_gibbous_1" glyph.
-var MoonAltWaxingGibbous1 = &nf.Glyph{
-	ID:      "moon_alt_waxing_gibbous_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3cf",
-}
-
-// MoonAltWaxingGibbous2 () represents the "weather-moon_alt_waxing_gibbous_2" glyph.
-var MoonAltWaxingGibbous2 = &nf.Glyph{
-	ID:      "moon_alt_waxing_gibbous_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d0",
-}
-
-// MoonAltWaxingGibbous3 () represents the "weather-moon_alt_waxing_gibbous_3" glyph.
-var MoonAltWaxingGibbous3 = &nf.Glyph{
-	ID:      "moon_alt_waxing_gibbous_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d1",
-}
-
-// MoonAltWaxingGibbous4 () represents the "weather-moon_alt_waxing_gibbous_4" glyph.
-var MoonAltWaxingGibbous4 = &nf.Glyph{
-	ID:      "moon_alt_waxing_gibbous_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d2",
-}
-
-// MoonAltWaxingGibbous5 () represents the "weather-moon_alt_waxing_gibbous_5" glyph.
-var MoonAltWaxingGibbous5 = &nf.Glyph{
-	ID:      "moon_alt_waxing_gibbous_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d3",
-}
-
-// MoonAltWaxingGibbous6 () represents the "weather-moon_alt_waxing_gibbous_6" glyph.
-var MoonAltWaxingGibbous6 = &nf.Glyph{
-	ID:      "moon_alt_waxing_gibbous_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3d4",
-}
-
-// MoonFirstQuarter () represents the "weather-moon_first_quarter" glyph.
-var MoonFirstQuarter = &nf.Glyph{
-	ID:      "moon_first_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue394",
-}
-
-// MoonFull () represents the "weather-moon_full" glyph.
-var MoonFull = &nf.Glyph{
-	ID:      "moon_full",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue39b",
-}
-
-// MoonNew () represents the "weather-moon_new" glyph.
-var MoonNew = &nf.Glyph{
-	ID:      "moon_new",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue38d",
-}
-
-// MoonThirdQuarter () represents the "weather-moon_third_quarter" glyph.
-var MoonThirdQuarter = &nf.Glyph{
-	ID:      "moon_third_quarter",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a2",
-}
-
-// MoonWaningCrescent1 () represents the "weather-moon_waning_crescent_1" glyph.
-var MoonWaningCrescent1 = &nf.Glyph{
-	ID:      "moon_waning_crescent_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a3",
-}
-
-// MoonWaningCrescent2 () represents the "weather-moon_waning_crescent_2" glyph.
-var MoonWaningCrescent2 = &nf.Glyph{
-	ID:      "moon_waning_crescent_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a4",
-}
-
-// MoonWaningCrescent3 () represents the "weather-moon_waning_crescent_3" glyph.
-var MoonWaningCrescent3 = &nf.Glyph{
-	ID:      "moon_waning_crescent_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a5",
-}
-
-// MoonWaningCrescent4 () represents the "weather-moon_waning_crescent_4" glyph.
-var MoonWaningCrescent4 = &nf.Glyph{
-	ID:      "moon_waning_crescent_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a6",
-}
-
-// MoonWaningCrescent5 () represents the "weather-moon_waning_crescent_5" glyph.
-var MoonWaningCrescent5 = &nf.Glyph{
-	ID:      "moon_waning_crescent_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a7",
-}
-
-// MoonWaningCrescent6 () represents the "weather-moon_waning_crescent_6" glyph.
-var MoonWaningCrescent6 = &nf.Glyph{
-	ID:      "moon_waning_crescent_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a8",
-}
-
-// MoonWaningGibbous1 () represents the "weather-moon_waning_gibbous_1" glyph.
-var MoonWaningGibbous1 = &nf.Glyph{
-	ID:      "moon_waning_gibbous_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue39c",
-}
-
-// MoonWaningGibbous2 () represents the "weather-moon_waning_gibbous_2" glyph.
-var MoonWaningGibbous2 = &nf.Glyph{
-	ID:      "moon_waning_gibbous_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue39d",
-}
-
-// MoonWaningGibbous3 () represents the "weather-moon_waning_gibbous_3" glyph.
-var MoonWaningGibbous3 = &nf.Glyph{
-	ID:      "moon_waning_gibbous_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue39e",
-}
-
-// MoonWaningGibbous4 () represents the "weather-moon_waning_gibbous_4" glyph.
-var MoonWaningGibbous4 = &nf.Glyph{
-	ID:      "moon_waning_gibbous_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue39f",
-}
-
-// MoonWaningGibbous5 () represents the "weather-moon_waning_gibbous_5" glyph.
-var MoonWaningGibbous5 = &nf.Glyph{
-	ID:      "moon_waning_gibbous_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a0",
-}
-
-// MoonWaningGibbous6 () represents the "weather-moon_waning_gibbous_6" glyph.
-var MoonWaningGibbous6 = &nf.Glyph{
-	ID:      "moon_waning_gibbous_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a1",
-}
-
-// MoonWaxingCrescent1 () represents the "weather-moon_waxing_crescent_1" glyph.
-var MoonWaxingCrescent1 = &nf.Glyph{
-	ID:      "moon_waxing_crescent_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue38e",
-}
-
-// MoonWaxingCrescent2 () represents the "weather-moon_waxing_crescent_2" glyph.
-var MoonWaxingCrescent2 = &nf.Glyph{
-	ID:      "moon_waxing_crescent_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue38f",
-}
-
-// MoonWaxingCrescent3 () represents the "weather-moon_waxing_crescent_3" glyph.
-var MoonWaxingCrescent3 = &nf.Glyph{
-	ID:      "moon_waxing_crescent_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue390",
-}
-
-// MoonWaxingCrescent4 () represents the "weather-moon_waxing_crescent_4" glyph.
-var MoonWaxingCrescent4 = &nf.Glyph{
-	ID:      "moon_waxing_crescent_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue391",
-}
-
-// MoonWaxingCrescent5 () represents the "weather-moon_waxing_crescent_5" glyph.
-var MoonWaxingCrescent5 = &nf.Glyph{
-	ID:      "moon_waxing_crescent_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue392",
-}
-
-// MoonWaxingCrescent6 () represents the "weather-moon_waxing_crescent_6" glyph.
-var MoonWaxingCrescent6 = &nf.Glyph{
-	ID:      "moon_waxing_crescent_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue393",
-}
-
-// MoonWaxingGibbous1 () represents the "weather-moon_waxing_gibbous_1" glyph.
-var MoonWaxingGibbous1 = &nf.Glyph{
-	ID:      "moon_waxing_gibbous_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue395",
-}
-
-// MoonWaxingGibbous2 () represents the "weather-moon_waxing_gibbous_2" glyph.
-var MoonWaxingGibbous2 = &nf.Glyph{
-	ID:      "moon_waxing_gibbous_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue396",
-}
-
-// MoonWaxingGibbous3 () represents the "weather-moon_waxing_gibbous_3" glyph.
-var MoonWaxingGibbous3 = &nf.Glyph{
-	ID:      "moon_waxing_gibbous_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue397",
-}
-
-// MoonWaxingGibbous4 () represents the "weather-moon_waxing_gibbous_4" glyph.
-var MoonWaxingGibbous4 = &nf.Glyph{
-	ID:      "moon_waxing_gibbous_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue398",
-}
-
-// MoonWaxingGibbous5 () represents the "weather-moon_waxing_gibbous_5" glyph.
-var MoonWaxingGibbous5 = &nf.Glyph{
-	ID:      "moon_waxing_gibbous_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue399",
-}
-
-// MoonWaxingGibbous6 () represents the "weather-moon_waxing_gibbous_6" glyph.
-var MoonWaxingGibbous6 = &nf.Glyph{
-	ID:      "moon_waxing_gibbous_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue39a",
-}
-
-// Moonrise () represents the "weather-moonrise" glyph.
-var Moonrise = &nf.Glyph{
-	ID:      "moonrise",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c1",
-}
-
-// Moonset () represents the "weather-moonset" glyph.
-var Moonset = &nf.Glyph{
-	ID:      "moonset",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c2",
-}
-
-// Na () represents the "weather-na" glyph.
-var Na = &nf.Glyph{
-	ID:      "na",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue374",
-}
-
-// NightAltCloudy () represents the "weather-night_alt_cloudy" glyph.
-var NightAltCloudy = &nf.Glyph{
-	ID:      "night_alt_cloudy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue37e",
-}
-
-// NightAltCloudyGusts () represents the "weather-night_alt_cloudy_gusts" glyph.
-var NightAltCloudyGusts = &nf.Glyph{
-	ID:      "night_alt_cloudy_gusts",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue31f",
-}
-
-// NightAltCloudyHigh () represents the "weather-night_alt_cloudy_high" glyph.
-var NightAltCloudyHigh = &nf.Glyph{
-	ID:      "night_alt_cloudy_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue377",
-}
-
-// NightAltCloudyWindy () represents the "weather-night_alt_cloudy_windy" glyph.
-var NightAltCloudyWindy = &nf.Glyph{
-	ID:      "night_alt_cloudy_windy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue320",
-}
-
-// NightAltHail () represents the "weather-night_alt_hail" glyph.
-var NightAltHail = &nf.Glyph{
-	ID:      "night_alt_hail",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue321",
-}
-
-// NightAltLightning () represents the "weather-night_alt_lightning" glyph.
-var NightAltLightning = &nf.Glyph{
-	ID:      "night_alt_lightning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue322",
-}
-
-// NightAltPartlyCloudy () represents the "weather-night_alt_partly_cloudy" glyph.
-var NightAltPartlyCloudy = &nf.Glyph{
-	ID:      "night_alt_partly_cloudy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue379",
-}
-
-// NightAltRain () represents the "weather-night_alt_rain" glyph.
-var NightAltRain = &nf.Glyph{
-	ID:      "night_alt_rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue325",
-}
-
-// NightAltRainMix () represents the "weather-night_alt_rain_mix" glyph.
-var NightAltRainMix = &nf.Glyph{
-	ID:      "night_alt_rain_mix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue323",
-}
-
-// NightAltRainWind () represents the "weather-night_alt_rain_wind" glyph.
-var NightAltRainWind = &nf.Glyph{
-	ID:      "night_alt_rain_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue324",
-}
-
-// NightAltShowers () represents the "weather-night_alt_showers" glyph.
-var NightAltShowers = &nf.Glyph{
-	ID:      "night_alt_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue326",
-}
-
-// NightAltSleet () represents the "weather-night_alt_sleet" glyph.
-var NightAltSleet = &nf.Glyph{
-	ID:      "night_alt_sleet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ac",
-}
-
-// NightAltSleetStorm () represents the "weather-night_alt_sleet_storm" glyph.
-var NightAltSleetStorm = &nf.Glyph{
-	ID:      "night_alt_sleet_storm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue364",
-}
-
-// NightAltSnow () represents the "weather-night_alt_snow" glyph.
-var NightAltSnow = &nf.Glyph{
-	ID:      "night_alt_snow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue327",
-}
-
-// NightAltSnowThunderstorm () represents the "weather-night_alt_snow_thunderstorm" glyph.
-var NightAltSnowThunderstorm = &nf.Glyph{
-	ID:      "night_alt_snow_thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue367",
-}
-
-// NightAltSnowWind () represents the "weather-night_alt_snow_wind" glyph.
-var NightAltSnowWind = &nf.Glyph{
-	ID:      "night_alt_snow_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue361",
-}
-
-// NightAltSprinkle () represents the "weather-night_alt_sprinkle" glyph.
-var NightAltSprinkle = &nf.Glyph{
-	ID:      "night_alt_sprinkle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue328",
-}
-
-// NightAltStormShowers () represents the "weather-night_alt_storm_showers" glyph.
-var NightAltStormShowers = &nf.Glyph{
-	ID:      "night_alt_storm_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue329",
-}
-
-// NightAltThunderstorm () represents the "weather-night_alt_thunderstorm" glyph.
-var NightAltThunderstorm = &nf.Glyph{
-	ID:      "night_alt_thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue32a",
-}
-
-// NightClear () represents the "weather-night_clear" glyph.
-var NightClear = &nf.Glyph{
-	ID:      "night_clear",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue32b",
-}
-
-// NightCloudy () represents the "weather-night_cloudy" glyph.
-var NightCloudy = &nf.Glyph{
-	ID:      "night_cloudy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue32e",
-}
-
-// NightCloudyGusts () represents the "weather-night_cloudy_gusts" glyph.
-var NightCloudyGusts = &nf.Glyph{
-	ID:      "night_cloudy_gusts",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue32c",
-}
-
-// NightCloudyHigh () represents the "weather-night_cloudy_high" glyph.
-var NightCloudyHigh = &nf.Glyph{
-	ID:      "night_cloudy_high",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue378",
-}
-
-// NightCloudyWindy () represents the "weather-night_cloudy_windy" glyph.
-var NightCloudyWindy = &nf.Glyph{
-	ID:      "night_cloudy_windy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue32d",
-}
-
-// NightFog () represents the "weather-night_fog" glyph.
-var NightFog = &nf.Glyph{
-	ID:      "night_fog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue346",
-}
-
-// NightHail () represents the "weather-night_hail" glyph.
-var NightHail = &nf.Glyph{
-	ID:      "night_hail",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue32f",
-}
-
-// NightLightning () represents the "weather-night_lightning" glyph.
-var NightLightning = &nf.Glyph{
-	ID:      "night_lightning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue330",
-}
-
-// NightPartlyCloudy () represents the "weather-night_partly_cloudy" glyph.
-var NightPartlyCloudy = &nf.Glyph{
-	ID:      "night_partly_cloudy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue37b",
-}
-
-// NightRain () represents the "weather-night_rain" glyph.
-var NightRain = &nf.Glyph{
-	ID:      "night_rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue333",
-}
-
-// NightRainMix () represents the "weather-night_rain_mix" glyph.
-var NightRainMix = &nf.Glyph{
-	ID:      "night_rain_mix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue331",
-}
-
-// NightRainWind () represents the "weather-night_rain_wind" glyph.
-var NightRainWind = &nf.Glyph{
-	ID:      "night_rain_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue332",
-}
-
-// NightShowers () represents the "weather-night_showers" glyph.
-var NightShowers = &nf.Glyph{
-	ID:      "night_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue334",
-}
-
-// NightSleet () represents the "weather-night_sleet" glyph.
-var NightSleet = &nf.Glyph{
-	ID:      "night_sleet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ab",
-}
-
-// NightSleetStorm () represents the "weather-night_sleet_storm" glyph.
-var NightSleetStorm = &nf.Glyph{
-	ID:      "night_sleet_storm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue363",
-}
-
-// NightSnow () represents the "weather-night_snow" glyph.
-var NightSnow = &nf.Glyph{
-	ID:      "night_snow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue335",
-}
-
-// NightSnowThunderstorm () represents the "weather-night_snow_thunderstorm" glyph.
-var NightSnowThunderstorm = &nf.Glyph{
-	ID:      "night_snow_thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue366",
-}
-
-// NightSnowWind () represents the "weather-night_snow_wind" glyph.
-var NightSnowWind = &nf.Glyph{
-	ID:      "night_snow_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue360",
-}
-
-// NightSprinkle () represents the "weather-night_sprinkle" glyph.
-var NightSprinkle = &nf.Glyph{
-	ID:      "night_sprinkle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue336",
-}
-
-// NightStormShowers () represents the "weather-night_storm_showers" glyph.
-var NightStormShowers = &nf.Glyph{
-	ID:      "night_storm_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue337",
-}
-
-// NightThunderstorm () represents the "weather-night_thunderstorm" glyph.
-var NightThunderstorm = &nf.Glyph{
-	ID:      "night_thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue338",
-}
-
-// Rain () represents the "weather-rain" glyph.
-var Rain = &nf.Glyph{
-	ID:      "rain",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue318",
-}
-
-// RainMix () represents the "weather-rain_mix" glyph.
-var RainMix = &nf.Glyph{
-	ID:      "rain_mix",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue316",
-}
-
-// RainWind () represents the "weather-rain_wind" glyph.
-var RainWind = &nf.Glyph{
-	ID:      "rain_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue317",
-}
-
-// Raindrop () represents the "weather-raindrop" glyph.
-var Raindrop = &nf.Glyph{
-	ID:      "raindrop",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue371",
-}
-
-// Raindrops () represents the "weather-raindrops" glyph.
-var Raindrops = &nf.Glyph{
-	ID:      "raindrops",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue34a",
-}
-
-// Refresh () represents the "weather-refresh" glyph.
-var Refresh = &nf.Glyph{
-	ID:      "refresh",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue348",
-}
-
-// RefreshAlt () represents the "weather-refresh_alt" glyph.
-var RefreshAlt = &nf.Glyph{
-	ID:      "refresh_alt",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue347",
-}
-
-// Sandstorm () represents the "weather-sandstorm" glyph.
-var Sandstorm = &nf.Glyph{
-	ID:      "sandstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue37a",
-}
-
-// Showers () represents the "weather-showers" glyph.
-var Showers = &nf.Glyph{
-	ID:      "showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue319",
-}
-
-// Sleet () represents the "weather-sleet" glyph.
-var Sleet = &nf.Glyph{
-	ID:      "sleet",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ad",
-}
-
-// SmallCraftAdvisory () represents the "weather-small_craft_advisory" glyph.
-var SmallCraftAdvisory = &nf.Glyph{
-	ID:      "small_craft_advisory",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c4",
-}
-
-// Smog () represents the "weather-smog" glyph.
-var Smog = &nf.Glyph{
-	ID:      "smog",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue36d",
-}
-
-// Smoke () represents the "weather-smoke" glyph.
-var Smoke = &nf.Glyph{
-	ID:      "smoke",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue35c",
-}
-
-// Snow () represents the "weather-snow" glyph.
-var Snow = &nf.Glyph{
-	ID:      "snow",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue31a",
-}
-
-// SnowWind () represents the "weather-snow_wind" glyph.
-var SnowWind = &nf.Glyph{
-	ID:      "snow_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue35e",
-}
-
-// SnowflakeCold () represents the "weather-snowflake_cold" glyph.
-var SnowflakeCold = &nf.Glyph{
-	ID:      "snowflake_cold",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue36f",
-}
-
-// SolarEclipse () represents the "weather-solar_eclipse" glyph.
-var SolarEclipse = &nf.Glyph{
-	ID:      "solar_eclipse",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue368",
-}
-
-// Sprinkle () represents the "weather-sprinkle" glyph.
-var Sprinkle = &nf.Glyph{
-	ID:      "sprinkle",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue31b",
-}
-
-// Stars () represents the "weather-stars" glyph.
-var Stars = &nf.Glyph{
-	ID:      "stars",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue370",
-}
-
-// StormShowers () represents the "weather-storm_showers" glyph.
-var StormShowers = &nf.Glyph{
-	ID:      "storm_showers",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue31c",
-}
-
-// StormWarning () represents the "weather-storm_warning" glyph.
-var StormWarning = &nf.Glyph{
-	ID:      "storm_warning",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c6",
-}
-
-// StrongWind () represents the "weather-strong_wind" glyph.
-var StrongWind = &nf.Glyph{
-	ID:      "strong_wind",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue34b",
-}
-
-// Sunrise () represents the "weather-sunrise" glyph.
-var Sunrise = &nf.Glyph{
-	ID:      "sunrise",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue34c",
-}
-
-// Sunset () represents the "weather-sunset" glyph.
-var Sunset = &nf.Glyph{
-	ID:      "sunset",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue34d",
-}
-
-// Thermometer () represents the "weather-thermometer" glyph.
-var Thermometer = &nf.Glyph{
-	ID:      "thermometer",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue350",
-}
-
-// ThermometerExterior () represents the "weather-thermometer_exterior" glyph.
-var ThermometerExterior = &nf.Glyph{
-	ID:      "thermometer_exterior",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue34e",
-}
-
-// ThermometerInternal () represents the "weather-thermometer_internal" glyph.
-var ThermometerInternal = &nf.Glyph{
-	ID:      "thermometer_internal",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue34f",
-}
-
-// Thunderstorm () represents the "weather-thunderstorm" glyph.
-var Thunderstorm = &nf.Glyph{
-	ID:      "thunderstorm",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue31d",
-}
-
-// Time1 () represents the "weather-time_1" glyph.
-var Time1 = &nf.Glyph{
-	ID:      "time_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue382",
-}
-
-// Time10 () represents the "weather-time_10" glyph.
-var Time10 = &nf.Glyph{
-	ID:      "time_10",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue38b",
-}
-
-// Time11 () represents the "weather-time_11" glyph.
-var Time11 = &nf.Glyph{
-	ID:      "time_11",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue38c",
-}
-
-// Time12 () represents the "weather-time_12" glyph.
-var Time12 = &nf.Glyph{
-	ID:      "time_12",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue381",
-}
-
-// Time2 () represents the "weather-time_2" glyph.
-var Time2 = &nf.Glyph{
-	ID:      "time_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue383",
-}
-
-// Time3 () represents the "weather-time_3" glyph.
-var Time3 = &nf.Glyph{
-	ID:      "time_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue384",
-}
-
-// Time4 () represents the "weather-time_4" glyph.
-var Time4 = &nf.Glyph{
-	ID:      "time_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue385",
-}
-
-// Time5 () represents the "weather-time_5" glyph.
-var Time5 = &nf.Glyph{
-	ID:      "time_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue386",
-}
-
-// Time6 () represents the "weather-time_6" glyph.
-var Time6 = &nf.Glyph{
-	ID:      "time_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue387",
-}
-
-// Time7 () represents the "weather-time_7" glyph.
-var Time7 = &nf.Glyph{
-	ID:      "time_7",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue388",
-}
-
-// Time8 () represents the "weather-time_8" glyph.
-var Time8 = &nf.Glyph{
-	ID:      "time_8",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue389",
-}
-
-// Time9 () represents the "weather-time_9" glyph.
-var Time9 = &nf.Glyph{
-	ID:      "time_9",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue38a",
-}
-
-// Tornado () represents the "weather-tornado" glyph.
-var Tornado = &nf.Glyph{
-	ID:      "tornado",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue351",
-}
-
-// Train () represents the "weather-train" glyph.
-var Train = &nf.Glyph{
-	ID:      "train",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c3",
-}
-
-// Tsunami () represents the "weather-tsunami" glyph.
-var Tsunami = &nf.Glyph{
-	ID:      "tsunami",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3bd",
-}
-
-// Umbrella () represents the "weather-umbrella" glyph.
-var Umbrella = &nf.Glyph{
-	ID:      "umbrella",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue37c",
-}
-
-// Volcano () represents the "weather-volcano" glyph.
-var Volcano = &nf.Glyph{
-	ID:      "volcano",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3c0",
-}
-
-// WindBeaufort0 () represents the "weather-wind_beaufort_0" glyph.
-var WindBeaufort0 = &nf.Glyph{
-	ID:      "wind_beaufort_0",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3af",
-}
-
-// WindBeaufort1 () represents the "weather-wind_beaufort_1" glyph.
-var WindBeaufort1 = &nf.Glyph{
-	ID:      "wind_beaufort_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b0",
-}
-
-// WindBeaufort10 () represents the "weather-wind_beaufort_10" glyph.
-var WindBeaufort10 = &nf.Glyph{
-	ID:      "wind_beaufort_10",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b9",
-}
-
-// WindBeaufort11 () represents the "weather-wind_beaufort_11" glyph.
-var WindBeaufort11 = &nf.Glyph{
-	ID:      "wind_beaufort_11",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3ba",
-}
-
-// WindBeaufort12 () represents the "weather-wind_beaufort_12" glyph.
-var WindBeaufort12 = &nf.Glyph{
-	ID:      "wind_beaufort_12",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3bb",
-}
-
-// WindBeaufort2 () represents the "weather-wind_beaufort_2" glyph.
-var WindBeaufort2 = &nf.Glyph{
-	ID:      "wind_beaufort_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b1",
-}
-
-// WindBeaufort3 () represents the "weather-wind_beaufort_3" glyph.
-var WindBeaufort3 = &nf.Glyph{
-	ID:      "wind_beaufort_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b2",
-}
-
-// WindBeaufort4 () represents the "weather-wind_beaufort_4" glyph.
-var WindBeaufort4 = &nf.Glyph{
-	ID:      "wind_beaufort_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b3",
-}
-
-// WindBeaufort5 () represents the "weather-wind_beaufort_5" glyph.
-var WindBeaufort5 = &nf.Glyph{
-	ID:      "wind_beaufort_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b4",
-}
-
-// WindBeaufort6 () represents the "weather-wind_beaufort_6" glyph.
-var WindBeaufort6 = &nf.Glyph{
-	ID:      "wind_beaufort_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b5",
-}
-
-// WindBeaufort7 () represents the "weather-wind_beaufort_7" glyph.
-var WindBeaufort7 = &nf.Glyph{
-	ID:      "wind_beaufort_7",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b6",
-}
-
-// WindBeaufort8 () represents the "weather-wind_beaufort_8" glyph.
-var WindBeaufort8 = &nf.Glyph{
-	ID:      "wind_beaufort_8",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b7",
-}
-
-// WindBeaufort9 () represents the "weather-wind_beaufort_9" glyph.
-var WindBeaufort9 = &nf.Glyph{
-	ID:      "wind_beaufort_9",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3b8",
-}
-
-// WindDirection () represents the "weather-wind_direction" glyph.
-var WindDirection = &nf.Glyph{
-	ID:      "wind_direction",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue3a9",
-}
-
-// WindEast () represents the "weather-wind_east" glyph.
-var WindEast = &nf.Glyph{
-	ID:      "wind_east",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue35b",
-}
-
-// WindNorth () represents the "weather-wind_north" glyph.
-var WindNorth = &nf.Glyph{
-	ID:      "wind_north",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue35a",
-}
-
-// WindNorthEast () represents the "weather-wind_north_east" glyph.
-var WindNorthEast = &nf.Glyph{
-	ID:      "wind_north_east",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue359",
-}
-
-// WindNorthWest () represents the "weather-wind_north_west" glyph.
-var WindNorthWest = &nf.Glyph{
-	ID:      "wind_north_west",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue358",
-}
-
-// WindSouth () represents the "weather-wind_south" glyph.
-var WindSouth = &nf.Glyph{
-	ID:      "wind_south",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue357",
-}
-
-// WindSouthEast () represents the "weather-wind_south_east" glyph.
-var WindSouthEast = &nf.Glyph{
-	ID:      "wind_south_east",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue356",
-}
-
-// WindSouthWest () represents the "weather-wind_south_west" glyph.
-var WindSouthWest = &nf.Glyph{
-	ID:      "wind_south_west",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue355",
-}
-
-// WindWest () represents the "weather-wind_west" glyph.
-var WindWest = &nf.Glyph{
-	ID:      "wind_west",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue354",
-}
-
-// Windy () represents the "weather-windy" glyph.
-var Windy = &nf.Glyph{
-	ID:      "windy",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\ue31e",
-}
+const (
+	Alien                    nf.Glyph = "" //  ("\ue36e") represents the "weather-alien" glyph.
+	Aliens                   nf.Glyph = "" //  ("\ue345") represents the "weather-aliens" glyph.
+	Barometer                nf.Glyph = "" //  ("\ue372") represents the "weather-barometer" glyph.
+	Celsius                  nf.Glyph = "" //  ("\ue339") represents the "weather-celsius" glyph.
+	Cloud                    nf.Glyph = "" //  ("\ue33d") represents the "weather-cloud" glyph.
+	CloudDown                nf.Glyph = "" //  ("\ue33a") represents the "weather-cloud_down" glyph.
+	CloudRefresh             nf.Glyph = "" //  ("\ue33b") represents the "weather-cloud_refresh" glyph.
+	CloudUp                  nf.Glyph = "" //  ("\ue33c") represents the "weather-cloud_up" glyph.
+	Cloudy                   nf.Glyph = "" //  ("\ue312") represents the "weather-cloudy" glyph.
+	CloudyGusts              nf.Glyph = "" //  ("\ue310") represents the "weather-cloudy_gusts" glyph.
+	CloudyWindy              nf.Glyph = "" //  ("\ue311") represents the "weather-cloudy_windy" glyph.
+	DayCloudy                nf.Glyph = "" //  ("\ue302") represents the "weather-day_cloudy" glyph.
+	DayCloudyGusts           nf.Glyph = "" //  ("\ue300") represents the "weather-day_cloudy_gusts" glyph.
+	DayCloudyHigh            nf.Glyph = "" //  ("\ue376") represents the "weather-day_cloudy_high" glyph.
+	DayCloudyWindy           nf.Glyph = "" //  ("\ue301") represents the "weather-day_cloudy_windy" glyph.
+	DayFog                   nf.Glyph = "" //  ("\ue303") represents the "weather-day_fog" glyph.
+	DayHail                  nf.Glyph = "" //  ("\ue304") represents the "weather-day_hail" glyph.
+	DayHaze                  nf.Glyph = "" //  ("\ue3ae") represents the "weather-day_haze" glyph.
+	DayLightWind             nf.Glyph = "" //  ("\ue3bc") represents the "weather-day_light_wind" glyph.
+	DayLightning             nf.Glyph = "" //  ("\ue305") represents the "weather-day_lightning" glyph.
+	DayRain                  nf.Glyph = "" //  ("\ue308") represents the "weather-day_rain" glyph.
+	DayRainMix               nf.Glyph = "" //  ("\ue306") represents the "weather-day_rain_mix" glyph.
+	DayRainWind              nf.Glyph = "" //  ("\ue307") represents the "weather-day_rain_wind" glyph.
+	DayShowers               nf.Glyph = "" //  ("\ue309") represents the "weather-day_showers" glyph.
+	DaySleet                 nf.Glyph = "" //  ("\ue3aa") represents the "weather-day_sleet" glyph.
+	DaySleetStorm            nf.Glyph = "" //  ("\ue362") represents the "weather-day_sleet_storm" glyph.
+	DaySnow                  nf.Glyph = "" //  ("\ue30a") represents the "weather-day_snow" glyph.
+	DaySnowThunderstorm      nf.Glyph = "" //  ("\ue365") represents the "weather-day_snow_thunderstorm" glyph.
+	DaySnowWind              nf.Glyph = "" //  ("\ue35f") represents the "weather-day_snow_wind" glyph.
+	DaySprinkle              nf.Glyph = "" //  ("\ue30b") represents the "weather-day_sprinkle" glyph.
+	DayStormShowers          nf.Glyph = "" //  ("\ue30e") represents the "weather-day_storm_showers" glyph.
+	DaySunny                 nf.Glyph = "" //  ("\ue30d") represents the "weather-day_sunny" glyph.
+	DaySunnyOvercast         nf.Glyph = "" //  ("\ue30c") represents the "weather-day_sunny_overcast" glyph.
+	DayThunderstorm          nf.Glyph = "" //  ("\ue30f") represents the "weather-day_thunderstorm" glyph.
+	DayWindy                 nf.Glyph = "" //  ("\ue37d") represents the "weather-day_windy" glyph.
+	Degrees                  nf.Glyph = "" //  ("\ue33e") represents the "weather-degrees" glyph.
+	DirectionDown            nf.Glyph = "" //  ("\ue340") represents the "weather-direction_down" glyph.
+	DirectionDownLeft        nf.Glyph = "" //  ("\ue33f") represents the "weather-direction_down_left" glyph.
+	DirectionDownRight       nf.Glyph = "" //  ("\ue380") represents the "weather-direction_down_right" glyph.
+	DirectionLeft            nf.Glyph = "" //  ("\ue344") represents the "weather-direction_left" glyph.
+	DirectionRight           nf.Glyph = "" //  ("\ue349") represents the "weather-direction_right" glyph.
+	DirectionUp              nf.Glyph = "" //  ("\ue353") represents the "weather-direction_up" glyph.
+	DirectionUpLeft          nf.Glyph = "" //  ("\ue37f") represents the "weather-direction_up_left" glyph.
+	DirectionUpRight         nf.Glyph = "" //  ("\ue352") represents the "weather-direction_up_right" glyph.
+	Dust                     nf.Glyph = "" //  ("\ue35d") represents the "weather-dust" glyph.
+	Earthquake               nf.Glyph = "" //  ("\ue3be") represents the "weather-earthquake" glyph.
+	Fahrenheit               nf.Glyph = "" //  ("\ue341") represents the "weather-fahrenheit" glyph.
+	Fire                     nf.Glyph = "" //  ("\ue3bf") represents the "weather-fire" glyph.
+	Flood                    nf.Glyph = "" //  ("\ue375") represents the "weather-flood" glyph.
+	Fog                      nf.Glyph = "" //  ("\ue313") represents the "weather-fog" glyph.
+	GaleWarning              nf.Glyph = "" //  ("\ue3c5") represents the "weather-gale_warning" glyph.
+	Hail                     nf.Glyph = "" //  ("\ue314") represents the "weather-hail" glyph.
+	Horizon                  nf.Glyph = "" //  ("\ue343") represents the "weather-horizon" glyph.
+	HorizonAlt               nf.Glyph = "" //  ("\ue342") represents the "weather-horizon_alt" glyph.
+	Hot                      nf.Glyph = "" //  ("\ue36b") represents the "weather-hot" glyph.
+	Humidity                 nf.Glyph = "" //  ("\ue373") represents the "weather-humidity" glyph.
+	Hurricane                nf.Glyph = "" //  ("\ue36c") represents the "weather-hurricane" glyph.
+	HurricaneWarning         nf.Glyph = "" //  ("\ue3c7") represents the "weather-hurricane_warning" glyph.
+	Lightning                nf.Glyph = "" //  ("\ue315") represents the "weather-lightning" glyph.
+	LunarEclipse             nf.Glyph = "" //  ("\ue369") represents the "weather-lunar_eclipse" glyph.
+	Meteor                   nf.Glyph = "" //  ("\ue36a") represents the "weather-meteor" glyph.
+	MoonAltFirstQuarter      nf.Glyph = "" //  ("\ue3ce") represents the "weather-moon_alt_first_quarter" glyph.
+	MoonAltFull              nf.Glyph = "" //  ("\ue3d5") represents the "weather-moon_alt_full" glyph.
+	MoonAltNew               nf.Glyph = "" //  ("\ue3e3") represents the "weather-moon_alt_new" glyph.
+	MoonAltThirdQuarter      nf.Glyph = "" //  ("\ue3dc") represents the "weather-moon_alt_third_quarter" glyph.
+	MoonAltWaningCrescent1   nf.Glyph = "" //  ("\ue3dd") represents the "weather-moon_alt_waning_crescent_1" glyph.
+	MoonAltWaningCrescent2   nf.Glyph = "" //  ("\ue3de") represents the "weather-moon_alt_waning_crescent_2" glyph.
+	MoonAltWaningCrescent3   nf.Glyph = "" //  ("\ue3df") represents the "weather-moon_alt_waning_crescent_3" glyph.
+	MoonAltWaningCrescent4   nf.Glyph = "" //  ("\ue3e0") represents the "weather-moon_alt_waning_crescent_4" glyph.
+	MoonAltWaningCrescent5   nf.Glyph = "" //  ("\ue3e1") represents the "weather-moon_alt_waning_crescent_5" glyph.
+	MoonAltWaningCrescent6   nf.Glyph = "" //  ("\ue3e2") represents the "weather-moon_alt_waning_crescent_6" glyph.
+	MoonAltWaningGibbous1    nf.Glyph = "" //  ("\ue3d6") represents the "weather-moon_alt_waning_gibbous_1" glyph.
+	MoonAltWaningGibbous2    nf.Glyph = "" //  ("\ue3d7") represents the "weather-moon_alt_waning_gibbous_2" glyph.
+	MoonAltWaningGibbous3    nf.Glyph = "" //  ("\ue3d8") represents the "weather-moon_alt_waning_gibbous_3" glyph.
+	MoonAltWaningGibbous4    nf.Glyph = "" //  ("\ue3d9") represents the "weather-moon_alt_waning_gibbous_4" glyph.
+	MoonAltWaningGibbous5    nf.Glyph = "" //  ("\ue3da") represents the "weather-moon_alt_waning_gibbous_5" glyph.
+	MoonAltWaningGibbous6    nf.Glyph = "" //  ("\ue3db") represents the "weather-moon_alt_waning_gibbous_6" glyph.
+	MoonAltWaxingCrescent1   nf.Glyph = "" //  ("\ue3c8") represents the "weather-moon_alt_waxing_crescent_1" glyph.
+	MoonAltWaxingCrescent2   nf.Glyph = "" //  ("\ue3c9") represents the "weather-moon_alt_waxing_crescent_2" glyph.
+	MoonAltWaxingCrescent3   nf.Glyph = "" //  ("\ue3ca") represents the "weather-moon_alt_waxing_crescent_3" glyph.
+	MoonAltWaxingCrescent4   nf.Glyph = "" //  ("\ue3cb") represents the "weather-moon_alt_waxing_crescent_4" glyph.
+	MoonAltWaxingCrescent5   nf.Glyph = "" //  ("\ue3cc") represents the "weather-moon_alt_waxing_crescent_5" glyph.
+	MoonAltWaxingCrescent6   nf.Glyph = "" //  ("\ue3cd") represents the "weather-moon_alt_waxing_crescent_6" glyph.
+	MoonAltWaxingGibbous1    nf.Glyph = "" //  ("\ue3cf") represents the "weather-moon_alt_waxing_gibbous_1" glyph.
+	MoonAltWaxingGibbous2    nf.Glyph = "" //  ("\ue3d0") represents the "weather-moon_alt_waxing_gibbous_2" glyph.
+	MoonAltWaxingGibbous3    nf.Glyph = "" //  ("\ue3d1") represents the "weather-moon_alt_waxing_gibbous_3" glyph.
+	MoonAltWaxingGibbous4    nf.Glyph = "" //  ("\ue3d2") represents the "weather-moon_alt_waxing_gibbous_4" glyph.
+	MoonAltWaxingGibbous5    nf.Glyph = "" //  ("\ue3d3") represents the "weather-moon_alt_waxing_gibbous_5" glyph.
+	MoonAltWaxingGibbous6    nf.Glyph = "" //  ("\ue3d4") represents the "weather-moon_alt_waxing_gibbous_6" glyph.
+	MoonFirstQuarter         nf.Glyph = "" //  ("\ue394") represents the "weather-moon_first_quarter" glyph.
+	MoonFull                 nf.Glyph = "" //  ("\ue39b") represents the "weather-moon_full" glyph.
+	MoonNew                  nf.Glyph = "" //  ("\ue38d") represents the "weather-moon_new" glyph.
+	MoonThirdQuarter         nf.Glyph = "" //  ("\ue3a2") represents the "weather-moon_third_quarter" glyph.
+	MoonWaningCrescent1      nf.Glyph = "" //  ("\ue3a3") represents the "weather-moon_waning_crescent_1" glyph.
+	MoonWaningCrescent2      nf.Glyph = "" //  ("\ue3a4") represents the "weather-moon_waning_crescent_2" glyph.
+	MoonWaningCrescent3      nf.Glyph = "" //  ("\ue3a5") represents the "weather-moon_waning_crescent_3" glyph.
+	MoonWaningCrescent4      nf.Glyph = "" //  ("\ue3a6") represents the "weather-moon_waning_crescent_4" glyph.
+	MoonWaningCrescent5      nf.Glyph = "" //  ("\ue3a7") represents the "weather-moon_waning_crescent_5" glyph.
+	MoonWaningCrescent6      nf.Glyph = "" //  ("\ue3a8") represents the "weather-moon_waning_crescent_6" glyph.
+	MoonWaningGibbous1       nf.Glyph = "" //  ("\ue39c") represents the "weather-moon_waning_gibbous_1" glyph.
+	MoonWaningGibbous2       nf.Glyph = "" //  ("\ue39d") represents the "weather-moon_waning_gibbous_2" glyph.
+	MoonWaningGibbous3       nf.Glyph = "" //  ("\ue39e") represents the "weather-moon_waning_gibbous_3" glyph.
+	MoonWaningGibbous4       nf.Glyph = "" //  ("\ue39f") represents the "weather-moon_waning_gibbous_4" glyph.
+	MoonWaningGibbous5       nf.Glyph = "" //  ("\ue3a0") represents the "weather-moon_waning_gibbous_5" glyph.
+	MoonWaningGibbous6       nf.Glyph = "" //  ("\ue3a1") represents the "weather-moon_waning_gibbous_6" glyph.
+	MoonWaxingCrescent1      nf.Glyph = "" //  ("\ue38e") represents the "weather-moon_waxing_crescent_1" glyph.
+	MoonWaxingCrescent2      nf.Glyph = "" //  ("\ue38f") represents the "weather-moon_waxing_crescent_2" glyph.
+	MoonWaxingCrescent3      nf.Glyph = "" //  ("\ue390") represents the "weather-moon_waxing_crescent_3" glyph.
+	MoonWaxingCrescent4      nf.Glyph = "" //  ("\ue391") represents the "weather-moon_waxing_crescent_4" glyph.
+	MoonWaxingCrescent5      nf.Glyph = "" //  ("\ue392") represents the "weather-moon_waxing_crescent_5" glyph.
+	MoonWaxingCrescent6      nf.Glyph = "" //  ("\ue393") represents the "weather-moon_waxing_crescent_6" glyph.
+	MoonWaxingGibbous1       nf.Glyph = "" //  ("\ue395") represents the "weather-moon_waxing_gibbous_1" glyph.
+	MoonWaxingGibbous2       nf.Glyph = "" //  ("\ue396") represents the "weather-moon_waxing_gibbous_2" glyph.
+	MoonWaxingGibbous3       nf.Glyph = "" //  ("\ue397") represents the "weather-moon_waxing_gibbous_3" glyph.
+	MoonWaxingGibbous4       nf.Glyph = "" //  ("\ue398") represents the "weather-moon_waxing_gibbous_4" glyph.
+	MoonWaxingGibbous5       nf.Glyph = "" //  ("\ue399") represents the "weather-moon_waxing_gibbous_5" glyph.
+	MoonWaxingGibbous6       nf.Glyph = "" //  ("\ue39a") represents the "weather-moon_waxing_gibbous_6" glyph.
+	Moonrise                 nf.Glyph = "" //  ("\ue3c1") represents the "weather-moonrise" glyph.
+	Moonset                  nf.Glyph = "" //  ("\ue3c2") represents the "weather-moonset" glyph.
+	Na                       nf.Glyph = "" //  ("\ue374") represents the "weather-na" glyph.
+	NightAltCloudy           nf.Glyph = "" //  ("\ue37e") represents the "weather-night_alt_cloudy" glyph.
+	NightAltCloudyGusts      nf.Glyph = "" //  ("\ue31f") represents the "weather-night_alt_cloudy_gusts" glyph.
+	NightAltCloudyHigh       nf.Glyph = "" //  ("\ue377") represents the "weather-night_alt_cloudy_high" glyph.
+	NightAltCloudyWindy      nf.Glyph = "" //  ("\ue320") represents the "weather-night_alt_cloudy_windy" glyph.
+	NightAltHail             nf.Glyph = "" //  ("\ue321") represents the "weather-night_alt_hail" glyph.
+	NightAltLightning        nf.Glyph = "" //  ("\ue322") represents the "weather-night_alt_lightning" glyph.
+	NightAltPartlyCloudy     nf.Glyph = "" //  ("\ue379") represents the "weather-night_alt_partly_cloudy" glyph.
+	NightAltRain             nf.Glyph = "" //  ("\ue325") represents the "weather-night_alt_rain" glyph.
+	NightAltRainMix          nf.Glyph = "" //  ("\ue323") represents the "weather-night_alt_rain_mix" glyph.
+	NightAltRainWind         nf.Glyph = "" //  ("\ue324") represents the "weather-night_alt_rain_wind" glyph.
+	NightAltShowers          nf.Glyph = "" //  ("\ue326") represents the "weather-night_alt_showers" glyph.
+	NightAltSleet            nf.Glyph = "" //  ("\ue3ac") represents the "weather-night_alt_sleet" glyph.
+	NightAltSleetStorm       nf.Glyph = "" //  ("\ue364") represents the "weather-night_alt_sleet_storm" glyph.
+	NightAltSnow             nf.Glyph = "" //  ("\ue327") represents the "weather-night_alt_snow" glyph.
+	NightAltSnowThunderstorm nf.Glyph = "" //  ("\ue367") represents the "weather-night_alt_snow_thunderstorm" glyph.
+	NightAltSnowWind         nf.Glyph = "" //  ("\ue361") represents the "weather-night_alt_snow_wind" glyph.
+	NightAltSprinkle         nf.Glyph = "" //  ("\ue328") represents the "weather-night_alt_sprinkle" glyph.
+	NightAltStormShowers     nf.Glyph = "" //  ("\ue329") represents the "weather-night_alt_storm_showers" glyph.
+	NightAltThunderstorm     nf.Glyph = "" //  ("\ue32a") represents the "weather-night_alt_thunderstorm" glyph.
+	NightClear               nf.Glyph = "" //  ("\ue32b") represents the "weather-night_clear" glyph.
+	NightCloudy              nf.Glyph = "" //  ("\ue32e") represents the "weather-night_cloudy" glyph.
+	NightCloudyGusts         nf.Glyph = "" //  ("\ue32c") represents the "weather-night_cloudy_gusts" glyph.
+	NightCloudyHigh          nf.Glyph = "" //  ("\ue378") represents the "weather-night_cloudy_high" glyph.
+	NightCloudyWindy         nf.Glyph = "" //  ("\ue32d") represents the "weather-night_cloudy_windy" glyph.
+	NightFog                 nf.Glyph = "" //  ("\ue346") represents the "weather-night_fog" glyph.
+	NightHail                nf.Glyph = "" //  ("\ue32f") represents the "weather-night_hail" glyph.
+	NightLightning           nf.Glyph = "" //  ("\ue330") represents the "weather-night_lightning" glyph.
+	NightPartlyCloudy        nf.Glyph = "" //  ("\ue37b") represents the "weather-night_partly_cloudy" glyph.
+	NightRain                nf.Glyph = "" //  ("\ue333") represents the "weather-night_rain" glyph.
+	NightRainMix             nf.Glyph = "" //  ("\ue331") represents the "weather-night_rain_mix" glyph.
+	NightRainWind            nf.Glyph = "" //  ("\ue332") represents the "weather-night_rain_wind" glyph.
+	NightShowers             nf.Glyph = "" //  ("\ue334") represents the "weather-night_showers" glyph.
+	NightSleet               nf.Glyph = "" //  ("\ue3ab") represents the "weather-night_sleet" glyph.
+	NightSleetStorm          nf.Glyph = "" //  ("\ue363") represents the "weather-night_sleet_storm" glyph.
+	NightSnow                nf.Glyph = "" //  ("\ue335") represents the "weather-night_snow" glyph.
+	NightSnowThunderstorm    nf.Glyph = "" //  ("\ue366") represents the "weather-night_snow_thunderstorm" glyph.
+	NightSnowWind            nf.Glyph = "" //  ("\ue360") represents the "weather-night_snow_wind" glyph.
+	NightSprinkle            nf.Glyph = "" //  ("\ue336") represents the "weather-night_sprinkle" glyph.
+	NightStormShowers        nf.Glyph = "" //  ("\ue337") represents the "weather-night_storm_showers" glyph.
+	NightThunderstorm        nf.Glyph = "" //  ("\ue338") represents the "weather-night_thunderstorm" glyph.
+	Rain                     nf.Glyph = "" //  ("\ue318") represents the "weather-rain" glyph.
+	RainMix                  nf.Glyph = "" //  ("\ue316") represents the "weather-rain_mix" glyph.
+	RainWind                 nf.Glyph = "" //  ("\ue317") represents the "weather-rain_wind" glyph.
+	Raindrop                 nf.Glyph = "" //  ("\ue371") represents the "weather-raindrop" glyph.
+	Raindrops                nf.Glyph = "" //  ("\ue34a") represents the "weather-raindrops" glyph.
+	Refresh                  nf.Glyph = "" //  ("\ue348") represents the "weather-refresh" glyph.
+	RefreshAlt               nf.Glyph = "" //  ("\ue347") represents the "weather-refresh_alt" glyph.
+	Sandstorm                nf.Glyph = "" //  ("\ue37a") represents the "weather-sandstorm" glyph.
+	Showers                  nf.Glyph = "" //  ("\ue319") represents the "weather-showers" glyph.
+	Sleet                    nf.Glyph = "" //  ("\ue3ad") represents the "weather-sleet" glyph.
+	SmallCraftAdvisory       nf.Glyph = "" //  ("\ue3c4") represents the "weather-small_craft_advisory" glyph.
+	Smog                     nf.Glyph = "" //  ("\ue36d") represents the "weather-smog" glyph.
+	Smoke                    nf.Glyph = "" //  ("\ue35c") represents the "weather-smoke" glyph.
+	Snow                     nf.Glyph = "" //  ("\ue31a") represents the "weather-snow" glyph.
+	SnowWind                 nf.Glyph = "" //  ("\ue35e") represents the "weather-snow_wind" glyph.
+	SnowflakeCold            nf.Glyph = "" //  ("\ue36f") represents the "weather-snowflake_cold" glyph.
+	SolarEclipse             nf.Glyph = "" //  ("\ue368") represents the "weather-solar_eclipse" glyph.
+	Sprinkle                 nf.Glyph = "" //  ("\ue31b") represents the "weather-sprinkle" glyph.
+	Stars                    nf.Glyph = "" //  ("\ue370") represents the "weather-stars" glyph.
+	StormShowers             nf.Glyph = "" //  ("\ue31c") represents the "weather-storm_showers" glyph.
+	StormWarning             nf.Glyph = "" //  ("\ue3c6") represents the "weather-storm_warning" glyph.
+	StrongWind               nf.Glyph = "" //  ("\ue34b") represents the "weather-strong_wind" glyph.
+	Sunrise                  nf.Glyph = "" //  ("\ue34c") represents the "weather-sunrise" glyph.
+	Sunset                   nf.Glyph = "" //  ("\ue34d") represents the "weather-sunset" glyph.
+	Thermometer              nf.Glyph = "" //  ("\ue350") represents the "weather-thermometer" glyph.
+	ThermometerExterior      nf.Glyph = "" //  ("\ue34e") represents the "weather-thermometer_exterior" glyph.
+	ThermometerInternal      nf.Glyph = "" //  ("\ue34f") represents the "weather-thermometer_internal" glyph.
+	Thunderstorm             nf.Glyph = "" //  ("\ue31d") represents the "weather-thunderstorm" glyph.
+	Time1                    nf.Glyph = "" //  ("\ue382") represents the "weather-time_1" glyph.
+	Time10                   nf.Glyph = "" //  ("\ue38b") represents the "weather-time_10" glyph.
+	Time11                   nf.Glyph = "" //  ("\ue38c") represents the "weather-time_11" glyph.
+	Time12                   nf.Glyph = "" //  ("\ue381") represents the "weather-time_12" glyph.
+	Time2                    nf.Glyph = "" //  ("\ue383") represents the "weather-time_2" glyph.
+	Time3                    nf.Glyph = "" //  ("\ue384") represents the "weather-time_3" glyph.
+	Time4                    nf.Glyph = "" //  ("\ue385") represents the "weather-time_4" glyph.
+	Time5                    nf.Glyph = "" //  ("\ue386") represents the "weather-time_5" glyph.
+	Time6                    nf.Glyph = "" //  ("\ue387") represents the "weather-time_6" glyph.
+	Time7                    nf.Glyph = "" //  ("\ue388") represents the "weather-time_7" glyph.
+	Time8                    nf.Glyph = "" //  ("\ue389") represents the "weather-time_8" glyph.
+	Time9                    nf.Glyph = "" //  ("\ue38a") represents the "weather-time_9" glyph.
+	Tornado                  nf.Glyph = "" //  ("\ue351") represents the "weather-tornado" glyph.
+	Train                    nf.Glyph = "" //  ("\ue3c3") represents the "weather-train" glyph.
+	Tsunami                  nf.Glyph = "" //  ("\ue3bd") represents the "weather-tsunami" glyph.
+	Umbrella                 nf.Glyph = "" //  ("\ue37c") represents the "weather-umbrella" glyph.
+	Volcano                  nf.Glyph = "" //  ("\ue3c0") represents the "weather-volcano" glyph.
+	WindBeaufort0            nf.Glyph = "" //  ("\ue3af") represents the "weather-wind_beaufort_0" glyph.
+	WindBeaufort1            nf.Glyph = "" //  ("\ue3b0") represents the "weather-wind_beaufort_1" glyph.
+	WindBeaufort10           nf.Glyph = "" //  ("\ue3b9") represents the "weather-wind_beaufort_10" glyph.
+	WindBeaufort11           nf.Glyph = "" //  ("\ue3ba") represents the "weather-wind_beaufort_11" glyph.
+	WindBeaufort12           nf.Glyph = "" //  ("\ue3bb") represents the "weather-wind_beaufort_12" glyph.
+	WindBeaufort2            nf.Glyph = "" //  ("\ue3b1") represents the "weather-wind_beaufort_2" glyph.
+	WindBeaufort3            nf.Glyph = "" //  ("\ue3b2") represents the "weather-wind_beaufort_3" glyph.
+	WindBeaufort4            nf.Glyph = "" //  ("\ue3b3") represents the "weather-wind_beaufort_4" glyph.
+	WindBeaufort5            nf.Glyph = "" //  ("\ue3b4") represents the "weather-wind_beaufort_5" glyph.
+	WindBeaufort6            nf.Glyph = "" //  ("\ue3b5") represents the "weather-wind_beaufort_6" glyph.
+	WindBeaufort7            nf.Glyph = "" //  ("\ue3b6") represents the "weather-wind_beaufort_7" glyph.
+	WindBeaufort8            nf.Glyph = "" //  ("\ue3b7") represents the "weather-wind_beaufort_8" glyph.
+	WindBeaufort9            nf.Glyph = "" //  ("\ue3b8") represents the "weather-wind_beaufort_9" glyph.
+	WindDirection            nf.Glyph = "" //  ("\ue3a9") represents the "weather-wind_direction" glyph.
+	WindEast                 nf.Glyph = "" //  ("\ue35b") represents the "weather-wind_east" glyph.
+	WindNorth                nf.Glyph = "" //  ("\ue35a") represents the "weather-wind_north" glyph.
+	WindNorthEast            nf.Glyph = "" //  ("\ue359") represents the "weather-wind_north_east" glyph.
+	WindNorthWest            nf.Glyph = "" //  ("\ue358") represents the "weather-wind_north_west" glyph.
+	WindSouth                nf.Glyph = "" //  ("\ue357") represents the "weather-wind_south" glyph.
+	WindSouthEast            nf.Glyph = "" //  ("\ue356") represents the "weather-wind_south_east" glyph.
+	WindSouthWest            nf.Glyph = "" //  ("\ue355") represents the "weather-wind_south_west" glyph.
+	WindWest                 nf.Glyph = "" //  ("\ue354") represents the "weather-wind_west" glyph.
+	Windy                    nf.Glyph = "" //  ("\ue31e") represents the "weather-windy" glyph.
+)

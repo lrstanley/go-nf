@@ -21,105 +21,24 @@ package extra
 import "github.com/lrstanley/go-nf"
 
 const (
-	// ClassName is the name of the class.
-	ClassName = "extra"
+	// Class is the name of the class.
+	Class nf.Class = "extra"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
 	Version = "3.4.0"
 )
 
-// ProgressEmptyLeft () represents the "extra-progress_empty_left" glyph.
-var ProgressEmptyLeft = &nf.Glyph{
-	ID:      "progress_empty_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee00",
-}
-
-// ProgressEmptyMid () represents the "extra-progress_empty_mid" glyph.
-var ProgressEmptyMid = &nf.Glyph{
-	ID:      "progress_empty_mid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee01",
-}
-
-// ProgressEmptyRight () represents the "extra-progress_empty_right" glyph.
-var ProgressEmptyRight = &nf.Glyph{
-	ID:      "progress_empty_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee02",
-}
-
-// ProgressFullLeft () represents the "extra-progress_full_left" glyph.
-var ProgressFullLeft = &nf.Glyph{
-	ID:      "progress_full_left",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee03",
-}
-
-// ProgressFullMid () represents the "extra-progress_full_mid" glyph.
-var ProgressFullMid = &nf.Glyph{
-	ID:      "progress_full_mid",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee04",
-}
-
-// ProgressFullRight () represents the "extra-progress_full_right" glyph.
-var ProgressFullRight = &nf.Glyph{
-	ID:      "progress_full_right",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee05",
-}
-
-// ProgressSpinner1 () represents the "extra-progress_spinner_1" glyph.
-var ProgressSpinner1 = &nf.Glyph{
-	ID:      "progress_spinner_1",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee06",
-}
-
-// ProgressSpinner2 () represents the "extra-progress_spinner_2" glyph.
-var ProgressSpinner2 = &nf.Glyph{
-	ID:      "progress_spinner_2",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee07",
-}
-
-// ProgressSpinner3 () represents the "extra-progress_spinner_3" glyph.
-var ProgressSpinner3 = &nf.Glyph{
-	ID:      "progress_spinner_3",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee08",
-}
-
-// ProgressSpinner4 () represents the "extra-progress_spinner_4" glyph.
-var ProgressSpinner4 = &nf.Glyph{
-	ID:      "progress_spinner_4",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee09",
-}
-
-// ProgressSpinner5 () represents the "extra-progress_spinner_5" glyph.
-var ProgressSpinner5 = &nf.Glyph{
-	ID:      "progress_spinner_5",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee0a",
-}
-
-// ProgressSpinner6 () represents the "extra-progress_spinner_6" glyph.
-var ProgressSpinner6 = &nf.Glyph{
-	ID:      "progress_spinner_6",
-	Class:   ClassName,
-	Char:    "",
-	Unicode: "\uee0b",
-}
+const (
+	ProgressEmptyLeft  nf.Glyph = "" //  ("\uee00") represents the "extra-progress_empty_left" glyph.
+	ProgressEmptyMid   nf.Glyph = "" //  ("\uee01") represents the "extra-progress_empty_mid" glyph.
+	ProgressEmptyRight nf.Glyph = "" //  ("\uee02") represents the "extra-progress_empty_right" glyph.
+	ProgressFullLeft   nf.Glyph = "" //  ("\uee03") represents the "extra-progress_full_left" glyph.
+	ProgressFullMid    nf.Glyph = "" //  ("\uee04") represents the "extra-progress_full_mid" glyph.
+	ProgressFullRight  nf.Glyph = "" //  ("\uee05") represents the "extra-progress_full_right" glyph.
+	ProgressSpinner1   nf.Glyph = "" //  ("\uee06") represents the "extra-progress_spinner_1" glyph.
+	ProgressSpinner2   nf.Glyph = "" //  ("\uee07") represents the "extra-progress_spinner_2" glyph.
+	ProgressSpinner3   nf.Glyph = "" //  ("\uee08") represents the "extra-progress_spinner_3" glyph.
+	ProgressSpinner4   nf.Glyph = "" //  ("\uee09") represents the "extra-progress_spinner_4" glyph.
+	ProgressSpinner5   nf.Glyph = "" //  ("\uee0a") represents the "extra-progress_spinner_5" glyph.
+	ProgressSpinner6   nf.Glyph = "" //  ("\uee0b") represents the "extra-progress_spinner_6" glyph.
+)

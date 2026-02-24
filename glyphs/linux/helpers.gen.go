@@ -8,433 +8,179 @@ package linux
 
 import (
 	"iter"
-	"slices"
+	"maps"
+	"strings"
 
 	"github.com/lrstanley/go-nf"
 )
 
-var allGlyphs = []*nf.Glyph{
-	Almalinux,
-	Alpine,
-	Aosc,
-	Apple,
-	Archcraft,
-	Archlabs,
-	Archlinux,
-	Arcolinux,
-	Arduino,
-	Artix,
-	Awesome,
-	Biglinux,
-	Bspwm,
-	Budgie,
-	Centos,
-	Cinnamon,
-	Codeberg,
-	Coreos,
-	Crystal,
-	Debian,
-	Deepin,
-	Devuan,
-	Docker,
-	Dwm,
-	Elementary,
-	Endeavour,
-	Enlightenment,
-	Fdroid,
-	Fedora,
-	FedoraInverse,
-	Ferris,
-	Flathub,
-	Fluxbox,
-	Forgejo,
-	Fosdem,
-	Freebsd,
-	Freecad,
-	Freedesktop,
-	Garuda,
-	Gentoo,
-	Gimp,
-	Gitea,
-	Gnome,
-	GnuGuix,
-	Gtk,
-	Hyperbola,
-	Hyprland,
-	I3,
-	Illumos,
-	Inkscape,
-	Jwm,
-	KaliLinux,
-	Kde,
-	KdeNeon,
-	KdePlasma,
-	Kdenlive,
-	Kicad,
-	Krita,
-	Kubuntu,
-	KubuntuInverse,
-	Leap,
-	Libreoffice,
-	Libreofficebase,
-	Libreofficecalc,
-	Libreofficedraw,
-	Libreofficeimpress,
-	Libreofficemath,
-	Libreofficewriter,
-	Linuxmint,
-	LinuxmintInverse,
-	Locos,
-	Lxde,
-	Lxle,
-	Lxqt,
-	Mageia,
-	Mandriva,
-	Manjaro,
-	Mate,
-	Mpv,
-	Mxlinux,
-	Neovim,
-	Nixos,
-	Nobara,
-	Octoprint,
-	Openbsd,
-	Openscad,
-	Opensuse,
-	Osh,
-	Oshwa,
-	Osi,
-	Parabola,
-	Parrot,
-	PopOs,
-	Postmarketos,
-	Prusaslicer,
-	Puppy,
-	Qt,
-	Qtile,
-	Qubesos,
-	RaspberryPi,
-	Redhat,
-	Reprap,
-	Riscv,
-	River,
-	RockyLinux,
-	Sabayon,
-	Slackware,
-	SlackwareInverse,
-	Snappy,
-	Solus,
-	Sway,
-	Tails,
-	Thunderbird,
-	Tor,
-	Trisquel,
-	Tumbleweed,
-	Tux,
-	Typst,
-	Ubuntu,
-	UbuntuInverse,
-	Vanilla,
-	Void,
-	Vscodium,
-	Wayland,
-	Wikimedia,
-	Xerolinux,
-	Xfce,
-	Xmonad,
-	Xorg,
-	Zorin,
-}
-
-// AllGlyphs returns an iterator over all the glyphs in the linux class.
-func AllGlyphs() iter.Seq[*nf.Glyph] {
-	return slices.Values(allGlyphs)
-}
-
-// ByID finds a glyph by its ID within the class.
-func ByID(id string) *nf.Glyph {
-	switch id {
-	case "almalinux", "linux-almalinux":
-		return Almalinux
-	case "alpine", "linux-alpine":
-		return Alpine
-	case "aosc", "linux-aosc":
-		return Aosc
-	case "apple", "linux-apple":
-		return Apple
-	case "archcraft", "linux-archcraft":
-		return Archcraft
-	case "archlabs", "linux-archlabs":
-		return Archlabs
-	case "archlinux", "linux-archlinux":
-		return Archlinux
-	case "arcolinux", "linux-arcolinux":
-		return Arcolinux
-	case "arduino", "linux-arduino":
-		return Arduino
-	case "artix", "linux-artix":
-		return Artix
-	case "awesome", "linux-awesome":
-		return Awesome
-	case "biglinux", "linux-biglinux":
-		return Biglinux
-	case "bspwm", "linux-bspwm":
-		return Bspwm
-	case "budgie", "linux-budgie":
-		return Budgie
-	case "centos", "linux-centos":
-		return Centos
-	case "cinnamon", "linux-cinnamon":
-		return Cinnamon
-	case "codeberg", "linux-codeberg":
-		return Codeberg
-	case "coreos", "linux-coreos":
-		return Coreos
-	case "crystal", "linux-crystal":
-		return Crystal
-	case "debian", "linux-debian":
-		return Debian
-	case "deepin", "linux-deepin":
-		return Deepin
-	case "devuan", "linux-devuan":
-		return Devuan
-	case "docker", "linux-docker":
-		return Docker
-	case "dwm", "linux-dwm":
-		return Dwm
-	case "elementary", "linux-elementary":
-		return Elementary
-	case "endeavour", "linux-endeavour":
-		return Endeavour
-	case "enlightenment", "linux-enlightenment":
-		return Enlightenment
-	case "fdroid", "linux-fdroid":
-		return Fdroid
-	case "fedora", "linux-fedora":
-		return Fedora
-	case "fedora_inverse", "linux-fedora_inverse":
-		return FedoraInverse
-	case "ferris", "linux-ferris":
-		return Ferris
-	case "flathub", "linux-flathub":
-		return Flathub
-	case "fluxbox", "linux-fluxbox":
-		return Fluxbox
-	case "forgejo", "linux-forgejo":
-		return Forgejo
-	case "fosdem", "linux-fosdem":
-		return Fosdem
-	case "freebsd", "linux-freebsd":
-		return Freebsd
-	case "freecad", "linux-freecad":
-		return Freecad
-	case "freedesktop", "linux-freedesktop":
-		return Freedesktop
-	case "garuda", "linux-garuda":
-		return Garuda
-	case "gentoo", "linux-gentoo":
-		return Gentoo
-	case "gimp", "linux-gimp":
-		return Gimp
-	case "gitea", "linux-gitea":
-		return Gitea
-	case "gnome", "linux-gnome":
-		return Gnome
-	case "gnu_guix", "linux-gnu_guix":
-		return GnuGuix
-	case "gtk", "linux-gtk":
-		return Gtk
-	case "hyperbola", "linux-hyperbola":
-		return Hyperbola
-	case "hyprland", "linux-hyprland":
-		return Hyprland
-	case "i3", "linux-i3":
-		return I3
-	case "illumos", "linux-illumos":
-		return Illumos
-	case "inkscape", "linux-inkscape":
-		return Inkscape
-	case "jwm", "linux-jwm":
-		return Jwm
-	case "kali_linux", "linux-kali_linux":
-		return KaliLinux
-	case "kde", "linux-kde":
-		return Kde
-	case "kde_neon", "linux-kde_neon":
-		return KdeNeon
-	case "kde_plasma", "linux-kde_plasma":
-		return KdePlasma
-	case "kdenlive", "linux-kdenlive":
-		return Kdenlive
-	case "kicad", "linux-kicad":
-		return Kicad
-	case "krita", "linux-krita":
-		return Krita
-	case "kubuntu", "linux-kubuntu":
-		return Kubuntu
-	case "kubuntu_inverse", "linux-kubuntu_inverse":
-		return KubuntuInverse
-	case "leap", "linux-leap":
-		return Leap
-	case "libreoffice", "linux-libreoffice":
-		return Libreoffice
-	case "libreofficebase", "linux-libreofficebase":
-		return Libreofficebase
-	case "libreofficecalc", "linux-libreofficecalc":
-		return Libreofficecalc
-	case "libreofficedraw", "linux-libreofficedraw":
-		return Libreofficedraw
-	case "libreofficeimpress", "linux-libreofficeimpress":
-		return Libreofficeimpress
-	case "libreofficemath", "linux-libreofficemath":
-		return Libreofficemath
-	case "libreofficewriter", "linux-libreofficewriter":
-		return Libreofficewriter
-	case "linuxmint", "linux-linuxmint":
-		return Linuxmint
-	case "linuxmint_inverse", "linux-linuxmint_inverse":
-		return LinuxmintInverse
-	case "locos", "linux-locos":
-		return Locos
-	case "lxde", "linux-lxde":
-		return Lxde
-	case "lxle", "linux-lxle":
-		return Lxle
-	case "lxqt", "linux-lxqt":
-		return Lxqt
-	case "mageia", "linux-mageia":
-		return Mageia
-	case "mandriva", "linux-mandriva":
-		return Mandriva
-	case "manjaro", "linux-manjaro":
-		return Manjaro
-	case "mate", "linux-mate":
-		return Mate
-	case "mpv", "linux-mpv":
-		return Mpv
-	case "mxlinux", "linux-mxlinux":
-		return Mxlinux
-	case "neovim", "linux-neovim":
-		return Neovim
-	case "nixos", "linux-nixos":
-		return Nixos
-	case "nobara", "linux-nobara":
-		return Nobara
-	case "octoprint", "linux-octoprint":
-		return Octoprint
-	case "openbsd", "linux-openbsd":
-		return Openbsd
-	case "openscad", "linux-openscad":
-		return Openscad
-	case "opensuse", "linux-opensuse":
-		return Opensuse
-	case "osh", "linux-osh":
-		return Osh
-	case "oshwa", "linux-oshwa":
-		return Oshwa
-	case "osi", "linux-osi":
-		return Osi
-	case "parabola", "linux-parabola":
-		return Parabola
-	case "parrot", "linux-parrot":
-		return Parrot
-	case "pop_os", "linux-pop_os":
-		return PopOs
-	case "postmarketos", "linux-postmarketos":
-		return Postmarketos
-	case "prusaslicer", "linux-prusaslicer":
-		return Prusaslicer
-	case "puppy", "linux-puppy":
-		return Puppy
-	case "qt", "linux-qt":
-		return Qt
-	case "qtile", "linux-qtile":
-		return Qtile
-	case "qubesos", "linux-qubesos":
-		return Qubesos
-	case "raspberry_pi", "linux-raspberry_pi":
-		return RaspberryPi
-	case "redhat", "linux-redhat":
-		return Redhat
-	case "reprap", "linux-reprap":
-		return Reprap
-	case "riscv", "linux-riscv":
-		return Riscv
-	case "river", "linux-river":
-		return River
-	case "rocky_linux", "linux-rocky_linux":
-		return RockyLinux
-	case "sabayon", "linux-sabayon":
-		return Sabayon
-	case "slackware", "linux-slackware":
-		return Slackware
-	case "slackware_inverse", "linux-slackware_inverse":
-		return SlackwareInverse
-	case "snappy", "linux-snappy":
-		return Snappy
-	case "solus", "linux-solus":
-		return Solus
-	case "sway", "linux-sway":
-		return Sway
-	case "tails", "linux-tails":
-		return Tails
-	case "thunderbird", "linux-thunderbird":
-		return Thunderbird
-	case "tor", "linux-tor":
-		return Tor
-	case "trisquel", "linux-trisquel":
-		return Trisquel
-	case "tumbleweed", "linux-tumbleweed":
-		return Tumbleweed
-	case "tux", "linux-tux":
-		return Tux
-	case "typst", "linux-typst":
-		return Typst
-	case "ubuntu", "linux-ubuntu":
-		return Ubuntu
-	case "ubuntu_inverse", "linux-ubuntu_inverse":
-		return UbuntuInverse
-	case "vanilla", "linux-vanilla":
-		return Vanilla
-	case "void", "linux-void":
-		return Void
-	case "vscodium", "linux-vscodium":
-		return Vscodium
-	case "wayland", "linux-wayland":
-		return Wayland
-	case "wikimedia", "linux-wikimedia":
-		return Wikimedia
-	case "xerolinux", "linux-xerolinux":
-		return Xerolinux
-	case "xfce", "linux-xfce":
-		return Xfce
-	case "xmonad", "linux-xmonad":
-		return Xmonad
-	case "xorg", "linux-xorg":
-		return Xorg
-	case "zorin", "linux-zorin":
-		return Zorin
-	default:
-		return nil
+var (
+	allGlyphs = map[string]nf.Glyph{
+		"almalinux":          Almalinux,
+		"alpine":             Alpine,
+		"aosc":               Aosc,
+		"apple":              Apple,
+		"archcraft":          Archcraft,
+		"archlabs":           Archlabs,
+		"archlinux":          Archlinux,
+		"arcolinux":          Arcolinux,
+		"arduino":            Arduino,
+		"artix":              Artix,
+		"awesome":            Awesome,
+		"biglinux":           Biglinux,
+		"bspwm":              Bspwm,
+		"budgie":             Budgie,
+		"centos":             Centos,
+		"cinnamon":           Cinnamon,
+		"codeberg":           Codeberg,
+		"coreos":             Coreos,
+		"crystal":            Crystal,
+		"debian":             Debian,
+		"deepin":             Deepin,
+		"devuan":             Devuan,
+		"docker":             Docker,
+		"dwm":                Dwm,
+		"elementary":         Elementary,
+		"endeavour":          Endeavour,
+		"enlightenment":      Enlightenment,
+		"fdroid":             Fdroid,
+		"fedora":             Fedora,
+		"fedora_inverse":     FedoraInverse,
+		"ferris":             Ferris,
+		"flathub":            Flathub,
+		"fluxbox":            Fluxbox,
+		"forgejo":            Forgejo,
+		"fosdem":             Fosdem,
+		"freebsd":            Freebsd,
+		"freecad":            Freecad,
+		"freedesktop":        Freedesktop,
+		"garuda":             Garuda,
+		"gentoo":             Gentoo,
+		"gimp":               Gimp,
+		"gitea":              Gitea,
+		"gnome":              Gnome,
+		"gnu_guix":           GnuGuix,
+		"gtk":                Gtk,
+		"hyperbola":          Hyperbola,
+		"hyprland":           Hyprland,
+		"i3":                 I3,
+		"illumos":            Illumos,
+		"inkscape":           Inkscape,
+		"jwm":                Jwm,
+		"kali_linux":         KaliLinux,
+		"kde":                Kde,
+		"kde_neon":           KdeNeon,
+		"kde_plasma":         KdePlasma,
+		"kdenlive":           Kdenlive,
+		"kicad":              Kicad,
+		"krita":              Krita,
+		"kubuntu":            Kubuntu,
+		"kubuntu_inverse":    KubuntuInverse,
+		"leap":               Leap,
+		"libreoffice":        Libreoffice,
+		"libreofficebase":    Libreofficebase,
+		"libreofficecalc":    Libreofficecalc,
+		"libreofficedraw":    Libreofficedraw,
+		"libreofficeimpress": Libreofficeimpress,
+		"libreofficemath":    Libreofficemath,
+		"libreofficewriter":  Libreofficewriter,
+		"linuxmint":          Linuxmint,
+		"linuxmint_inverse":  LinuxmintInverse,
+		"locos":              Locos,
+		"lxde":               Lxde,
+		"lxle":               Lxle,
+		"lxqt":               Lxqt,
+		"mageia":             Mageia,
+		"mandriva":           Mandriva,
+		"manjaro":            Manjaro,
+		"mate":               Mate,
+		"mpv":                Mpv,
+		"mxlinux":            Mxlinux,
+		"neovim":             Neovim,
+		"nixos":              Nixos,
+		"nobara":             Nobara,
+		"octoprint":          Octoprint,
+		"openbsd":            Openbsd,
+		"openscad":           Openscad,
+		"opensuse":           Opensuse,
+		"osh":                Osh,
+		"oshwa":              Oshwa,
+		"osi":                Osi,
+		"parabola":           Parabola,
+		"parrot":             Parrot,
+		"pop_os":             PopOs,
+		"postmarketos":       Postmarketos,
+		"prusaslicer":        Prusaslicer,
+		"puppy":              Puppy,
+		"qt":                 Qt,
+		"qtile":              Qtile,
+		"qubesos":            Qubesos,
+		"raspberry_pi":       RaspberryPi,
+		"redhat":             Redhat,
+		"reprap":             Reprap,
+		"riscv":              Riscv,
+		"river":              River,
+		"rocky_linux":        RockyLinux,
+		"sabayon":            Sabayon,
+		"slackware":          Slackware,
+		"slackware_inverse":  SlackwareInverse,
+		"snappy":             Snappy,
+		"solus":              Solus,
+		"sway":               Sway,
+		"tails":              Tails,
+		"thunderbird":        Thunderbird,
+		"tor":                Tor,
+		"trisquel":           Trisquel,
+		"tumbleweed":         Tumbleweed,
+		"tux":                Tux,
+		"typst":              Typst,
+		"ubuntu":             Ubuntu,
+		"ubuntu_inverse":     UbuntuInverse,
+		"vanilla":            Vanilla,
+		"void":               Void,
+		"vscodium":           Vscodium,
+		"wayland":            Wayland,
+		"wikimedia":          Wikimedia,
+		"xerolinux":          Xerolinux,
+		"xfce":               Xfce,
+		"xmonad":             Xmonad,
+		"xorg":               Xorg,
+		"zorin":              Zorin,
 	}
+)
+
+// AllGlyphs returns an iterator over all the glyphs in the linux class,
+// returned in no particular order.
+func AllGlyphs() iter.Seq[nf.Glyph] {
+	return maps.Values(allGlyphs)
 }
 
-// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class.
-func AllGlyphIDs() iter.Seq[string] {
-	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.ID) {
-				return
-			}
+// ByID finds a glyph by its short or full ID within the class, or an empty string
+// if the glyph is not found.
+func ByID(id string) nf.Glyph {
+	if glyph, ok := allGlyphs[id]; ok {
+		return glyph
+	}
+	if _, stripped, ok := strings.Cut(id, string(Class)+"-"); ok {
+		if glyph, gok := allGlyphs[stripped]; gok {
+			return glyph
 		}
 	}
+	return ""
 }
 
-// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in the class.
+// AllGlyphIDs returns an iterator over all the IDs of the glyphs in the class,
+// returned in no particular order.
+func AllGlyphIDs() iter.Seq[string] {
+	return maps.Keys(allGlyphs)
+}
+
+// AllGlyphFullIDs returns an iterator over all the full IDs of the glyphs in
+// the class, returned in no particular order.
 func AllGlyphFullIDs() iter.Seq[string] {
 	return func(yield func(string) bool) {
-		for glyph := range AllGlyphs() {
-			if !yield(glyph.FullID()) {
+		for id := range allGlyphs {
+			if !yield(string(Class) + "-" + id) {
 				return
 			}
 		}

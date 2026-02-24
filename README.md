@@ -86,9 +86,6 @@
     doesn't mean the font in question is actively being used in the associated
     terminal emulator.
 - :heavy_check_mark: Helpers for iterating over all glyphs, by class, ID, and more.
-  - Note that using the `all` package will result in all glyphs being bundled into
-    your binary, which may increase the size of your binary (500kb-1MB, without
-    additional debug-symbols stripping).
 
 ---
 
