@@ -98,11 +98,30 @@ go get -u github.com/lrstanley/go-nf@latest
 ```
 <!-- template:end:goget -->
 
+Then, you can start referencing glyphs directly. For example, `fa` ([Font Awesome](https://fontawesome.com/))
+glyphs can be referenced like so:
+
+```go
+package main
+
+import (
+    "fmt"
+
+    "github.com/lrstanley/go-nf/glyphs/fa"
+)
+
+func main() {
+    fmt.Println(fa.Heart)
+}
+```
+
 ## :clap: Examples
+
+More examples provided below.
 
 ### Simple example
 
-- Static glyph references and dynamic lookup by file extension.
+- Static glyph references, dynamic lookup by file extension, and font installation detection.
 - [Example source](./_examples/simple/main.go)
 
 ### Package manager example
