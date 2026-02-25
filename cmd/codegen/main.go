@@ -92,7 +92,7 @@ func main() {
 
 	allGlyphsFiles := map[string]string{
 		"all_glyphs_helpers.gotmpl": "helpers.gen.go",
-		"all_glyphs_test.gotmpl":    "glyph_test.go",
+		"all_glyphs_test.gotmpl":    "glyphs_test.go",
 	}
 
 	for tmpl, destFile := range allGlyphsFiles {
@@ -107,7 +107,7 @@ func main() {
 	perGlyphFiles := map[string]string{
 		"class_glyphs.gotmpl":  "glyphs.gen.go",
 		"class_helpers.gotmpl": "helpers.gen.go",
-		"class_test.gotmpl":    "glyph_test.go",
+		"class_test.gotmpl":    "glyphs_test.go",
 	}
 
 	for _, class := range glyphData.Classes() {
@@ -123,8 +123,8 @@ func main() {
 
 	neoFiles := map[string]string{
 		"neo.gotmpl":        "neo.gen.go",
-		"neo_glyphs.gotmpl": "neo_glyphs.gen.go",
-		"neo_test.gotmpl":   "glyph_test.go",
+		"neo_glyphs.gotmpl": "glyphs.gen.go",
+		"neo_test.gotmpl":   "neo_test.go",
 	}
 
 	for tmpl, destFile := range neoFiles {
