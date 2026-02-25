@@ -1,0 +1,208 @@
+{{ header }}
+
+// Package neo contains helpers for resolving Nerd Fonts glyphs through specific
+// identifiers -- file name, file extension, operating system, window manager,
+// desktop environment, etc.
+package neo
+
+import (
+    "image/color"
+    "iter"
+    "maps"
+    "os"
+    "path/filepath"
+    "regexp"
+    "runtime"
+    "strings"
+
+    {{ .PackageName | quote }}
+)
+
+// Result is a glyph that has been resolved through a specific identifier --
+// file name, file extension, operating system, window manager, desktop
+// environment, etc.
+type Result interface {
+    // Name returns the name of the identified entity.
+    Name() string
+    // Glyph returns the glyph that represents the identified entity.
+    Glyph() nf.Glyph
+    // String returns the glyph itself.
+    String() string
+    // Color returns the color of the identified entity, as recommended by
+    // nvim-tree.
+    Color(dark bool) color.Color
+    // ColorANSI returns the fallback ANSI color of the identified entity (when
+    // the terminal doesn't support 256/TrueColor), as recommended by nvim-tree.
+    ColorANSI(dark bool) int
+}
+
+type neoGlyph struct {
+    name string
+    glyph nf.Glyph
+    darkColor color.Color
+    darkColorANSI int
+    lightColor color.Color
+    lightColorANSI int
+}
+
+func (g *neoGlyph) Name() string {
+    return g.name
+}
+
+func (g *neoGlyph) Glyph() nf.Glyph {
+    return g.glyph
+}
+
+func (g *neoGlyph) String() string {
+    return g.glyph.String()
+}
+
+func (g *neoGlyph) Color(dark bool) color.Color {
+    if dark {
+        return g.darkColor
+    }
+    return g.lightColor
+}
+
+func (g *neoGlyph) ColorANSI(dark bool) int {
+    if dark {
+        return g.darkColorANSI
+    }
+    return g.lightColorANSI
+}
+
+// DesktopEnvironments returns an iterator over all the desktop environments in
+// the neo package, in no particular order.
+func DesktopEnvironments() iter.Seq2[string, Result] {
+    return maps.All(desktopEnvironments)
+}
+
+// ByDesktopEnvironment resolves a glyph for a desktop environment by its name,
+// or nil if it is not found.
+func ByDesktopEnvironment(name string) Result {
+    return desktopEnvironments[strings.ToLower(name)]
+}
+
+// FileExtensions returns an iterator over all the file extensions in the neo package,
+// in no particular order.
+func FileExtensions() iter.Seq2[string, Result] {
+    return maps.All(fileExtensions)
+}
+
+// ByFileExtension resolves a glyph for a file extension, or nil if it is not
+// found.
+func ByFileExtension(ext string) Result {
+    extTrimmed := ext
+    if strings.HasPrefix(extTrimmed, ".") {
+        extTrimmed = extTrimmed[1:]
+    }
+    if v, ok := fileExtensions[extTrimmed]; ok {
+        return v
+    }
+    return fileExtensions[strings.ToLower(extTrimmed)]
+}
+
+// FileNames returns an iterator over all the file names in the neo package, in no
+// particular order.
+func FileNames() iter.Seq2[string, Result] {
+    return maps.All(filenames)
+}
+
+// ByFileName resolves a glyph for a file name, or nil if it is not found.
+func ByFileName(name string) Result {
+    if v, ok := filenames[name]; ok {
+        return v
+    }
+    if v, ok := filenames[filepath.Base(name)]; ok {
+        return v
+    }
+    nameLower := strings.ToLower(name)
+    if v, ok := filenames[nameLower]; ok {
+        return v
+    }
+    return filenames[filepath.Base(nameLower)]
+}
+
+// ByPath resolves a glyph for a file path (file name, extesion, etc), or nil if
+// it is not found.
+func ByPath(path string) Result {
+    if v, ok := filenames[path]; ok {
+        return v
+    }
+    base := filepath.Base(path)
+    if v, ok := filenames[base]; ok {
+        return v
+    }
+    pathLower := strings.ToLower(path)
+    if v, ok := filenames[pathLower]; ok {
+        return v
+    }
+    if v, ok := filenames[filepath.Base(pathLower)]; ok {
+        return v
+    }
+    return ByFileExtension(filepath.Ext(path))
+}
+
+// OperatingSystems returns an iterator over all the operating systems in the neo
+// package, in no particular order.
+func OperatingSystems() iter.Seq2[string, Result] {
+    return maps.All(operatingSystems)
+}
+
+// ByOperatingSystem resolves a glyph for an operating system by its name, or
+// nil if it is not found.
+func ByOperatingSystem(name string) Result {
+    return operatingSystems[strings.ToLower(name)]
+}
+
+var (
+    reOSReleaseID = regexp.MustCompile(`(?im)^ID=(?P<id>\S+)`)
+    reOSReleaseIDLike = regexp.MustCompile(`(?im)^ID_LIKE=(?P<ids>"([^"]*)"|(\S+))`)
+)
+
+// CurrentOS returns the current operating system glyph, or nil if it is not found.
+func CurrentOS() Result {
+    if runtime.GOOS == "linux" {
+        // Parse /etc/os-release, grabbing the ID key, and use it, if it exists in
+        // the operatingSystems map.
+        content, err := os.ReadFile("/etc/os-release")
+        if err == nil {
+            matches := reOSReleaseID.FindStringSubmatch(string(content))
+            if len(matches) > 1 {
+                if os, ok := operatingSystems[strings.ToLower(matches[1])]; ok {
+                    return os
+                }
+            }
+            matches = reOSReleaseIDLike.FindStringSubmatch(string(content))
+            if len(matches) > 1 {
+                for id := range strings.FieldsSeq(matches[1]) {
+                    if os, ok := operatingSystems[strings.ToLower(id)]; ok {
+                        return os
+                    }
+                }
+            }
+        }
+    }
+
+    if v, ok := operatingSystems[runtime.GOOS]; ok {
+        return v
+    }
+
+    if runtime.GOOS == "darwin" {
+        return ByOperatingSystem("apple")
+    }
+
+    return nil
+}
+
+// WindowManagers returns an iterator over all the window managers in the neo package,
+// in no particular order.
+func WindowManagers() iter.Seq2[string, Result] {
+    return maps.All(windowManagers)
+}
+
+// ByWindowManager resolves a glyph for a window manager by its name, or nil if
+// it is not found.
+func ByWindowManager(name string) Result {
+    return windowManagers[strings.ToLower(name)]
+}

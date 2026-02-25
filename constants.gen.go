@@ -9,7 +9,8 @@
 // helper functions to achieve this).
 //
 // Take a look at the following sub-packages:
-//   - "github.com/lrstanley/go-nf/glyphs/all"
+//   - "github.com/lrstanley/go-nf/glyphs/all" // Helpers for all glyphs.
+//   - "github.com/lrstanley/go-nf/glyphs/neo" // nvim-tree file/os/wm/desktop env mapping helpers.
 //   - "github.com/lrstanley/go-nf/glyphs/cod"
 //   - "github.com/lrstanley/go-nf/glyphs/custom"
 //   - "github.com/lrstanley/go-nf/glyphs/dev"

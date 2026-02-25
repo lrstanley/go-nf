@@ -5,9 +5,13 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
+	"fmt"
+	"io"
 	"iter"
 	"maps"
+	"net/http"
 	"slices"
 	"strings"
 	"unicode"
@@ -18,21 +22,21 @@ import (
 
 var val = validator.New(validator.WithRequiredStructEnabled())
 
-// Data is the main data structure for the glyph data.
-type Data struct {
+// GlyphData is the main data structure for the glyph data.
+type GlyphData struct {
 	Metadata *Metadata           `json:"metadata" validate:"required"`
 	Glyphs   map[string][]*Glyph `json:"glyphs" validate:"required,min=5,dive,required"`
 }
 
 // Classes returns all the classes in the data (sorted).
-func (d *Data) Classes() []string {
+func (d *GlyphData) Classes() []string {
 	classes := slices.Collect(maps.Keys(d.Glyphs))
 	slices.Sort(classes)
 	return classes
 }
 
 // AllIter returns an iterator over all the glyphs in the data (sorted).
-func (d *Data) AllIter() iter.Seq[*Glyph] {
+func (d *GlyphData) AllIter() iter.Seq[*Glyph] {
 	return func(yield func(g *Glyph) bool) {
 		for _, class := range d.Classes() {
 			for _, g := range d.Glyphs[class] {
@@ -42,6 +46,22 @@ func (d *Data) AllIter() iter.Seq[*Glyph] {
 			}
 		}
 	}
+}
+
+func (d *GlyphData) ByChar(char string) *Glyph {
+	for _, class := range d.Classes() {
+		for _, g := range d.Glyphs[class] {
+			if g.Char == char {
+				return g
+			}
+		}
+	}
+	return nil
+}
+
+var reservedClasses = []string{
+	"all",
+	"neo",
 }
 
 // UnmarshalJSON converts the JSON data into the Data structure. The JSON structure is:
@@ -59,7 +79,7 @@ func (d *Data) AllIter() iter.Seq[*Glyph] {
 //	  },
 //	  [...]
 //	}
-func (d *Data) UnmarshalJSON(b []byte) error {
+func (d *GlyphData) UnmarshalJSON(b []byte) error {
 	d.Metadata = &Metadata{}
 	d.Glyphs = make(map[string][]*Glyph, 5000) // pre-allocate for ~5k glyphs
 
@@ -89,6 +109,10 @@ func (d *Data) UnmarshalJSON(b []byte) error {
 		if !ok {
 			logger.Error("invalid glyph key", "key", k) //nolint:all
 			continue
+		}
+
+		if slices.Contains(reservedClasses, class) {
+			panic(fmt.Sprintf("reserved class: %s", class))
 		}
 
 		g.ID = id
@@ -133,4 +157,43 @@ type Glyph struct {
 	Class    string `json:"class" validate:"required,min=1,max=10"`
 	Char     string `json:"char" validate:"required,min=1,max=10"`
 	HexCode  string `json:"code" validate:"required,min=1,max=10"`
+}
+
+func fetchGlyphData(ctx context.Context) (*GlyphData, error) {
+	data := &GlyphData{}
+
+	b := readCache(ctx, glyphDataURL)
+	if b != nil {
+		err := json.Unmarshal(b, data)
+		if err != nil {
+			return nil, fmt.Errorf("failed to unmarshal data: %w", err)
+		}
+		return data, nil
+	}
+
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, glyphDataURL, http.NoBody)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create request: %w", err)
+	}
+
+	var resp *http.Response
+	resp, err = httpClient.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("failed to fetch data: %w", err)
+	}
+	defer resp.Body.Close()
+
+	b, err = io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read data: %w", err)
+	}
+
+	writeCache(ctx, glyphDataURL, b)
+
+	err = json.Unmarshal(b, data)
+	if err != nil {
+		return nil, fmt.Errorf("failed to unmarshal data: %w", err)
+	}
+
+	return data, nil
 }

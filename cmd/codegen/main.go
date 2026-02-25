@@ -6,11 +6,8 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
-	"io"
 	"log/slog"
-	"net/http"
 	"os"
 	"os/signal"
 	"path/filepath"
@@ -19,6 +16,8 @@ import (
 	"time"
 
 	"github.com/lmittmann/tint"
+	"github.com/lrstanley/x/http/utils/httpclog"
+	"github.com/lucasb-eyer/go-colorful"
 )
 
 const (
@@ -33,10 +32,23 @@ var (
 		TimeFormat: time.RFC3339,
 	}))
 
+	httpClient = httpclog.NewClient(&httpclog.Config{
+		Logger: logger,
+		Level:  new(slog.LevelInfo),
+	})
+
 	funcMap = template.FuncMap{
 		"header": func() string { return header },
 		"quote": func(s string) string {
 			return fmt.Sprintf("%q", s)
+		},
+		"hex_to_rgba": func(hex string) string {
+			// colorfuls library handles 4-length hex colors, in addition to 7-length (accounting for "#").
+			c, err := colorful.Hex(hex)
+			if err != nil {
+				return "nil"
+			}
+			return fmt.Sprintf("&color.RGBA{R: %d, G: %d, B: %d, A: %d}", int(c.R*255), int(c.G*255), int(c.B*255), 255)
 		},
 	}
 	_templates = template.Must(
@@ -60,16 +72,22 @@ func main() {
 
 	ctx, _ := signal.NotifyContext(context.Background(), os.Interrupt)
 
-	data, err := fetchData(ctx)
+	glyphData, err := fetchGlyphData(ctx)
 	if err != nil {
 		logger.Error("failed to fetch data", "error", err) //nolint:all
 		os.Exit(1)
 	}
 
+	neoGlyphData, err := FetchNeoGlyphData(ctx, glyphData)
+	if err != nil {
+		logger.Error("failed to fetch nvim-tree icon data", "error", err) //nolint:all
+		os.Exit(1)
+	}
+
 	generateFile("constants.gotmpl", filepath.Join(os.Args[1], "constants.gen.go"), map[string]any{
 		"PackageName": packageName,
-		"Metadata":    data.Metadata,
-		"Classes":     data.Classes(),
+		"Metadata":    glyphData.Metadata,
+		"Classes":     glyphData.Classes(),
 	})
 
 	allGlyphsFiles := map[string]string{
@@ -80,9 +98,9 @@ func main() {
 	for tmpl, destFile := range allGlyphsFiles {
 		generateFile(tmpl, filepath.Join(os.Args[1], "glyphs", "all", destFile), map[string]any{
 			"PackageName": packageName,
-			"Metadata":    data.Metadata,
-			"Classes":     data.Classes(),
-			"Glyphs":      slices.Collect(data.AllIter()),
+			"Metadata":    glyphData.Metadata,
+			"Classes":     glyphData.Classes(),
+			"Glyphs":      slices.Collect(glyphData.AllIter()),
 		})
 	}
 
@@ -92,45 +110,29 @@ func main() {
 		"class_test.gotmpl":    "glyph_test.go",
 	}
 
-	for _, class := range data.Classes() {
+	for _, class := range glyphData.Classes() {
 		for tmpl, destFile := range perGlyphFiles {
 			generateFile(tmpl, filepath.Join(os.Args[1], "glyphs", class, destFile), map[string]any{
 				"PackageName": packageName,
-				"Metadata":    data.Metadata,
+				"Metadata":    glyphData.Metadata,
 				"Class":       class,
-				"Glyphs":      data.Glyphs[class],
+				"Glyphs":      glyphData.Glyphs[class],
 			})
 		}
 	}
-}
 
-func fetchData(ctx context.Context) (*Data, error) {
-	data := &Data{}
-
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, glyphDataURL, http.NoBody)
-	if err != nil {
-		return nil, fmt.Errorf("failed to create request: %w", err)
+	neoFiles := map[string]string{
+		"neo.gotmpl":        "neo.gen.go",
+		"neo_glyphs.gotmpl": "neo_glyphs.gen.go",
+		"neo_test.gotmpl":   "glyph_test.go",
 	}
 
-	var resp *http.Response
-	resp, err = http.DefaultClient.Do(req)
-	if err != nil {
-		return nil, fmt.Errorf("failed to fetch data: %w", err)
+	for tmpl, destFile := range neoFiles {
+		generateFile(tmpl, filepath.Join(os.Args[1], "glyphs", "neo", destFile), map[string]any{
+			"PackageName": packageName,
+			"Data":        neoGlyphData,
+		})
 	}
-	defer resp.Body.Close()
-
-	var b []byte
-	b, err = io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, fmt.Errorf("failed to read data: %w", err)
-	}
-
-	err = json.Unmarshal(b, data)
-	if err != nil {
-		return nil, fmt.Errorf("failed to unmarshal data: %w", err)
-	}
-
-	return data, nil
 }
 
 func generateFile(tmpl, destPath string, data any) {

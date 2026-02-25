@@ -80,6 +80,10 @@
   documentation.
 - :heavy_check_mark: Split into multiple packages, per Nerd Font class, to reduce
   binary size and improve organization.
+- :heavy_check_mark: Helpers for resolving Nerd Fonts glyphs through specific
+  identifiers -- file name, file extension, operating system, window manager,
+  desktop environment, etc thanks to ported mappings from
+  [nvim-tree](https://github.com/nvim-tree/nvim-web-devicons).
 - :heavy_check_mark: Detect if Nerd Fonts are installed on the system, to prevent
   using glyphs that are not available.
   - Note that this is not a perfect solution. Just because Nerd Fonts are installed,
@@ -123,6 +127,8 @@ More examples provided below.
 
 - Static glyph references, dynamic lookup by file extension, and font installation detection.
 - [Example source](./_examples/simple/main.go)
+
+![simple example](./_examples/simple/demo.gif)
 
 ### Package manager example
 

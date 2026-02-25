@@ -1,0 +1,77 @@
+{{ header }}
+//
+// Generated using information gathered from the nvim-tree project.
+// Copyright (c) 2023 nvim-tree: https://github.com/nvim-tree/nvim-web-devicons/blob/master/LICENSE
+
+package neo
+
+import (
+    "image/color"
+
+    {{- range .Data.Classes }}
+    {{ printf "%s/glyphs/%s" $.PackageName . | quote }}
+    {{- end }}
+)
+
+var (
+    desktopEnvironments = map[string]Result{
+        {{- range .Data.DesktopEnvironments }}
+        {{ .Matcher | quote }}: &neoGlyph{
+            name: {{ .Name | quote }},
+            glyph: {{ .Glyph.Class }}.{{ .Glyph.PascalID }},
+            darkColor: {{ .DarkColor | hex_to_rgba }},
+            darkColorANSI: {{ .DarkANSIColor }},
+            lightColor: {{ .LightColor | hex_to_rgba }},
+            lightColorANSI: {{ .LightANSIColor }},
+        },
+        {{- end }}
+    }
+    fileExtensions = map[string]Result{
+        {{- range .Data.FileExtensions }}
+        {{ .Matcher | quote }}: &neoGlyph{
+            name: {{ .Name | quote }},
+            glyph: {{ .Glyph.Class }}.{{ .Glyph.PascalID }},
+            darkColor: {{ .DarkColor | hex_to_rgba }},
+            darkColorANSI: {{ .DarkANSIColor }},
+            lightColor: {{ .LightColor | hex_to_rgba }},
+            lightColorANSI: {{ .LightANSIColor }},
+        },
+        {{- end }}
+    }
+    filenames = map[string]Result{
+        {{- range .Data.Filenames }}
+        {{ .Matcher | quote }}: &neoGlyph{
+            name: {{ .Name | quote }},
+            glyph: {{ .Glyph.Class }}.{{ .Glyph.PascalID }},
+            darkColor: {{ .DarkColor | hex_to_rgba }},
+            darkColorANSI: {{ .DarkANSIColor }},
+            lightColor: {{ .LightColor | hex_to_rgba }},
+            lightColorANSI: {{ .LightANSIColor }},
+        },
+        {{- end }}
+    }
+    operatingSystems = map[string]Result{
+        {{- range .Data.OperatingSystems }}
+        {{ .Matcher | quote }}: &neoGlyph{
+            name: {{ .Name | quote }},
+            glyph: {{ .Glyph.Class }}.{{ .Glyph.PascalID }},
+            darkColor: {{ .DarkColor | hex_to_rgba }},
+            darkColorANSI: {{ .DarkANSIColor }},
+            lightColor: {{ .LightColor | hex_to_rgba }},
+            lightColorANSI: {{ .LightANSIColor }},
+        },
+        {{- end }}
+    }
+    windowManagers = map[string]Result{
+        {{- range .Data.WindowManagers }}
+        {{ .Matcher | quote }}: &neoGlyph{
+            name: {{ .Name | quote }},
+            glyph: {{ .Glyph.Class }}.{{ .Glyph.PascalID }},
+            darkColor: {{ .DarkColor | hex_to_rgba }},
+            darkColorANSI: {{ .DarkANSIColor }},
+            lightColor: {{ .LightColor | hex_to_rgba }},
+            lightColorANSI: {{ .LightANSIColor }},
+        },
+        {{- end }}
+    }
+)

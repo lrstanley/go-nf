@@ -5,7 +5,8 @@
 // helper functions to achieve this).
 //
 // Take a look at the following sub-packages:
-//  * {{ printf "%s/glyphs/all" .PackageName | quote }}
+//  * {{ printf "%s/glyphs/all" .PackageName | quote }} // Helpers for all glyphs.
+//  * {{ printf "%s/glyphs/neo" .PackageName | quote }} // nvim-tree file/os/wm/desktop env mapping helpers.
 {{- range $class := .Classes }}
 //  * {{ printf "%s/glyphs/%s" $.PackageName $class | quote }}
 {{- end }}
