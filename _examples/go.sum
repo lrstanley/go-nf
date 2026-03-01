@@ -26,8 +26,10 @@ github.com/clipperhouse/displaywidth v0.11.0 h1:lBc6kY44VFw+TDx4I8opi/EtL9m20WSE
 github.com/clipperhouse/displaywidth v0.11.0/go.mod h1:bkrFNkf81G8HyVqmKGxsPufD3JhNl3dSqnGhOoSD/o0=
 github.com/clipperhouse/uax29/v2 v2.7.0 h1:+gs4oBZ2gPfVrKPthwbMzWZDaAFPGYK72F0NJv2v7Vk=
 github.com/clipperhouse/uax29/v2 v2.7.0/go.mod h1:EFJ2TJMRUaplDxHKj1qAEhCtQPW2tJSwu5BF98AuoVM=
-github.com/lrstanley/bubbletint/v2 v2.0.0 h1:2w8yUmzn6zlUvUk3j5FIW6au2N/nKzqhtQatL5Ocwk8=
-github.com/lrstanley/bubbletint/v2 v2.0.0/go.mod h1:fL833lvIEbec7VBi9F8wZ/1008jBiDrvQtuIac9AG/k=
+github.com/lrstanley/bubbletint/v2 v2.0.1 h1:ELxRFzrm9X5DIz7Y1Yp0gfGhsJo+4U3w8WJe6x/Beso=
+github.com/lrstanley/bubbletint/v2 v2.0.1/go.mod h1:fL833lvIEbec7VBi9F8wZ/1008jBiDrvQtuIac9AG/k=
+github.com/lrstanley/go-nf v0.0.0-20260225055853-df39e9212550 h1:JZwLyu1kLYf/cpfdUjPBZF1vWKyZQiuv9163gruyniU=
+github.com/lrstanley/go-nf v0.0.0-20260225055853-df39e9212550/go.mod h1:MW7vmvMkwop4wD5DgTS5dzykKwN/r+3OWcxfzAANOrw=
 github.com/lucasb-eyer/go-colorful v1.3.0 h1:2/yBRLdWBZKrf7gB40FoiKfAWYQ0lqNcbuQwVHXptag=
 github.com/lucasb-eyer/go-colorful v1.3.0/go.mod h1:R4dSotOR9KMtayYi1e77YzuveK+i7ruzyGqttikkLy0=
 github.com/mattn/go-runewidth v0.0.20 h1:WcT52H91ZUAwy8+HUkdM3THM6gXqXuLJi9O3rjcQQaQ=
