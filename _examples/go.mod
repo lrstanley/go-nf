@@ -8,7 +8,7 @@ require (
 	charm.land/bubbles/v2 v2.0.0
 	charm.land/bubbletea/v2 v2.0.0
 	charm.land/lipgloss/v2 v2.0.0
-	github.com/lrstanley/bubbletint/v2 v2.0.0
+	github.com/lrstanley/bubbletint/v2 v2.0.1
 	github.com/lrstanley/go-nf v0.0.0-20260225055853-df39e9212550
 )
 
