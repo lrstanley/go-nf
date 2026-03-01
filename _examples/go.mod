@@ -9,7 +9,7 @@ require (
 	charm.land/bubbletea/v2 v2.0.0-rc.1.0.20251116163936-f60735dff10c
 	charm.land/lipgloss/v2 v2.0.0-beta.3.0.20251114164805-d267651963ad
 	github.com/lrstanley/bubbletint/v2 v2.0.0-alpha.10
-	github.com/lrstanley/go-nf v0.0.0-00010101000000-000000000000
+	github.com/lrstanley/go-nf v0.0.0-20260225055853-df39e9212550
 )
 
 require (

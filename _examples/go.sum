@@ -30,6 +30,8 @@ github.com/clipperhouse/uax29/v2 v2.3.0 h1:SNdx9DVUqMoBuBoW3iLOj4FQv3dN5mDtuqwuh
 github.com/clipperhouse/uax29/v2 v2.3.0/go.mod h1:Wn1g7MK6OoeDT0vL+Q0SQLDz/KpfsVRgg6W7ihQeh4g=
 github.com/lrstanley/bubbletint/v2 v2.0.0-alpha.10 h1:WNa5p3jXahXtDUktv2A7sakDpONQ2Bvgiq6gUQ2sAug=
 github.com/lrstanley/bubbletint/v2 v2.0.0-alpha.10/go.mod h1:fL833lvIEbec7VBi9F8wZ/1008jBiDrvQtuIac9AG/k=
+github.com/lrstanley/go-nf v0.0.0-20260225055853-df39e9212550 h1:JZwLyu1kLYf/cpfdUjPBZF1vWKyZQiuv9163gruyniU=
+github.com/lrstanley/go-nf v0.0.0-20260225055853-df39e9212550/go.mod h1:MW7vmvMkwop4wD5DgTS5dzykKwN/r+3OWcxfzAANOrw=
 github.com/lucasb-eyer/go-colorful v1.3.0 h1:2/yBRLdWBZKrf7gB40FoiKfAWYQ0lqNcbuQwVHXptag=
 github.com/lucasb-eyer/go-colorful v1.3.0/go.mod h1:R4dSotOR9KMtayYi1e77YzuveK+i7ruzyGqttikkLy0=
 github.com/mattn/go-runewidth v0.0.19 h1:v++JhqYnZuu5jSKrk9RbgF5v4CGUjqRfBm05byFGLdw=
