@@ -12,8 +12,8 @@ import (
 
 const (
 	desktopEnvCount = 8
-	fileExtCount    = 486
-	filenameCount   = 215
+	fileExtCount    = 487
+	filenameCount   = 216
 	osCount         = 60
 	wmCount         = 12
 )

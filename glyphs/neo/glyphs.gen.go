@@ -3378,6 +3378,14 @@ var (
 			lightColor:     &color.RGBA{R: 1, G: 113, B: 38, A: 255},
 			lightColorANSI: 22,
 		},
+		"svx": &neoGlyph{
+			name:           "SvelteMarkdown",
+			glyph:          seti.Svelte,
+			darkColor:      &color.RGBA{R: 255, G: 0, B: 65, A: 255},
+			darkColorANSI:  197,
+			lightColor:     &color.RGBA{R: 255, G: 0, B: 65, A: 255},
+			lightColorANSI: 197,
+		},
 		"swift": &neoGlyph{
 			name:           "Swift",
 			glyph:          dev.Swift,
@@ -4037,6 +4045,14 @@ var (
 			lightColorANSI: 59,
 		},
 		".clang-tidy": &neoGlyph{
+			name:           "ClangConfig",
+			glyph:          seti.Config,
+			darkColor:      &color.RGBA{R: 109, G: 128, B: 134, A: 255},
+			darkColorANSI:  66,
+			lightColor:     &color.RGBA{R: 81, G: 96, B: 100, A: 255},
+			lightColorANSI: 59,
+		},
+		".clangd": &neoGlyph{
 			name:           "ClangConfig",
 			glyph:          seti.Config,
 			darkColor:      &color.RGBA{R: 109, G: 128, B: 134, A: 255},
