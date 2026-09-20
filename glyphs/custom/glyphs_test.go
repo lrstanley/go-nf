@@ -11,7 +11,7 @@ import (
 	"testing"
 )
 
-const glyphCount = 42
+const glyphCount = 45
 
 func TestAllGlyphs(t *testing.T) {
 	t.Parallel()

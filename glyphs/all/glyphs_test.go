@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	glyphCount = 10764
+	glyphCount = 10995
 	classCount = 17
 )
 

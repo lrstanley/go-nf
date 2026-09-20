@@ -13,7 +13,7 @@
 // Additional information:
 //  * Website: https://www.nerdfonts.com
 //  * Development Website: https://github.com/ryanoasis/nerd-fonts
-//  * Version: 3.4.0
+//  * Version: 3.5.1
 
 // Package custom contains the Nerd Fonts glyphs for the "custom" class.
 package custom
@@ -25,7 +25,7 @@ const (
 	Class nf.Class = "custom"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
-	Version = "3.4.0"
+	Version = "3.5.1"
 )
 
 const (
@@ -59,6 +59,7 @@ const (
 	Kotlin          nf.Glyph = "" //  ("\ue634") represents the "custom-kotlin" glyph.
 	Msdos           nf.Glyph = "" //  ("\ue629") represents the "custom-msdos" glyph.
 	Neovim          nf.Glyph = "" //  ("\ue6ae") represents the "custom-neovim" glyph.
+	Obsidian        nf.Glyph = "" //  ("\ue6bb") represents the "custom-obsidian" glyph.
 	Orgmode         nf.Glyph = "" //  ("\ue633") represents the "custom-orgmode" glyph.
 	PlayArrow       nf.Glyph = "" //  ("\ue602") represents the "custom-play_arrow" glyph.
 	Prettier        nf.Glyph = "" //  ("\ue6b4") represents the "custom-prettier" glyph.
@@ -71,4 +72,6 @@ const (
 	Vim             nf.Glyph = "" //  ("\ue62b") represents the "custom-vim" glyph.
 	Vitruvian       nf.Glyph = "" //  ("\ue6b7") represents the "custom-vitruvian" glyph.
 	Windows         nf.Glyph = "" //  ("\ue62a") represents the "custom-windows" glyph.
+	Wireshark       nf.Glyph = "" //  ("\ue6ba") represents the "custom-wireshark" glyph.
+	Zsh             nf.Glyph = "" //  ("\ue6b9") represents the "custom-zsh" glyph.
 )

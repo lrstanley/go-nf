@@ -32,5 +32,5 @@ package nf
 
 const (
 	// Version is the version of the Nerd Fonts project which this package was generated from.
-	Version = "3.4.0"
+	Version = "3.5.1"
 )

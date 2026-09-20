@@ -13,7 +13,7 @@
 // Additional information:
 //  * Website: https://www.nerdfonts.com
 //  * Development Website: https://github.com/ryanoasis/nerd-fonts
-//  * Version: 3.4.0
+//  * Version: 3.5.1
 
 // Package linux contains the Nerd Fonts glyphs for the "linux" class.
 package linux
@@ -25,7 +25,7 @@ const (
 	Class nf.Class = "linux"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
-	Version = "3.4.0"
+	Version = "3.5.1"
 )
 
 const (
@@ -43,6 +43,7 @@ const (
 	Biglinux           nf.Glyph = "" //  ("\uf347") represents the "linux-biglinux" glyph.
 	Bspwm              nf.Glyph = "" //  ("\uf355") represents the "linux-bspwm" glyph.
 	Budgie             nf.Glyph = "" //  ("\uf320") represents the "linux-budgie" glyph.
+	Cachyos            nf.Glyph = "" //  ("\uf385") represents the "linux-cachyos" glyph.
 	Centos             nf.Glyph = "" //  ("\uf304") represents the "linux-centos" glyph.
 	Cinnamon           nf.Glyph = "" //  ("\uf35f") represents the "linux-cinnamon" glyph.
 	Codeberg           nf.Glyph = "" //  ("\uf330") represents the "linux-codeberg" glyph.
@@ -60,6 +61,7 @@ const (
 	Fedora             nf.Glyph = "" //  ("\uf30a") represents the "linux-fedora" glyph.
 	FedoraInverse      nf.Glyph = "" //  ("\uf30b") represents the "linux-fedora_inverse" glyph.
 	Ferris             nf.Glyph = "" //  ("\uf323") represents the "linux-ferris" glyph.
+	Ffmpeg             nf.Glyph = "" //  ("\uf384") represents the "linux-ffmpeg" glyph.
 	Flathub            nf.Glyph = "" //  ("\uf324") represents the "linux-flathub" glyph.
 	Fluxbox            nf.Glyph = "" //  ("\uf358") represents the "linux-fluxbox" glyph.
 	Forgejo            nf.Glyph = "" //  ("\uf335") represents the "linux-forgejo" glyph.
@@ -116,6 +118,7 @@ const (
 	Openbsd            nf.Glyph = "" //  ("\uf328") represents the "linux-openbsd" glyph.
 	Openscad           nf.Glyph = "" //  ("\uf34e") represents the "linux-openscad" glyph.
 	Opensuse           nf.Glyph = "" //  ("\uf314") represents the "linux-opensuse" glyph.
+	Openwrt            nf.Glyph = "" //  ("\uf382") represents the "linux-openwrt" glyph.
 	Osh                nf.Glyph = "" //  ("\uf34f") represents the "linux-osh" glyph.
 	Oshwa              nf.Glyph = "" //  ("\uf350") represents the "linux-oshwa" glyph.
 	Osi                nf.Glyph = "" //  ("\uf36c") represents the "linux-osi" glyph.
@@ -154,6 +157,7 @@ const (
 	Vscodium           nf.Glyph = "" //  ("\uf372") represents the "linux-vscodium" glyph.
 	Wayland            nf.Glyph = "" //  ("\uf367") represents the "linux-wayland" glyph.
 	Wikimedia          nf.Glyph = "" //  ("\uf36d") represents the "linux-wikimedia" glyph.
+	Wireguard          nf.Glyph = "" //  ("\uf383") represents the "linux-wireguard" glyph.
 	Xerolinux          nf.Glyph = "" //  ("\uf34a") represents the "linux-xerolinux" glyph.
 	Xfce               nf.Glyph = "" //  ("\uf368") represents the "linux-xfce" glyph.
 	Xmonad             nf.Glyph = "" //  ("\uf35e") represents the "linux-xmonad" glyph.

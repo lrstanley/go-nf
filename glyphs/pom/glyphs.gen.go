@@ -13,7 +13,7 @@
 // Additional information:
 //  * Website: https://www.nerdfonts.com
 //  * Development Website: https://github.com/ryanoasis/nerd-fonts
-//  * Version: 3.4.0
+//  * Version: 3.5.1
 
 // Package pom contains the Nerd Fonts glyphs for the "pom" class.
 package pom
@@ -25,7 +25,7 @@ const (
 	Class nf.Class = "pom"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
-	Version = "3.4.0"
+	Version = "3.5.1"
 )
 
 const (

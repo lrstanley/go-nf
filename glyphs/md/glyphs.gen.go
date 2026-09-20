@@ -13,7 +13,7 @@
 // Additional information:
 //  * Website: https://www.nerdfonts.com
 //  * Development Website: https://github.com/ryanoasis/nerd-fonts
-//  * Version: 3.4.0
+//  * Version: 3.5.1
 
 // Package md contains the Nerd Fonts glyphs for the "md" class.
 package md
@@ -25,7 +25,7 @@ const (
 	Class nf.Class = "md"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
-	Version = "3.4.0"
+	Version = "3.5.1"
 )
 
 const (
@@ -1441,6 +1441,8 @@ const (
 	CardsClubOutline                       nf.Glyph = "󱢟" // 󱢟 ("\U000f189f") represents the "md-cards_club_outline" glyph.
 	CardsDiamond                           nf.Glyph = "󰣏" // 󰣏 ("\U000f08cf") represents the "md-cards_diamond" glyph.
 	CardsDiamondOutline                    nf.Glyph = "󱀝" // 󱀝 ("\U000f101d") represents the "md-cards_diamond_outline" glyph.
+	CardsHeart                             nf.Glyph = "󰣐" // 󰣐 ("\U000f08d0") represents the "md-cards_heart" glyph.
+	CardsHeartOutline                      nf.Glyph = "󱢠" // 󱢠 ("\U000f18a0") represents the "md-cards_heart_outline" glyph.
 	CardsOutline                           nf.Glyph = "󰘹" // 󰘹 ("\U000f0639") represents the "md-cards_outline" glyph.
 	CardsPlaying                           nf.Glyph = "󱢡" // 󱢡 ("\U000f18a1") represents the "md-cards_playing" glyph.
 	CardsPlayingClub                       nf.Glyph = "󱢢" // 󱢢 ("\U000f18a2") represents the "md-cards_playing_club" glyph.
@@ -1684,6 +1686,7 @@ const (
 	Church                                 nf.Glyph = "󰅄" // 󰅄 ("\U000f0144") represents the "md-church" glyph.
 	Cigar                                  nf.Glyph = "󱆉" // 󱆉 ("\U000f1189") represents the "md-cigar" glyph.
 	CigarOff                               nf.Glyph = "󱐛" // 󱐛 ("\U000f141b") represents the "md-cigar_off" glyph.
+	Circle                                 nf.Glyph = "󰝥" // 󰝥 ("\U000f0765") represents the "md-circle" glyph.
 	CircleBox                              nf.Glyph = "󱗜" // 󱗜 ("\U000f15dc") represents the "md-circle_box" glyph.
 	CircleBoxOutline                       nf.Glyph = "󱗝" // 󱗝 ("\U000f15dd") represents the "md-circle_box_outline" glyph.
 	CircleDouble                           nf.Glyph = "󰺕" // 󰺕 ("\U000f0e95") represents the "md-circle_double" glyph.
@@ -1696,6 +1699,7 @@ const (
 	CircleMultipleOutline                  nf.Glyph = "󰚕" // 󰚕 ("\U000f0695") represents the "md-circle_multiple_outline" glyph.
 	CircleOffOutline                       nf.Glyph = "󱃓" // 󱃓 ("\U000f10d3") represents the "md-circle_off_outline" glyph.
 	CircleOpacity                          nf.Glyph = "󱡓" // 󱡓 ("\U000f1853") represents the "md-circle_opacity" glyph.
+	CircleOutline                          nf.Glyph = "󰝦" // 󰝦 ("\U000f0766") represents the "md-circle_outline" glyph.
 	CircleSlice1                           nf.Glyph = "󰪞" // 󰪞 ("\U000f0a9e") represents the "md-circle_slice_1" glyph.
 	CircleSlice2                           nf.Glyph = "󰪟" // 󰪟 ("\U000f0a9f") represents the "md-circle_slice_2" glyph.
 	CircleSlice3                           nf.Glyph = "󰪠" // 󰪠 ("\U000f0aa0") represents the "md-circle_slice_3" glyph.
@@ -4084,6 +4088,7 @@ const (
 	Login                                  nf.Glyph = "󰍂" // 󰍂 ("\U000f0342") represents the "md-login" glyph.
 	Logout                                 nf.Glyph = "󰍃" // 󰍃 ("\U000f0343") represents the "md-logout" glyph.
 	LogoutVariant                          nf.Glyph = "󰗽" // 󰗽 ("\U000f05fd") represents the "md-logout_variant" glyph.
+	LogoutVariant2                         nf.Glyph = "󰗼" // 󰗼 ("\U000f05fc") represents the "md-logout_variant_2" glyph.
 	Longitude                              nf.Glyph = "󰽚" // 󰽚 ("\U000f0f5a") represents the "md-longitude" glyph.
 	Looks                                  nf.Glyph = "󰍄" // 󰍄 ("\U000f0344") represents the "md-looks" glyph.
 	Lotion                                 nf.Glyph = "󱖂" // 󱖂 ("\U000f1582") represents the "md-lotion" glyph.
@@ -4388,6 +4393,7 @@ const (
 	MotionSensorOff                        nf.Glyph = "󱐵" // 󱐵 ("\U000f1435") represents the "md-motion_sensor_off" glyph.
 	Motorbike                              nf.Glyph = "󰍼" // 󰍼 ("\U000f037c") represents the "md-motorbike" glyph.
 	MotorbikeElectric                      nf.Glyph = "󱖺" // 󱖺 ("\U000f15ba") represents the "md-motorbike_electric" glyph.
+	Mountains                              nf.Glyph = "󰔉" // 󰔉 ("\U000f0509") represents the "md-mountains" glyph.
 	Mouse                                  nf.Glyph = "󰍽" // 󰍽 ("\U000f037d") represents the "md-mouse" glyph.
 	MouseBluetooth                         nf.Glyph = "󰦋" // 󰦋 ("\U000f098b") represents the "md-mouse_bluetooth" glyph.
 	MouseMoveDown                          nf.Glyph = "󱕐" // 󱕐 ("\U000f1550") represents the "md-mouse_move_down" glyph.
@@ -4473,6 +4479,7 @@ const (
 	MusicClefBass                          nf.Glyph = "󰽯" // 󰽯 ("\U000f0f6f") represents the "md-music_clef_bass" glyph.
 	MusicClefTreble                        nf.Glyph = "󰽰" // 󰽰 ("\U000f0f70") represents the "md-music_clef_treble" glyph.
 	MusicNote                              nf.Glyph = "󰎇" // 󰎇 ("\U000f0387") represents the "md-music_note" glyph.
+	MusicNote2                             nf.Glyph = "󰎈" // 󰎈 ("\U000f0388") represents the "md-music_note_2" glyph.
 	MusicNoteBluetooth                     nf.Glyph = "󰗾" // 󰗾 ("\U000f05fe") represents the "md-music_note_bluetooth" glyph.
 	MusicNoteBluetoothOff                  nf.Glyph = "󰗿" // 󰗿 ("\U000f05ff") represents the "md-music_note_bluetooth_off" glyph.
 	MusicNoteEighthDotted                  nf.Glyph = "󰽱" // 󰽱 ("\U000f0f71") represents the "md-music_note_eighth_dotted" glyph.
@@ -4502,6 +4509,7 @@ const (
 	NaturePeople                           nf.Glyph = "󰎏" // 󰎏 ("\U000f038f") represents the "md-nature_people" glyph.
 	Navigation                             nf.Glyph = "󰎐" // 󰎐 ("\U000f0390") represents the "md-navigation" glyph.
 	NavigationOutline                      nf.Glyph = "󱘇" // 󱘇 ("\U000f1607") represents the "md-navigation_outline" glyph.
+	NavigationVariant                      nf.Glyph = "󱣰" // 󱣰 ("\U000f18f0") represents the "md-navigation_variant" glyph.
 	NavigationVariantOutline               nf.Glyph = "󱣱" // 󱣱 ("\U000f18f1") represents the "md-navigation_variant_outline" glyph.
 	NearMe                                 nf.Glyph = "󰗍" // 󰗍 ("\U000f05cd") represents the "md-near_me" glyph.
 	Necklace                               nf.Glyph = "󰼋" // 󰼋 ("\U000f0f0b") represents the "md-necklace" glyph.
@@ -4592,10 +4600,13 @@ const (
 	Nuke                                   nf.Glyph = "󰚤" // 󰚤 ("\U000f06a4") represents the "md-nuke" glyph.
 	Null                                   nf.Glyph = "󰟢" // 󰟢 ("\U000f07e2") represents the "md-null" glyph.
 	Numeric                                nf.Glyph = "󰎠" // 󰎠 ("\U000f03a0") represents the "md-numeric" glyph.
+	Numeric0                               nf.Glyph = "󰬹" // 󰬹 ("\U000f0b39") represents the "md-numeric_0" glyph.
 	Numeric0Box                            nf.Glyph = "󰎡" // 󰎡 ("\U000f03a1") represents the "md-numeric_0_box" glyph.
 	Numeric0BoxMultiple                    nf.Glyph = "󰼎" // 󰼎 ("\U000f0f0e") represents the "md-numeric_0_box_multiple" glyph.
 	Numeric0BoxMultipleOutline             nf.Glyph = "󰎢" // 󰎢 ("\U000f03a2") represents the "md-numeric_0_box_multiple_outline" glyph.
 	Numeric0BoxOutline                     nf.Glyph = "󰎣" // 󰎣 ("\U000f03a3") represents the "md-numeric_0_box_outline" glyph.
+	Numeric0Circle                         nf.Glyph = "󰲞" // 󰲞 ("\U000f0c9e") represents the "md-numeric_0_circle" glyph.
+	Numeric0CircleOutline                  nf.Glyph = "󰲟" // 󰲟 ("\U000f0c9f") represents the "md-numeric_0_circle_outline" glyph.
 	Numeric1                               nf.Glyph = "󰬺" // 󰬺 ("\U000f0b3a") represents the "md-numeric_1" glyph.
 	Numeric10                              nf.Glyph = "󰿩" // 󰿩 ("\U000f0fe9") represents the "md-numeric_10" glyph.
 	Numeric10Box                           nf.Glyph = "󰽽" // 󰽽 ("\U000f0f7d") represents the "md-numeric_10_box" glyph.
@@ -5168,6 +5179,7 @@ const (
 	RadioactiveCircle                      nf.Glyph = "󱡝" // 󱡝 ("\U000f185d") represents the "md-radioactive_circle" glyph.
 	RadioactiveCircleOutline               nf.Glyph = "󱡞" // 󱡞 ("\U000f185e") represents the "md-radioactive_circle_outline" glyph.
 	RadioactiveOff                         nf.Glyph = "󰻁" // 󰻁 ("\U000f0ec1") represents the "md-radioactive_off" glyph.
+	RadioboxBlank                          nf.Glyph = "󰐽" // 󰐽 ("\U000f043d") represents the "md-radiobox_blank" glyph.
 	RadioboxMarked                         nf.Glyph = "󰐾" // 󰐾 ("\U000f043e") represents the "md-radiobox_marked" glyph.
 	RadiologyBox                           nf.Glyph = "󱓅" // 󱓅 ("\U000f14c5") represents the "md-radiology_box" glyph.
 	RadiologyBoxOutline                    nf.Glyph = "󱓆" // 󱓆 ("\U000f14c6") represents the "md-radiology_box_outline" glyph.
@@ -5347,9 +5359,12 @@ const (
 	Rollupjs                               nf.Glyph = "󰯀" // 󰯀 ("\U000f0bc0") represents the "md-rollupjs" glyph.
 	Rolodex                                nf.Glyph = "󱪹" // 󱪹 ("\U000f1ab9") represents the "md-rolodex" glyph.
 	RolodexOutline                         nf.Glyph = "󱪺" // 󱪺 ("\U000f1aba") represents the "md-rolodex_outline" glyph.
+	RomanNumeral1                          nf.Glyph = "󱂈" // 󱂈 ("\U000f1088") represents the "md-roman_numeral_1" glyph.
+	RomanNumeral10                         nf.Glyph = "󱂑" // 󱂑 ("\U000f1091") represents the "md-roman_numeral_10" glyph.
 	RomanNumeral2                          nf.Glyph = "󱂉" // 󱂉 ("\U000f1089") represents the "md-roman_numeral_2" glyph.
 	RomanNumeral3                          nf.Glyph = "󱂊" // 󱂊 ("\U000f108a") represents the "md-roman_numeral_3" glyph.
 	RomanNumeral4                          nf.Glyph = "󱂋" // 󱂋 ("\U000f108b") represents the "md-roman_numeral_4" glyph.
+	RomanNumeral5                          nf.Glyph = "󱂌" // 󱂌 ("\U000f108c") represents the "md-roman_numeral_5" glyph.
 	RomanNumeral6                          nf.Glyph = "󱂍" // 󱂍 ("\U000f108d") represents the "md-roman_numeral_6" glyph.
 	RomanNumeral7                          nf.Glyph = "󱂎" // 󱂎 ("\U000f108e") represents the "md-roman_numeral_7" glyph.
 	RomanNumeral8                          nf.Glyph = "󱂏" // 󱂏 ("\U000f108f") represents the "md-roman_numeral_8" glyph.
@@ -5671,6 +5686,7 @@ const (
 	SineWave                               nf.Glyph = "󰥛" // 󰥛 ("\U000f095b") represents the "md-sine_wave" glyph.
 	Sitemap                                nf.Glyph = "󰒪" // 󰒪 ("\U000f04aa") represents the "md-sitemap" glyph.
 	SitemapOutline                         nf.Glyph = "󱦜" // 󱦜 ("\U000f199c") represents the "md-sitemap_outline" glyph.
+	SizeL                                  nf.Glyph = "󱎦" // 󱎦 ("\U000f13a6") represents the "md-size_l" glyph.
 	SizeM                                  nf.Glyph = "󱎥" // 󱎥 ("\U000f13a5") represents the "md-size_m" glyph.
 	SizeS                                  nf.Glyph = "󱎤" // 󱎤 ("\U000f13a4") represents the "md-size_s" glyph.
 	SizeXl                                 nf.Glyph = "󱎧" // 󱎧 ("\U000f13a7") represents the "md-size_xl" glyph.
