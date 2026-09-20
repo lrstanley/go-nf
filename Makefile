@@ -1,5 +1,7 @@
 .DEFAULT_GOAL := generate
 
+export NF_VERSION := 3.4.0
+
 license:
 	curl -sL https://liam.sh/-/gh/g/license-header.sh | bash -s
 

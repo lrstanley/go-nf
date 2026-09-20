@@ -147,6 +147,10 @@ func DetectorFontConfig() InstallDetector {
 			}
 		}
 
+		if scanErr := scanner.Err(); scanErr != nil {
+			_ = cmd.Wait()
+			return StatusNotInstalled, scanErr
+		}
 		_ = cmd.Wait()
 		return StatusNotInstalled, nil
 	}

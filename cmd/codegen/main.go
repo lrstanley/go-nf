@@ -13,24 +13,26 @@ import (
 	"path/filepath"
 	"slices"
 	"text/template"
-	"time"
 
-	"github.com/lmittmann/tint"
+	"github.com/lrstanley/clix/v2"
 	"github.com/lrstanley/x/http/utils/httpclog"
 	"github.com/lucasb-eyer/go-colorful"
 )
 
 const (
 	packageName  = "github.com/lrstanley/go-nf"
-	glyphDataURL = "https://github.com/ryanoasis/nerd-fonts/raw/refs/tags/v3.4.0/glyphnames.json"
+	glyphDataURL = "https://github.com/ryanoasis/nerd-fonts/raw/refs/tags/v%s/glyphnames.json"
 )
 
+type Flags struct {
+	NFVersion string `name:"nf-version" env:"NF_VERSION" required:"" help:"The version of the Nerd Fonts project to use (without the 'v' prefix)."`
+	OutputDir string `arg:"" type:"path" help:"The directory to output the generated files to."`
+}
+
 var (
-	logger = slog.New(tint.NewHandler(os.Stderr, &tint.Options{
-		Level:      slog.LevelDebug,
-		AddSource:  true,
-		TimeFormat: time.RFC3339,
-	}))
+	cli = clix.NewWithDefaults[Flags]()
+
+	logger *slog.Logger
 
 	httpClient = httpclog.NewClient(&httpclog.Config{
 		Logger: logger,
@@ -65,10 +67,7 @@ var (
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		logger.Error("usage", "error", "output_dir is required") //nolint:all
-		os.Exit(1)
-	}
+	logger = cli.GetLogger()
 
 	ctx, _ := signal.NotifyContext(context.Background(), os.Interrupt)
 
@@ -84,9 +83,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	generateFile("constants.gotmpl", filepath.Join(os.Args[1], "constants.gen.go"), map[string]any{
-		"PackageName": packageName,
-		"Metadata":    glyphData.Metadata,
+	generateFile("constants.gotmpl", filepath.Join(cli.Flags.OutputDir, "constants.gen.go"), map[string]any{
+		"PackageName": packageName,        //nolint:goconst
+		"Metadata":    glyphData.Metadata, //nolint:goconst
 		"Classes":     glyphData.Classes(),
 	})
 
@@ -136,11 +135,11 @@ func main() {
 }
 
 func generateFile(tmpl, destPath string, data any) {
-	if err := os.MkdirAll(filepath.Dir(destPath), 0o750); err != nil {
+	if err := os.MkdirAll(filepath.Dir(destPath), 0o750); err != nil { //nolint:gosec // Constrained user-controlled execution.
 		panic(err)
 	}
 
-	f, err := os.Create(destPath)
+	f, err := os.Create(destPath) //nolint:gosec // Constrained user-controlled execution.
 	if err != nil {
 		panic(err)
 	}

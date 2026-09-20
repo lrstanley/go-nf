@@ -162,7 +162,9 @@ type Glyph struct {
 func fetchGlyphData(ctx context.Context) (*GlyphData, error) {
 	data := &GlyphData{}
 
-	b := readCache(ctx, glyphDataURL)
+	uri := fmt.Sprintf(glyphDataURL, cli.Flags.NFVersion)
+
+	b := readCache(ctx, uri)
 	if b != nil {
 		err := json.Unmarshal(b, data)
 		if err != nil {
@@ -171,7 +173,7 @@ func fetchGlyphData(ctx context.Context) (*GlyphData, error) {
 		return data, nil
 	}
 
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, glyphDataURL, http.NoBody)
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, uri, http.NoBody)
 	if err != nil {
 		return nil, fmt.Errorf("failed to create request: %w", err)
 	}
@@ -188,7 +190,7 @@ func fetchGlyphData(ctx context.Context) (*GlyphData, error) {
 		return nil, fmt.Errorf("failed to read data: %w", err)
 	}
 
-	writeCache(ctx, glyphDataURL, b)
+	writeCache(ctx, uri, b)
 
 	err = json.Unmarshal(b, data)
 	if err != nil {
