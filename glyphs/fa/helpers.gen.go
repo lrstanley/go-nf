@@ -1756,6 +1756,7 @@ var (
 		"voicemail":                           Voicemail,
 		"volcano":                             Volcano,
 		"volleyball":                          Volleyball,
+		"volume":                              Volume,
 		"volume_control_phone":                VolumeControlPhone,
 		"volume_down":                         VolumeDown,
 		"volume_high":                         VolumeHigh,

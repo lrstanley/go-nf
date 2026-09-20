@@ -46,6 +46,7 @@ var (
 		"kotlin":            Kotlin,
 		"msdos":             Msdos,
 		"neovim":            Neovim,
+		"obsidian":          Obsidian,
 		"orgmode":           Orgmode,
 		"play_arrow":        PlayArrow,
 		"prettier":          Prettier,
@@ -58,6 +59,8 @@ var (
 		"vim":               Vim,
 		"vitruvian":         Vitruvian,
 		"windows":           Windows,
+		"wireshark":         Wireshark,
+		"zsh":               Zsh,
 	}
 )
 

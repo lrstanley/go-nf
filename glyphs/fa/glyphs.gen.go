@@ -13,7 +13,7 @@
 // Additional information:
 //  * Website: https://www.nerdfonts.com
 //  * Development Website: https://github.com/ryanoasis/nerd-fonts
-//  * Version: 3.4.0
+//  * Version: 3.5.1
 
 // Package fa contains the Nerd Fonts glyphs for the "fa" class.
 package fa
@@ -25,7 +25,7 @@ const (
 	Class nf.Class = "fa"
 
 	// Version is the version of the Nerd Fonts project which this package was generated from.
-	Version = "3.4.0"
+	Version = "3.5.1"
 )
 
 const (
@@ -1769,6 +1769,7 @@ const (
 	Voicemail                        nf.Glyph = "" //  ("\uefb4") represents the "fa-voicemail" glyph.
 	Volcano                          nf.Glyph = "" //  ("\uef2e") represents the "fa-volcano" glyph.
 	Volleyball                       nf.Glyph = "" //  ("\ued72") represents the "fa-volleyball" glyph.
+	Volume                           nf.Glyph = "" //  ("\uefcf") represents the "fa-volume" glyph.
 	VolumeControlPhone               nf.Glyph = "" //  ("\uf2a0") represents the "fa-volume_control_phone" glyph.
 	VolumeDown                       nf.Glyph = "" //  ("\uf027") represents the "fa-volume_down" glyph.
 	VolumeHigh                       nf.Glyph = "" //  ("\uf028") represents the "fa-volume_high" glyph.
