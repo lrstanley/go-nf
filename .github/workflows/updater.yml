@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: updater
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  nerd-fonts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: lrstanley/.github/composite/go-versions@master
+        id: goversion
+      - name: install-go
+        uses: lrstanley/.github/composite/install-go@master
+        with:
+          version: "${{ steps.goversion.outputs.version }}"
+      - id: release
+        uses: lrstanley/.github/composite/get-release-version@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repo: ryanoasis/nerd-fonts
+      - id: version
+        run: |
+          echo "previous_version=$(sed -rn 's/export NF_VERSION := (.+)/\1/p' Makefile)" >> "$GITHUB_OUTPUT"
+          sed -ri 's/NF_VERSION := .+/NF_VERSION := '${{ steps.release.outputs.version }}'/g' Makefile
+
+          make generate
+      - uses: lrstanley/.github/composite/pr-version-updater@master
+        with:
+          token: ${{ secrets.USER_PAT }}
+          tool: go-nf
+          chore: deps
+          version: ${{ steps.release.outputs.version }}
+          previous_version: ${{ steps.version.outputs.previous_version }}
+          paths: |
+            Makefile
+            *.gen.go
+            glyphs/**/*.go
+          repo: ${{ steps.release.outputs.repo }}
