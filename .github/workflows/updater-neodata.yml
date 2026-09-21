@@ -19,7 +19,9 @@ jobs:
           version: "${{ steps.goversion.outputs.version }}"
       - id: version
         run: |
-          echo "previous_version=$(sed -rn 's/export NVIM_DEVICONS_VERSION := (.+)/\1/p' Makefile)" >> "$GITHUB_OUTPUT"
+          previous_version=$(sed -rn 's/export NVIM_DEVICONS_VERSION := (.+)/\1/p' Makefile)
+          echo "previous_version=${previous_version}" >> "$GITHUB_OUTPUT"
+          echo "previous_version_short=${previous_version:0:8}" >> "$GITHUB_OUTPUT"
           version=$(curl -fsSL \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
@@ -30,6 +32,7 @@ jobs:
             exit 1
           fi
           echo "version=${version}" >> "$GITHUB_OUTPUT"
+          echo "version_short=${version:0:8}" >> "$GITHUB_OUTPUT"
           sed -ri "s/NVIM_DEVICONS_VERSION := .+/NVIM_DEVICONS_VERSION := ${version}/g" Makefile
 
           make generate
@@ -40,6 +43,8 @@ jobs:
           chore: deps
           version: ${{ steps.version.outputs.version }}
           previous_version: ${{ steps.version.outputs.previous_version }}
+          title: update neodata from ${{ steps.version.outputs.previous_version_short }} to ${{ steps.version.outputs.version_short }}
+          commit-message: "chore(deps): update neodata from ${{ steps.version.outputs.previous_version_short }} to ${{ steps.version.outputs.version_short }}"
           paths: |
             Makefile
             *.gen.go
