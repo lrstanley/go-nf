@@ -965,10 +965,10 @@ var (
 		"eex": &neoGlyph{
 			name:           "Eex",
 			glyph:          custom.Elixir,
-			darkColor:      &color.RGBA{R: 160, G: 116, B: 195, A: 255},
+			darkColor:      &color.RGBA{R: 184, G: 140, B: 217, A: 255},
 			darkColorANSI:  140,
-			lightColor:     &color.RGBA{R: 107, G: 77, B: 131, A: 255},
-			lightColorANSI: 96,
+			lightColor:     &color.RGBA{R: 92, G: 70, B: 108, A: 255},
+			lightColorANSI: 60,
 		},
 		"ejs": &neoGlyph{
 			name:           "Ejs",
@@ -1069,10 +1069,10 @@ var (
 		"ex": &neoGlyph{
 			name:           "Ex",
 			glyph:          custom.Elixir,
-			darkColor:      &color.RGBA{R: 160, G: 116, B: 195, A: 255},
+			darkColor:      &color.RGBA{R: 184, G: 140, B: 217, A: 255},
 			darkColorANSI:  140,
-			lightColor:     &color.RGBA{R: 107, G: 77, B: 131, A: 255},
-			lightColorANSI: 96,
+			lightColor:     &color.RGBA{R: 92, G: 70, B: 108, A: 255},
+			lightColorANSI: 60,
 		},
 		"exe": &neoGlyph{
 			name:           "Exe",
@@ -1085,10 +1085,10 @@ var (
 		"exs": &neoGlyph{
 			name:           "Exs",
 			glyph:          custom.Elixir,
-			darkColor:      &color.RGBA{R: 160, G: 116, B: 195, A: 255},
+			darkColor:      &color.RGBA{R: 184, G: 140, B: 217, A: 255},
 			darkColorANSI:  140,
-			lightColor:     &color.RGBA{R: 107, G: 77, B: 131, A: 255},
-			lightColorANSI: 96,
+			lightColor:     &color.RGBA{R: 92, G: 70, B: 108, A: 255},
+			lightColorANSI: 60,
 		},
 		"f#": &neoGlyph{
 			name:           "Fsharp",
@@ -1501,10 +1501,10 @@ var (
 		"heex": &neoGlyph{
 			name:           "Heex",
 			glyph:          custom.Elixir,
-			darkColor:      &color.RGBA{R: 160, G: 116, B: 195, A: 255},
+			darkColor:      &color.RGBA{R: 184, G: 140, B: 217, A: 255},
 			darkColorANSI:  140,
-			lightColor:     &color.RGBA{R: 107, G: 77, B: 131, A: 255},
-			lightColorANSI: 96,
+			lightColor:     &color.RGBA{R: 92, G: 70, B: 108, A: 255},
+			lightColorANSI: 60,
 		},
 		"heic": &neoGlyph{
 			name:           "HEIC",
@@ -2029,10 +2029,10 @@ var (
 		"leex": &neoGlyph{
 			name:           "Leex",
 			glyph:          custom.Elixir,
-			darkColor:      &color.RGBA{R: 160, G: 116, B: 195, A: 255},
+			darkColor:      &color.RGBA{R: 184, G: 140, B: 217, A: 255},
 			darkColorANSI:  140,
-			lightColor:     &color.RGBA{R: 107, G: 77, B: 131, A: 255},
-			lightColorANSI: 96,
+			lightColor:     &color.RGBA{R: 92, G: 70, B: 108, A: 255},
+			lightColorANSI: 60,
 		},
 		"less": &neoGlyph{
 			name:           "Less",
@@ -5191,10 +5191,10 @@ var (
 		"mix.lock": &neoGlyph{
 			name:           "MixLock",
 			glyph:          custom.Elixir,
-			darkColor:      &color.RGBA{R: 160, G: 116, B: 195, A: 255},
+			darkColor:      &color.RGBA{R: 184, G: 140, B: 217, A: 255},
 			darkColorANSI:  140,
-			lightColor:     &color.RGBA{R: 107, G: 77, B: 131, A: 255},
-			lightColorANSI: 96,
+			lightColor:     &color.RGBA{R: 92, G: 70, B: 108, A: 255},
+			lightColorANSI: 60,
 		},
 		"mpv.conf": &neoGlyph{
 			name:           "Mpv",
