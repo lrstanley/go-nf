@@ -17,7 +17,7 @@ import (
 	"github.com/Shopify/go-lua"
 )
 
-const nvimTreeIconBaseURL = "https://raw.githubusercontent.com/nvim-tree/nvim-web-devicons/master/lua/nvim-web-devicons"
+const nvimTreeIconBaseURL = "https://raw.githubusercontent.com/nvim-tree/nvim-web-devicons/%s/lua/nvim-web-devicons"
 
 type NeoGlyphEntry struct {
 	Matcher        string `json:"matcher" validate:"required,min=1,max=50"`
@@ -202,12 +202,13 @@ func FetchNeoGlyphData(ctx context.Context, glyphData *GlyphData) (*NeoData, err
 	}
 
 	categories := make(map[string]*categoryResult, len(luaIconFilenames))
+	baseURL := fmt.Sprintf(nvimTreeIconBaseURL, cli.Flags.NvimDeviconsVersion)
 
 	for category, filename := range luaIconFilenames {
 		cr := &categoryResult{}
 
 		for _, variant := range []string{"default", "light"} {
-			url := strings.Join([]string{nvimTreeIconBaseURL, variant, filename}, "/")
+			url := strings.Join([]string{baseURL, variant, filename}, "/")
 			m, err := fetchAndParseLuaIconFile(ctx, url)
 			if err != nil {
 				return nil, fmt.Errorf("parse %s/%s: %w", variant, filename, err)

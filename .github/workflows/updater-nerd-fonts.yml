@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-name: updater
+name: updater-nerd-fonts
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 0 * * 0"
   workflow_dispatch: {}
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
       - uses: lrstanley/.github/composite/pr-version-updater@master
         with:
           token: ${{ secrets.USER_PAT }}
-          tool: go-nf
+          tool: nerdfonts
           chore: deps
           version: ${{ steps.release.outputs.version }}
           previous_version: ${{ steps.version.outputs.previous_version }}

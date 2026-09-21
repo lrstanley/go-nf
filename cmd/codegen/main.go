@@ -25,8 +25,9 @@ const (
 )
 
 type Flags struct {
-	NFVersion string `name:"nf-version" env:"NF_VERSION" required:"" help:"The version of the Nerd Fonts project to use (without the 'v' prefix)."`
-	OutputDir string `arg:"" type:"path" help:"The directory to output the generated files to."`
+	NFVersion           string `name:"nf-version" env:"NF_VERSION" required:"" help:"The version of the Nerd Fonts project to use (without the 'v' prefix)."`
+	NvimDeviconsVersion string `name:"nvim-devicons-version" env:"NVIM_DEVICONS_VERSION" required:"" help:"The commit of nvim-web-devicons to use."`
+	OutputDir           string `arg:"" type:"path" help:"The directory to output the generated files to."`
 }
 
 var (

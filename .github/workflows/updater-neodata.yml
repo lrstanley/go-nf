@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: updater-neodata
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch: {}
+
+jobs:
+  neodata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: lrstanley/.github/composite/go-versions@master
+        id: goversion
+      - name: install-go
+        uses: lrstanley/.github/composite/install-go@master
+        with:
+          version: "${{ steps.goversion.outputs.version }}"
+      - id: version
+        run: |
+          echo "previous_version=$(sed -rn 's/export NVIM_DEVICONS_VERSION := (.+)/\1/p' Makefile)" >> "$GITHUB_OUTPUT"
+          version=$(curl -fsSL \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/nvim-tree/nvim-web-devicons/commits/master" \
+            | jq -r '.sha')
+          if [[ -z "${version}" || "${version}" == "null" ]]; then
+            echo "failed to resolve nvim-web-devicons commit" >&2
+            exit 1
+          fi
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
+          sed -ri "s/NVIM_DEVICONS_VERSION := .+/NVIM_DEVICONS_VERSION := ${version}/g" Makefile
+
+          make generate
+      - uses: lrstanley/.github/composite/pr-version-updater@master
+        with:
+          token: ${{ secrets.USER_PAT }}
+          tool: neodata
+          chore: deps
+          version: ${{ steps.version.outputs.version }}
+          previous_version: ${{ steps.version.outputs.previous_version }}
+          paths: |
+            Makefile
+            *.gen.go
+            glyphs/**/*.go
+          repo: nvim-tree/nvim-web-devicons
+          body: |
+            Updating [`nvim-web-devicons`](https://github.com/nvim-tree/nvim-web-devicons):
+
+            - Bumping **commit** from [`${{ steps.version.outputs.previous_version }}`](https://github.com/nvim-tree/nvim-web-devicons/commit/${{ steps.version.outputs.previous_version }}) to [`${{ steps.version.outputs.version }}`](https://github.com/nvim-tree/nvim-web-devicons/commit/${{ steps.version.outputs.version }}).
+
+            Compare: [link](https://github.com/nvim-tree/nvim-web-devicons/compare/${{ steps.version.outputs.previous_version }}...${{ steps.version.outputs.version }})
