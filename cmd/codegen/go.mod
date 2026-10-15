@@ -3,7 +3,7 @@ module github.com/lrstanley/go-nf/cmd/codegen
 go 1.27.0
 
 require (
-	github.com/Shopify/go-lua v0.0.0-20250718183320-1e37f32ad7d0
+	github.com/Shopify/go-lua v0.0.0-20261007132305-3f823f845ff9
 	github.com/go-playground/validator/v10 v10.30.4
 	github.com/iancoleman/strcase v0.3.0
 	github.com/lrstanley/clix/v2 v2.0.5
