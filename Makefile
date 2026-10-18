@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := generate
 
 export NF_VERSION := 3.5.1
-export NVIM_DEVICONS_VERSION := 58447c1fca354bbf184425e4a8d01deecbd6f3c4
+export NVIM_DEVICONS_VERSION := ec309a0eaff6ea967e58c275996155ab5c16938d
 
 license:
 	curl -sL https://liam.sh/-/gh/g/license-header.sh | bash -s
