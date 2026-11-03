@@ -10,7 +10,8 @@ import (
 	"fmt"
 	"os"
 	"regexp"
-	"strconv"
+	"runtime"
+	"strings"
 )
 
 // fontNameMatchers is the list of regular expressions to match font names.
@@ -44,7 +45,9 @@ const (
 	StatusDisabled InstallStatus = iota + 1
 	// StatusEnabled indicates that Nerd Fonts was explicitly enabled by the user,
 	// detected through one of the [InstallDetector] functions (e.g. explicitly
-	// enabled through an environment variable).
+	// enabled through an environment variable), or that the terminal emulator is
+	// known to render Nerd Font glyphs without a patched font installed (see
+	// [DetectorTerminal]).
 	StatusEnabled
 	// StatusNotInstalled indicates that none of the [InstallDetector] functions
 	// detected that Nerd Fonts is installed on the system.
@@ -69,14 +72,23 @@ type InstallDetector func(ctx context.Context) (InstallStatus, error)
 // own detectors, it is recommended to use these as a base, prepending your own,
 // or using it as a reference to pick and choose.
 func DefaultDetectors() []InstallDetector {
-	return []InstallDetector{
+	detectors := []InstallDetector{
 		DetectorEnvVar("NERD_FONTS"),
 		DetectorEnvVar("NERDFONTS"),
+		DetectorEnvVar("NERDFONT"),
 		DetectorEnvVar("NF_FONTS"),
+		DetectorTerminal(),
 		DetectorWindowsGDI(),
-		DetectorFontConfig(),
-		DetectorFilesystem(),
 	}
+
+	// On macOS, the filesystem scan only covers two small font directories,
+	// while fc-list (only present via e.g. Homebrew's fontconfig) may need to
+	// rebuild its cache first, so scan the filesystem first. Elsewhere, fc-list
+	// is typically cached and faster than walking /usr/share/fonts.
+	if runtime.GOOS == "darwin" {
+		return append(detectors, DetectorFilesystem(), DetectorFontConfig())
+	}
+	return append(detectors, DetectorFontConfig(), DetectorFilesystem())
 }
 
 // DetectInstalled detects whether Nerd Fonts is installed on the system using
@@ -90,10 +102,13 @@ func DefaultDetectors() []InstallDetector {
 // reading filesystem, running commands, etc.)
 //
 // Default detectors are:
-//   - env vars: NERD_FONTS (preferred), NERDFONTS, NF_FONTS (all platforms)
+//   - env vars: NERD_FONTS (preferred), NERDFONTS, NERDFONT, NF_FONTS (all platforms)
+//   - Terminal: terminal emulators which bundle Nerd Font symbols, e.g. kitty,
+//     Ghostty, and WezTerm (all platforms)
 //   - Windows GDI: uses the Windows GDI API to enumerate installed fonts (windows only)
 //   - FontConfig: uses the fontconfig CLI to enumerate installed fonts (unix only)
-//   - Filesystem: checks the filesystem for font files in common locations (unix only)
+//   - Filesystem: checks the filesystem for font files in common locations (unix
+//     only, including macOS, where it runs before FontConfig)
 //
 // Why is it difficult to detect if Nerd Fonts are being used?: See
 // https://github.com/ryanoasis/nerd-fonts/discussions/829
@@ -125,20 +140,52 @@ func DetectInstalled(ctx context.Context, detectors ...InstallDetector) (Install
 // DetectorEnvVar returns an [InstallDetector] that checks for the presence of
 // the provided environment variable name, and parses it as a boolean, returning
 // [StatusEnabled] if true, [StatusDisabled] if false, and [StatusNotInstalled]
-// if the environment variable is not set.
+// if the environment variable is not set, or is set to "auto".
+//
+// Accepted values (case-insensitive) are 1/0, t/f, true/false, yes/no, y/n,
+// and on/off. Any other value returns [StatusNotInstalled] and an error.
 func DetectorEnvVar(name string) InstallDetector {
 	return func(_ context.Context) (InstallStatus, error) {
 		v := os.Getenv(name)
-		if v == "" {
+		switch strings.ToLower(strings.TrimSpace(v)) {
+		case "", "auto":
 			return StatusNotInstalled, nil
+		case "1", "t", "true", "y", "yes", "on":
+			return StatusEnabled, nil
+		case "0", "f", "false", "n", "no", "off":
+			return StatusDisabled, nil
+		default:
+			return StatusNotInstalled, fmt.Errorf("failed to parse env var %q: invalid boolean value %q", name, v)
 		}
-		vv, err := strconv.ParseBool(v)
-		if err != nil {
-			return StatusNotInstalled, fmt.Errorf("failed to parse env var %q: %w", name, err)
-		}
-		if vv {
+	}
+}
+
+// DetectorTerminal returns an [InstallDetector] that checks whether the current
+// terminal emulator is known to render Nerd Font glyphs without a patched font
+// being installed or configured, returning [StatusEnabled] if so, and
+// [StatusNotInstalled] otherwise. Detection is based on environment variables
+// set by the terminal emulator:
+//   - kitty (0.36+, bundles "Symbols Nerd Font Mono" as a fallback font):
+//     KITTY_WINDOW_ID, or TERM=xterm-kitty.
+//   - Ghostty (embeds a symbols-only Nerd Font): GHOSTTY_RESOURCES_DIR,
+//     TERM=xterm-ghostty, or TERM_PROGRAM=ghostty.
+//   - WezTerm (bundles "Symbols Nerd Font Mono" as a fallback font): WEZTERM_PANE,
+//     or TERM_PROGRAM=WezTerm.
+//
+// Note that terminal multiplexers (e.g. tmux, screen) may overwrite TERM and
+// TERM_PROGRAM, and SSH sessions typically only forward TERM.
+func DetectorTerminal() InstallDetector {
+	return func(_ context.Context) (InstallStatus, error) {
+		term := os.Getenv("TERM")
+		program := strings.ToLower(os.Getenv("TERM_PROGRAM"))
+
+		if os.Getenv("KITTY_WINDOW_ID") != "" ||
+			os.Getenv("GHOSTTY_RESOURCES_DIR") != "" ||
+			os.Getenv("WEZTERM_PANE") != "" ||
+			term == "xterm-kitty" || term == "xterm-ghostty" ||
+			program == "ghostty" || program == "wezterm" {
 			return StatusEnabled, nil
 		}
-		return StatusDisabled, nil
+		return StatusNotInstalled, nil
 	}
 }

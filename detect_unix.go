@@ -7,17 +7,23 @@
 package nf
 
 import (
-	"bufio"
 	"context"
 	"errors"
+	"fmt"
 	"io/fs"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"slices"
 	"strings"
 	"time"
 )
+
+// fcListTimeout bounds how long fc-list may run. fc-list may need to rebuild its
+// cache when first run, which can take seconds. If it doesn't finish in time,
+// [DetectorFilesystem] still covers the common font directories.
+const fcListTimeout = 3 * time.Second
 
 // fsMaxDepth is the maximum depth to traverse when checking for font files in the filesystem.
 const fsMaxDepth = 4
@@ -30,14 +36,23 @@ var fontExtensions = []string{
 	".woff2",
 }
 
-// filesystemPaths is the list of paths to check for font files in the filesystem.
-// Root directory trees only, they will be traversed recursively (ignoring errors).
-var filesystemPaths = []string{
-	"/usr/share/fonts/",
-	"/usr/local/share/fonts/",
-	"/var/lib/snapd/desktop/fonts/",
-	"~/.fonts/",
-	"~/.local/share/fonts/",
+// filesystemPaths returns the list of paths to check for font files in the
+// filesystem, for the current platform. Root directory trees only, they will be
+// traversed recursively (ignoring errors).
+func filesystemPaths() []string {
+	if runtime.GOOS == "darwin" {
+		return []string{
+			"~/Library/Fonts/",
+			"/Library/Fonts/",
+		}
+	}
+	return []string{
+		"/usr/share/fonts/",
+		"/usr/local/share/fonts/",
+		"/var/lib/snapd/desktop/fonts/",
+		"~/.fonts/",
+		"~/.local/share/fonts/",
+	}
 }
 
 // DetectorFilesystem is a detector that checks the filesystem for font files,
@@ -49,8 +64,11 @@ func DetectorFilesystem() InstallDetector { //nolint:gocognit
 	home, _ := os.UserHomeDir()
 	return func(_ context.Context) (InstallStatus, error) {
 		var errs []error
-		for _, path := range filesystemPaths {
+		for _, path := range filesystemPaths() {
 			if strings.HasPrefix(path, "~/") {
+				if home == "" {
+					continue
+				}
 				path = filepath.Join(home, path[2:])
 			}
 
@@ -114,44 +132,42 @@ func DetectorWindowsGDI() InstallDetector {
 // DetectorFontConfig is a detector that runs fc-list (fontconfig) and checks its
 // output for Nerd Fonts. Returns [StatusInstalled] if any font name matches,
 // [StatusNotInstalled] otherwise. Skips gracefully (no error) if fc-list is not
-// in PATH or cannot be executed.
+// in PATH. fc-list is limited to 3 seconds (or the context deadline, if sooner), and
+// returns an error if it fails or times out.
 //
 // This is a no-op on non-Unix systems.
 func DetectorFontConfig() InstallDetector {
 	return func(ctx context.Context) (InstallStatus, error) {
-		if _, err := exec.LookPath("fc-list"); err != nil {
-			return StatusNotInstalled, err
+		path, err := exec.LookPath("fc-list")
+		if err != nil {
+			return StatusNotInstalled, nil
 		}
 
-		cmd := exec.CommandContext(ctx, "fc-list")
+		ctx, cancel := context.WithTimeout(ctx, fcListTimeout)
+		defer cancel()
+
+		cmd := exec.CommandContext(ctx, path)
+		// Stop waiting for output once fc-list is killed, even if a child process
+		// still holds stdout open.
 		cmd.WaitDelay = 10 * time.Millisecond
 
-		stdout, err := cmd.StdoutPipe()
-		if err != nil {
-			return StatusNotInstalled, err
-		}
-		err = cmd.Start()
-		if err != nil {
-			return StatusNotInstalled, err
-		}
-
-		scanner := bufio.NewScanner(stdout)
-		var line string
-		for scanner.Scan() {
-			line = scanner.Text()
+		// Output is checked even on error, as a timed out fc-list may have
+		// already listed a Nerd Font.
+		out, err := cmd.Output()
+		for line := range strings.Lines(string(out)) {
 			for _, matcher := range fontNameMatchers {
 				if matcher.MatchString(line) {
-					_ = cmd.Wait()
 					return StatusInstalled, nil
 				}
 			}
 		}
 
-		if scanErr := scanner.Err(); scanErr != nil {
-			_ = cmd.Wait()
-			return StatusNotInstalled, scanErr
+		if err != nil {
+			if ctxErr := ctx.Err(); ctxErr != nil {
+				err = ctxErr
+			}
+			return StatusNotInstalled, fmt.Errorf("failed to run fc-list: %w", err)
 		}
-		_ = cmd.Wait()
 		return StatusNotInstalled, nil
 	}
 }

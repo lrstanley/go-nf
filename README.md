@@ -88,6 +88,9 @@
   [nvim-tree](https://github.com/nvim-tree/nvim-web-devicons).
 - :heavy_check_mark: Detect if Nerd Fonts are installed on the system, to prevent
   using glyphs that are not available.
+  - Detects terminal emulators that bundle Nerd Font symbols out of the box
+    (kitty, Ghostty, WezTerm), and supports explicit overrides through environment
+    variables (`NERD_FONTS`, `NERDFONTS`, `NERDFONT`, `NF_FONTS`).
   - Note that this is not a perfect solution. Just because Nerd Fonts are installed,
     doesn't mean the font in question is actively being used in the associated
     terminal emulator.
