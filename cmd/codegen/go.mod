@@ -4,9 +4,9 @@ go 1.27.0
 
 require (
 	github.com/Shopify/go-lua v0.0.0-20261007132305-3f823f845ff9
-	github.com/go-playground/validator/v10 v10.30.5
+	github.com/go-playground/validator/v10 v10.30.6
 	github.com/iancoleman/strcase v0.3.0
-	github.com/lrstanley/clix/v2 v2.0.5
+	github.com/lrstanley/clix/v2 v2.0.7
 	github.com/lrstanley/x/http/utils v0.0.0-20261012033115-94a2087e9052
 	github.com/lucasb-eyer/go-colorful v1.4.1
 )
