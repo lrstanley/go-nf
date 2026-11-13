@@ -57,14 +57,19 @@ func filesystemPaths() []string {
 
 // DetectorFilesystem is a detector that checks the filesystem for font files,
 // in common locations. Returns [StatusInstalled] if any font files are found,
-// [StatusNotInstalled] otherwise. Permissions errors are ignored.
+// [StatusNotInstalled] otherwise. Permissions errors are ignored. The walk stops
+// once ctx is done, returning the context's error.
 //
 // This is a no-op on non-Unix systems.
 func DetectorFilesystem() InstallDetector { //nolint:gocognit
 	home, _ := os.UserHomeDir()
-	return func(_ context.Context) (InstallStatus, error) {
+	return func(ctx context.Context) (InstallStatus, error) {
 		var errs []error
 		for _, path := range filesystemPaths() {
+			if err := ctx.Err(); err != nil {
+				return StatusNotInstalled, err
+			}
+
 			if strings.HasPrefix(path, "~/") {
 				if home == "" {
 					continue
@@ -80,6 +85,10 @@ func DetectorFilesystem() InstallDetector { //nolint:gocognit
 
 			var found bool
 			err := filepath.WalkDir(path, func(p string, d fs.DirEntry, err error) error {
+				if ctxErr := ctx.Err(); ctxErr != nil {
+					return ctxErr
+				}
+
 				if err != nil {
 					return filepath.SkipDir
 				}
@@ -108,6 +117,9 @@ func DetectorFilesystem() InstallDetector { //nolint:gocognit
 			})
 			if found {
 				return StatusInstalled, nil
+			}
+			if ctxErr := ctx.Err(); ctxErr != nil {
+				return StatusNotInstalled, ctxErr
 			}
 			if err != nil {
 				errs = append(errs, err)
